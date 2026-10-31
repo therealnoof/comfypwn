@@ -1072,8 +1072,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "published": "2026-10-26 (NVD 17:17 UTC)",
    "exploited": false,
    "kev": false,
-   "poc": false,
-   "status": "",
+   "poc": true,
+   "status": "Public PoC released (zip2 maintainers disclosed working PoC exploit code; Feedly timeline: 2026-10-30). No wild exploitation confirmed; not in KEV.",
    "src": "https://github.com/zip-rs/zip2/security/advisories/GHSA-m665-v7pm-7grj",
    "epss": 0.0032,
    "epss_percentile": 0.25012
@@ -3054,13 +3054,29 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "cvss": "9.8 (CVSS v3.1)",
    "fixed": "1.83.7",
    "published": "2026-05-08 (NVD)",
-   "exploited": false,
-   "kev": false,
+   "exploited": true,
+   "kev": true,
    "poc": false,
-   "status": "",
+   "status": " CISA KEV-listed since 2026-05-08 (confirmed in-the-wild exploitation).",
    "src": "https://github.com/advisories/GHSA-r75f-5x8p-qvmc",
    "epss": 0.8942,
    "epss_percentile": 0.99785
+  },
+  {
+   "id": "CVE-2026-42589",
+   "title": "Gotenberg <8.31.0 \u2014 unauthenticated RCE via PDF metadata ExifTool -if injection \u2014 EXPLOITED IN THE WILD",
+   "product": "Gotenberg",
+   "score": 9.8,
+   "cvss": "9.8 (CVSS v3.1)",
+   "fixed": "8.31.0",
+   "published": "2026-05-14",
+   "exploited": true,
+   "kev": false,
+   "poc": true,
+   "status": "In the wild per Ostorlab (Oct 30) + VulnCheck telemetry (1,358 events/128 IPs/30d); VulnCheck KEV since 2026-06-23; not in CISA KEV as of Oct 30.",
+   "src": "https://blog.ostorlab.co/gotenberg-metadata-rce-cve-2026-42589.html",
+   "epss": 0.03013,
+   "epss_percentile": 0.8740000000000001
   },
   {
    "id": "CVE-2026-42922",
@@ -4535,22 +4551,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 0.38738
   },
   {
-   "id": "CVE-2026-42589",
-   "title": "Gotenberg <8.31.0 \u2014 unauthenticated RCE via PDF metadata ExifTool -if injection \u2014 EXPLOITED IN THE WILD",
-   "product": "Gotenberg",
-   "score": 9.8,
-   "cvss": "9.8 (CVSS v3.1)",
-   "fixed": "8.31.0",
-   "published": "2026-05-14",
-   "exploited": true,
-   "kev": false,
-   "poc": true,
-   "status": "In the wild per Ostorlab (Oct 30) + VulnCheck telemetry (1,358 events/128 IPs/30d); VulnCheck KEV since 2026-06-23; not in CISA KEV as of Oct 30.",
-   "src": "https://blog.ostorlab.co/gotenberg-metadata-rce-cve-2026-42589.html",
-   "epss": 0.03013,
-   "epss_percentile": 0.8740000000000001
-  },
-  {
    "id": "CVE-2025-65200",
    "title": "LocalStack CloudFormation deploy endpoint RCE via crafted templateURL content (lag-gap catch-up)",
    "product": "LocalStack 4.9.2",
@@ -5312,8 +5312,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "published": "2026-10-24 (NVD receipt 08:16 UTC)",
    "exploited": false,
    "kev": false,
-   "poc": false,
-   "status": "",
+   "poc": true,
+   "status": "Public exploit PoC on GitHub (repo Hassham1/CVE-2026-112866-woo-product-filter-sqli-poc, created 2026-10-25; reported by Cybrmonk Oct 26). No wild exploitation confirmed; not in KEV.",
    "src": "https://patchstack.com/database/wordpress/plugin/woo-product-filter/vulnerability/wordpress-product-filter-by-wbw-plugin-2-9-7-unauthenticated-sql-injection-vulnerability",
    "epss": 0.00356,
    "epss_percentile": 0.29304
@@ -7255,6 +7255,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 0.29991
   },
   {
+   "id": "CVE-2026-118697",
+   "title": "JetBrains jetbrainsd daemon trusted compromised eMudhra intermediate certificates",
+   "product": "JetBrains Toolbox App / IntelliJ IDEA (jetbrainsd daemon)",
+   "score": 9.0,
+   "cvss": "9.0 (CVSS v3.1, vendor JetBrains; CRITICAL)",
+   "fixed": "Toolbox App 3.9.1/3.8.2; IntelliJ IDEA 2026.3/2026.2.4 (jetbrainsd 0.9.9728)",
+   "published": "2026-10-30",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Background service (handles installs/updates) used its own trust list and trusted compromised eMudhra intermediates; network attacker could impersonate JetBrains services to the daemon. JetBrains: no exploitation against its users known.",
+   "src": "https://blog.jetbrains.com/security/2026/10/compromised-emudhra-certificates-ides/",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2026-119978",
    "title": "Flowise authenticated sandbox escape -> OS command execution (vm2 escape via mammoth)",
    "product": "Flowise through 3.1.4",
@@ -7333,22 +7349,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-94267",
    "epss": 0.00394,
    "epss_percentile": 0.33545
-  },
-  {
-   "id": "CVE-2026-118697",
-   "title": "JetBrains jetbrainsd daemon trusted compromised eMudhra intermediate certificates",
-   "product": "JetBrains Toolbox App / IntelliJ IDEA (jetbrainsd daemon)",
-   "score": 9.0,
-   "cvss": "9.0 (CVSS v3.1, vendor JetBrains; CRITICAL)",
-   "fixed": "Toolbox App 3.9.1/3.8.2; IntelliJ IDEA 2026.3/2026.2.4 (jetbrainsd 0.9.9728)",
-   "published": "2026-10-30",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Background service (handles installs/updates) used its own trust list and trusted compromised eMudhra intermediates; network attacker could impersonate JetBrains services to the daemon. JetBrains: no exploitation against its users known.",
-   "src": "https://blog.jetbrains.com/security/2026/10/compromised-emudhra-certificates-ides/",
-   "epss": null,
-   "epss_percentile": null
   },
   {
    "id": "CVE-2026-103506",
@@ -7921,7 +7921,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "exploited": false,
    "kev": false,
    "poc": false,
-   "status": "",
+   "status": "RCE DEMONSTRATED (Remedio, Oct 29 write-up): malicious host runs attacker code on technician's Windows machine via CBitmapBuffer overflow (DEP/CFG bypass to WinExec); demo used host-side hook, not pure network. No exploit code released; no wild exploitation; not in KEV. Fix: 15.83.",
    "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-111585",
    "epss": 0.00288,
    "epss_percentile": 0.21361
@@ -9662,10 +9662,10 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "cvss": "8.8 (CVSS v3.1)",
    "fixed": "1.83.7",
    "published": "2026-05-08 (NVD)",
-   "exploited": false,
-   "kev": false,
+   "exploited": true,
+   "kev": true,
    "poc": false,
-   "status": "",
+   "status": " CISA KEV-listed since 2026-06-08 (confirmed in-the-wild exploitation).",
    "src": "https://github.com/advisories/GHSA-v4p8-mg3p-g94g",
    "epss": 0.91445,
    "epss_percentile": 0.99812
@@ -9918,10 +9918,10 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "cvss": "8.8 (CVSS v3.1)",
    "fixed": "1.84.0",
    "published": "2026-07-08 (NVD)",
-   "exploited": false,
-   "kev": false,
+   "exploited": true,
+   "kev": true,
    "poc": false,
-   "status": "",
+   "status": " CISA KEV-listed since 2026-09-02 (confirmed in-the-wild exploitation).",
    "src": "https://github.com/advisories/GHSA-7488-6r32-c95q",
    "epss": 0.00836,
    "epss_percentile": 0.57687
@@ -11175,6 +11175,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 0.13316
   },
   {
+   "id": "CVE-2026-116872",
+   "title": "Semantic MediaWiki <7.3.1 \u2014 unauthenticated quadratic-CPU DoS via Special:Search compact filters",
+   "product": "Semantic MediaWiki",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v4.0)",
+   "fixed": "7.3.1",
+   "published": "2026-10-27",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Unauthenticated DoS when extended search engine enabled; no exploitation reported.",
+   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-116872",
+   "epss": 0.00354,
+   "epss_percentile": 0.29114
+  },
+  {
    "id": "CVE-2026-117604",
    "title": "Grav Clockwork profiler authorization bypass - read admin plaintext passwords / config credentials",
    "product": "Grav (1.7.53.3 to before 1.7.53.6)",
@@ -11685,22 +11701,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "src": "https://my.f5.com/manage/s/article/K000162611",
    "epss": 0.00394,
    "epss_percentile": 0.3352800000000001
-  },
-  {
-   "id": "CVE-2026-116872",
-   "title": "Semantic MediaWiki <7.3.1 \u2014 unauthenticated quadratic-CPU DoS via Special:Search compact filters",
-   "product": "Semantic MediaWiki",
-   "score": 8.7,
-   "cvss": "8.7 (CVSS v4.0)",
-   "fixed": "7.3.1",
-   "published": "2026-10-27",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Unauthenticated DoS when extended search engine enabled; no exploitation reported.",
-   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-116872",
-   "epss": 0.00354,
-   "epss_percentile": 0.29114
   },
   {
    "id": "CVE-2023-7357",
@@ -14231,6 +14231,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": null
   },
   {
+   "id": "CVE-2026-116589",
+   "title": "Datadog dd-trace-py IAST string-processing unhandled error -> Python process termination (DoS)",
+   "product": "Datadog dd-trace-py 3.13.0 through 4.15.5 (IAST enabled - not default)",
+   "score": 8.2,
+   "cvss": "8.2 (CVSS v4.0)",
+   "fixed": "4.15.5",
+   "published": "2026-10-26T22:16:55Z (NVD); vulnStatus Awaiting Analysis; surfaced 2026-10-31 via lastMod sweep",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV. IAST string-processing instrumentation does not handle certain internal errors while old-style % formatting processes attacker-controlled input; an unhandled error terminates the Python process (C:N/I:N/A:H). Requires IAST enabled (not default) and app code applying the affected formatting to attacker-controlled input. Fixed 4.15.5. EPSS 0.00328, 25.88th percentile.",
+   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-116589",
+   "epss": 0.00328,
+   "epss_percentile": 0.25876
+  },
+  {
    "id": "CVE-2026-116634",
    "title": "OmniRoute missing authentication - issue sync tokens, retrieve decrypted credentials",
    "product": "OmniRoute 3.8.50 before 3.8.52",
@@ -14645,22 +14661,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "src": "https://cert.pl/posts/2026/10/CVE-2026-93570",
    "epss": 0.00278,
    "epss_percentile": 0.20308
-  },
-  {
-   "id": "CVE-2026-116589",
-   "title": "Datadog dd-trace-py IAST string-processing unhandled error -> Python process termination (DoS)",
-   "product": "Datadog dd-trace-py 3.13.0 through 4.15.5 (IAST enabled - not default)",
-   "score": 8.2,
-   "cvss": "8.2 (CVSS v4.0)",
-   "fixed": "4.15.5",
-   "published": "2026-10-26T22:16:55Z (NVD); vulnStatus Awaiting Analysis; surfaced 2026-10-31 via lastMod sweep",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV. IAST string-processing instrumentation does not handle certain internal errors while old-style % formatting processes attacker-controlled input; an unhandled error terminates the Python process (C:N/I:N/A:H). Requires IAST enabled (not default) and app code applying the affected formatting to attacker-controlled input. Fixed 4.15.5. EPSS 0.00328, 25.88th percentile.",
-   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-116589",
-   "epss": 0.00328,
-   "epss_percentile": 0.25876
   },
   {
    "id": "CVE-2026-101770",
@@ -15255,6 +15255,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 0.19753
   },
   {
+   "id": "CVE-2026-94300",
+   "title": "ISC BIND 9 \u2014 GSS-TSIG signed UDP replay corrupts memory (possible RCE)",
+   "product": "ISC BIND 9 (DNS)",
+   "score": 8.1,
+   "cvss": "8.1 (CVSS v3.1, ISC)",
+   "fixed": "9.20.30 / 9.21.27 / 9.20.30-S1",
+   "published": "2026-10-21",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "ISC: not aware of any active exploits. Discovery: Dave Aitel/OpenAI. Affects 9.11.0-9.18.50, 9.20.0-9.20.29, 9.21.0-9.21.26 (+S1).",
+   "src": "https://kb.isc.org/docs/cve-2026-94300",
+   "epss": 0.00953,
+   "epss_percentile": 0.61308
+  },
+  {
    "id": "CVE-2026-94380",
    "title": "HAVELSAN Liman MYS weak password recovery mechanism",
    "product": "HAVELSAN Liman MYS 2.3.4-1124 to <2.3.5-1131",
@@ -15383,6 +15399,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 0.14819
   },
   {
+   "id": "CVE-2026-118696",
+   "title": "JetBrains IDEs embedded browser trusted revoked/compromised eMudhra intermediates",
+   "product": "JetBrains IDEs (IntelliJ IDEA, PyCharm, PhpStorm, GoLand, Rider, CLion, DataGrip, RustRover, RubyMine, WebStorm, DataSpell)",
+   "score": 8.0,
+   "cvss": "8.0 (CVSS v3.1, vendor JetBrains; HIGH)",
+   "fixed": "2026.3/2026.2.4/2026.1.5.1/2025.3.6.2 (per IDE; full list on JetBrains security blog)",
+   "published": "2026-10-30",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Compromised eMudhra intermediate certs (8 private keys) trusted by IDE embedded browser (JCEF) via bundled JBR trust store; network attacker could impersonate services. JetBrains: no exploitation against its users known. OS updates do not mitigate.",
+   "src": "https://blog.jetbrains.com/security/2026/10/compromised-emudhra-certificates-ides/",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2026-119287",
    "title": "Zuke MCP registry authorization bypass -> operator env/workspace command execution",
    "product": "Zuke <1.51.0",
@@ -15429,22 +15461,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "src": "https://mattermost.com/security-updates",
    "epss": 0.00266,
    "epss_percentile": 0.18814
-  },
-  {
-   "id": "CVE-2026-118696",
-   "title": "JetBrains IDEs embedded browser trusted revoked/compromised eMudhra intermediates",
-   "product": "JetBrains IDEs (IntelliJ IDEA, PyCharm, PhpStorm, GoLand, Rider, CLion, DataGrip, RustRover, RubyMine, WebStorm, DataSpell)",
-   "score": 8.0,
-   "cvss": "8.0 (CVSS v3.1, vendor JetBrains; HIGH)",
-   "fixed": "2026.3/2026.2.4/2026.1.5.1/2025.3.6.2 (per IDE; full list on JetBrains security blog)",
-   "published": "2026-10-30",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Compromised eMudhra intermediate certs (8 private keys) trusted by IDE embedded browser (JCEF) via bundled JBR trust store; network attacker could impersonate services. JetBrains: no exploitation against its users known. OS updates do not mitigate.",
-   "src": "https://blog.jetbrains.com/security/2026/10/compromised-emudhra-certificates-ides/",
-   "epss": null,
-   "epss_percentile": null
   },
   {
    "id": "CVE-2026-114148",
@@ -15527,6 +15543,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": null
   },
   {
+   "id": "CVE-2026-116896",
+   "title": "REDAXO <5.21.5 \u2014 backup addon missing authorization enables admin account takeover via exported session tables",
+   "product": "REDAXO",
+   "score": 7.7,
+   "cvss": "7.7 (CVSS v4.0; admin-escalation class)",
+   "fixed": "5.21.5",
+   "published": "2026-10-27",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Non-admin users with backup[export] permission export rex_user/rex_user_session -> admin session hijack. Fixed 5.21.5.",
+   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-116896",
+   "epss": 0.00223,
+   "epss_percentile": 0.1293
+  },
+  {
    "id": "CVE-2026-117553",
    "title": "Umbraco CMS auth bypass via Host-header poisoning -> back-office session hijack + Razor code execution",
    "product": "Umbraco CMS before 17.7.2 and 18.2.2",
@@ -15575,22 +15607,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 0.4892
   },
   {
-   "id": "CVE-2026-116896",
-   "title": "REDAXO <5.21.5 \u2014 backup addon missing authorization enables admin account takeover via exported session tables",
-   "product": "REDAXO",
-   "score": 7.7,
-   "cvss": "7.7 (CVSS v4.0; admin-escalation class)",
-   "fixed": "5.21.5",
-   "published": "2026-10-27",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Non-admin users with backup[export] permission export rex_user/rex_user_session -> admin session hijack. Fixed 5.21.5.",
-   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-116896",
-   "epss": 0.00223,
-   "epss_percentile": 0.1293
-  },
-  {
    "id": "CVE-2026-111255",
    "title": "affiliate-toolkit arbitrary file upload -> RCE (import product image)",
    "product": "affiliate-toolkit \u2013 Multi-Network Affiliate & Amazon Product Display (WordPress plugin) <=3.9.2",
@@ -15621,6 +15637,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-111461",
    "epss": 0.0137,
    "epss_percentile": 0.71874
+  },
+  {
+   "id": "CVE-2026-116369",
+   "title": "github-kanban-mcp-server OS command injection via handleListIssues state/labels arguments",
+   "product": "Sunwood-ai-labs github-kanban-mcp-server through 0.4.0",
+   "score": 7.5,
+   "cvss": "7.5 (CVSS v3.1; criterion 2 command-injection class)",
+   "fixed": "0.4.1",
+   "published": "2026-10-26T16:17:18Z (NVD); vulnStatus Deferred; surfaced 2026-10-31 via lastMod sweep",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV. OS command injection: manipulation of the state/labels arguments to handleListIssues in src/handlers/issue-handlers.ts leads to os command injection; attack can be launched remotely (MCP server receives tool arguments from models). Patch commit 253d93bbdf7ee9fe42bd8fdf15feea93ae59cbae in 0.4.1. EPSS 0.0139, 72.3rd percentile.",
+   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-116369",
+   "epss": 0.0139,
+   "epss_percentile": 0.723
   },
   {
    "id": "CVE-2026-117511",
@@ -15685,22 +15717,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-93757",
    "epss": 0.00425,
    "epss_percentile": 0.36747
-  },
-  {
-   "id": "CVE-2026-116369",
-   "title": "github-kanban-mcp-server OS command injection via handleListIssues state/labels arguments",
-   "product": "Sunwood-ai-labs github-kanban-mcp-server through 0.4.0",
-   "score": 7.5,
-   "cvss": "7.5 (CVSS v3.1; criterion 2 command-injection class)",
-   "fixed": "0.4.1",
-   "published": "2026-10-26T16:17:18Z (NVD); vulnStatus Deferred; surfaced 2026-10-31 via lastMod sweep",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV. OS command injection: manipulation of the state/labels arguments to handleListIssues in src/handlers/issue-handlers.ts leads to os command injection; attack can be launched remotely (MCP server receives tool arguments from models). Patch commit 253d93bbdf7ee9fe42bd8fdf15feea93ae59cbae in 0.4.1. EPSS 0.0139, 72.3rd percentile.",
-   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-116369",
-   "epss": 0.0139,
-   "epss_percentile": 0.723
   },
   {
    "id": "CVE-2026-114488",
@@ -16215,22 +16231,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": null
   },
   {
-   "id": "CVE-2026-118539",
-   "title": "Drupal Commerce Core access bypass - insufficient protection of certain routes and entity fields, may financially impact the vendor",
-   "product": "Drupal Commerce Core module (3.x; 8.x-2.x)",
-   "score": 0.0,
-   "cvss": "Highly critical (Drupal SA-CONTRIB-2026-254; no CVSS assigned yet)",
-   "fixed": "3.3.13 (3.x); 8.x-2.41 (earlier versions)",
-   "published": "2026-10-28 (Drupal SA-CONTRIB-2026-254; no NVD/CIRCL record yet)",
-   "exploited": true,
-   "kev": false,
-   "poc": false,
-   "status": "",
-   "src": "https://www.drupal.org/sa-contrib-2026-254",
-   "epss": 0.00222,
-   "epss_percentile": 0.12836
-  },
-  {
    "id": "CVE-2026-103688",
    "title": "Checkout Files Upload for WooCommerce unauthenticated arbitrary file upload -> RCE (PHP files to uploads directory)",
    "product": "Checkout Files Upload for WooCommerce (WordPress plugin) before 2.4.0",
@@ -16485,6 +16485,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-118238",
    "epss": null,
    "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-118539",
+   "title": "Drupal Commerce Core access bypass - insufficient protection of certain routes and entity fields, may financially impact the vendor",
+   "product": "Drupal Commerce Core module (3.x; 8.x-2.x)",
+   "score": 0.0,
+   "cvss": "Highly critical (Drupal SA-CONTRIB-2026-254; no CVSS assigned yet)",
+   "fixed": "3.3.13 (3.x); 8.x-2.41 (earlier versions)",
+   "published": "2026-10-28 (Drupal SA-CONTRIB-2026-254; no NVD/CIRCL record yet)",
+   "exploited": true,
+   "kev": false,
+   "poc": false,
+   "status": "",
+   "src": "https://www.drupal.org/sa-contrib-2026-254",
+   "epss": 0.00222,
+   "epss_percentile": 0.12836
   },
   {
    "id": "CVE-2026-118986",
