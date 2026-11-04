@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 4</span><span class="pill accent">1477 CVEs TRACKED</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 4</span><span class="pill accent">1491 CVEs TRACKED</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 4:</strong> 1477 CVEs tracked, filtered down to what needs action first. New this scan: 40 additions — a second tranche of 21 Google Chrome 157 flaws (8.3–9.6, fixed in 157.0.8103.38), nine from Oracle’s October CPU (8.2–10.0, topped by CVE-2026-87337, a 10.0 unauthenticated full compromise of Oracle Access Manager), six Apple flaws (8.2–9.1) across iOS, macOS and the rest of the line, three 9.8s from the Android November bulletin — including CVE-2026-58968, a remote escalation of privilege in the OAPV video codec — and CVE-2026-118391 (8.9), an unauthenticated memory-exhaustion flaw in the Elixir ecto library, fixed in 3.14.3. One tracked record also crossed the EPSS materiality line: CVE-2026-77690 (ManageEngine Key Manager Plus) now scores 0.156, the 96.8th percentile. Highlighted Drops, the Ones to Watch, and the grouped 1477-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 4:</strong> 1491 CVEs tracked, filtered down to what needs action first. New this scan: 14 additions — seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2), a Traefik ForwardAuth identity leak (8.7, fixed in 2.11.60 / 3.7.16), three Apple macOS flaws (8.1–8.2), a Google Chrome 157 DevTools RCE outside the sandbox (9.6, fixed in 157.0.8103.38), a ProSoft ICX35 login-lockout bypass (8.2, fixed in 1.14.158), and an authenticated RCE in Cisco UCS Central’s web-based management interface (fixed in 2.1(2c)). Highlighted Drops, the Ones to Watch, and the grouped 1491-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
 
@@ -429,7 +429,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>1477</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>1491</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 4</b><span>Last updated — hourly scans</span></div>
@@ -447,11 +447,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 1477 CVEs</label>
+      <label for="cveSearch">Search all 1491 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 1477 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 1491 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -496,7 +496,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 4 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1217 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — the latest additions include the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 4 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1230 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — the latest additions include seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 2 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -504,18 +504,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1217 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1230 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 1477 CVEs</h2><p>Every entry from the Nov 4 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 1491 CVEs</h2><p>Every entry from the Nov 4 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 1477.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">1477 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 1491.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">1491 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -537,7 +537,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 4 hourly scan — 40 records added (1477 CVEs tracked). The additions are a second tranche of 21 Google Chrome 157 flaws (8.3–9.6, all fixed in 157.0.8103.38); nine flaws from Oracle’s October 2026 Critical Patch Update (8.2–10.0, including CVE-2026-87337, a 10.0 unauthenticated full compromise of Oracle Access Manager, and 9.8s in Oracle Data Integrator and Access Manager); six Apple flaws (8.2–9.1) across iOS, iPadOS, macOS, tvOS, visionOS and watchOS; three 9.8s from the Android November 2026 security bulletin, including CVE-2026-58968, a remote escalation of privilege in the OAPV video codec; and CVE-2026-118391 (8.9), an unauthenticated memory-exhaustion flaw in the Elixir ecto library, fixed in 3.14.3. CVE-2026-77690 (ManageEngine Key Manager Plus, 8.8) also crossed the EPSS materiality threshold this scan — EPSS 0.156, 96.8th percentile. 1356 of 1477 records carry EPSS scores in total. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 4 hourly scan — 14 records added (1491 CVEs tracked). The additions are seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2 — including two 9.8s: a proxy out-of-bounds write and a client use-after-free); a Traefik ForwardAuth NTLM/Negotiate identity leak (8.7, fixed in 2.11.60 and 3.7.16); three Apple macOS flaws (8.1–8.2, fixed in macOS Golden Gate 27.2, Sequoia 15.8.2 and Tahoe 26.7.2); CVE-2026-121030, a Google Chrome 157 DevTools flaw (9.6) allowing RCE outside the sandbox, fixed in 157.0.8103.38; CVE-2026-119746, a ProSoft ICX35 login-lockout bypass (8.2, fixed in 1.14.158); and CVE-2026-76506, an authenticated RCE in Cisco UCS Central’s web-based management interface (fixed in 2.1(2c)). Across the full set, 64 records are flagged exploited in the wild, 48 are CISA KEV-listed, and 101 carry a public PoC — flags can overlap; the index groups each CVE once, by highest urgency. 1360 of 1491 records carry EPSS scores in total. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 <script id="cveData" type="application/json">
@@ -5895,6 +5895,36 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": null
   },
   {
+   "id": "CVE-2026-121952",
+   "title": "FreeRDP proxy out-of-bounds write via bitmap cache v2 capability (CWE-787) -> heap corruption",
+   "product": "FreeRDP < 3.32.2 (proxy)",
+   "score": 9.8,
+   "cvss": "9.8 (CVSS v3.1; 9.3 v4.0)",
+   "fixed": "3.32.2",
+   "published": "2026-11-04T16:17:47Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Client connecting to the proxy declares fewer than five cell caches in Confirm Active while the bitmap cache v2 cell array is accessed at fixed indices 0-4 -> heap corruption, heap data leakage to the backend, or crash. Scope (1).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-121953",
+   "title": "FreeRDP client rdpgfx dynamic virtual channel use-after-free (CWE-416) -> potential code execution",
+   "product": "FreeRDP < 3.32.2 (client)",
+   "score": 9.8,
+   "cvss": "9.8 (CVSS v3.1; 9.3 v4.0)",
+   "fixed": "3.32.2",
+   "published": "2026-11-04T16:17:47Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Malicious RDP server opens/closes a duplicate-name channel with a new ChannelId, overwriting the listener's single callback slot, then sends a PDU on the original channel -> crash the client or potentially execute code. Scope (1)+(2).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2025-65200",
    "title": "LocalStack CloudFormation deploy endpoint RCE via crafted templateURL content (lag-gap catch-up)",
    "product": "LocalStack 4.9.2",
@@ -6631,6 +6661,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-95733",
    "epss": 0.00235,
    "epss_percentile": 0.1451
+  },
+  {
+   "id": "CVE-2026-121030",
+   "title": "Google Chrome DevTools incorrect authorization -> RCE outside sandbox via crafted HTML page",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 9.6,
+   "cvss": "9.6 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:10Z (NVD); score landed 2026-11-04 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour; remote attacker leveraging social engineering potentially executes arbitrary code outside the sandbox via crafted HTML page (Chromium Medium). Scope (1)+(2).",
+   "epss": 0.0036,
+   "epss_percentile": 29.98
   },
   {
    "id": "CVE-2026-103593/CVE-2026-103594/CVE-2026-112709/CVE-2026-112710/CVE-2026-90442/CVE-2026-90465/CVE-2026-93857/CVE-2026-93865/CVE-2026-93866/CVE-2026-93434",
@@ -15103,6 +15148,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": null
   },
   {
+   "id": "CVE-2026-121958",
+   "title": "FreeRDP RDPGFX client heap out-of-bounds write via delete_surface (CWE-122)",
+   "product": "FreeRDP <= 3.32.1 (client)",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1; 8.7 v4.0)",
+   "fixed": "3.32.2",
+   "published": "2026-11-04T16:17:48Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Malicious or man-in-the-middle RDP server creates surfaceId 0xFFFF, closes the RDPGFX channel, sends repeated DELETESURFACE PDUs, then ENDFRAME/RESETGRAPHICS -> HashTable_GetKeys writes past its allocated key array (heap OOB write). Scope (1).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2010-20125",
    "title": "DedeCMS file inclusion in plus/carbuyaction.php -> local file disclosure (old CVE, newly published)",
    "product": "DedeCMS before 5.7",
@@ -16397,6 +16457,81 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-95735",
    "epss": 0.00223,
    "epss_percentile": 0.13
+  },
+  {
+   "id": "CVE-2026-121955",
+   "title": "FreeRDP smartcard emulation use-after-free in Emulate_SCardReleaseContext (CWE-416)",
+   "product": "FreeRDP < 3.32.2 (client, smartcard emulation)",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v4.0; 7.5 v3.1)",
+   "fixed": "3.32.2",
+   "published": "2026-11-04T16:17:48Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Malicious server sends ESTABLISHCONTEXT, long-timeout GETSTATUSCHANGE, then RELEASECONTEXT smartcard IRPs -> corrupt heap memory or crash clients using smartcard emulation. Scope (1).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-121956",
+   "title": "FreeRDP WinPR Kerberos SSPI double free in retrieveSomeTgt (CWE-415) by unauthenticated remote clients",
+   "product": "FreeRDP < 3.32.2 (server)",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v4.0; 7.5 v3.1)",
+   "fixed": "3.32.2",
+   "published": "2026-11-04T16:17:48Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Unauthenticated remote clients send a crafted NLA/CredSSP u2u TGT request whose server-name component contains '@' -> heap corruption and server process crash. Scope (1).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-121957",
+   "title": "FreeRDP RDPGFX ResetGraphics race use-after-free (CWE-416) -> heap OOB read/write",
+   "product": "FreeRDP < 3.32.2 (client)",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v4.0; 7.5 v3.1)",
+   "fixed": "3.32.2",
+   "published": "2026-11-04T16:17:48Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Malicious RDP server races ResetGraphics against the planar bitmap decoder (compressed bitmaps >= 32 bpp) -> heap use-after-free or out-of-bounds read/write on shared planar buffers. Scope (1).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-121964",
+   "title": "FreeRDP RD Gateway RPC client heap buffer overflow via rpc_client_recv_fragment (CWE-122) -> potential arbitrary code execution",
+   "product": "FreeRDP < 3.32.2 (client)",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v4.0; 7.5 v3.1)",
+   "fixed": "3.32.2",
+   "published": "2026-11-04T16:17:49Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Malicious or compromised RD Gateway sends crafted RPC fragments with manipulated alloc_hint/frag_length -> overwrites client heap memory with attacker-controlled data, crash or potentially arbitrary code execution. Scope (1)+(2).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-121966",
+   "title": "Traefik ForwardAuth NTLM/Negotiate identity leak via shared auth-server connection pool -> unauthenticated attacker acts as another user",
+   "product": "Traefik 2.x < 2.11.60, 3.x < 3.7.16",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v3.1; 7.0 v4.0)",
+   "fixed": "2.11.60; 3.7.16",
+   "published": "2026-11-04T16:17:50Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. ForwardAuth subrequests (and 3.7 Ingress NGINX auth-url requests) go through an auth-server connection pool shared by all clients, exposing connection-bound NTLM/Negotiate auth; unauthenticated attacker reuses another user's authenticated connection and receives the victim's identity via authResponseHeaders to access backends as that user. Scope (1)+(3).",
+   "epss": null,
+   "epss_percentile": null
   },
   {
    "id": "CVE-2023-7357",
@@ -21049,6 +21184,51 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 0.3924
   },
   {
+   "id": "CVE-2026-119746",
+   "title": "ProSoft Technology ICX35 login lockout bypass via client-side cookie deletion -> unlimited password guessing",
+   "product": "ProSoft Technology ICX35 (X35-HWC-A, ICX35-HWC-E) integrated module web page",
+   "score": 8.2,
+   "cvss": "8.2 (CVSS v4.0; 5.9 v3.1)",
+   "fixed": "1.14.158",
+   "published": "2026-11-04T16:17:45Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Account lockout enforced in client-side JavaScript; remote attacker resets the lockout by deleting browser cookies and continues submitting password guesses against the device web management interface. Scope (1)+(3).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-112562",
+   "title": "Apple macOS directory-path parsing issue -> malicious app breaks out of its sandbox",
+   "product": "macOS (Golden Gate 27.2, Sequoia 15.8.2, Tahoe 26.7.2)",
+   "score": 8.2,
+   "cvss": "8.2",
+   "fixed": "macOS Golden Gate 27.2; macOS Sequoia 15.8.2; macOS Tahoe 26.7.2",
+   "published": "2026-10-26T21:17:50Z (NVD); score landed 2026-11-04 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Apple Oct-26 batch, NVD score landed this hour. Scope (1), sandbox-escape precedent.",
+   "epss": 0.00218,
+   "epss_percentile": 12.45
+  },
+  {
+   "id": "CVE-2026-112569",
+   "title": "Apple macOS access issue -> app breaks out of its sandbox",
+   "product": "macOS (Golden Gate 27.2, Sequoia 15.8.2, Tahoe 26.7.2)",
+   "score": 8.2,
+   "cvss": "8.2",
+   "fixed": "macOS Golden Gate 27.2; macOS Sequoia 15.8.2; macOS Tahoe 26.7.2",
+   "published": "2026-10-26T21:17:52Z (NVD); score landed 2026-11-04 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Apple Oct-26 batch, NVD score landed this hour. Scope (1), sandbox-escape precedent.",
+   "epss": 0.00216,
+   "epss_percentile": 12.08
+  },
+  {
    "id": "CVE-2026-101770",
    "title": "Oracle MySQL Server/Cluster client programs unauthenticated takeover (difficult to exploit)",
    "product": "Oracle MySQL Server 8.4.0-8.4.12 / 9.7.0-9.7.3 / 26.7.0-26.7.1; MySQL Cluster 8.0.0-8.0.49 / 8.4.0-8.4.12 / 9.7.0-9.7.3 / 26.7.0-26.7.1 (Client programs)",
@@ -22041,6 +22221,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 0.2397
   },
   {
+   "id": "CVE-2026-112482",
+   "title": "Apple macOS out-of-bounds write -> attacker on local network corrupts process memory",
+   "product": "macOS (Golden Gate 27.2, Sequoia 15.8.2, Tahoe 26.7.2)",
+   "score": 8.1,
+   "cvss": "8.1",
+   "fixed": "macOS Golden Gate 27.2; macOS Sequoia 15.8.2; macOS Tahoe 26.7.2",
+   "published": "2026-10-26T21:17:38Z (NVD); score landed 2026-11-04 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Apple Oct-26 batch, NVD score landed this hour; OOB write addressed with improved bounds checking. Scope (1), sandbox-escape precedent (per 112498/84539 adds).",
+   "epss": 0.00216,
+   "epss_percentile": 12.07
+  },
+  {
    "id": "CVE-2026-115190",
    "title": "Mautic insecure deserialization (PHP object injection) in segment filters/custom fields",
    "product": "Mautic",
@@ -22503,6 +22698,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-75775",
    "epss": 0.00605,
    "epss_percentile": 0.4907
+  },
+  {
+   "id": "CVE-2026-76506",
+   "title": "Cisco UCS Central Software web-based management interface remote code execution (authenticated)",
+   "product": "Cisco UCS Central Software < 2.1(2c)",
+   "score": 7.6,
+   "cvss": "~7.6 (CVSS v3.1, computed from Cisco advisory vector AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L; not in NVD yet; criterion 2 regardless of score)",
+   "fixed": "2.1(2c); migrate from 2.0 and earlier to a fixed release",
+   "published": "2026-11-04 (Cisco PSIRT advisory cisco-sa-cucs-rce-LzHSFRDQ, RSS 16:00Z; not yet in NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported (Cisco PSIRT: not aware of exploitation or public announcements); not in CISA KEV; not in VulnCheck KEV. Authenticated remote attacker sends a crafted HTTP request to the web-based management interface (insufficient input validation) -> arbitrary command execution, arbitrary file write, sensitive info disclosure. Scope (2) RCE on a management interface.",
+   "epss": null,
+   "epss_percentile": null
   },
   {
    "id": "CVE-2026-111255",
@@ -24235,7 +24445,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning 1477 tracked CVEs ...", c:"", p:300},
+    {t:"Scanning 1491 tracked CVEs ...", c:"", p:300},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
@@ -24562,7 +24772,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 1477 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 1491 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
