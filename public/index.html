@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 4</span><span class="pill accent">1580 CVEs TRACKED</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 4</span><span class="pill accent">1591 CVEs TRACKED</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 4:</strong> 1580 CVEs tracked, filtered down to what needs action first. New this scan: 16 additions — a GPUStack auth-bypass trio (9.8 loopback-trust unauthenticated admin access, 9.1 SAML signature-verification bypass, 8.8 cluster proxy authorization bypass), a 9.9 Yuxi sandbox isolation failure with cross-tenant access, a five-flaw VitaFit batch (a 9.6 cloud API broken-access-control flaw leaking temporary AWS credentials, plus Android TLS validation, hardcoded credentials, session, and URI-scheme token flaws), an 8.7 Amazon EKS Network Policy Agent isolation bypass, a 9.3 Readest unauthenticated SSRF and 8.6 desktop path traversal, an 8.1 h2o access-log buffer overflow, and three rescore adds (9.8 im3x Scriptables command injection, 9.8 gohttpserver Zip Slip, and a gohttpserver hardcoded session secret). Highlighted Drops, the Ones to Watch, and the grouped 1580-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 4:</strong> 1591 CVEs tracked, filtered down to what needs action first. New this scan: 11 additions — a 9.8 VitaFit cloud API authentication bypass handing out full victim sessions and an 8.7 VitaFit open storage bucket exposing 129,947 objects, a 9.6 Pocket ID email-verification bypass (2.2.0–2.12.0), a 9.2 GLPI unauthenticated 2FA bypass (11.0.0–11.0.8) and an 8.7 GLPI authenticated SQL injection, an 8.8 Dulwich commit-parser divergence leading to code execution on install/build hosts, an 8.8 VeraCrypt local deserialization heap overflow, an 8.7 tsParticles MCP-server process DoS, an 8.5 radare2 command injection, an 8.2 GitLab CE/EE LDAP account takeover, and a 7.5 Campcodes Loan Management unauthenticated upload to webshell RCE — the hour’s one new public-PoC entry. Highlighted Drops, the Ones to Watch, and the grouped 1591-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
 
@@ -429,7 +429,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>1580</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>1591</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 4</b><span>Last updated — hourly scans</span></div>
@@ -447,11 +447,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 1580 CVEs</label>
+      <label for="cveSearch">Search all 1591 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 1580 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 1591 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -496,7 +496,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 4 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1270 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — the latest additions include a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 4 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1313 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — the latest additions include a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 2 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -504,18 +504,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1270 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1313 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 1580 CVEs</h2><p>Every entry from the Nov 4 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 1591 CVEs</h2><p>Every entry from the Nov 4 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 1580.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">1580 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 1591.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">1591 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -537,7 +537,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 4 hourly scan — 16 records added (1580 CVEs tracked). The additions are headlined by a GPUStack auth-bypass trio (9.8 loopback-trust unauthenticated admin access, fixed in 2.2.0; 9.1 SAML callback signature-verification bypass and 8.8 cluster apiserver proxy authorization bypass, both fixed in 2.2.2), a 9.9 Yuxi sandbox isolation failure enabling cross-tenant access and internal service compromise (fixed in 0.7.1), a five-flaw VitaFit batch — a 9.6 cloud API broken-access-control flaw on the s3/token endpoint exposing temporary AWS credentials (server-side fix deployed), plus four Android flaws (8.8 TLS certificate validation, 8.7 hardcoded credentials, 8.6 insecure session management, 8.2 URI-scheme token hijacking; all fixed in 2.8.1.0), an 8.7 Amazon EKS Network Policy Agent isolation bypass (fixed in 1.3.7 / VPC CNI 1.22.3), a 9.3 Readest unauthenticated SSRF and an 8.6 Readest desktop path traversal (both fixed in 0.11.10), an 8.1 h2o access-log buffer overflow, and three rescore adds (9.8 im3x Scriptables command injection, 9.8 gohttpserver Zip Slip, and an unscored gohttpserver hardcoded session secret). Across the full set, 64 records are flagged exploited in the wild, 48 are CISA KEV-listed, and 107 carry public PoCs. 1495 of 1580 records carry EPSS scores. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 4 hourly scan — 11 records added (1591 CVEs tracked). The additions are: CVE-2026-54384, a 9.8 VitaFit cloud API authentication bypass via POST /front/login/sns/ yielding a full victim session (server-side fix deployed before 2026-10-30), and CVE-2026-54381, an 8.7 VitaFit misconfigured cloud storage bucket allowing unauthenticated listing/download of 129,947 objects (server-side fix deployed); CVE-2026-115770, a 9.6 Pocket ID 2.2.0–2.12.0 email-verification token confusion letting an ordinary user verify an arbitrary address (fixed in 2.12.0); CVE-2026-52848, a 9.2 GLPI 11.0.0–11.0.8 unauthenticated one-time-password (2FA) bypass at login (fixed in 11.0.8), and CVE-2026-47678, an 8.7 GLPI authenticated SQL injection via the dropdown values endpoint (fixed in 10.0.26 / 11.0.8); CVE-2026-122299, an 8.8 Dulwich &lt;1.2.20 commit-parser duplicate tree-header divergence leading to unreviewed code execution on install/build hosts (fixed in 1.2.20); CVE-2026-77372, an 8.8 VeraCrypt &lt;1.26.30 local deserialization heap overflow at the root CoreService boundary (fixed in 1.26.30); CVE-2026-76892, an 8.7 tsParticles @tsparticles/mcp-server &lt;4.3.1 unauthenticated malformed-JSON process crash / DoS (fixed in 4.3.1); CVE-2026-108387, an 8.5 radare2 &lt;6.2.2 command injection via a crafted binary (fixed in 6.2.2); CVE-2026-15723, an 8.2 GitLab CE/EE authenticated LDAP-backed account takeover via OmniAuth SAML+LDAP auto-linking (fixed in 19.3.6 / 19.4.3 / 19.5.1); and CVE-2026-122047, a 7.5 Campcodes Complete Advance Loan Management System 1.0 unauthenticated unrestricted file upload to webshell RCE with a public exploit and no fix stated. Across the full set, 64 records are flagged exploited in the wild, 48 are CISA KEV-listed, and 108 carry public PoCs. 1496 of 1591 records carry EPSS scores. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 <script id="cveData" type="application/json">
@@ -5682,6 +5682,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 50.79
  },
  {
+  "id": "CVE-2026-54384",
+  "title": "VitaFit cloud API: authentication bypass via POST /front/login/sns/ -> full victim session",
+  "product": "VitaFit cloud API (before 2026-10-30)",
+  "score": 9.8,
+  "cvss": "9.8 (CVSS v3.1)",
+  "fixed": "server-side fix pre-2026-10-30",
+  "published": "2026-11-04T23:17:48Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "CWE-290: remote attacker submits a linked Google/Facebook account identifier to POST /front/login/sns/ without IdP proof-of-ownership, obtaining a full session for the victim account -> read/modify profile, delete auth record (locks out legitimate user). Server-side fixed before 2026-10-30. VulnCheck advisory.",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2025-65200",
   "title": "LocalStack CloudFormation deploy endpoint RCE via crafted templateURL content (lag-gap catch-up)",
   "product": "LocalStack 4.9.2",
@@ -6474,6 +6489,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "poc": false,
   "status": "Any authenticated user could call POST /front/user/s3/token/ and obtain temporary AWS credentials to list the shared bucket and read/overwrite other users' files. Scope (1). NOT in CISA KEV; EPSS unscored (null).",
   "src": "https://www.vulncheck.com/advisories/vitafit-cloud-api-broken-access-control-via-s3-token-endpoint",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-115770",
+  "title": "Pocket ID 2.2.0-2.12.0: email-verification token confusion -> arbitrary email verified",
+  "product": "Pocket ID 2.2.0 - 2.12.0",
+  "score": 9.6,
+  "cvss": "9.6 (CVSS v3.1)",
+  "fixed": "2.12.0",
+  "published": "2026-11-04T23:17:18Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "CWE-345: email-verification token bound only to user identifier; UpdateUser can change account email without invalidating outstanding token, VerifyEmail marks the current address verified. Ordinary user verifies an arbitrary unused address; relying apps trusting verified email for account matching can link the attacker identity to another user account. Fixed 2.12.0.",
   "epss": null,
   "epss_percentile": null
  },
@@ -8277,6 +8307,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "No exploitation reported; not in CISA KEV. UAF in ngx_http_core_module: AIO enabled + SSI page with include virtual triggers use-after-free in the worker - memory corruption/worker crash; code execution on ASLR-disabled systems. F5 Critical 9.2. EPSS 0.00834, 57.65th percentile.",
   "epss": 0.00834,
   "epss_percentile": 57.787
+ },
+ {
+  "id": "CVE-2026-52848",
+  "title": "GLPI 11.0.0-11.0.8: unauthenticated one-time-password (2FA) verification bypass at login",
+  "product": "GLPI 11.0.0 - 11.0.8",
+  "score": 9.2,
+  "cvss": "9.2 (CVSS v4.0)",
+  "fixed": "11.0.8",
+  "published": "2026-11-04T23:17:46Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "CWE-288: crafted URL during login phase skips OTP verification, defeating two-factor authentication -> unauthenticated account access incl. admin accounts. Fixed 11.0.8.",
+  "epss": null,
+  "epss_percentile": null
  },
  {
   "id": "CVE-2022-51022",
@@ -15026,6 +15071,36 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-122299",
+  "title": "Dulwich <1.2.20: commit parser duplicate tree-header divergence -> unreviewed code execution on install/build host",
+  "product": "Dulwich <1.2.20 (Poetry 2.5.1 default git backend)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "1.2.20",
+  "published": "2026-11-04T23:17:23Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "CWE-115: _parse_commit resolves duplicate tree header to the last occurrence, diverging from core git; crafted commit shows benign tree to git reviewers/CI while Poetry dulwich-based checkout resolves attacker-controlled tree with malicious setup.py -> code execution on install/build host. Fixed 1.2.20. VulnCheck advisory published.",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-77372",
+  "title": "VeraCrypt <1.26.30: local deserialization heap overflow at root CoreService boundary",
+  "product": "VeraCrypt <1.26.30 (Unix/macOS/FreeBSD)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v4.0)",
+  "fixed": "1.26.30",
+  "published": "2026-11-04T23:17:58Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "CWE-125: untrusted length/count values in Serializer/VolumePassword deserialization paths (unprivileged GUI/CLI -> root CoreService helper); heap overflow + out-of-bounds reads. Documented exposure is local defense-in-depth. Fixed 1.26.30.",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2010-20125",
   "title": "DedeCMS file inclusion in plus/carbuyaction.php -> local file disclosure (old CVE, newly published)",
   "product": "DedeCMS before 5.7",
@@ -16375,6 +16450,51 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "poc": false,
   "status": "Hardcoded WeChat/Tencent QQ/Fitbit credentials extractable by decompiling the APK. Scope (1). NOT in CISA KEV; EPSS unscored (null).",
   "src": "https://www.vulncheck.com/advisories/vitafit-android-hardcoded-credentials-disclosure",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-47678",
+  "title": "GLPI 9.4.0-10.0.26 / 11.0.8: authenticated SQL injection via dropdown values endpoint",
+  "product": "GLPI 9.4.0 - 10.0.26, 11.0.0 - 11.0.8",
+  "score": 8.7,
+  "cvss": "8.7 (CVSS v4.0)",
+  "fixed": "10.0.26 / 11.0.8",
+  "published": "2026-11-04T23:17:34Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "CWE-89: any authenticated user submits crafted values to dropdown values fetching endpoint incorporated into a database query. Fixed 10.0.26 / 11.0.8.",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-54381",
+  "title": "VitaFit cloud API: misconfigured cloud storage bucket -> unauthenticated list/download of 129,947 objects",
+  "product": "VitaFit cloud API (before 2026-10-30)",
+  "score": 8.7,
+  "cvss": "8.7 (CVSS v4.0)",
+  "fixed": "server-side fix pre-2026-10-30",
+  "published": "2026-11-04T23:17:48Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "CWE-732: misconfigured cloud storage bucket allows unauthenticated attackers to list/download 129,947 objects incl. 126,881 user-uploaded profile images. Server-side fixed before 2026-10-30. VulnCheck advisory.",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-76892",
+  "title": "tsParticles @tsparticles/mcp-server <4.3.1: unauthenticated malformed JSON -> Node.js process crash (DoS)",
+  "product": "@tsparticles/mcp-server <4.3.1",
+  "score": 8.7,
+  "cvss": "8.7 (CVSS v4.0)",
+  "fixed": "4.3.1",
+  "published": "2026-11-04T23:17:58Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "CWE-248: JSON.parse outside a request-local error boundary in the POST /mcp handler; a single unauthenticated malformed JSON body raises a SyntaxError that terminates the Node.js process. Fixed 4.3.1.",
   "epss": null,
   "epss_percentile": null
  },
@@ -18572,6 +18692,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "poc": false,
   "status": "Traffic Manager gRPC accepts unauthenticated cluster-network callers; CreateIntercept targets any managed namespace without session check. NOT in CISA KEV; VulnCheck KEV negative. Scope (1).",
   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-102340",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-108387",
+  "title": "radare2 <6.2.2: crafted binary -> execvp command execution via dbg:// URI in bclass",
+  "product": "radare2 <6.2.2",
+  "score": 8.5,
+  "cvss": "8.5 (CVSS v4.0)",
+  "fixed": "6.2.2",
+  "published": "2026-11-04T23:17:18Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "CWE-78 OS command injection: attacker-controlled data from Pebble/Sega Mega Drive binary plugins reaches RBinInfo->bclass, radare2 reopens input through the debug IO plugin and passes attacker-controlled arguments to execvp() with radare2 process privileges. Fixed 6.2.2.",
   "epss": null,
   "epss_percentile": null
  },
@@ -21011,6 +21146,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-15723",
+  "title": "GitLab CE/EE 10.1-19.3.6/19.4.3/19.5.1: authenticated LDAP-backed account takeover via OmniAuth SAML+LDAP auto-linking",
+  "product": "GitLab CE/EE 10.1 - 19.3.6, 19.4 - 19.4.3, 19.5 - 19.5.1",
+  "score": 8.2,
+  "cvss": "8.2 (CVSS v3.1)",
+  "fixed": "19.3.6 / 19.4.3 / 19.5.1",
+  "published": "2026-10-22 (NVD; scored 2026-11-04T23:10:00Z bulk re-analysis)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "CWE-90: with OmniAuth SAML + LDAP auto-linking both enabled, an authenticated user takes over an existing LDAP-backed account via improper input sanitization in the LDAP email lookup path. Fixed 19.3.6 / 19.4.3 / 19.5.1. EPSS 0.0043 (37.5th).",
+  "epss": 0.00431,
+  "epss_percentile": 37.5
+ },
+ {
   "id": "CVE-2026-101770",
   "title": "Oracle MySQL Server/Cluster client programs unauthenticated takeover (difficult to exploit)",
   "product": "Oracle MySQL Server 8.4.0-8.4.12 / 9.7.0-9.7.3 / 26.7.0-26.7.1; MySQL Cluster 8.0.0-8.0.49 / 8.4.0-8.4.12 / 9.7.0-9.7.3 / 26.7.0-26.7.1 (Client programs)",
@@ -22631,6 +22781,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "poc": false,
   "status": "Authenticated insecure deserialization of ObjectMessage payloads -> arbitrary code execution on consumer applications. Score <8.0 but RCE-class. NOT in CISA KEV; VulnCheck KEV negative. Scope (2).",
   "src": "https://www.ibm.com/support/pages/node/7294664",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-122047",
+  "title": "Campcodes Complete Advance Loan Management System 1.0: unauthenticated unrestricted file upload -> webshell RCE",
+  "product": "Campcodes Complete Advance Loan Management System 1.0",
+  "score": 7.5,
+  "cvss": "7.5 (CVSS v2.0; v3.1 7.3; v4.0 5.5)",
+  "fixed": "none stated",
+  "published": "2026-11-04T23:17:23Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": true,
+  "status": "Unrestricted file upload via move_uploaded_file in /loan/application/banner.php (image argument); remotely exploitable, exploit publicly disclosed (TraceXLabs). No fix stated. RCE-class despite sub-8.0 score.",
   "epss": null,
   "epss_percentile": null
  },
@@ -24304,7 +24469,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning 1580 tracked CVEs ...", c:"", p:300},
+    {t:"Scanning 1591 tracked CVEs ...", c:"", p:300},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
@@ -24631,7 +24796,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 1580 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 1591 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
