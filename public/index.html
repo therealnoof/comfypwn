@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 4</span><span class="pill accent">1544 CVEs TRACKED</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 4</span><span class="pill accent">1564 CVEs TRACKED</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 4:</strong> 1544 CVEs tracked, filtered down to what needs action first. New this scan: 7 additions — four Linksys router flaws (two 10.0s on the E5350 and two 9.1s on the WRT54GL, all with public exploits and no fix), a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin, and an 8.6 DeepSeek Harness missing-authentication command execution. The Linksys four land in the public-PoC group; the other three are Ones to Watch, with no wild exploitation or CISA KEV listing flagged. Highlighted Drops, the Ones to Watch, and the grouped 1544-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 4:</strong> 1564 CVEs tracked, filtered down to what needs action first. New this scan: 20 additions — a 10.0 Comfast router path traversal (public exploit, no fix), a 9.8 IBM Watson Speech Services use-after-free RCE (unauthenticated), a 9.8 vtenext CRM unauthenticated admin takeover via password reset, a 9.1 Sonatype Nexus Pro disabled-account sign-in bypass (rescored from unscored), a six-flaw IBM MQ/MFT batch (two authenticated RCEs, an integer overflow, an XXE, and a deserialization RCE), a three-flaw Mistral Vibe RCE trio (all fire before the trust prompt), two Telepresence gRPC auth flaws, two CESNET ipfixcol2 memory-safety flaws, plus a vtenext SQLi account takeover, a WebVirtCloud REST authorization flaw, a SumatraPDF hostname-validation MITM, and a reSIProcate TURN-client heap overflow. Highlighted Drops, the Ones to Watch, and the grouped 1564-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
 
@@ -429,7 +429,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>1544</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>1564</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 4</b><span>Last updated — hourly scans</span></div>
@@ -447,11 +447,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 1544 CVEs</label>
+      <label for="cveSearch">Search all 1564 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 1544 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 1564 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -511,11 +511,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 1544 CVEs</h2><p>Every entry from the Nov 4 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 1564 CVEs</h2><p>Every entry from the Nov 4 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 1544.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">1544 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 1564.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">1564 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -537,7 +537,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 4 hourly scan — 7 records added (1544 CVEs tracked). The additions are four Linksys router flaws — two 10.0s on the E5350 (a setup-wizard OS command injection and a missing-authentication flaw) and two 9.1s on the WRT54GL (ping- and traceroute-diagnostic OS command injections), all with public exploits and no fix — a 9.1 WPO365 SAML capture-replay authentication bypass to admin (fixed in 45.2), an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin (fixed in 3.98.0), and an 8.6 DeepSeek Harness missing-authentication local command execution (fixed in 0.1.2-alpha.2). Across the full set, 64 records are flagged exploited in the wild, 48 are CISA KEV-listed, and 106 carry a public PoC — flags can overlap; the index groups each CVE once, by highest urgency. 1492 of 1544 records carry EPSS scores. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 4 hourly scan — 20 records added (1564 CVEs tracked). The additions are headlined by a 10.0 Comfast router path traversal with a public exploit (no fix), a 9.8 IBM Watson Speech Services Cartridge use-after-free RCE (unauthenticated), a 9.8 vtenext CRM unauthenticated admin takeover via password reset (fixed in 25.02.1), a 9.1 Sonatype Nexus Repository 3 Pro sign-in bypass (rescored from unscored), a six-flaw IBM MQ/MFT batch (fixes in IBM support nodes 7293510/7294498/7294503/7294641/7294654/7294664), a three-flaw Mistral Vibe RCE trio (fixed in 2.25.7 / 3.0.3 / 2.25.5), two Telepresence gRPC auth flaws (fixed in 2.31.0), two CESNET ipfixcol2 memory-safety flaws (fixed in 2.9.0), and eight more (vtenext SQLi account takeover, WebVirtCloud REST authorization, SumatraPDF hostname validation, reSIProcate TURN client, IBM MQ XXE, IBM MQ deserialization). Across the full set, 64 records are flagged exploited in the wild, 48 are CISA KEV-listed, and 107 carry public PoCs. 1492 of 1564 records carry EPSS scores. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 <script id="cveData" type="application/json">
@@ -1351,6 +1351,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "poc": true,
   "status": "Public exploit available per NVD description; NOT in CISA KEV; VulnCheck KEV negative 2026-11-04. Missing authentication in Setup Wizard save_settings (wizard_router_pwd); remote. Scope (1)+(3).",
   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-121933",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-122013",
+  "title": "Comfast CF-WR632AX path traversal via filename arg in webmgnt multipart parser (remote, public exploit)",
+  "product": "Comfast CF-WR632AX 2.6.0.1 (router)",
+  "score": 10.0,
+  "cvss": "10.0 (CVSS v3.1; 9.3 v4.0)",
+  "fixed": "None known",
+  "published": "2026-11-04",
+  "exploited": false,
+  "kev": false,
+  "poc": true,
+  "status": "Remote path traversal via filename argument in /usr/bin/webmgnt multipart parser. Public exploit published (vuldb). No fix known. NOT in CISA KEV; VulnCheck KEV negative. Scope (1).",
+  "src": "https://vuldb.com/cve/CVE-2026-122013",
   "epss": null,
   "epss_percentile": null
  },
@@ -5570,6 +5586,38 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-82418",
+  "title": "IBM Watson Speech Services Cartridge use-after-free -> unauthenticated remote code execution",
+  "product": "IBM Watson Speech Services Cartridge 4.0.0\u20135.4.0",
+  "score": 9.8,
+  "cvss": "9.8 (CVSS v3.1)",
+  "fixed": "Fix packs per IBM node 7293510",
+  "published": "2026-11-04",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Use-after-free -> arbitrary code execution, unauthenticated remote. NOT in CISA KEV; VulnCheck KEV negative. Scope (1)+(2).",
+  "src": "https://www.ibm.com/support/pages/node/7293510",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2025-71457",
+  "title": "vtenext CRM unauthenticated password reset -> change any account password -> admin takeover",
+  "product": "vtenext 25.02 (<25.02.1)",
+  "score": 9.8,
+  "cvss": "9.8 (CVSS v3.1)",
+  "fixed": "25.02.1",
+  "published": "2026-11-04",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Unauthenticated auth bypass via hub/rpwd.php; log in as admin with no 2FA. Research write-up (0xbro). NOT in CISA KEV; VulnCheck KEV negative. Scope (1)+(3).",
+  "src": "https://0xbro.red/posts/vtenext-25-02-a-three-way-path-to-rce/",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2025-65200",
   "title": "LocalStack CloudFormation deploy endpoint RCE via crafted templateURL content (lag-gap catch-up)",
   "product": "LocalStack 4.9.2",
@@ -9544,6 +9592,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "poc": false,
   "status": "NOT in CISA KEV; VulnCheck KEV negative 2026-11-04. Non-functional anti-replay check in Saml2_Service::check_message_id() never persists processed SAML message IDs; captured validly-signed SAMLResponse can be replayed to log in as the victim including administrators. Scope (1)+(3).",
   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-122220",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-113373",
+  "title": "Sonatype Nexus Repository 3 Pro: disabled/locked accounts sign back in via SAML/OAuth2 (roles restored)",
+  "product": "Sonatype Nexus Repository 3 Pro",
+  "score": 9.1,
+  "cvss": "9.1 (CVSS v4.0, secondary/VulnCheck CNA; NVD)",
+  "fixed": "Not enumerated in NVD pull",
+  "published": "2026-11-04",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Disabled/locked accounts sign back in via SAML/OAuth2/OpenID Connect with IdP creds; new session with account roles. Declined at 15:30 ET as unscored; NVD now scores it 9.1. NOT in CISA KEV; VulnCheck KEV negative. Scope (1).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-113373",
   "epss": null,
   "epss_percentile": null
  },
@@ -14738,6 +14802,86 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 25.291999999999998
  },
  {
+  "id": "CVE-2026-11376",
+  "title": "IBM MQ integer overflow in subscription processing (DoS or potential code exec)",
+  "product": "IBM MQ 9.2/9.3/9.4 LTS, 9.4 CD, 10.0",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "Fix packs per IBM node 7294498",
+  "published": "2026-11-04",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Authenticated integer overflow in subscription processing -> DoS or potential code execution. NOT in CISA KEV; VulnCheck KEV negative. Scope (1).",
+  "src": "https://www.ibm.com/support/pages/node/7294498",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-13292",
+  "title": "IBM MQ MFT malicious environment variables via transfer request metadata -> arbitrary code execution",
+  "product": "IBM MQ Managed File Transfer",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "Fix packs per IBM node 7294641",
+  "published": "2026-11-04",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Authenticated arbitrary code execution via malicious env vars in transfer request metadata. NOT in CISA KEV; VulnCheck KEV negative. Scope (1)+(2).",
+  "src": "https://www.ibm.com/support/pages/node/7294641",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-122134",
+  "title": "Mistral Vibe RCE via malicious Git clean/process filter drivers at repo open (before trust prompt)",
+  "product": "Mistral Vibe <2.25.7",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1; 8.6 v4.0)",
+  "fixed": "2.25.7",
+  "published": "2026-11-04",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "RCE via malicious Git filter drivers; executes at repo open BEFORE any trust prompt. NOT in CISA KEV; VulnCheck KEV negative. Scope (1)+(2).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-122134",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-122135",
+  "title": "Mistral Vibe RCE via repo-configured gpg.program + signed commit (before trust prompt)",
+  "product": "Mistral Vibe <3.0.3",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1; 8.6 v4.0)",
+  "fixed": "3.0.3",
+  "published": "2026-11-04",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "RCE via repo-configured gpg.program + signed commit, before trust prompt. NOT in CISA KEV; VulnCheck KEV negative. Scope (1)+(2).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-122135",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-122133",
+  "title": "Mistral Vibe Windows untrusted search path: malicious git.exe in repo root executes at session start",
+  "product": "Mistral Vibe <2.25.5 (Windows)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1; 8.6 v4.0)",
+  "fixed": "2.25.5",
+  "published": "2026-11-04",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Untrusted search path: malicious git.exe in repo root executes at session start. NOT in CISA KEV; VulnCheck KEV negative. Scope (1)+(2).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-122133",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2010-20125",
   "title": "DedeCMS file inclusion in plus/carbuyaction.php -> local file disclosure (old CVE, newly published)",
   "product": "DedeCMS before 5.7",
@@ -16043,6 +16187,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 12.995999999999999
  },
  {
+  "id": "CVE-2026-122127",
+  "title": "CESNET ipfixcol2 heap overflow in Lz4Decoder from unauthenticated peers",
+  "product": "CESNET ipfixcol2 2.7.1\u2013<2.9.0",
+  "score": 8.7,
+  "cvss": "8.7 (CVSS v4.0)",
+  "fixed": "2.9.0",
+  "published": "2026-11-04",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Heap overflow in Lz4Decoder from unauthenticated peers -> crash. NOT in CISA KEV; VulnCheck KEV negative. Scope (1).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-122127",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2023-7357",
   "title": "FlexNet Publisher lmadmin web UI remote code execution (CWE-829)",
   "product": "FlexNet Publisher (lmadmin web UI) before 2023 R2 (11.19.4.0)",
@@ -17125,6 +17285,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": null
  },
  {
+  "id": "CVE-2025-71456",
+  "title": "vtenext CRM authenticated low-priv SQLi (fieldname) -> read password-reset tokens -> account takeover",
+  "product": "vtenext (<25.02.2)",
+  "score": 8.6,
+  "cvss": "8.6 (CVSS v4.0)",
+  "fixed": "25.02.2",
+  "published": "2026-11-04",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Authenticated low-priv SQLi in fieldname param -> read password-reset tokens -> account takeover. NOT in CISA KEV; VulnCheck KEV negative. Scope (1).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2025-71456",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-103092",
   "title": "IBM Langflow OSS SQL command execution via improper access control",
   "product": "IBM Langflow OSS 1.0.0 through 1.12.3",
@@ -18158,6 +18334,38 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "No exploitation reported; not in CISA KEV. Heap buffer overflow handling GLX RenderLarge requests where dataBytes exceeds cmdlen; an authenticated X client can trigger it, causing crashes or code execution in X server context. Fixed X server 21.1.25 / XWayland 24.1.14. EPSS unscored (brand new).",
   "epss": 0.00193,
   "epss_percentile": 9.054
+ },
+ {
+  "id": "CVE-2026-11724",
+  "title": "IBM MQ MFT improper metadata validation during script execution -> code execution on MFT agent host",
+  "product": "IBM MQ Managed File Transfer",
+  "score": 8.5,
+  "cvss": "8.5 (CVSS v3.1)",
+  "fixed": "Fix packs per IBM node 7294503",
+  "published": "2026-11-04",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Authenticated code execution on the MFT agent host via improper metadata validation. NOT in CISA KEV; VulnCheck KEV negative. Scope (1)+(2).",
+  "src": "https://www.ibm.com/support/pages/node/7294503",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-102340",
+  "title": "Telepresence Traffic Manager gRPC accepts unauthenticated cluster-network callers (arbitrary namespace intercept)",
+  "product": "Telepresence <2.31.0",
+  "score": 8.5,
+  "cvss": "8.5 (CVSS v3.1)",
+  "fixed": "2.31.0",
+  "published": "2026-11-04",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Traffic Manager gRPC accepts unauthenticated cluster-network callers; CreateIntercept targets any managed namespace without session check. NOT in CISA KEV; VulnCheck KEV negative. Scope (1).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-102340",
+  "epss": null,
+  "epss_percentile": null
  },
  {
   "id": "CVE-2025-68393",
@@ -19540,6 +19748,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 15.959000000000001
  },
  {
+  "id": "CVE-2026-122130",
+  "title": "CESNET ipfixcol2 integer overflow in Forwarder plugin (unauthenticated IPFIX exporters -> heap buffer writes/crash)",
+  "product": "CESNET ipfixcol2 2.3.0\u2013<2.9.0",
+  "score": 8.3,
+  "cvss": "8.3 (CVSS v4.0; 8.2 v3.1)",
+  "fixed": "2.9.0",
+  "published": "2026-11-04",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Integer overflow in Forwarder plugin: unauthenticated IPFIX exporters cause heap buffer 2-byte writes/crash. NOT in CISA KEV; VulnCheck KEV negative. Scope (1).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-122130",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2023-42442",
   "title": "JumpServer improper authentication -> unauthenticated session-replay download (bastion host)",
   "product": "JumpServer 3.0.0 before 3.5.5 / 3.6.4",
@@ -20513,6 +20737,54 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "No exploitation reported; not in CISA KEV. Commit eba0549bc7d1 swapped capable() for has_ns_capability_noaudit() to silence SELinux audits; different credential semantics let a user change a file gid to another group they belong to and evade enforced group quotas. EPSS 0.00185 (8.08th percentile).",
   "epss": 0.0045,
   "epss_percentile": 39.241
+ },
+ {
+  "id": "CVE-2026-102339",
+  "title": "Telepresence Tunnel gRPC endpoint does not verify session ID ownership",
+  "product": "Telepresence <2.31.0",
+  "score": 8.2,
+  "cvss": "8.2 (CVSS v3.1)",
+  "fixed": "2.31.0",
+  "published": "2026-11-04",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Tunnel gRPC endpoint does not verify session ID ownership. NOT in CISA KEV; VulnCheck KEV negative. Scope (1).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-102339",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-115758",
+  "title": "SumatraPDF HTTPS requests skip hostname validation (MITM by positioned attacker with trusted cert)",
+  "product": "SumatraPDF \u22643.6.1",
+  "score": 8.2,
+  "cvss": "8.2 (CVSS v4.0)",
+  "fixed": "commit bd30134175e897dd5ed0d7fd14acce52eeca7183",
+  "published": "2026-11-04",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "HTTPS update/crash-symbol requests skip hostname validation -> MITM by positioned network attacker holding a Windows-trusted cert. NOT in CISA KEV; VulnCheck KEV negative. Scope (1).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-115758",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-122126",
+  "title": "reSIProcate reTurn client heap buffer overflow via malicious TURN server (client-side)",
+  "product": "reSIProcate reTurn client \u22641.14.0",
+  "score": 8.2,
+  "cvss": "8.2 (CVSS v4.0; 5.9 v3.1)",
+  "fixed": "Not enumerated in NVD pull",
+  "published": "2026-11-04",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Heap buffer overflow triggered by malicious TURN server (57KB past 8KB buffer); client-side, primarily DoS. NOT in CISA KEV; VulnCheck KEV negative. Scope (1) via v4.0.",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-122126",
+  "epss": null,
+  "epss_percentile": null
  },
  {
   "id": "CVE-2026-101770",
@@ -21505,6 +21777,38 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 23.97
  },
  {
+  "id": "CVE-2026-122224",
+  "title": "WebVirtCloud missing REST API authorization: low-priv users migrate/undefine other users' VMs",
+  "product": "WebVirtCloud (through commit bb920b0)",
+  "score": 8.1,
+  "cvss": "8.1 (CVSS v3.1)",
+  "fixed": "commit 1227674d8f5a5230e5c654267773aca4ebc5c717",
+  "published": "2026-11-04",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Missing authorization on REST API: low-priv users can migrate/undefine other users' VMs (management-interface authz). NOT in CISA KEV; VulnCheck KEV negative. Scope (1).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-122224",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-13271",
+  "title": "IBM MQ MFT XXE in command queue processing (info disclosure/DoS)",
+  "product": "IBM MQ Managed File Transfer",
+  "score": 8.1,
+  "cvss": "8.1 (CVSS v3.1)",
+  "fixed": "Fix packs per IBM node 7294654",
+  "published": "2026-11-04",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Authenticated XXE in command queue processing -> sensitive info disclosure/DoS. NOT in CISA KEV; VulnCheck KEV negative. Scope (1).",
+  "src": "https://www.ibm.com/support/pages/node/7294654",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-115190",
   "title": "Mautic insecure deserialization (PHP object injection) in segment filters/custom fields",
   "product": "Mautic",
@@ -22073,6 +22377,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "No exploitation reported; not in CISA KEV. Authentication bypass via SSO email collision: when no WildApricot contact-ID mapping exists, the plugin falls back to a network-global get_user_by('email') lookup and issues a session cookie for the resolved user without proof of ownership; an attacker controlling a WildApricot contact whose email matches a WordPress subsite administrator's authenticates as that administrator on path-based Multisite. Precondition: attacker-held WildApricot membership + email match. EPSS unscored (brand new).",
   "epss": 0.00425,
   "epss_percentile": 36.893
+ },
+ {
+  "id": "CVE-2026-10859",
+  "title": "IBM MQ insecure deserialization of ObjectMessage payloads -> arbitrary code on consumer apps",
+  "product": "IBM MQ",
+  "score": 7.5,
+  "cvss": "7.5 (CVSS v3.1)",
+  "fixed": "Fix packs per IBM node 7294664",
+  "published": "2026-11-04",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Authenticated insecure deserialization of ObjectMessage payloads -> arbitrary code execution on consumer applications. Score <8.0 but RCE-class. NOT in CISA KEV; VulnCheck KEV negative. Scope (2).",
+  "src": "https://www.ibm.com/support/pages/node/7294664",
+  "epss": null,
+  "epss_percentile": null
  },
  {
   "id": "CVE-2026-114488",
@@ -23728,7 +24048,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning 1544 tracked CVEs ...", c:"", p:300},
+    {t:"Scanning 1564 tracked CVEs ...", c:"", p:300},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
@@ -24055,7 +24375,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 1544 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 1564 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
@@ -24076,10 +24396,10 @@ if(searchInput){ searchInput.addEventListener("input",applyCveView); }
    the only edit needed to extend the playlist.
    ============================================================ */
 var PLAYLIST=[
-  { title:"Neon Overdrive", artist:"HumanStudioEd", src:"assets/audio/neon-overdrive.mp3",   time:"3:10" },
-  { title:"Chrome Rain", artist:"Kulakovka", src:"assets/audio/chrome-rain.mp3",      time:"3:11" },
-  { title:"Mainframe Dreams", artist:"Ikoliks AJ", src:"assets/audio/mainframe-dreams.mp3", time:"2:01" },
-  { title:"Vice City Nights", artist:"DeltaX Music", src:"assets/audio/vice-city-nights.mp3", time:"3:07" }
+  { title:"Neon Overdrive",   artist:"HumanStudioEd", src:"assets/audio/neon-overdrive.mp3",   time:"3:10" },
+  { title:"Chrome Rain",      artist:"Kulakovka",     src:"assets/audio/chrome-rain.mp3",      time:"3:11" },
+  { title:"Mainframe Dreams", artist:"Ikoliks AJ",    src:"assets/audio/mainframe-dreams.mp3", time:"2:01" },
+  { title:"Vice City Nights", artist:"DeltaX Music",  src:"assets/audio/vice-city-nights.mp3", time:"3:07" }
 ];
 (function(){
   var section=document.getElementById("boombox"); if(!section) return;
