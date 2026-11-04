@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 4</span><span class="pill accent">1537 CVEs TRACKED</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 4</span><span class="pill accent">1544 CVEs TRACKED</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 4:</strong> 1537 CVEs tracked, filtered down to what needs action first. New this scan: 10 additions — two 9.8 flaws (a Firefox Networking privilege escalation and a GnuPG for Windows DACL flaw), a 9.6 Firefox sandbox escape, an 8.8 DataGerry SSTI RCE, and further Firefox, Symfony and macOS flaws at 8.1–8.8 — all Ones to Watch, with no wild exploitation, CISA KEV listing or public PoC flagged. Highlighted Drops, the Ones to Watch, and the grouped 1537-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 4:</strong> 1544 CVEs tracked, filtered down to what needs action first. New this scan: 7 additions — four Linksys router flaws (two 10.0s on the E5350 and two 9.1s on the WRT54GL, all with public exploits and no fix), a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin, and an 8.6 DeepSeek Harness missing-authentication command execution. The Linksys four land in the public-PoC group; the other three are Ones to Watch, with no wild exploitation or CISA KEV listing flagged. Highlighted Drops, the Ones to Watch, and the grouped 1544-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
 
@@ -429,7 +429,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>1537</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>1544</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 4</b><span>Last updated — hourly scans</span></div>
@@ -447,11 +447,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 1537 CVEs</label>
+      <label for="cveSearch">Search all 1544 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 1537 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 1544 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -496,7 +496,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 4 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1266 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — the latest additions include six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 4 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1270 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — the latest additions include a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 2 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -504,18 +504,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1266 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1270 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 1537 CVEs</h2><p>Every entry from the Nov 4 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 1544 CVEs</h2><p>Every entry from the Nov 4 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 1537.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">1537 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 1544.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">1544 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -537,7 +537,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 4 hourly scan — 10 records added (1537 CVEs tracked). The additions are a DataGerry SSTI RCE (8.8), a Symfony ScopingHttpClient credential disclosure (8.2), a GnuPG for Windows DACL flaw (9.8), six Firefox flaws — a Networking privilege escalation (9.8), a DOM Navigation sandbox escape (9.6), a Form Manager sandbox escape (8.8), a JavaScript Standard Library use-after-free (8.8), a DOM Navigation same-origin policy bypass (8.1) and an Audio/Video Playback flaw (8.1) — and a macOS sandbox escape (8.2). Across the full set, 64 records are flagged exploited in the wild, 48 are CISA KEV-listed, and 102 carry a public PoC — flags can overlap; the index groups each CVE once, by highest urgency. 1403 of 1537 records carry EPSS scores. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 4 hourly scan — 7 records added (1544 CVEs tracked). The additions are four Linksys router flaws — two 10.0s on the E5350 (a setup-wizard OS command injection and a missing-authentication flaw) and two 9.1s on the WRT54GL (ping- and traceroute-diagnostic OS command injections), all with public exploits and no fix — a 9.1 WPO365 SAML capture-replay authentication bypass to admin (fixed in 45.2), an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin (fixed in 3.98.0), and an 8.6 DeepSeek Harness missing-authentication local command execution (fixed in 0.1.2-alpha.2). Across the full set, 64 records are flagged exploited in the wild, 48 are CISA KEV-listed, and 106 carry a public PoC — flags can overlap; the index groups each CVE once, by highest urgency. 1492 of 1544 records carry EPSS scores. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 <script id="cveData" type="application/json">
@@ -599,8 +599,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": true,
   "status": "EXPLOITED IN THE WILD - Palo Alto Networks Unit 42 confirmed attacks on 2026-10-26 (SecurityOnline 2026-10-27T15:04Z): automated scanners began dropping webshells ~2 days after the patch shipped; each drop checked by a scanner within ~3s, then a human operator uploaded an ALFA Team webshell and tried to install gsocket. IoCs: webshells named yt + 7 hex chars in wp-content/uploads/, ALFA_DATA folder, traffic from 168.144.251.199. PoCs appeared Oct 23. NOT in CISA KEV. Image transformation handler incompletely binds normalized image operations and the output destination to its request signature; unauthenticated attacker reuses a signature from a legitimate public image URL, injects operations, traverses out of the cache directory, and writes an attacker-controlled PNG/PHP polyglot to an executable public media directory. Note: webshells observed in WordPress upload folders though the flaw is in the Joomla extension.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00772,
+  "epss_percentile": 55.818
  },
  {
   "id": "CVE-2026-104351/CVE-2026-104353/CVE-2026-104354/CVE-2026-105489/CVE-2026-105779/CVE-2026-105780/CVE-2026-105781",
@@ -659,8 +659,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": true,
   "status": "No exploitation reported; no public PoC; NOT in CISA KEV (catalog 2026.10.21, checked Oct 22). GitLab published detections (\"Onigmo native worker crash\", \"Org mode render error burst\"). Note: instances patched only to the Oct 12 fixed versions are STILL in range for this flaw. Oct 23 update: Ruby 4.0.9 / 3.4.12 / 3.3.13 released fixing the underlying Onigmo regex bugs (source installs on system Ruby need it too); fake CVE-2026-110264 GitHub PoC repo (OppositDeer) deleted. Oct 25 update: Konfirmity (Oct 25) reports a crash PoC has been public on GitHub since Oct 22 (one unauthenticated request crashes a GitLab worker) and one repo claims code execution, which Konfirmity has NOT verified; Suriq/VulnSea note the repos are scanners/auditors or an unverified claim. NOT a weaponized RCE PoC - no alert. Still no confirmed in-the-wild exploitation; still not in CISA KEV (Konfirmity, Oct 25).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.01349,
+  "epss_percentile": 71.563
  },
  {
   "id": "CVE-2026-112690",
@@ -704,8 +704,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "Public exploit published (vuldb entry). No confirmed in-the-wild exploitation.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00667,
+  "epss_percentile": 51.98700000000001
  },
  {
   "id": "CVE-2026-114383",
@@ -719,8 +719,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "Public exploit published (vuldb entry). No confirmed in-the-wild exploitation.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00653,
+  "epss_percentile": 51.425
  },
  {
   "id": "CVE-2026-114575",
@@ -734,8 +734,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "Public exploit published (vuldb entry). No confirmed in-the-wild exploitation.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.0221,
+  "epss_percentile": 82.647
  },
  {
   "id": "CVE-2026-115905",
@@ -749,8 +749,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": true,
   "status": "MATERIAL CHANGE 2026-10-31: public PoC exploit now available \u2014 zip2 maintainers publicly disclosed technical details and working PoC exploit code (meterpreter.org, 2026-10-27 'PoC Exploit Disclosed for Rust zip Crate Vulnerability'); Feedly CVE timeline records 'Proof of Concept (PoC) released' 2026-10-30 00:11 UTC (github.com/foxcornlab/zip-cloaking-scanner \u2014 repo returned 404 on 2026-10-31 check, possibly removed/renamed, but Feedly recorded it). Zip cloaking: LFH/CDFH parser differential -> arbitrary file write -> RCE in downstream services. No active in-the-wild exploitation confirmed; not in CISA KEV. Fix: zip 9.0.5.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.0032,
+  "epss_percentile": 25.121
  },
  {
   "id": "CVE-2026-116508",
@@ -764,8 +764,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": true,
   "status": "Public exploit published (vuldb entry). No confirmed in-the-wild exploitation; not in CISA KEV. Remote stack overflow via CONTENT_LENGTH in infostat.cgi. Same device as tracked CVE-2026-114575.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00609,
+  "epss_percentile": 49.268
  },
  {
   "id": "CVE-2026-120189",
@@ -1019,8 +1019,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": true,
   "status": "EXPLOITED per VulnCheck: added to VulnCheck KEV 2026-10-27 (date_added 2026-10-27T00:00:00Z); VulnCheck canaries reported exploitation 2026-10-27; four public exploit repos on GitHub since Oct 1-5 (VulnCheck XDB). NOT in CISA KEV. Unauthenticated attacker puts a newline in a metadata value, splitting the ExifTool stdin line into two arguments and injecting arbitrary pseudo-tags (-FileName, -Directory, -SymLink, -HardLink): rename/move any PDF being processed to an arbitrary path, overwrite arbitrary files, or create symlinks/hard links in the container. Fixed 8.31.0 (OSV range). CVE published May 6, 2026 \u2014 surfaced now via the VulnCheck KEV addition; never previously tracked or alerted.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.02258,
+  "epss_percentile": 83.02000000000001
  },
  {
   "id": "CVE-2026-55572",
@@ -1139,8 +1139,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. CWE-306: missing authentication; successful exploit may lead to code execution, escalation of privileges, data tampering, DoS and information disclosure.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00526,
+  "epss_percentile": 44.72
  },
  {
   "id": "CVE-2026-79844..79851",
@@ -1323,6 +1323,38 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 98.09
  },
  {
+  "id": "CVE-2026-121932",
+  "title": "Linksys E5350 wizard apply.cgi OS command injection (remote, public exploit)",
+  "product": "Linksys E5350 1.0.00.037 (router)",
+  "score": 10.0,
+  "cvss": "10.0 (CVSS v3.1; 9.3 v4.0, VulDB CNA)",
+  "fixed": "None - vendor contacted early, did not respond",
+  "published": "2026-11-04T19:17:39Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": true,
+  "status": "Public exploit available per NVD description; NOT in CISA KEV; VulnCheck KEV negative 2026-11-04. OS command injection via ping_ip/traceroute_ip in /wizard/apply.cgi; remote. Scope (1)+(2).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-121932",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-121933",
+  "title": "Linksys E5350 Setup Wizard missing authentication (remote, public exploit)",
+  "product": "Linksys E5350 1.0.00.037 (router)",
+  "score": 10.0,
+  "cvss": "10.0 (CVSS v3.1; 9.3 v4.0, VulDB CNA)",
+  "fixed": "None - vendor contacted early, did not respond",
+  "published": "2026-11-04T20:19:11Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": true,
+  "status": "Public exploit available per NVD description; NOT in CISA KEV; VulnCheck KEV negative 2026-11-04. Missing authentication in Setup Wizard save_settings (wizard_router_pwd); remote. Scope (1)+(3).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-121933",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-101446",
   "title": "Oracle Siebel CRM Cloud Manager vulnerability (9.9)",
   "product": "Oracle Siebel CRM (Siebel Cloud Manager)",
@@ -1409,8 +1441,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. POST /api/webhook accepts unsigned GitHub/GitLab events when webhookSecret is empty; anyone reaching burrito-server who knows a tracked repo URL forges events creating/deleting TerraformPullRequest resources; pairing a real PR number with an unrelated existing branch triggers an unauthorized terraform plan using the operator's stored git/cloud credentials. Auto-apply disabled for these layers, so no forced terraform apply; plan-time provider/data-source code execution depends on branch contents.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00458,
+  "epss_percentile": 39.808
  },
  {
   "id": "CVE-2026-104351",
@@ -1514,8 +1546,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Cross-namespace authorization bypass in component ACL binding rules lets an attacker obtain elevated Consul privileges. Oct 27 update: public PoC repo (Ghost-Bx1, GitHub, surfaced via Sploitus 14:28Z) describes the HCSEC-2026-50 mechanism and ships an exploit.py - single unknown author, unverified, no corroboration; NOT treated as a weaponized PoC per the GitLab-110264 precedent. No wild exploitation; not in CISA KEV.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00365,
+  "epss_percentile": 30.467
  },
  {
   "id": "CVE-2026-113617",
@@ -1544,8 +1576,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "Public exploit published (vuldb entry). No confirmed in-the-wild exploitation.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00511,
+  "epss_percentile": 43.726
  },
  {
   "id": "CVE-2026-114612",
@@ -1559,8 +1591,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": true,
   "status": "Authenticated low-privilege user escalates to full proxy_admin via encryption-oracle replay of crafted session claims, then RCE via the MCP stdio interface. PoC is the official E2E regression test. Not in CISA KEV.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00319,
+  "epss_percentile": 24.999
  },
  {
   "id": "CVE-2026-114625",
@@ -1574,8 +1606,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": true,
   "poc": false,
   "status": "VENDOR-CONFIRMED ACTIVELY EXPLOITED (Arista advisory 0199, 2026-10-22). Any authenticated user incl. read-only customer accounts escalates to operator / masquerades as local 'superuser operator' incl. internal-only functionality. Attack IoCs: 74.82.197.86, 38.54.50.151. KEV-LISTED 2026-10-23 (catalog 2026.10.23, 1,756 entries; federal remediation deadline 2026-10-26; CISA required action incl. forensics triage per BOD 26-04). Compromise of VCO may allow control of managed Edge devices.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.01025,
+  "epss_percentile": 63.673
  },
  {
   "id": "CVE-2026-115188",
@@ -1589,8 +1621,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Authenticated user with campaign-import permission places arbitrary files incl. server-side scripts in web root via /api/campaigns/import; RCE on Apache/default Docker image. 6.x/5.x/4.x not affected.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00733,
+  "epss_percentile": 54.476
  },
  {
   "id": "CVE-2026-115375",
@@ -1649,8 +1681,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Cranelift bit-packs SSA value indices in a way that can silently overflow in release builds when compiling a sufficiently large or specially crafted Wasm function; overflow makes Cranelift reference incorrect IR values, causing arbitrary miscompilation, type confusion, and attacker-controlled effects that may escape the Wasm sandbox on any architecture using the default Cranelift backend.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00454,
+  "epss_percentile": 39.524
  },
  {
   "id": "CVE-2026-115893",
@@ -1664,8 +1696,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. On aarch64, Cranelift can compile a Wasm br_table with more than ~256,000 targets with an incorrect conditional branch target; the branch can jump to arbitrary other code at a user-controlled offset, letting a user-controlled Wasm module escape the sandbox.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.0099,
+  "epss_percentile": 62.619
  },
  {
   "id": "CVE-2026-115931",
@@ -1679,8 +1711,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. CWE-470/CWE-73: signed-in user can call internal helpers, incl. one reading any file (incl. env with session-signing secret, DB creds) and one crashing the backend. Self-registration open by default.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00485,
+  "epss_percentile": 41.862
  },
  {
   "id": "CVE-2026-115933",
@@ -1694,8 +1726,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. CWE-290 auth bypass by spoofing: single shared secret signs all token types without markers; browser-extension channel route signs attacker-chosen claims.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00249,
+  "epss_percentile": 16.387999999999998
  },
  {
   "id": "CVE-2026-116231",
@@ -1709,8 +1741,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "Public exploit published (vuldb). No wild exploitation reported; not in CISA KEV. CRLF injection via regmsg argument in Ser2net component allows file overwrite; remote, PR:L.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00436,
+  "epss_percentile": 38.032
  },
  {
   "id": "CVE-2026-116232",
@@ -1724,8 +1756,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "Public exploit published (vuldb). No wild exploitation; not in CISA KEV. CRLF injection via info.community in SNMP handler; snmpd runs commands as root.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00436,
+  "epss_percentile": 38.032
  },
  {
   "id": "CVE-2026-116241",
@@ -1754,8 +1786,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": true,
   "status": "Public exploit published (vuldb entry). No confirmed in-the-wild exploitation; not in CISA KEV. Remote command injection via FileName argument.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.01547,
+  "epss_percentile": 75.08200000000001
  },
  {
   "id": "CVE-2026-116506",
@@ -1769,8 +1801,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": true,
   "status": "Public exploit published (vuldb entry). No confirmed in-the-wild exploitation; not in CISA KEV. Remote command injection.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.0188,
+  "epss_percentile": 79.512
  },
  {
   "id": "CVE-2026-119145",
@@ -2129,8 +2161,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported. Auth requirements / RCE potential unconfirmed (Splunk grouping by CWE; vector not disclosed).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00329,
+  "epss_percentile": 26.178
  },
  {
   "id": "CVE-2026-76302",
@@ -2144,8 +2176,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported. Auth requirements / RCE potential unconfirmed.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.004,
+  "epss_percentile": 34.373
  },
  {
   "id": "CVE-2026-76531",
@@ -2159,8 +2191,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported. Not identified by Splunk as unauthenticated RCE.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00407,
+  "epss_percentile": 35.191
  },
  {
   "id": "CVE-2026-82110",
@@ -2594,8 +2626,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": true,
   "status": "No confirmed in-the-wild exploitation; NOT in CISA KEV; low EPSS. WEAPONIZED PUBLIC PoC released by Horizon3.ai 2026-10-20/21 (corroborated GBHackers, cyberrecaps, secnews.gr Oct 21). Affected range wider than first reported: Fortinet CVE record lists 7.5.0, 7.4.0-7.4.2, 7.3.0-7.3.5, 7.2.0-7.2.7, 7.1.0-7.1.9, 7.0.0-7.0.4. Checked again 13:41Z Oct 22: still no confirmed wild exploitation (threadlinqs: Fortinet states exploitation in the wild is not known), still not in KEV. Oct 26 update: Canada's Cyber Centre updated advisory AV26-1037 to state the flaw IS BEING EXPLOITED IN THE WILD, citing open-source reporting; corroborated by The Hacker News update and SecurityOnline.info (2026-10-26T00:33Z). First confirmed in-the-wild exploitation for this CVE (previously weaponized Horizon3.ai PoC only). Still NOT in CISA KEV (verified via live KEV JSON, catalog 2026.10.23). Caveats: Fortinet's own advisory still says 'Known Exploited: No'; the Cyber Centre statement identifies no victims and publishes no forensic confirmation (AiCybr, Oct 25).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00998,
+  "epss_percentile": 62.843
  },
  {
   "id": "CVE-2026-107092",
@@ -2609,8 +2641,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": true,
   "status": "Public PoC exists (researcher repo raivenLockdown/CVE-2026-107092, not downloaded); CISA SSVC marks exploitation: poc. No confirmed in-the-wild exploitation; not in CISA KEV. Available descriptions describe file read (\"read any file\"); file-write/RCE capability NOT confirmed by any source read.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.01036,
+  "epss_percentile": 64.0
  },
  {
   "id": "CVE-2026-10757",
@@ -2624,8 +2656,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Remote attacker with privileges to access the service (which can include anonymous attackers on services configured 'public') issues database-specific functions that should not be allowed. Other versions are mature/retired, not patch-eligible - upgrade.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00445,
+  "epss_percentile": 38.807
  },
  {
   "id": "CVE-2026-107656",
@@ -2639,8 +2671,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No known exploitation per Fortinet; NOT in CISA KEV. Unauthenticated auth bypass via crafted HTTP requests allows execution of unauthorized code or commands. Note: advisory lists no 4.2 branch (NVD description mentions 4.2 all versions). CVSS discrepancy: Fortinet 9.6 vs NVD 9.8.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00851,
+  "epss_percentile": 58.325
  },
  {
   "id": "CVE-2026-108107",
@@ -2669,8 +2701,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Unauthenticated attackers upload files that may be executable via the add_message function: an incomplete extension blacklist fails to detect dangerous extensions when a trailing dot makes the extension-derivation routine return an empty string, which sanitize_file_name() then silently removes. RCE additionally requires Apache with libapache2-mod-php (maps .phar to PHP by default) and retrieving the uploaded file within the brief window before unlink() removes it at end of request. Fixed 9.1.3 (confirmed via wordpress.org plugin API: latest version 9.1.3; trac changeset tags/9.1.3).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00643,
+  "epss_percentile": 50.964
  },
  {
   "id": "CVE-2026-109220",
@@ -2699,8 +2731,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "EXPLOITED per VulnCheck: added to VulnCheck KEV 2026-10-28 (date_added 2026-10-28T00:00:00Z). NOT in CISA KEV (verified via live KEV JSON, catalogVersion 2026.10.27, 1,760 entries). AdhocQueryValidator.validate() fails to check sub-query expression maps within the orQueries field exposed by TaskQueryDto, letting authenticated users bypass the enableExpressionsInAdhocQueries restriction; a malicious JUEL expression (e.g. dueAfterExpression) achieves arbitrary Java reflection and Runtime.exec as the engine service user. CVE published Oct 19, 2026 - surfaced now via the VulnCheck KEV addition; never previously tracked or alerted (Gotenberg CVE-2026-40281 / LibreNMS CVE-2026-86426 precedent). EPSS 0.00558 / 46.31st percentile (2026-10-27).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00558,
+  "epss_percentile": 46.611999999999995
  },
  {
   "id": "CVE-2026-109444",
@@ -2789,8 +2821,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No public exploit confirmed; not in CISA KEV. Plugin does not require a valid password or genuine second factor; empty stored value treated as a match, so an unauthenticated attacker can log in as any user including an administrator. Missed by the Oct 24 morning run (in the unverified NVD-dump bucket); verified against NVD + WPScan by the afternoon run and alerted as catch-up.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.0036,
+  "epss_percentile": 30.003
  },
  {
   "id": "CVE-2026-111094",
@@ -2834,8 +2866,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported. Network, no privileges required.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.0046,
+  "epss_percentile": 39.947
  },
  {
   "id": "CVE-2026-112346",
@@ -2849,8 +2881,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Sandbox agent server binds 0.0.0.0 with empty session_api_keys (auth disabled by default); anyone reaching the published container port sends unauthenticated HTTP/WebSocket requests executing arbitrary shell commands as root, accessing the mounted workspace and plaintext secrets.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.01014,
+  "epss_percentile": 63.349
  },
  {
   "id": "CVE-2026-112354",
@@ -2894,8 +2926,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No public exploit confirmed; not in CISA KEV. CWE-502 deserialization of untrusted data allows object injection; unauthenticated (PR:N/UI:N), can lead to code execution / full site takeover. Alerted by the afternoon run.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00449,
+  "epss_percentile": 39.156
  },
  {
   "id": "CVE-2026-114278",
@@ -2954,8 +2986,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No confirmed exploitation. Booby-trapped values (e.g. in comments) fire during admin migration search-and-replace. Credit: Civitasmass/Wordfence.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00549,
+  "epss_percentile": 46.086
  },
  {
   "id": "CVE-2026-115812",
@@ -3014,8 +3046,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. When the default TOKEN is used and ADMIN_TOKEN is unset, unauthenticated POST to /api/env/set|add|del sets ADMIN_TOKEN, locks out operators, redirects OTHER_SERVER/PROXY_URL for SSRF, triggers redeployment.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.02349,
+  "epss_percentile": 83.731
  },
  {
   "id": "CVE-2026-116512",
@@ -3044,8 +3076,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Third-party scorer deserialization in mlflow/genai/scorers/base.py accepts request-selected descendants of THIRD_PARTY_SCORER_ALLOWED_MODULES rather than requiring an exact allowed module; attacker places a Python module under a writable allowed package via MLflow artifact endpoints and submits module+class through /ajax-api/3.0/mlflow/scorer/invoke; Scorer.model_validate_json() imports and constructs it before trace processing. Auth-disabled deployments: code execution without credentials. Basic-auth deployments: needs a principal able to create an experiment/run and upload artifacts. Allowed scorer package must be writable by the server process. Oct 28 (01:30 ET hourly) re-check: Sploitus 2026-10-28T04:15Z lists a foxcornlab PoC repo ('mlflow-scorer-scanner'); its README describes it as a detection-only triage scanner, not a working RCE exploit - single unverified author, no corroboration; NOT treated as a weaponized RCE PoC per the GitLab-110264 precedent. No wild exploitation; not in CISA KEV. Oct 28 (05:30 ET hourly) update: Sploitus 2026-10-28T08:13Z lists a second PoC repo (piecar21/CVE-2026-116692) in addition to the foxcornlab detection-only scanner; single unverified author, no corroboration - NOT treated as a weaponized RCE PoC per the GitLab-110264 precedent. No wild exploitation; not in CISA KEV.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00704,
+  "epss_percentile": 53.432
  },
  {
   "id": "CVE-2026-117532",
@@ -3059,8 +3091,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. CWE-287: structure/history plugin lets unauthenticated attackers force the session-tied secret into a predictable state and forge temporary login tokens for accounts like admin, gaining backend access and code execution outside live mode.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00679,
+  "epss_percentile": 52.481
  },
  {
   "id": "CVE-2026-117564",
@@ -3404,8 +3436,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": true,
   "status": "Improper authentication in the MCP Proxy's UserAPIKeyAuth (LiteLLM \u22641.59.8); remotely exploitable, public exploit available. NVD scorers disagree on severity (9.8 / 7.3 / 5.5); GHSA vectors score low impact.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.01017,
+  "epss_percentile": 63.42
  },
  {
   "id": "CVE-2026-14888",
@@ -3449,8 +3481,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. CWE-306: BMC does not correctly enforce integrity and encryption requirements for IPMI commands; attacker crafts packets that execute arbitrary commands on an active session.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.004,
+  "epss_percentile": 34.453
  },
  {
   "id": "CVE-2026-18894",
@@ -3509,8 +3541,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No confirmed malicious in-the-wild use (Eye Security found no sign others served code via the domains it controlled; some domains remain outside its control). Not in CISA KEV as of Oct 23. Updater fetches unsigned executables over plain HTTP and runs as SYSTEM/root; ~2.5-3M Windows and 250-350k macOS devices estimated.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00424,
+  "epss_percentile": 36.878
  },
  {
   "id": "CVE-2026-30623",
@@ -3524,8 +3556,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "Authenticated user adds an MCP server via JSON config with arbitrary command/args; LiteLLM executes it as a subprocess. Preview endpoints (/mcp-rest/test/*) now require PROXY_ADMIN. Per LiteLLM, not exploitable unauthenticated.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.05952,
+  "epss_percentile": 93.29899999999999
  },
  {
   "id": "CVE-2026-33017",
@@ -3554,8 +3586,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "Unauthenticated SSTI via a crafted dotprompt_content parameter; arbitrary OS commands as the LiteLLM process.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00799,
+  "epss_percentile": 56.669000000000004
  },
  {
   "id": "CVE-2026-39738",
@@ -3689,8 +3721,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "Crafted Host header makes the auth gate evaluate a different route from the one FastAPI dispatched, allowing unauthenticated access to protected management routes under specific conditions.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.03033,
+  "epss_percentile": 87.531
  },
  {
   "id": "CVE-2026-51912",
@@ -3884,8 +3916,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No active exploitation known; not in CISA KEV. Unauthenticated attacker with network access to the WolfProt service (TCP 50915/50917/80/443) executes OS commands with the privileges of the application service.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.0055,
+  "epss_percentile": 46.145
  },
  {
   "id": "CVE-2026-59107",
@@ -3899,8 +3931,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No active exploitation known; not in CISA KEV. Attacker who obtains the matching private key authenticates via SSH as root on devices configured as vSolution Matrix main/master station with file sharing enabled.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00358,
+  "epss_percentile": 29.675
  },
  {
   "id": "CVE-2026-59562",
@@ -4319,8 +4351,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Root-privileged wsserver builds shell commands from client-supplied WebSocket fields via system()/popen() without quoting/escaping; public-key session path performs no appliance-session check.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00416,
+  "epss_percentile": 36.108000000000004
  },
  {
   "id": "CVE-2026-65555",
@@ -4469,8 +4501,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No known exploitation (Cisco, 2026-10-21). Persistent-cookie/client-cert validation flaw; unauth remote attacker executes arbitrary OS commands as root.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00417,
+  "epss_percentile": 36.129
  },
  {
   "id": "CVE-2026-76474/CVE-2026-76473/CVE-2026-76475",
@@ -4499,8 +4531,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": true,
   "poc": false,
   "status": "EXPLOITED (reported zero-day). Added to CISA KEV ~2026-10-21. AMP path traversal -> root.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.02152,
+  "epss_percentile": 82.20100000000001
  },
  {
   "id": "CVE-2026-76527",
@@ -4649,8 +4681,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No known exploitation per HPE; no public exploit code; NOT in CISA KEV. Unauthenticated remote attacker in web management interface gains operator privileges.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00641,
+  "epss_percentile": 50.82
  },
  {
   "id": "CVE-2026-79858",
@@ -5024,8 +5056,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Unauthenticated attackers upload files of dangerous types (e.g. PHP scripts) via piereg_file_upload: the plugin checks file type via wp_check_filetype/wp_check_filetype_and_ext but never checks whether those calls produced errors before move_uploaded_file(), and the AJAX handler has no nonce or capability check; the response returns the generated destination filename, giving the attacker the exact path to trigger the uploaded file.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00483,
+  "epss_percentile": 41.768
  },
  {
   "id": "CVE-2026-85079",
@@ -5084,8 +5116,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Dell advisory states no wild exploitation. Unauthenticated attacker with remote access exploits improper authentication (CWE-862) to create privileged accounts and take complete control of the system. Fixed versions read directly from DSA-2026-416 (same remediated versions for all 13 CVEs in the advisory). EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00336,
+  "epss_percentile": 27.187
  },
  {
   "id": "CVE-2026-86400",
@@ -5099,8 +5131,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Dell advisory states no wild exploitation. Unauthenticated attacker with remote access exploits improper authentication (CWE-287) to execute arbitrary commands with root privileges; Dell: 'allows an attacker to take complete control of the system.' Fixed versions read directly from DSA-2026-416 via browser task (same remediated versions for all 13 CVEs in the advisory). EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00896,
+  "epss_percentile": 59.669000000000004
  },
  {
   "id": "CVE-2026-86426",
@@ -5114,8 +5146,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": true,
   "status": "EXPLOITED per VulnCheck: added to VulnCheck KEV 2026-10-28 (date_added 2026-10-28T00:00:00Z); VulnCheck canaries reported exploitation 2026-10-28. NOT in CISA KEV (verified via live KEV JSON, catalogVersion 2026.10.27, 1,760 entries). Unauthenticated attackers send numeric values (small integers 0-9) instead of string API tokens; MySQL type coercion matches token hashes, granting access to protected REST API endpoints including device credentials and administrative features that enable RCE through alert templates. CVE published Sept 7, 2026 - surfaced now via the VulnCheck KEV addition; never previously tracked or alerted (Gotenberg CVE-2026-40281 precedent). EPSS 0.04358 / 91.19th percentile (2026-10-27). Oct 28 (05:30 ET hourly) update: public PoC repos appeared on Sploitus 2026-10-28T07:36Z (piecar21/CVE-2026-86426, Guila95/CVE-2026-86426) - single unverified authors, uncorroborated; NOT treated as a separate weaponized-PoC alert per the GitLab-110264 precedent (CVE already tracked as exploited via VulnCheck KEV).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.04358,
+  "epss_percentile": 91.269
  },
  {
   "id": "CVE-2026-86574",
@@ -5369,8 +5401,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. CWE-287: typo in the Facebook OAuth token verification guard in qode_membership_check_facebook_user AJAX action lets an unauthenticated attacker take over accounts.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00368,
+  "epss_percentile": 30.799
  },
  {
   "id": "CVE-2026-93675",
@@ -5624,8 +5656,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. User-controlled URLs unsafely processed by openExternalLinks() in utils.js; attacker who controls a target URL executes arbitrary OS commands with the privileges of the user running the application upon opening the link (UI:R). EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00743,
+  "epss_percentile": 54.82900000000001
  },
  {
   "id": "CVE-2026-115932",
@@ -6273,6 +6305,51 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 14.510000000000002
  },
  {
+  "id": "CVE-2026-116242",
+  "title": "pgAdmin 4 SSH tunnel with service account's private keys",
+  "product": "pgAdmin 4 (server mode)",
+  "score": 9.6,
+  "cvss": "9.6 (CVSS v3.1, NVD; 8.2 v3.1 / 7.1 v4.0 vendor)",
+  "fixed": "no fixed version stated in NVD/CVE record at check time (fix commit d52fe47 published)",
+  "published": "2026-10-30T20:17:03Z (NVD); vulnStatus Received",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No exploitation reported; not in CISA KEV. Credential reuse (CWE-522): pgAdmin opened SSH tunnels via the sshtunnel library without host_pkey_directories/ssh_config_file, so it loaded the unencrypted ~/.ssh private keys and config (IdentityFile, ProxyCommand) of the OS account running pgAdmin - any user could tunnel as the service account with no credentials of their own. Fixed by upstream commit; no release version stated.",
+  "epss": 0.00232,
+  "epss_percentile": 14.166
+ },
+ {
+  "id": "CVE-2026-116244",
+  "title": "pgAdmin 4 Kerberos service-account ticket reuse by any user",
+  "product": "pgAdmin 4 (server mode)",
+  "score": 9.6,
+  "cvss": "9.6 (CVSS v3.1, NVD; 8.2 v3.1 / 7.1 v4.0 vendor)",
+  "fixed": "no fixed version stated in NVD/CVE record at check time (fix commit 145e511 published)",
+  "published": "2026-10-30T20:17:04Z (NVD); vulnStatus Received",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No exploitation reported; not in CISA KEV. Credential reuse (CWE-522): with delegated Kerberos credentials removed from the environment, the Kerberos library fell back to the OS account's default credential cache/keytab, so any user connected as the service account's Kerberos principal (SSPI on Windows used the service account logon similarly). Fixed by upstream commit; no release version stated.",
+  "epss": 0.00277,
+  "epss_percentile": 20.294999999999998
+ },
+ {
+  "id": "CVE-2026-116245",
+  "title": "pgAdmin 4 libpq service-file credential reuse by any user",
+  "product": "pgAdmin 4 (server mode)",
+  "score": 9.6,
+  "cvss": "9.6 (CVSS v3.1, NVD; 8.2 v3.1 / 7.1 v4.0 vendor)",
+  "fixed": "no fixed version stated in NVD/CVE record at check time (fix commit a0c8f48 published)",
+  "published": "2026-10-30T20:17:04Z (NVD); vulnStatus Received",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No exploitation reported; not in CISA KEV. Credential reuse (CWE-522/CWE-862): any user could set a server's Service (or 'service' connection parameter) to an entry in the OS account's libpq service file and connect with its credentials; PGPASSWORD/PGSERVICE set for the account were inherited by every connection and utility process. Fixed by upstream commit; no release version stated.",
+  "epss": 0.00157,
+  "epss_percentile": 4.853
+ },
+ {
   "id": "CVE-2026-103593/CVE-2026-103594/CVE-2026-112709/CVE-2026-112710/CVE-2026-90442/CVE-2026-90465/CVE-2026-93857/CVE-2026-93865/CVE-2026-93866/CVE-2026-93434",
   "title": "WatchGuard Fireware OS batch: unauth RCE (SIP proxy, FireCluster), auth-service heap overflows, mgmt-interface flaws",
   "product": "WatchGuard Fireware OS (Default >=2025.1 <2026.4, >=12.0 <12.12.4; T15/T35 >=12.0 <12.5.22)",
@@ -6404,8 +6481,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Improperly restricted API endpoint in the Pigeon MFA service allows persistent injection of dynamic Lua scripts, evaluated by backend execution runtimes lacking sandboxing, running as container root; authenticated/low-privileged remote attacker achieves arbitrary code execution as container root, can bypass zero-trust tunnel authorization controls to reach internal network assets and harvest sensitive deployment keys. Mandiant: exploitation requires no advanced techniques or victim interaction; endpoints exposed directly from the public internet and through edge proxies with leaked credentials. Discovered by Liu Yong (TS Lab) and Sun Pu (Mandiant); reported Oct 1, EagleCloud shipped fix 2.6.7.3 on Oct 2. Companion flaw CVE-2026-104384 (unauthenticated credential disclosure) in the same release.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00367,
+  "epss_percentile": 30.706
  },
  {
   "id": "CVE-2026-105420",
@@ -6959,8 +7036,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Unauthenticated blind SQL injection (CWE-89, S:C); Patchstack rates it 'highly dangerous and expected to become exploited' / mass-campaign class (generic Patchstack wording, not confirmed exploitation). Fixed 3.8.6 (Patchstack). EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00342,
+  "epss_percentile": 27.843
  },
  {
   "id": "CVE-2026-111732",
@@ -7079,8 +7156,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Unauthenticated SQL injection (CWE-89, S:C); Patchstack rates it 'highly dangerous and expected to become exploited' / mass-campaign class (generic Patchstack wording, not confirmed exploitation). Reported by researcher V1T (Oct 22). Fixed 2.0.2 (Patchstack). EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00236,
+  "epss_percentile": 14.764
  },
  {
   "id": "CVE-2026-115964",
@@ -7799,8 +7876,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Unauthenticated peers advertising RDMA capabilities in the ggml-rpc HELLO message can send up to 256 KiB into a 1-byte stack variable in rpc_serve_client() via rdma_recv(), crashing the rpc-server or potentially executing code. RDMA transport only.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00368,
+  "epss_percentile": 30.817
  },
  {
   "id": "CVE-2026-118633",
@@ -9044,8 +9121,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. RCE with the privileges of the affected application/service (CWE-78, PR:H, S:C). HCL security bulletin KB0134281 covers multiple AEX vulnerabilities; the KB page is JS-rendered and did not expose the fixed version in this run's reads - recorded as unconfirmed. EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00457,
+  "epss_percentile": 39.778000000000006
  },
  {
   "id": "CVE-2026-76454",
@@ -9254,8 +9331,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Dell advisory states no wild exploitation. Low-privileged attacker with remote access exploits authentication bypass by spoofing (CWE-290) to elevate privileges; could impact other managed Data Domain systems. Fixed versions read directly from DSA-2026-416 (same remediated versions for all 13 CVEs in the advisory). EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00233,
+  "epss_percentile": 14.262
  },
  {
   "id": "CVE-2026-90863",
@@ -9421,6 +9498,54 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "No exploitation reported; not in CISA KEV. A bearer token can bypass the passkey-only authentication requirement and directly invoke the API-token creation endpoint, allowing unauthorized minting of persistent successor credentials. Precondition: attacker holds an existing valid token. CERT VU#645818: vendor could not be reached, no official patch; monitor the project's repo. EPSS 0.00223, 12.96th percentile.",
   "epss": 0.00531,
   "epss_percentile": 45.017
+ },
+ {
+  "id": "CVE-2026-121930",
+  "title": "Linksys WRT54GL Ping Diagnostic OS command injection (remote, public exploit)",
+  "product": "Linksys WRT54GL 4.30.18 (router; EOL, unsupported)",
+  "score": 9.1,
+  "cvss": "9.1 (CVSS v3.1; 8.5 v4.0, VulDB CNA)",
+  "fixed": "None - vendor did not respond; product no longer supported by the maintainer",
+  "published": "2026-11-04T19:17:17Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": true,
+  "status": "Public exploit available per NVD description; NOT in CISA KEV; VulnCheck KEV negative 2026-11-04. OS command injection via ping_ip argument of apply.cgi Ping Diagnostic; attack can be initiated remotely. Scope (1)+(2).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-121930",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-121931",
+  "title": "Linksys WRT54GL Traceroute Diagnostic OS command injection (remote, public exploit)",
+  "product": "Linksys WRT54GL 4.30.18 (router; EOL, unsupported)",
+  "score": 9.1,
+  "cvss": "9.1 (CVSS v3.1; 8.5 v4.0, VulDB CNA)",
+  "fixed": "None - vendor did not respond; product no longer supported by the maintainer",
+  "published": "2026-11-04T19:17:33Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": true,
+  "status": "Public exploit available per NVD description; NOT in CISA KEV; VulnCheck KEV negative 2026-11-04. OS command injection via traceroute_ip argument of apply.cgi Traceroute Diagnostic; remote. Scope (1)+(2).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-121931",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-122220",
+  "title": "WPO365 | LOGIN SAML capture-replay authentication bypass -> login as administrator",
+  "product": "WPO365 | LOGIN (wpo365-login) WordPress plugin before 45.2",
+  "score": 9.1,
+  "cvss": "9.1 (CVSS v4.0; 7.4 v3.1, VulnCheck disclosure)",
+  "fixed": "45.2",
+  "published": "2026-11-04T20:19:12Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "NOT in CISA KEV; VulnCheck KEV negative 2026-11-04. Non-functional anti-replay check in Saml2_Service::check_message_id() never persists processed SAML message IDs; captured validly-signed SAMLResponse can be replayed to log in as the victim including administrators. Scope (1)+(3).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-122220",
+  "epss": null,
+  "epss_percentile": null
  },
  {
   "id": "CVE-2025-30023",
@@ -10214,8 +10339,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Arbitrary file upload via filterFiletypeAndExt: no dangerous-extension denylist in the allowed-extensions sanitizer, and a registered wp_check_filetype_and_ext filter deliberately overrides WordPress native MIME/extension defences. An authenticated attacker with the custom add_edit_forms capability configures a File Upload field with a dangerous extension (e.g. php); once the form is published, any unauthenticated visitor triggers the upload via the public /wp-json/ivyforms/v1/form/submission/ REST route. Fixed 1.5.2 (confirmed via wordpress.org plugin API: latest version 1.5.2).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00725,
+  "epss_percentile": 54.189
  },
  {
   "id": "CVE-2026-110193",
@@ -10829,8 +10954,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Deserialization of untrusted data / PHP object injection (CWE-502, PR:L) - RCE class per the Rank Math object-injection precedent. Fixed 3.9.0 (Patchstack). EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00374,
+  "epss_percentile": 31.575999999999997
  },
  {
   "id": "CVE-2026-116672",
@@ -11699,8 +11824,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "Memory corruption in Payments in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High) No exploitation reported; not in CISA KEV. Fixed Chrome 156.0.8078.73. EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00264,
+  "epss_percentile": 18.448999999999998
  },
  {
   "id": "CVE-2026-118350",
@@ -11714,8 +11839,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "Use after free in Turbolev in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High) No exploitation reported; not in CISA KEV. Fixed Chrome 156.0.8078.73. EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00288,
+  "epss_percentile": 21.485000000000003
  },
  {
   "id": "CVE-2026-118351",
@@ -11729,8 +11854,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "Memory corruption in Skia in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High) No exploitation reported; not in CISA KEV. Fixed Chrome 156.0.8078.73. EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00264,
+  "epss_percentile": 18.451
  },
  {
   "id": "CVE-2026-118352",
@@ -11744,8 +11869,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "Memory corruption in Cache in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High) No exploitation reported; not in CISA KEV. Fixed Chrome 156.0.8078.73. EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00264,
+  "epss_percentile": 18.45
  },
  {
   "id": "CVE-2026-118353",
@@ -11759,8 +11884,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "Use after free in Paint in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High) No exploitation reported; not in CISA KEV. Fixed Chrome 156.0.8078.73. EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00212,
+  "epss_percentile": 11.618
  },
  {
   "id": "CVE-2026-118354",
@@ -11774,8 +11899,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "Improper input validation in Skia in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High) No exploitation reported; not in CISA KEV. Fixed Chrome 156.0.8078.73. EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00241,
+  "epss_percentile": 15.298
  },
  {
   "id": "CVE-2026-118356",
@@ -11789,8 +11914,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "Use after free in WTF in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High) No exploitation reported; not in CISA KEV. Fixed Chrome 156.0.8078.73. EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00264,
+  "epss_percentile": 18.45
  },
  {
   "id": "CVE-2026-118357",
@@ -11804,8 +11929,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "Use after free in FileSystem in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High) No exploitation reported; not in CISA KEV. Fixed Chrome 156.0.8078.73. EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00283,
+  "epss_percentile": 20.924
  },
  {
   "id": "CVE-2026-118358",
@@ -11819,8 +11944,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "Memory corruption in WebAudio in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High) No exploitation reported; not in CISA KEV. Fixed Chrome 156.0.8078.73. EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00358,
+  "epss_percentile": 29.666999999999998
  },
  {
   "id": "CVE-2026-118359",
@@ -11834,8 +11959,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "Memory corruption in V8 in Google Chrome prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High) No exploitation reported; not in CISA KEV. Fixed Chrome 156.0.8078.73. EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00283,
+  "epss_percentile": 20.925
  },
  {
   "id": "CVE-2026-118510",
@@ -12989,8 +13114,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Authenticated attackers with Contributor-level access inject a PHP object via deserialization of untrusted input in the updateMeta REST API endpoint; a POP chain allows remote code execution by writing a webshell to the uploads directory. Researcher: moochi.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00538,
+  "epss_percentile": 45.414
  },
  {
   "id": "CVE-2026-19842",
@@ -13904,8 +14029,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Dell advisory states no wild exploitation. Low-privileged attacker with remote access exploits OS command injection (CWE-78) to execute commands. Fixed versions read directly from DSA-2026-416 (same remediated versions for all 13 CVEs in the advisory). EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.02168,
+  "epss_percentile": 82.321
  },
  {
   "id": "CVE-2026-86398",
@@ -13919,8 +14044,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Dell advisory states no wild exploitation. Low-privileged attacker with remote access exploits path traversal (CWE-22) to gain filesystem access. Fixed versions read directly from DSA-2026-416 (same remediated versions for all 13 CVEs in the advisory). EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00344,
+  "epss_percentile": 28.119
  },
  {
   "id": "CVE-2026-86467",
@@ -14384,8 +14509,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Unauthenticated attacker bypasses nonce verification in save_profile_fields() by omitting the nonce parameter (isset() check at line 1119), then changes an authenticated victim's email address via a forged request; password reset then yields full account takeover. Requires tricking the victim into clicking a link (UI:R); an administrator victim's account is taken over. Alerted under criterion 3 (grants admin access) following the YesWiki CSRF-with-admin-impact precedent (CVE-2026-116204, 8.1, alerted Oct 25). Researcher: Matthew Cowan. EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00148,
+  "epss_percentile": 4.022
  },
  {
   "id": "CVE-2026-94512",
@@ -14534,8 +14659,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": true,
   "status": "No exploitation reported; not in CISA KEV. ImagingJpegEncode() calls jpeg_write_marker() for a JPEG COM comment when an ICC profile has exactly filled the 65,536-byte encoder buffer; libjpeg writes one byte before checking the exhausted free_in_buffer counter, which wraps and lets the attacker-controlled comment and subsequent compressed image data overwrite adjacent heap memory. Re-saving an untrusted JPEG while preserving its ICC profile and forwarded comment can crash the process and may enable code execution. Public PoC repo (paktiko1986, GitHub, via Sploitus 2026-10-28T02:50Z) demonstrates crash/Valgrind invalid write; code execution unproven - single unverified author, NOT treated as a weaponized RCE PoC per the GitLab-110264 precedent. Fifth Pillow 13.0.0 CVE; the other four (CVE-2026-112398/112900/112403/112393) were caught Oct 25.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00454,
+  "epss_percentile": 39.556999999999995
  },
  {
   "id": "CVE-2026-96951",
@@ -14596,6 +14721,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "No exploitation reported; not in CISA KEV. Numeric truncation (ZDI-26-833, CVSS 8.8 ZDI, ZDI-CAN-28318): clusterCreatePublishMsgBlock computes a cluster-bus message length as size_t but passes it to a uint32_t parameter; channel+message over UINT32_MAX silently truncates, allocating a far smaller heap buffer that the following memcpys overflow with attacker-controlled bytes - reliably crashes, possibly RCE as the service account. Authenticated user who can publish to a channel, cluster mode only; building a >4 GiB message requires server-side scripting (default proto-max-bulk-len 512 MB blocks direct sends). Mitigation: restrict scripting commands via ACLs, do not raise proto-max-bulk-len. EPSS unscored (no CVE).",
   "epss": null,
   "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-116243",
+  "title": "pgAdmin 4 binary-path -> runs uploaded executable as OS account (RCE class)",
+  "product": "pgAdmin 4 (server mode)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1, NVD; 7.5 v3.1 / 7.7 v4.0 vendor)",
+  "fixed": "no fixed version stated in NVD/CVE record at check time (fix commit published)",
+  "published": "2026-10-30T20:17:04Z (NVD); vulnStatus Received",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No exploitation reported; not in CISA KEV. Code execution (RCE class, management interface): pgAdmin runs pg_dump/pg_restore/pg_dumpall/psql from a user-set binary path; the path was refused only under per-user STORAGE_DIR, not under SHARED_STORAGE which ordinary users can upload to - a user points the binary path at an uploaded executable and pgAdmin runs it as the OS account (Windows: full code exec; POSIX: files not executable via upload). Fixed by upstream commit; no release version stated.",
+  "epss": 0.00322,
+  "epss_percentile": 25.291999999999998
  },
  {
   "id": "CVE-2010-20125",
@@ -14714,8 +14854,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Insecure API input handling lets unauthenticated node provisioning/installation endpoints expose infrastructure access keys, secret keys and deployment secrets; leaked deployment keys let threat actors bypass edge access proxies and impersonate legitimate administrative users. Mandiant: vulnerable endpoint fully exposed to the internet; obtaining credentials requires no advanced techniques, victim interaction or complex steps. Same disclosure batch as CVE-2026-104383 (RCE as container root); both fixed in 2.6.7.3.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00426,
+  "epss_percentile": 37.051
  },
  {
   "id": "CVE-2026-105475",
@@ -15134,8 +15274,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. GarantiPos, PayForPos and InterPos 3D Pay/3D Host handlers skip check3DHash(); unauthenticated attackers post tampered status, amount or order ID fields to complete orders without paying.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.0018,
+  "epss_percentile": 7.638
  },
  {
   "id": "CVE-2026-118645",
@@ -16394,8 +16534,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Authenticated users with system permission run PHP by importing a crafted language pack: upload a ZIP via import_language.php containing a .inc file, then request it through the language parameter to execute code on the server.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00684,
+  "epss_percentile": 52.689
  },
  {
   "id": "CVE-2026-118245",
@@ -16769,8 +16909,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Unauthenticated unrestricted file upload with improper access control; attacker uploads malicious/unauthorized files and directly accesses/downloads sensitive uploaded content, potentially leading to system compromise. Same HCL bulletin KB0134281 as CVE-2026-67074; fixed version unconfirmed (KB page JS-rendered). EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00223,
+  "epss_percentile": 13.077
  },
  {
   "id": "CVE-2026-73328",
@@ -16953,6 +17093,38 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 78.36800000000001
  },
  {
+  "id": "CVE-2026-113374",
+  "title": "Sonatype Nexus Repository 3 privilege escalation via Rut Auth capability creation -> authenticate as administrator without credentials",
+  "product": "Sonatype Nexus Repository 3 < 3.98.0",
+  "score": 8.6,
+  "cvss": "8.6 (CVSS v4.0, Sonatype CNA; NVD not yet scored)",
+  "fixed": "3.98.0",
+  "published": "2026-11-04T20:18:57Z (NVD; CVE.org record PUBLISHED)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "NOT in CISA KEV; VulnCheck KEV negative 2026-11-04. User with only nexus:capabilities:create can create a Rut Auth capability enabling header-based auth; remote client can then authenticate as any existing user including an administrator without credentials. CWE-862. Scope (1)+(3).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-113374",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-82033",
+  "title": "DeepSeek Harness missing authentication -> local arbitrary command execution as victim user via agent tools",
+  "product": "DeepSeek Harness before 0.1.2-alpha.2",
+  "score": 8.6,
+  "cvss": "8.6 (CVSS v4.0; 8.4 v3.1, VulnCheck disclosure)",
+  "fixed": "0.1.2-alpha.2",
+  "published": "2026-11-04T19:17:41Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "NOT in CISA KEV; VulnCheck KEV negative 2026-11-04. Missing auth on web profile HTTP/WebSocket RPC control plane; any local process can invoke session.prompt -> agent bash/filesystem tools -> arbitrary command execution as victim user, bypass human tool-approval checks. Local vector only. Scope (1).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-82033",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-103092",
   "title": "IBM Langflow OSS SQL command execution via improper access control",
   "product": "IBM Langflow OSS 1.0.0 through 1.12.3",
@@ -17099,8 +17271,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. SQL injection (CWE-89, PR:L, S:C); Patchstack rates it 'highly dangerous and expected to become exploited' / mass-campaign class (generic Patchstack wording, not confirmed exploitation). Fixed 14.5.3 (Patchstack; current release 14.5.4). EPSS unscored (brand new).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00211,
+  "epss_percentile": 11.43
  },
  {
   "id": "CVE-2026-112357",
@@ -17414,8 +17586,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. SQL injection in the SQLite driver lets MCP clients execute stacked statements by supplying a crafted table_name to describe_table: attackers (including AI agents steered by untrusted content) close the quoted PRAGMA argument and append statements to read, modify or drop SQLite data, bypassing read-only mode and write approval. Local attack, user interaction required.",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00151,
+  "epss_percentile": 4.315
  },
  {
   "id": "CVE-2026-118752",
@@ -19668,51 +19840,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 4.301
  },
  {
-  "id": "CVE-2026-116242",
-  "title": "pgAdmin 4 SSH tunnel with service account's private keys",
-  "product": "pgAdmin 4 (server mode)",
-  "score": 8.2,
-  "cvss": "8.2 (CVSS v3.1; 7.1 v4.0)",
-  "fixed": "no fixed version stated in NVD/CVE record at check time (fix commit d52fe47 published)",
-  "published": "2026-10-30T20:17:03Z (NVD); vulnStatus Received",
-  "exploited": false,
-  "kev": false,
-  "poc": false,
-  "status": "No exploitation reported; not in CISA KEV. Credential reuse (CWE-522): pgAdmin opened SSH tunnels via the sshtunnel library without host_pkey_directories/ssh_config_file, so it loaded the unencrypted ~/.ssh private keys and config (IdentityFile, ProxyCommand) of the OS account running pgAdmin - any user could tunnel as the service account with no credentials of their own. Fixed by upstream commit; no release version stated.",
-  "epss": 0.00232,
-  "epss_percentile": 14.166
- },
- {
-  "id": "CVE-2026-116244",
-  "title": "pgAdmin 4 Kerberos service-account ticket reuse by any user",
-  "product": "pgAdmin 4 (server mode)",
-  "score": 8.2,
-  "cvss": "8.2 (CVSS v3.1; 7.1 v4.0)",
-  "fixed": "no fixed version stated in NVD/CVE record at check time (fix commit 145e511 published)",
-  "published": "2026-10-30T20:17:04Z (NVD); vulnStatus Received",
-  "exploited": false,
-  "kev": false,
-  "poc": false,
-  "status": "No exploitation reported; not in CISA KEV. Credential reuse (CWE-522): with delegated Kerberos credentials removed from the environment, the Kerberos library fell back to the OS account's default credential cache/keytab, so any user connected as the service account's Kerberos principal (SSPI on Windows used the service account logon similarly). Fixed by upstream commit; no release version stated.",
-  "epss": 0.00277,
-  "epss_percentile": 20.294999999999998
- },
- {
-  "id": "CVE-2026-116245",
-  "title": "pgAdmin 4 libpq service-file credential reuse by any user",
-  "product": "pgAdmin 4 (server mode)",
-  "score": 8.2,
-  "cvss": "8.2 (CVSS v3.1; 7.1 v4.0)",
-  "fixed": "no fixed version stated in NVD/CVE record at check time (fix commit a0c8f48 published)",
-  "published": "2026-10-30T20:17:04Z (NVD); vulnStatus Received",
-  "exploited": false,
-  "kev": false,
-  "poc": false,
-  "status": "No exploitation reported; not in CISA KEV. Credential reuse (CWE-522/CWE-862): any user could set a server's Service (or 'service' connection parameter) to an entry in the OS account's libpq service file and connect with its credentials; PGPASSWORD/PGSERVICE set for the account were inherited by every connection and utility process. Fixed by upstream commit; no release version stated.",
-  "epss": 0.00157,
-  "epss_percentile": 4.853
- },
- {
   "id": "CVE-2026-116247",
   "title": "pgAdmin 4 connection credential fallback to service account's pgpass/cert/key",
   "product": "pgAdmin 4 (server mode)",
@@ -21738,21 +21865,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 22.977
  },
  {
-  "id": "CVE-2026-116243",
-  "title": "pgAdmin 4 binary-path -> runs uploaded executable as OS account (RCE class)",
-  "product": "pgAdmin 4 (server mode)",
-  "score": 7.7,
-  "cvss": "7.7 (CVSS v3.1; RCE class - management interface)",
-  "fixed": "no fixed version stated in NVD/CVE record at check time (fix commit published)",
-  "published": "2026-10-30T20:17:04Z (NVD); vulnStatus Received",
-  "exploited": false,
-  "kev": false,
-  "poc": false,
-  "status": "No exploitation reported; not in CISA KEV. Code execution (RCE class, management interface): pgAdmin runs pg_dump/pg_restore/pg_dumpall/psql from a user-set binary path; the path was refused only under per-user STORAGE_DIR, not under SHARED_STORAGE which ordinary users can upload to - a user points the binary path at an uploaded executable and pgAdmin runs it as the OS account (Windows: full code exec; POSIX: files not executable via upload). Fixed by upstream commit; no release version stated.",
-  "epss": 0.00322,
-  "epss_percentile": 25.291999999999998
- },
- {
   "id": "CVE-2026-116896",
   "title": "REDAXO backup addon missing authorization -> admin account takeover via exported session tables",
   "product": "REDAXO before 5.21.5",
@@ -21839,8 +21951,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Authenticated attackers with Contributor-level access upload files that may be executable via the upload_image function (weak Content-Type prefix check, extension derived from attacker-controlled URL path, no dangerous-extension stripping); requires the 'import product image' option to be enabled in plugin settings. RCE class - alerted under criterion 2 despite sub-8.0 score (ASUS 7.7 / Xovis / LeRobot precedent).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00515,
+  "epss_percentile": 43.99
  },
  {
   "id": "CVE-2026-111461",
@@ -22589,8 +22701,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No exploitation reported; not in CISA KEV. Unauthenticated users upload arbitrary files, including PHP files that lead to RCE on servers executing PHP from the uploads directory, when the plugin's accepted-file-types setting is left empty \u2014 documented as the way to accept all files. RCE class - alerted under criterion 2 despite no CVSS yet (affiliate-toolkit CVE-2026-111255 / Pie Register CVE-2026-84999 precedent).",
-  "epss": null,
-  "epss_percentile": null
+  "epss": 0.00611,
+  "epss_percentile": 49.376999999999995
  },
  {
   "id": "CVE-2026-103693",
@@ -23616,7 +23728,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning 1537 tracked CVEs ...", c:"", p:300},
+    {t:"Scanning 1544 tracked CVEs ...", c:"", p:300},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
@@ -23943,7 +24055,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 1537 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 1544 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
@@ -23964,10 +24076,10 @@ if(searchInput){ searchInput.addEventListener("input",applyCveView); }
    the only edit needed to extend the playlist.
    ============================================================ */
 var PLAYLIST=[
-  { title:"Neon Overdrive",   artist:"HumanStudioEd", src:"assets/audio/neon-overdrive.mp3",   time:"3:10" },
-  { title:"Chrome Rain",      artist:"Kulakovka",     src:"assets/audio/chrome-rain.mp3",      time:"3:11" },
-  { title:"Mainframe Dreams", artist:"Ikoliks AJ",    src:"assets/audio/mainframe-dreams.mp3", time:"2:01" },
-  { title:"Vice City Nights", artist:"DeltaX Music",  src:"assets/audio/vice-city-nights.mp3", time:"3:07" }
+  { title:"Neon Overdrive", artist:"HumanStudioEd", src:"assets/audio/neon-overdrive.mp3",   time:"3:10" },
+  { title:"Chrome Rain", artist:"Kulakovka", src:"assets/audio/chrome-rain.mp3",      time:"3:11" },
+  { title:"Mainframe Dreams", artist:"Ikoliks AJ", src:"assets/audio/mainframe-dreams.mp3", time:"2:01" },
+  { title:"Vice City Nights", artist:"DeltaX Music", src:"assets/audio/vice-city-nights.mp3", time:"3:07" }
 ];
 (function(){
   var section=document.getElementById("boombox"); if(!section) return;
