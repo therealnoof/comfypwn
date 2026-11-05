@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 5</span><span class="pill accent">1725 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 5</span><span class="pill accent">1759 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 5 10:30 ET:</strong> 1725 CVEs tracked, filtered down to what needs action first. New this scan: 24 additions, led by Cendio ThinLinc CVE-2026-119744 (8.8 — impersonate any user, incl. root), four Apache OFBiz 24.09.08 RCE / auth-bypass flaws, 12 Firefox 159 CVEs and 7 Chrome 157 CVEs. Highlighted Drops, the Ones to Watch, and the grouped 1725-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 5 11:30 ET:</strong> 1759 CVEs tracked, filtered down to what needs action first. New this scan: 34 additions, led by OpenSSH sshd CVE-2026-123158 (8.1 — password authentication bypass on musl-libc builds), Cocos AI CVE-2026-119344 (9.1 — TEE attestation diversion), a 21-CVE Firefox 159 lag-gap batch and 3 Chrome 157 CVEs. Highlighted Drops, the Ones to Watch, and the grouped 1759-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -430,7 +430,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>1725</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>1759</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 5</b><span>Last updated — hourly scans</span></div>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 1725 CVEs</label>
+      <label for="cveSearch">Search all 1759 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 1725 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 1759 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -497,7 +497,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 5 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1393 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — the latest additions to the group include nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 5 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1445 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — the latest additions to the group include nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 2 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -505,18 +505,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1393 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1445 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 1725 CVEs</h2><p>Every entry from the Nov 5 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 1759 CVEs</h2><p>Every entry from the Nov 5 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 1725.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">1725 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 1759.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">1759 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 5 10:30 ET hourly scan — 24 records added (1725 CVEs tracked). The additions are led by Cendio ThinLinc CVE-2026-119744 (8.8, impersonate any user incl. root), four Apache OFBiz 24.09.08 RCE/auth-bypass flaws, 12 Firefox 159 CVEs and 7 Chrome 157 CVEs. Across the full set, 66 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 93 sit in the public-PoC group. 1674 of 1725 records carry EPSS scores. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 5 11:30 ET hourly scan — 34 records added (1759 CVEs tracked). The additions are led by OpenSSH sshd CVE-2026-123158 (8.1, password authentication bypass on musl-libc builds), Cocos AI CVE-2026-119344 (9.1, TEE attestation diversion), a 21-CVE Firefox 159 lag-gap batch and 3 Chrome 157 CVEs, plus a ModSecurity WAF-bypass pair and the exploited JeeWMS file-read CVE-2021-48015. Across the full set, 67 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 93 sit in the public-PoC group. 1699 of 1759 records carry EPSS scores. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 <script id="cveData" type="application/json">
@@ -6034,6 +6034,51 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 8.351
  },
  {
+  "id": "CVE-2026-117980",
+  "title": "Use-after-free in Graphics (Firefox 159 batch; LAG-GAP: published Oct 27, scored Nov 5)",
+  "product": "Firefox / Firefox ESR / Thunderbird",
+  "score": 9.8,
+  "cvss": 9.8,
+  "fixed": "Firefox 159, Firefox ESR 153.6, Thunderbird 159 / 153.6",
+  "published": "2026-10-27 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.00181,
+  "epss_percentile": 7.786999999999999
+ },
+ {
+  "id": "CVE-2026-117981",
+  "title": "Privilege escalation in Toolkit (Firefox 159 batch; LAG-GAP: published Oct 27, scored Nov 5)",
+  "product": "Firefox / Firefox ESR / Thunderbird",
+  "score": 9.8,
+  "cvss": 9.8,
+  "fixed": "Firefox 159, Firefox ESR 153.6, Thunderbird 159 / 153.6",
+  "published": "2026-10-27 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.00181,
+  "epss_percentile": 7.784000000000001
+ },
+ {
+  "id": "CVE-2026-117982",
+  "title": "Invalid pointer in JavaScript Engine: JIT (Firefox 159 batch; LAG-GAP: published Oct 27, scored Nov 5)",
+  "product": "Firefox / Firefox ESR / Thunderbird",
+  "score": 9.8,
+  "cvss": 9.8,
+  "fixed": "Firefox 159, Firefox ESR 153.6, Thunderbird 159 / 153.6",
+  "published": "2026-10-27 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.00181,
+  "epss_percentile": 7.784000000000001
+ },
+ {
   "id": "CVE-2025-65200",
   "title": "LocalStack CloudFormation deploy endpoint RCE via crafted templateURL content (lag-gap catch-up)",
   "product": "LocalStack 4.9.2",
@@ -6947,6 +6992,36 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted Chrome extension. Scope (1)+(2).",
   "epss": 0.00276,
   "epss_percentile": 20.159
+ },
+ {
+  "id": "CVE-2026-117962",
+  "title": "Sandbox escape due to incorrect boundary conditions in Storage: Quota Manager (Firefox 159 batch; LAG-GAP: published Oct 27, scored Nov 5)",
+  "product": "Firefox / Firefox ESR / Thunderbird",
+  "score": 9.6,
+  "cvss": 9.6,
+  "fixed": "Firefox 159, Firefox ESR 153.6, Thunderbird 159 / 153.6",
+  "published": "2026-10-27 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.00181,
+  "epss_percentile": 7.7829999999999995
+ },
+ {
+  "id": "CVE-2026-117971",
+  "title": "Sandbox escape due to use-after-free in Print Preview (Firefox 159 batch; LAG-GAP: published Oct 27, scored Nov 5)",
+  "product": "Firefox / Firefox ESR / Thunderbird",
+  "score": 9.6,
+  "cvss": 9.6,
+  "fixed": "Firefox 159, Firefox ESR 115.44 / 153.6, Thunderbird 159 / 153.6",
+  "published": "2026-10-27 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.00187,
+  "epss_percentile": 8.353
  },
  {
   "id": "CVE-2026-103593/CVE-2026-103594/CVE-2026-112709/CVE-2026-112710/CVE-2026-90442/CVE-2026-90465/CVE-2026-93857/CVE-2026-93865/CVE-2026-93866/CVE-2026-93434",
@@ -10290,6 +10365,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-05 09:30 ET hourly): newly published in NVD window. SAML HTTP-Redirect binding processes percent-encoded parameter names (e.g. %53AMLResponse) while signature verification checks only literal names, so a crafted unsigned SAML message is processed instead of a legitimately signed one - full account takeover of federated users. No exploitation reported; not in CISA KEV; EPSS null (brand new). Fixed version unconfirmed. Scope (1).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-119344",
+  "title": "TEE attestation diversion: Evidence accepted without binding to platform owner/machine identity or revocation",
+  "product": "Cocos AI (ultravioletrs/coco) confidential computing",
+  "score": 9.1,
+  "cvss": 9.1,
+  "fixed": "0.9.0",
+  "published": "2026-11-05T16:17:40Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
   "epss": null,
   "epss_percentile": null
  },
@@ -16174,6 +16264,171 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 14.85
  },
  {
+  "id": "CVE-2026-117954",
+  "title": "Use-after-free in Layout: Positioned (Firefox 159 batch; LAG-GAP: published Oct 27, scored Nov 5)",
+  "product": "Firefox / Firefox ESR / Thunderbird",
+  "score": 8.8,
+  "cvss": 8.8,
+  "fixed": "Firefox 159, Firefox ESR 115.44 / 153.6, Thunderbird 159 / 153.6",
+  "published": "2026-10-27 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.00187,
+  "epss_percentile": 8.352
+ },
+ {
+  "id": "CVE-2026-117956",
+  "title": "Invalid pointer in Nimbus Desktop Client (Firefox 159 batch; LAG-GAP: published Oct 27, scored Nov 5)",
+  "product": "Firefox / Firefox ESR / Thunderbird",
+  "score": 8.8,
+  "cvss": 8.8,
+  "fixed": "Firefox 159, Firefox ESR 153.6, Thunderbird 159 / 153.6",
+  "published": "2026-10-27 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.00181,
+  "epss_percentile": 7.789
+ },
+ {
+  "id": "CVE-2026-117964",
+  "title": "Use-after-free in Panning and Zooming (Firefox 159 batch; LAG-GAP: published Oct 27, scored Nov 5)",
+  "product": "Firefox / Firefox ESR / Thunderbird",
+  "score": 8.8,
+  "cvss": 8.8,
+  "fixed": "Firefox 159, Firefox ESR 153.6, Thunderbird 159 / 153.6",
+  "published": "2026-10-27 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.00181,
+  "epss_percentile": 7.7829999999999995
+ },
+ {
+  "id": "CVE-2026-117967",
+  "title": "Mitigation bypass in DOM: Security (Firefox 159 batch; LAG-GAP: published Oct 27, scored Nov 5)",
+  "product": "Firefox / Firefox ESR / Thunderbird",
+  "score": 8.8,
+  "cvss": 8.8,
+  "fixed": "Firefox 159, Firefox ESR 153.6, Thunderbird 159 / 153.6",
+  "published": "2026-10-27 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.0019,
+  "epss_percentile": 8.796
+ },
+ {
+  "id": "CVE-2026-117968",
+  "title": "Use-after-free in DOM: Core & HTML (Firefox 159 batch; LAG-GAP: published Oct 27, scored Nov 5)",
+  "product": "Firefox / Firefox ESR / Thunderbird",
+  "score": 8.8,
+  "cvss": 8.8,
+  "fixed": "Firefox 159, Firefox ESR 115.44 / 153.6, Thunderbird 159 / 153.6",
+  "published": "2026-10-27 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.00187,
+  "epss_percentile": 8.354000000000001
+ },
+ {
+  "id": "CVE-2026-117969",
+  "title": "Invalid pointer in JavaScript Engine: JIT (Firefox 159 batch; LAG-GAP: published Oct 27, scored Nov 5)",
+  "product": "Firefox / Firefox ESR / Thunderbird",
+  "score": 8.8,
+  "cvss": 8.8,
+  "fixed": "Firefox 159, Firefox ESR 153.6, Thunderbird 159 / 153.6",
+  "published": "2026-10-27 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.00181,
+  "epss_percentile": 7.785
+ },
+ {
+  "id": "CVE-2026-117979",
+  "title": "Incorrect boundary conditions in Graphics: WebRender (Firefox 159 batch; LAG-GAP: published Oct 27, scored Nov 5)",
+  "product": "Firefox / Firefox ESR / Thunderbird",
+  "score": 8.8,
+  "cvss": 8.8,
+  "fixed": "Firefox 159, Firefox ESR 115.44 / 153.6, Thunderbird 159 / 153.6",
+  "published": "2026-10-27 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.00187,
+  "epss_percentile": 8.35
+ },
+ {
+  "id": "CVE-2026-117983",
+  "title": "Use-after-free in Graphics (Firefox 159 batch; LAG-GAP: published Oct 27, scored Nov 5)",
+  "product": "Firefox / Firefox ESR / Thunderbird",
+  "score": 8.8,
+  "cvss": 8.8,
+  "fixed": "Firefox 159, Firefox ESR 115.44 / 153.6, Thunderbird 159 / 153.6",
+  "published": "2026-10-27 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.00181,
+  "epss_percentile": 7.785
+ },
+ {
+  "id": "CVE-2026-121050",
+  "title": "Race condition in Mobile - origin-policy bypass via crafted HTML page (Chrome 157 batch; LAG-GAP: published Nov 3, scored Nov 5)",
+  "product": "Google Chrome (iOS Mobile)",
+  "score": 8.8,
+  "cvss": 8.8,
+  "fixed": "157.0.8103.38",
+  "published": "2026-11-03 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.00237,
+  "epss_percentile": 14.828
+ },
+ {
+  "id": "CVE-2026-121054",
+  "title": "Improper state validation in XML - origin-policy bypass via crafted HTML page (Chrome 157 batch; LAG-GAP: published Nov 3, scored Nov 5)",
+  "product": "Google Chrome",
+  "score": 8.8,
+  "cvss": 8.8,
+  "fixed": "157.0.8103.38",
+  "published": "2026-11-03 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.00198,
+  "epss_percentile": 9.636
+ },
+ {
+  "id": "CVE-2026-121236",
+  "title": "Improper input validation in Network - origin-policy bypass via crafted HTML page (Chrome 157 batch; LAG-GAP: published Nov 3, scored Nov 5)",
+  "product": "Google Chrome",
+  "score": 8.8,
+  "cvss": 8.8,
+  "fixed": "157.0.8103.38",
+  "published": "2026-11-03 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.00237,
+  "epss_percentile": 14.849
+ },
+ {
   "id": "CVE-2010-20125",
   "title": "DedeCMS file inclusion in plus/carbuyaction.php -> local file disclosure (old CVE, newly published)",
   "product": "DedeCMS before 5.7",
@@ -17674,6 +17929,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": null
  },
  {
+  "id": "CVE-2021-48015",
+  "title": "Unauthenticated path traversal via dbPath -> arbitrary file read (LAG-GAP: published Oct 22, scored Nov 5)",
+  "product": "JeeWMS (erzhongxmu)",
+  "score": 8.7,
+  "cvss": 8.7,
+  "fixed": "commit 0a610e8178a0a1197e9c6615b58faf67c406d2bc",
+  "published": "2026-10-22 (NVD; scored 2026-11-05)",
+  "exploited": true,
+  "kev": false,
+  "poc": false,
+  "status": "EXPLOITED per VulnCheck KEV (date_added 2026-10-22; vulncheck_reported_exploitation cites CVE.org record); exploitation evidence first observed by Shadowserver Foundation 2023-10-17. NOT in CISA KEV.",
+  "epss": 0.00563,
+  "epss_percentile": 46.943
+ },
+ {
   "id": "CVE-2023-7357",
   "title": "FlexNet Publisher lmadmin web UI remote code execution (CWE-829)",
   "product": "FlexNet Publisher (lmadmin web UI) before 2023 R2 (11.19.4.0)",
@@ -18799,6 +19069,36 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 51.864
  },
  {
+  "id": "CVE-2026-104269",
+  "title": "RFC 2231 filename* parameter bypasses multipart filename rules on RFC-compliant backends (WAF bypass)",
+  "product": "ModSecurity (OWASP) 3.0",
+  "score": 8.6,
+  "cvss": 8.6,
+  "fixed": "3.0.17 / 2.9.15",
+  "published": "2026-11-05T16:17:29Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-73856",
+  "title": "Response body inspection bypass via case-sensitive Content-Type comparison",
+  "product": "ModSecurity (OWASP) 3.0",
+  "score": 8.6,
+  "cvss": 8.6,
+  "fixed": "3.0.17 / 2.9.15",
+  "published": "2026-11-05T16:17:48Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-103092",
   "title": "IBM Langflow OSS SQL command execution via improper access control",
   "product": "IBM Langflow OSS 1.0.0 through 1.12.3",
@@ -19922,6 +20222,36 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1)+(3). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
   "epss": 0.00168,
   "epss_percentile": 6.167
+ },
+ {
+  "id": "CVE-2026-122328",
+  "title": "Stack-based buffer overflow in FetchXLaw() WAV decoder -> crash / potential code execution",
+  "product": "SDL_mixer",
+  "score": 8.5,
+  "cvss": 8.5,
+  "fixed": "Fix commit merged (PR #910, commit df966f69); no release version published yet - update to latest",
+  "published": "2026-11-05T16:17:45Z (NVD; CVE record datePublic 2026-10-22)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-122329",
+  "title": "Stack-based buffer overflow in FetchXLaw() AIFF decoder -> crash / potential code execution",
+  "product": "SDL_mixer",
+  "score": 8.5,
+  "cvss": 8.5,
+  "fixed": "Fix commit merged (commit 34486847); no release version published yet - update to latest",
+  "published": "2026-11-05T16:17:46Z (NVD; CVE record datePublic 2026-10-22)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": null,
+  "epss_percentile": null
  },
  {
   "id": "CVE-2025-68393",
@@ -23749,6 +24079,156 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 7.786
  },
  {
+  "id": "CVE-2026-107891",
+  "title": "Integer overflows in regcomp with untrusted regex -> OOB heap writes",
+  "product": "musl libc",
+  "score": 8.1,
+  "cvss": 8.1,
+  "fixed": "1.2.7",
+  "published": "2026-11-05T16:17:32Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-123158",
+  "title": "sshd password authentication bypass: any 256-1024 char password succeeds for some account configs",
+  "product": "OpenSSH sshd (musl libc, no PAM - e.g. Alpine Linux)",
+  "score": 8.1,
+  "cvss": 8.1,
+  "fixed": "10.6p2",
+  "published": "2026-11-05T16:17:47Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV; public repro/lab repos already circulating (sshhole-lab, sshhole-repro)",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-117955",
+  "title": "JIT miscompilation in JavaScript: WebAssembly (Firefox 159 batch; LAG-GAP: published Oct 27, scored Nov 5)",
+  "product": "Firefox / Firefox ESR / Thunderbird",
+  "score": 8.1,
+  "cvss": 8.1,
+  "fixed": "Firefox 159, Firefox ESR 153.6, Thunderbird 159 / 153.6",
+  "published": "2026-10-27 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.00181,
+  "epss_percentile": 7.789
+ },
+ {
+  "id": "CVE-2026-117961",
+  "title": "Incorrect boundary conditions in Layout: Text and Fonts (Firefox 159 batch; LAG-GAP: published Oct 27, scored Nov 5)",
+  "product": "Firefox / Firefox ESR / Thunderbird",
+  "score": 8.1,
+  "cvss": 8.1,
+  "fixed": "Firefox 159, Firefox ESR 153.6, Thunderbird 159 / 153.6",
+  "published": "2026-10-27 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.00181,
+  "epss_percentile": 7.786999999999999
+ },
+ {
+  "id": "CVE-2026-117963",
+  "title": "Incorrect boundary conditions in DOM: Service Workers (Firefox 159 batch; LAG-GAP: published Oct 27, scored Nov 5)",
+  "product": "Firefox / Firefox ESR / Thunderbird",
+  "score": 8.1,
+  "cvss": 8.1,
+  "fixed": "Firefox 159, Firefox ESR 153.6, Thunderbird 159 / 153.6",
+  "published": "2026-10-27 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.00181,
+  "epss_percentile": 7.786999999999999
+ },
+ {
+  "id": "CVE-2026-117965",
+  "title": "Same-origin policy bypass in Address Bar (Firefox 159 batch; LAG-GAP: published Oct 27, scored Nov 5)",
+  "product": "Firefox / Firefox ESR / Thunderbird",
+  "score": 8.1,
+  "cvss": 8.1,
+  "fixed": "Firefox 159, Firefox ESR 153.6, Thunderbird 159 / 153.6",
+  "published": "2026-10-27 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.0019,
+  "epss_percentile": 8.796
+ },
+ {
+  "id": "CVE-2026-117966",
+  "title": "Site isolation issue in Networking: HTTP (Firefox 159 batch; LAG-GAP: published Oct 27, scored Nov 5)",
+  "product": "Firefox / Firefox ESR / Thunderbird",
+  "score": 8.1,
+  "cvss": 8.1,
+  "fixed": "Firefox 159, Firefox ESR 115.44 / 153.6, Thunderbird 159 / 153.6",
+  "published": "2026-10-27 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.00187,
+  "epss_percentile": 8.354000000000001
+ },
+ {
+  "id": "CVE-2026-117976",
+  "title": "Site isolation issue in DOM: Navigation (Firefox 159 batch; LAG-GAP: published Oct 27, scored Nov 5)",
+  "product": "Firefox / Firefox ESR / Thunderbird",
+  "score": 8.1,
+  "cvss": 8.1,
+  "fixed": "Firefox 159, Firefox ESR 153.6, Thunderbird 159 / 153.6",
+  "published": "2026-10-27 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.00181,
+  "epss_percentile": 7.7829999999999995
+ },
+ {
+  "id": "CVE-2026-117977",
+  "title": "Other issue in Console component (Firefox 159 batch; LAG-GAP: published Oct 27, scored Nov 5)",
+  "product": "Firefox / Firefox ESR / Thunderbird",
+  "score": 8.1,
+  "cvss": 8.1,
+  "fixed": "Firefox 159, Firefox ESR 153.6, Thunderbird 159 / 153.6",
+  "published": "2026-10-27 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.00181,
+  "epss_percentile": 7.786999999999999
+ },
+ {
+  "id": "CVE-2026-117978",
+  "title": "Incorrect boundary conditions in Graphics (Firefox 159 batch; LAG-GAP: published Oct 27, scored Nov 5)",
+  "product": "Firefox / Firefox ESR / Thunderbird",
+  "score": 8.1,
+  "cvss": 8.1,
+  "fixed": "Firefox 159, Firefox ESR 115.44 / 153.6, Thunderbird 159 / 153.6",
+  "published": "2026-10-27 (NVD; scored 2026-11-05)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": 0.00187,
+  "epss_percentile": 8.352
+ },
+ {
   "id": "CVE-2026-115190",
   "title": "Mautic insecure deserialization (PHP object injection) in segment filters/custom fields",
   "product": "Mautic",
@@ -23987,6 +24467,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV.",
   "epss": 0.00591,
   "epss_percentile": 48.408
+ },
+ {
+  "id": "CVE-2026-102523",
+  "title": "Authorization bypass via ALTER TABLE ... CONVERT ... PARTITION (authenticated DB user reads/modifies unauthorized tables)",
+  "product": "MariaDB Server",
+  "score": 8.0,
+  "cvss": 8.0,
+  "fixed": "10.11.19 / 11.4.13 / 11.8.9 / 12.3.3 / 13.0.2",
+  "published": "2026-11-05T16:17:23Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
+  "epss": null,
+  "epss_percentile": null
  },
  {
   "id": "CVE-2026-114148",
@@ -24555,6 +25050,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": true,
   "status": "MATERIAL 4(a) (2026-11-05 09:30 ET hourly): newly published in NVD window. Missing authentication in the Agent Service get_current_user_id function via the X-User-ID header; remote exploitation possible, exploit disclosed publicly. No fix (pull request awaits acceptance). Not in CISA KEV; EPSS null. Scope (3).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-121139",
+  "title": "Missing authentication: unauthenticated caller creates an administrator user while the users table is empty (scope 3 - admin access, regardless of score)",
+  "product": "Rapid7 Metasploit msf-ws (web service)",
+  "score": 7.3,
+  "cvss": 7.3,
+  "fixed": "6.5.9",
+  "published": "2026-11-05T16:17:44Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV",
   "epss": null,
   "epss_percentile": null
  },
@@ -26430,18 +26940,18 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-05 --run 10:30 ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-05 --run 11:30 ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning — 1725 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: ThinLinc 8.8 (CVE-2026-119744) + OFBiz batch (4) + Firefox 159 x12 + Chrome 157 x7", c:"", p:200},
-    {t:"  ThinLinc CVE-2026-119744 — impersonate any user incl. root", c:"", p:200},
-    {t:"  Apache OFBiz 24.09.08 — four RCE / auth-bypass flaws", c:"", p:200},
-    {t:"  Firefox 159 x12 · Chrome 157 x7 — new browser batches", c:"", p:200},
+    {t:"Scanning — 1759 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: OpenSSH sshd 8.1 (CVE-2026-123158) + Firefox 159 lag-gap x21 + Chrome 157 x3", c:"", p:200},
+    {t:"  OpenSSH CVE-2026-123158 — sshd password auth bypass (musl / Alpine)", c:"", p:200},
+    {t:"  Cocos AI CVE-2026-119344 — TEE attestation diversion (9.1)", c:"", p:200},
+    {t:"  Firefox 159 x21 · Chrome 157 x3 — lag-gap batches, now scored", c:"", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
@@ -26768,7 +27278,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 1725 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 1759 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
