@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 5</span><span class="pill accent">1903 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 5</span><span class="pill accent">1907 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 5 17:30 ET:</strong> 1903 CVEs tracked, filtered down to what needs action first. New this scan: 7 additions — a BTCPay Server LND credential-disclosure flaw (CVE-2026-119757, 9.8) that is exploited in the wild with funds stolen, two MatchPoint flaws at 9.9 (CVE-2026-111489, CVE-2026-111490), a MinIO SigV4 flaw (CVE-2026-122267, 8.8), a Dolibarr SQL injection (CVE-2026-33944, 8.8), a MatchPoint Android SQL injection (CVE-2026-111492, 8.6), and a Rucio header-trust flaw (CVE-2026-58273, 8.1) — all fixed in current releases, the BTCPay Server flaw flagged exploited in the wild, none KEV-listed or public-PoC, and all seven EPSS-unscored. Highlighted Drops, the Ones to Watch, and the grouped 1903-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 5 18:30 ET:</strong> 1907 CVEs tracked, filtered down to what needs action first. New this scan: 4 additions — a Kubeflow Pipelines shared-pipeline authorization bypass to cross-tenant code execution (CVE-2026-77596, 9.6), an AG2 SandboxShellTool command injection (CVE-2026-113663, 8.8), and two Kubeflow Pipelines unauthenticated SSRF flaws (CVE-2026-88980, 8.6 and CVE-2026-88981, 8.6) — all fixed in current releases, none exploited in the wild, none KEV-listed or public-PoC, and all four EPSS-unscored. Highlighted Drops, the Ones to Watch, and the grouped 1907-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -430,7 +430,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>1903</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>1907</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 5</b><span>Last updated — hourly scans</span></div>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 1903 CVEs</label>
+      <label for="cveSearch">Search all 1907 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 1903 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 1907 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -497,7 +497,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 5 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1585 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — the latest additions to the group are this scan's six watch-tier flaws — two MatchPoint flaws at 9.9 (CVE-2026-111489, CVE-2026-111490), a MinIO SigV4 flaw (CVE-2026-122267, 8.8), a Dolibarr SQL injection (CVE-2026-33944, 8.8), a MatchPoint Android SQL injection (CVE-2026-111492, 8.6) and a Rucio header-trust flaw (CVE-2026-58273, 8.1) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 5 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1589 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — the latest additions to the group are this scan's four watch-tier flaws — a Kubeflow Pipelines shared-pipeline authorization bypass to cross-tenant code execution (CVE-2026-77596, 9.6), an AG2 SandboxShellTool command injection (CVE-2026-113663, 8.8) and two Kubeflow Pipelines unauthenticated SSRF flaws (CVE-2026-88980 and CVE-2026-88981, both 8.6) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 2 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -505,18 +505,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1585 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1589 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 1903 CVEs</h2><p>Every entry from the Nov 5 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 1907 CVEs</h2><p>Every entry from the Nov 5 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 1903.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">1903 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 1907.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">1907 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 5 17:30 ET hourly scan — 7 records added (1903 CVEs tracked). The additions are a BTCPay Server LND .macaroon credential-disclosure flaw (CVE-2026-119757, 9.8, exploited in the wild — vendor-confirmed, funds stolen, fixed in 2.4.2), a MatchPoint static-credential flaw (CVE-2026-111489, 9.9, fixed in the latest app version), a MatchPoint IDOR impersonation flaw (CVE-2026-111490, 9.9, server fix already deployed), a MinIO SigV4 flaw (CVE-2026-122267, 8.8, fixed in RELEASE.2026-09-22T19-25-18Z), a Dolibarr SQL injection (CVE-2026-33944, 8.8, fixed in 22.0.5 / 23.0.2), a MatchPoint Android SQL injection (CVE-2026-111492, 8.6, fixed in the latest app version), and a Rucio header-trust flaw (CVE-2026-58273, 8.1, fixed in 35.9.0 / 38.6.0 / 41.0.0rc1). Across the full set, 68 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 93 sit in the public-PoC group. 1771 of 1903 records carry EPSS scores. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 5 18:30 ET hourly scan — 4 records added (1907 CVEs tracked). The additions are a Kubeflow Pipelines shared-pipeline authorization bypass to cross-tenant code execution (CVE-2026-77596, 9.6, fixed in 2.18.0), an AG2 SandboxShellTool command injection (CVE-2026-113663, 8.8, fixed in ag2 1.1.1), a Kubeflow Pipelines unauthenticated SSRF in the frontend artifact fetch (CVE-2026-88980, 8.6, fixed in 2.18.0), and a Kubeflow Pipelines unauthenticated SSRF via artifact provider endpoints (CVE-2026-88981, 8.6, fixed in 2.18.0). Across the full set, 68 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 93 sit in the public-PoC group. 1771 of 1907 records carry EPSS scores. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 <script id="cveData" type="application/json">
@@ -7233,6 +7233,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "No confirmed wild exploitation; NOT in CISA KEV; NOT in VulnCheck KEV (checked 2026-11-05)",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-77596",
+  "title": "Shared-pipeline upload authorization bypass -> cross-tenant pipeline injection and code execution",
+  "product": "Kubeflow Pipelines",
+  "score": 9.6,
+  "cvss": "9.6 (CVSS vv3.1)",
+  "fixed": "2.18.0",
+  "published": "2026-11-05T23:17:00Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Multi-user POST /apis/v2beta1/pipelines/upload and /upload_version call canUploadVersionedPipeline, which returns without SubjectAccessReview when the target namespace is empty (REQUIRE_NAMESPACE_FOR_PIPELINES defaults false). A low-privilege tenant can create shared pipelines or inject attacker-controlled versions into existing shared pipelines; an enabled unpinned recurring run following the latest version then executes the injected spec in another tenant's namespace under that workload's service account. Unauthenticated when the API server is directly reachable without an authenticating proxy. (CWE-639/CWE-862) Fixed 2.18.0. No exploitation reported; not in CISA KEV. EPSS unscored (brand new).",
+  "src": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-rjr3-43j3-4q8g",
   "epss": null,
   "epss_percentile": null
  },
@@ -17799,6 +17815,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-113663",
+  "title": "SandboxShellTool filter bypass -> arbitrary shell command execution as agent process",
+  "product": "AG2 (ag2ai/ag2) / AutoGen AgentOS",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS vv3.1)",
+  "fixed": "ag2 1.1.1",
+  "published": "2026-11-05T23:16:50Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "SandboxShellTool configurations using allowed=[...] or readonly=True rely on ShellAdapter._filter / contains_shell_operator to validate a command prefix and reject selected shell syntax. The filter omits newline and carriage-return separators while the raw string is passed to sh -c, allowing an attacker-influenced agent command to execute an additional arbitrary statement as a host subprocess with the privileges of the agent process. (CWE-78) Fixed ag2 1.1.1. No exploitation reported; not in CISA KEV. EPSS unscored (brand new).",
+  "src": "https://github.com/ag2ai/ag2/security/advisories/GHSA-2h4w-29cv-2cmv",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2010-20125",
   "title": "DedeCMS file inclusion in plus/carbuyaction.php -> local file disclosure (old CVE, newly published)",
   "product": "DedeCMS before 5.7",
@@ -20586,6 +20618,38 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "poc": false,
   "status": "SQL injection in the Android push-notification handler (FCM messages concatenated into queries); scope limited to the device, but exposes the local database including stored credentials. Fix: install latest app version. No exploitation reported; not in CISA KEV. EPSS unscored (brand new).",
   "src": "https://www.incibe.es/en/incibe-cert/notices/aviso/multiple-vulnerabilities-tpc-softwares-matchpoint",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-88980",
+  "title": "Unauthenticated SSRF in frontend http/https artifact fetch",
+  "product": "Kubeflow Pipelines",
+  "score": 8.6,
+  "cvss": "8.6 (CVSS vv3.1)",
+  "fixed": "2.18.0",
+  "published": "2026-11-05T23:17:01Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Frontend GET /artifacts/get accepts source=http/https with caller-controlled bucket and key; isAllowedResourceName permits an all-digit decimal host that the URL parser converts to an IPv4 address. In the default authorization-disabled standalone configuration an unauthenticated caller can fetch internal HTTP resources and receive the response body; cloud credential disclosure depends on reachable metadata services. (CWE-918) Fixed 2.18.0. No exploitation reported; not in CISA KEV. EPSS unscored (brand new).",
+  "src": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-v3vh-xv5f-p4p4",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-88981",
+  "title": "Unauthenticated SSRF through artifact provider endpoints",
+  "product": "Kubeflow Pipelines",
+  "score": 8.6,
+  "cvss": "8.6 (CVSS vv3.1)",
+  "fixed": "2.18.0",
+  "published": "2026-11-05T23:17:01Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Frontend artifact download path for source=s3/minio accepts providerInfo.Params.endpoint, and the archived pod-log path accepts S3-compatible endpoint metadata from workflow status, without requiring endpoints to match operator-controlled storage config. In the authorization-disabled standalone configuration an unauthenticated caller can make the shared ml-pipeline-ui pod connect to arbitrary reachable hosts and return response data; requests may reveal an access-key identifier when signed with configured object-store credentials. (CWE-918) Fixed 2.18.0. No exploitation reported; not in CISA KEV. EPSS unscored (brand new).",
+  "src": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-3pcj-8j5w-jmxq",
   "epss": null,
   "epss_percentile": null
  },
@@ -29107,22 +29171,19 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-05 --run 17:30 ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-05 --run 18:30 ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning — 1903 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 7 additions — BTCPay Server 9.8 in the wild", c:"", p:200},
-    {t:"  BTCPay Server CVE-2026-119757 — LND macaroon disclosure → node control, funds stolen (9.8) ** IN THE WILD **", c:"", p:200},
-    {t:"  MatchPoint CVE-2026-111489 — static credential → unauth API access (9.9)", c:"", p:200},
-    {t:"  MatchPoint CVE-2026-111490 — IDOR actingasuser → impersonation (9.9)", c:"", p:200},
-    {t:"  MinIO CVE-2026-122267 — SigV4 unsigned headers → cross-bucket read (8.8)", c:"", p:200},
-    {t:"  Dolibarr CVE-2026-33944 — SQL injection → password hashes / API keys (8.8)", c:"", p:200},
-    {t:"  MatchPoint Android CVE-2026-111492 — SQL injection → local DB / credentials (8.6)", c:"", p:200},
-    {t:"  Rucio CVE-2026-58273 — X-Rucio-Account trust → root / cross-tenant (8.1)", c:"", p:200},
+    {t:"Scanning — 1907 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: 4 additions — Kubeflow Pipelines 9.6 auth bypass", c:"", p:200},
+    {t:"  Kubeflow Pipelines CVE-2026-77596 — shared-pipeline auth bypass → cross-tenant code execution (9.6)", c:"", p:200},
+    {t:"  AG2 CVE-2026-113663 — SandboxShellTool filter bypass → shell command execution (8.8)", c:"", p:200},
+    {t:"  Kubeflow Pipelines CVE-2026-88980 — unauthenticated SSRF in artifact fetch (8.6)", c:"", p:200},
+    {t:"  Kubeflow Pipelines CVE-2026-88981 — unauthenticated SSRF via artifact provider endpoints (8.6)", c:"", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
@@ -29449,7 +29510,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 1903 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 1907 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
