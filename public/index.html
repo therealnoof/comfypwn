@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 5</span><span class="pill accent">1846 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 5</span><span class="pill accent">1881 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 5 13:30 ET:</strong> 1846 CVEs tracked, filtered down to what needs action first. New this scan: 15 additions, led by a Keycloak trio — CVE-2026-97175 (8.8, idp-auto-link account takeover), CVE-2026-92857 (8.1, Dynamic Client Registration identity forgery) and CVE-2026-96453 (8.0, kcadm truststore bypass) — plus an LXD cross-guest volume hijack (CVE-2026-12411, 9.6), a Delinea Secret Server FIDO2 bypass (CVE-2026-115828, 9.4) and a kaniko Entra ID token exfiltration (CVE-2026-105769, 9.3). Highlighted Drops, the Ones to Watch, and the grouped 1846-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 5 14:30 ET:</strong> 1881 CVEs tracked, filtered down to what needs action first. New this scan: 35 additions, led by a 16-CVE SuiteCRM batch (fixed in 7.15.2 / 8.10.2) — including CVE-2026-71550 (9.9, Workflow RCE) and CVE-2026-100358 (9.4, PHP injection) — plus an LMFDB unauthenticated SSTI-to-RCE (CVE-2026-123198, 9.8), a Yealink plug-in RCE (CVE-2026-122120, 9.0), an 8-CVE Oracle October 2026 CPU late-score batch (8.0–8.8, takeover-class), an Authorizer password-reset poisoning (CVE-2026-123196, 8.6) and a Symfony X509 auth bypass (CVE-2026-118513, 7.7). Highlighted Drops, the Ones to Watch, and the grouped 1881-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -430,7 +430,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>1846</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>1881</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 5</b><span>Last updated — hourly scans</span></div>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 1846 CVEs</label>
+      <label for="cveSearch">Search all 1881 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 1846 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 1881 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -497,7 +497,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 5 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1530 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — the latest additions to the group include nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 5 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1564 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — the latest additions to the group include nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 2 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -505,18 +505,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1530 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1564 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 1846 CVEs</h2><p>Every entry from the Nov 5 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 1881 CVEs</h2><p>Every entry from the Nov 5 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 1846.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">1846 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 1881.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">1881 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 5 13:30 ET hourly scan — 15 records added (1846 CVEs tracked). The additions are led by the Keycloak trio — CVE-2026-97175 (8.8, idp-auto-link account takeover), CVE-2026-92857 (8.1, Dynamic Client Registration identity forgery) and CVE-2026-96453 (8.0, kcadm truststore bypass) — plus a Delinea Secret Server FIDO2 bypass (CVE-2026-115828, 9.4), kaniko Entra ID token exfiltration (CVE-2026-105769, 9.3), an LXD cross-guest volume hijack (CVE-2026-12411, 9.6), Apple macOS memory corruption (CVE-2026-112443, 9.1), the WAMR heap-overflow pair CVE-2026-54912 (8.8) and CVE-2026-54914 (8.3), PyMoDAQ deserialization RCE (CVE-2026-120859, 8.5), Kafka Connect secret disclosure (CVE-2026-116593, 8.1), Banks unsafe-import RCE (CVE-2026-61536, 7.5), and the Gridbox trio CVE-2026-105607 / CVE-2026-107903 (8.6 stored XSS) and CVE-2026-107129 (8.3 file deletion). Across the full set, 67 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 93 sit in the public-PoC group. 1760 of 1846 records carry EPSS scores. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 5 14:30 ET hourly scan — 35 records added (1881 CVEs tracked). The additions are led by a 16-CVE SuiteCRM batch (fixed in 7.15.2 / 8.10.2) — including CVE-2026-71550 (9.9, Workflow RCE) and CVE-2026-100358 (9.4, Studio Dropdown Editor PHP injection) — plus LMFDB unauthenticated SSTI-to-RCE (CVE-2026-123198, 9.8), a Yealink plug-in RCE (CVE-2026-122120, 9.0), an 8-CVE Oracle October 2026 CPU late-score batch (8.0–8.8, takeover-class), an Authorizer password-reset poisoning (CVE-2026-123196, 8.6), and a Symfony X509 auth bypass (CVE-2026-118513, 7.7). Across the full set, 67 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 93 sit in the public-PoC group. 1770 of 1881 records carry EPSS scores. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 <script id="cveData" type="application/json">
@@ -2537,6 +2537,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1)+(3). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
   "epss": 0.00311,
   "epss_percentile": 24.079
+ },
+ {
+  "id": "CVE-2026-71550",
+  "title": "Workflow controller path traversal in require_once() - authenticated Workflow user includes executable PHP (RCE)",
+  "product": "SuiteCRM (CRM, 7.x/8.x)",
+  "score": 9.9,
+  "cvss": "9.9 (CVSS v3.1)",
+  "fixed": "7.15.2 / 8.10.2",
+  "published": "2026-11-05T19:17:26Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
  },
  {
   "id": "CVE-2020-10220",
@@ -6094,6 +6109,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-123198",
+  "title": "render_knowl server-side template injection - unauthenticated Jinja SSTI to OS command execution",
+  "product": "LMFDB (math database web app)",
+  "score": 9.8,
+  "cvss": "9.8 (CVSS v3.1)",
+  "fixed": "commit 01829bd (no release version stated)",
+  "published": "2026-11-05T19:17:18Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2025-65200",
   "title": "LocalStack CloudFormation deploy endpoint RCE via crafted templateURL content (lag-gap catch-up)",
   "product": "LocalStack 4.9.2",
@@ -7712,6 +7742,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS 0.00359/29.8th (2026-11-05).",
   "epss": 0.00359,
   "epss_percentile": 29.77
+ },
+ {
+  "id": "CVE-2026-100358",
+  "title": "Studio Dropdown Editor PHP injection - administrator injects persistent PHP executed as web-server account",
+  "product": "SuiteCRM (CRM, 7.x/8.x)",
+  "score": 9.4,
+  "cvss": "9.4 (CVSS v4.0)",
+  "fixed": "7.15.2 / 8.10.2",
+  "published": "2026-11-05T19:16:55Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
  },
  {
   "id": "CVE-2023-22793",
@@ -10757,6 +10802,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "No confirmed wild exploitation; NOT in CISA KEV",
   "epss": null,
   "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-122120",
+  "title": "Unauthorized file write under specific scenarios, may be exploited to achieve remote code execution",
+  "product": "Yealink Plug-in Softwares",
+  "score": 9.0,
+  "cvss": "9.0 (CVSS v3.1)",
+  "fixed": "2.35.219.0",
+  "published": "2026-11-04T19:17:39Z (NVD); scores landed 2026-11-05T19:17Z - late-score catch",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS 0.00513/0.4th (2026-11-05).",
+  "epss": 0.00513,
+  "epss_percentile": 0.43908
  },
  {
   "id": "CVE-2026-103506",
@@ -17329,6 +17389,231 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-100363",
+  "title": "V8 module API exposes admin-only module CRUD to any authenticated OAuth2 user - privilege escalation to admin",
+  "product": "SuiteCRM (CRM, 7.x/8.x)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "7.15.2 / 8.10.2",
+  "published": "2026-11-05T19:16:58Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-100365",
+  "title": "AOR report ORDER BY SQL injection - authenticated user extracts password hashes and arbitrary data",
+  "product": "SuiteCRM (CRM, 7.x/8.x)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "7.15.2 / 8.10.2",
+  "published": "2026-11-05T19:16:59Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-63214",
+  "title": "Legacy REST get_entry_list SQL injection - bypasses user_hash filter, retrieves arbitrary records",
+  "product": "SuiteCRM (CRM, 7.x/8.x)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "7.15.2 / 8.10.2",
+  "published": "2026-11-05T19:17:23Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-69134",
+  "title": "REST v4 JSON handler SQL injection in INSERT/UPDATE via relationship write helpers",
+  "product": "SuiteCRM (CRM, 7.x/8.x)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "7.15.2 / 8.10.2",
+  "published": "2026-11-05T19:17:24Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-69142",
+  "title": "jjwg_Maps map_markers SQL injection via distance parameter - extracts data, alters query results",
+  "product": "SuiteCRM (CRM, 7.x/8.x)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "7.15.2 / 8.10.2",
+  "published": "2026-11-05T19:17:25Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-71548",
+  "title": "AOR report build_report_query_where SQL injection - reads entire database incl. user_hash and OAuth2 tokens",
+  "product": "SuiteCRM (CRM, 7.x/8.x)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "7.15.2 / 8.10.2",
+  "published": "2026-11-05T19:17:26Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-97377",
+  "title": "Legacy SOAP portal_get_entry_list blind SQL injection - low-privileged portal user discloses sensitive records",
+  "product": "SuiteCRM (CRM, 7.x/8.x)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "7.15.2 / 8.10.2",
+  "published": "2026-11-05T19:17:29Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-123208",
+  "title": "Local file server with wildcard CORS - malicious website overwrites renderer scripts, executes JavaScript with Node.js access",
+  "product": "noname (Electron desktop app)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "Not stated in CVE record (after 1.11.6.1)",
+  "published": "2026-11-05T19:17:20Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-101457",
+  "title": "SQL injection - low-privileged attacker with network access via SQL takes over Siebel Apps (Oracle Oct 2026 CPU)",
+  "product": "Oracle Siebel Apps - Life Sciences (eDetailing)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "October 2026 Oracle CPU patch",
+  "published": "2026-10-20T22:17:54Z (NVD); scores landed 2026-11-05T19:17Z - late-score catch",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS 0.00459/0.4th (2026-11-05).",
+  "epss": 0.00459,
+  "epss_percentile": 0.39945
+ },
+ {
+  "id": "CVE-2026-101518",
+  "title": "Low-privileged HTTP attacker takes over Oracle Enterprise Manager Base Platform (Oracle Oct 2026 CPU)",
+  "product": "Oracle Enterprise Manager Base Platform (Agent Next Gen)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "October 2026 Oracle CPU patch",
+  "published": "2026-10-20T22:18:01Z (NVD); scores landed 2026-11-05T19:17Z - late-score catch",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS 0.00480/0.4th (2026-11-05).",
+  "epss": 0.0048,
+  "epss_percentile": 0.41556
+ },
+ {
+  "id": "CVE-2026-101525",
+  "title": "Low-privileged HTTP attacker takes over Oracle Enterprise Manager for Siebel (Oracle Oct 2026 CPU)",
+  "product": "Oracle Enterprise Manager for Siebel (Configuration Management)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "October 2026 Oracle CPU patch",
+  "published": "2026-10-20T22:18:01Z (NVD); scores landed 2026-11-05T19:17Z - late-score catch",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS 0.00479/0.4th (2026-11-05).",
+  "epss": 0.00479,
+  "epss_percentile": 0.41519
+ },
+ {
+  "id": "CVE-2026-101526",
+  "title": "Low-privileged HTTP attacker takes over Oracle Enterprise Manager for Siebel, second CVE in same component (Oracle Oct 2026 CPU)",
+  "product": "Oracle Enterprise Manager for Siebel (Configuration Management)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "October 2026 Oracle CPU patch",
+  "published": "2026-10-20T22:18:01Z (NVD); scores landed 2026-11-05T19:17Z - late-score catch",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS 0.00479/0.4th (2026-11-05).",
+  "epss": 0.00479,
+  "epss_percentile": 0.4152
+ },
+ {
+  "id": "CVE-2026-101542",
+  "title": "Low-privileged HTTP attacker takes over Oracle Capacity (Oracle Oct 2026 CPU)",
+  "product": "Oracle Capacity (E-Business Suite, Internal Operations)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "October 2026 Oracle CPU patch",
+  "published": "2026-10-20T22:18:03Z (NVD); scores landed 2026-11-05T19:17Z - late-score catch",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS 0.00352/0.3th (2026-11-05).",
+  "epss": 0.00352,
+  "epss_percentile": 0.29039
+ },
+ {
+  "id": "CVE-2026-101594",
+  "title": "Low-privileged HTTP attacker takes over Oracle Agile PLM for Process (Oracle Oct 2026 CPU)",
+  "product": "Oracle Agile PLM for Process (Product Quality Management)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "October 2026 Oracle CPU patch",
+  "published": "2026-10-20T22:18:12Z (NVD); scores landed 2026-11-05T19:17Z - late-score catch",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS 0.00447/0.4th (2026-11-05).",
+  "epss": 0.00447,
+  "epss_percentile": 0.38992
+ },
+ {
+  "id": "CVE-2026-101596",
+  "title": "Low-privileged HTTP attacker takes over Oracle Agile PLM for Process, second CVE in same component (Oracle Oct 2026 CPU)",
+  "product": "Oracle Agile PLM for Process (Product Quality Management)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "October 2026 Oracle CPU patch",
+  "published": "2026-10-20T22:18:13Z (NVD); scores landed 2026-11-05T19:17Z - late-score catch",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS 0.00447/0.4th (2026-11-05).",
+  "epss": 0.00447,
+  "epss_percentile": 0.38992
+ },
+ {
   "id": "CVE-2010-20125",
   "title": "DedeCMS file inclusion in plus/carbuyaction.php -> local file disclosure (old CVE, newly published)",
   "product": "DedeCMS before 5.7",
@@ -18859,6 +19144,36 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-123200",
+  "title": "Out-of-bounds stack write - unauthenticated remote peer writes outside stack buffer (crash; memory corruption)",
+  "product": "VRPN (virtual reality peripheral network)",
+  "score": 8.7,
+  "cvss": "8.7 (CVSS v4.0)",
+  "fixed": "Not stated in CVE record (after 07.36)",
+  "published": "2026-11-05T19:17:18Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-123202",
+  "title": "Stack buffer overflow - remote attacker writes past 1024-byte stack buffer via long XML names (crash; memory corruption)",
+  "product": "libnxml (XML parser library)",
+  "score": 8.7,
+  "cvss": "8.7 (CVSS v4.0)",
+  "fixed": "0.18.6",
+  "published": "2026-11-05T19:17:19Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2023-7357",
   "title": "FlexNet Publisher lmadmin web UI remote code execution (CWE-829)",
   "product": "FlexNet Publisher (lmadmin web UI) before 2023 R2 (11.19.4.0)",
@@ -20036,6 +20351,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "cvss": "8.6 (CVSS v4.0)",
   "fixed": "2.20.5.0",
   "published": "2026-11-05T18:17:00Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-123196",
+  "title": "Password reset poisoning via x-authorizer-url metadata - unauthenticated account takeover",
+  "product": "Authorizer (auth server)",
+  "score": 8.6,
+  "cvss": "8.6 (CVSS v4.0)",
+  "fixed": "2.4.2",
+  "published": "2026-11-05T19:17:17Z (NVD)",
   "exploited": false,
   "kev": false,
   "poc": false,
@@ -22864,6 +23194,111 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-61648",
+  "title": "Multi report condition SQL injection - low-privileged user reads arbitrary database data",
+  "product": "SuiteCRM (CRM, 7.x/8.x)",
+  "score": 8.3,
+  "cvss": "8.3 (CVSS v3.1)",
+  "fixed": "7.15.2 / 8.10.2",
+  "published": "2026-11-05T19:17:22Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-61651",
+  "title": "Projects get_end_date blind SQL injection - low-privileged user extracts credentials and customer records",
+  "product": "SuiteCRM (CRM, 7.x/8.x)",
+  "score": 8.3,
+  "cvss": "8.3 (CVSS v3.1)",
+  "fixed": "7.15.2 / 8.10.2",
+  "published": "2026-11-05T19:17:22Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-61653",
+  "title": "Campaigns PopupCampaignRoi blind SQL injection via $_REQUEST['id']",
+  "product": "SuiteCRM (CRM, 7.x/8.x)",
+  "score": 8.3,
+  "cvss": "8.3 (CVSS v3.1)",
+  "fixed": "7.15.2 / 8.10.2",
+  "published": "2026-11-05T19:17:22Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-63215",
+  "title": "REST v4.1 get_entry_list time-based blind SQL injection - extracts sensitive database information",
+  "product": "SuiteCRM (CRM, 7.x/8.x)",
+  "score": 8.3,
+  "cvss": "8.3 (CVSS v3.1)",
+  "fixed": "7.15.2 / 8.10.2",
+  "published": "2026-11-05T19:17:23Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-69140",
+  "title": "GetLatestRevision SQL injection in UPDATE - discloses data and mass-updates linked_documents records",
+  "product": "SuiteCRM (CRM, 7.x/8.x)",
+  "score": 8.3,
+  "cvss": "8.3 (CVSS v3.1)",
+  "fixed": "7.15.2 / 8.10.2",
+  "published": "2026-11-05T19:17:25Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-69141",
+  "title": "Cases get_kb_articles blind SQL injection via $_POST['search']",
+  "product": "SuiteCRM (CRM, 7.x/8.x)",
+  "score": 8.3,
+  "cvss": "8.3 (CVSS v3.1)",
+  "fixed": "7.15.2 / 8.10.2",
+  "published": "2026-11-05T19:17:25Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-123205",
+  "title": "Heap buffer overflow in log targets - unauthenticated remote peer overflows heap buffers (crash; memory corruption)",
+  "product": "accel-ppp (PPPoE/L2TP server)",
+  "score": 8.3,
+  "cvss": "8.3 (CVSS v4.0)",
+  "fixed": "1.15.0",
+  "published": "2026-11-05T19:17:19Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2023-42442",
   "title": "JumpServer improper authentication -> unauthenticated session-replay download (bastion host)",
   "product": "JumpServer 3.0.0 before 3.5.5 / 3.6.4",
@@ -23957,6 +24392,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "No confirmed wild exploitation; NOT in CISA KEV",
   "epss": 0.00244,
   "epss_percentile": 15.751999999999999
+ },
+ {
+  "id": "CVE-2026-118494",
+  "title": "Secret configs cached in web-accessible file - unauthenticated disclosure of Joomla secret and API keys",
+  "product": "JReviews (Joomla extension, jreviews.com)",
+  "score": 8.2,
+  "cvss": "8.2 (CVSS v4.0)",
+  "fixed": "Not stated in CVE record (releases after 5.12.0 / 6.6.9)",
+  "published": "2026-11-05T19:17:12Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
  },
  {
   "id": "CVE-2026-101770",
@@ -25489,6 +25939,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 13.468
  },
  {
+  "id": "CVE-2026-61650",
+  "title": "V8 relationships endpoint missing edit-permission check - low-privileged user reassigns records and ownership",
+  "product": "SuiteCRM (CRM, 7.x/8.x)",
+  "score": 8.1,
+  "cvss": "8.1 (CVSS v3.1)",
+  "fixed": "7.15.2 / 8.10.2",
+  "published": "2026-11-05T19:17:22Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-115190",
   "title": "Mautic insecure deserialization (PHP object injection) in segment filters/custom fields",
   "product": "Mautic",
@@ -25759,6 +26224,51 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-123271",
+  "title": "MCP OAuth resource-indicator validation flaw - malicious MCP server replays bearer token against other resources",
+  "product": "ChatCLI (MCP client)",
+  "score": 8.0,
+  "cvss": "8.0 (CVSS v3.1)",
+  "fixed": "v1.215.2",
+  "published": "2026-11-05T19:17:20Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-123272",
+  "title": "OAuth metadata validation flaw - malicious MCP server obtains tokens for other resources",
+  "product": "mark3labs mcp-go (MCP Go SDK)",
+  "score": 8.0,
+  "cvss": "8.0 (CVSS v3.1)",
+  "fixed": "v1.2.1",
+  "published": "2026-11-05T19:17:20Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS null (published <1 day / too new to score).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-101602",
+  "title": "Low-privileged HTTP attacker takes over Oracle Agile PLM for Process; requires user interaction (Oracle Oct 2026 CPU)",
+  "product": "Oracle Agile PLM for Process (Product Quality Management)",
+  "score": 8.0,
+  "cvss": "8.0 (CVSS v3.1)",
+  "fixed": "October 2026 Oracle CPU patch",
+  "published": "2026-10-20T22:18:13Z (NVD); scores landed 2026-11-05T19:17Z - late-score catch",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS 0.00359/0.3th (2026-11-05).",
+  "epss": 0.00359,
+  "epss_percentile": 0.2989
+ },
+ {
   "id": "CVE-2026-114148",
   "title": "ASP.NET Core incorrect default permissions local privilege escalation",
   "product": "ASP.NET Core",
@@ -25967,6 +26477,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "MATERIAL 4(a) (2026-11-05 09:30 ET hourly): newly published in NVD window. Framework combines the management root path with permission rules incorrectly, so security policies apply to the wrong internal paths and an attacker bypasses authorization checks to reach sensitive management endpoints (local attack vector). No exploitation reported; not in CISA KEV; EPSS null. Fixed version unconfirmed. Scope (3).",
   "epss": null,
   "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-118513",
+  "title": "X509 authenticator spoofing - attacker holding a certificate from the application's trusted CA authenticates as an arbitrary privileged user",
+  "product": "Symfony (PHP framework)",
+  "score": 7.7,
+  "cvss": "7.7 (CVSS v4.0)",
+  "fixed": "5.4.56 / 6.4.50 / 7.4.23 / 8.1.11",
+  "published": "2026-11-04T13:17:25Z (NVD); scores landed 2026-11-05T19:17Z - late-score catch",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; NOT in CISA KEV EPSS 0.00270/0.2th (2026-11-05).",
+  "epss": 0.0027,
+  "epss_percentile": 0.1937
  },
  {
   "id": "CVE-2026-76506",
@@ -28245,18 +28770,18 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-05 --run 13:30 ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-05 --run 14:30 ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning — 1846 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 15 additions — Keycloak trio leads (8.8 / 8.1 / 8.0)", c:"", p:200},
-    {t:"  Keycloak CVE-2026-97175 — idp-auto-link account takeover (8.8)", c:"", p:200},
-    {t:"  LXD CVE-2026-12411 — cross-guest volume hijack (9.6)", c:"", p:200},
-    {t:"  Delinea CVE-2026-115828 — Secret Server FIDO2 bypass (9.4)", c:"", p:200},
+    {t:"Scanning — 1881 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: 35 additions — 16-CVE SuiteCRM batch leads (9.9 / 9.4)", c:"", p:200},
+    {t:"  SuiteCRM CVE-2026-71550 — Workflow RCE (9.9), fixed 7.15.2 / 8.10.2", c:"", p:200},
+    {t:"  LMFDB CVE-2026-123198 — unauthenticated SSTI-to-RCE (9.8)", c:"", p:200},
+    {t:"  Yealink CVE-2026-122120 — plug-in RCE (9.0)", c:"", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
@@ -28583,7 +29108,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 1846 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 1881 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
