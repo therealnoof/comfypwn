@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 5</span><span class="pill accent">1659 CVEs TRACKED</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 5</span><span class="pill accent">1672 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 5, 05:30 ET:</strong> 1659 CVEs tracked, filtered down to what needs action first. New this scan: 1 addition — CVE-2026-112445, a macOS local privilege escalation to root via the com.apple.xpc.uscwoap launchd daemon (public PoC; no CVSS published yet; fixed in macOS 27.2) — plus new public PoCs for CVE-2026-122006 (9.8, Rails Active Storage), CVE-2026-58868 (Android FrameDecoder RCE) and CVE-2026-107441 (8.8, Zyxel GS1900, already exploited / KEV). Highlighted Drops, the Ones to Watch, and the grouped 1659-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 5 07:30 ET:</strong> 1672 CVEs tracked, filtered down to what needs action first. New this scan: CVE-2026-76460, CVE-2026-121489, CVE-2026-123018 + 10 more — 13 additions in all, led by a Cisco ISE API authentication bypass (CVE-2026-76460, 10.0, CISA KEV-listed and actively exploited), nine Apache Juneau flaws all fixed in 9.2.1, two DB-GPT remote code executions with public exploits and no fix known (CVE-2026-123018, CVE-2026-123019), and a Keycloak JWT algorithm confusion (CVE-2026-11800, 8.1, fixed in 26.6.4). Highlighted Drops, the Ones to Watch, and the grouped 1672-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
 
@@ -429,7 +429,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>1659</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>1672</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 5</b><span>Last updated — hourly scans</span></div>
@@ -447,11 +447,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 1659 CVEs</label>
+      <label for="cveSearch">Search all 1672 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 1659 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 1672 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -496,7 +496,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 5 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1372 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — the latest additions include a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 5 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1382 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — the latest additions to the group include nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 2 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -504,18 +504,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1372 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1382 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 1659 CVEs</h2><p>Every entry from the Nov 5 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 1672 CVEs</h2><p>Every entry from the Nov 5 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 1659.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">1659 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 1672.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">1672 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -537,7 +537,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 5, 05:30 ET hourly scan — 1 record added (1659 CVEs tracked). The addition is: CVE-2026-112445 (macOS local privilege escalation to root via the com.apple.xpc.uscwoap launchd daemon — public PoC, no CVSS published yet, fixed in macOS 27.2). Also this scan: new public PoCs for CVE-2026-122006 (9.8, Rails Active Storage), CVE-2026-58868 (Android FrameDecoder RCE) and CVE-2026-107441 (8.8, Zyxel GS1900, already exploited / KEV). Across the full set, 65 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 88 sit in the public-PoC group. 1531 of 1659 records carry EPSS scores. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 5 07:30 ET hourly scan — 13 records added (1672 CVEs tracked). The additions are: CVE-2026-76460 (Cisco ISE API authentication bypass, 10.0, CISA KEV-listed, actively exploited), nine Apache Juneau CVEs (CVE-2026-121489, CVE-2026-73095, CVE-2026-73098, CVE-2026-73099, CVE-2026-73100, CVE-2026-73101, CVE-2026-73116, CVE-2026-73117, CVE-2026-96677 — all fixed in Juneau 9.2.1), CVE-2026-123018 and CVE-2026-123019 (DB-GPT remote code executions, public exploits, no fix known), and CVE-2026-11800 (Keycloak JWT algorithm confusion, 8.1, fixed in 26.6.4). Across the full set, 66 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 90 sit in the public-PoC group. 1533 of 1672 records carry EPSS scores. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 <script id="cveData" type="application/json">
@@ -933,6 +933,25 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 80.696
   },
   {
+   "id": "CVE-2026-121489",
+   "title": "Apache Juneau DirectoryResource path traversal - read/write/delete outside configured root",
+   "product": "Apache Juneau through 9.2.0",
+   "score": 10.0,
+   "cvss": "10.0 (CVSS v4.0)",
+   "fixed": "9.2.1",
+   "published": "2026-11-05T12:17:49Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Path traversal (CWE-22): DirectoryResource does not keep request paths inside its configured root; with view/upload/delete enabled (off by default) a client can read, write or delete files anywhere the server process can access. Fixed in 9.2.1. No exploitation reported; not in CISA KEV. EPSS null (brand new). Scope (1).",
+   "epss": null,
+   "epss_percentile": null,
+   "sources": [
+    "https://nvd.nist.gov/vuln/detail/CVE-2026-121489",
+    "https://lists.apache.org/thread.html/j05q7vw08j48o96tdlzcsd4sozx1lyl6"
+   ]
+  },
+  {
    "id": "CVE-2026-121606",
    "title": "Qihoo 360 D-series verify_sign firmware signature verification bypass (remote, public exploit, 10.0)",
    "product": "Qihoo 360 D621-2, D603-2, D600-2, D619, D606-6, D706 up to 6.4.9",
@@ -1207,6 +1226,139 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 44.72
   },
   {
+   "id": "CVE-2026-73098",
+   "title": "Apache Juneau unsafe dynamic class loading - static initializer execution",
+   "product": "Apache Juneau through 9.2.0",
+   "score": 10.0,
+   "cvss": "10.0 (CVSS v4.0)",
+   "fixed": "9.2.1",
+   "published": "2026-11-05T12:17:50Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Improper control of dynamically-loaded code (CWE-470): parsing a value into a java.lang.Class property loaded the named class with initialization enabled, running its static initializer. Impact depends on classes on the classpath. Fixed in 9.2.1. No exploitation reported; not in CISA KEV. EPSS null (brand new). Scope (1).",
+   "epss": null,
+   "epss_percentile": null,
+   "sources": [
+    "https://nvd.nist.gov/vuln/detail/CVE-2026-73098",
+    "https://lists.apache.org/thread.html/j05q7vw08j48o96tdlzcsd4sozx1lyl6"
+   ]
+  },
+  {
+   "id": "CVE-2026-73099",
+   "title": "Apache Juneau CSRF via content query parameter on all HTTP methods",
+   "product": "Apache Juneau through 9.2.0",
+   "score": 10.0,
+   "cvss": "10.0 (CVSS v4.0)",
+   "fixed": "9.2.1",
+   "published": "2026-11-05T12:17:50Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "CSRF (CWE-352): REST server accepts a 'content' query parameter replacing the request body, enabled by default on every HTTP method incl. GET; a cross-site link delivers an attacker-chosen body without a CORS preflight. Fixed in 9.2.1 (or set disableContentParam). No exploitation reported; not in CISA KEV. EPSS null (brand new). Scope (1).",
+   "epss": null,
+   "epss_percentile": null,
+   "sources": [
+    "https://nvd.nist.gov/vuln/detail/CVE-2026-73099",
+    "https://lists.apache.org/thread.html/j05q7vw08j48o96tdlzcsd4sozx1lyl6"
+   ]
+  },
+  {
+   "id": "CVE-2026-73100",
+   "title": "Apache Juneau REST call logger writes credential headers to log in cleartext",
+   "product": "Apache Juneau through 9.2.0",
+   "score": 10.0,
+   "cvss": "10.0 (CVSS v4.0)",
+   "fixed": "9.2.1",
+   "published": "2026-11-05T12:17:51Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Sensitive information in log file (CWE-532): default call logger records request headers on server errors without redaction - Authorization, Cookie, Proxy-Authorization, X-API-Key in cleartext. Fixed in 9.2.1. No exploitation reported; not in CISA KEV. EPSS null (brand new). Scope (1).",
+   "epss": null,
+   "epss_percentile": null,
+   "sources": [
+    "https://nvd.nist.gov/vuln/detail/CVE-2026-73100",
+    "https://lists.apache.org/thread.html/j05q7vw08j48o96tdlzcsd4sozx1lyl6"
+   ]
+  },
+  {
+   "id": "CVE-2026-73101",
+   "title": "Apache Juneau error responses leak internal exception details",
+   "product": "Apache Juneau through 9.2.0",
+   "score": 10.0,
+   "cvss": "10.0 (CVSS v4.0)",
+   "fixed": "9.2.1",
+   "published": "2026-11-05T12:17:51Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Error message info disclosure (CWE-209): REST server sends internal exception class/message in a 'Thrown' response header on every error, even with stack-trace rendering disabled. Fixed in 9.2.1. No exploitation reported; not in CISA KEV. EPSS null (brand new). Scope (1).",
+   "epss": null,
+   "epss_percentile": null,
+   "sources": [
+    "https://nvd.nist.gov/vuln/detail/CVE-2026-73101",
+    "https://lists.apache.org/thread.html/j05q7vw08j48o96tdlzcsd4sozx1lyl6"
+   ]
+  },
+  {
+   "id": "CVE-2026-73116",
+   "title": "Apache Juneau RestClient leaks credential headers across redirects",
+   "product": "Apache Juneau through 9.2.0",
+   "score": 10.0,
+   "cvss": "10.0 (CVSS v4.0)",
+   "fixed": "9.2.1",
+   "published": "2026-11-05T12:17:51Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Insufficiently protected credentials (CWE-522): RestClient followed redirects keeping credential headers, so a redirect to another host/port or HTTPS->HTTP receives Authorization/Cookie/X-API-Key. Fixed in 9.2.1. No exploitation reported; not in CISA KEV. EPSS null (brand new). Scope (1).",
+   "epss": null,
+   "epss_percentile": null,
+   "sources": [
+    "https://nvd.nist.gov/vuln/detail/CVE-2026-73116",
+    "https://lists.apache.org/thread.html/j05q7vw08j48o96tdlzcsd4sozx1lyl6"
+   ]
+  },
+  {
+   "id": "CVE-2026-73117",
+   "title": "Apache Juneau HTTP response splitting via unchecked headers/redirects",
+   "product": "Apache Juneau through 9.2.0",
+   "score": 10.0,
+   "cvss": "10.0 (CVSS v4.0)",
+   "fixed": "9.2.1",
+   "published": "2026-11-05T12:17:51Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "CRLF injection (CWE-113): REST server passed response header values and redirect targets to the servlet container unchecked; apps building headers/redirects from request data expose header injection / open redirect. Fixed in 9.2.1 (headers sanitized by default; use sendSafeRedirect()). No exploitation reported; not in CISA KEV. EPSS null (brand new). Scope (1).",
+   "epss": null,
+   "epss_percentile": null,
+   "sources": [
+    "https://nvd.nist.gov/vuln/detail/CVE-2026-73117",
+    "https://lists.apache.org/thread.html/j05q7vw08j48o96tdlzcsd4sozx1lyl6"
+   ]
+  },
+  {
+   "id": "CVE-2026-76460",
+   "title": "Cisco ISE API authentication bypass - unauthenticated management access, root command execution (actively exploited, KEV)",
+   "product": "Cisco ISE / ISE-PIC 3.1-3.5",
+   "score": 10.0,
+   "cvss": "10.0 (CVSS v3.1)",
+   "fixed": "3.1 Patch 12; 3.2 Patch 11; 3.3 Patch 12; 3.4 Patch 7; 3.5 Patch 4",
+   "published": "2026-09-16T21:17:21Z (NVD); CISA KEV-listed 2026-09-16",
+   "exploited": true,
+   "kev": true,
+   "poc": false,
+   "status": "BASELINE MISS - KEV-listed since 2026-09-16 (due 2026-09-19, forensic triage required). Incorrect use of privileged APIs (CWE-648) on an ISE API endpoint: unauthenticated remote attacker bypasses the web management interface; successful exploitation yields root command execution. Cisco PSIRT aware of active exploitation (found via TAC case). No workaround; iACL mitigation only. EPSS 0.756/99.52nd. Scope (1)+(3).",
+   "epss": 0.75599,
+   "epss_percentile": 99.521,
+   "sources": [
+    "https://nvd.nist.gov/vuln/detail/CVE-2026-76460",
+    "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ISE-ABP-VNSW7Tn5"
+   ]
+  },
+  {
    "id": "CVE-2026-79844..79851",
    "title": "HPE ArubaOS batch: auth bypass -> RCE, unauth command injection / SQLi / buffer overflow -> RCE",
    "product": "HPE Aruba Networking ArubaOS AOS-8 and AOS-10 (mobility conductors, controllers, access points, gateways - management plane)",
@@ -1370,6 +1522,25 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV.",
    "epss": 0.00494,
    "epss_percentile": 42.55
+  },
+  {
+   "id": "CVE-2026-96677",
+   "title": "Apache Juneau reflected XSS in HTML serialization page chrome",
+   "product": "Apache Juneau through 9.2.0",
+   "score": 10.0,
+   "cvss": "10.0 (CVSS v4.0)",
+   "fixed": "9.2.1",
+   "published": "2026-11-05T12:17:51Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "XSS (CWE-79): HTML document serialization does not HTML-encode variable substitutions in page chrome (header/nav/aside/footer); apps whose chrome includes request-derived variables reflect them unencoded. Default chrome unaffected. Fixed in 9.2.1. No exploitation reported; not in CISA KEV. EPSS null (brand new). Scope (1).",
+   "epss": null,
+   "epss_percentile": null,
+   "sources": [
+    "https://nvd.nist.gov/vuln/detail/CVE-2026-96677",
+    "https://lists.apache.org/thread.html/j05q7vw08j48o96tdlzcsd4sozx1lyl6"
+   ]
   },
   {
    "id": "CVE-2026-97229",
@@ -2107,6 +2278,86 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 40.489000000000004
   },
   {
+   "id": "CVE-2026-122303",
+   "title": "Kyverno NamespacedMutatingPolicy authz bypass -> overwrite Secrets/Deployments cluster-wide",
+   "product": "Kyverno 1.17.0-<1.19.2",
+   "score": 9.9,
+   "cvss": "9.9 (CVSS v3.1; v4.0 9.4)",
+   "fixed": "1.19.2",
+   "published": "2026-11-05T03:17Z (NVD, Received)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1)+(3). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
+   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122303",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-122304",
+   "title": "Kyverno CleanupPolicy nil-policy authz bypass -> read cross-ns Secrets, modify validatingwebhookconfigurations",
+   "product": "Kyverno 1.17.0-<1.19.2",
+   "score": 9.9,
+   "cvss": "9.9 (CVSS v3.1; v4.0 9.4)",
+   "fixed": "1.19.2",
+   "published": "2026-11-05T03:17Z (NVD, Received)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1)+(3). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
+   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122304",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-122310",
+   "title": "Kyverno context.apiCall urlPath validation gap -> cluster admin via raw path",
+   "product": "Kyverno 1.19.1-<1.19.2",
+   "score": 9.9,
+   "cvss": "9.9 (CVSS v3.1; v4.0 9.4)",
+   "fixed": "1.19.2",
+   "published": "2026-11-05T03:17Z (NVD, Received)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1)+(3). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
+   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122310",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-122311",
+   "title": "Kyverno resource.get/post path traversal -> read/write arbitrary cluster objects (cluster takeover)",
+   "product": "Kyverno 1.16.0-<1.19.2",
+   "score": 9.9,
+   "cvss": "9.9 (CVSS v3.1; v4.0 9.4)",
+   "fixed": "1.19.2",
+   "published": "2026-11-05T03:17Z (NVD, Received)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1)+(3). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
+   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122311",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-122313",
+   "title": "Kyverno NamespacedMutatingPolicy priv esc -> mutate other tenants' RoleBindings/Roles cluster-wide",
+   "product": "Kyverno 1.17.0-<1.19.2",
+   "score": 9.9,
+   "cvss": "9.9 (CVSS v3.1; v4.0 9.4)",
+   "fixed": "1.19.2",
+   "published": "2026-11-05T03:17Z (NVD, Received)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1)+(3). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
+   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122313",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2026-28336",
    "title": "SolarWinds Dameware command injection -> compromise of remotely controlled host (auth required)",
    "product": "SolarWinds Dameware (before 2026.3.1)",
@@ -2333,86 +2584,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": null
   },
   {
-   "id": "CVE-2026-122303",
-   "title": "Kyverno NamespacedMutatingPolicy authz bypass -> overwrite Secrets/Deployments cluster-wide",
-   "product": "Kyverno 1.17.0-<1.19.2",
-   "score": 9.9,
-   "cvss": "9.9 (CVSS v3.1; v4.0 9.4)",
-   "fixed": "1.19.2",
-   "published": "2026-11-05T03:17Z (NVD, Received)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1)+(3). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
-   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122303",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-122304",
-   "title": "Kyverno CleanupPolicy nil-policy authz bypass -> read cross-ns Secrets, modify validatingwebhookconfigurations",
-   "product": "Kyverno 1.17.0-<1.19.2",
-   "score": 9.9,
-   "cvss": "9.9 (CVSS v3.1; v4.0 9.4)",
-   "fixed": "1.19.2",
-   "published": "2026-11-05T03:17Z (NVD, Received)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1)+(3). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
-   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122304",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-122310",
-   "title": "Kyverno context.apiCall urlPath validation gap -> cluster admin via raw path",
-   "product": "Kyverno 1.19.1-<1.19.2",
-   "score": 9.9,
-   "cvss": "9.9 (CVSS v3.1; v4.0 9.4)",
-   "fixed": "1.19.2",
-   "published": "2026-11-05T03:17Z (NVD, Received)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1)+(3). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
-   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122310",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-122311",
-   "title": "Kyverno resource.get/post path traversal -> read/write arbitrary cluster objects (cluster takeover)",
-   "product": "Kyverno 1.16.0-<1.19.2",
-   "score": 9.9,
-   "cvss": "9.9 (CVSS v3.1; v4.0 9.4)",
-   "fixed": "1.19.2",
-   "published": "2026-11-05T03:17Z (NVD, Received)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1)+(3). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
-   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122311",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-122313",
-   "title": "Kyverno NamespacedMutatingPolicy priv esc -> mutate other tenants' RoleBindings/Roles cluster-wide",
-   "product": "Kyverno 1.17.0-<1.19.2",
-   "score": 9.9,
-   "cvss": "9.9 (CVSS v3.1; v4.0 9.4)",
-   "fixed": "1.19.2",
-   "published": "2026-11-05T03:17Z (NVD, Received)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1)+(3). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
-   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122313",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
    "id": "CVE-2020-10220",
    "title": "rConfig: SQL injection via commands.inc.php searchColumn parameter (web management interface)",
    "product": "rConfig (network device configuration management)",
@@ -2560,6 +2731,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "poc": false,
    "status": "Unauthenticated auth bypass via hub/rpwd.php; log in as admin with no 2FA. Research write-up (0xbro). NOT in CISA KEV; VulnCheck KEV negative. Scope (1)+(3).",
    "src": "https://0xbro.red/posts/vtenext-25-02-a-three-way-path-to-rce/",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-100109",
+   "title": "Security For WooCommerce unauthenticated privilege escalation - create administrator accounts via usfw_create_temporary_user",
+   "product": "Security For WooCommerce WordPress plugin 1.0.10-1.0.16 (ultimate-security-for-woocommerce)",
+   "score": 9.8,
+   "cvss": "9.8 (CVSS v3.0)",
+   "fixed": "None known - WPScan: 'No known fix'",
+   "published": "2026-11-05T08:17:01Z (NVD); WPScan published 2026-11-03",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Missing Authorization (CWE-862/CWE-269): the plugin performs no capability checks when creating users through an action available to unauthenticated visitors and lets the caller choose the new account's role - unauthenticated attackers create administrator accounts and take over the site. Affected 1.0.10-1.0.16. NO KNOWN FIX (WPScan). Researcher Afan, WPScan-verified. No exploitation reported; not in CISA KEV; VulnCheck KEV single-lookup 0 documents; EPSS null (brand new, unscored). PoC withheld by WPScan until 2026-02-01. Scope (1)+(3).",
    "epss": null,
    "epss_percentile": null
   },
@@ -3570,6 +3756,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": null
   },
   {
+   "id": "CVE-2026-122302",
+   "title": "Kyverno generate-rule admission priv esc (namespace admin -> cluster-wide resource creation)",
+   "product": "Kyverno before 1.19.2",
+   "score": 9.8,
+   "cvss": "9.8 (CVSS v3.1; v4.0 9.3)",
+   "fixed": "1.19.2",
+   "published": "2026-11-05T03:17Z (NVD, Received)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1)+(3). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
+   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122302",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2026-12665",
    "title": "IBM MQ stack buffer overflow on malformed TLS cert DN -> RCE",
    "product": "IBM MQ",
@@ -3658,6 +3860,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "No exploitation reported; not in CISA KEV. CWE-94: remote unauthenticated attacker triggers pre-existing stored Python component code in a public workflow; code executes under the flow owner's runtime context inside the server process, bypassing the trust boundary that restricts public execution paths to server-trusted component code. Same IBM advisory batch (node 7293016) as the 16 Langflow CVEs tracked by the Oct 29 11:30 run; this one was published 16:18Z Oct 29 (after that run) and missed. EPSS unscored (brand new).",
    "epss": 0.00523,
    "epss_percentile": 44.464999999999996
+  },
+  {
+   "id": "CVE-2026-19256",
+   "title": "All In One Login unauthenticated account takeover via email OTP brute force (incl. administrators)",
+   "product": "All In One Login WordPress plugin (change-wp-admin-login) 2.4.0-2.4.1",
+   "score": 9.8,
+   "cvss": "9.8 (WPScan; no NVD score yet)",
+   "fixed": "2.5.0",
+   "published": "2026-11-05T06:17:08.240 (NVD); WPScan publicly published 2026-11-02",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV or VulnCheck KEV. Plugin does not limit attempts against the short numeric code used by its default-enabled passwordless email login and does not feed failures into its brute-force protection, allowing unauthenticated attackers to take over any account including administrators. WPScan-verified (researcher Jakub Herman, CWE-269). PoC withheld by WPScan until 2026-12-02. Scope (1)+(3).",
+   "epss": null,
+   "epss_percentile": null
   },
   {
    "id": "CVE-2026-19622",
@@ -5793,52 +6010,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": null
   },
   {
-   "id": "CVE-2026-122302",
-   "title": "Kyverno generate-rule admission priv esc (namespace admin -> cluster-wide resource creation)",
-   "product": "Kyverno before 1.19.2",
-   "score": 9.8,
-   "cvss": "9.8 (CVSS v3.1; v4.0 9.3)",
-   "fixed": "1.19.2",
-   "published": "2026-11-05T03:17Z (NVD, Received)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1)+(3). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
-   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122302",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-19256",
-   "title": "All In One Login unauthenticated account takeover via email OTP brute force (incl. administrators)",
-   "product": "All In One Login WordPress plugin (change-wp-admin-login) 2.4.0-2.4.1",
-   "score": 9.8,
-   "cvss": "9.8 (WPScan; no NVD score yet)",
-   "fixed": "2.5.0",
-   "published": "2026-11-05T06:17:08.240 (NVD); WPScan publicly published 2026-11-02",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV or VulnCheck KEV. Plugin does not limit attempts against the short numeric code used by its default-enabled passwordless email login and does not feed failures into its brute-force protection, allowing unauthenticated attackers to take over any account including administrators. WPScan-verified (researcher Jakub Herman, CWE-269). PoC withheld by WPScan until 2026-12-02. Scope (1)+(3).",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-100109",
-   "title": "Security For WooCommerce unauthenticated privilege escalation - create administrator accounts via usfw_create_temporary_user",
-   "product": "Security For WooCommerce WordPress plugin 1.0.10-1.0.16 (ultimate-security-for-woocommerce)",
-   "score": 9.8,
-   "cvss": "9.8 (CVSS v3.0)",
-   "fixed": "None known - WPScan: 'No known fix'",
-   "published": "2026-11-05T08:17:01Z (NVD); WPScan published 2026-11-03",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Missing Authorization (CWE-862/CWE-269): the plugin performs no capability checks when creating users through an action available to unauthenticated visitors and lets the caller choose the new account's role - unauthenticated attackers create administrator accounts and take over the site. Affected 1.0.10-1.0.16. NO KNOWN FIX (WPScan). Researcher Afan, WPScan-verified. No exploitation reported; not in CISA KEV; VulnCheck KEV single-lookup 0 documents; EPSS null (brand new, unscored). PoC withheld by WPScan until 2026-02-01. Scope (1)+(3).",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
    "id": "CVE-2025-65200",
    "title": "LocalStack CloudFormation deploy endpoint RCE via crafted templateURL content (lag-gap catch-up)",
    "product": "LocalStack 4.9.2",
@@ -6169,6 +6340,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 29.976000000000003
   },
   {
+   "id": "CVE-2026-121034",
+   "title": "Google Chrome Views use-after-free -> RCE outside the sandbox via a crafted HTML page (Windows; social engineering)",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 9.6,
+   "cvss": "9.6 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:06.593 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted HTML page (Windows; social engineering). Scope (1)+(2).",
+   "epss": 0.00375,
+   "epss_percentile": 31.601000000000003
+  },
+  {
    "id": "CVE-2026-121035",
    "title": "Chrome 157: Use after free in Prerender - remote code execution outside the sandbox (crafted HTML page)",
    "product": "Google Chrome prior to 157.0.8103.38",
@@ -6199,6 +6385,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 34.497
   },
   {
+   "id": "CVE-2026-121060",
+   "title": "Google Chrome FileSystem incorrect authorization -> RCE outside the sandbox via a crafted HTML page (social engineering)",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 9.6,
+   "cvss": "9.6 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:10.570 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted HTML page (social engineering). Scope (1)+(2).",
+   "epss": 0.0036,
+   "epss_percentile": 29.976000000000003
+  },
+  {
    "id": "CVE-2026-121071",
    "title": "Chrome 157: Incorrect authorization in FileSystem - remote code execution outside the sandbox (crafted HTML page)",
    "product": "Google Chrome prior to 157.0.8103.38",
@@ -6214,6 +6415,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 28.95
   },
   {
+   "id": "CVE-2026-121073",
+   "title": "Google Chrome Network use-after-free -> RCE outside the sandbox via crafted network traffic",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 9.6,
+   "cvss": "9.6 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:12.323 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via crafted network traffic. Scope (1)+(2).",
+   "epss": 0.00196,
+   "epss_percentile": 9.419
+  },
+  {
    "id": "CVE-2026-121074",
    "title": "Chrome 157: Memory corruption in GPU - remote code execution outside the sandbox (crafted HTML page)",
    "product": "Google Chrome prior to 157.0.8103.38",
@@ -6227,6 +6443,36 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "Memory corruption in GPU in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High) (Chromium security severity: High) No exploitation reported; not in CISA KEV. Fixed Chrome 157.0.8103.38. EPSS unscored (brand new).",
    "epss": 0.00365,
    "epss_percentile": 30.514999999999997
+  },
+  {
+   "id": "CVE-2026-121076",
+   "title": "Google Chrome WebXR use-after-free -> RCE outside the sandbox via a crafted HTML page (social engineering)",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 9.6,
+   "cvss": "9.6 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:12.757 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted HTML page (social engineering). Scope (1)+(2).",
+   "epss": 0.00299,
+   "epss_percentile": 22.715
+  },
+  {
+   "id": "CVE-2026-121077",
+   "title": "Google Chrome Mobile use-after-free -> RCE outside the sandbox via a crafted HTML page (social engineering)",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 9.6,
+   "cvss": "9.6 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:12.893 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted HTML page (social engineering). Scope (1)+(2).",
+   "epss": 0.00299,
+   "epss_percentile": 22.715
   },
   {
    "id": "CVE-2026-121086",
@@ -6379,6 +6625,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 25.818
   },
   {
+   "id": "CVE-2026-121202",
+   "title": "Google Chrome Autofill use-after-free -> RCE outside the sandbox via a crafted HTML page (social engineering)",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 9.6,
+   "cvss": "9.6 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:29.203 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted HTML page (social engineering). Scope (1)+(2).",
+   "epss": 0.00299,
+   "epss_percentile": 22.715
+  },
+  {
    "id": "CVE-2026-121214",
    "title": "Chrome 157: UAF in Passwords - remote code execution outside the sandbox (crafted HTML page)",
    "product": "Google Chrome prior to 157.0.8103.38",
@@ -6482,6 +6743,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "Buffer overflow in ANGLE in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High) No exploitation reported; not in CISA KEV; VulnCheck KEV negative (single lookup 2026-11-04). Fixed Chrome 157.0.8103.38. Scope (1)+(2).",
    "epss": 0.00397,
    "epss_percentile": 34.144000000000005
+  },
+  {
+   "id": "CVE-2026-121257",
+   "title": "Google Chrome TabStrip use-after-free -> RCE outside the sandbox via a crafted Chrome extension",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 9.6,
+   "cvss": "9.6 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:36.603 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted Chrome extension. Scope (1)+(2).",
+   "epss": 0.00211,
+   "epss_percentile": 11.371
   },
   {
    "id": "CVE-2026-48360",
@@ -6648,111 +6924,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "unauthenticated adjacent-network remote code execution. In scope by (1), (2) code execution. Not in CISA KEV; EPSS unscored (null, published <1h before scoring).",
    "epss": 0.00235,
    "epss_percentile": 14.510000000000002
-  },
-  {
-   "id": "CVE-2026-121034",
-   "title": "Google Chrome Views use-after-free -> RCE outside the sandbox via a crafted HTML page (Windows; social engineering)",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 9.6,
-   "cvss": "9.6 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:06.593 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted HTML page (Windows; social engineering). Scope (1)+(2).",
-   "epss": 0.00375,
-   "epss_percentile": 31.601000000000003
-  },
-  {
-   "id": "CVE-2026-121060",
-   "title": "Google Chrome FileSystem incorrect authorization -> RCE outside the sandbox via a crafted HTML page (social engineering)",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 9.6,
-   "cvss": "9.6 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:10.570 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted HTML page (social engineering). Scope (1)+(2).",
-   "epss": 0.0036,
-   "epss_percentile": 29.976000000000003
-  },
-  {
-   "id": "CVE-2026-121073",
-   "title": "Google Chrome Network use-after-free -> RCE outside the sandbox via crafted network traffic",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 9.6,
-   "cvss": "9.6 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:12.323 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via crafted network traffic. Scope (1)+(2).",
-   "epss": 0.00196,
-   "epss_percentile": 9.419
-  },
-  {
-   "id": "CVE-2026-121076",
-   "title": "Google Chrome WebXR use-after-free -> RCE outside the sandbox via a crafted HTML page (social engineering)",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 9.6,
-   "cvss": "9.6 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:12.757 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted HTML page (social engineering). Scope (1)+(2).",
-   "epss": 0.00299,
-   "epss_percentile": 22.715
-  },
-  {
-   "id": "CVE-2026-121077",
-   "title": "Google Chrome Mobile use-after-free -> RCE outside the sandbox via a crafted HTML page (social engineering)",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 9.6,
-   "cvss": "9.6 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:12.893 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted HTML page (social engineering). Scope (1)+(2).",
-   "epss": 0.00299,
-   "epss_percentile": 22.715
-  },
-  {
-   "id": "CVE-2026-121202",
-   "title": "Google Chrome Autofill use-after-free -> RCE outside the sandbox via a crafted HTML page (social engineering)",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 9.6,
-   "cvss": "9.6 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:29.203 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted HTML page (social engineering). Scope (1)+(2).",
-   "epss": 0.00299,
-   "epss_percentile": 22.715
-  },
-  {
-   "id": "CVE-2026-121257",
-   "title": "Google Chrome TabStrip use-after-free -> RCE outside the sandbox via a crafted Chrome extension",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 9.6,
-   "cvss": "9.6 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:36.603 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted Chrome extension. Scope (1)+(2).",
-   "epss": 0.00211,
-   "epss_percentile": 11.371
   },
   {
    "id": "CVE-2026-103593/CVE-2026-103594/CVE-2026-112709/CVE-2026-112710/CVE-2026-90442/CVE-2026-90465/CVE-2026-93857/CVE-2026-93865/CVE-2026-93866/CVE-2026-93434",
@@ -6993,6 +7164,36 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "No exploitation reported; not in CISA KEV; VulnCheck KEV negative. platformapi middleware key never matches platform app -> unauthenticated remote caller lists/creates/modifies/disables/deletes tenants and binds subscription plans. EPSS unscored (too new, null).",
    "epss": 0.00443,
    "epss_percentile": 38.634
+  },
+  {
+   "id": "CVE-2026-123025",
+   "title": "OPNsense os-acme-client Google Cloud DNS validation OS command injection - authenticated RCE as root",
+   "product": "OPNsense os-acme-client plugin through 4.17 (Google Cloud DNS validation module)",
+   "score": 9.4,
+   "cvss": "9.4 (CVSS v4.0)",
+   "fixed": "os-acme-client 4.18 (PR #5873; ships with the next OPNsense release, no ETA as of Nov 3)",
+   "published": "2026-11-05T06:29:05Z (CVE.org); NVD 2026-11-05T07:17:24Z",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "OS command injection (CWE-78) in DnsGcloud::prepare() - gcloud_account/gcloud_project interpolated into a shell command via proc_open() with no validation/escaping. Authenticated low-priv user with certificate issue/renew privileges via WebGUI/API achieves arbitrary code execution as root. Affected through 4.17; fixed in 4.18 (PR #5873, merged Nov 3; release ships with next OPNsense release). Researcher @cppghoul to publish write-up + PoC repo after the advisory. No exploitation reported; not in CISA KEV; VulnCheck KEV single-lookup 0 documents; EPSS null (brand new).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-16438",
+   "title": "Mitsubishi Electric GENESIS64 incorrect privilege assignment - admin account operates DCOM objects without UAC",
+   "product": "Mitsubishi Electric GENESIS64 <=10.97.3, ICONICS Suite <=10.97.3, Hyper Historian <=10.97.3, AnalytiX <=10.97.3, MobileHMI <=10.97.3, MC Works64 all",
+   "score": 9.4,
+   "cvss": "9.4 (CVSS v4.0)",
+   "fixed": "GENESIS64 / ICONICS Suite / Hyper Historian / AnalytiX / MobileHMI 10.98+; MC Works64: no fix planned, mitigations only",
+   "published": "2026-10-15 (CVE.org); scored 2026-11-05 (NVD lastMod 2026-11-05T07:17:27Z)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Incorrect Privilege Assignment (CWE-266): installers unnecessarily grant default DCOM permissions to the product administrator account; an attacker logged in with that admin account can launch and operate DCOM objects locally or remotely without UAC elevation; disclose/tamper/destroy info or DoS. LAG-GAP ADD - published Oct 15, unscored (Awaiting Analysis) until NVD re-analysis scored it 9.4 today. No exploitation reported; not in CISA KEV; VulnCheck KEV single-lookup 0 documents. EPSS 0.0025/17.0th.",
+   "epss": 0.00253,
+   "epss_percentile": 16.956
   },
   {
    "id": "CVE-2026-35030",
@@ -7293,36 +7494,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV.",
    "epss": 0.00361,
    "epss_percentile": 30.081999999999997
-  },
-  {
-   "id": "CVE-2026-123025",
-   "title": "OPNsense os-acme-client Google Cloud DNS validation OS command injection - authenticated RCE as root",
-   "product": "OPNsense os-acme-client plugin through 4.17 (Google Cloud DNS validation module)",
-   "score": 9.4,
-   "cvss": "9.4 (CVSS v4.0)",
-   "fixed": "os-acme-client 4.18 (PR #5873; ships with the next OPNsense release, no ETA as of Nov 3)",
-   "published": "2026-11-05T06:29:05Z (CVE.org); NVD 2026-11-05T07:17:24Z",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "OS command injection (CWE-78) in DnsGcloud::prepare() - gcloud_account/gcloud_project interpolated into a shell command via proc_open() with no validation/escaping. Authenticated low-priv user with certificate issue/renew privileges via WebGUI/API achieves arbitrary code execution as root. Affected through 4.17; fixed in 4.18 (PR #5873, merged Nov 3; release ships with next OPNsense release). Researcher @cppghoul to publish write-up + PoC repo after the advisory. No exploitation reported; not in CISA KEV; VulnCheck KEV single-lookup 0 documents; EPSS null (brand new).",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-16438",
-   "title": "Mitsubishi Electric GENESIS64 incorrect privilege assignment - admin account operates DCOM objects without UAC",
-   "product": "Mitsubishi Electric GENESIS64 <=10.97.3, ICONICS Suite <=10.97.3, Hyper Historian <=10.97.3, AnalytiX <=10.97.3, MobileHMI <=10.97.3, MC Works64 all",
-   "score": 9.4,
-   "cvss": "9.4 (CVSS v4.0)",
-   "fixed": "GENESIS64 / ICONICS Suite / Hyper Historian / AnalytiX / MobileHMI 10.98+; MC Works64: no fix planned, mitigations only",
-   "published": "2026-10-15 (CVE.org); scored 2026-11-05 (NVD lastMod 2026-11-05T07:17:27Z)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Incorrect Privilege Assignment (CWE-266): installers unnecessarily grant default DCOM permissions to the product administrator account; an attacker logged in with that admin account can launch and operate DCOM objects locally or remotely without UAC elevation; disclose/tamper/destroy info or DoS. LAG-GAP ADD - published Oct 15, unscored (Awaiting Analysis) until NVD re-analysis scored it 9.4 today. No exploitation reported; not in CISA KEV; VulnCheck KEV single-lookup 0 documents. EPSS 0.0025/17.0th.",
-   "epss": 0.00253,
-   "epss_percentile": 16.956
   },
   {
    "id": "CVE-2023-22793",
@@ -8511,6 +8682,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": null
   },
   {
+   "id": "CVE-2026-122992",
+   "title": "G4KLX/F4FXL DStarGateway integer underflow in dstarCallsignToAPRS (empty RS-MS1A sender field)",
+   "product": "G4KLX DStarGateway and F4FXL DStarGateway before 7b75de6",
+   "score": 9.2,
+   "cvss": "9.2 (CVSS v4.0, cve@mitre.org secondary)",
+   "fixed": "7 / b / 7 / 5 / d / e / 6 /   / ( / F / 4 / F / X / L /   / f / o / r / k /   / P / R /   / # / 7 / 1 / )",
+   "published": "2026-11-05T03:17Z (NVD, Received)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Newly published 2026-11-05 (NVD, Received; CVSS v4.0 9.2 from cve@mitre.org, secondary analysis only - no primary CNA score yet). Scope (1). Integer underflow via empty RS-MS1A sender field; full impact class (crash vs code exec) unclear from the description. No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
+   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122992",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2026-15176",
    "title": "NGINX alias + rewrite $request_filename path traversal",
    "product": "NGINX Plus (37.1.0, 37.0.0, R36 and earlier) / NGINX Open Source (1.31.0, 1.29.x and earlier)",
@@ -8524,6 +8711,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "Vulnerability in NGINX Plus and Open Source when a location uses the alias directive together with rewrite and a set/return directive referencing $request_filename \u2014 path traversal / file disclosure. Workaround: avoid using alias in a location; avoid $request_filename. No exploitation reported; not in CISA KEV. Found by the Oct 27 F5 advisory sweep (K000162416).",
    "epss": 0.00845,
    "epss_percentile": 58.102
+  },
+  {
+   "id": "CVE-2026-16436",
+   "title": "Mitsubishi Electric GENESIS weak password recovery - remote authentication bypass via fixed challenge response",
+   "product": "Mitsubishi Electric GENESIS <=11.03, GENESIS64 <=10.97.3, ICONICS Suite <=10.97.3, Hyper Historian <=10.97.3, AnalytiX <=10.97.3, MobileHMI <=10.97.3, IoTWorX <=10.97.3, MC Works64 all, GENESIS32 all, BizViz all",
+   "score": 9.2,
+   "cvss": "9.2 (CVSS v4.0)",
+   "fixed": "GENESIS 11.04+; ICONICS Suite 10.98+ (incl. GENESIS64, Hyper Historian, AnalytiX, MobileHMI); IoTWorX 10.98+; MC Works64 / GENESIS32 / BizViz: no fix planned, mitigations only",
+   "published": "2026-10-15 (CVE.org); scored 2026-11-05 (NVD lastMod 2026-11-05T07:17:26Z)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Weak Password Recovery Mechanism for Forgotten Password (CWE-640): the challenge response used to unlock the system is common to all users and fixed; a remote attacker who obtains it unlocks the system and can disclose, tamper with, destroy or delete internal information or cause DoS. LAG-GAP ADD - published Oct 15, unscored (Awaiting Analysis) until NVD re-analysis scored it 9.2 today. No exploitation reported; not in CISA KEV; VulnCheck KEV single-lookup 0 documents. EPSS 0.0032/25.4th.",
+   "epss": 0.00322,
+   "epss_percentile": 25.373
   },
   {
    "id": "CVE-2026-42945",
@@ -8599,37 +8801,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "No exploitation reported; not in CISA KEV. UAF in ngx_http_core_module: AIO enabled + SSI page with include virtual triggers use-after-free in the worker - memory corruption/worker crash; code execution on ASLR-disabled systems. F5 Critical 9.2. EPSS 0.00834, 57.65th percentile.",
    "epss": 0.00834,
    "epss_percentile": 57.787
-  },
-  {
-   "id": "CVE-2026-122992",
-   "title": "G4KLX/F4FXL DStarGateway integer underflow in dstarCallsignToAPRS (empty RS-MS1A sender field)",
-   "product": "G4KLX DStarGateway and F4FXL DStarGateway before 7b75de6",
-   "score": 9.2,
-   "cvss": "9.2 (CVSS v4.0, cve@mitre.org secondary)",
-   "fixed": "7 / b / 7 / 5 / d / e / 6 /   / ( / F / 4 / F / X / L /   / f / o / r / k /   / P / R /   / # / 7 / 1 / )",
-   "published": "2026-11-05T03:17Z (NVD, Received)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Newly published 2026-11-05 (NVD, Received; CVSS v4.0 9.2 from cve@mitre.org, secondary analysis only - no primary CNA score yet). Scope (1). Integer underflow via empty RS-MS1A sender field; full impact class (crash vs code exec) unclear from the description. No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
-   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122992",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-16436",
-   "title": "Mitsubishi Electric GENESIS weak password recovery - remote authentication bypass via fixed challenge response",
-   "product": "Mitsubishi Electric GENESIS <=11.03, GENESIS64 <=10.97.3, ICONICS Suite <=10.97.3, Hyper Historian <=10.97.3, AnalytiX <=10.97.3, MobileHMI <=10.97.3, IoTWorX <=10.97.3, MC Works64 all, GENESIS32 all, BizViz all",
-   "score": 9.2,
-   "cvss": "9.2 (CVSS v4.0)",
-   "fixed": "GENESIS 11.04+; ICONICS Suite 10.98+ (incl. GENESIS64, Hyper Historian, AnalytiX, MobileHMI); IoTWorX 10.98+; MC Works64 / GENESIS32 / BizViz: no fix planned, mitigations only",
-   "published": "2026-10-15 (CVE.org); scored 2026-11-05 (NVD lastMod 2026-11-05T07:17:26Z)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Weak Password Recovery Mechanism for Forgotten Password (CWE-640): the challenge response used to unlock the system is common to all users and fixed; a remote attacker who obtains it unlocks the system and can disclose, tamper with, destroy or delete internal information or cause DoS. LAG-GAP ADD - published Oct 15, unscored (Awaiting Analysis) until NVD re-analysis scored it 9.2 today. No exploitation reported; not in CISA KEV; VulnCheck KEV single-lookup 0 documents. EPSS 0.0032/25.4th.",
-   "epss": 0.00322,
-   "epss_percentile": 25.373
   },
   {
    "id": "CVE-2022-51022",
@@ -9357,6 +9528,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": null
   },
   {
+   "id": "CVE-2026-122321",
+   "title": "Kyverno verifyImages tag-cache signature verification bypass",
+   "product": "Kyverno 1.18.0-<1.19.2",
+   "score": 9.1,
+   "cvss": "9.1 (CVSS v3.1; v4.0 8.5)",
+   "fixed": "1.19.2",
+   "published": "2026-11-05T03:17Z (NVD, Received)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
+   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122321",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2026-13594",
    "title": "ManageEngine Log360 / EventLog Analyzer improper access control (CWE-284, CAPEC-115 auth bypass) -> unauthorized product access",
    "product": "Zoho ManageEngine Log360 and EventLog Analyzer builds <13062 (affected builds per vendor advisory: 13025-13061)",
@@ -10075,22 +10262,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "No exploitation reported; not in CISA KEV. A bearer token can bypass the passkey-only authentication requirement and directly invoke the API-token creation endpoint, allowing unauthorized minting of persistent successor credentials. Precondition: attacker holds an existing valid token. CERT VU#645818: vendor could not be reached, no official patch; monitor the project's repo. EPSS 0.00223, 12.96th percentile.",
    "epss": 0.00531,
    "epss_percentile": 45.017
-  },
-  {
-   "id": "CVE-2026-122321",
-   "title": "Kyverno verifyImages tag-cache signature verification bypass",
-   "product": "Kyverno 1.18.0-<1.19.2",
-   "score": 9.1,
-   "cvss": "9.1 (CVSS v3.1; v4.0 8.5)",
-   "fixed": "1.19.2",
-   "published": "2026-11-05T03:17Z (NVD, Received)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
-   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122321",
-   "epss": null,
-   "epss_percentile": null
   },
   {
    "id": "CVE-2025-30023",
@@ -12030,6 +12201,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 7.577
   },
   {
+   "id": "CVE-2026-118193",
+   "title": "GiveWP privilege escalation to Administrator via donor-role import",
+   "product": "GiveWP \u2013 Donation Plugin and Fundraising Platform for WordPress <= 4.19.1",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1)",
+   "fixed": "Update to latest (fix version unconfirmed; changeset in trunk)",
+   "published": "2026-11-05T05:18:19.427 (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV. Authenticated GiveWP Manager (manage_give_settings) configures donor registration to assign privileged roles to every new donor account; settings-save path blocks Administrator but accepts Editor/Author, while the Tools > Import JSON path bypasses the sanitize filter entirely, allowing Administrator. Scope (1)+(3).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2026-118304",
    "title": "Chrome 156: Improper input validation in SVG - remote code execution inside the sandbox (crafted HTML page)",
    "product": "Google Chrome prior to 156.0.8078.73",
@@ -12645,6 +12831,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 15.49
   },
   {
+   "id": "CVE-2026-118869",
+   "title": "SHIRASAGI OS command injection - authenticated attacker executes arbitrary OS commands",
+   "product": "SHIRASAGI v1.19.0-v1.21.0 (SHIRASAGI Project)",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.0); 8.7 (CVSS v4.0)",
+   "fixed": "v1.21.1",
+   "published": "2026-11-05T09:17:05Z (NVD); JVN#55454512 published 2026-11-05",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "OS command injection (CWE-78): authenticated attacker executes arbitrary OS commands on the system running the product. Affected v1.19.0-v1.21.0; fixed in v1.21.1 (JVN#55454512 / JPCERT/CC). No exploitation reported; not in CISA KEV; VulnCheck KEV single-lookup 0 documents; EPSS null (brand new, unscored). Scope (1)+(2).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2026-118938",
    "title": "Trail of Bits fickling check_safety() bypass via dotted __qualname__ resolution -> arbitrary code execution on pickle load",
    "product": "Trail of Bits fickling through 0.1.12",
@@ -13065,6 +13266,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 26.189
   },
   {
+   "id": "CVE-2026-121036",
+   "title": "Google Chrome CSS use-after-free -> RCE inside the sandbox via a crafted HTML page",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:06.863 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
+   "epss": 0.00327,
+   "epss_percentile": 25.913999999999998
+  },
+  {
    "id": "CVE-2026-121044",
    "title": "Chrome 157: Use after free in Layout - remote code execution inside the sandbox (crafted HTML page)",
    "product": "Google Chrome prior to 157.0.8103.38",
@@ -13095,6 +13311,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 29.470000000000002
   },
   {
+   "id": "CVE-2026-121048",
+   "title": "Google Chrome V8 race condition -> RCE inside the sandbox via a crafted HTML page",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:09.143 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
+   "epss": 0.00261,
+   "epss_percentile": 17.985
+  },
+  {
    "id": "CVE-2026-121052",
    "title": "Chrome 157: Use after free in GPU - remote code execution inside the sandbox (crafted HTML page)",
    "product": "Google Chrome prior to 157.0.8103.38",
@@ -13108,6 +13339,96 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "Use after free in GPU in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High) (Chromium security severity: High) No exploitation reported; not in CISA KEV. Fixed Chrome 157.0.8103.38. EPSS unscored (brand new).",
    "epss": 0.00359,
    "epss_percentile": 29.796
+  },
+  {
+   "id": "CVE-2026-121057",
+   "title": "Google Chrome V8 type confusion -> RCE inside the sandbox via a crafted HTML page",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:10.300 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
+   "epss": 0.00391,
+   "epss_percentile": 33.433
+  },
+  {
+   "id": "CVE-2026-121061",
+   "title": "Google Chrome Modularization use-after-free -> RCE inside the sandbox via a crafted HTML page",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:10.703 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
+   "epss": 0.00327,
+   "epss_percentile": 25.913999999999998
+  },
+  {
+   "id": "CVE-2026-121068",
+   "title": "Google Chrome V8 type confusion -> RCE inside the sandbox via a crafted HTML page",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:11.653 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
+   "epss": 0.00357,
+   "epss_percentile": 29.525000000000002
+  },
+  {
+   "id": "CVE-2026-121069",
+   "title": "Google Chrome Track use-after-free -> RCE inside the sandbox via a crafted HTML page",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:11.790 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
+   "epss": 0.00279,
+   "epss_percentile": 20.534
+  },
+  {
+   "id": "CVE-2026-121070",
+   "title": "Google Chrome WTF use-after-free -> RCE inside the sandbox via a crafted HTML page",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:11.923 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
+   "epss": 0.00327,
+   "epss_percentile": 25.913000000000004
+  },
+  {
+   "id": "CVE-2026-121078",
+   "title": "Google Chrome V8 type confusion -> RCE inside the sandbox via a crafted HTML page",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:13.030 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
+   "epss": 0.00357,
+   "epss_percentile": 29.525000000000002
   },
   {
    "id": "CVE-2026-121079",
@@ -13290,6 +13611,51 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 25.915
   },
   {
+   "id": "CVE-2026-121127",
+   "title": "Google Chrome WebAudio use-after-free -> RCE inside the sandbox via a crafted HTML page",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:20.987 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
+   "epss": 0.00413,
+   "epss_percentile": 35.809000000000005
+  },
+  {
+   "id": "CVE-2026-121128",
+   "title": "Google Chrome Scheduling use-after-free -> RCE inside the sandbox via a crafted HTML page",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:21.120 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
+   "epss": 0.00327,
+   "epss_percentile": 25.913999999999998
+  },
+  {
+   "id": "CVE-2026-121129",
+   "title": "Google Chrome WebRTC use-after-free -> RCE inside the sandbox via a crafted HTML page",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:21.250 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
+   "epss": 0.00413,
+   "epss_percentile": 35.809999999999995
+  },
+  {
    "id": "CVE-2026-121137",
    "title": "Chrome 157: Type confusion in DevTools - remote code execution inside the sandbox (crafted HTML page)",
    "product": "Google Chrome prior to 157.0.8103.38",
@@ -13410,6 +13776,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 25.916
   },
   {
+   "id": "CVE-2026-121184",
+   "title": "Google Chrome Media out-of-bounds read -> RCE inside the sandbox via a crafted HTML page",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:27.047 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
+   "epss": 0.00327,
+   "epss_percentile": 25.917
+  },
+  {
    "id": "CVE-2026-121188",
    "title": "Chrome 157: Use after free in PerformanceAPIs - remote code execution inside the sandbox (crafted HTML page)",
    "product": "Google Chrome prior to 157.0.8103.38",
@@ -13455,6 +13836,36 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 25.916
   },
   {
+   "id": "CVE-2026-121208",
+   "title": "Google Chrome Media out-of-bounds read -> RCE inside the sandbox via a crafted HTML page",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:30.013 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
+   "epss": 0.00327,
+   "epss_percentile": 25.917
+  },
+  {
+   "id": "CVE-2026-121210",
+   "title": "Google Chrome V8 type confusion -> RCE inside the sandbox via a crafted HTML page",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:30.280 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
+   "epss": 0.00357,
+   "epss_percentile": 29.523
+  },
+  {
    "id": "CVE-2026-121218",
    "title": "Chrome 157: Type confusion in V8 - remote code execution inside the sandbox (crafted HTML page)",
    "product": "Google Chrome prior to 157.0.8103.38",
@@ -13468,6 +13879,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "Type confusion in V8 in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium) No exploitation reported; not in CISA KEV; VulnCheck KEV negative (single lookup 2026-11-04). Fixed Chrome 157.0.8103.38. Scope (1)+(2).",
    "epss": 0.00357,
    "epss_percentile": 29.524
+  },
+  {
+   "id": "CVE-2026-121221",
+   "title": "Google Chrome V8 type confusion -> RCE inside the sandbox via a crafted HTML page",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:31.793 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
+   "epss": 0.00357,
+   "epss_percentile": 29.523
   },
   {
    "id": "CVE-2026-121226",
@@ -14313,6 +14739,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "No exploitation reported; not in CISA KEV. Authenticated RCE (CWE-184/CWE-502): any authenticated non-guest user nests a serialized payload inside a java.security.SignedObject to the /invoker/* HTTP invoker endpoint; the inner stream deserializes without the PluginAwareObjectInputStream denylist, reaching a JNDI sink. Fixed 2026.1.0. EPSS 0.00542, 45.44th percentile.",
    "epss": 0.00542,
    "epss_percentile": 45.678999999999995
+  },
+  {
+   "id": "CVE-2026-7273",
+   "title": "Zyxel GS1900 series stack-based buffer overflow - unauthenticated LAN attacker executes OS commands",
+   "product": "Zyxel GS1900 series switches (firmware through 2.90(x.1)C0)",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1)",
+   "fixed": "2.90(x.2)C0 per model, e.g. GS1900-48HPv2 2.90(ABTQ.2)C0, GS1900-8 2.90(AAHH.2)C0",
+   "published": "2026-06-16 (NVD)",
+   "exploited": true,
+   "kev": true,
+   "poc": false,
+   "status": "Stack-based buffer overflow (CWE-121) in the CGI program - LAN-based unauthenticated attacker executes OS commands via a crafted HTTP request. EXPLOITED IN THE WILD (GreyNoise: Kapibala campaign, data exfiltrated from ~996 switches ~Aug 17, 2026); ADDED TO CISA KEV 2026-09-21. BASELINE MISS - pre-dates the monitor (started Oct 22); same class as the Cisco SEG CVE-2026-76461 baseline miss. Fixed firmware 2.90(x.2)C0 per model. EPSS 0.0278/86.4th.",
+   "epss": 0.02778,
+   "epss_percentile": 86.408
   },
   {
    "id": "CVE-2026-73186",
@@ -15425,276 +15866,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": null
   },
   {
-   "id": "CVE-2026-121036",
-   "title": "Google Chrome CSS use-after-free -> RCE inside the sandbox via a crafted HTML page",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 8.8,
-   "cvss": "8.8 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:06.863 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
-   "epss": 0.00327,
-   "epss_percentile": 25.913999999999998
-  },
-  {
-   "id": "CVE-2026-121048",
-   "title": "Google Chrome V8 race condition -> RCE inside the sandbox via a crafted HTML page",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 8.8,
-   "cvss": "8.8 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:09.143 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
-   "epss": 0.00261,
-   "epss_percentile": 17.985
-  },
-  {
-   "id": "CVE-2026-121057",
-   "title": "Google Chrome V8 type confusion -> RCE inside the sandbox via a crafted HTML page",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 8.8,
-   "cvss": "8.8 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:10.300 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
-   "epss": 0.00391,
-   "epss_percentile": 33.433
-  },
-  {
-   "id": "CVE-2026-121061",
-   "title": "Google Chrome Modularization use-after-free -> RCE inside the sandbox via a crafted HTML page",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 8.8,
-   "cvss": "8.8 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:10.703 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
-   "epss": 0.00327,
-   "epss_percentile": 25.913999999999998
-  },
-  {
-   "id": "CVE-2026-121068",
-   "title": "Google Chrome V8 type confusion -> RCE inside the sandbox via a crafted HTML page",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 8.8,
-   "cvss": "8.8 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:11.653 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
-   "epss": 0.00357,
-   "epss_percentile": 29.525000000000002
-  },
-  {
-   "id": "CVE-2026-121069",
-   "title": "Google Chrome Track use-after-free -> RCE inside the sandbox via a crafted HTML page",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 8.8,
-   "cvss": "8.8 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:11.790 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
-   "epss": 0.00279,
-   "epss_percentile": 20.534
-  },
-  {
-   "id": "CVE-2026-121070",
-   "title": "Google Chrome WTF use-after-free -> RCE inside the sandbox via a crafted HTML page",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 8.8,
-   "cvss": "8.8 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:11.923 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
-   "epss": 0.00327,
-   "epss_percentile": 25.913000000000004
-  },
-  {
-   "id": "CVE-2026-121078",
-   "title": "Google Chrome V8 type confusion -> RCE inside the sandbox via a crafted HTML page",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 8.8,
-   "cvss": "8.8 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:13.030 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
-   "epss": 0.00357,
-   "epss_percentile": 29.525000000000002
-  },
-  {
-   "id": "CVE-2026-121127",
-   "title": "Google Chrome WebAudio use-after-free -> RCE inside the sandbox via a crafted HTML page",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 8.8,
-   "cvss": "8.8 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:20.987 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
-   "epss": 0.00413,
-   "epss_percentile": 35.809000000000005
-  },
-  {
-   "id": "CVE-2026-121128",
-   "title": "Google Chrome Scheduling use-after-free -> RCE inside the sandbox via a crafted HTML page",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 8.8,
-   "cvss": "8.8 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:21.120 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
-   "epss": 0.00327,
-   "epss_percentile": 25.913999999999998
-  },
-  {
-   "id": "CVE-2026-121129",
-   "title": "Google Chrome WebRTC use-after-free -> RCE inside the sandbox via a crafted HTML page",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 8.8,
-   "cvss": "8.8 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:21.250 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
-   "epss": 0.00413,
-   "epss_percentile": 35.809999999999995
-  },
-  {
-   "id": "CVE-2026-121184",
-   "title": "Google Chrome Media out-of-bounds read -> RCE inside the sandbox via a crafted HTML page",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 8.8,
-   "cvss": "8.8 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:27.047 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
-   "epss": 0.00327,
-   "epss_percentile": 25.917
-  },
-  {
-   "id": "CVE-2026-121208",
-   "title": "Google Chrome Media out-of-bounds read -> RCE inside the sandbox via a crafted HTML page",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 8.8,
-   "cvss": "8.8 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:30.013 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
-   "epss": 0.00327,
-   "epss_percentile": 25.917
-  },
-  {
-   "id": "CVE-2026-121210",
-   "title": "Google Chrome V8 type confusion -> RCE inside the sandbox via a crafted HTML page",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 8.8,
-   "cvss": "8.8 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:30.280 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
-   "epss": 0.00357,
-   "epss_percentile": 29.523
-  },
-  {
-   "id": "CVE-2026-121221",
-   "title": "Google Chrome V8 type confusion -> RCE inside the sandbox via a crafted HTML page",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 8.8,
-   "cvss": "8.8 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:31.793 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code inside the sandbox via a crafted HTML page. Scope (1)+(2).",
-   "epss": 0.00357,
-   "epss_percentile": 29.523
-  },
-  {
-   "id": "CVE-2026-118193",
-   "title": "GiveWP privilege escalation to Administrator via donor-role import",
-   "product": "GiveWP \u2013 Donation Plugin and Fundraising Platform for WordPress <= 4.19.1",
-   "score": 8.8,
-   "cvss": "8.8 (CVSS v3.1)",
-   "fixed": "Update to latest (fix version unconfirmed; changeset in trunk)",
-   "published": "2026-11-05T05:18:19.427 (NVD)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV. Authenticated GiveWP Manager (manage_give_settings) configures donor registration to assign privileged roles to every new donor account; settings-save path blocks Administrator but accepts Editor/Author, while the Tools > Import JSON path bypasses the sanitize filter entirely, allowing Administrator. Scope (1)+(3).",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-7273",
-   "title": "Zyxel GS1900 series stack-based buffer overflow - unauthenticated LAN attacker executes OS commands",
-   "product": "Zyxel GS1900 series switches (firmware through 2.90(x.1)C0)",
-   "score": 8.8,
-   "cvss": "8.8 (CVSS v3.1)",
-   "fixed": "2.90(x.2)C0 per model, e.g. GS1900-48HPv2 2.90(ABTQ.2)C0, GS1900-8 2.90(AAHH.2)C0",
-   "published": "2026-06-16 (NVD)",
-   "exploited": true,
-   "kev": true,
-   "poc": false,
-   "status": "Stack-based buffer overflow (CWE-121) in the CGI program - LAN-based unauthenticated attacker executes OS commands via a crafted HTTP request. EXPLOITED IN THE WILD (GreyNoise: Kapibala campaign, data exfiltrated from ~996 switches ~Aug 17, 2026); ADDED TO CISA KEV 2026-09-21. BASELINE MISS - pre-dates the monitor (started Oct 22); same class as the Cisco SEG CVE-2026-76461 baseline miss. Fixed firmware 2.90(x.2)C0 per model. EPSS 0.0278/86.4th.",
-   "epss": 0.02778,
-   "epss_percentile": 86.408
-  },
-  {
-   "id": "CVE-2026-118869",
-   "title": "SHIRASAGI OS command injection - authenticated attacker executes arbitrary OS commands",
-   "product": "SHIRASAGI v1.19.0-v1.21.0 (SHIRASAGI Project)",
-   "score": 8.8,
-   "cvss": "8.8 (CVSS v3.0); 8.7 (CVSS v4.0)",
-   "fixed": "v1.21.1",
-   "published": "2026-11-05T09:17:05Z (NVD); JVN#55454512 published 2026-11-05",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "OS command injection (CWE-78): authenticated attacker executes arbitrary OS commands on the system running the product. Affected v1.19.0-v1.21.0; fixed in v1.21.1 (JVN#55454512 / JPCERT/CC). No exploitation reported; not in CISA KEV; VulnCheck KEV single-lookup 0 documents; EPSS null (brand new, unscored). Scope (1)+(2).",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
    "id": "CVE-2010-20125",
    "title": "DedeCMS file inclusion in plus/carbuyaction.php -> local file disclosure (old CVE, newly published)",
    "product": "DedeCMS before 5.7",
@@ -16597,6 +16768,101 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": null
   },
   {
+   "id": "CVE-2026-122314",
+   "title": "Kyverno variable-substitution panic DoS (+policy bypass under failurePolicy Ignore)",
+   "product": "Kyverno before 1.19.2",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v4.0; v3.1 7.5)",
+   "fixed": "1.19.2",
+   "published": "2026-11-05T03:17Z (NVD, Received)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
+   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122314",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-122315",
+   "title": "Kyverno buildStatementMap attestation panic -> image-verification bypass / crash-loop",
+   "product": "Kyverno before 1.19.2",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v4.0; v3.1 7.5)",
+   "fixed": "1.19.2",
+   "published": "2026-11-05T03:17Z (NVD, Received)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
+   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122315",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-122319",
+   "title": "Kyverno In/NotIn operator panic DoS (disrupts admission control)",
+   "product": "Kyverno before 1.19.2",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v4.0; v3.1 7.5)",
+   "fixed": "1.19.2",
+   "published": "2026-11-05T03:17Z (NVD, Received)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
+   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122319",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-122322",
+   "title": "Kyverno notary attestation decompression remote OOM (admission controller)",
+   "product": "Kyverno 1.11.0-<1.19.2",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v4.0; v3.1 7.5)",
+   "fixed": "1.19.2",
+   "published": "2026-11-05T03:17Z (NVD, Received)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
+   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122322",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-122323",
+   "title": "Kyverno notary signature decompression remote OOM (admission controller)",
+   "product": "Kyverno 1.11.0-<1.19.2",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v4.0; v3.1 7.5)",
+   "fixed": "1.19.2",
+   "published": "2026-11-05T03:17Z (NVD, Received)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
+   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122323",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-123014",
+   "title": "iTerm2 argument injection in x-man-page: URL handler -> arbitrary command execution as logged-in user",
+   "product": "iTerm2 before 3.7.7beta2 (macOS)",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v4.0)",
+   "fixed": "3.7.7beta2",
+   "published": "2026-11-05T06:17:07.707 (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV or VulnCheck KEV. Percent-encoded NUL characters survive input sanitization and are converted to whitespace during command-line parsing, allowing injection of extra arguments to /usr/bin/man; attacker injects -P to select an attacker-controlled pager command. Requires the user to open a crafted x-man-page: URL (iTerm2 must handle the scheme; a browser/macOS confirmation may be required). Incomplete fix for CVE-2023-46321. Scope (1)+(2).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2026-13303",
    "title": "HashiCorp Boundary HCSEC-2026-54: SSRF in Vault credential store integration (authenticated user -> arbitrary outbound requests from controller, cloud metadata exposure)",
    "product": "HashiCorp Boundary / Boundary Enterprise 0.21.3 up to 1.0.1",
@@ -16853,6 +17119,25 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 20.918
   },
   {
+   "id": "CVE-2026-73095",
+   "title": "Apache Juneau MessagePack parser unbounded allocation -> unauthenticated DoS",
+   "product": "Apache Juneau through 9.2.0",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v4.0)",
+   "fixed": "9.2.1",
+   "published": "2026-11-05T12:17:50Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Resource exhaustion (CWE-770): MessagePack parser sizes buffers from attacker-controlled length values; a few bytes force multi-GB allocation and OutOfMemoryError. Fixed in 9.2.1. No exploitation reported; not in CISA KEV. EPSS null (brand new). Scope (1).",
+   "epss": null,
+   "epss_percentile": null,
+   "sources": [
+    "https://nvd.nist.gov/vuln/detail/CVE-2026-73095",
+    "https://lists.apache.org/thread.html/j05q7vw08j48o96tdlzcsd4sozx1lyl6"
+   ]
+  },
+  {
    "id": "CVE-2026-76892",
    "title": "tsParticles @tsparticles/mcp-server <4.3.1: unauthenticated malformed JSON -> Node.js process crash (DoS)",
    "product": "@tsparticles/mcp-server <4.3.1",
@@ -17091,101 +17376,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "certificate validation flaw -> credential disclosure. In scope by (1). Not in CISA KEV; EPSS unscored (null, published <1h before scoring).",
    "epss": 0.00223,
    "epss_percentile": 12.995999999999999
-  },
-  {
-   "id": "CVE-2026-122314",
-   "title": "Kyverno variable-substitution panic DoS (+policy bypass under failurePolicy Ignore)",
-   "product": "Kyverno before 1.19.2",
-   "score": 8.7,
-   "cvss": "8.7 (CVSS v4.0; v3.1 7.5)",
-   "fixed": "1.19.2",
-   "published": "2026-11-05T03:17Z (NVD, Received)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
-   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122314",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-122315",
-   "title": "Kyverno buildStatementMap attestation panic -> image-verification bypass / crash-loop",
-   "product": "Kyverno before 1.19.2",
-   "score": 8.7,
-   "cvss": "8.7 (CVSS v4.0; v3.1 7.5)",
-   "fixed": "1.19.2",
-   "published": "2026-11-05T03:17Z (NVD, Received)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
-   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122315",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-122319",
-   "title": "Kyverno In/NotIn operator panic DoS (disrupts admission control)",
-   "product": "Kyverno before 1.19.2",
-   "score": 8.7,
-   "cvss": "8.7 (CVSS v4.0; v3.1 7.5)",
-   "fixed": "1.19.2",
-   "published": "2026-11-05T03:17Z (NVD, Received)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
-   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122319",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-122322",
-   "title": "Kyverno notary attestation decompression remote OOM (admission controller)",
-   "product": "Kyverno 1.11.0-<1.19.2",
-   "score": 8.7,
-   "cvss": "8.7 (CVSS v4.0; v3.1 7.5)",
-   "fixed": "1.19.2",
-   "published": "2026-11-05T03:17Z (NVD, Received)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
-   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122322",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-122323",
-   "title": "Kyverno notary signature decompression remote OOM (admission controller)",
-   "product": "Kyverno 1.11.0-<1.19.2",
-   "score": 8.7,
-   "cvss": "8.7 (CVSS v4.0; v3.1 7.5)",
-   "fixed": "1.19.2",
-   "published": "2026-11-05T03:17Z (NVD, Received)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
-   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122323",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-123014",
-   "title": "iTerm2 argument injection in x-man-page: URL handler -> arbitrary command execution as logged-in user",
-   "product": "iTerm2 before 3.7.7beta2 (macOS)",
-   "score": 8.7,
-   "cvss": "8.7 (CVSS v4.0)",
-   "fixed": "3.7.7beta2",
-   "published": "2026-11-05T06:17:07.707 (NVD)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV or VulnCheck KEV. Percent-encoded NUL characters survive input sanitization and are converted to whitespace during command-line parsing, allowing injection of extra arguments to /usr/bin/man; attacker injects -P to select an attacker-controlled pager command. Requires the user to open a crafted x-man-page: URL (iTerm2 must handle the scheme; a browser/macOS confirmation may be required). Incomplete fix for CVE-2023-46321. Scope (1)+(2).",
-   "epss": null,
-   "epss_percentile": null
   },
   {
    "id": "CVE-2023-7357",
@@ -19205,6 +19395,38 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 2.519
   },
   {
+   "id": "CVE-2026-122308",
+   "title": "Kyverno Generation Handler authz bypass (spoofed generate labels -> clone secrets cross-namespace)",
+   "product": "Kyverno before 1.19.2",
+   "score": 8.5,
+   "cvss": "8.5 (CVSS v3.1; v4.0 8.4)",
+   "fixed": "1.19.2",
+   "published": "2026-11-05T03:17Z (NVD, Received)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1)+(3). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
+   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122308",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-122316",
+   "title": "Kyverno mutate-existing missing authz -> strip Pod Security labels cluster-wide",
+   "product": "Kyverno 1.17.0-<1.19.2",
+   "score": 8.5,
+   "cvss": "8.5 (CVSS v3.1; v4.0 8.5)",
+   "fixed": "1.19.2",
+   "published": "2026-11-05T03:17Z (NVD, Received)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1)+(3). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
+   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122316",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2026-39736",
    "title": "Crocoblock JetEngine SQL injection",
    "product": "Crocoblock JetEngine through 3.9.0.1 (WordPress)",
@@ -19414,38 +19636,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "No exploitation reported; not in CISA KEV. Heap buffer overflow handling GLX RenderLarge requests where dataBytes exceeds cmdlen; an authenticated X client can trigger it, causing crashes or code execution in X server context. Fixed X server 21.1.25 / XWayland 24.1.14. EPSS unscored (brand new).",
    "epss": 0.00193,
    "epss_percentile": 9.054
-  },
-  {
-   "id": "CVE-2026-122308",
-   "title": "Kyverno Generation Handler authz bypass (spoofed generate labels -> clone secrets cross-namespace)",
-   "product": "Kyverno before 1.19.2",
-   "score": 8.5,
-   "cvss": "8.5 (CVSS v3.1; v4.0 8.4)",
-   "fixed": "1.19.2",
-   "published": "2026-11-05T03:17Z (NVD, Received)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1)+(3). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
-   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122308",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-122316",
-   "title": "Kyverno mutate-existing missing authz -> strip Pod Security labels cluster-wide",
-   "product": "Kyverno 1.17.0-<1.19.2",
-   "score": 8.5,
-   "cvss": "8.5 (CVSS v3.1; v4.0 8.5)",
-   "fixed": "1.19.2",
-   "published": "2026-11-05T03:17Z (NVD, Received)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1)+(3). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
-   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122316",
-   "epss": null,
-   "epss_percentile": null
   },
   {
    "id": "CVE-2025-68393",
@@ -20468,6 +20658,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 27.243000000000002
   },
   {
+   "id": "CVE-2026-121163",
+   "title": "Google Chrome Browser improper input validation -> RCE outside the sandbox via a crafted HTML page (compromised renderer process)",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 8.3,
+   "cvss": "8.3 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:24.177 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted HTML page (compromised renderer process). Scope (1)+(2).",
+   "epss": 0.0021,
+   "epss_percentile": 11.337
+  },
+  {
    "id": "CVE-2026-121178",
    "title": "Chrome 157: Use after free in Aura - remote code execution outside the sandbox (crafted HTML page)",
    "product": "Google Chrome prior to 157.0.8103.38",
@@ -20481,6 +20686,36 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "Use after free in Aura in Google Chrome prior to 157.0.8103.38 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High) (Chromium security severity: High) No exploitation reported; not in CISA KEV. Fixed Chrome 157.0.8103.38. EPSS unscored (brand new).",
    "epss": 0.00337,
    "epss_percentile": 27.243000000000002
+  },
+  {
+   "id": "CVE-2026-121183",
+   "title": "Google Chrome Extensions incorrect authorization -> RCE outside the sandbox via a crafted HTML page (compromised renderer process)",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 8.3,
+   "cvss": "8.3 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:26.917 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted HTML page (compromised renderer process). Scope (1)+(2).",
+   "epss": 0.00324,
+   "epss_percentile": 25.624999999999996
+  },
+  {
+   "id": "CVE-2026-121211",
+   "title": "Google Chrome PowerBookmarks use-after-free -> RCE outside the sandbox via a crafted HTML page (compromised renderer process; social engineering)",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 8.3,
+   "cvss": "8.3 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:30.413 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted HTML page (compromised renderer process; social engineering). Scope (1)+(2).",
+   "epss": 0.0021,
+   "epss_percentile": 11.337
   },
   {
    "id": "CVE-2026-121219",
@@ -20570,6 +20805,119 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "poc": false,
    "status": "Integer overflow in Forwarder plugin: unauthenticated IPFIX exporters cause heap buffer 2-byte writes/crash. NOT in CISA KEV; VulnCheck KEV negative. Scope (1).",
    "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-122130",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-122305",
+   "title": "Kyverno self-referential variable template DoS (hangs admission webhook)",
+   "product": "Kyverno before 1.19.2",
+   "score": 8.3,
+   "cvss": "8.3 (CVSS v4.0; v3.1 7.7)",
+   "fixed": "1.19.2",
+   "published": "2026-11-05T03:17Z (NVD, Received)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
+   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122305",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-122306",
+   "title": "Kyverno pathological wildcard pattern DoS (cluster-wide webhook timeouts)",
+   "product": "Kyverno before 1.19.2",
+   "score": 8.3,
+   "cvss": "8.3 (CVSS v4.0; v3.1 7.7)",
+   "fixed": "1.19.2",
+   "published": "2026-11-05T03:17Z (NVD, Received)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
+   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122306",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-122307",
+   "title": "Kyverno admissionpolicygenerator policy bypass (PolicyExceptions -> admit violating resources)",
+   "product": "Kyverno before 1.19.2",
+   "score": 8.3,
+   "cvss": "8.3 (CVSS v4.0; v3.1 7.7)",
+   "fixed": "1.19.2",
+   "published": "2026-11-05T03:17Z (NVD, Received)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
+   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122307",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-122312",
+   "title": "Kyverno APICall Fetch namespace isolation bypass (query-string path confusion)",
+   "product": "Kyverno 1.19.1-<1.19.2",
+   "score": 8.3,
+   "cvss": "8.3 (CVSS v4.0; v3.1 7.7)",
+   "fixed": "1.19.2",
+   "published": "2026-11-05T03:17Z (NVD, Received)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
+   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122312",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-122320",
+   "title": "Kyverno generate.clone missing authz -> cross-namespace ConfigMap read (data disclosure)",
+   "product": "Kyverno before 1.19.2",
+   "score": 8.3,
+   "cvss": "8.3 (CVSS v4.0; v3.1 7.7)",
+   "fixed": "1.19.2",
+   "published": "2026-11-05T03:17Z (NVD, Received)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
+   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122320",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-123018",
+   "title": "DB-GPT CodeAction execute_code code injection - remote code execution, public exploit",
+   "product": "eosphoros-ai DB-GPT up to 0.8.2",
+   "score": 8.3,
+   "cvss": "8.3 (CVSS v3.1)",
+   "fixed": "No known fix - project informed early, has not responded",
+   "published": "2026-11-05T12:17:49Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": true,
+   "status": "Remote code injection (CWE-74) via CodeAction execute_code (code_utils.py); NVD notes the exploit has been released to the public. No fix known; project has not responded. No confirmed in-the-wild exploitation; not in CISA KEV. EPSS null (brand new). Scope (1)+(2).",
+   "epss": null,
+   "epss_percentile": null,
+   "sources": [
+    "https://nvd.nist.gov/vuln/detail/CVE-2026-123018"
+   ]
+  },
+  {
+   "id": "CVE-2026-123033",
+   "title": "TrueNAS SCALE HA heartbeat-origin authentication bypass - unauthenticated full-admin API access, commands as root",
+   "product": "TrueNAS SCALE before 25.10.8 (middlewared; all release trains before their respective fixes)",
+   "score": 8.3,
+   "cvss": "8.3 (CVSS v3.1)",
+   "fixed": "TrueNAS SCALE 25.10.8 (forthcoming, 25.10 train) and later",
+   "published": "2026-11-05T06:58:31Z (CVE.org); NVD 2026-11-05T07:17:26Z",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Authentication bypass (CWE-290/CWE-306) in the HA heartbeat origin check in middlewared - unauthenticated connection from hardcoded HA heartbeat address 169.254.10.1/10.2 with source port <=1024 is granted a node credential authorized for every API method (full administrator); admin API access executes commands as root. Hook registered on all installs incl. non-HA single-node Community Edition. Attacker must be on the same L2 segment AND alter the return path (no route to 169.254.0.0/16 by default). Reported by spnctf via coordinated disclosure. Fixed in SCALE 25.10.8 (forthcoming). No exploitation reported; not in CISA KEV; VulnCheck KEV single-lookup 0 documents; EPSS null (brand new).",
    "epss": null,
    "epss_percentile": null
   },
@@ -20842,146 +21190,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "No exploitation reported; not in CISA KEV (verified Oct 15). CWE-908 use of uninitialized resource: automatic session-ticket key rotation copies only 2 of 3 key slots, the third holds stale memory - a remote unauthenticated attacker forges client SSL sessions (non-deterministic, beyond attacker control) and can bypass client-certificate verification. No control-plane impact. F5 K article K000162606 (fixes column not directly readable - my.f5.com JS-gated; fix detail from corroborated reporting). EPSS 0.00230, 13.91th percentile.",
    "epss": 0.00246,
    "epss_percentile": 15.959000000000001
-  },
-  {
-   "id": "CVE-2026-122305",
-   "title": "Kyverno self-referential variable template DoS (hangs admission webhook)",
-   "product": "Kyverno before 1.19.2",
-   "score": 8.3,
-   "cvss": "8.3 (CVSS v4.0; v3.1 7.7)",
-   "fixed": "1.19.2",
-   "published": "2026-11-05T03:17Z (NVD, Received)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
-   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122305",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-122306",
-   "title": "Kyverno pathological wildcard pattern DoS (cluster-wide webhook timeouts)",
-   "product": "Kyverno before 1.19.2",
-   "score": 8.3,
-   "cvss": "8.3 (CVSS v4.0; v3.1 7.7)",
-   "fixed": "1.19.2",
-   "published": "2026-11-05T03:17Z (NVD, Received)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
-   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122306",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-122307",
-   "title": "Kyverno admissionpolicygenerator policy bypass (PolicyExceptions -> admit violating resources)",
-   "product": "Kyverno before 1.19.2",
-   "score": 8.3,
-   "cvss": "8.3 (CVSS v4.0; v3.1 7.7)",
-   "fixed": "1.19.2",
-   "published": "2026-11-05T03:17Z (NVD, Received)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
-   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122307",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-122312",
-   "title": "Kyverno APICall Fetch namespace isolation bypass (query-string path confusion)",
-   "product": "Kyverno 1.19.1-<1.19.2",
-   "score": 8.3,
-   "cvss": "8.3 (CVSS v4.0; v3.1 7.7)",
-   "fixed": "1.19.2",
-   "published": "2026-11-05T03:17Z (NVD, Received)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
-   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122312",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-122320",
-   "title": "Kyverno generate.clone missing authz -> cross-namespace ConfigMap read (data disclosure)",
-   "product": "Kyverno before 1.19.2",
-   "score": 8.3,
-   "cvss": "8.3 (CVSS v4.0; v3.1 7.7)",
-   "fixed": "1.19.2",
-   "published": "2026-11-05T03:17Z (NVD, Received)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
-   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122320",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-121163",
-   "title": "Google Chrome Browser improper input validation -> RCE outside the sandbox via a crafted HTML page (compromised renderer process)",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 8.3,
-   "cvss": "8.3 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:24.177 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted HTML page (compromised renderer process). Scope (1)+(2).",
-   "epss": 0.0021,
-   "epss_percentile": 11.337
-  },
-  {
-   "id": "CVE-2026-121183",
-   "title": "Google Chrome Extensions incorrect authorization -> RCE outside the sandbox via a crafted HTML page (compromised renderer process)",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 8.3,
-   "cvss": "8.3 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:26.917 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted HTML page (compromised renderer process). Scope (1)+(2).",
-   "epss": 0.00324,
-   "epss_percentile": 25.624999999999996
-  },
-  {
-   "id": "CVE-2026-121211",
-   "title": "Google Chrome PowerBookmarks use-after-free -> RCE outside the sandbox via a crafted HTML page (compromised renderer process; social engineering)",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 8.3,
-   "cvss": "8.3 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:30.413 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted HTML page (compromised renderer process; social engineering). Scope (1)+(2).",
-   "epss": 0.0021,
-   "epss_percentile": 11.337
-  },
-  {
-   "id": "CVE-2026-123033",
-   "title": "TrueNAS SCALE HA heartbeat-origin authentication bypass - unauthenticated full-admin API access, commands as root",
-   "product": "TrueNAS SCALE before 25.10.8 (middlewared; all release trains before their respective fixes)",
-   "score": 8.3,
-   "cvss": "8.3 (CVSS v3.1)",
-   "fixed": "TrueNAS SCALE 25.10.8 (forthcoming, 25.10 train) and later",
-   "published": "2026-11-05T06:58:31Z (CVE.org); NVD 2026-11-05T07:17:26Z",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Authentication bypass (CWE-290/CWE-306) in the HA heartbeat origin check in middlewared - unauthenticated connection from hardcoded HA heartbeat address 169.254.10.1/10.2 with source port <=1024 is granted a node credential authorized for every API method (full administrator); admin API access executes commands as root. Hook registered on all installs incl. non-HA single-node Community Edition. Attacker must be on the same L2 segment AND alter the return path (no route to 169.254.0.0/16 by default). Reported by spnctf via coordinated disclosure. Fixed in SCALE 25.10.8 (forthcoming). No exploitation reported; not in CISA KEV; VulnCheck KEV single-lookup 0 documents; EPSS null (brand new).",
-   "epss": null,
-   "epss_percentile": null
   },
   {
    "id": "CVE-2023-42442",
@@ -21722,6 +21930,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": null
   },
   {
+   "id": "CVE-2026-122309",
+   "title": "Kyverno unbounded CEL expression DoS (OOM-kill pods, block admission)",
+   "product": "Kyverno before 1.19.2",
+   "score": 8.2,
+   "cvss": "8.2 (CVSS v4.0; v3.1 6.2)",
+   "fixed": "1.19.2",
+   "published": "2026-11-05T03:17Z (NVD, Received)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
+   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122309",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2026-14467",
    "title": "Forocoches comments editor information disclosure via malicious external image URL (IP-grabber)",
    "product": "Forocoches comments editor",
@@ -21993,6 +22217,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 86.489
   },
   {
+   "id": "CVE-2026-93389",
+   "title": "LiteSpeed Cache unauthenticated disclosure of WooCommerce customer data + cart-session hijack",
+   "product": "LiteSpeed Cache plugin for WordPress <= 7.9.1",
+   "score": 8.2,
+   "cvss": "8.2 (CVSS v3.1)",
+   "fixed": "7.9.2",
+   "published": "2026-11-05T05:18:40.127 (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV. Unauthenticated attacker reads another shopper's cached WooCommerce cart/checkout response (billing/shipping PII, cart contents, live Cart-Token session JWT + nonce enabling session hijack, order_key) when Cache REST API is ON (default). Vendor-confirmed (LiteSpeed blog Nov 4). Scope (1).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2026-93570",
    "title": "Szafir XXE injection",
    "product": "Szafir / Szafir Weryfikuj\u0105ca",
@@ -22036,37 +22275,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "No exploitation reported; not in CISA KEV. Commit eba0549bc7d1 swapped capable() for has_ns_capability_noaudit() to silence SELinux audits; different credential semantics let a user change a file gid to another group they belong to and evade enforced group quotas. EPSS 0.00185 (8.08th percentile).",
    "epss": 0.0045,
    "epss_percentile": 39.241
-  },
-  {
-   "id": "CVE-2026-122309",
-   "title": "Kyverno unbounded CEL expression DoS (OOM-kill pods, block admission)",
-   "product": "Kyverno before 1.19.2",
-   "score": 8.2,
-   "cvss": "8.2 (CVSS v4.0; v3.1 6.2)",
-   "fixed": "1.19.2",
-   "published": "2026-11-05T03:17Z (NVD, Received)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
-   "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-122309",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-93389",
-   "title": "LiteSpeed Cache unauthenticated disclosure of WooCommerce customer data + cart-session hijack",
-   "product": "LiteSpeed Cache plugin for WordPress <= 7.9.1",
-   "score": 8.2,
-   "cvss": "8.2 (CVSS v3.1)",
-   "fixed": "7.9.2",
-   "published": "2026-11-05T05:18:40.127 (NVD)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV. Unauthenticated attacker reads another shopper's cached WooCommerce cart/checkout response (billing/shipping PII, cart contents, live Cart-Token session JWT + nonce enabling session hijack, order_key) when Cache REST API is ON (default). Vendor-confirmed (LiteSpeed blog Nov 4). Scope (1).",
-   "epss": null,
-   "epss_percentile": null
   },
   {
    "id": "CVE-2026-101770",
@@ -22172,6 +22380,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "No exploitation reported; not in CISA KEV. Access control bypass (CWE-863): vfs_ceph_rgw openat() fails case-insensitive lookup on mismatched casing, treats the request as creating a new file and skips permission checks, so an authenticated user reads or overwrites restricted files on shares using the experimental module. EPSS unscored (brand new).",
    "epss": 0.00649,
    "epss_percentile": 51.251999999999995
+  },
+  {
+   "id": "CVE-2026-110373",
+   "title": "WordPress Login with phone number plugin <=1.8.77 incorrect privilege assignment -> unauthenticated privilege escalation",
+   "product": "Hamid Alinia Login with phone number (WordPress plugin) through 1.8.77",
+   "score": 8.1,
+   "cvss": "8.1 HIGH (CVSS v3.1, Patchstack)",
+   "fixed": "1.8.78",
+   "published": "2026-10-18T11:16:36Z (NVD); lastMod 2026-10-19; vulnStatus Deferred at publish",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "BASELINE-MISS ADD 2026-11-04 (20:30 ET hourly): published Oct 18, never recorded (missed by the Oct 22 catch-up). Unauthenticated remote attacker abuses privilege-assignment logic in phone-number login/registration flows to escalate privileges. Scope (1)+(3). Not in CISA KEV or VulnCheck KEV; no confirmed exploitation.",
+   "epss": 0.00335,
+   "epss_percentile": 26.982
   },
   {
    "id": "CVE-2026-112427",
@@ -22309,6 +22532,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 51.681999999999995
   },
   {
+   "id": "CVE-2026-116617",
+   "title": "Motors (WordPress) authenticated file deletion of other users' images",
+   "product": "Motors \u2013 Car Dealership & Classified Listings plugin for WordPress <= 1.4.128",
+   "score": 8.1,
+   "cvss": "8.1 (CVSS v3.1)",
+   "fixed": "1.4.129 (per plugin changeset to tags/1.4.129)",
+   "published": "2026-11-05T05:18:19.240 (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV. Authenticated Subscriber+ attacker deletes other users' image files under wp-content/uploads (avatars, dealer logos, media) via crafted stm_dealer_logo_path; guards restrict to image files within uploads basedir (wp-config.php/plugin PHP out of reach). Scope (1).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2026-116688",
    "title": "CKEditor 5 prototype pollution (es-toolkit) -> unauthorized JS execution in browser",
    "product": "CKEditor 5",
@@ -22382,6 +22620,25 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Incorrect boundary conditions in A/V Playback. Lag-gap catch: score arrived in lastMod window. Scope (1).",
    "epss": 0.00187,
    "epss_percentile": 8.366999999999999
+  },
+  {
+   "id": "CVE-2026-11800",
+   "title": "Keycloak JWT algorithm confusion - auth bypass, impersonate any federated user",
+   "product": "Keycloak < 26.6.4 (org.keycloak:keycloak-services)",
+   "score": 8.1,
+   "cvss": "8.1 (CVSS v3.1)",
+   "fixed": "26.6.4",
+   "published": "2026-06-25T22:17:00Z (NVD); GHSA published 2026-11-03T17:24:27Z",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "BASELINE MISS - surfaced via GitHub Advisory API (GHSA-j97h-3f8r-mrjr, Nov 3). JWT algorithm confusion (CWE-347) in the JWT Authorization Grant flow: attacker with valid client credentials forges assertions to create unauthorized access tokens, impersonating any federated user linked to the affected IdP. Fixed in 26.6.4. No exploitation reported; not in CISA KEV. EPSS 0.003/22.89th. Scope (1)+(3).",
+   "epss": 0.003,
+   "epss_percentile": 22.892,
+   "sources": [
+    "https://nvd.nist.gov/vuln/detail/CVE-2026-11800",
+    "https://github.com/advisories/GHSA-j97h-3f8r-mrjr"
+   ]
   },
   {
    "id": "CVE-2026-118176",
@@ -22502,6 +22759,36 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "Authenticated (custom-level access+) arbitrary file deletion via deleteFile insufficient path validation; deleting wp-config.php leads to RCE. No fix announced. Not in CISA KEV; VulnCheck KEV negative. EPSS null (published <1h).",
    "epss": 0.00609,
    "epss_percentile": 49.278
+  },
+  {
+   "id": "CVE-2026-121133",
+   "title": "Google Chrome Images incorrect reference resolution -> RCE outside the sandbox via a crafted HTML page (Mac; compromised renderer process)",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 8.1,
+   "cvss": "8.1 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:21.793 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted HTML page (Mac; compromised renderer process). Scope (1)+(2).",
+   "epss": 0.0021,
+   "epss_percentile": 11.337
+  },
+  {
+   "id": "CVE-2026-121224",
+   "title": "Google Chrome Desktop security issue -> RCE outside the sandbox via a crafted HTML page (Mac; compromised renderer process)",
+   "product": "Google Chrome < 157.0.8103.38",
+   "score": 8.1,
+   "cvss": "8.1 (CVSS v3.1)",
+   "fixed": "157.0.8103.38",
+   "published": "2026-11-03T21:17:32.190 (NVD); score landed 2026-11-05 via NVD lastMod",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted HTML page (Mac; compromised renderer process). Scope (1)+(2).",
+   "epss": 0.00226,
+   "epss_percentile": 13.367
   },
   {
    "id": "CVE-2026-122224",
@@ -23107,66 +23394,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 23.97
   },
   {
-   "id": "CVE-2026-110373",
-   "title": "WordPress Login with phone number plugin <=1.8.77 incorrect privilege assignment -> unauthenticated privilege escalation",
-   "product": "Hamid Alinia Login with phone number (WordPress plugin) through 1.8.77",
-   "score": 8.1,
-   "cvss": "8.1 HIGH (CVSS v3.1, Patchstack)",
-   "fixed": "1.8.78",
-   "published": "2026-10-18T11:16:36Z (NVD); lastMod 2026-10-19; vulnStatus Deferred at publish",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "BASELINE-MISS ADD 2026-11-04 (20:30 ET hourly): published Oct 18, never recorded (missed by the Oct 22 catch-up). Unauthenticated remote attacker abuses privilege-assignment logic in phone-number login/registration flows to escalate privileges. Scope (1)+(3). Not in CISA KEV or VulnCheck KEV; no confirmed exploitation.",
-   "epss": 0.00335,
-   "epss_percentile": 26.982
-  },
-  {
-   "id": "CVE-2026-121133",
-   "title": "Google Chrome Images incorrect reference resolution -> RCE outside the sandbox via a crafted HTML page (Mac; compromised renderer process)",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 8.1,
-   "cvss": "8.1 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:21.793 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted HTML page (Mac; compromised renderer process). Scope (1)+(2).",
-   "epss": 0.0021,
-   "epss_percentile": 11.337
-  },
-  {
-   "id": "CVE-2026-121224",
-   "title": "Google Chrome Desktop security issue -> RCE outside the sandbox via a crafted HTML page (Mac; compromised renderer process)",
-   "product": "Google Chrome < 157.0.8103.38",
-   "score": 8.1,
-   "cvss": "8.1 (CVSS v3.1)",
-   "fixed": "157.0.8103.38",
-   "published": "2026-11-03T21:17:32.190 (NVD); score landed 2026-11-05 via NVD lastMod",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Chrome 157 stable batch (21:17Z Nov 3), NVD score landed this hour (fourth tranche); remote attacker executes arbitrary code outside the sandbox via a crafted HTML page (Mac; compromised renderer process). Scope (1)+(2).",
-   "epss": 0.00226,
-   "epss_percentile": 13.367
-  },
-  {
-   "id": "CVE-2026-116617",
-   "title": "Motors (WordPress) authenticated file deletion of other users' images",
-   "product": "Motors \u2013 Car Dealership & Classified Listings plugin for WordPress <= 1.4.128",
-   "score": 8.1,
-   "cvss": "8.1 (CVSS v3.1)",
-   "fixed": "1.4.129 (per plugin changeset to tags/1.4.129)",
-   "published": "2026-11-05T05:18:19.240 (NVD)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV. Authenticated Subscriber+ attacker deletes other users' image files under wp-content/uploads (avatars, dealer logos, media) via crafted stm_dealer_logo_path; guards restrict to image files within uploads basedir (wp-config.php/plugin PHP out of reach). Scope (1).",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
    "id": "CVE-2026-115190",
    "title": "Mautic insecure deserialization (PHP object injection) in segment filters/custom fields",
    "product": "Mautic",
@@ -23422,6 +23649,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 29.337000000000003
   },
   {
+   "id": "CVE-2026-114490",
+   "title": "hMailServer COM administration API incorrect authorization -> server administrator authority over all domains",
+   "product": "Progressive Robot hMailServer 6.3.4 through 6.3.6",
+   "score": 7.8,
+   "cvss": "7.8 HIGH (CVSS v3.1, MITRE)",
+   "fixed": "6.3.7 (upstream GitLab Work Item 87)",
+   "published": "2026-10-21T16:17:35Z (NVD); lastMod 2026-10-29 (score assignment)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "LAG-GAP / BASELINE-MISS ADD 2026-11-04 (20:30 ET hourly): published Oct 21 but never recorded - scores arrived 2026-10-29 (Awaiting Analysis at publish). A serveradmin-role account confined to a domain list is treated as whole-server administrator over the COM API -> read/change every domain's accounts and mail, server settings/secrets, create further server admins. Scope (3). Not in CISA KEV or VulnCheck KEV; no confirmed exploitation.",
+   "epss": 0.00108,
+   "epss_percentile": 1.183
+  },
+  {
    "id": "CVE-2026-115878",
    "title": "stanza pickle deserialization RCE in lemmatizer (CWE-502/94): Trainer.load bare pickle.loads of attacker-supplied .pt; weights_only=True bypassed",
    "product": "stanza (PyPI) = 1.14.0",
@@ -23495,21 +23737,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "EXPLOITED IN THE WILD - added to CISA KEV 2026-10-28 (catalogVersion 2026.10.28; federal due date 2026-10-31). Local privesc: skb_try_coalesce() drops the SKBFL_SHARED_FRAG marker, so ESP-in-TCP decrypts in place over page-cache-backed frags; public PoC since May 2026 corrupts the cached copy of /usr/bin/su for a root shell (V12 Security / Wiz). EPSS 0.10192, 95.65th percentile - crosses both EPSS thresholds. Distinct from pending signal ZDI-CAN-33367 (skb_zerocopy), which remains unassigned.",
    "epss": 0.1613,
    "epss_percentile": 96.937
-  },
-  {
-   "id": "CVE-2026-114490",
-   "title": "hMailServer COM administration API incorrect authorization -> server administrator authority over all domains",
-   "product": "Progressive Robot hMailServer 6.3.4 through 6.3.6",
-   "score": 7.8,
-   "cvss": "7.8 HIGH (CVSS v3.1, MITRE)",
-   "fixed": "6.3.7 (upstream GitLab Work Item 87)",
-   "published": "2026-10-21T16:17:35Z (NVD); lastMod 2026-10-29 (score assignment)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "LAG-GAP / BASELINE-MISS ADD 2026-11-04 (20:30 ET hourly): published Oct 21 but never recorded - scores arrived 2026-10-29 (Awaiting Analysis at publish). A serveradmin-role account confined to a domain list is treated as whole-server administrator over the COM API -> read/change every domain's accounts and mail, server settings/secrets, create further server admins. Scope (3). Not in CISA KEV or VulnCheck KEV; no confirmed exploitation.",
-   "epss": 0.00108,
-   "epss_percentile": 1.183
   },
   {
    "id": "CVE-2026-104608",
@@ -23663,6 +23890,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 71.981
   },
   {
+   "id": "CVE-2026-114476",
+   "title": "hMailServer REST administration API incorrect authorization -> server administrator authority takeover",
+   "product": "Progressive Robot hMailServer 6.3.4 through 6.3.6",
+   "score": 7.5,
+   "cvss": "7.5 HIGH (CVSS v3.1, MITRE)",
+   "fixed": "6.3.7 (upstream GitLab Work Item 88)",
+   "published": "2026-10-21T16:17:34Z (NVD); lastMod 2026-10-29 (score assignment)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "LAG-GAP / BASELINE-MISS ADD 2026-11-04 (20:30 ET hourly): published Oct 21 but never recorded - scores arrived 2026-10-29 (Awaiting Analysis at publish). An authenticated credential with manage_roles in named domains deletes a narrowing role via DELETE /api/v1/role-assignments/{address}, restoring an account's server-administrator authority (after setting its password while narrowed) -> sign in as server admin. Scope (3). Not in CISA KEV or VulnCheck KEV; no confirmed exploitation.",
+   "epss": 0.00274,
+   "epss_percentile": 19.889000000000003
+  },
+  {
    "id": "CVE-2026-116369",
    "title": "github-kanban-mcp-server OS command injection via handleListIssues state/labels arguments",
    "product": "Sunwood-ai-labs github-kanban-mcp-server through 0.4.0",
@@ -23783,21 +24025,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 36.893
   },
   {
-   "id": "CVE-2026-114476",
-   "title": "hMailServer REST administration API incorrect authorization -> server administrator authority takeover",
-   "product": "Progressive Robot hMailServer 6.3.4 through 6.3.6",
-   "score": 7.5,
-   "cvss": "7.5 HIGH (CVSS v3.1, MITRE)",
-   "fixed": "6.3.7 (upstream GitLab Work Item 88)",
-   "published": "2026-10-21T16:17:34Z (NVD); lastMod 2026-10-29 (score assignment)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "LAG-GAP / BASELINE-MISS ADD 2026-11-04 (20:30 ET hourly): published Oct 21 but never recorded - scores arrived 2026-10-29 (Awaiting Analysis at publish). An authenticated credential with manage_roles in named domains deletes a narrowing role via DELETE /api/v1/role-assignments/{address}, restoring an account's server-administrator authority (after setting its password while narrowed) -> sign in as server admin. Scope (3). Not in CISA KEV or VulnCheck KEV; no confirmed exploitation.",
-   "epss": 0.00274,
-   "epss_percentile": 19.889000000000003
-  },
-  {
    "id": "CVE-2026-114488",
    "title": "Wildfly IIOP pre-auth authentication bypass: CSIv2 accepts ITTPrincipalName identity assertions without transport auth -> impersonate any principal on IIOP-exposed @Remote EJB",
    "product": "Wildfly (wildfly-iiop-openjdk); Red Hat JBoss EAP 7 / Red Hat Fuse 7",
@@ -23901,6 +24128,24 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "Remote unauthenticated OS command injection (AV:N/AC:L/PR:N/UI:N) in iscm on_push_message via tz argument. Public exploit published (researcher gist, vuldb 430445). No fix from vendor. EPSS unscored (brand new). ADDED 21:30 ET hourly. Scope (2) RCE-class on router management interface.",
    "epss": 0.01308,
    "epss_percentile": 70.679
+  },
+  {
+   "id": "CVE-2026-123019",
+   "title": "DB-GPT HuggingFace adapter trust_remote_code - remote code execution, public exploit",
+   "product": "eosphoros-ai DB-GPT up to 0.8.2",
+   "score": 7.3,
+   "cvss": "7.3 (CVSS v3.1)",
+   "fixed": "No known fix - project informed early, has not responded",
+   "published": "2026-11-05T12:17:50Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": true,
+   "status": "Inclusion of untrusted code (CWE-829): exec_module (hf_adapter.py) manipulation of trust_remote_code loads functionality from an untrusted control sphere -> RCE; NVD notes the exploit has been made available to the public. No fix known; project has not responded. No confirmed in-the-wild exploitation; not in CISA KEV. EPSS null (brand new). Scope (2) RCE-class regardless of score.",
+   "epss": null,
+   "epss_percentile": null,
+   "sources": [
+    "https://nvd.nist.gov/vuln/detail/CVE-2026-123019"
+   ]
   },
   {
    "id": "CVE-2026-101210",
@@ -24203,21 +24448,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 50.268
   },
   {
-   "id": "CVE-2026-119552",
-   "title": "Uptime Kuma first-run race -> unauthenticated administrator account creation",
-   "product": "Uptime Kuma through 2.5.8",
-   "score": 7.1,
-   "cvss": "7.1 (CVSS v3.1; 6.3 v4.0; criterion 3 admin-access class)",
-   "fixed": "no fixed version stated in NVD/CVE record at check time",
-   "published": "2026-10-30T12:16:42.273Z (NVD); vulnStatus Received",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV. Race condition in the Socket.IO first-run setup handler: unauthenticated attackers send concurrent setup requests during the bcrypt window to create an additional administrator account -> modify monitors, API keys, enable disableAuth. Admin-access class (criterion 3, regardless of score). EPSS unscored (brand new).",
-   "epss": 0.00234,
-   "epss_percentile": 14.398
-  },
-  {
    "id": "CVE-2026-109849",
    "title": "Hinemos password-change API incorrect privilege assignment -> non-admin changes admin password / admin takeover",
    "product": "Hinemos (NTT DATA INTELLILINK) ver.7.2.0, 7.1.0-7.1.2, 7.0.0-7.0.4, 6.2.0-6.2.2, 6.1.0-6.1.2, 6.0.0-6.0.3",
@@ -24231,6 +24461,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "NEW 2026-11-04 (20:30 ET hourly): incorrect privilege assignment (CWE-266) - a general user in a role with the account-change system privilege (default on the ALL_USERS role) can change an ADMINISTRATORS-role user's password -> full admin takeover. Vendor-confirmed, fixed 2026-11-04. Scope (3). Not in CISA KEV or VulnCheck KEV; no confirmed exploitation; EPSS unscored (brand new).",
    "epss": null,
    "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-119552",
+   "title": "Uptime Kuma first-run race -> unauthenticated administrator account creation",
+   "product": "Uptime Kuma through 2.5.8",
+   "score": 7.1,
+   "cvss": "7.1 (CVSS v3.1; 6.3 v4.0; criterion 3 admin-access class)",
+   "fixed": "no fixed version stated in NVD/CVE record at check time",
+   "published": "2026-10-30T12:16:42.273Z (NVD); vulnStatus Received",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "No exploitation reported; not in CISA KEV. Race condition in the Socket.IO first-run setup handler: unauthenticated attackers send concurrent setup requests during the bcrypt window to create an additional administrator account -> modify monitors, API keys, enable disableAuth. Admin-access class (criterion 3, regardless of score). EPSS unscored (brand new).",
+   "epss": 0.00234,
+   "epss_percentile": 14.398
   },
   {
    "id": "CVE-2026-96654",
@@ -24636,6 +24881,24 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "No exploitation reported; not in CISA KEV. Authentication bypass (CWE-287): the plugins do not bind the verified two-factor code to the account being authenticated, so an attacker who knows a victim's password and holds their own two-factor-enabled account satisfies the victim's second-factor check with their own code and obtains the victim's session (administrator accounts included). Fixed 1.17.0 / 5.5.0. EPSS unscored (brand new).",
    "epss": 0.00286,
    "epss_percentile": 21.302
+  },
+  {
+   "id": "CVE-2026-112445",
+   "title": "macOS local privilege escalation to root via com.apple.xpc.uscwoap launchd daemon (TIOCSTI)",
+   "product": "Apple macOS (builds before macOS 27.2)",
+   "score": 0.0,
+   "cvss": "none published yet (Apple assigned the ID but omitted it from its advisory; no NVD/CVE.org record yet)",
+   "fixed": "macOS 27.2 (removes the com.apple.xpc.uscwoap configuration)",
+   "published": "2026-11-04T01:16:42Z (public disclosure, securityonline.info; researcher repo created 2026-10-29)",
+   "exploited": false,
+   "kev": false,
+   "poc": true,
+   "status": "Local privilege escalation to root: a non-admin console user starts the com.apple.xpc.uscwoap launchd job (/bin/bash as root on /dev/console) and injects commands via TIOCSTI. Working public PoC (GitHub Mas0nShi/CVE-2026-112445, exp.c; corroborated by securityonline.info and CyberRakshakLabs). Fixed in macOS 27.2. No confirmed in-the-wild exploitation; not in CISA KEV. EPSS null. Scope (3).",
+   "epss": null,
+   "epss_percentile": null,
+   "sources": [
+    "https://github.com/Mas0nShi/CVE-2026-112445"
+   ]
   },
   {
    "id": "CVE-2026-112816",
@@ -25283,6 +25546,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 2.862
   },
   {
+   "id": "CVE-2026-58868",
+   "title": "Android FrameDecoder out-of-bounds write - remote code execution, no privileges, no user interaction",
+   "product": "Android (FrameDecoder.cpp, onOutputReceived), Android 14-17",
+   "score": 0.0,
+   "cvss": "none published yet (SSVC: exploitation none, automatable yes, technical impact total)",
+   "fixed": "November 2026 Android security patch level 2026-11-01 (Android 14-17)",
+   "published": "2026-11-02T20:17:49Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": true,
+   "status": "NEW PUBLIC PoC (2026-11-05, Sploitus 8CFE2949, probear0001, working code 100%): Android FrameDecoder HEIF OOB write -> RCE. No wild exploitation; not in KEV. EPSS 0.0021/11.4th. Out-of-bounds write due to heap buffer overflow in FrameDecoder.cpp onOutputReceived could lead to remote code execution with no additional execution privileges needed; user interaction is not needed. BASELINE MISS - published Nov 2, unscored (Awaiting Analysis, SSVC only), never tracked; surfaced via Nov 5 vendor-feed sweep. Fixed in November 2026 Android SPL 2026-11-01. No exploitation reported; not in CISA KEV. EPSS 0.0021/11.4th. Scope (2) RCE-class regardless of score.",
+   "epss": 0.00211,
+   "epss_percentile": 11.379
+  },
+  {
    "id": "CVE-2026-76024",
    "title": "Chrome 156: Memory corruption in MediaStream - memory disclosure inside the sandbox (crafted HTML page)",
    "product": "Google Chrome prior to 156.0.8078.79 (Stable/Extended Stable; Windows/Mac also 156.0.8078.80)",
@@ -25462,39 +25740,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-38601",
    "epss": 0.002,
    "epss_percentile": 10.005
-  },
-  {
-   "id": "CVE-2026-58868",
-   "title": "Android FrameDecoder out-of-bounds write - remote code execution, no privileges, no user interaction",
-   "product": "Android (FrameDecoder.cpp, onOutputReceived), Android 14-17",
-   "score": 0.0,
-   "cvss": "none published yet (SSVC: exploitation none, automatable yes, technical impact total)",
-   "fixed": "November 2026 Android security patch level 2026-11-01 (Android 14-17)",
-   "published": "2026-11-02T20:17:49Z (NVD)",
-   "exploited": false,
-   "kev": false,
-   "poc": true,
-   "status": "NEW PUBLIC PoC (2026-11-05, Sploitus 8CFE2949, probear0001, working code 100%): Android FrameDecoder HEIF OOB write -> RCE. No wild exploitation; not in KEV. EPSS 0.0021/11.4th. Out-of-bounds write due to heap buffer overflow in FrameDecoder.cpp onOutputReceived could lead to remote code execution with no additional execution privileges needed; user interaction is not needed. BASELINE MISS - published Nov 2, unscored (Awaiting Analysis, SSVC only), never tracked; surfaced via Nov 5 vendor-feed sweep. Fixed in November 2026 Android SPL 2026-11-01. No exploitation reported; not in CISA KEV. EPSS 0.0021/11.4th. Scope (2) RCE-class regardless of score.",
-   "epss": 0.00211,
-   "epss_percentile": 11.379
-  },
-  {
-   "id": "CVE-2026-112445",
-   "title": "macOS local privilege escalation to root via com.apple.xpc.uscwoap launchd daemon (TIOCSTI)",
-   "product": "Apple macOS (builds before macOS 27.2)",
-   "score": 0.0,
-   "cvss": "none published yet (Apple assigned the ID but omitted it from its advisory; no NVD/CVE.org record yet)",
-   "fixed": "macOS 27.2 (removes the com.apple.xpc.uscwoap configuration)",
-   "published": "2026-11-04T01:16:42Z (public disclosure, securityonline.info; researcher repo created 2026-10-29)",
-   "exploited": false,
-   "kev": false,
-   "poc": true,
-   "status": "Local privilege escalation to root: a non-admin console user starts the com.apple.xpc.uscwoap launchd job (/bin/bash as root on /dev/console) and injects commands via TIOCSTI. Working public PoC (GitHub Mas0nShi/CVE-2026-112445, exp.c; corroborated by securityonline.info and CyberRakshakLabs). Fixed in macOS 27.2. No confirmed in-the-wild exploitation; not in CISA KEV. EPSS null. Scope (3).",
-   "epss": null,
-   "epss_percentile": null,
-   "sources": [
-    "https://github.com/Mas0nShi/CVE-2026-112445"
-   ]
   }
  ]
 </script>
@@ -25508,18 +25753,18 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-05 --run 05:30 ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-05 --run 07:30 ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning 1659 tracked CVEs ...", c:"", p:300},
-    {t:"New this scan: +1 — CVE-2026-112445 (no CVSS yet)", c:"", p:200},
-    {t:"  macOS — local priv esc to root, public PoC, fixed 27.2", c:"", p:200},
-    {t:"PoC updates: CVE-2026-122006 (9.8) · CVE-2026-58868", c:"", p:200},
-    {t:"  CVE-2026-107441 (8.8, Zyxel, wild/KEV) — PoC too", c:"", p:200},
+    {t:"Scanning — 1672 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: CVE-2026-76460, CVE-2026-121489, CVE-2026-123018 + 10 more", c:"", p:200},
+    {t:"  Cisco ISE auth bypass 10.0 — KEV, in the wild", c:"", p:200},
+    {t:"  9x Apache Juneau — all fixed in 9.2.1", c:"", p:200},
+    {t:"  DB-GPT RCEs x2 — public exploits, no fix · Keycloak 8.1", c:"", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
@@ -25846,7 +26091,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 1659 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 1672 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
