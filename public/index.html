@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 5</span><span class="pill accent">1914 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 6</span><span class="pill accent">1,920 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 5 22:30 ET:</strong> 1914 CVEs tracked, filtered down to what needs action first. New this scan: 1 addition — a flatpak arbitrary file write in the host context via build-init (CVE-2026-96276, 9.8 CVSS v3.1 per GitHub CNA; Red Hat rates it 6.5 Moderate), fixed in 1.18.1 — not exploited in the wild, not KEV-listed, and no public PoC; EPSS 0.00436 (38.06th percentile). Highlighted Drops, the Ones to Watch, and the grouped 1914-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 6 01:30 ET:</strong> 1,920 CVEs tracked, filtered down to what needs action first. New this scan: 6 additions — all WordPress plugins, published 2026-11-06, no NVD score yet and no fixed version stated: CVE-2026-110955 (Wurdey — unauthenticated admin authentication bypass), CVE-2026-115230 (WHIZZ — unauthenticated arbitrary password reset, admins included), CVE-2026-116533 (Static Snapshot — unauthenticated RCE), CVE-2026-113584 (placester — unauthenticated account takeover via email overwrite), CVE-2026-113615 (GS JWT Authentication — unauthenticated SQL injection to admin session) and CVE-2026-87784 (Cool Media Filter — subscriber+ privilege escalation to admin). Status change: CVE-2026-119757 (BTCPay Server, 9.8) was added to VulnCheck KEV on 2026-11-05 — it remains exploited in the wild with funds stolen, and is NOT in CISA KEV. Highlighted Drops, the Ones to Watch, and the grouped 1,920-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -430,10 +430,10 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>1914</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>1,920</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
-    <div class="stat"><b>NOV 5</b><span>Last updated — hourly scans</span></div>
+    <div class="stat"><b>NOV 6</b><span>Last updated — hourly scans</span></div>
   </section>
 
   <section>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 1914 CVEs</label>
+      <label for="cveSearch">Search all 1,920 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 1914 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 1,920 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -497,7 +497,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 5 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1594 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — the latest addition to the group is this scan's one watch-tier flaw — a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 6 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1594 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 2 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -512,11 +512,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 1914 CVEs</h2><p>Every entry from the Nov 5 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 1,920 CVEs</h2><p>Every entry from the Nov 6 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 1914.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">1914 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 1,920.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">1,920 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 5 22:30 ET hourly scan — 1 record added (1914 CVEs tracked). The addition is a flatpak flaw (CVE-2026-96276): build-init writes arbitrary files in the host context via a crafted SDK extension directory path — 9.8 (CVSS v3.1, GitHub CNA; Red Hat rates 6.5 Moderate), fixed in 1.18.1, EPSS 0.00436 / 38.06th percentile. Across the full set, 68 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 94 sit in the public-PoC group. 1774 of 1914 records carry EPSS scores. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 6 01:30 ET hourly scan — 6 records added (1,920 CVEs tracked). The additions are six WordPress plugin flaws, all published 2026-11-06 with no NVD score yet and no fixed version stated: CVE-2026-110955 (Wurdey — unauthenticated admin authentication bypass), CVE-2026-115230 (WHIZZ — unauthenticated arbitrary password reset, including admins), CVE-2026-116533 (Static Snapshot — unauthenticated RCE), CVE-2026-113584 (placester — unauthenticated account takeover via email overwrite), CVE-2026-113615 (GS JWT Authentication — unauthenticated SQL injection to admin session) and CVE-2026-87784 (Cool Media Filter — subscriber+ privilege escalation to admin). Status change: CVE-2026-119757 (BTCPay Server, 9.8) was added to VulnCheck KEV on 2026-11-05; it remains exploited in the wild with funds stolen and is NOT in CISA KEV. Across the full set, 68 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 94 sit in the public-PoC group. 1774 of 1920 records carry EPSS scores. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 <script id="cveData" type="application/json">
@@ -3796,7 +3796,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "exploited": true,
   "kev": false,
   "poc": false,
-  "status": "EXPLOITED IN THE WILD - vendor-confirmed (BTCPay Server advisory 2026-11-05): attackers exploited it, users affected, funds stolen. Unauthenticated remote attacker retrieves LND .macaroon credential files and takes full control of the node, including moving funds. Fixed 2.4.2 (LND 0.21.1, macaroons regenerated). NOT in CISA KEV; NOT in VulnCheck KEV. EPSS unscored (brand new).",
+  "status": "EXPLOITED IN THE WILD - vendor-confirmed (BTCPay Server advisory 2026-11-05): attackers exploited it, users affected, funds stolen. Unauthenticated remote attacker retrieves LND .macaroon credential files and takes full control of the node, including moving funds. Fixed 2.4.2 (LND 0.21.1, macaroons regenerated). ADDED TO VulnCheck KEV 2026-11-05 (reported-exploitation refs: Binance Square post + CVE.org). NOT in CISA KEV. EPSS unscored (brand new).",
   "src": "https://blog.btcpayserver.org/security-advisory-btcpay-server-2-4-2/",
   "epss": null,
   "epss_percentile": null
@@ -29263,6 +29263,102 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "MATERIAL 4(a) (2026-11-05 09:30 ET hourly): newly published in NVD window, Apache OFBiz 24.09.08 batch. Authenticated user with only LABEL_MANAGER_VIEW reads arbitrary properties and XML files including the generated JWT signing key, enabling forgery of an authenticated administrator session. No public exploit reported; not in CISA KEV; EPSS null. Scope (3).",
   "epss": null,
   "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-110955",
+  "title": "Wurdey WordPress plugin - unauthenticated administrator authentication bypass",
+  "product": "Wurdey WordPress plugin through 1.0.0",
+  "score": 0.0,
+  "cvss": "no NVD score yet",
+  "fixed": "No fixed version stated in CVE record",
+  "published": "2026-11-06T06:16:39.830Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-06 01:30 ET hourly): newly published. Plugin does not verify a request signature before logging a user in; unauthenticated attacker authenticates as an administrator knowing only the admin username. No fixed version stated. No public exploit; not in CISA KEV; EPSS null. Scope (3).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-110955",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-115230",
+  "title": "WHIZZ WordPress plugin - unauthenticated arbitrary user password reset",
+  "product": "WHIZZ WordPress plugin through 1.1.8",
+  "score": 0.0,
+  "cvss": "no NVD score yet",
+  "fixed": "No fixed version stated in CVE record",
+  "published": "2026-11-06T06:16:40.270Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-06 01:30 ET hourly): newly published. Password-reset key not validated; nonce exposed to unauthenticated visitors lets an attacker set an arbitrary password for any user including administrators and fully take over the account. No fixed version stated. No public exploit; not in CISA KEV; EPSS null. Scope (3).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-115230",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-116533",
+  "title": "Static Snapshot WordPress plugin - unauthenticated remote code execution via 'name' parameter",
+  "product": "Static Snapshot WordPress plugin through 0.2.1",
+  "score": 0.0,
+  "cvss": "no NVD score yet",
+  "fixed": "No fixed version stated in CVE record",
+  "published": "2026-11-06T06:16:40.480Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-06 01:30 ET hourly): newly published. Shell metacharacters in a user-supplied value concatenated into OS commands run by the server; unauthenticated attacker executes arbitrary commands on the host. No fixed version stated. No public exploit; not in CISA KEV; EPSS null. Scope (2) RCE class.",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-116533",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-113584",
+  "title": "Real Estate Website Builder (placester) WordPress plugin - unauthenticated account takeover via user email update",
+  "product": "placester WordPress plugin through 1.4.3",
+  "score": 0.0,
+  "cvss": "no NVD score yet",
+  "fixed": "No fixed version stated in CVE record",
+  "published": "2026-11-06T06:16:39.943Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-06 01:30 ET hourly): newly published. AJAX action updates account details with no capability/nonce/ownership check; unauthenticated attacker overwrites any user's email address including an administrator's and takes over the account via the standard password-reset flow. No fixed version stated. No public exploit; not in CISA KEV; EPSS null. Scope (3).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-113584",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-113615",
+  "title": "GS JWT Authentication for WP REST API WordPress plugin - unauthenticated privilege escalation via SQLi",
+  "product": "GS JWT Authentication for WP REST API WordPress plugin through 1.0.0",
+  "score": 0.0,
+  "cvss": "no NVD score yet",
+  "fixed": "No fixed version stated in CVE record",
+  "published": "2026-11-06T06:16:40.053Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-06 01:30 ET hourly): newly published. Unsanitized request value used in SQL queries on several unauthenticated REST routes; unauthenticated attacker performs SQL injection and obtains an administrator session. No fixed version stated. No public exploit; not in CISA KEV; EPSS null. Scope (3).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-113615",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-87784",
+  "title": "Cool Media Filter WordPress plugin - Subscriber+ privilege escalation via role_permission",
+  "product": "Cool Media Filter WordPress plugin through 1.0.1",
+  "score": 0.0,
+  "cvss": "no NVD score yet",
+  "fixed": "No fixed version stated in CVE record",
+  "published": "2026-11-06T06:16:44.363Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-06 01:30 ET hourly): newly published. No capability or nonce check when updating role capabilities; any authenticated user such as a subscriber can grant their own role administrator capabilities and take over the site. No fixed version stated. No public exploit; not in CISA KEV; EPSS null. Scope (3).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-87784",
+  "epss": null,
+  "epss_percentile": null
  }
 ]
 </script>
@@ -29276,17 +29372,25 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-05 --run 22:30 ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-06 --run 01:30 ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning — 1914 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 1 addition — flatpak build-init arbitrary file write", c:"", p:200},
-    {t:"  flatpak CVE-2026-96276 — arbitrary file write in host context via build-init (9.8)", c:"", p:200},
-    {t:"  FIX: flatpak 1.18.1 · Red Hat rates 6.5 Moderate · EPSS 0.00436", c:"", p:200},
+    {t:"Scanning — 1,920 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: 6 additions — all WordPress plugins", c:"", p:200},
+    {t:"  CVE-2026-110955 Wurdey — unauth admin auth bypass", c:"", p:120},
+    {t:"  CVE-2026-115230 WHIZZ — unauth arbitrary password reset", c:"", p:120},
+    {t:"  CVE-2026-116533 Static Snapshot — unauth RCE", c:"", p:120},
+    {t:"  CVE-2026-113584 placester — unauth account takeover", c:"", p:120},
+    {t:"  CVE-2026-113615 GS JWT Auth — unauth SQLi to admin session", c:"", p:120},
+    {t:"  CVE-2026-87784 Cool Media Filter — subscriber+ to admin", c:"", p:120},
+    {t:"  Published 2026-11-06 · no NVD score yet · no fix stated", c:"dim", p:200},
+    {t:"Status change: CVE-2026-119757 BTCPay Server (9.8)", c:"", p:200},
+    {t:"  Added to VulnCheck KEV Nov 5 · exploited, funds stolen", c:"", p:120},
+    {t:"  NOT in CISA KEV", c:"", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
@@ -29353,7 +29457,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   if(replayBtn){ replayBtn.addEventListener("click",function(){ paused=false; if(pauseBtn){pauseBtn.textContent="❚❚ PAUSE"; pauseBtn.setAttribute("aria-pressed","false");} start(); }); }
   start();
 })();
-/* ---- Full CVE dataset (Nov 5 sync) + drill-in details ---- */
+/* ---- Full CVE dataset (Nov 6 sync) + drill-in details ---- */
 var CVE_ITEMS=[];
 try{ CVE_ITEMS=JSON.parse(document.getElementById("cveData").textContent||"[]"); }catch(e){ CVE_ITEMS=[]; }
 var CVE_BY_ID={};
@@ -29613,7 +29717,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 1914 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 1,920 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
