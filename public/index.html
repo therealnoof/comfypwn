@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 6</span><span class="pill accent">2,003 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 6</span><span class="pill accent">2,017 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 6 1:30 PM ET:</strong> 2,003 CVEs tracked, filtered down to what needs action first. New this scan: 6 additions, plus one fix update — tracked CVE-2026-62284 (8.6, OSAC operator) now lists fixed version 0.0.4. The additions: CVE-2026-118670 (8.8, OHIF Viewers — stored XSS via an attacker-controlled DICOM MIME type; script runs in the OHIF origin and can reach session storage and auth tokens, fixed in 3.12.15 / 3.13.7 / 3.14.0-beta.19), CVE-2026-89017 (8.7, Skyline DataMiner BrokerGateway — embedded API key disclosure gives unauthenticated access to the trusted NATS message bus, fixed in 10.6.9 CU1 / 10.6.0 CU7 / 10.5.0 CU19 / 10.4.0 CU22), CVE-2026-113874 (8.6, SmileCDR HAPI FHIR — partition identity replacement lets an attacker read and write across tenant partitions, no fix available), CVE-2026-97635 (8.6, Agent Zero Web UI — stored XSS in chat messages and file uploads runs in the victim’s authenticated session, fixed in 1.15), CVE-2026-92693 (8.2, FastNetMon — sFlow packet parser out-of-bounds read via a crafted IPv6 fragment header, no fix available) and CVE-2026-15564 (7.4, WildFly / JBoss EAP — IIOP listener deserialization before authentication, no fix released yet). No exploitation reported among the 6 additions and none in CISA KEV. Highlighted Drops, the Ones to Watch, and the grouped 2,003-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 6 2:30 PM ET:</strong> 2,017 CVEs tracked, filtered down to what needs action first. New this scan: 14 additions, plus one status update — tracked CVE-2026-113615 (GS JWT Authentication for WP REST API WordPress plugin) now has a weaponized public PoC and an NVD score of 9.8: an unauthenticated SQLi in its JWT auth / OTP verification yields an administrator JWT, and no fixed version is stated. The additions are led by CVE-2026-71495 (10.0, Wanderer — unauthenticated SSRF via /api/v1/trail/download reaches internal services and cloud metadata endpoints, fixed in 0.20.0) and five LXD / Incus GHSA advisories at 9.9 (a crafted Incus-Image-Hash header from a malicious image server, backup-compression argument injection, crafted-image rootfs/ and templates/ symlinks, and an exec-output symlink — host file read/write and possible code execution as root; no CVE assigned yet), CVE-2026-119923 (9.8, Babelfish for PostgreSQL — TDS prelogin heap overflow runs arbitrary OS commands as the database process user, fixed in 4.10 / 5.6 / 6.1; its sibling CVE-2026-119924, 8.1, is an out-of-bounds read in the TDS RPC procedure-name parser), three SonicWall SonicOS flaws at 8.8 (CVE-2026-107154 session validation and CVE-2026-107155 permissive cross-domain policy in the management interface, plus CVE-2026-77708 in the TACACS+ authentication client; advisory SNWLID-2026-0014, fixes across the 7.x / 8.x / 6.5.x lines), two Hisense VIDAA Smart TV flaws with no fix stated (CVE-2026-123993, 8.8 — unauthenticated WebDriver on TCP 4444 gives arbitrary JS execution and native-bridge filesystem read/write; CVE-2026-123998, 8.3 — remote-control MQTT broker auth bypass, default credentials with a 4-digit PIN brute-forced in ~5 seconds) and CVE-2026-84473 (ownCloud — WebDAV missing brute-force protection allows unlimited online password guessing, including admin accounts; no CVSS assigned yet). No exploitation reported among the 14 additions and none in CISA KEV. Highlighted Drops, the Ones to Watch, and the grouped 2,017-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -430,7 +430,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>2,003</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>2,017</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 6</b><span>Last updated — hourly scans</span></div>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 2,003 CVEs</label>
+      <label for="cveSearch">Search all 2,017 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,003 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,017 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -497,7 +497,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 6 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1659 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 6 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1672 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 2 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -505,18 +505,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1659 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1672 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 2,003 CVEs</h2><p>Every entry from the Nov 6 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 2,017 CVEs</h2><p>Every entry from the Nov 6 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,003.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">2,003 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,017.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">2,017 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 6 1:30 PM ET hourly scan — 6 records added (2,003 CVEs tracked), plus one fix update: CVE-2026-62284 (OSAC operator, 8.6) now lists fixed version 0.0.4. The additions are led by an 8.8 OHIF Viewers stored XSS, an 8.7 Skyline DataMiner BrokerGateway embedded API key disclosure, an 8.6 SmileCDR HAPI FHIR cross-tenant partition bypass with no fix available, an 8.6 Agent Zero Web UI stored XSS, an 8.2 FastNetMon sFlow out-of-bounds read with no fix available, and a 7.4 WildFly IIOP pre-authentication deserialization with no fix released yet, with no exploitation reported among the additions and none in CISA KEV. By severity: 66 at 10.0, 657 at 9.0–9.9, 1,091 at 8.0–8.9 and 189 below 8.0. Across the full set, 69 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 95 sit in the public-PoC group. 1939 of 2003 records carry EPSS scores. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 6 2:30 PM ET hourly scan — 14 records added (2,017 CVEs tracked), plus one status update: CVE-2026-113615 (GS JWT Authentication for WP REST API WordPress plugin) now has a weaponized public PoC and an NVD score of 9.8. The additions are led by a 10.0 Wanderer unauthenticated SSRF, five 9.9 LXD / Incus GHSA advisories, a 9.8 Babelfish for PostgreSQL TDS prelogin heap overflow, three 8.8 SonicWall SonicOS flaws, two Hisense VIDAA Smart TV flaws with no fix stated, an 8.1 Babelfish out-of-bounds read and an ownCloud WebDAV brute-force protection bypass with no CVSS assigned yet, with no exploitation reported among the additions and none in CISA KEV. By severity: 67 at 10.0, 664 at 9.0–9.9, 1,097 at 8.0–8.9 and 189 below 8.0. Across the full set, 69 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 96 sit in the public-PoC group. 1939 of 2017 records carry EPSS scores. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 <script id="cveData" type="application/json">
@@ -1532,6 +1532,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "No exploitation reported; not in CISA KEV. Unauthenticated attackers upload PHP files to a web-accessible location through form submissions and execute them (RCE). No fixed version stated in the CVE record. EPSS unscored (brand new).",
    "epss": 0.00569,
    "epss_percentile": 47.318
+  },
+  {
+   "id": "CVE-2026-71495",
+   "title": "Wanderer unauthenticated SSRF via /api/v1/trail/download -> internal services, cloud metadata, internal recon",
+   "product": "Wanderer (self-hosted trail database) before 0.20.0",
+   "score": 10.0,
+   "cvss": "10.0 (CVSS v3.1)",
+   "fixed": "0.20.0",
+   "published": "2026-11-06T19:17:56Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-06 14:30 ET hourly): newly published in window. No exploitation reported; not in CISA KEV. Unauthenticated SSRF (CWE-918) in POST /api/v1/trail/download; attacker-controlled URL fetched server-side and returned, reaching internal services (db:8090, search:7700) and cloud metadata endpoints. Fixed 0.20.0 (GHSA-7vqq-mjjr-h9j5). EPSS unscored (brand new). Scope (1).",
+   "epss": null,
+   "epss_percentile": null
   },
   {
    "id": "CVE-2026-101446",
@@ -2613,6 +2628,81 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "poc": false,
    "status": "No exploitation reported; not in CISA KEV. Authenticated user permitted to invoke the Rex-RO/Rex-RW SSM document executes arbitrary commands as root, bypassing Cedar policy enforcement. Remediation: delete the SSM documents created from the example script. EPSS null (brand-new).",
    "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-122193",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "GHSA-pjff-c2wc-f6jm",
+   "title": "LXD/Incus arbitrary file write via crafted Incus-Image-Hash header from malicious image server -> command execution as root",
+   "product": "LXD / Incus (Canonical lxd; Incus client)",
+   "score": 9.9,
+   "cvss": "9.9 (CVSS v3.1, GHSA)",
+   "fixed": "0.0.0-20260630083100-c5184be310b1",
+   "published": "2026-11-06T19:36:55Z (GitHub Advisory; no CVE assigned)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-06 14:30 ET hourly): newly published in window. No exploitation reported; not in CISA KEV. Arbitrary file write (CWE-20) in the Incus/LXD client: malicious image server returns a crafted Incus-Image-Hash header, leading to arbitrary command execution as root. No CVE assigned yet. EPSS unscored (brand new). Scope (1)+(2).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "GHSA-fmc8-p6q7-75cc",
+   "title": "LXD/Incus backup compression argument injection -> arbitrary file write on host, possibly arbitrary code execution",
+   "product": "LXD / Incus (Canonical lxd; backup compression)",
+   "score": 9.9,
+   "cvss": "9.9 (CVSS v3.1, GHSA)",
+   "fixed": "0.0.0-20260630083100-c5184be310b1",
+   "published": "2026-11-06T19:36:37Z (GitHub Advisory; no CVE assigned)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-06 14:30 ET hourly): newly published in window. No exploitation reported; not in CISA KEV. Argument injection (CWE-20) in the backup compression algorithm: user-supplied algorithm injected into the constructed command line -> arbitrary file write on the host, possibly arbitrary code execution. No CVE assigned yet. EPSS unscored (brand new). Scope (1)+(2).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "GHSA-vghh-5rfx-xhq8",
+   "title": "LXD/Incus crafted image rootfs/ symlink -> arbitrary file read/write on host, possibly arbitrary code execution",
+   "product": "LXD / Incus (Canonical lxd; image import)",
+   "score": 9.9,
+   "cvss": "9.9 (CVSS v3.1, GHSA)",
+   "fixed": "0.0.0-20260630083100-c5184be310b1",
+   "published": "2026-11-06T19:36:07Z (GitHub Advisory; no CVE assigned)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-06 14:30 ET hourly): newly published in window. No exploitation reported; not in CISA KEV. Crafted container image with a rootfs/ symlink (CWE-73): arbitrary file read/write on the host at image validation time, possibly arbitrary command execution. No CVE assigned yet. EPSS unscored (brand new). Scope (1)+(2).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "GHSA-jpf8-86f3-wp38",
+   "title": "LXD/Incus crafted image templates/ symlink -> arbitrary file read/write on host, possibly arbitrary code execution",
+   "product": "LXD / Incus (Canonical lxd; image import)",
+   "score": 9.9,
+   "cvss": "9.9 (CVSS v3.1, GHSA)",
+   "fixed": "0.0.0-20260203144152-d1c8ba15d160",
+   "published": "2026-11-06T18:53:57Z (GitHub Advisory; no CVE assigned)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-06 14:30 ET hourly): newly published in window. No exploitation reported; not in CISA KEV. Crafted container image with a templates/ symlink (CWE-73): arbitrary file read/write on the host, possibly arbitrary command execution. No CVE assigned yet. EPSS unscored (brand new). Scope (1)+(2).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "GHSA-9j25-mm2h-2f76",
+   "title": "LXD/Incus exec-output symlink -> arbitrary file write on host",
+   "product": "LXD / Incus (Canonical lxd; instance exec output)",
+   "score": 9.9,
+   "cvss": "9.9 (CVSS v3.1, GHSA)",
+   "fixed": "0.0.0-20260626085134-124f90100640",
+   "published": "2026-11-06T18:45:51Z (GitHub Advisory; no CVE assigned)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-06 14:30 ET hourly): newly published in window. No exploitation reported; not in CISA KEV. exec-output symlink (CWE-73): command output written through a symlinked exec-output directory to arbitrary host paths. No CVE assigned yet. EPSS unscored (brand new). Scope (1)+(2).",
    "epss": null,
    "epss_percentile": null
   },
@@ -6388,6 +6478,37 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "No exploitation reported; not in CISA KEV. Code injection (CWE-94): pybars/_compiler.py breaks out of string literals in generated resolve() via crafted bracketed path segments in helper/block arguments; attackers supplying Handlebars templates execute Python in the application process. EPSS unscored (brand new).",
    "epss": 0.00458,
    "epss_percentile": 39.863
+  },
+  {
+   "id": "CVE-2026-113615",
+   "title": "GS JWT Authentication for WP REST API WordPress plugin - unauthenticated privilege escalation via SQLi",
+   "product": "GS JWT Authentication for WP REST API WordPress plugin through 1.0.0",
+   "score": 9.8,
+   "cvss": "9.8 (CVSS v3.1)",
+   "fixed": "No fixed version stated in CVE record",
+   "published": "2026-11-06T06:16:40.053Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": true,
+   "status": "MATERIAL 4(c) (2026-11-06 14:30 ET hourly): weaponized public PoC now available - thiscitze GitHub repo cve-2026-113615-poc (Sploitus entry 2026-11-06 16:11Z, '100% confidence this exploit runs'); unauthenticated SQLi in GS JWT auth/OTP verification yields an administrator JWT. NVD now scores it 9.8 (was unscored at 01:30 ET add). No fixed version stated. Not in CISA KEV; EPSS 0.00246 / 15.96th percentile. Scope (3).",
+   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-113615",
+   "epss": 0.00246,
+   "epss_percentile": 15.959
+  },
+  {
+   "id": "CVE-2026-119923",
+   "title": "Babelfish for PostgreSQL TDS prelogin heap buffer overflow -> arbitrary OS commands as the database process user",
+   "product": "Babelfish for PostgreSQL extension 1.0-1.5, 2.1-2.15, 3.1-3.12, 4.0-4.8, 5.1-5.4; Amazon Aurora PostgreSQL with Babelfish",
+   "score": 9.8,
+   "cvss": "9.8 (CVSS v3.1)",
+   "fixed": "Babelfish 4.10 / 5.6 / 6.1 or later (Aurora upgrades per AWS bulletin 2026-166)",
+   "published": "2026-11-06T19:17:39Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-06 14:30 ET hourly): newly published in window. No exploitation reported; not in CISA KEV. Heap buffer overflow (CWE-122) in the TDS prelogin parser; remote attacker executes arbitrary OS commands as the database process user via a malformed TDS prelogin packet to TCP 1433. AWS security bulletin 2026-166. Workaround: restrict network access to the TDS port. EPSS unscored (brand new). Scope (1)+(2).",
+   "epss": null,
+   "epss_percentile": null
   },
   {
    "id": "CVE-2025-65200",
@@ -18524,6 +18645,66 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": null
   },
   {
+   "id": "CVE-2026-107154",
+   "title": "SonicOS management interface session validation flaw -> unauthenticated unauthorized operations",
+   "product": "SonicWall SonicOS management interface (SonicOS 7.x/8.x/6.5.x)",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1)",
+   "fixed": "7.3.0-1044, 7.3.1-8030, 7.3.2-8031, 7.2.1-9083, 7.2.0-7066, 7.1.3-9064, 7.1.2-7022, 7.1.1-7051, 6.5.5.3-29n, 6.5.4.15-117n, 7.0.1-5165, 7.0.1-5140 (Gen7 NSv), 8.0.2-8038",
+   "published": "2026-11-06T19:17:06Z (NVD); vendor datePublic 2026-11-06T18:50:00Z",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-06 14:30 ET hourly): newly published in window. No exploitation reported; not in CISA KEV. Session validation flaw (CWE-291) in the SonicOS management interface; remote unauthenticated attacker performs unauthorized operations. SonicWall advisory SNWLID-2026-0014 (published Nov 6). EPSS unscored (brand new). Scope (1)+(3).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-107155",
+   "title": "SonicOS management interface permissive cross-domain policy -> unauthenticated unauthorized operations",
+   "product": "SonicWall SonicOS management interface (SonicOS 7.x/8.x/6.5.x)",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1)",
+   "fixed": "7.3.0-1044, 7.3.1-8030, 7.3.2-8031, 7.2.1-9083, 7.2.0-7066, 7.1.3-9064, 7.1.2-7022, 7.1.1-7051, 6.5.5.3-29n, 6.5.4.15-117n, 7.0.1-5165, 7.0.1-5140 (Gen7 NSv), 8.0.2-8038",
+   "published": "2026-11-06T19:17:06Z (NVD); vendor datePublic 2026-11-06T18:40:00Z",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-06 14:30 ET hourly): newly published in window. No exploitation reported; not in CISA KEV. Permissive cross-domain policy (CWE-942) in the SonicOS management interface; remote unauthenticated attacker performs unauthorized operations. SonicWall advisory SNWLID-2026-0014 (published Nov 6). EPSS unscored (brand new). Scope (1)+(3).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-77708",
+   "title": "SonicOS TACACS+ client flaw, vendor CVSS 8.8 (advisory title: hard-coded credentials; NVD describes pre-auth stack buffer overflow)",
+   "product": "SonicWall SonicOS TACACS+ authentication client (SonicOS 7.x/8.x/6.5.x)",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1, vendor advisory)",
+   "fixed": "7.3.0-1044, 7.3.1-8030, 7.3.2-8031, 7.2.1-9083, 7.2.0-7066, 7.1.3-9064, 7.1.2-7022, 7.1.1-7051, 6.5.5.3-29n, 6.5.4.15-117n, 7.0.1-5165, 7.0.1-5140 (Gen7 NSv), 8.0.2-8038",
+   "published": "2026-11-06T19:17:57Z (NVD); vendor datePublic 2026-11-06T19:03:00Z",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-06 14:30 ET hourly): newly published in window. No exploitation reported; not in CISA KEV. Vendor rates CVSS 8.8 (SNWLID-2026-0014); NVD description is a pre-auth stack buffer overflow (CWE-121) in the TACACS+ authentication client. Description/title mismatch between vendor advisory and NVD record flagged. EPSS unscored (brand new). Scope (1).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-123993",
+   "title": "Hisense VIDAA Smart TV unauthenticated WebDriver remote access -> arbitrary JS execution, native bridge filesystem read/write",
+   "product": "Hisense VIDAA Smart TV firmware V0000.01.00a.P0220",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1)",
+   "fixed": "No fix stated",
+   "published": "2026-11-06T19:17:44Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-06 14:30 ET hourly): newly published in window. No exploitation reported; not in CISA KEV. Unauthenticated WebDriver (CWE-306) exposed on TCP 4444, LAN-adjacent; arbitrary JS execution plus window.hisense native bridge filesystem read/write. Public exploit/researcher write-up (yehia-mamdouh). NO FIX stated. EPSS unscored (brand new). Scope (1)+(2).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2010-20125",
    "title": "DedeCMS file inclusion in plus/carbuyaction.php -> local file disclosure (old CVE, newly published)",
    "product": "DedeCMS before 5.7",
@@ -24600,6 +24781,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": null
   },
   {
+   "id": "CVE-2026-123998",
+   "title": "Hisense VIDAA Smart TV remote-control MQTT broker authentication bypass (default creds, 4-digit PIN brute-forced in ~5s)",
+   "product": "Hisense VIDAA Smart TV firmware V0000.01.00a.P0220",
+   "score": 8.3,
+   "cvss": "8.3 (CVSS v3.1)",
+   "fixed": "No fix stated",
+   "published": "2026-11-06T19:17:45Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-06 14:30 ET hourly): newly published in window. No exploitation reported; not in CISA KEV. Authentication bypass (CWE-307) in the remote-control MQTT broker on TCP 36669: default credentials + 4-digit PIN brute-forced in ~5 seconds, no rate limiting; some actions need no pairing. LAN-adjacent; inject key events, launch arbitrary installed apps. NO FIX stated. EPSS unscored (brand new). Scope (1)+(3).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2023-42442",
    "title": "JumpServer improper authentication -> unauthenticated session-replay download (bastion host)",
    "product": "JumpServer 3.0.0 before 3.5.5 / 3.6.4",
@@ -27486,6 +27682,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "poc": false,
    "status": "No exploitation reported; not in CISA KEV. With identifier escaping disabled (non-default config), write_pandas() does not escape DataFrame column names; a crafted column name chains SQL statements to read/modify/delete data accessible to the app's Snowflake role. Requires the app to pass attacker-controlled column names. Fixed 4.8.1 / 5.2.0 (manual upgrade). EPSS null (brand-new).",
    "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-123859",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-119924",
+   "title": "Babelfish for PostgreSQL TDS RPC procedure-name parser out-of-bounds read -> adjacent memory disclosure / DoS",
+   "product": "Babelfish for PostgreSQL extension 1.0-1.5, 2.1-2.15, 3.1-3.12, 4.0-4.8, 5.1-5.4; Amazon Aurora PostgreSQL with Babelfish",
+   "score": 8.1,
+   "cvss": "8.1 (CVSS v3.1)",
+   "fixed": "Babelfish 4.10 / 5.6 / 6.1 or later (Aurora upgrades per AWS bulletin 2026-166)",
+   "published": "2026-11-06T19:17:39Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-06 14:30 ET hourly): newly published in window. No exploitation reported; not in CISA KEV. Out-of-bounds read (CWE-125) in the TDS RPC procedure-name parser; authenticated remote user reads adjacent process memory or causes DoS. Same AWS bulletin 2026-166 and fixes as CVE-2026-119923. EPSS unscored (brand new). Scope (1).",
    "epss": null,
    "epss_percentile": null
   },
@@ -30612,22 +30823,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 8.28
   },
   {
-   "id": "CVE-2026-113615",
-   "title": "GS JWT Authentication for WP REST API WordPress plugin - unauthenticated privilege escalation via SQLi",
-   "product": "GS JWT Authentication for WP REST API WordPress plugin through 1.0.0",
-   "score": 0.0,
-   "cvss": "no NVD score yet",
-   "fixed": "No fixed version stated in CVE record",
-   "published": "2026-11-06T06:16:40.053Z (NVD)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "MATERIAL 4(a) (2026-11-06 01:30 ET hourly): newly published. Unsanitized request value used in SQL queries on several unauthenticated REST routes; unauthenticated attacker performs SQL injection and obtains an administrator session. No fixed version stated. No public exploit; not in CISA KEV; EPSS null. Scope (3).",
-   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-113615",
-   "epss": 0.00246,
-   "epss_percentile": 15.959
-  },
-  {
    "id": "CVE-2026-87784",
    "title": "Cool Media Filter WordPress plugin - Subscriber+ privilege escalation via role_permission",
    "product": "Cool Media Filter WordPress plugin through 1.0.1",
@@ -30674,6 +30869,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-90436",
    "epss": null,
    "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-84473",
+   "title": "ownCloud WebDAV authentication bypass / missing brute-force protection -> unlimited online password guessing",
+   "product": "ownCloud ownCloud server 10.16.3 (remote.php/webdav/)",
+   "score": 0.0,
+   "cvss": "no CVSS assigned yet",
+   "fixed": "No fix stated in CVE record",
+   "published": "2026-11-06T19:17:57Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-06 14:30 ET hourly): newly published in window. No exploitation reported; not in CISA KEV. Authentication bypass (missing brute-force protection) on the WebDAV endpoint: unauthenticated remote attacker performs unlimited online password guessing against WebDAV accounts, including administrator accounts. No CVSS assigned yet. EPSS unscored (brand new). Scope (3).",
+   "epss": null,
+   "epss_percentile": null
   }
  ]
 </script>
@@ -30687,21 +30897,21 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-06 --run 1:30 PM ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-06 --run 2:30 PM ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning — 2,003 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 6 additions + 1 fix update — OSAC operator CVE-2026-62284 now fixed in 0.0.4", c:"", p:200},
-    {t:"  CVE-2026-118670 OHIF Viewers — 8.8 stored XSS via DICOM MIME type, fix 3.12.15 / 3.13.7", c:"", p:120},
-    {t:"  CVE-2026-89017 DataMiner BrokerGateway — 8.7 embedded API key, trusted NATS bus access", c:"", p:120},
-    {t:"  CVE-2026-113874 SmileCDR HAPI FHIR — 8.6 cross-tenant partition bypass, NO FIX", c:"warn", p:120},
-    {t:"  CVE-2026-97635 Agent Zero Web UI — 8.6 stored XSS in chat / file uploads, fix 1.15", c:"", p:120},
-    {t:"  CVE-2026-92693 FastNetMon — 8.2 sFlow parser OOB read, no fix · CVE-2026-15564 WildFly — 7.4 IIOP pre-auth deserialization, no fix yet", c:"", p:120},
-    {t:"  EPSS: 2 of 6 additions unscored (brand new), 4 scored — all low · No exploitation among the additions", c:"dim", p:200},
+    {t:"Scanning — 2,017 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: 14 additions + 1 status update — CVE-2026-113615 GS JWT WP plugin: weaponized PoC, now 9.8", c:"", p:200},
+    {t:"  CVE-2026-71495 Wanderer — 10.0 unauthenticated SSRF to internal services / cloud metadata, fix 0.20.0", c:"warn", p:120},
+    {t:"  5x LXD / Incus GHSA at 9.9 — crafted image server / images -> host file write, root code exec", c:"", p:120},
+    {t:"  CVE-2026-119923 Babelfish — 9.8 TDS prelogin heap overflow, OS commands as DB user, fix 4.10 / 5.6 / 6.1", c:"", p:120},
+    {t:"  CVE-2026-107154 / 107155 / 77708 SonicOS — 8.8 mgmt interface + TACACS+ flaws, SNWLID-2026-0014", c:"", p:120},
+    {t:"  CVE-2026-123993 / 123998 Hisense VIDAA — 8.8 WebDriver + 8.3 MQTT auth bypass, NO FIX · CVE-2026-84473 ownCloud — WebDAV brute-force bypass, no CVSS yet", c:"", p:120},
+    {t:"  EPSS: all 14 additions unscored (brand new) · No exploitation among the additions", c:"dim", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
@@ -31028,7 +31238,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,003 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,017 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
