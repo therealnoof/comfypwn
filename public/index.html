@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 7</span><span class="pill accent">2,160 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 7</span><span class="pill accent">2,166 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 7 6:30 AM ET:</strong> 2,160 CVEs tracked, filtered down to what needs action first. New this scan: 1 new CVE — CVE-2026-123961 (TOTOLINK CA300-PoE 6.2c.884 — remote buffer overflow in setWiFiBasicConfig, CVSS 9.9, public exploit disclosed, no fix published). The new record is brand new, with no EPSS score yet. No confirmed exploitation in the wild for it, and it is not in CISA KEV. Highlighted Drops, the Ones to Watch, and the grouped 2,160-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 7 7:30 AM ET:</strong> 2,166 CVEs tracked, filtered down to what needs action first. New this scan: 6 new CVEs — all WordPress plugin flaws published today, led by two 9.8s: CVE-2026-104014 (Naimur Email OTP Verification for WooCommerce — password-reset auth bypass to admin account takeover, fixed in 2.1.1) and CVE-2026-119075 (Registration Form for WooCommerce — unauthenticated privilege escalation to Administrator, fixed in 1.1.5), plus CVE-2026-118066 (LatePoint auth bypass, 9.1, fixed in 5.7.7), CVE-2026-104746 (Motors arbitrary file deletion to RCE, 8.1, fixed in 1.4.126), CVE-2026-118267 (WP Data Access privilege escalation to admin, 8.1, fixed in 5.5.90) and CVE-2026-104768 (AutomatorWP privilege escalation, 7.5, fixed in 6.0.5). All six are brand new, with no EPSS scores yet. No confirmed exploitation in the wild for any of them, and none is in CISA KEV. Highlighted Drops, the Ones to Watch, and the grouped 2,166-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -430,7 +430,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>2,160</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>2,166</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 7</b><span>Last updated — hourly scans</span></div>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 2,160 CVEs</label>
+      <label for="cveSearch">Search all 2,166 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,160 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,166 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -497,7 +497,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 7 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1798 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 7 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1803 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 2 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -505,18 +505,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1798 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1803 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 2,160 CVEs</h2><p>Every entry from the Nov 7 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 2,166 CVEs</h2><p>Every entry from the Nov 7 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,160.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">2,160 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,166.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">2,166 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 7 6:30 AM ET hourly scan — 1 record added (2,160 CVEs tracked). The addition is CVE-2026-123961 (TOTOLINK CA300-PoE 6.2c.884 — remote buffer overflow in setWiFiBasicConfig, CVSS 9.9, public exploit disclosed, no fix published). The new record is brand new, with no EPSS score yet. No confirmed exploitation in the wild for it, and it is not in CISA KEV. By severity: 68 at 10.0, 733 at 9.0–9.9, 1,161 at 8.0–8.9 and 198 below 8.0. Across the full set, 70 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 103 sit in the public-PoC group. 1941 of 2160 records carry EPSS scores (EPSS data dated Nov 6). This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 7 7:30 AM ET hourly scan — 6 records added (2,166 CVEs tracked). The additions are all WordPress plugin flaws published Nov 7: CVE-2026-104014 (Naimur Email OTP Verification for WooCommerce, 9.8, fixed in 2.1.1), CVE-2026-119075 (Registration Form for WooCommerce, 9.8, fixed in 1.1.5), CVE-2026-118066 (LatePoint, 9.1, fixed in 5.7.7), CVE-2026-104746 (Motors, 8.1, fixed in 1.4.126), CVE-2026-118267 (WP Data Access, 8.1, fixed in 5.5.90) and CVE-2026-104768 (AutomatorWP, 7.5, fixed in 6.0.5). All six are brand new, with no EPSS scores yet. No confirmed exploitation in the wild for any of them, and none is in CISA KEV. By severity: 68 at 10.0, 736 at 9.0–9.9, 1,163 at 8.0–8.9 and 199 below 8.0. Across the full set, 70 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 103 sit in the public-PoC group. 1941 of 2166 records carry EPSS scores (EPSS data dated Nov 6). This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 <script id="cveData" type="application/json">
@@ -2407,6 +2407,70 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 24.072
   },
   {
+   "id": "CVE-2026-123957",
+   "title": "TOTOLINK CA300-PoE setIpQosRules remote buffer overflow (public exploit, no fix)",
+   "product": "TOTOLINK CA300-PoE 6.2c.884",
+   "score": 9.9,
+   "cvss": "9.9 (CVSS v3.1) / 8.6 (CVSS v4.0, vuldb CNA)",
+   "fixed": "None - no fix published",
+   "published": "2026-11-07T09:17:14Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": true,
+   "status": "MATERIAL 4(a) (2026-11-07 04:30 ET hourly): newly published in window. Remote buffer overflow in TOTOLINK CA300-PoE 6.2c.884 setIpQosRules (CVSS 9.9 v3.1 / 8.6 v4.0, vuldb CNA, CWE-119); public exploit disclosed (E:P in v4.0 vector). No fix published. NOT in CISA KEV (catalog 2026.11.06, 1,769 entries); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1).",
+   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-123957",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-123958",
+   "title": "TOTOLINK CA300-PoE setLanConfig remote buffer overflow (public exploit, no fix)",
+   "product": "TOTOLINK CA300-PoE 6.2c.884",
+   "score": 9.9,
+   "cvss": "9.9 (CVSS v3.1) / 8.6 (CVSS v4.0, vuldb CNA)",
+   "fixed": "None - no fix published",
+   "published": "2026-11-07T09:17:15Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": true,
+   "status": "MATERIAL 4(a) (2026-11-07 04:30 ET hourly): newly published in window. Remote buffer overflow in TOTOLINK CA300-PoE 6.2c.884 setLanConfig (CVSS 9.9 v3.1 / 8.6 v4.0, vuldb CNA, CWE-119); public exploit disclosed (E:P in v4.0 vector). No fix published. NOT in CISA KEV (catalog 2026.11.06, 1,769 entries); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1).",
+   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-123958",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-123960",
+   "title": "TOTOLINK CA300-PoE setWanConfig remote buffer overflow (public exploit, no fix)",
+   "product": "TOTOLINK CA300-PoE 6.2c.884",
+   "score": 9.9,
+   "cvss": "9.9 (CVSS v3.1) / 8.6 (CVSS v4.0, vuldb CNA)",
+   "fixed": "None - no fix published",
+   "published": "2026-11-07T10:17:12Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": true,
+   "status": "MATERIAL 4(a) (2026-11-07 05:30 ET hourly): newly published in window. Remote buffer overflow in TOTOLINK CA300-PoE 6.2c.884 setWanConfig (CVSS 9.9 v3.1 / 8.6 v4.0, vuldb CNA, CWE-119); public exploit disclosed (E:P in v4.0 vector). No fix published. NOT in CISA KEV (catalog 2026.11.06, 1,769 entries) or VulnCheck KEV (single lookup 0 records); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1).",
+   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-123960",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-123961",
+   "title": "TOTOLINK CA300-PoE setWiFiBasicConfig remote buffer overflow (public exploit, no fix)",
+   "product": "TOTOLINK CA300-PoE 6.2c.884",
+   "score": 9.9,
+   "cvss": "9.9 (CVSS v3.1) / 8.6 (CVSS v4.0, vuldb CNA)",
+   "fixed": "None - no fix published",
+   "published": "2026-11-07T11:17:01Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": true,
+   "status": "MATERIAL 4(a) (2026-11-07 06:30 ET hourly): newly published in window. Remote buffer overflow in TOTOLINK CA300-PoE 6.2c.884 setWiFiBasicConfig (CVSS 9.9 v3.1 / 8.6 v4.0, vuldb CNA, CWE-119); public exploit disclosed (E:P; VulDB VDB-432024 confirms public PoC, disclosed 2026-11-06). No fix published, no mitigation known. NOT in CISA KEV (catalog 2026.11.06, 1,769 entries) or VulnCheck KEV (single lookup 0 records); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1).",
+   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-123961",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2026-16884",
    "title": "IBM API Connect XXE injection (remote)",
    "product": "IBM API Connect 12.1.0.0 through 12.1.1.2",
@@ -3037,70 +3101,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": null
   },
   {
-   "id": "CVE-2026-123957",
-   "title": "TOTOLINK CA300-PoE setIpQosRules remote buffer overflow (public exploit, no fix)",
-   "product": "TOTOLINK CA300-PoE 6.2c.884",
-   "score": 9.9,
-   "cvss": "9.9 (CVSS v3.1) / 8.6 (CVSS v4.0, vuldb CNA)",
-   "fixed": "None - no fix published",
-   "published": "2026-11-07T09:17:14Z (NVD)",
-   "exploited": false,
-   "kev": false,
-   "poc": true,
-   "status": "MATERIAL 4(a) (2026-11-07 04:30 ET hourly): newly published in window. Remote buffer overflow in TOTOLINK CA300-PoE 6.2c.884 setIpQosRules (CVSS 9.9 v3.1 / 8.6 v4.0, vuldb CNA, CWE-119); public exploit disclosed (E:P in v4.0 vector). No fix published. NOT in CISA KEV (catalog 2026.11.06, 1,769 entries); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1).",
-   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-123957",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-123958",
-   "title": "TOTOLINK CA300-PoE setLanConfig remote buffer overflow (public exploit, no fix)",
-   "product": "TOTOLINK CA300-PoE 6.2c.884",
-   "score": 9.9,
-   "cvss": "9.9 (CVSS v3.1) / 8.6 (CVSS v4.0, vuldb CNA)",
-   "fixed": "None - no fix published",
-   "published": "2026-11-07T09:17:15Z (NVD)",
-   "exploited": false,
-   "kev": false,
-   "poc": true,
-   "status": "MATERIAL 4(a) (2026-11-07 04:30 ET hourly): newly published in window. Remote buffer overflow in TOTOLINK CA300-PoE 6.2c.884 setLanConfig (CVSS 9.9 v3.1 / 8.6 v4.0, vuldb CNA, CWE-119); public exploit disclosed (E:P in v4.0 vector). No fix published. NOT in CISA KEV (catalog 2026.11.06, 1,769 entries); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1).",
-   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-123958",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-123960",
-   "title": "TOTOLINK CA300-PoE setWanConfig remote buffer overflow (public exploit, no fix)",
-   "product": "TOTOLINK CA300-PoE 6.2c.884",
-   "score": 9.9,
-   "cvss": "9.9 (CVSS v3.1) / 8.6 (CVSS v4.0, vuldb CNA)",
-   "fixed": "None - no fix published",
-   "published": "2026-11-07T10:17:12Z (NVD)",
-   "exploited": false,
-   "kev": false,
-   "poc": true,
-   "status": "MATERIAL 4(a) (2026-11-07 05:30 ET hourly): newly published in window. Remote buffer overflow in TOTOLINK CA300-PoE 6.2c.884 setWanConfig (CVSS 9.9 v3.1 / 8.6 v4.0, vuldb CNA, CWE-119); public exploit disclosed (E:P in v4.0 vector). No fix published. NOT in CISA KEV (catalog 2026.11.06, 1,769 entries) or VulnCheck KEV (single lookup 0 records); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1).",
-   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-123960",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-123961",
-   "title": "TOTOLINK CA300-PoE setWiFiBasicConfig remote buffer overflow (public exploit, no fix)",
-   "product": "TOTOLINK CA300-PoE 6.2c.884",
-   "score": 9.9,
-   "cvss": "9.9 (CVSS v3.1) / 8.6 (CVSS v4.0, vuldb CNA)",
-   "fixed": "None - no fix published",
-   "published": "2026-11-07T11:17:01Z (NVD)",
-   "exploited": false,
-   "kev": false,
-   "poc": true,
-   "status": "MATERIAL 4(a) (2026-11-07 06:30 ET hourly): newly published in window. Remote buffer overflow in TOTOLINK CA300-PoE 6.2c.884 setWiFiBasicConfig (CVSS 9.9 v3.1 / 8.6 v4.0, vuldb CNA, CWE-119); public exploit disclosed (E:P; VulDB VDB-432024 confirms public PoC, disclosed 2026-11-06). No fix published, no mitigation known. NOT in CISA KEV (catalog 2026.11.06, 1,769 entries) or VulnCheck KEV (single lookup 0 records); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1).",
-   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-123961",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
    "id": "CVE-2020-10220",
    "title": "rConfig: SQL injection via commands.inc.php searchColumn parameter (web management interface)",
    "product": "rConfig (network device configuration management)",
@@ -3429,6 +3429,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "No exploitation reported; not in CISA KEV. Dell advisory states no wild exploitation. Unauthenticated attacker with remote access exploits a stack-based buffer overflow (CWE-121), leading to command execution. Fixed versions read directly from DSA-2026-416 (same remediated versions for all CVEs in the advisory). EPSS unscored (brand new).",
    "epss": 0.0083,
    "epss_percentile": 57.717
+  },
+  {
+   "id": "CVE-2026-104014",
+   "title": "Naimur Email OTP Verification for WooCommerce password-reset auth bypass -> admin account takeover",
+   "product": "Naimur Email OTP Verification for WooCommerce",
+   "score": 9.8,
+   "cvss": "CVSS v3.1 9.8 (Wordfence)",
+   "fixed": "2.1.1",
+   "published": "2026-11-07T12:17:41Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-07 07:30 ET hourly): newly published in window. Naimur Email OTP Verification for WooCommerce <=2.1.0 (CVSS 9.8 v3.1, Wordfence, CWE-287); unauthenticated password-reset auth bypass -> account takeover incl. administrators. Fixed 2.1.1. No public exploit reported; not in CISA KEV (catalog 2026.11.06, 1,769 entries) or VulnCheck KEV (single lookup 0 records); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1)+(3).",
+   "epss": null,
+   "epss_percentile": null
   },
   {
    "id": "CVE-2026-104286",
@@ -4241,6 +4256,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "No exploitation reported; not in CISA KEV. Missing authentication (CWE-306): unauthenticated remote attackers download log archives via /skServer/ziplogs, extract the JWT secretKey from security.json in the ZIP, forge administrator tokens, and create persistent admin accounts for full server control. Fixed 2.33.0. EPSS unscored (brand new).",
    "epss": 0.00688,
    "epss_percentile": 52.879
+  },
+  {
+   "id": "CVE-2026-119075",
+   "title": "Registration Form for WooCommerce privilege escalation -> unauthenticated registration as Administrator",
+   "product": "Registration Form for WooCommerce (WordPress)",
+   "score": 9.8,
+   "cvss": "CVSS v3.1 9.8 (Wordfence)",
+   "fixed": "1.1.5",
+   "published": "2026-11-07T12:17:44Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-07 07:30 ET hourly): newly published in window. Registration Form for WooCommerce <=1.1.4 (CVSS 9.8 v3.1, Wordfence, CWE-269); unauthenticated privilege escalation to Administrator via checkout registration. Fixed 1.1.5. No public exploit reported; not in CISA KEV or VulnCheck KEV (single lookup 0 records); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1)+(3).",
+   "epss": null,
+   "epss_percentile": null
   },
   {
    "id": "CVE-2026-119096",
@@ -6575,6 +6605,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 32.308
   },
   {
+   "id": "CVE-2026-84411",
+   "title": "MikroTik RouterOS web management integer underflow - unauthenticated RCE as root (baseline miss; new public PoC)",
+   "product": "MikroTik RouterOS < 7.24",
+   "score": 9.8,
+   "cvss": "9.8 (CVSS v3.1, ICS-CERT) / 9.3 (CVSS v4.0)",
+   "fixed": "7.24",
+   "published": "2026-10-02T22:09:48Z (NVD/CVE.org, ICS-CERT CNA)",
+   "exploited": false,
+   "kev": false,
+   "poc": true,
+   "status": "MATERIAL 4(a) baseline miss + 4(b) (2026-11-07 05:30 ET hourly): published Oct 2, never recorded by the monitor (0 mentions in run log) - added as tracked baseline miss. Unauthenticated RCE as root via a single crafted request (CVSS 9.8 v3.1 ICS-CERT / 9.3 v4.0). NEW public PoC listed on Sploitus 2026-11-07 08:57Z (repo cve_2026_84411_poc, s-b-repo) - bare listing, weaponization not independently verified per the CVE-2026-123014/117691 precedent; poc flag set on the listing, not on verified weaponization. NOT in CISA KEV (catalog 2026.11.06, 1,769 entries) or VulnCheck KEV; no confirmed in-the-wild exploitation. EPSS 0.00864 / 58.788th percentile (FIRST data 2026-11-06). Fixed 7.24. Scope (1)+(2).",
+   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-84411",
+   "epss": 0.00864,
+   "epss_percentile": 58.788
+  },
+  {
    "id": "CVE-2026-84539",
    "title": "Apple macOS out-of-bounds write -> system termination",
    "product": "macOS (pre-patch)",
@@ -7158,22 +7204,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "RCE in Elo Ruby backend via unescaped interpolation. NO PATCH available. Not in CISA KEV; EPSS N/A (no CVE). ADDED 19:30 ET hourly - scope (1) CVSS 9.8. PRE-WINDOW CATCH: missed by 13:30 run (GHSA API 403 that run); verified no earlier run reviewed it.",
    "epss": null,
    "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-84411",
-   "title": "MikroTik RouterOS web management integer underflow - unauthenticated RCE as root (baseline miss; new public PoC)",
-   "product": "MikroTik RouterOS < 7.24",
-   "score": 9.8,
-   "cvss": "9.8 (CVSS v3.1, ICS-CERT) / 9.3 (CVSS v4.0)",
-   "fixed": "7.24",
-   "published": "2026-10-02T22:09:48Z (NVD/CVE.org, ICS-CERT CNA)",
-   "exploited": false,
-   "kev": false,
-   "poc": true,
-   "status": "MATERIAL 4(a) baseline miss + 4(b) (2026-11-07 05:30 ET hourly): published Oct 2, never recorded by the monitor (0 mentions in run log) - added as tracked baseline miss. Unauthenticated RCE as root via a single crafted request (CVSS 9.8 v3.1 ICS-CERT / 9.3 v4.0). NEW public PoC listed on Sploitus 2026-11-07 08:57Z (repo cve_2026_84411_poc, s-b-repo) - bare listing, weaponization not independently verified per the CVE-2026-123014/117691 precedent; poc flag set on the listing, not on verified weaponization. NOT in CISA KEV (catalog 2026.11.06, 1,769 entries) or VulnCheck KEV; no confirmed in-the-wild exploitation. EPSS 0.00864 / 58.788th percentile (FIRST data 2026-11-06). Fixed 7.24. Scope (1)+(2).",
-   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-84411",
-   "epss": 0.00864,
-   "epss_percentile": 58.788
   },
   {
    "id": "CVE-2025-65200",
@@ -11161,6 +11191,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 18.411
   },
   {
+   "id": "CVE-2026-118066",
+   "title": "LatePoint authentication bypass via SQL sentinel -> unauthenticated account takeover",
+   "product": "Appointment Booking Plugin - LatePoint | Calendar & Scheduling for WordPress",
+   "score": 9.1,
+   "cvss": "CVSS v3.1 9.1 (Wordfence)",
+   "fixed": "5.7.7",
+   "published": "2026-11-07T12:17:43Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-07 07:30 ET hourly): newly published in window. LatePoint <=5.7.6 (CVSS 9.1 v3.1, Wordfence, CWE-287); unauthenticated authentication bypass -> account takeover via SQL sentinel injection in password-reset flow. Fixed 5.7.7 (Wordfence page read directly via browser task 12:33Z). No public exploit reported; not in CISA KEV or VulnCheck KEV (single lookup 0 records); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1)+(3).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2026-118170",
    "title": "Strapi review-workflows broken access control -> document updates without update rights",
    "product": "Strapi Open Source and Enterprise Headless CMS",
@@ -11460,6 +11505,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "Newly published 2026-11-05 (NVD; vendor CNA disclosure@vulncheck.com scored). Scope (1). No confirmed exploitation; not in CISA KEV; VulnCheck KEV negative for Nov-5 additions.",
    "epss": 0.00227,
    "epss_percentile": 13.531
+  },
+  {
+   "id": "CVE-2026-123959",
+   "title": "TOTOLINK CA300-PoE setLanguageCfg remote buffer overflow (public exploit, no fix)",
+   "product": "TOTOLINK CA300-PoE 6.2c.884",
+   "score": 9.1,
+   "cvss": "9.1 (CVSS v3.1) / 8.5 (CVSS v4.0, vuldb CNA)",
+   "fixed": "None - no fix published",
+   "published": "2026-11-07T10:17:12Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": true,
+   "status": "MATERIAL 4(a) (2026-11-07 05:30 ET hourly): newly published in window. Remote buffer overflow in TOTOLINK CA300-PoE 6.2c.884 setLanguageCfg (CVSS 9.1 v3.1 / 8.5 v4.0, vuldb CNA, CWE-119); public exploit disclosed (E:P in v4.0 vector). No fix published. NOT in CISA KEV (catalog 2026.11.06, 1,769 entries) or VulnCheck KEV (single lookup 0 records); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1).",
+   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-123959",
+   "epss": null,
+   "epss_percentile": null
   },
   {
    "id": "CVE-2026-13594",
@@ -12286,22 +12347,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "No exploitation reported; not in CISA KEV. A bearer token can bypass the passkey-only authentication requirement and directly invoke the API-token creation endpoint, allowing unauthorized minting of persistent successor credentials. Precondition: attacker holds an existing valid token. CERT VU#645818: vendor could not be reached, no official patch; monitor the project's repo. EPSS 0.00223, 12.96th percentile.",
    "epss": 0.00531,
    "epss_percentile": 45.071
-  },
-  {
-   "id": "CVE-2026-123959",
-   "title": "TOTOLINK CA300-PoE setLanguageCfg remote buffer overflow (public exploit, no fix)",
-   "product": "TOTOLINK CA300-PoE 6.2c.884",
-   "score": 9.1,
-   "cvss": "9.1 (CVSS v3.1) / 8.5 (CVSS v4.0, vuldb CNA)",
-   "fixed": "None - no fix published",
-   "published": "2026-11-07T10:17:12Z (NVD)",
-   "exploited": false,
-   "kev": false,
-   "poc": true,
-   "status": "MATERIAL 4(a) (2026-11-07 05:30 ET hourly): newly published in window. Remote buffer overflow in TOTOLINK CA300-PoE 6.2c.884 setLanguageCfg (CVSS 9.1 v3.1 / 8.5 v4.0, vuldb CNA, CWE-119); public exploit disclosed (E:P in v4.0 vector). No fix published. NOT in CISA KEV (catalog 2026.11.06, 1,769 entries) or VulnCheck KEV (single lookup 0 records); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1).",
-   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-123959",
-   "epss": null,
-   "epss_percentile": null
   },
   {
    "id": "CVE-2025-30023",
@@ -19282,6 +19327,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 45.24
   },
   {
+   "id": "CVE-2026-87112",
+   "title": "QA Assistants (WordPress) unauthenticated PHP object injection via dlevent_ver -> RCE (Guzzle FileCookieJar gadget)",
+   "product": "QA Assistants \u2013 Driven by data WordPress plugin (<= 5.3.0)",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1; AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H)",
+   "fixed": "5.3.0.1",
+   "published": "2026-11-07 (CNA 06:39:37Z; NVD 07:17:05Z)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "Newly published 2026-11-07. Unauthenticated PHP object injection via 'dlevent_ver' (unrestricted unserialize) + path traversal in 'raw_name'; Guzzle FileCookieJar gadget allows arbitrary file write -> RCE; triggered via wp-cron.php, no auth, auto-fires every two minutes. Fixed 5.3.0.1. No exploitation reported; not in CISA KEV or VulnCheck KEV; EPSS null (brand new).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2026-87397",
    "title": "Oracle Outside In Core 8.5.8 unauthenticated takeover (requires user interaction)",
    "product": "Oracle Outside In Technology 8.5.8 (Oracle Fusion Middleware)",
@@ -19908,21 +19968,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "kev": false,
    "poc": false,
    "status": "No exploitation reported; not in CISA KEV. Numeric truncation (ZDI-26-833, CVSS 8.8 ZDI, ZDI-CAN-28318): clusterCreatePublishMsgBlock computes a cluster-bus message length as size_t but passes it to a uint32_t parameter; channel+message over UINT32_MAX silently truncates, allocating a far smaller heap buffer that the following memcpys overflow with attacker-controlled bytes - reliably crashes, possibly RCE as the service account. Authenticated user who can publish to a channel, cluster mode only; building a >4 GiB message requires server-side scripting (default proto-max-bulk-len 512 MB blocks direct sends). Mitigation: restrict scripting commands via ACLs, do not raise proto-max-bulk-len. EPSS unscored (no CVE).",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-87112",
-   "title": "QA Assistants (WordPress) unauthenticated PHP object injection via dlevent_ver -> RCE (Guzzle FileCookieJar gadget)",
-   "product": "QA Assistants \u2013 Driven by data WordPress plugin (<= 5.3.0)",
-   "score": 8.8,
-   "cvss": "8.8 (CVSS v3.1; AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H)",
-   "fixed": "5.3.0.1",
-   "published": "2026-11-07 (CNA 06:39:37Z; NVD 07:17:05Z)",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "Newly published 2026-11-07. Unauthenticated PHP object injection via 'dlevent_ver' (unrestricted unserialize) + path traversal in 'raw_name'; Guzzle FileCookieJar gadget allows arbitrary file write -> RCE; triggered via wp-cron.php, no auth, auto-fires every two minutes. Fixed 5.3.0.1. No exploitation reported; not in CISA KEV or VulnCheck KEV; EPSS null (brand new).",
    "epss": null,
    "epss_percentile": null
   },
@@ -27957,6 +28002,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 38.394
   },
   {
+   "id": "CVE-2026-103900",
+   "title": "WPJAM Basic unauthenticated privilege escalation to Administrator",
+   "product": "WPJAM Basic (WordPress) <= 7.1",
+   "score": 8.1,
+   "cvss": "8.1 (CVSS v3.1, Wordfence)",
+   "fixed": "7.1.2",
+   "published": "2026-11-07T10:17:05Z (NVD); Wordfence published 2026-11-06, updated 2026-11-07",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-07 05:30 ET hourly): newly published in window. Unauthenticated privilege escalation to Administrator (CWE-269, CVSS 8.1 v3.1, Wordfence) in WPJAM Basic <= 7.1; requires a social-login provider registered + open registration enabled. Fixed 7.1.2 (Wordfence page read directly via browser, 10:31Z). No public exploit; NOT in CISA KEV (catalog 2026.11.06, 1,769 entries) or VulnCheck KEV (single lookup 0 records); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1)+(3).",
+   "src": "https://www.wordfence.com/threat-intel/vulnerabilities/id/77464287-bbaa-428e-9292-c97c10733adf",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2026-103935",
    "title": "Stored XSS in transfer summary / functional cognitive status forms - session data and PHI exposure",
    "product": "OpenEMR",
@@ -27985,6 +28046,37 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "No exploitation reported; not in CISA KEV. IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote attacker who could reach the message broker to execute arbitrary code on the system due to the deserialization of untrusted data.",
    "epss": 0.00592,
    "epss_percentile": 48.46
+  },
+  {
+   "id": "CVE-2026-104738",
+   "title": "Advanced Form Integration plugin unauthenticated PHP object injection (no POP chain)",
+   "product": "Advanced Form Integration - Connect Forms to 300+ Apps (WordPress) <= 2.10.2",
+   "score": 8.1,
+   "cvss": "8.1 (CVSS v3.1, Wordfence)",
+   "fixed": "2.10.3",
+   "published": "2026-11-07T09:17:11Z (NVD); Wordfence published 2026-11-06, updated 2026-11-07",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-07 04:30 ET hourly): newly published in window. Unauthenticated PHP object injection (CWE-502 deserialization, CVSS 8.1 v3.1, Wordfence) in Advanced Form Integration <= 2.10.2. CAVEAT: no known POP chain in the plugin itself - no impact unless another plugin/theme provides a usable gadget; also requires an admin-configured active NexForms integration. Fixed 2.10.3. No public exploit; NOT in CISA KEV (catalog 2026.11.06, 1,769 entries); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1)+(2).",
+   "src": "https://www.wordfence.com/threat-intel/vulnerabilities/id/dbea3356-2fc1-4511-9767-e560b7c4f0a8",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-104746",
+   "title": "Motors plugin arbitrary file deletion (Subscriber+) -> remote code execution",
+   "product": "Motors - Car Dealership & Classified Listings Plugin (WordPress)",
+   "score": 8.1,
+   "cvss": "CVSS v3.1 8.1 (Wordfence)",
+   "fixed": "1.4.126",
+   "published": "2026-11-07T12:17:41Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-07 07:30 ET hourly): newly published in window. Motors plugin <=1.4.125 (CVSS 8.1 v3.1, Wordfence, CWE-22); authenticated Subscriber+ arbitrary file deletion -> RCE. Fixed 1.4.126 (Wordfence page read directly via browser task 12:33Z). No public exploit reported; not in CISA KEV or VulnCheck KEV (single lookup 0 records); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1).",
+   "epss": null,
+   "epss_percentile": null
   },
   {
    "id": "CVE-2026-104995",
@@ -28615,6 +28707,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "status": "No exploitation reported; not in CISA KEV; not in VulnCheck KEV. Crafted email makes Thunderbird connect to attacker SMB server, disclosing Windows account name + NTLM auth data (offline cracking/relay). Scope (1). Late NVD score.",
    "epss": 0.004,
    "epss_percentile": 34.407
+  },
+  {
+   "id": "CVE-2026-118267",
+   "title": "WP Data Access incorrect authorization -> privilege escalation to administrator (overwrite admin password)",
+   "product": "WP Data Access - App Builder for Tables, Forms, Dashboards, Charts & Maps (WordPress)",
+   "score": 8.1,
+   "cvss": "CVSS v3.1 8.1 (Wordfence)",
+   "fixed": "5.5.90",
+   "published": "2026-11-07T12:17:43Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-07 07:30 ET hourly): newly published in window. WP Data Access <=5.5.89 (CVSS 8.1 v3.1, Wordfence, CWE-863); authenticated Subscriber+ (or anonymous if a Data App is published that way) can overwrite the administrator's user_pass -> full site takeover. Fixed 5.5.90. No public exploit reported; not in CISA KEV or VulnCheck KEV (single lookup 0 records); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1)+(3).",
+   "epss": null,
+   "epss_percentile": null
   },
   {
    "id": "CVE-2026-118485",
@@ -29643,38 +29750,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": 23.959
   },
   {
-   "id": "CVE-2026-104738",
-   "title": "Advanced Form Integration plugin unauthenticated PHP object injection (no POP chain)",
-   "product": "Advanced Form Integration - Connect Forms to 300+ Apps (WordPress) <= 2.10.2",
-   "score": 8.1,
-   "cvss": "8.1 (CVSS v3.1, Wordfence)",
-   "fixed": "2.10.3",
-   "published": "2026-11-07T09:17:11Z (NVD); Wordfence published 2026-11-06, updated 2026-11-07",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "MATERIAL 4(a) (2026-11-07 04:30 ET hourly): newly published in window. Unauthenticated PHP object injection (CWE-502 deserialization, CVSS 8.1 v3.1, Wordfence) in Advanced Form Integration <= 2.10.2. CAVEAT: no known POP chain in the plugin itself - no impact unless another plugin/theme provides a usable gadget; also requires an admin-configured active NexForms integration. Fixed 2.10.3. No public exploit; NOT in CISA KEV (catalog 2026.11.06, 1,769 entries); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1)+(2).",
-   "src": "https://www.wordfence.com/threat-intel/vulnerabilities/id/dbea3356-2fc1-4511-9767-e560b7c4f0a8",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
-   "id": "CVE-2026-103900",
-   "title": "WPJAM Basic unauthenticated privilege escalation to Administrator",
-   "product": "WPJAM Basic (WordPress) <= 7.1",
-   "score": 8.1,
-   "cvss": "8.1 (CVSS v3.1, Wordfence)",
-   "fixed": "7.1.2",
-   "published": "2026-11-07T10:17:05Z (NVD); Wordfence published 2026-11-06, updated 2026-11-07",
-   "exploited": false,
-   "kev": false,
-   "poc": false,
-   "status": "MATERIAL 4(a) (2026-11-07 05:30 ET hourly): newly published in window. Unauthenticated privilege escalation to Administrator (CWE-269, CVSS 8.1 v3.1, Wordfence) in WPJAM Basic <= 7.1; requires a social-login provider registered + open registration enabled. Fixed 7.1.2 (Wordfence page read directly via browser, 10:31Z). No public exploit; NOT in CISA KEV (catalog 2026.11.06, 1,769 entries) or VulnCheck KEV (single lookup 0 records); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1)+(3).",
-   "src": "https://www.wordfence.com/threat-intel/vulnerabilities/id/77464287-bbaa-428e-9292-c97c10733adf",
-   "epss": null,
-   "epss_percentile": null
-  },
-  {
    "id": "CVE-2026-101602",
    "title": "Low-privileged HTTP attacker takes over Oracle Agile PLM for Process; requires user interaction (Oracle Oct 2026 CPU)",
    "product": "Oracle Agile PLM for Process (Product Quality Management)",
@@ -30318,6 +30393,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "poc": false,
    "status": "No exploitation reported; not in CISA KEV. Unauthenticated RCE via PHP object injection (unsanitized CF7 fields + unserialize without allowed_classes); gadget chain needs a Google Sheets token configured. Fixed 1.8.1. EPSS unscored (brand new).",
    "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-104010",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-104768",
+   "title": "AutomatorWP privilege escalation -> unauthenticated creation of administrator accounts",
+   "product": "AutomatorWP - No-Code Workflow Automation, Integration & Webhooks Plugin (WordPress)",
+   "score": 7.5,
+   "cvss": "CVSS v3.1 7.5 (Wordfence)",
+   "fixed": "6.0.5",
+   "published": "2026-11-07T12:17:41Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-07 07:30 ET hourly): newly published in window. AutomatorWP <=6.0.4 (CVSS 7.5 v3.1, Wordfence, CWE-269); missing privilege-ceiling validation -> unauthenticated creation of administrator accounts (narrow precondition: anonymous automation with Role bound to a dynamic trigger tag + an admin approving a comment). Fixed 6.0.5 (Wordfence page read directly via browser task 12:33Z). No public exploit reported; not in CISA KEV or VulnCheck KEV (single lookup 0 records); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (3) - grants administrative access regardless of score.",
    "epss": null,
    "epss_percentile": null
   },
@@ -33051,17 +33141,18 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-07 --run 6:30 AM ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-07 --run 7:30 AM ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning — 2,160 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 1 new CVE — a TOTOLINK setWiFiBasicConfig overflow", c:"", p:200},
-    {t:"  CVE-2026-123961 TOTOLINK CA300-PoE — setWiFiBasicConfig remote buffer overflow", c:"warn", p:120},
-    {t:"  TOTOLINK: CVSS 9.9 · public exploit disclosed · NO FIX published", c:"", p:120},
+    {t:"Scanning — 2,166 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: 6 new CVEs — all WordPress plugin flaws", c:"", p:200},
+    {t:"  CVE-2026-104014 Naimur Email OTP for WooCommerce — password-reset auth bypass", c:"warn", p:120},
+    {t:"  CVE-2026-119075 Registration Form for WooCommerce — privesc to Administrator", c:"warn", p:120},
+    {t:"  WordPress batch: CVSS 9.8 x2 · 9.1 · 8.1 x2 · 7.5 · all fixed in new plugin versions", c:"", p:120},
     {t:"  EPSS: unscored (brand new)", c:"dim", p:120},
     {t:"  No confirmed exploitation · NOT in CISA KEV", c:"dim", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
@@ -33390,7 +33481,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,160 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,166 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
