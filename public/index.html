@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 6 6:30 PM ET:</strong> 2,040 CVEs tracked, filtered down to what needs action first. New this scan: 1 addition — CVE-2026-109469 (10.0, Microsoft Entra Device Registration — authorization bypass through a user-controlled key lets an unauthenticated attacker elevate privileges; already fully mitigated by Microsoft server-side, no customer action required). No exploitation reported for the addition and it is not in CISA KEV. Highlighted Drops, the Ones to Watch, and the grouped 2,040-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 6 7:30 PM ET:</strong> 2,040 CVEs tracked, filtered down to what needs action first. New this scan: 1 status change — CVE-2026-123488 (9.8, Craft CMS — unauthenticated SQL injection in the element search endpoint leads to administrator access) now has a weaponized public PoC. No confirmed exploitation in the wild for it yet, and it is not in CISA KEV. Highlighted Drops, the Ones to Watch, and the grouped 2,040-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 6 6:30 PM ET hourly scan — 1 record added (2,040 CVEs tracked). The addition is CVE-2026-109469, a 10.0 Microsoft Entra Device Registration authorization bypass through a user-controlled key — already fully mitigated by Microsoft (cloud service), no customer action required, with no exploitation reported and no CISA KEV listing. By severity: 68 at 10.0, 676 at 9.0–9.9, 1,107 at 8.0–8.9 and 189 below 8.0. Across the full set, 69 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 96 sit in the public-PoC group. 1940 of 2040 records carry EPSS scores. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 6 7:30 PM ET hourly scan — 1 record changed (2,040 CVEs tracked). The change is CVE-2026-123488, a 9.8 Craft CMS unauthenticated SQL injection that leads to administrator access — a weaponized public PoC is now available, with no confirmed exploitation in the wild and no CISA KEV listing. By severity: 68 at 10.0, 676 at 9.0–9.9, 1,107 at 8.0–8.9 and 189 below 8.0. Across the full set, 69 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 97 sit in the public-PoC group. 1940 of 2040 records carry EPSS scores. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 <script id="cveData" type="application/json">
@@ -6408,8 +6408,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "published": "2026-11-06T15:17:18Z (NVD)",
    "exploited": false,
    "kev": false,
-   "poc": false,
-   "status": "No exploitation reported; not in CISA KEV. Unauthenticated SQLi in element search: read/write the database, set the admin flag or overwrite password hashes to gain administrator access. Fixed 4.18.9 / 5.11.2. EPSS null (brand-new).",
+   "poc": true,
+   "status": "MATERIAL 4(c) (2026-11-06 19:30 ET hourly): weaponized public PoC now available - fixedbyreboot GitHub repo (Sploitus entry 2026-11-06 20:28Z, 'Working code 100% confidence this exploit runs', Python): unauthenticated SQLi in the element search endpoint (search[attribute] interpolated raw into SQL; MySQL/MariaDB stacked statements) reads/writes the whole database, including setting the admin flag. Tracked since 10:30 ET (4a new publish). Fixed 4.18.9 / 5.11.2. No confirmed in-the-wild exploitation; not in CISA KEV; EPSS null (brand-new). Scope (1)+(3).",
    "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-123488",
    "epss": null,
    "epss_percentile": null
@@ -31242,7 +31242,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-06 --run 6:30 PM ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-06 --run 7:30 PM ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
@@ -31250,10 +31250,10 @@ document.getElementById("tickerTrack").innerHTML=html+html;
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
     {t:"Scanning — 2,040 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 1 addition — Microsoft Entra Device Registration 10.0, already mitigated by Microsoft", c:"", p:200},
-    {t:"  CVE-2026-109469 Microsoft Entra Device Registration — 10.0 auth bypass via user-controlled key -> privilege elevation", c:"warn", p:120},
-    {t:"  Already fully mitigated server-side (cloud service) — no customer action required", c:"", p:120},
-    {t:"  EPSS: unscored (brand new) · No exploitation reported · not in CISA KEV", c:"dim", p:200},
+    {t:"New this scan: 1 status change — Craft CMS 9.8 SQLi now has a weaponized public PoC", c:"", p:200},
+    {t:"  CVE-2026-123488 Craft CMS — 9.8 unauthenticated SQL injection -> administrator access", c:"warn", p:120},
+    {t:"  Weaponized public PoC (fixedbyreboot, via Sploitus) — FIX: 4.18.9 / 5.11.2", c:"", p:120},
+    {t:"  EPSS: unscored (brand new) · No confirmed exploitation in the wild · not in CISA KEV", c:"dim", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
