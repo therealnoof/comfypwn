@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 7</span><span class="pill accent">2,172 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 7</span><span class="pill accent">2,176 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 7 10:30 AM ET:</strong> 2,172 CVEs tracked, filtered down to what needs action first. New this scan: 1 new CVE published today: CVE-2026-124318 (Treeio — insecure deserialization RCE via admin-editable pickle fields, 8.6, no fixed version stated). It is brand new, with no EPSS score yet. EPSS scores were fully refreshed for all tracked CVEs (data dated Nov 7): 2,135 scored, 37 unscored, 36 EPSS crossings — unchanged. No confirmed exploitation in the wild for the new CVE, and it is not in CISA KEV. Highlighted Drops, the Ones to Watch, and the grouped 2,172-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 7 12:30 PM ET:</strong> 2,176 CVEs tracked, filtered down to what needs action first. New this scan: 4 records added — CVE-2026-62032 (DirectoryPress WordPress plugin — PHP file inclusion, LFI/RFI, 9.8, no official patch available; exploit disclosed publicly, VulnCheck KEV-listed Nov 7 on a Patchstack-only citation) and three Splunk Enterprise flaws from hardening release SVD-2026-1002: CVE-2026-76281 (9.8), CVE-2026-76282 (8.8) and CVE-2026-76284 (9.8), all fixed in 10.4.3 / 10.2.7 / 10.0.10 / 9.4.15. Status notes also updated on CVE-2026-118066 and CVE-2026-118267 — both added to VulnCheck KEV on Nov 7, but the citation is a Patchstack advisory only, so neither counts as confirmed exploitation. None of the four additions is confirmed exploited in the wild, and none is in CISA KEV. EPSS scores (data dated Nov 7): 2,139 scored, 37 unscored, 36 EPSS crossings — unchanged. Highlighted Drops, the Ones to Watch, and the grouped 2,176-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -430,7 +430,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>2,172</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>2,176</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 7</b><span>Last updated — hourly scans</span></div>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 2,172 CVEs</label>
+      <label for="cveSearch">Search all 2,176 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,172 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,176 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -497,7 +497,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 7 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1807 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 7 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1810 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 2 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -505,18 +505,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1807 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1810 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 2,172 CVEs</h2><p>Every entry from the Nov 7 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 2,176 CVEs</h2><p>Every entry from the Nov 7 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,172.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">2,172 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,176.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">2,176 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 7 10:30 AM ET hourly scan — 1 record added (2,172 CVEs tracked). The addition was published Nov 7: CVE-2026-124318 (Treeio through 2.0, 8.6 — insecure deserialization RCE via admin-editable pickle fields, no fixed version stated; project tagged unsupported-when-assigned). It is brand new, with no EPSS score yet. No confirmed exploitation in the wild for it, and it is not in CISA KEV. EPSS scores were fully refreshed for all tracked CVEs in this scan (EPSS data dated Nov 7); 36 EPSS crossings — unchanged. By severity: 69 at 10.0, 738 at 9.0–9.9, 1,166 at 8.0–8.9 and 199 below 8.0. Across the full set, 70 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 105 sit in the public-PoC group. 2135 of 2172 records carry EPSS scores (EPSS data dated Nov 7). This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 7 12:30 PM ET hourly scan — 4 records added (2,176 CVEs tracked). Added: CVE-2026-62032 (DirectoryPress plugin for WordPress — PHP file inclusion, LFI/RFI, 9.8, no official patch available; exploit disclosed publicly) and three Splunk Enterprise flaws from hardening release SVD-2026-1002 — CVE-2026-76281 (9.8), CVE-2026-76282 (8.8) and CVE-2026-76284 (9.8), all fixed in 10.4.3 / 10.2.7 / 10.0.10 / 9.4.15. Status notes also updated on CVE-2026-118066 and CVE-2026-118267: both added to VulnCheck KEV on Nov 7 (Patchstack-only citation — not confirmed exploitation; exploited stays unflagged, still not in CISA KEV). None of the four additions is confirmed exploited in the wild or in CISA KEV. EPSS scores are included in this snapshot (EPSS data dated Nov 7); 36 EPSS crossings — unchanged. By severity: 69 at 10.0, 741 at 9.0–9.9, 1,167 at 8.0–8.9 and 199 below 8.0. Across the full set, 70 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 106 sit in the public-PoC group. 2139 of 2176 records carry EPSS scores (EPSS data dated Nov 7). This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 <script id="cveData" type="application/json">
@@ -7221,6 +7221,54 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": null
   },
   {
+   "id": "CVE-2026-62032",
+   "title": "DirectoryPress <=3.6.27 PHP file inclusion (LFI/RFI)",
+   "product": "DirectoryPress plugin for WordPress (Designinvento)",
+   "score": 9.8,
+   "cvss": "CVSS v3.1 9.8 (Patchstack; NVD)",
+   "fixed": "None - no official patch available (Patchstack, checked 2026-11-07)",
+   "published": "2026-10-10T20:16:39Z (NVD); lastMod 2026-11-07T08:16:27Z",
+   "exploited": false,
+   "kev": false,
+   "poc": true,
+   "status": "MATERIAL 4(a) baseline miss (2026-11-07 12:30 ET hourly): published Oct 10, never recorded by the monitor (0 mentions in run log) - added as tracked baseline miss; surfaced via VulnCheck KEV Nov-7 filter (indexed 16:37Z, after the 11:30 run's 0-record read). PHP LFI/RFI (CWE-98), CVSS 9.8 v3.1. NO FIX published (Patchstack: 'No official patch available'). NVD/vuldb notes the exploit has been disclosed publicly. VulnCheck KEV listing dated 2026-11-07 cites the Patchstack advisory page only (canaries False) - per the CVE-2026-118423 precedent, a Patchstack-only citation is NOT confirmed in-the-wild exploitation; exploited stays False. NOT in CISA KEV (catalog 2026.11.06, 1,769 entries). EPSS 0.00404 / 34.932nd percentile (FIRST data 2026-11-07). Scope (1)+(2).",
+   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-62032",
+   "epss": 0.00404,
+   "epss_percentile": 34.932
+  },
+  {
+   "id": "CVE-2026-76281",
+   "title": "Splunk hardening release SVD-2026-1002 - improper access control (CWE-284)",
+   "product": "Splunk Enterprise 10.4 / 10.2 / 10.0 / 9.4",
+   "score": 9.8,
+   "cvss": "CVSS v3.1 9.8 (Splunk SVD-2026-1002 vendor score; NVD unscored)",
+   "fixed": "10.4.3 / 10.2.7 / 10.0.10 / 9.4.15",
+   "published": "2026-10-07T21:17:19Z (NVD); advisory SVD-2026-1002 published 2026-10-07; NVD lastMod 2026-11-07T17:16:34Z",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) lag-gap catch (2026-11-07 12:30 ET hourly): published Oct 7 as part of Splunk hardening release SVD-2026-1002; NVD carried no score until the Nov 7 17:16Z re-analysis, and the vendor 9.8 was never adjudicated (sibling CVE-2026-76285 was added Oct 28 as the October CRITICAL backfill on its NVD 9.8). Improper access control (CWE-284), vendor CVSS 9.8. Fixed 10.4.3 / 10.2.7 / 10.0.10 / 9.4.15. No exploitation reported; not in CISA KEV (catalog 2026.11.06, 1,769 entries) or VulnCheck KEV (single lookup 0 records); no confirmed in-the-wild exploitation. EPSS 0.00175 / 7.065th percentile (FIRST data 2026-11-07). Scope (1).",
+   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-76281",
+   "epss": 0.00175,
+   "epss_percentile": 7.065
+  },
+  {
+   "id": "CVE-2026-76284",
+   "title": "Splunk hardening release SVD-2026-1002 - improper neutralization (CWE-707)",
+   "product": "Splunk Enterprise 10.4 / 10.2 / 10.0 / 9.4",
+   "score": 9.8,
+   "cvss": "CVSS v3.1 9.8 (NVD; Splunk SVD-2026-1002 advisory 9.0)",
+   "fixed": "10.4.3 / 10.2.7 / 10.0.10 / 9.4.15",
+   "published": "2026-10-07T21:17:20Z (NVD); advisory SVD-2026-1002 published 2026-10-07; NVD lastMod 2026-11-07T17:16:35Z",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) lag-gap catch (2026-11-07 12:30 ET hourly): published Oct 7 as part of Splunk hardening release SVD-2026-1002; NVD score arrived only in the Nov 7 17:16Z re-analysis (sibling CVE-2026-76285 was added Oct 28 as the October CRITICAL backfill). Improper neutralization (CWE-707), CVSS 9.8 NVD / 9.0 Splunk. Fixed 10.4.3 / 10.2.7 / 10.0.10 / 9.4.15. No exploitation reported; not in CISA KEV (catalog 2026.11.06, 1,769 entries) or VulnCheck KEV (single lookup 0 records); no confirmed in-the-wild exploitation. EPSS 0.0043 / 37.418th percentile (FIRST data 2026-11-07). Scope (1).",
+   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-76284",
+   "epss": 0.0043,
+   "epss_percentile": 37.418
+  },
+  {
    "id": "CVE-2025-65200",
    "title": "LocalStack CloudFormation deploy endpoint RCE via crafted templateURL content (lag-gap catch-up)",
    "product": "LocalStack 4.9.2",
@@ -11216,7 +11264,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "exploited": false,
    "kev": false,
    "poc": false,
-   "status": "MATERIAL 4(a) (2026-11-07 07:30 ET hourly): newly published in window. LatePoint <=5.7.6 (CVSS 9.1 v3.1, Wordfence, CWE-287); unauthenticated authentication bypass -> account takeover via SQL sentinel injection in password-reset flow. Fixed 5.7.7 (Wordfence page read directly via browser task 12:33Z). No public exploit reported; not in CISA KEV or VulnCheck KEV (single lookup 0 records); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1)+(3).",
+   "status": "MATERIAL 4(a) (2026-11-07 07:30 ET hourly): newly published in window. LatePoint <=5.7.6 (CVSS 9.1 v3.1, Wordfence, CWE-287); unauthenticated authentication bypass -> account takeover via SQL sentinel injection in password-reset flow. Fixed 5.7.7 (Wordfence page read directly via browser task 12:33Z). No public exploit reported; not in CISA KEV or VulnCheck KEV (single lookup 0 records); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1)+(3). | UPDATE 2026-11-07 12:30 ET: added to VulnCheck KEV 2026-11-07 (indexed 16:37Z; reported-exploitation citation is the Patchstack advisory page only, canaries False) - per the CVE-2026-118423 precedent, a Patchstack-only VulnCheck KEV citation is NOT a confirmed-exploitation status change; exploited stays False. Still NOT in CISA KEV.",
    "epss": null,
    "epss_percentile": null
   },
@@ -20047,6 +20095,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "epss_percentile": null
   },
   {
+   "id": "CVE-2026-76282",
+   "title": "Splunk hardening release SVD-2026-1002 - improper control of a resource through its lifetime (CWE-664)",
+   "product": "Splunk Enterprise 10.4 / 10.2 / 10.0 / 9.4",
+   "score": 8.8,
+   "cvss": "CVSS v3.1 8.8 (NVD; Splunk SVD-2026-1002 advisory 8.8)",
+   "fixed": "10.4.3 / 10.2.7 / 10.0.10 / 9.4.15",
+   "published": "2026-10-07T21:17:19Z (NVD); advisory SVD-2026-1002 published 2026-10-07; NVD lastMod 2026-11-07T17:16:34Z",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) lag-gap catch (2026-11-07 12:30 ET hourly): published Oct 7 as part of Splunk hardening release SVD-2026-1002; NVD score arrived only in the Nov 7 17:16Z re-analysis (sibling CVE-2026-76285 was added Oct 28 as the October CRITICAL backfill). Improper control of a resource through its lifetime (CWE-664), CVSS 8.8. Fixed 10.4.3 / 10.2.7 / 10.0.10 / 9.4.15. No exploitation reported; not in CISA KEV (catalog 2026.11.06, 1,769 entries) or VulnCheck KEV (single lookup 0 records); no confirmed in-the-wild exploitation. EPSS 0.00381 / 32.379th percentile (FIRST data 2026-11-07). Scope (1).",
+   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-76282",
+   "epss": 0.00381,
+   "epss_percentile": 32.379
+  },
+  {
    "id": "CVE-2010-20125",
    "title": "DedeCMS file inclusion in plus/carbuyaction.php -> local file disclosure (old CVE, newly published)",
    "product": "DedeCMS before 5.7",
@@ -28809,7 +28873,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
    "exploited": false,
    "kev": false,
    "poc": false,
-   "status": "MATERIAL 4(a) (2026-11-07 07:30 ET hourly): newly published in window. WP Data Access <=5.5.89 (CVSS 8.1 v3.1, Wordfence, CWE-863); authenticated Subscriber+ (or anonymous if a Data App is published that way) can overwrite the administrator's user_pass -> full site takeover. Fixed 5.5.90. No public exploit reported; not in CISA KEV or VulnCheck KEV (single lookup 0 records); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1)+(3).",
+   "status": "MATERIAL 4(a) (2026-11-07 07:30 ET hourly): newly published in window. WP Data Access <=5.5.89 (CVSS 8.1 v3.1, Wordfence, CWE-863); authenticated Subscriber+ (or anonymous if a Data App is published that way) can overwrite the administrator's user_pass -> full site takeover. Fixed 5.5.90. No public exploit reported; not in CISA KEV or VulnCheck KEV (single lookup 0 records); no confirmed in-the-wild exploitation. EPSS unscored (brand new). Scope (1)+(3). | UPDATE 2026-11-07 12:30 ET: added to VulnCheck KEV 2026-11-07 (indexed 16:37Z; reported-exploitation citation is the Patchstack advisory page only, canaries False) - per the CVE-2026-118423 precedent, a Patchstack-only VulnCheck KEV citation is NOT a confirmed-exploitation status change; exploited stays False. Still NOT in CISA KEV.",
    "epss": null,
    "epss_percentile": null
   },
@@ -33231,20 +33295,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-07 --run 10:30 AM ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-07 --run 12:30 PM ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning — 2,172 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 1 new CVE", c:"", p:200},
-    {t:"  CVE-2026-124318 Treeio — insecure deserialization RCE (pickle fields)", c:"warn", p:120},
-    {t:"  Treeio: CVSS 8.6 (v4.0) · no fixed version stated", c:"", p:120},
-    {t:"  EPSS refreshed (Nov 7): 2,135 scored · 37 unscored · 36 crossings", c:"dim", p:120},
-    {t:"  EPSS: 1 new unscored (brand new)", c:"dim", p:120},
-    {t:"  No confirmed exploitation · NOT in CISA KEV", c:"dim", p:200},
+    {t:"Scanning — 2,176 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: 4 new CVEs + 2 status updates", c:"", p:200},
+    {t:"  CVE-2026-62032 DirectoryPress — PHP file inclusion (LFI/RFI)", c:"warn", p:120},
+    {t:"  DirectoryPress: CVSS 9.8 · NO FIX · exploit disclosed publicly", c:"", p:120},
+    {t:"  CVE-2026-76281 / 76282 / 76284 — Splunk Enterprise (SVD-2026-1002)", c:"warn", p:120},
+    {t:"  Splunk: 9.8 / 8.8 / 9.8 · FIX 10.4.3 / 10.2.7 / 10.0.10 / 9.4.15", c:"", p:120},
+    {t:"  Updates: CVE-2026-118066 + CVE-2026-118267 → VulnCheck KEV (Patchstack-only)", c:"dim", p:120},
+    {t:"  EPSS (Nov 7): 2,139 scored · 37 unscored · 36 crossings", c:"dim", p:120},
+    {t:"  No confirmed exploitation for new CVEs · NOT in CISA KEV", c:"dim", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
@@ -33571,7 +33637,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,172 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,176 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
