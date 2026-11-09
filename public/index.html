@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 9</span><span class="pill accent">2,266 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 9</span><span class="pill accent">2,269 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 9 3:30 AM ET:</strong> 2,266 CVEs tracked, filtered down to what needs action first. New this scan: 2 records added, no status changes. Added: CVE-2026-124580 Chengdu Feiyuxing VW2100 / VEC10GP (OS command injection in the Weixin Auth Endpoint → RCE, CVSS 10.0, public PoC, NO FIX — vendor unresponsive); and CVE-2026-124577 Intelbras SG 2404 PoE L2+ (improper authentication in the web management interface → remote management access, CVSS 9.8, public exploit, fixed in 1.00.74). EPSS scores are included in this snapshot: 2,176 scored, 90 unscored — both new records are unscored. Highlighted Drops, the Ones to Watch, and the grouped 2,266-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 9 4:30 AM ET:</strong> 2,269 CVEs tracked, filtered down to what needs action first. New this scan: 3 records added, no status changes. Added: CVE-2026-124585 Chengdu Feiyuxing VW2100 / VEC10GP (OS command injection in add_expmac → RCE, CVSS 9.9, public exploit, NO FIX — vendor unresponsive); CVE-2026-123870 Eclipse otterdog webapp (unauthenticated RCE via Python eval() on the webhook body when GITHUB_WEBHOOK_SECRET is unset, CVSS 9.5, fixed in 1.3.3); and CVE-2026-94249 TUBITAK BILGEM Liderahenk (missing authorization → privilege abuse, CVSS 8.1, fixed in 2.0.3). EPSS scores are included in this snapshot: 2,176 scored, 93 unscored — all three new records are unscored. Highlighted Drops, the Ones to Watch, and the grouped 2,269-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -430,7 +430,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>2,266</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>2,269</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 9</b><span>Last updated — hourly scans</span></div>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 2,266 CVEs</label>
+      <label for="cveSearch">Search all 2,269 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,266 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,269 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -497,7 +497,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 9 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1870 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 9 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1872 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 2 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -505,18 +505,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1870 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1872 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 2,266 CVEs</h2><p>Every entry from the Nov 9 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 2,269 CVEs</h2><p>Every entry from the Nov 9 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,266.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">2,266 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,269.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">2,269 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 9 3:30 AM ET hourly scan — 2 records added, no status changes (2,266 CVEs tracked). Added: Chengdu Feiyuxing VW2100 / VEC10GP — CVE-2026-124580 (OS command injection in the Weixin Auth Endpoint → RCE; CVSS 10.0; public PoC; NO FIX — vendor unresponsive). Intelbras SG 2404 PoE L2+ — CVE-2026-124577 (improper authentication in the Web Management Interface /EXCU_SHELL → remote management access; CVSS 9.8; public exploit; fixed in 1.00.74). Tier counts now stand at 847 CRITICAL, 1,289 HIGH, 18 MEDIUM, 1 LOW, 111 unscored across the set. EPSS scores are included in this snapshot: 2,176 scored, 90 unscored — both new records are unscored. By severity: 71 at 10.0, 776 at 9.0–9.9, 1,203 at 8.0–8.9 and 216 below 8.0 (incl. 111 unscored). Across the full set, 76 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 121 sit in the public-PoC group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 9 4:30 AM ET hourly scan — 3 records added, no status changes (2,269 CVEs tracked). Added: Chengdu Feiyuxing VW2100 / VEC10GP — CVE-2026-124585 (OS command injection in add_expmac → RCE; CVSS 9.9; public exploit; NO FIX — vendor unresponsive). Eclipse otterdog webapp — CVE-2026-123870 (unauthenticated RCE via Python eval() on webhook body when GITHUB_WEBHOOK_SECRET is unset; CVSS 9.5; fixed in 1.3.3). TUBITAK BILGEM Liderahenk — CVE-2026-94249 (missing authorization → privilege abuse; CVSS 8.1; fixed in 2.0.3). Tier counts now stand at 849 CRITICAL, 1,290 HIGH, 18 MEDIUM, 1 LOW, 111 unscored across the set. EPSS scores are included in this snapshot: 2,176 scored, 93 unscored — all three new records are unscored. By severity: 71 at 10.0, 778 at 9.0–9.9, 1,204 at 8.0–8.9 and 216 below 8.0 (incl. 111 unscored). Across the full set, 76 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 122 sit in the public-PoC group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 <script id="cveData" type="application/json">
@@ -1129,6 +1129,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 63.66
  },
  {
+  "id": "CVE-2026-124580",
+  "title": "Chengdu Feiyuxing VW2100/VEC10GP: OS command injection in Weixin Auth Endpoint (handle_wechat_cn_wifi, extend) -> RCE; public exploit, NO FIX",
+  "product": "Chengdu Feiyuxing Technology VW2100 / VEC10GP (Weixin Auth Endpoint)",
+  "score": 10.0,
+  "cvss": "10.0 (v3.1; v4.0 9.3)",
+  "fixed": "None - vendor unresponsive, no fix",
+  "published": "2026-11-09T08:17:02Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": true,
+  "status": "Public exploit disclosed (researcher GitHub repo, cited in NVD record). Remote OS command injection in the Weixin Auth Endpoint. No confirmed wild exploitation; NOT in CISA KEV; VulnCheck KEV negative. NO FIX - vendor unresponsive.",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-124580",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-20127",
   "title": "Cisco Catalyst SD-WAN Controller unauthenticated authentication bypass -> administrative privileges",
   "product": "Cisco Catalyst SD-WAN Controller / Manager / Validator (On-Prem, Hosted, FedRAMP)",
@@ -1592,22 +1608,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "MATERIAL STATUS CHANGE 2026-10-29: added to CISA KEV catalog (2026.10.29, 1,764 entries) - confirmed exploitation in the wild. Rapid7 reproduced RCE and published a PoC Oct 13; fully weaponized PoC on GitHub Oct 16 (Jonah Burgess). ~25,766 exposed vulnerable hosts at disclosure (Censys). Fixed 19.4.2 / 19.3.5 / 19.2.8. EPSS 0.18427, 97.23rd percentile (unchanged).",
   "epss": 0.6522,
   "epss_percentile": 99.259
- },
- {
-  "id": "CVE-2026-124580",
-  "title": "Chengdu Feiyuxing VW2100/VEC10GP: OS command injection in Weixin Auth Endpoint (handle_wechat_cn_wifi, extend) -> RCE; public exploit, NO FIX",
-  "product": "Chengdu Feiyuxing Technology VW2100 / VEC10GP (Weixin Auth Endpoint)",
-  "score": 10.0,
-  "cvss": "10.0 (v3.1; v4.0 9.3)",
-  "fixed": "None - vendor unresponsive, no fix",
-  "published": "2026-11-09T08:17:02Z (NVD)",
-  "exploited": false,
-  "kev": false,
-  "poc": true,
-  "status": "Public exploit disclosed (researcher GitHub repo, cited in NVD record). Remote OS command injection in the Weixin Auth Endpoint. No confirmed wild exploitation; NOT in CISA KEV; VulnCheck KEV negative. NO FIX - vendor unresponsive.",
-  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-124580",
-  "epss": null,
-  "epss_percentile": null
  },
  {
   "id": "CVE-2026-101446",
@@ -2579,6 +2579,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss": null,
   "epss_percentile": null,
   "source": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-124469"
+ },
+ {
+  "id": "CVE-2026-124585",
+  "title": "Chengdu Feiyuxing VW2100/VEC10GP: OS command injection in add_expmac -> remote code execution; public exploit, NO FIX",
+  "product": "Chengdu Feiyuxing Technology VW2100 / VEC10GP (Web Administration Interface)",
+  "score": 9.9,
+  "cvss": "9.9 (CVSS v3.1)",
+  "fixed": "None - vendor unresponsive, no fix published",
+  "published": "2026-11-09T09:16:59.517Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": true,
+  "status": "No confirmed wild exploitation; not in CISA KEV. Public exploit disclosed (researcher GitHub repo, cited in NVD record). OS command injection via `mac` argument in add_expmac; vendor contacted early, unresponsive.",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-124585",
+  "epss": null,
+  "epss_percentile": null
  },
  {
   "id": "CVE-2026-16884",
@@ -4853,6 +4869,37 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "source": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-124445"
  },
  {
+  "id": "CVE-2026-124560",
+  "title": "D-Link DIR-878 1.20B05: unauthenticated remote heap-based buffer overflow in HNAP GetCAPTCHAsetting (bin/prog.cgi, uid parameter) - public PoC, EOL product, no fix",
+  "product": "D-Link DIR-878",
+  "score": 9.8,
+  "cvss": "9.8 (CVSS v3.1) / 8.9 (CVSS v4.0)",
+  "fixed": "None - product end-of-life, no longer supported by the maintainer",
+  "published": "2026-11-09T03:16:38Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": true,
+  "status": "No confirmed in-the-wild exploitation; NOT in CISA KEV; VulnCheck KEV negative. Unauthenticated remote heap-based buffer overflow (CWE-122/CWE-119) in the HNAP handler's GetCAPTCHAsetting function (bin/prog.cgi, uid parameter); public PoC disclosed (E:P). Product is end-of-life - no fixed version exists; replace the device.",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-124577",
+  "title": "Intelbras SG 2404 PoE L2+ 1.00.70/1.00.72: improper auth in Web Management Interface /EXCU_SHELL -> remote management access; public exploit, fixed 1.00.74",
+  "product": "Intelbras SG 2404 PoE L2+ (managed switch)",
+  "score": 9.8,
+  "cvss": "9.8 (v3.1; v4.0 8.9)",
+  "fixed": "1.00.74",
+  "published": "2026-11-09T08:17:02Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": true,
+  "status": "Public exploit disclosed (vuldb). Improper authentication in the Web Management Interface /EXCU_SHELL gives remote management access. No confirmed wild exploitation; NOT in CISA KEV; VulnCheck KEV negative. Fixed in 1.00.74.",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-124577",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-12665",
   "title": "IBM MQ stack buffer overflow on malformed TLS cert DN -> RCE",
   "product": "IBM MQ",
@@ -6495,6 +6542,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 52.98
  },
  {
+  "id": "CVE-2026-77932",
+  "title": "DB-GPT through 0.8.2: unauthenticated RCE as root via /api/v1/chat/react-agent (mock auth grants every caller admin; unsandboxed code/shell interpreters)",
+  "product": "eosphoros-ai DB-GPT",
+  "score": 9.8,
+  "cvss": "9.8 (CVSS v3.1) / 9.3 (CVSS v4.0)",
+  "fixed": "Update to a version later than 0.8.2 (specific fixed version unconfirmed); restrict access to /api/v1/chat/react-agent",
+  "published": "2026-10-20T01:17:19Z (NVD); VulnCheck KEV addition 2026-11-09",
+  "exploited": true,
+  "kev": false,
+  "poc": true,
+  "status": "EXPLOITED per VulnCheck: added to VulnCheck KEV 2026-11-09, VulnCheck canaries reported exploitation 2026-11-09. NOT in CISA KEV. Unauthenticated RCE as root (CWE-306): /api/v1/chat/react-agent relies on a mock get_user_from_headers that grants every caller the admin role; unsandboxed code_interpreter/shell_interpreter run arbitrary Python or bash as root in the webserver container, incl. reaching the bundled DB with default credentials. Public PoC demonstrated by Lasso Security (uid=0 marker file).",
+  "epss": 0.00804,
+  "epss_percentile": 56.981
+ },
+ {
   "id": "CVE-2026-78162",
   "title": "Unsafe Java deserialization via Hazelcast in camel-hazelcast (lag-gap catch)",
   "product": "Apache Camel",
@@ -7544,52 +7606,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "kev": false,
   "poc": false,
   "status": "RCE in Elo Ruby backend via unescaped interpolation. NO PATCH available. Not in CISA KEV; EPSS N/A (no CVE). ADDED 19:30 ET hourly - scope (1) CVSS 9.8. PRE-WINDOW CATCH: missed by 13:30 run (GHSA API 403 that run); verified no earlier run reviewed it.",
-  "epss": null,
-  "epss_percentile": null
- },
- {
-  "id": "CVE-2026-77932",
-  "title": "DB-GPT through 0.8.2: unauthenticated RCE as root via /api/v1/chat/react-agent (mock auth grants every caller admin; unsandboxed code/shell interpreters)",
-  "product": "eosphoros-ai DB-GPT",
-  "score": 9.8,
-  "cvss": "9.8 (CVSS v3.1) / 9.3 (CVSS v4.0)",
-  "fixed": "Update to a version later than 0.8.2 (specific fixed version unconfirmed); restrict access to /api/v1/chat/react-agent",
-  "published": "2026-10-20T01:17:19Z (NVD); VulnCheck KEV addition 2026-11-09",
-  "exploited": true,
-  "kev": false,
-  "poc": true,
-  "status": "EXPLOITED per VulnCheck: added to VulnCheck KEV 2026-11-09, VulnCheck canaries reported exploitation 2026-11-09. NOT in CISA KEV. Unauthenticated RCE as root (CWE-306): /api/v1/chat/react-agent relies on a mock get_user_from_headers that grants every caller the admin role; unsandboxed code_interpreter/shell_interpreter run arbitrary Python or bash as root in the webserver container, incl. reaching the bundled DB with default credentials. Public PoC demonstrated by Lasso Security (uid=0 marker file).",
-  "epss": 0.00804,
-  "epss_percentile": 56.981
- },
- {
-  "id": "CVE-2026-124560",
-  "title": "D-Link DIR-878 1.20B05: unauthenticated remote heap-based buffer overflow in HNAP GetCAPTCHAsetting (bin/prog.cgi, uid parameter) - public PoC, EOL product, no fix",
-  "product": "D-Link DIR-878",
-  "score": 9.8,
-  "cvss": "9.8 (CVSS v3.1) / 8.9 (CVSS v4.0)",
-  "fixed": "None - product end-of-life, no longer supported by the maintainer",
-  "published": "2026-11-09T03:16:38Z (NVD)",
-  "exploited": false,
-  "kev": false,
-  "poc": true,
-  "status": "No confirmed in-the-wild exploitation; NOT in CISA KEV; VulnCheck KEV negative. Unauthenticated remote heap-based buffer overflow (CWE-122/CWE-119) in the HNAP handler's GetCAPTCHAsetting function (bin/prog.cgi, uid parameter); public PoC disclosed (E:P). Product is end-of-life - no fixed version exists; replace the device.",
-  "epss": null,
-  "epss_percentile": null
- },
- {
-  "id": "CVE-2026-124577",
-  "title": "Intelbras SG 2404 PoE L2+ 1.00.70/1.00.72: improper auth in Web Management Interface /EXCU_SHELL -> remote management access; public exploit, fixed 1.00.74",
-  "product": "Intelbras SG 2404 PoE L2+ (managed switch)",
-  "score": 9.8,
-  "cvss": "9.8 (v3.1; v4.0 8.9)",
-  "fixed": "1.00.74",
-  "published": "2026-11-09T08:17:02Z (NVD)",
-  "exploited": false,
-  "kev": false,
-  "poc": true,
-  "status": "Public exploit disclosed (vuldb). Improper authentication in the Web Management Interface /EXCU_SHELL gives remote management access. No confirmed wild exploitation; NOT in CISA KEV; VulnCheck KEV negative. Fixed in 1.00.74.",
-  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-124577",
   "epss": null,
   "epss_percentile": null
  },
@@ -8871,6 +8887,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 61.863
  },
  {
+  "id": "CVE-2026-123870",
+  "title": "otterdog webapp: unauthenticated remote code execution via Python eval() on webhook body when GITHUB_WEBHOOK_SECRET unset",
+  "product": "Eclipse otterdog webapp (GitHub organization management)",
+  "score": 9.5,
+  "cvss": "9.5 (CVSS v4.0)",
+  "fixed": "1.3.3",
+  "published": "2026-11-09T09:16:58.653Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; not in CISA KEV. Unauthenticated network client reaches eval() sink with attacker-controlled webhook JSON when GITHUB_WEBHOOK_SECRET is unset/empty (default None); arbitrary Python execution on the webapp host. Affected >= 0.9.0, < 1.3.2.",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-123870",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-97631",
   "title": "EDK II PXE driver pre-boot RCE via oversized ICMP error messages (ring 0, before Secure Boot)",
   "product": "TianoCore EDK II NetworkPkg (UefiPxeBcDxe), EDK II master as of 2026-09-14 / through edk2-stable202608",
@@ -9758,6 +9790,36 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 67.473
  },
  {
+  "id": "CVE-2026-113363",
+  "title": "NEC WebSAM WinShare: improper input validation in network communication -> remote unauthenticated attacker executes arbitrary commands as SYSTEM via crafted packet",
+  "product": "NEC WebSAM WinShare",
+  "score": 9.3,
+  "cvss": "9.3 (CVSS v4.0)",
+  "fixed": "None stated - NEC advisory NV26-006 (2026-11-09) lists no fixed version",
+  "published": "2026-11-09T04:12:35Z (CVE.org; not yet in NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed in-the-wild exploitation; NOT in CISA KEV; VulnCheck KEV negative. Remote unauthenticated attacker executes arbitrary commands as SYSTEM via a crafted network packet. Affects 7.2.0-7.5.0, 7.6.0, 7.7.0-7.7.2. No fix stated in NEC advisory NV26-006.",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-113364",
+  "title": "NEC WebSAM WinShare: buffer overflow in data reception -> remote unauthenticated attacker executes arbitrary code as SYSTEM via crafted packet with malformed data size",
+  "product": "NEC WebSAM WinShare",
+  "score": 9.3,
+  "cvss": "9.3 (CVSS v4.0)",
+  "fixed": "None stated - NEC advisory NV26-006 (2026-11-09) lists no fixed version",
+  "published": "2026-11-09T04:14:03Z (CVE.org; not yet in NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed in-the-wild exploitation; NOT in CISA KEV; VulnCheck KEV negative. Remote unauthenticated attacker executes arbitrary code as SYSTEM via a crafted packet with a malformed data size value. Affects 7.5.0 and earlier, 7.6.0, 7.7.0-7.7.2. No fix stated in NEC advisory NV26-006.",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-113380",
   "title": "Signal RingRTC FSM event-queue flood -> call stays alive (mic/camera) after hangup",
   "product": "Signal RingRTC calling library (<2.72.0)",
@@ -10496,36 +10558,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "No exploitation reported; not in CISA KEV. Unauthenticated remote attacker exfiltrates host files to external Google Cloud Storage buckets and overwrites arbitrary local files via crafted tool invocation parameters.",
   "epss": 0.00526,
   "epss_percentile": 44.814
- },
- {
-  "id": "CVE-2026-113363",
-  "title": "NEC WebSAM WinShare: improper input validation in network communication -> remote unauthenticated attacker executes arbitrary commands as SYSTEM via crafted packet",
-  "product": "NEC WebSAM WinShare",
-  "score": 9.3,
-  "cvss": "9.3 (CVSS v4.0)",
-  "fixed": "None stated - NEC advisory NV26-006 (2026-11-09) lists no fixed version",
-  "published": "2026-11-09T04:12:35Z (CVE.org; not yet in NVD)",
-  "exploited": false,
-  "kev": false,
-  "poc": false,
-  "status": "No confirmed in-the-wild exploitation; NOT in CISA KEV; VulnCheck KEV negative. Remote unauthenticated attacker executes arbitrary commands as SYSTEM via a crafted network packet. Affects 7.2.0-7.5.0, 7.6.0, 7.7.0-7.7.2. No fix stated in NEC advisory NV26-006.",
-  "epss": null,
-  "epss_percentile": null
- },
- {
-  "id": "CVE-2026-113364",
-  "title": "NEC WebSAM WinShare: buffer overflow in data reception -> remote unauthenticated attacker executes arbitrary code as SYSTEM via crafted packet with malformed data size",
-  "product": "NEC WebSAM WinShare",
-  "score": 9.3,
-  "cvss": "9.3 (CVSS v4.0)",
-  "fixed": "None stated - NEC advisory NV26-006 (2026-11-09) lists no fixed version",
-  "published": "2026-11-09T04:14:03Z (CVE.org; not yet in NVD)",
-  "exploited": false,
-  "kev": false,
-  "poc": false,
-  "status": "No confirmed in-the-wild exploitation; NOT in CISA KEV; VulnCheck KEV negative. Remote unauthenticated attacker executes arbitrary code as SYSTEM via a crafted packet with a malformed data size value. Affects 7.5.0 and earlier, 7.6.0, 7.7.0-7.7.2. No fix stated in NEC advisory NV26-006.",
-  "epss": null,
-  "epss_percentile": null
  },
  {
   "id": "CVE-2026-109618",
@@ -14595,6 +14627,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "SILENT BACKFILL 2026-11-04: alerted in the Oct 27 morning user note but never persisted in state.json; repaired this run. No exploitation reported; not in CISA KEV as of 2026-11-04; not in VulnCheck KEV.",
   "epss": 0.00513,
   "epss_percentile": 44.029
+ },
+ {
+  "id": "CVE-2026-114107",
+  "title": "HKUDS Vibe-Trading 0.1.0 before 0.1.7: indirect prompt injection -> shell commands as root (BashTool/BackgroundRunTool shell=True, no allow-list/approval)",
+  "product": "HKUDS Vibe-Trading",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1) / 8.7 (CVSS v4.0)",
+  "fixed": "0.1.7",
+  "published": "2026-10-21T01:17:36Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Catch-up baseline miss (published Oct 21, never tracked). No confirmed wild exploitation; NOT in CISA KEV. Indirect prompt injection: instructions planted in documents/web pages the agent reads lead to shell commands as root; read_url allows SSRF.",
+  "epss": 0.00576,
+  "epss_percentile": 47.767
  },
  {
   "id": "CVE-2026-114621",
@@ -20891,21 +20938,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": null
  },
  {
-  "id": "CVE-2026-114107",
-  "title": "HKUDS Vibe-Trading 0.1.0 before 0.1.7: indirect prompt injection -> shell commands as root (BashTool/BackgroundRunTool shell=True, no allow-list/approval)",
-  "product": "HKUDS Vibe-Trading",
-  "score": 8.8,
-  "cvss": "8.8 (CVSS v3.1) / 8.7 (CVSS v4.0)",
-  "fixed": "0.1.7",
-  "published": "2026-10-21T01:17:36Z (NVD)",
-  "exploited": false,
-  "kev": false,
-  "poc": false,
-  "status": "Catch-up baseline miss (published Oct 21, never tracked). No confirmed wild exploitation; NOT in CISA KEV. Indirect prompt injection: instructions planted in documents/web pages the agent reads lead to shell commands as root; read_url allows SSRF.",
-  "epss": 0.00576,
-  "epss_percentile": 47.767
- },
- {
   "id": "CVE-2010-20125",
   "title": "DedeCMS file inclusion in plus/carbuyaction.php -> local file disclosure (old CVE, newly published)",
   "product": "DedeCMS before 5.7",
@@ -24419,6 +24451,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 1.843
  },
  {
+  "id": "CVE-2026-113362",
+  "title": "NEC WebSAM WinShare: improper access control on program installation folder -> locally authenticated low-privileged attacker executes arbitrary code as SYSTEM via crafted DLL",
+  "product": "NEC WebSAM WinShare",
+  "score": 8.5,
+  "cvss": "8.5 (CVSS v4.0)",
+  "fixed": "None stated - NEC advisory NV26-006 (2026-11-09) lists no fixed version",
+  "published": "2026-11-09T04:17:06Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed in-the-wild exploitation; NOT in CISA KEV; VulnCheck KEV negative. Locally authenticated low-privileged attacker executes arbitrary code as SYSTEM via a crafted DLL loaded by a SYSTEM-level process (CWE-276). Affects 7.5.0 and earlier (excl. 7.3.3), 7.6.0, 7.7.0-7.7.1. No fix stated in NEC advisory NV26-006. Companion CVEs 113363/113364 (9.3 remote RCE as SYSTEM) in the same advisory.",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-114189",
   "title": "AnyWhere Elementor through 1.3.0: blind SQL injection (CWE-89), authenticated (PR:L)",
   "product": "WPVibes AnyWhere Elementor (WordPress plugin)",
@@ -25920,21 +25967,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "No exploitation reported; not in CISA KEV. Heap buffer overflow handling GLX RenderLarge requests where dataBytes exceeds cmdlen; an authenticated X client can trigger it, causing crashes or code execution in X server context. Fixed X server 21.1.25 / XWayland 24.1.14. EPSS unscored (brand new).",
   "epss": 0.00193,
   "epss_percentile": 8.989
- },
- {
-  "id": "CVE-2026-113362",
-  "title": "NEC WebSAM WinShare: improper access control on program installation folder -> locally authenticated low-privileged attacker executes arbitrary code as SYSTEM via crafted DLL",
-  "product": "NEC WebSAM WinShare",
-  "score": 8.5,
-  "cvss": "8.5 (CVSS v4.0)",
-  "fixed": "None stated - NEC advisory NV26-006 (2026-11-09) lists no fixed version",
-  "published": "2026-11-09T04:17:06Z (NVD)",
-  "exploited": false,
-  "kev": false,
-  "poc": false,
-  "status": "No confirmed in-the-wild exploitation; NOT in CISA KEV; VulnCheck KEV negative. Locally authenticated low-privileged attacker executes arbitrary code as SYSTEM via a crafted DLL loaded by a SYSTEM-level process (CWE-276). Affects 7.5.0 and earlier (excl. 7.3.3), 7.6.0, 7.7.0-7.7.1. No fix stated in NEC advisory NV26-006. Companion CVEs 113363/113364 (9.3 remote RCE as SYSTEM) in the same advisory.",
-  "epss": null,
-  "epss_percentile": null
  },
  {
   "id": "CVE-2025-68393",
@@ -30894,6 +30926,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 19.834
  },
  {
+  "id": "CVE-2026-94249",
+  "title": "Liderahenk before 2.0.3: Missing Authorization allows privilege abuse",
+  "product": "TUBITAK BILGEM Liderahenk (endpoint management)",
+  "score": 8.1,
+  "cvss": "8.1 (CVSS v3.1)",
+  "fixed": "2.0.3",
+  "published": "2026-11-09T09:16:59.927Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; not in CISA KEV. Missing Authorization (CWE-862) allows privilege abuse by a low-privileged user (C:H/I:H). Affected before 2.0.3.",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-94249",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-94300",
   "title": "ISC BIND 9 — GSS-TSIG signed UDP replay corrupts memory (possible RCE)",
   "product": "ISC BIND 9 (DNS)",
@@ -31661,21 +31709,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 72.226
  },
  {
-  "id": "CVE-2026-75775",
-  "title": "ASUS router OS command injection as root (factory-default state)",
-  "product": "ASUS routers (3.0.0.6_102 series)",
-  "score": 7.7,
-  "cvss": "7.7 (CVSS v4.0)",
-  "fixed": "latest firmware per ASUS advisory",
-  "published": "2026-10-23 (ASUS bulletin; NVD 08:16 UTC)",
-  "exploited": false,
-  "kev": false,
-  "poc": false,
-  "status": "No exploitation reported; not in CISA KEV. Remote user executes arbitrary commands as root via crafted parameters while device is in factory-default state. RCE class (scope criterion 2) despite score <8.0.",
-  "epss": 0.00605,
-  "epss_percentile": 49.217
- },
- {
   "id": "CVE-2026-124561",
   "title": "D-Link DIR-878 1.20B05: stack-based buffer overflow in HNAP SetVLANSettings (VID argument) - remote unauthenticated, public exploit, EOL product, no fix",
   "product": "D-Link DIR-878",
@@ -31719,6 +31752,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "No confirmed in-the-wild exploitation; NOT in CISA KEV; VulnCheck KEV negative. Remote unauthenticated buffer overflow (CWE-119) in the HNAP handler's SetWanSettings function (Primary/Secondary arguments); public exploit disclosed (E:P). Product is end-of-life - no fixed version exists; replace the device.",
   "epss": null,
   "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-75775",
+  "title": "ASUS router OS command injection as root (factory-default state)",
+  "product": "ASUS routers (3.0.0.6_102 series)",
+  "score": 7.7,
+  "cvss": "7.7 (CVSS v4.0)",
+  "fixed": "latest firmware per ASUS advisory",
+  "published": "2026-10-23 (ASUS bulletin; NVD 08:16 UTC)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No exploitation reported; not in CISA KEV. Remote user executes arbitrary commands as root via crafted parameters while device is in factory-default state. RCE class (scope criterion 2) despite score <8.0.",
+  "epss": 0.00605,
+  "epss_percentile": 49.217
  },
  {
   "id": "CVE-2026-76506",
@@ -31855,6 +31903,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "No exploitation reported; not in CISA KEV. OS command injection: manipulation of the state/labels arguments to handleListIssues in src/handlers/issue-handlers.ts leads to os command injection; attack can be launched remotely (MCP server receives tool arguments from models). Patch commit 253d93bbdf7ee9fe42bd8fdf15feea93ae59cbae in 0.4.1. EPSS 0.0139, 72.3rd percentile.",
   "epss": 0.0139,
   "epss_percentile": 72.509
+ },
+ {
+  "id": "CVE-2026-116567",
+  "title": "FreeSWITCH before 1.11.2: stack-based buffer overflow in rtmp_handle_control() - unauthenticated remote, pre-login, public exploit",
+  "product": "FreeSWITCH",
+  "score": 7.5,
+  "cvss": "7.5 (CVSS v3.1)",
+  "fixed": "1.11.2",
+  "published": "2026-11-05T20:17:43Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": true,
+  "status": "No confirmed in-the-wild exploitation; NOT in CISA KEV; VulnCheck KEV negative. Pre-auth remote stack-based buffer overflow (CWE-121) in rtmp_handle_control(): an unbounded sprintf loop over a 200-byte stack buffer, triggered before any RTMP login. Public exploit listed on Sploitus 2026-11-09. Fixed in 1.11.2. Baseline miss (published Nov 5, never tracked).",
+  "epss": 0.00432,
+  "epss_percentile": 37.657
  },
  {
   "id": "CVE-2026-116650",
@@ -32037,21 +32100,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "No exploitation reported; not in CISA KEV. Authentication bypass via SSO email collision: when no WildApricot contact-ID mapping exists, the plugin falls back to a network-global get_user_by('email') lookup and issues a session cookie for the resolved user without proof of ownership; an attacker controlling a WildApricot contact whose email matches a WordPress subsite administrator's authenticates as that administrator on path-based Multisite. Precondition: attacker-held WildApricot membership + email match. EPSS unscored (brand new).",
   "epss": 0.00425,
   "epss_percentile": 37.005
- },
- {
-  "id": "CVE-2026-116567",
-  "title": "FreeSWITCH before 1.11.2: stack-based buffer overflow in rtmp_handle_control() - unauthenticated remote, pre-login, public exploit",
-  "product": "FreeSWITCH",
-  "score": 7.5,
-  "cvss": "7.5 (CVSS v3.1)",
-  "fixed": "1.11.2",
-  "published": "2026-11-05T20:17:43Z (NVD)",
-  "exploited": false,
-  "kev": false,
-  "poc": true,
-  "status": "No confirmed in-the-wild exploitation; NOT in CISA KEV; VulnCheck KEV negative. Pre-auth remote stack-based buffer overflow (CWE-121) in rtmp_handle_control(): an unbounded sprintf loop over a 200-byte stack buffer, triggered before any RTMP login. Public exploit listed on Sploitus 2026-11-09. Fixed in 1.11.2. Baseline miss (published Nov 5, never tracked).",
-  "epss": 0.00432,
-  "epss_percentile": 37.657
  },
  {
   "id": "CVE-2026-114488",
@@ -33462,6 +33510,54 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 29.412
  },
  {
+  "id": "CVE-2026-115204",
+  "title": "AZEXO Store Locator through 1.4: authenticated subscriber arbitrary file write -> RCE",
+  "product": "AZEXO Store Locator (WordPress plugin)",
+  "score": 0.0,
+  "cvss": "none published yet",
+  "fixed": "None stated",
+  "published": "2026-11-09T07:17:27Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; not in CISA KEV. Authenticated (subscriber) user writes a file with arbitrary name, location and content via unsanitised AJAX header -> RCE.",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-115204",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-115212",
+  "title": "mView through 1.0.3: authenticated subscriber arbitrary PHP upload -> RCE",
+  "product": "mView (WordPress plugin)",
+  "score": 0.0,
+  "cvss": "none published yet",
+  "fixed": "None stated",
+  "published": "2026-11-09T07:17:27Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; not in CISA KEV. Authenticated (subscriber) user uploads arbitrary PHP files to a web-accessible directory -> RCE.",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-115212",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-115213",
+  "title": "EASY-JS-WPAPI through 2.0: unauthenticated disclosure of admin credentials -> full admin access",
+  "product": "EASY-JS-WPAPI Client HANDLE for the WordPress REST-API (WordPress plugin)",
+  "score": 0.0,
+  "cvss": "none published yet",
+  "fixed": "None stated",
+  "published": "2026-11-09T07:17:27Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; not in CISA KEV. Unauthenticated attackers obtain stored administrator credentials and gain full administrator access.",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-115213",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-115214",
   "title": "Datawiza Proxy Auth Plugin unauthenticated authentication as WordPress administrator",
   "product": "Datawiza Proxy Auth Plugin (WordPress, <1.1.1)",
@@ -33493,6 +33589,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 36.57
  },
  {
+  "id": "CVE-2026-115237",
+  "title": "Grand Job through 1.2.1: unauthenticated password reset of any account incl. admin -> full takeover",
+  "product": "Grand Job (WordPress plugin)",
+  "score": 0.0,
+  "cvss": "none published yet",
+  "fixed": "None stated",
+  "published": "2026-11-09T07:17:28Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; not in CISA KEV. Unauthenticated attackers set the password of arbitrary accounts, including administrators, and fully take over the site.",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-115237",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-115245",
   "title": "Chat AI with Dispatcher unauthenticated arbitrary file upload (spoofable client content type) -> PHP upload / RCE",
   "product": "Chat AI with Dispatcher WordPress plugin before 2.4",
@@ -33521,6 +33633,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "No exploitation reported; not in CISA KEV. Unauthenticated one-click upgrade routine lets a multisite child-site admin install and run arbitrary PHP in the network-wide shared plugin directory.",
   "epss": 0.00312,
   "epss_percentile": 24.235
+ },
+ {
+  "id": "CVE-2026-115256",
+  "title": "Mail Debug for WooCommerce through 1.3.0: unauthenticated read of all sent emails incl. password resets -> admin takeover",
+  "product": "Mail Debug for WooCommerce (WordPress plugin)",
+  "score": 0.0,
+  "cvss": "none published yet",
+  "fixed": "None stated",
+  "published": "2026-11-09T07:17:28Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; not in CISA KEV. Unauthenticated users read the full body of every email the site sent, including password-reset emails whose key lets an attacker take over an administrator account.",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-115256",
+  "epss": null,
+  "epss_percentile": null
  },
  {
   "id": "CVE-2026-115533",
@@ -33989,6 +34117,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "epss_percentile": 2.689
  },
  {
+  "id": "CVE-2026-123064",
+  "title": "WP BASE Booking before 6.5.1: authenticated subscriber creates an administrator account -> privilege escalation",
+  "product": "WP BASE Booking of Appointments, Services and Events (WordPress plugin)",
+  "score": 0.0,
+  "cvss": "none published yet",
+  "fixed": "6.5.1",
+  "published": "2026-11-09T07:17:29Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "No confirmed wild exploitation; not in CISA KEV. Authenticated Subscriber-level users create a new administrator account via an unrestricted user-creation action.",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-123064",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-123151",
   "title": "Stack buffer overflow parsing remote target replies - malicious target crashes GDB or executes code in client process",
   "product": "GDB (GNU debugger) client",
@@ -34002,6 +34146,22 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "No confirmed wild exploitation; NOT in CISA KEV",
   "epss": 0.00513,
   "epss_percentile": 44.012
+ },
+ {
+  "id": "CVE-2026-123751",
+  "title": "WP Duplicate through 1.1.11: unauthenticated arbitrary file upload via auth bypass -> RCE; ACTIVELY EXPLOITED, no fix",
+  "product": "WP Duplicate (WordPress plugin, local-sync)",
+  "score": 0.0,
+  "cvss": "none published yet",
+  "fixed": "None - no known fix (WPScan)",
+  "published": "2026-11-09T07:17:30Z (NVD)",
+  "exploited": true,
+  "kev": false,
+  "poc": false,
+  "status": "ACTIVELY EXPLOITED IN THE WILD (NVD record + WPScan verified entry, researcher Mike Gozdiskowski). Unauthenticated attackers write arbitrary files and achieve RCE. NOT in CISA KEV; VulnCheck KEV negative. PoC withheld by WPScan until remediated. NO FIX - update or remove the plugin.",
+  "src": "https://wpscan.com/vulnerability/3a3556f0-fc36-4f68-b826-406a7b4c3f9e/",
+  "epss": null,
+  "epss_percentile": null
  },
  {
   "id": "CVE-2026-13575",
@@ -34575,118 +34735,6 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "MATERIAL 4(a) (2026-11-05 09:30 ET hourly): newly published in NVD window, Apache OFBiz 24.09.08 batch. Authenticated user with only LABEL_MANAGER_VIEW reads arbitrary properties and XML files including the generated JWT signing key, enabling forgery of an authenticated administrator session. No public exploit reported; not in CISA KEV; EPSS null. Scope (3).",
   "epss": 0.0019,
   "epss_percentile": 8.717
- },
- {
-  "id": "CVE-2026-123751",
-  "title": "WP Duplicate through 1.1.11: unauthenticated arbitrary file upload via auth bypass -> RCE; ACTIVELY EXPLOITED, no fix",
-  "product": "WP Duplicate (WordPress plugin, local-sync)",
-  "score": 0.0,
-  "cvss": "none published yet",
-  "fixed": "None - no known fix (WPScan)",
-  "published": "2026-11-09T07:17:30Z (NVD)",
-  "exploited": true,
-  "kev": false,
-  "poc": false,
-  "status": "ACTIVELY EXPLOITED IN THE WILD (NVD record + WPScan verified entry, researcher Mike Gozdiskowski). Unauthenticated attackers write arbitrary files and achieve RCE. NOT in CISA KEV; VulnCheck KEV negative. PoC withheld by WPScan until remediated. NO FIX - update or remove the plugin.",
-  "src": "https://wpscan.com/vulnerability/3a3556f0-fc36-4f68-b826-406a7b4c3f9e/",
-  "epss": null,
-  "epss_percentile": null
- },
- {
-  "id": "CVE-2026-115204",
-  "title": "AZEXO Store Locator through 1.4: authenticated subscriber arbitrary file write -> RCE",
-  "product": "AZEXO Store Locator (WordPress plugin)",
-  "score": 0.0,
-  "cvss": "none published yet",
-  "fixed": "None stated",
-  "published": "2026-11-09T07:17:27Z (NVD)",
-  "exploited": false,
-  "kev": false,
-  "poc": false,
-  "status": "No confirmed wild exploitation; not in CISA KEV. Authenticated (subscriber) user writes a file with arbitrary name, location and content via unsanitised AJAX header -> RCE.",
-  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-115204",
-  "epss": null,
-  "epss_percentile": null
- },
- {
-  "id": "CVE-2026-115212",
-  "title": "mView through 1.0.3: authenticated subscriber arbitrary PHP upload -> RCE",
-  "product": "mView (WordPress plugin)",
-  "score": 0.0,
-  "cvss": "none published yet",
-  "fixed": "None stated",
-  "published": "2026-11-09T07:17:27Z (NVD)",
-  "exploited": false,
-  "kev": false,
-  "poc": false,
-  "status": "No confirmed wild exploitation; not in CISA KEV. Authenticated (subscriber) user uploads arbitrary PHP files to a web-accessible directory -> RCE.",
-  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-115212",
-  "epss": null,
-  "epss_percentile": null
- },
- {
-  "id": "CVE-2026-115213",
-  "title": "EASY-JS-WPAPI through 2.0: unauthenticated disclosure of admin credentials -> full admin access",
-  "product": "EASY-JS-WPAPI Client HANDLE for the WordPress REST-API (WordPress plugin)",
-  "score": 0.0,
-  "cvss": "none published yet",
-  "fixed": "None stated",
-  "published": "2026-11-09T07:17:27Z (NVD)",
-  "exploited": false,
-  "kev": false,
-  "poc": false,
-  "status": "No confirmed wild exploitation; not in CISA KEV. Unauthenticated attackers obtain stored administrator credentials and gain full administrator access.",
-  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-115213",
-  "epss": null,
-  "epss_percentile": null
- },
- {
-  "id": "CVE-2026-115237",
-  "title": "Grand Job through 1.2.1: unauthenticated password reset of any account incl. admin -> full takeover",
-  "product": "Grand Job (WordPress plugin)",
-  "score": 0.0,
-  "cvss": "none published yet",
-  "fixed": "None stated",
-  "published": "2026-11-09T07:17:28Z (NVD)",
-  "exploited": false,
-  "kev": false,
-  "poc": false,
-  "status": "No confirmed wild exploitation; not in CISA KEV. Unauthenticated attackers set the password of arbitrary accounts, including administrators, and fully take over the site.",
-  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-115237",
-  "epss": null,
-  "epss_percentile": null
- },
- {
-  "id": "CVE-2026-115256",
-  "title": "Mail Debug for WooCommerce through 1.3.0: unauthenticated read of all sent emails incl. password resets -> admin takeover",
-  "product": "Mail Debug for WooCommerce (WordPress plugin)",
-  "score": 0.0,
-  "cvss": "none published yet",
-  "fixed": "None stated",
-  "published": "2026-11-09T07:17:28Z (NVD)",
-  "exploited": false,
-  "kev": false,
-  "poc": false,
-  "status": "No confirmed wild exploitation; not in CISA KEV. Unauthenticated users read the full body of every email the site sent, including password-reset emails whose key lets an attacker take over an administrator account.",
-  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-115256",
-  "epss": null,
-  "epss_percentile": null
- },
- {
-  "id": "CVE-2026-123064",
-  "title": "WP BASE Booking before 6.5.1: authenticated subscriber creates an administrator account -> privilege escalation",
-  "product": "WP BASE Booking of Appointments, Services and Events (WordPress plugin)",
-  "score": 0.0,
-  "cvss": "none published yet",
-  "fixed": "6.5.1",
-  "published": "2026-11-09T07:17:29Z (NVD)",
-  "exploited": false,
-  "kev": false,
-  "poc": false,
-  "status": "No confirmed wild exploitation; not in CISA KEV. Authenticated Subscriber-level users create a new administrator account via an unrestricted user-creation action.",
-  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-123064",
-  "epss": null,
-  "epss_percentile": null
  }
 ]
 </script>
@@ -34700,20 +34748,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-09 --run 3:30 AM ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-09 --run 4:30 AM ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning — 2,266 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 2 new CVEs — network gear, both public PoC", c:"", p:200},
-    {t:"  CVE-2026-124580 Feiyuxing VW2100 — cmd injection → RCE", c:"warn", p:120},
-    {t:"  CVSS 10.0 · PUBLIC POC · ** NO FIX **", c:"warn", p:120},
-    {t:"  CVE-2026-124577 Intelbras SG 2404 — improper auth", c:"", p:120},
-    {t:"  CVSS 9.8 · public exploit · FIX 1.00.74", c:"", p:120},
-    {t:"  EPSS: 2,176 scored · 90 unscored · both new unscored", c:"dim", p:200},
+    {t:"Scanning — 2,269 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: 3 new CVEs — router RCE, webhook RCE, privilege abuse", c:"", p:200},
+    {t:"  CVE-2026-124585 Feiyuxing VW2100 — cmd injection → RCE", c:"warn", p:120},
+    {t:"  CVSS 9.9 · PUBLIC EXPLOIT · ** NO FIX **", c:"warn", p:120},
+    {t:"  CVE-2026-123870 otterdog webapp — eval() webhook RCE", c:"", p:120},
+    {t:"  CVSS 9.5 · unauthenticated · FIX 1.3.3", c:"", p:120},
+    {t:"  CVE-2026-94249 Liderahenk — missing authorization", c:"", p:120},
+    {t:"  CVSS 8.1 · privilege abuse · FIX 2.0.3", c:"", p:120},
+    {t:"  EPSS: 2,176 scored · 93 unscored · all three new unscored", c:"dim", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
@@ -35040,7 +35090,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,266 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,269 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
