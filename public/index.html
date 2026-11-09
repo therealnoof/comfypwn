@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 8</span><span class="pill accent">2,247 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 8</span><span class="pill accent">2,249 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 8 8:38 PM ET:</strong> 2,247 CVEs tracked, filtered down to what needs action first. New this scan: 1 record added — DynamiApps Frontend Admin (WordPress plugin) CVE-2026-119506 (9.1, privilege escalation — a low-privilege user becomes admin, fixed in 3.30.2). No confirmed exploitation, not CISA KEV-listed, and no public PoC yet. EPSS scores are included in this snapshot: 2,173 scored, 74 unscored — the new record is EPSS-unscored (brand new). Highlighted Drops, the Ones to Watch, and the grouped 2,247-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 8 9:35 PM ET:</strong> 2,249 CVEs tracked, filtered down to what needs action first. New this scan: 2 records added — DB-GPT through 0.8.2, CVE-2026-77932 (9.8, unauthenticated RCE as root via /api/v1/chat/react-agent — mock auth grants every caller admin; newly listed in the VulnCheck KEV catalog Nov 9 with canary-reported exploitation; not in CISA KEV; fix: update beyond 0.8.2), and HKUDS Vibe-Trading, CVE-2026-114107 (8.8, indirect prompt injection leads to shell commands as root; fixed in 0.1.7; no confirmed exploitation, not KEV-listed). EPSS scores are included in this snapshot: 2,175 scored, 74 unscored — the new records score 0.008 (57th percentile) and 0.006 (48th percentile). Highlighted Drops, the Ones to Watch, and the grouped 2,249-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -430,7 +430,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>2,247</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>2,249</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 8</b><span>Last updated — hourly scans</span></div>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 2,247 CVEs</label>
+      <label for="cveSearch">Search all 2,249 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,247 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,249 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -497,7 +497,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 8 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1866 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 8 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1867 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 2 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -505,18 +505,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1866 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1867 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 2,247 CVEs</h2><p>Every entry from the Nov 8 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 2,249 CVEs</h2><p>Every entry from the Nov 8 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,247.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">2,247 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,249.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">2,249 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 8 8:38 PM ET hourly scan — 1 record added (2,247 CVEs tracked). Added: DynamiApps Frontend Admin by DynamiApps (WordPress plugin acf-frontend-form-element) CVE-2026-119506 (9.1, privilege escalation — a low-privilege user becomes admin with full control; fixed in 3.30.2). Tier counts now stand at 841 CRITICAL, 1,283 HIGH, 18 MEDIUM, 1 LOW, 104 unscored across the set. No confirmed exploitation for the new record and it is not CISA KEV-listed; no public PoC, and EPSS unscored (brand new). EPSS scores are included in this snapshot. By severity: 70 at 10.0, 771 at 9.0–9.9, 1,201 at 8.0–8.9 and 205 below 8.0 (incl. 104 unscored). Across the full set, 74 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 114 sit in the public-PoC group. 2173 of 2247 records carry EPSS scores. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 8 9:35 PM ET hourly scan — 2 records added (2,249 CVEs tracked). Added: DB-GPT through 0.8.2, CVE-2026-77932 (9.8, unauthenticated RCE as root via /api/v1/chat/react-agent — mock auth grants every caller admin; newly listed in the VulnCheck KEV catalog Nov 9 with canary-reported exploitation; not in CISA KEV; fix: update beyond 0.8.2). And: HKUDS Vibe-Trading, CVE-2026-114107 (8.8, indirect prompt injection leads to shell commands as root; fixed in 0.1.7; no confirmed exploitation, not KEV-listed). Tier counts now stand at 842 CRITICAL, 1,284 HIGH, 18 MEDIUM, 1 LOW, 104 unscored across the set. EPSS scores are included in this snapshot: 2,175 scored, 74 unscored — the new records score 0.008 (57th percentile) and 0.006 (48th percentile). By severity: 70 at 10.0, 772 at 9.0–9.9, 1,202 at 8.0–8.9 and 205 below 8.0 (incl. 104 unscored). Across the full set, 75 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 114 sit in the public-PoC group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 <script id="cveData" type="application/json">
@@ -7530,6 +7530,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "RCE in Elo Ruby backend via unescaped interpolation. NO PATCH available. Not in CISA KEV; EPSS N/A (no CVE). ADDED 19:30 ET hourly - scope (1) CVSS 9.8. PRE-WINDOW CATCH: missed by 13:30 run (GHSA API 403 that run); verified no earlier run reviewed it.",
   "epss": null,
   "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-77932",
+  "title": "DB-GPT through 0.8.2: unauthenticated RCE as root via /api/v1/chat/react-agent (mock auth grants every caller admin; unsandboxed code/shell interpreters)",
+  "product": "eosphoros-ai DB-GPT",
+  "score": 9.8,
+  "cvss": "9.8 (CVSS v3.1) / 9.3 (CVSS v4.0)",
+  "fixed": "Update to a version later than 0.8.2 (specific fixed version unconfirmed); restrict access to /api/v1/chat/react-agent",
+  "published": "2026-10-20T01:17:19Z (NVD); VulnCheck KEV addition 2026-11-09",
+  "exploited": true,
+  "kev": false,
+  "poc": true,
+  "status": "EXPLOITED per VulnCheck: added to VulnCheck KEV 2026-11-09, VulnCheck canaries reported exploitation 2026-11-09. NOT in CISA KEV. Unauthenticated RCE as root (CWE-306): /api/v1/chat/react-agent relies on a mock get_user_from_headers that grants every caller the admin role; unsandboxed code_interpreter/shell_interpreter run arbitrary Python or bash as root in the webserver container, incl. reaching the bundled DB with default credentials. Public PoC demonstrated by Lasso Security (uid=0 marker file).",
+  "epss": 0.00804,
+  "epss_percentile": 56.981
  },
  {
   "id": "CVE-2025-65200",
@@ -20797,6 +20812,21 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   "status": "No exploitation reported; not in CISA KEV. Numeric truncation (ZDI-26-833, CVSS 8.8 ZDI, ZDI-CAN-28318): clusterCreatePublishMsgBlock computes a cluster-bus message length as size_t but passes it to a uint32_t parameter; channel+message over UINT32_MAX silently truncates, allocating a far smaller heap buffer that the following memcpys overflow with attacker-controlled bytes - reliably crashes, possibly RCE as the service account. Authenticated user who can publish to a channel, cluster mode only; building a >4 GiB message requires server-side scripting (default proto-max-bulk-len 512 MB blocks direct sends). Mitigation: restrict scripting commands via ACLs, do not raise proto-max-bulk-len. EPSS unscored (no CVE).",
   "epss": null,
   "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-114107",
+  "title": "HKUDS Vibe-Trading 0.1.0 before 0.1.7: indirect prompt injection -> shell commands as root (BashTool/BackgroundRunTool shell=True, no allow-list/approval)",
+  "product": "HKUDS Vibe-Trading",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1) / 8.7 (CVSS v4.0)",
+  "fixed": "0.1.7",
+  "published": "2026-10-21T01:17:36Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Catch-up baseline miss (published Oct 21, never tracked). No confirmed wild exploitation; NOT in CISA KEV. Indirect prompt injection: instructions planted in documents/web pages the agent reads lead to shell commands as root; read_url allows SSRF.",
+  "epss": 0.00576,
+  "epss_percentile": 47.767
  },
  {
   "id": "CVE-2010-20125",
@@ -34406,20 +34436,24 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-08 --run 8:38 PM ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-08 --run 9:35 PM ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning — 2,247 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 1 new CVE — DynamiApps Frontend Admin (WordPress)", c:"", p:200},
-    {t:"  CVE-2026-119506 DynamiApps Frontend Admin 9.1", c:"warn", p:120},
-    {t:"  Privilege escalation — low-privilege user becomes admin", c:"", p:120},
-    {t:"  FIX: 3.30.2", c:"", p:120},
-    {t:"  EPSS: 2,173 scored · 74 unscored · the new record is unscored (brand new)", c:"dim", p:120},
-    {t:"  Not exploited / not KEV-listed · no public PoC", c:"dim", p:200},
+    {t:"Scanning — 2,249 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: 2 new CVEs — DB-GPT + HKUDS Vibe-Trading", c:"", p:200},
+    {t:"  CVE-2026-77932 DB-GPT (through 0.8.2) 9.8", c:"warn", p:120},
+    {t:"  Unauthenticated RCE as root via /api/v1/chat/react-agent", c:"", p:120},
+    {t:"  Mock auth grants every caller admin", c:"", p:120},
+    {t:"  VulnCheck KEV Nov 9 · canary-reported exploitation", c:"", p:120},
+    {t:"  Not in CISA KEV · FIX: update beyond 0.8.2", c:"", p:120},
+    {t:"  CVE-2026-114107 HKUDS Vibe-Trading 8.8", c:"warn", p:120},
+    {t:"  Indirect prompt injection -> shell commands as root", c:"", p:120},
+    {t:"  FIX: 0.1.7 · no confirmed exploitation, not KEV-listed", c:"", p:120},
+    {t:"  EPSS: 2,175 scored · 74 unscored · new: 0.008 (57th) · 0.006 (48th)", c:"dim", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
@@ -34746,7 +34780,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,247 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,249 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
