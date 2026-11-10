@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 10</span><span class="pill accent">2,760 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 10</span><span class="pill accent">2,766 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 10 2:30 PM ET:</strong> 2,760 CVEs tracked, filtered down to what needs action first. Headline this scan: three records were added to the CISA KEV catalog today (Nov 10, catalog 2026.11.10) — CVE-2026-111560, a Barracuda authenticated-admin OS command injection as root (8.6, federal remediation deadline Nov 13), CVE-2026-116606, a Barracuda ESG unauthenticated auth bypass into config import (9.3, public PoC, deadline Nov 13), and CVE-2026-125350, the Chrome XML use-after-free zero-day already exploited in the wild (deadline Nov 24). Six new CVEs were also added (total up from 2,754 to 2,760): an Azure Managed Grafana unauthenticated privilege escalation (CVE-2026-114160, 9.8), a Microsoft Xbox heap overflow RCE (CVE-2026-66801, 9.8), an OpenJD Sessions / AWS Deadline Cloud RCE that executes as the worker agent and steals AWS credentials (CVE-2026-126087, 9.4), a HarnessRouter auth bypass that rewrites another organization’s provider connection (CVE-2026-125331, 9.1), a Microsoft MCP Gateway privilege escalation (CVE-2026-109492, 8.8), and a Kaneo flaw exposing Gitea access tokens and webhook secrets to any workspace member (CVE-2026-125329, 8.4). All six land in the Ones to Watch group, which grows from 2,285 to 2,290 — CVE-2026-111560 leaves it for the In the wild group as its KEV listing lands with an exploited flag. Five Chrome records from the 1:30 PM scan (CVE-2026-125343, CVE-2026-125344, CVE-2026-125346, CVE-2026-125347, CVE-2026-125348) also picked up 0.0 scores, so the set now has no unscored records. The pending signal from earlier scans, ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8) with no CVE assigned yet, still sits with the pre-CVE early signals below, outside the 2,760. EPSS (data 2026-11-10): 2,411 scored and 349 unscored across the set — all six new records are unscored as brand new. Highlighted Drops, the Ones to Watch, and the grouped 2,760-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 10 3:30 PM ET:</strong> 2,766 CVEs tracked, filtered down to what needs action first. Six new CVEs were added this scan (total up from 2,760 to 2,766), all published Nov 10 and all NVD-verified, with no status changes to any tracked CVE: a Fortinet FortiClient origin-validation flaw allowing remote code/command execution (CVE-2026-121529, 9.6; fixed in 7.4.8+ / 7.2.15+), an Arista C-260/C-250 access-point flaw where fleet-wide static cryptographic keys let forged firmware pass verification (CVE-2026-102166, 9.4; no fixed release — mitigation is to disable the HMAC firmware-verification fallback), an Arista EOS eAPI unauthenticated path traversal that reads arbitrary files including switch credentials (CVE-2026-121371, 8.7; fixed in 4.37.0F / 4.36.3.2M / 4.35.7.2M / 4.34.9.2M / 4.33.11.2M), an HPE Private 5G Core session authentication bypass that lets revoked sessions be regained (CVE-2026-95780, 8.8; fixed in 1.26.2.0+), a Winter CMS missing-authorization flaw letting an authenticated backend user write records and export the full dataset (CVE-2026-125337, 8.3; fixed in 1.2.14), and a Fortinet FortiAnalyzer/FortiManager path traversal letting an authenticated read-only user write and delete files (CVE-2025-61625, 8.1; fixed in 7.6.5+ / 7.4.8+ / 7.2.12+). None of the six is exploited in the wild or in CISA KEV, and all six land in the Ones to Watch group, which grows from 2,290 to 2,296. The pending signal from earlier scans, ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8) with no CVE assigned yet, still sits with the pre-CVE early signals below, outside the 2,766. EPSS (data 2026-11-10): 2,411 scored and 355 unscored across the set — all six new records are unscored as brand new. Highlighted Drops, the Ones to Watch, and the grouped 2,766-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -430,7 +430,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>2,760</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>2,766</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 10</b><span>Last updated — hourly scans</span></div>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 2,760 CVEs</label>
+      <label for="cveSearch">Search all 2,766 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,760 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,766 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -497,7 +497,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 10 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 2285 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus three pre-CVE early signals that have no CVE ID at all yet — the newest is ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8). Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 10 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 2296 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus three pre-CVE early signals that have no CVE ID at all yet — the newest is ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8). Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 3 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -505,18 +505,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 2285 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 2296 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 2,760 CVEs</h2><p>Every entry from the Nov 10 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 2,766 CVEs</h2><p>Every entry from the Nov 10 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,760.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">2,760 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,766.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">2,766 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 10 2:30 PM ET hourly scan — 6 records added (total up from 2,754 to 2,760 CVEs tracked) and 3 existing records updated as they were added to the CISA KEV catalog today (2026-11-10, catalog 2026.11.10); no new pending early signal this scan. The KEV additions: CVE-2026-111560 (Barracuda appliances, authenticated-admin OS command injection as root, 8.6; federal remediation deadline 2026-11-13), CVE-2026-116606 (Barracuda ESG unauthenticated auth bypass into config import, 9.3, public PoC; deadline 2026-11-13), and CVE-2026-125350 (Google Chrome XML use-after-free zero-day, exploited in the wild; deadline 2026-11-24). The six new records: Azure Managed Grafana unauthenticated privilege escalation CVE-2026-114160 (9.8), Microsoft Xbox heap-overflow RCE CVE-2026-66801 (9.8), OpenJD Sessions / AWS Deadline Cloud RCE CVE-2026-126087 (9.4), HarnessRouter cross-organization auth bypass CVE-2026-125331 (9.1), Microsoft MCP Gateway privilege escalation CVE-2026-109492 (8.8), and Kaneo Gitea credential disclosure CVE-2026-125329 (8.4). Five Chrome records added at 1:30 PM (CVE-2026-125343, CVE-2026-125344, CVE-2026-125346, CVE-2026-125347, CVE-2026-125348) also picked up 0.0 scores, so the set now has no unscored records. Pending signal carried over: ZDI-26-900 — Wireshark SMB object export integer overflow RCE, ZDI CVSS 8.8, no CVE assigned yet, so it is not part of the 2,760. EPSS (data 2026-11-10): 2,411 scored, 349 unscored across the set; all 6 new records are EPSS-unscored as brand new. Tier counts now stand at 933 CRITICAL, 1,660 HIGH, 22 MEDIUM, 145 LOW, 0 unscored across the set. By severity: 84 at 10.0, 849 at 9.0–9.9, 1,561 at 8.0–8.9 and 266 below 8.0 (incl. 144 records scored 0.0). Across the full set, 91 records are flagged exploited in the wild, 64 carry a CISA KEV flag, and 169 carry a public-PoC flag; in the grouped index, 91 sit in the In the wild group, 13 sit in the CISA KEV-listed group, and 136 sit in the public-PoC group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 10 3:30 PM ET hourly scan — 6 records added (total up from 2,760 to 2,766 CVEs tracked); no tracked-CVE status changes this scan and no new pending early signal. The six new records, all published 2026-11-10 and NVD-verified, none exploited and none in CISA KEV: Fortinet FortiClient origin-validation remote code/command execution CVE-2026-121529 (9.6; fixed 7.4.8+ / 7.2.15+, FG-IR-26-194), Arista C-260/C-250 access-point fleet-wide static cryptographic keys allowing forged firmware to pass verification CVE-2026-102166 (9.4; no fixed release — mitigation: disable the HMAC firmware-verification fallback, Arista advisory 0227), Arista EOS eAPI unauthenticated path traversal reading arbitrary files including switch credentials CVE-2026-121371 (8.7; fixed 4.37.0F / 4.36.3.2M / 4.35.7.2M / 4.34.9.2M / 4.33.11.2M, Arista advisory 0218), HPE Private 5G Core session authentication bypass CVE-2026-95780 (8.8; fixed 1.26.2.0+, bulletin HPESBNW05179), Winter CMS missing-authorization record write and full-dataset export CVE-2026-125337 (8.3; fixed 1.2.14), and Fortinet FortiAnalyzer/FortiManager path traversal CVE-2025-61625 (8.1; fixed 7.6.5+ / 7.4.8+ / 7.2.12+, FG-IR-26-190). Pending signal carried over: ZDI-26-900 — Wireshark SMB object export integer overflow RCE, ZDI CVSS 8.8, no CVE assigned yet, so it is not part of the 2,766. EPSS (data 2026-11-10): 2,411 scored, 355 unscored across the set; all 6 new records are EPSS-unscored as brand new. Tier counts now stand at 935 CRITICAL, 1,664 HIGH, 22 MEDIUM, 1 LOW, 144 unscored across the set. By severity: 84 at 10.0, 851 at 9.0–9.9, 1,565 at 8.0–8.9 and 266 below 8.0 (incl. 144 records scored 0.0). Across the full set, 91 records are flagged exploited in the wild, 64 carry a CISA KEV flag, and 169 carry a public-PoC flag; in the grouped index, 91 sit in the In the wild group, 13 sit in the CISA KEV-listed group, 136 sit in the public-PoC group, and 2,296 sit in the Ones to watch group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 
@@ -9814,6 +9814,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": 0.0032404
  },
  {
+  "id": "CVE-2026-121529",
+  "title": "FortiClient origin validation error -> unauthorized remote attacker executes unauthorized code or commands (user interaction required), 9.6, fixed 7.4.8 / 7.2.15",
+  "product": "Fortinet FortiClient (Mac / Windows / Windows PAM)",
+  "score": 9.6,
+  "cvss": "v3.1 (Fortinet 9.6)",
+  "fixed": "FortiClientMac 7.4.8+; FortiClientWindows 7.4.8+ / 7.2.15+; FortiClientWindowsPAM 7.4.8+ / 7.2.15+ (FG-IR-26-194)",
+  "published": "2026-11-10T20:18:56.790 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 15:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 9.6 + (2) RCE class (remote code/command execution). No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121529",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-103593/CVE-2026-103594/CVE-2026-112709/CVE-2026-112710/CVE-2026-90442/CVE-2026-90465/CVE-2026-93857/CVE-2026-93865/CVE-2026-93866/CVE-2026-93434",
   "title": "WatchGuard Fireware OS batch: unauth RCE (SIP proxy, FireCluster), auth-service heap overflows, mgmt-interface flaws",
   "product": "WatchGuard Fireware OS (Default >=2025.1 <2026.4, >=12.0 <12.12.4; T15/T35 >=12.0 <12.5.22)",
@@ -10611,6 +10627,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-10 14:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 9.4 + (2) RCE class (authenticated remote job submitter -> code exec as worker agent + AWS credential theft). No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-126087",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-102166",
+  "title": "Arista C-260/C-250 access points ship with fleet-wide static cryptographic keys -> attacker creates modified firmware that passes verification, 9.4, NO fixed release (mitigation: disable HMAC fallback)",
+  "product": "Arista C-260 / C-250 Wi-Fi access points",
+  "score": 9.4,
+  "cvss": "v4.0 (Arista 9.4; v3.1 8.8)",
+  "fixed": "NO fixed release version available (Arista advisory 0227); mitigation: disable the HMAC-based firmware verification fallback path (set upgrade_hmac_fallback_enabled=0 via TAC-assisted config change, restart sserverd) so all firmware upgrades require mandatory digital signature verification",
+  "published": "2026-11-10T20:17:21.237 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 15:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 9.4 - fleet-wide static keys enable forged firmware passing verification (hard-coded credentials class; cf. TTLock 112345 precedent). No exploitation reported (Arista: not aware of any malicious exploitation); not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-102166",
   "epss": null,
   "epss_percentile": null
  },
@@ -25815,6 +25847,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-95780",
+  "title": "HPE Private 5G Core session authentication bypass -> low-privileged user regains access to previously assigned or revoked sessions, 8.8, fixed 1.26.2.0",
+  "product": "HPE Private 5G Core (AthonetOS)",
+  "score": 8.8,
+  "cvss": "v3.1 (HPE bulletin 8.8; NVD 8.1)",
+  "fixed": "Private 5G Core 1.26.2.0 and above (HPE bulletin HPESBNW05179); workaround: restrict CLI and web-based management interfaces to a dedicated L2 segment/VLAN and/or firewall policies at L3+ with accounting controls",
+  "published": "2026-11-10T20:19:48.770 (NVD); CVE record published 2026-11-10T20:07:07Z",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 15:30 ET hourly): newly published in window (NVD pub sweep; bulletin HPESBNW05179 read directly via browser task 2026-11-10 15:42 ET - fix 1.26.2.0 verified from the bulletin text). Scope (1) 8.8 (highest published; NVD 8.1) - session authentication bypass / retained access to protected resources after revocation (cf. Snipe-IT 116199 precedent). No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-95780",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2010-20125",
   "title": "DedeCMS file inclusion in plus/carbuyaction.php -> local file disclosure (old CVE, newly published)",
   "product": "DedeCMS before 5.7",
@@ -27677,6 +27725,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "kev": false,
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-10 12:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 8.7 SSRF to internal/metadata endpoints, prompt-injection-steerable (rclone/vLLM SSRF precedent). No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS unscored (null, brand new).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-121371",
+  "title": "Arista EOS eAPI unauthenticated path traversal -> read arbitrary files incl. switch credentials, 8.7, fixed 4.37.0F / 4.36.3.2M / 4.35.7.2M / 4.34.9.2M / 4.33.11.2M",
+  "product": "Arista EOS (eAPI)",
+  "score": 8.7,
+  "cvss": "v4.0 (NVD 8.7; v3.1 7.5)",
+  "fixed": "4.37.0F / 4.36.3.2M / 4.35.7.2M / 4.34.9.2M / 4.33.11.2M (Arista advisory 0218); mitigation: disable default-services on the management HTTP server / eAPI",
+  "published": "2026-11-10T20:18:56.640 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 15:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 8.7 - unauthenticated arbitrary file read incl. credentials from the switch management-plane API. No exploitation reported (Arista: not aware of any malicious exploitation); not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121371",
   "epss": null,
   "epss_percentile": null
  },
@@ -33566,6 +33630,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-125337",
+  "title": "Winter CMS missing authorization on ImportExport handlers -> authenticated backend user writes/overwrites records and exports the full dataset, 8.3, fixed 1.2.14",
+  "product": "Winter CMS",
+  "score": 8.3,
+  "cvss": "v3.1 (GitHub 8.3)",
+  "fixed": "1.2.14 (GHSA-fm29-4mq3-phg6)",
+  "published": "2026-11-10T20:19:08.097 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 15:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 8.3 - authenticated missing-authorization bypass: low-privileged backend user writes/overwrites records and exfiltrates the full export dataset. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-125337",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2023-42442",
   "title": "JumpServer improper authentication -> unauthenticated session-replay download (bastion host)",
   "product": "JumpServer 3.0.0 before 3.5.5 / 3.6.4",
@@ -37610,6 +37690,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "status": "MATERIAL 4(a) (2026-11-10 13:30 ET hourly): LAG-GAP CATCH - newly published in window. No exploitation reported; not in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative. EPSS 0.00189 / 0.09th percentile (data 2026-11-10). Scope (1)+(2).",
   "epss": 0.00189,
   "epss_percentile": 0.0008593
+ },
+ {
+  "id": "CVE-2025-61625",
+  "title": "Fortinet FortiAnalyzer/FortiManager path traversal -> authenticated read-only user writes and deletes files on the underlying filesystem, 8.1, fixed 7.6.5 / 7.4.8 / 7.2.12",
+  "product": "Fortinet FortiAnalyzer / FortiManager / FortiManager Cloud",
+  "score": 8.1,
+  "cvss": "v3.1 (Fortinet 8.1)",
+  "fixed": "FortiAnalyzer/FortiManager 7.6.5+ / 7.4.8+ / 7.2.12+; FortiManager Cloud 7.6.5+ / 7.4.8+ / 7.2.11+ (FG-IR-26-190)",
+  "published": "2026-11-10T20:17:20.203 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 15:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 8.1 - authenticated read-only profile escalates to filesystem write/delete on the management plane (FortiManager/FortiAnalyzer). No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2025-61625",
+  "epss": null,
+  "epss_percentile": null
  },
  {
   "id": "CVE-2026-101602",
@@ -42286,51 +42382,50 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-10 --run 2:30 PM ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-10 --run 3:30 PM ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning — 2,760 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 3 CISA KEV listings + 6 new CVEs", c:"", p:200},
-    {t:"  KEV: Barracuda CVE-2026-111560 · CVE-2026-116606", c:"warn", p:120},
-    {t:"  KEV: Chrome CVE-2026-125350 — wild zero-day", c:"warn", p:120},
-    {t:"  NEW: Azure Grafana EoP 9.8 · Xbox RCE 9.8", c:"warn", p:120},
-    {t:"  NEW: OpenJD / AWS Deadline RCE 9.4", c:"warn", p:120},
-    {t:"  NEW: HarnessRouter auth bypass 9.1", c:"warn", p:120},
-    {t:"  NEW: MCP Gateway EoP 8.8 · Kaneo creds 8.4", c:"warn", p:120},
+    {t:"Scanning — 2,766 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: 6 new CVEs — no status changes", c:"", p:200},
+    {t:"  NEW: FortiClient RCE 9.6 · Arista AP keys 9.4", c:"warn", p:120},
+    {t:"  NEW: HPE 5G Core auth bypass 8.8", c:"warn", p:120},
+    {t:"  NEW: Arista EOS eAPI traversal 8.7", c:"warn", p:120},
+    {t:"  NEW: Winter CMS authz bypass 8.3", c:"warn", p:120},
+    {t:"  NEW: FortiAnalyzer/FortiManager traversal 8.1", c:"warn", p:120},
     {t:"  Pending signal: ZDI-26-900 — Wireshark SMB RCE (8.8)", c:"warn", p:120},
-    {t:"  EPSS: 2,411 scored · 349 unscored (data 2026-11-10)", c:"dim", p:200},
+    {t:"  EPSS: 2,411 scored · 355 unscored (data 2026-11-10)", c:"dim", p:200},
     {t:"  All 6 new records EPSS-unscored — brand new", c:"dim", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
-    {t:"===========  NEW CISA KEV LISTINGS  ===========", c:"bright", p:200},
-    {t:"", p:60},
-    {t:">> CVE-2026-111560 — Barracuda appliances", c:"warn", p:120},
-    {t:"   Auth admin OS command injection as root · 8.6", c:"bright", p:100},
-    {t:"   CISA KEV Nov 10 · federal deadline Nov 13", c:"", p:100},
-    {t:"   FIX: unverified — see record", c:"", p:280},
-    {t:"", p:60},
-    {t:">> CVE-2026-116606 — Barracuda ESG", c:"warn", p:120},
-    {t:"   Unauth auth bypass -> config import · 9.3 · PoC out", c:"bright", p:100},
-    {t:"   CISA KEV Nov 10 · federal deadline Nov 13", c:"", p:100},
-    {t:"   FIX: 9.4.0.030", c:"", p:280},
-    {t:"", p:60},
-    {t:">> CVE-2026-125350 — Chrome XML use-after-free", c:"warn", p:120},
-    {t:"   Zero-day ** IN THE WILD ** · 8th Chrome 0-day of 2026", c:"bright", p:100},
-    {t:"   CISA KEV Nov 10 · federal deadline Nov 24", c:"", p:100},
-    {t:"   FIX: 157.0.8103.50/.51", c:"", p:280},
-    {t:"", p:60},
     {t:"================  NEW THIS SCAN  ================", c:"bright", p:200},
     {t:"", p:60},
-    {t:">> CVE-2026-114160 — Azure Managed Grafana EoP · 9.8", c:"warn", p:100},
-    {t:">> CVE-2026-66801 — Microsoft Xbox RCE · 9.8", c:"warn", p:100},
-    {t:">> CVE-2026-126087 — OpenJD / AWS Deadline RCE · 9.4", c:"warn", p:100},
-    {t:">> CVE-2026-125331 — HarnessRouter auth bypass · 9.1", c:"warn", p:100},
-    {t:">> CVE-2026-109492 — Microsoft MCP Gateway EoP · 8.8", c:"warn", p:100},
-    {t:">> CVE-2026-125329 — Kaneo credential disclosure · 8.4", c:"warn", p:240},
+    {t:">> CVE-2026-121529 — Fortinet FortiClient RCE · 9.6", c:"warn", p:100},
+    {t:"   Origin validation -> remote code/command execution", c:"bright", p:100},
+    {t:"   FIX: 7.4.8+ / 7.2.15+ (FG-IR-26-194)", c:"", p:200},
+    {t:"", p:60},
+    {t:">> CVE-2026-102166 — Arista C-260/C-250 APs · 9.4", c:"warn", p:100},
+    {t:"   Fleet-wide static keys -> forged firmware verifies", c:"bright", p:100},
+    {t:"   FIX: none — disable HMAC fallback (adv. 0227)", c:"", p:200},
+    {t:"", p:60},
+    {t:">> CVE-2026-95780 — HPE Private 5G Core · 8.8", c:"warn", p:100},
+    {t:"   Session auth bypass -> revoked sessions regained", c:"bright", p:100},
+    {t:"   FIX: 1.26.2.0+ (HPESBNW05179)", c:"", p:200},
+    {t:"", p:60},
+    {t:">> CVE-2026-121371 — Arista EOS eAPI · 8.7", c:"warn", p:100},
+    {t:"   Unauth path traversal -> files incl. credentials", c:"bright", p:100},
+    {t:"   FIX: 4.37.0F / 4.36.3.2M + (adv. 0218)", c:"", p:200},
+    {t:"", p:60},
+    {t:">> CVE-2026-125337 — Winter CMS · 8.3", c:"warn", p:100},
+    {t:"   Missing authz -> write records, export full dataset", c:"bright", p:100},
+    {t:"   FIX: 1.2.14", c:"", p:200},
+    {t:"", p:60},
+    {t:">> CVE-2025-61625 — FortiAnalyzer/FortiManager · 8.1", c:"warn", p:100},
+    {t:"   Path traversal -> read-only user writes/deletes files", c:"bright", p:100},
+    {t:"   FIX: 7.6.5+ / 7.4.8+ / 7.2.12+ (FG-IR-26-190)", c:"", p:240},
     {t:"", p:60},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
     {t:"", p:60},
@@ -42361,7 +42456,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
     {t:"   CVE-2026-97229 -> CISA KEV Oct 29 · EXPLOITED IN THE WILD", c:"dim", p:300},
     {t:"", p:80},
     {t:"==================================================", c:"bright", p:120},
-    {t:"[PRIORITY QUEUE: 1] Barracuda CVE-2026-116606 — patch ESG to 9.4.0.030.", c:"bright", p:120},
+    {t:"[PRIORITY QUEUE: 1] FortiClient CVE-2026-121529 — patch to 7.4.8 / 7.2.15.", c:"bright", p:120},
     {t:"Next scan: hourly — only material changes alert.", c:"dim", p:400},
     {t:"", p:60},
     {t:"C:\\COMFYPWN> _", c:"", p:6000}
@@ -42396,7 +42491,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   if(replayBtn){ replayBtn.addEventListener("click",function(){ paused=false; if(pauseBtn){pauseBtn.textContent="❚❚ PAUSE"; pauseBtn.setAttribute("aria-pressed","false");} start(); }); }
   start();
 })();
-/* ---- Full CVE dataset (Nov 10 13:30 ET sync) + drill-in details ---- */
+/* ---- Full CVE dataset (Nov 10 15:30 ET sync) + drill-in details ---- */
 var CVE_ITEMS=[];
 try{ CVE_ITEMS=JSON.parse(document.getElementById("cveData").textContent||"[]"); }catch(e){ CVE_ITEMS=[]; }
 var CVE_BY_ID={};
@@ -42660,7 +42755,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,760 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,766 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
