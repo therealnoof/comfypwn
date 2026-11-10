@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 9</span><span class="pill accent">2,332 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 9</span><span class="pill accent">2,349 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 9 6:30 PM ET:</strong> 2,332 CVEs tracked, filtered down to what needs action first. New this scan: 2 records added, 0 records changed — CVE-2026-88984 Kubeflow Pipelines RBAC bypass on shared pipelines (CVSS 7.2), and CVE-2026-102610 fast-agent unauthenticated RCE when --shell is enabled (CVSS 6.4). Neither of the 2 new records is flagged exploited in the wild or CISA KEV-listed in this snapshot. EPSS scores are included in this snapshot: 2,252 scored, 80 unscored — both new records arrive EPSS-scored. Highlighted Drops, the Ones to Watch, and the grouped 2,332-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 9 7:30 PM ET:</strong> 2,349 CVEs tracked, filtered down to what needs action first. New this scan: 17 records added, 0 records changed — headlined by CVE-2025-69971 FUXA v1.2.7 hard-coded JWT secret → forged admin tokens (CVSS 9.8, exploited in the wild, newly VulnCheck KEV-listed), three more 9.8s built on hard-coded or default credentials (CVE-2026-125370 Kubero forged admin JWTs; CVE-2026-125383 and CVE-2026-125384 INDOTALENT WHMS hard-coded JWT key and default admin credentials), a six-CVE Ettercap batch (CVE-2026-125400–125406, 8.1–8.8), Webmin root command injection (CVE-2026-125391, 8.6), and Ghostscript, Fluxion, Storyden, frab, Map-OS and Universal-modder flaws at 8.1–8.6. One of the 17 new records is flagged exploited in the wild (FUXA); none is CISA KEV-listed in this snapshot. EPSS scores are included in this snapshot: 2,253 scored, 96 unscored — only the FUXA record arrives EPSS-scored; the other 16 are unscored (brand new). Highlighted Drops, the Ones to Watch, and the grouped 2,349-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -430,7 +430,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>2,332</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>2,349</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 9</b><span>Last updated — hourly scans</span></div>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 2,332 CVEs</label>
+      <label for="cveSearch">Search all 2,349 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,332 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,349 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -497,7 +497,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 9 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1910 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 9 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1926 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 2 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -505,18 +505,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1910 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1926 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 2,332 CVEs</h2><p>Every entry from the Nov 9 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 2,349 CVEs</h2><p>Every entry from the Nov 9 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,332.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">2,332 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,349.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">2,349 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 9 6:30 PM ET hourly scan — 2 records added, 0 records changed (2,332 CVEs tracked). Added: CVE-2026-88984 Kubeflow Pipelines RBAC bypass on shared pipelines — in multi-user mode the API server skipped authorization checks for shared/global pipelines with an empty namespace, letting any authenticated user modify or delete shared pipelines without the required Kubernetes RBAC permissions (CVSS 7.2 v3.1; fixed in 2.16.1). CVE-2026-102610 fast-agent unauthenticated RCE when --shell is enabled — fast-agent serve binds 0.0.0.0:8000 with no authentication, so any host reaching the port can call the exposed agent tool, and with --shell the agent’s local execute tool runs arbitrary OS commands (fast-agent &lt;= 0.7.20; CVSS 6.4 v3.1; fixed in 0.7.21). Neither of the 2 new records is flagged exploited in the wild, CISA KEV-listed, or carrying a public PoC in this snapshot; both arrive EPSS-scored (0.0031 and 0.00291). Tier counts now stand at 859 CRITICAL, 1,328 HIGH, 21 MEDIUM, 1 LOW, 123 unscored across the set. EPSS scores are included in this snapshot: 2,252 scored, 80 unscored. By severity: 74 at 10.0, 785 at 9.0–9.9, 1,238 at 8.0–8.9 and 235 below 8.0 (incl. 123 unscored). Across the full set, 81 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 124 sit in the public-PoC group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 9 7:30 PM ET hourly scan — 17 records added, 0 records changed (2,349 CVEs tracked). Added: CVE-2025-69971 FUXA v1.2.7 hard-coded JWT secret — a hard-coded secret key in server/api/jwt-helper.js signs and verifies JWT tokens, so remote attackers forge valid admin tokens for full administrative access; EXPLOITED per VulnCheck (added to VulnCheck KEV 2026-11-10, canaries reported exploitation 2026-11-10), NOT in CISA KEV (CVSS 9.8 v3.1; specific fixed version unconfirmed — update to latest). CVE-2026-125370 Kubero 3.0.0–3.1.1 — unauthenticated attackers forge admin JWTs via the hardcoded fallback secret when JWT_SECRET is unset (CVSS 9.8 v3.1). CVE-2026-125383 INDOTALENT WHMS — auth bypass via the hard-coded JWT key in appsettings.json → administrator access to the entire API (CVSS 9.8 v3.1; fixed in 10.20261109). CVE-2026-125384 INDOTALENT WHMS — default admin credentials admin@root.com / 123456 → full control (CVSS 9.8 v3.1; fixed in 10.20261109). Plus thirteen more at 8.1–8.8: privilege-escalation-to-admin flaws in Storyden (CVE-2026-125360, 8.6), frab (CVE-2026-125364, 8.6) and Map-OS (CVE-2026-125382, 8.6, fixed in 5.2.2); Webmin OS command injection as root (CVE-2026-125391, 8.6); Ghostscript -dSAFER bypass → arbitrary code execution (CVE-2026-125396, 8.5; fixed in 10.08.0); Fluxion OS command injection via a crafted Wi-Fi SSID (CVE-2026-125399, 8.6; fixed in 6.39); Universal-modder missing WebSocket Origin validation → Minecraft commands with operator authority (CVE-2026-125358, 8.1); and a six-CVE Ettercap batch through 0.8.4.1 (CVE-2026-125400 8.8 use-after-free, CVE-2026-125401 8.1 heap overflow, CVE-2026-125402 8.1 TLS SNI OOB read, CVE-2026-125403 8.1 STS OOB read/underflow, CVE-2026-125405 8.1 NTLM OOB read, CVE-2026-125406 8.8 stack buffer underwrite; all fixed by commit 1d8badb). One of the 17 new records is flagged exploited in the wild (CVE-2025-69971, VulnCheck KEV-listed); none is CISA KEV-listed or carrying a public PoC in this snapshot. Only CVE-2025-69971 arrives EPSS-scored (0.02174); the other 16 are EPSS-unscored (null, brand new). Tier counts now stand at 863 CRITICAL, 1,341 HIGH, 21 MEDIUM, 1 LOW, 123 unscored across the set. EPSS scores are included in this snapshot: 2,253 scored, 96 unscored. By severity: 74 at 10.0, 789 at 9.0–9.9, 1,251 at 8.0–8.9 and 235 below 8.0 (incl. 123 unscored). Across the full set, 82 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 124 sit in the public-PoC group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 
@@ -7737,6 +7737,70 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "status": "RCE in Elo Ruby backend via unescaped interpolation. NO PATCH available. Not in CISA KEV; EPSS N/A (no CVE). ADDED 19:30 ET hourly - scope (1) CVSS 9.8. PRE-WINDOW CATCH: missed by 13:30 run (GHSA API 403 that run); verified no earlier run reviewed it.",
   "epss": null,
   "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-125370",
+  "title": "Kubero 3.0.0-3.1.1: unauthenticated attackers forge admin JWTs via hardcoded fallback secret -> full control",
+  "product": "Kubero 3.0.0-3.1.1",
+  "score": 9.8,
+  "cvss": "9.8 (CVSS v3.1)",
+  "fixed": "Release version unconfirmed - update to latest; mitigation: set a strong JWT_SECRET (flaw only triggers when unset)",
+  "published": "2026-11-10T00:17:09Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Unauthenticated remote attackers forge administrative JWTs using a hardcoded fallback signing secret when JWT_SECRET is unset; JwtStrategy.validate() trusts arbitrary role/userGroups/permissions claims without a DB lookup, taking control of pipelines, applications, users and API tokens. (CWE-321) No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS unscored (null, brand new).",
+  "src": "https://www.vulncheck.com/advisories/kubero-3.0.0-through-3.1.1-authentication-bypass-via-hardcoded-jwt-secret",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-125383",
+  "title": "INDOTALENT WHMS before 10.20261109: auth bypass via hard-coded JWT key -> administrator access to the entire API",
+  "product": "INDOTALENT WHMS (Asp.Net-Core-Inventory-Order-Management-System)",
+  "score": 9.8,
+  "cvss": "9.8 (CVSS v3.1)",
+  "fixed": "10.20261109",
+  "published": "2026-11-10T00:17:11Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Unauthenticated remote attackers forge tokens for any user ID and role using the hard-coded JWT signing key, issuer and audience in appsettings.json, gaining administrator access to the entire API. (CWE-321) No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS unscored (null, brand new).",
+  "src": "https://www.vulncheck.com/advisories/indotalent-whms-before-10.20261109-hard-coded-jwt-signing-key-authentication-bypass",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-125384",
+  "title": "INDOTALENT WHMS before 10.20261109: default admin credentials admin@root.com / 123456 -> full control",
+  "product": "INDOTALENT WHMS (Asp.Net-Core-Inventory-Order-Management-System)",
+  "score": 9.8,
+  "cvss": "9.8 (CVSS v3.1)",
+  "fixed": "10.20261109",
+  "published": "2026-11-10T00:17:11Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "UserAdminSeeder creates admin@root.com with password 123456, carrying every admin role with no forced password change; unauthenticated attackers log in and fully control deployments that kept the defaults. (CWE-1392) No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS unscored (null, brand new).",
+  "src": "https://www.vulncheck.com/advisories/indotalent-whms-before-10.20261109-default-administrator-credentials-via-useradminseeder",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2025-69971",
+  "title": "FUXA v1.2.7: hard-coded JWT secret -> forge valid admin tokens -> full admin access; newly VulnCheck KEV-listed",
+  "product": "frangoteam FUXA v1.2.7 (SCADA/HMI)",
+  "score": 9.8,
+  "cvss": "9.8 (CVSS v3.1)",
+  "fixed": "Specific fixed version unconfirmed - update to latest (latest release v1.3.5, 2026-10-19)",
+  "published": "2026-02-03T18:16:17Z (NVD); VulnCheck KEV addition 2026-11-10",
+  "exploited": true,
+  "kev": false,
+  "poc": false,
+  "status": "EXPLOITED per VulnCheck: added to VulnCheck KEV 2026-11-10, VulnCheck canaries reported exploitation 2026-11-10. NOT in CISA KEV. Hard-coded secret key in server/api/jwt-helper.js signs and verifies JWT tokens; remote attackers forge valid admin tokens and bypass authentication to gain full administrative access. (CWE-798) EPSS 0.02174 / 82.44th pct (2026-11-09 data).",
+  "src": "https://github.com/frangoteam/FUXA/blob/master/server/api/jwt-helper.js",
+  "epss": 0.02174,
+  "epss_percentile": 82.44
  },
  {
   "id": "CVE-2025-65200",
@@ -21223,6 +21287,38 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-125400",
+  "title": "Ettercap through 0.8.4.1: use-after-free in func_pcre() -> memory corruption / code exec as root",
+  "product": "Ettercap through 0.8.4.1",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "Fix commit 1d8badb713579419a29a494bb463a1af59707e98; release version unconfirmed - update to latest",
+  "published": "2026-11-10T00:17:14Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Use-after-free in func_pcre(): reads the PCRE2 ovector after freeing match data; network-adjacent attackers sending packets matching a loaded pcre_regex() substitution filter corrupt memory and potentially execute code as root. Part of a coordinated 6-CVE Ettercap batch (125400-125406), all fixed by commit 1d8badb. (CWE-416) No exploitation reported; not in CISA KEV. EPSS unscored (null, brand new).",
+  "src": "https://github.com/Ettercap/ettercap/security/advisories/GHSA-f3j5-rhhr-85j5",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-125406",
+  "title": "Ettercap through 0.8.4.1: stack buffer underwrite in telnet dissector -> stack corruption in root process",
+  "product": "Ettercap through 0.8.4.1",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "Fix commit 1d8badb713579419a29a494bb463a1af59707e98; release version unconfirmed - update to latest",
+  "published": "2026-11-10T00:17:15Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Stack buffer underwrite in the telnet dissector: decrements the output pointer on backspace without a lower bound check; a telnet stream with more backspaces than preceding characters writes below the stack buffer, corrupting the stack of the Ettercap process that normally runs as root. Part of a coordinated 6-CVE Ettercap batch (125400-125406), all fixed by commit 1d8badb. (CWE-124) No exploitation reported; not in CISA KEV. EPSS unscored (null, brand new).",
+  "src": "https://github.com/Ettercap/ettercap/security/advisories/GHSA-w5ch-7c4x-crcc",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2010-20125",
   "title": "DedeCMS file inclusion in plus/carbuyaction.php -> local file disclosure (old CVE, newly published)",
   "product": "DedeCMS before 5.7",
@@ -24558,6 +24654,86 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": 17.871
  },
  {
+  "id": "CVE-2026-125360",
+  "title": "Storyden through 1.26.16: MANAGE_ROLES holders grant themselves ADMINISTRATOR -> full control of the instance",
+  "product": "Storyden through 1.26.16",
+  "score": 8.6,
+  "cvss": "8.6 (CVSS v4.0)",
+  "fixed": "Fix commit bf9d872179dad727f1315b409298677e77355229; release version unconfirmed - update to latest",
+  "published": "2026-11-10T00:17:07Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Users holding MANAGE_ROLES grant the ADMINISTRATOR permission without being administrators, via AccountAddRole on a controlled account or RoleCreate/RoleUpdate, taking full control of the instance. (CWE-269) No exploitation reported; not in CISA KEV. EPSS unscored (null, brand new).",
+  "src": "https://www.vulncheck.com/advisories/storyden-through-1.26.16-privilege-escalation-via-manage-roles-role-assignment",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-125364",
+  "title": "frab through 0.9.1: authenticated crew users grant themselves orga roles -> fully manage any conference",
+  "product": "frab through 0.9.1",
+  "score": 8.6,
+  "cvss": "8.6 (CVSS v4.0)",
+  "fixed": "Fix commit 8d14d491ac73f2e19030e95a86b6575106270eeb; release version unconfirmed - update to latest",
+  "published": "2026-11-10T00:17:08Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Authenticated crew users grant themselves orga roles by submitting unchecked nested conference_users_attributes; UsersController#update/#create skip filter_conference_users, letting attackers gain orga on any conference and fully manage its events, schedule, reviewers and crew. (CWE-269) No exploitation reported; not in CISA KEV. EPSS unscored (null, brand new).",
+  "src": "https://www.vulncheck.com/advisories/frab-through-0.9.1-privilege-escalation-via-conference-users-attributes-in-userscontroller",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-125382",
+  "title": "Map-OS 5.0.0-5.2.1: privesc via REST users API - assign Administrador group, reset super admin password",
+  "product": "Map-OS 5.0.0-5.2.1",
+  "score": 8.6,
+  "cvss": "8.6 (CVSS v4.0)",
+  "fixed": "5.2.2",
+  "published": "2026-11-10T00:17:11Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Non-administrator operators holding the cUsuario permission bypass permission-delegation and super-administrator protections via POST/PUT/DELETE to /api/v1/usuarios, assigning the Administrador group, resetting the super administrator password, or deleting higher-privileged users. (CWE-269) No exploitation reported; not in CISA KEV. EPSS unscored (null, brand new).",
+  "src": "https://www.vulncheck.com/advisories/map-os-5.0.0-to-before-5.2.2-privilege-escalation-via-api-v1-usuarios",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-125391",
+  "title": "Webmin through 2.670: OS command injection in Samba user options -> code execution as root",
+  "product": "Webmin through 2.670",
+  "score": 8.6,
+  "cvss": "8.6 (CVSS v4.0)",
+  "fixed": "Fix commit 18cab89b1fc74ab7e8b1b8b90bbccbe5aba99154; release version unconfirmed - update to latest",
+  "published": "2026-11-10T00:17:12Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Authenticated Samba user maintainers inject commands via the unvalidated opts parameter in samba/save_euser.cgi; shell metacharacters in account option flags reach backquote_logged, executing commands as root. (CWE-78) No exploitation reported; not in CISA KEV. EPSS unscored (null, brand new).",
+  "src": "https://www.vulncheck.com/advisories/webmin-through-2.670-os-command-injection-via-samba-user-account-options",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-125399",
+  "title": "Fluxion before 6.39: OS command injection via crafted Wi-Fi SSID -> commands as root when operator scans the AP",
+  "product": "Fluxion before 6.39",
+  "score": 8.6,
+  "cvss": "8.6 (CVSS v4.0)",
+  "fixed": "6.39",
+  "published": "2026-11-10T00:17:14Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "The fluxion.sh target scanner decodes access point ESSIDs with eval after escaping only single quotes; attackers within Wi-Fi range broadcast a crafted SSID to execute commands as root when the operator scans or selects it. (CWE-78) No exploitation reported; not in CISA KEV. EPSS unscored (null, brand new).",
+  "src": "https://www.vulncheck.com/advisories/fluxion-before-6.39-os-command-injection-via-crafted-ssid",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-102340",
   "title": "Telepresence Traffic Manager gRPC accepts unauthenticated cluster-network callers (arbitrary namespace intercept)",
   "product": "Telepresence <2.31.0",
@@ -26450,6 +26626,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "status": "No exploitation reported; not in CISA KEV. Heap buffer overflow handling GLX RenderLarge requests where dataBytes exceeds cmdlen; an authenticated X client can trigger it, causing crashes or code execution in X server context. Fixed X server 21.1.25 / XWayland 24.1.14. EPSS unscored (brand new).",
   "epss": 0.00193,
   "epss_percentile": 8.979
+ },
+ {
+  "id": "CVE-2026-125396",
+  "title": "Ghostscript before 10.08.0: -dSAFER bypass via .putgstringcopy/.forceput -> arbitrary code execution",
+  "product": "Ghostscript before 10.08.0",
+  "score": 8.5,
+  "cvss": "8.5 (CVSS v4.0)",
+  "fixed": "10.08.0",
+  "published": "2026-11-10T00:17:13Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Crafted PostScript/PDF documents trigger a type error in .putgstringcopy, recover the privileged .forceput operator via a custom error handler, and cause a use-after-free across save/restore to execute arbitrary code, bypassing -dSAFER. (CWE-648) No exploitation reported; not in CISA KEV. EPSS unscored (null, brand new).",
+  "src": "https://www.vulncheck.com/advisories/ghostscript-before-10.08.0-dsafer-bypass-via-putgstringcopy-forceput-recovery",
+  "epss": null,
+  "epss_percentile": null
  },
  {
   "id": "CVE-2025-68393",
@@ -31747,6 +31939,86 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": 27.092
  },
  {
+  "id": "CVE-2026-125358",
+  "title": "Universal-modder before commit e88f687: missing WebSocket Origin validation -> any web page runs Minecraft commands with operator authority",
+  "product": "Universal-modder (Minecraft passthrough mods)",
+  "score": 8.1,
+  "cvss": "8.1 (CVSS v3.1)",
+  "fixed": "Commit e88f6876745427321eb755ebc98276063a962d8a; no release version stated",
+  "published": "2026-11-10T00:17:07Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Missing WebSocket Origin validation in the HostLink class of the passthrough example mods; any web page open in the player's browser can connect cross-site to the unauthenticated loopback WebSocket and send cmd messages that WorldBridge.command() runs with operator authority. (CWE-1385) No exploitation reported; not in CISA KEV. EPSS unscored (null, brand new).",
+  "src": "https://www.vulncheck.com/advisories/universal-modder-before-e88f687-cross-site-websocket-command-execution-via-hostlink",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-125401",
+  "title": "Ettercap through 0.8.4.1: heap buffer overflow in Gadu-Gadu dissector -> heap corruption in root process",
+  "product": "Ettercap through 0.8.4.1",
+  "score": 8.1,
+  "cvss": "8.1 (CVSS v3.1)",
+  "fixed": "Fix commit 1d8badb713579419a29a494bb463a1af59707e98; release version unconfirmed - update to latest",
+  "published": "2026-11-10T00:17:14Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Heap buffer overflow in gg_get_version(): writes up to 44 bytes into a 30-byte allocation; remote attackers send crafted Gadu-Gadu version fields on TCP 8074 through a monitored network to corrupt heap memory in the Ettercap process, which normally runs as root. Part of a coordinated 6-CVE Ettercap batch (125400-125406), all fixed by commit 1d8badb. (CWE-122) No exploitation reported; not in CISA KEV. EPSS unscored (null, brand new).",
+  "src": "https://github.com/Ettercap/ettercap/security/advisories/GHSA-vrjv-f8gv-2h35",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-125402",
+  "title": "Ettercap through 0.8.4.1: heap OOB read in TLS SNI parsing -> leak up to 64 KB heap or crash",
+  "product": "Ettercap through 0.8.4.1",
+  "score": 8.1,
+  "cvss": "8.1 (CVSS v3.1)",
+  "fixed": "Fix commit 1d8badb713579419a29a494bb463a1af59707e98; release version unconfirmed - update to latest",
+  "published": "2026-11-10T00:17:14Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Heap out-of-bounds read in sslw_get_clienthello_sni(): trusts the unchecked 16-bit SNI length field; crafted TLS ClientHello messages during SSL interception leak up to 64 KB of heap memory or crash Ettercap. Info-disclosure/crash class. Part of a coordinated 6-CVE Ettercap batch (125400-125406), all fixed by commit 1d8badb. (CWE-125) No exploitation reported; not in CISA KEV. EPSS unscored (null, brand new).",
+  "src": "https://github.com/Ettercap/ettercap/security/advisories/GHSA-v48w-7cvh-c7f4",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-125403",
+  "title": "Ettercap through 0.8.4.1: OOB read + size_t underflow in sslw_remove_sts() -> memory corruption in root process",
+  "product": "Ettercap through 0.8.4.1",
+  "score": 8.1,
+  "cvss": "8.1 (CVSS v3.1)",
+  "fixed": "Fix commit 1d8badb713579419a29a494bb463a1af59707e98; release version unconfirmed - update to latest",
+  "published": "2026-11-10T00:17:14Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Out-of-bounds read and size_t underflow in sslw_remove_sts() when stripping Strict-Transport-Security headers; a malicious HTTPS server whose response passes through Ettercap's SSL interception triggers out-of-bounds reads and memory corruption in the root-running process. Part of a coordinated 6-CVE Ettercap batch (125400-125406), all fixed by commit 1d8badb. (CWE-125) No exploitation reported; not in CISA KEV. EPSS unscored (null, brand new).",
+  "src": "https://github.com/Ettercap/ettercap/security/advisories/GHSA-hq2w-pg4m-6w63",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-125405",
+  "title": "Ettercap through 0.8.4.1: OOB read in NTLM auth parsing -> memory disclosure or crash",
+  "product": "Ettercap through 0.8.4.1",
+  "score": 8.1,
+  "cvss": "8.1 (CVSS v3.1)",
+  "fixed": "Fix commit 1d8badb713579419a29a494bb463a1af59707e98; release version unconfirmed - update to latest",
+  "published": "2026-11-10T00:17:15Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Out-of-bounds read in Parse_NTLM_Auth(): unvalidated NTLM message offsets; a crafted HTTP Authorization header observed by Ettercap reads beyond the buffer, disclosing memory or crashing the process. Info-disclosure/crash class. Part of a coordinated 6-CVE Ettercap batch (125400-125406), all fixed by commit 1d8badb. (CWE-125) No exploitation reported; not in CISA KEV. EPSS unscored (null, brand new).",
+  "src": "https://github.com/Ettercap/ettercap/security/advisories/GHSA-jw9q-j2rm-94j2",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-101602",
   "title": "Low-privileged HTTP attacker takes over Oracle Agile PLM for Process; requires user interaction (Oracle Oct 2026 CPU)",
   "product": "Oracle Agile PLM for Process (Product Quality Management)",
@@ -35734,18 +36006,20 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-09 --run 6:30 PM ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-09 --run 7:30 PM ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning — 2,332 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 2 new CVEs", c:"", p:200},
-    {t:"  CVE-2026-88984 Kubeflow Pipelines — RBAC bypass 7.2", c:"warn", p:120},
-    {t:"  CVE-2026-102610 fast-agent — unauth RCE (--shell) 6.4", c:"warn", p:120},
-    {t:"  EPSS: 2,252 scored · 80 unscored", c:"dim", p:200},
+    {t:"Scanning — 2,349 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: 17 new CVEs", c:"", p:200},
+    {t:"  CVE-2025-69971 FUXA — hard-coded JWT secret 9.8 ** WILD **", c:"warn", p:120},
+    {t:"  CVE-2026-125370 Kubero — forged admin JWTs 9.8", c:"warn", p:120},
+    {t:"  CVE-2026-125383/125384 INDOTALENT WHMS — JWT key + default admin 9.8", c:"warn", p:120},
+    {t:"  + Ettercap ×6 (8.1–8.8) · Webmin root cmd injection 8.6 · Ghostscript 8.5", c:"warn", p:120},
+    {t:"  EPSS: 2,253 scored · 96 unscored", c:"dim", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
@@ -36072,7 +36346,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,332 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,349 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
