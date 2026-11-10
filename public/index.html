@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 10</span><span class="pill accent">2,863 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 10</span><span class="pill accent">2,867 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 10 5:30 PM ET:</strong> 2,863 CVEs tracked, filtered down to what needs action first. Thirty-five new CVEs were added this scan (total up from 2,828 to 2,863), with no status changes to any tracked CVE: the Adobe Connect batch of 20 under APSB26-191, scoring 8.3–10.0 — path traversal, SQL injection, XXE, code injection and SSRF flaws, all fixed in 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a — four Adobe Experience Manager flaws at 9.9 under APSB26-189 (code injection and incorrect authorization to arbitrary code execution; fixed in AEM as a Cloud Service 2026.10.29251 and the AEM 6.5 6.5.25 cumulative hotfix), a Basel Post Types WordPress plugin authentication bypass via a hardcoded Opauth salt that logs an attacker in as any user including admin (CVE-2026-89324, 9.8 — already exploited per VulnCheck KEV; no confirmed fixed version in the CVE record), two AsiaInfo BSS flaws at 9.8 — unauthenticated admin-account provisioning via the management API (CVE-2026-125297) and a JWT signature-verification bypass (CVE-2026-125298), both fixed in 9.2.41 — five N-able N-central flaws: SSRF (CVE-2026-125881, 9.3) and XXE (CVE-2026-125883, 9.3), relative path traversal (CVE-2026-125882, 8.6) and incorrect privilege assignment (CVE-2026-125879, 8.6), all fixed in 26.4.1, plus root RCE via an unsigned NSP upgrade package (CVE-2026-125958, 7.5; fix version unconfirmed) — a Zephyr RTOS HTTP/2 static-file handler out-of-bounds read/write an unauthenticated attacker can trigger for remote memory corruption (CVE-2026-82391, 9.1; upstream fix commit, release version unconfirmed), a Rails Active Storage Blob#open decoder-confusion flaw (CVE-2026-126186, 8.8; fixed in 8.1.4.1 / 8.0.5.2 — companion to last scan’s 9.8 Active Storage flaw), and a USGS ARMI authenticated file-upload PHP RCE (CVE-2026-107356, 8.8; fixed 2026-07-20 per the CVE record). Only Basel is exploited in the wild and none of the 35 is in CISA KEV: Basel sits in the In the wild group, 33 of the 35 land in the Ones to Watch group, which grows from 2,357 to 2,390, and the 7.5 N-central flaw sits below the group’s 8.0 bar. The pending signal from earlier scans, ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8) with no CVE assigned yet, still sits with the pre-CVE early signals below, outside the 2,863. EPSS (data 2026-11-10): 2,413 scored and 450 unscored across the set — all 35 new records are unscored as brand new. Highlighted Drops, the Ones to Watch, and the grouped 2,863-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 10 6:30 PM ET:</strong> 2,867 CVEs tracked, filtered down to what needs action first. Four new CVEs were added this scan (total up from 2,863 to 2,867), and four already-tracked N-central records were corrected: a FortiManager unauthenticated remote code/command execution flaw reachable via crafted FGFM packets (CVE-2026-126261, 9.8; fixed in 8.0.1 / 7.6.8 / 7.4.6 / 7.2.9, FG-IR-26-275), a React Server Components unauthenticated RCE in the typed-array / use-cache handling (CVE-2026-126187, 9.5; disclosed by the React team Oct 14 with a public PoC, its NVD record landed this window; fixed in React 19.0.9 / 19.1.10 / 19.2.9 / 19.3.1 and Next.js 15.5.28 / 16.4.1), and two more N-able N-central flaws from the Able2Shell emergency hotfix — an OGNL injection leading to RCE (CVE-2026-125878, 8.7) and a stored XSS in the MMS3 patch metadata that runs in an admin’s browser (CVE-2026-125880, 8.3), both fixed in N-central 2026.4.1 (2026.4 HF2). The hotfix ships with 7 CVEs assigned, and CSO Online’s reporting plus N-able’s own advisories now confirm the four N-central flaws added last scan — SSRF (CVE-2026-125881, 9.3), XXE (CVE-2026-125883, 9.3), relative path traversal (CVE-2026-125882, 8.6) and incorrect privilege assignment (CVE-2026-125879, 8.6) — are Able2Shell hotfix CVEs too, fixed in 2026.4.1 / 2026.4 HF2; their records are updated accordingly. None of the four new records is exploited in the wild or in CISA KEV: all four land in the Ones to Watch group, which grows from 2,390 to 2,394. The pending signal from earlier scans, ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8) with no CVE assigned yet, still sits with the pre-CVE early signals below, outside the 2,867. EPSS (data 2026-11-10): 2,413 scored and 454 unscored across the set — all 4 new records are unscored as brand new. Highlighted Drops, the Ones to Watch, and the grouped 2,867-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -430,7 +430,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>2,863</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>2,867</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 10</b><span>Last updated — hourly scans</span></div>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 2,863 CVEs</label>
+      <label for="cveSearch">Search all 2,867 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,863 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,867 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -505,18 +505,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 2390 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 2394 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 2,863 CVEs</h2><p>Every entry from the Nov 10 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 2,867 CVEs</h2><p>Every entry from the Nov 10 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,863.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">2,863 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,867.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">2,867 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 10 5:30 PM ET hourly scan — 35 records added (total up from 2,828 to 2,863 CVEs tracked); no tracked-CVE status changes this scan and no new pending early signal. Of the 35 new records, one is already exploited — the Basel Post Types authentication bypass — and none is in CISA KEV: Adobe Connect APSB26-191 batch of 20 (8.3–10.0; path traversal, SQL injection, XXE, code injection and SSRF; fixed 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a), Adobe Experience Manager APSB26-189 batch of 4 at 9.9 (code injection and incorrect authorization to arbitrary code execution; fixed AEM as a Cloud Service 2026.10.29251; AEM 6.5: 6.5.25 Cumulative Hotfix for GRANITE-75398; AEM 6.5 LTS SP3: same hotfix), Basel Post Types plugin auth bypass via hardcoded Opauth salt CVE-2026-89324 (9.8; EXPLOITED per VulnCheck KEV — the KEV listing predates this window; the NVD record landed this window; fixed version not stated in the CVE record, unconfirmed beyond 1.18), AsiaInfo BSS unauthenticated management-API admin provisioning CVE-2026-125297 (9.8; fixed 9.2.41) and JWT signature-verification bypass CVE-2026-125298 (9.8; fixed 9.2.41), N-able N-central SSRF CVE-2026-125881 (9.3; fixed 26.4.1), XXE CVE-2026-125883 (9.3; fixed 26.4.1), relative path traversal CVE-2026-125882 (8.6; fixed 26.4.1), incorrect privilege assignment CVE-2026-125879 (8.6; fixed 26.4.1) and root RCE via unsigned NSP upgrade package CVE-2026-125958 (7.5; fix version unconfirmed), Zephyr RTOS HTTP/2 static-file handler out-of-bounds read/write CVE-2026-82391 (9.1; upstream fix commit 4e0a5f38, GHSA-8jrg-wx88-g75j; release version unconfirmed), Rails Active Storage Blob#open decoder confusion CVE-2026-126186 (8.8; fixed 8.1.4.1 / 8.0.5.2; companion to the 16:30 run’s Rails Active Storage 9.8, same release train), and USGS ARMI authenticated file-upload PHP RCE CVE-2026-107356 (8.8; fixed 2026-07-20 per the CVE record). Pending signal carried over: ZDI-26-900 — Wireshark SMB object export integer overflow RCE, ZDI CVSS 8.8, no CVE assigned yet, so it is not part of the 2,863. EPSS (data 2026-11-10): 2,413 scored, 450 unscored across the set; all 35 new records are EPSS-unscored as brand new. Tier counts now stand at 971 CRITICAL, 1,725 HIGH, 22 MEDIUM, 1 LOW, 144 unscored across the set. By severity: 89 at 10.0, 882 at 9.0–9.9, 1,624 at 8.0–8.9 and 268 below 8.0 (incl. 144 records scored 0.0). Across the full set, 92 records are flagged exploited in the wild, 64 carry a CISA KEV flag, and 169 carry a public-PoC flag; in the grouped index, 92 sit in the In the wild group, 13 sit in the CISA KEV-listed group, 136 sit in the public-PoC group, and 2,390 sit in the Ones to watch group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 10 6:30 PM ET hourly scan — 4 records added (total up from 2,863 to 2,867 CVEs tracked); four tracked N-central records corrected this scan (now confirmed Able2Shell hotfix CVEs) and no new pending early signal. Of the 4 new records, none is exploited in the wild and none is in CISA KEV: Fortinet FortiManager unauthenticated RCE via crafted FGFM packets CVE-2026-126261 (9.8; fixed 8.0.1 / 7.6.8 / 7.4.6 / 7.2.9; FG-IR-26-275), React Server Components unauthenticated RCE CVE-2026-126187 (9.5; CWE-502 deserialization; public PoC exists, no confirmed in-the-wild exploitation; fixed React 19.0.9 / 19.1.10 / 19.2.9 / 19.3.1, Next.js 15.5.28 / 16.4.1), N-able N-central OGNL injection to RCE CVE-2026-125878 (8.7; fixed 2026.4.1 — Able2Shell hotfix CVE, N-central 2026.4 HF2) and stored XSS in admin context CVE-2026-125880 (8.3; fixed 2026.4.1 — Able2Shell hotfix CVE). Corrected records: N-central SSRF CVE-2026-125881 (9.3), XXE CVE-2026-125883 (9.3), relative path traversal CVE-2026-125882 (8.6) and incorrect privilege assignment CVE-2026-125879 (8.6) are now confirmed Able2Shell hotfix CVEs per CSO Online (Nov 10) and N-able’s own advisories — the 5:30 PM scan’s “not the Able2Shell set” note is withdrawn for these four; all fixed in 2026.4.1 / 2026.4 HF2. Pending signal carried over: ZDI-26-900 — Wireshark SMB object export integer overflow RCE, ZDI CVSS 8.8, no CVE assigned yet, so it is not part of the 2,867. EPSS (data 2026-11-10): 2,413 scored, 454 unscored across the set; all 4 new records are EPSS-unscored as brand new. Tier counts now stand at 973 CRITICAL, 1,727 HIGH, 22 MEDIUM, 1 LOW, 144 unscored across the set. By severity: 89 at 10.0, 884 at 9.0–9.9, 1,626 at 8.0–8.9 and 268 below 8.0 (incl. 144 records scored 0.0). Across the full set, 92 records are flagged exploited in the wild, 64 carry a CISA KEV flag, and 169 carry a public-PoC flag; in the grouped index, 92 sit in the In the wild group, 13 sit in the CISA KEV-listed group, 136 sit in the public-PoC group, and 2,394 sit in the Ones to watch group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 
@@ -8858,6 +8858,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-126261",
+  "title": "FortiManager unauthenticated remote code/command execution via crafted FGFM packets, 9.8, fixed 8.0.1/7.6.8/7.4.6/7.2.9 (FG-IR-26-275)",
+  "product": "Fortinet FortiManager",
+  "score": 9.8,
+  "cvss": "v3.1 (NVD 9.8; Fortinet CNA 9.0)",
+  "fixed": "8.0.1 or above / 7.6.8 or above / 7.4.6 or above / 7.2.9 or above (Fortinet CNA solutions, re-read via CIRCL)",
+  "published": "2026-11-10T23:17:20.897 (NVD; CNA datePublished 2026-11-10T22:23:59Z)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 18:30 ET hourly): newly published in window (NVD pub sweep; FG-IR-26-275). Scope (1) 9.8 + (2) unauthenticated RCE in a management-plane product (FGFM port). No exploitation reported; not in CISA KEV (catalog 2026.11.10, 1,779 entries); VulnCheck KEV negative (0 documents); EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-126261",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2025-65200",
   "title": "LocalStack CloudFormation deploy endpoint RCE via crafted templateURL content (lag-gap catch-up)",
   "product": "LocalStack 4.9.2",
@@ -10399,6 +10415,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-10 16:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 9.5 + (2) RCE possible (unauthenticated trigger; RCE 'under certain conditions'). No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-118383",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126187",
+  "title": "React Server Components unauthenticated remote code execution (typed-array / use cache), 9.5, fixed 19.0.9/19.1.10/19.2.9/19.3.1 (Next.js 15.5.28/16.4.1)",
+  "product": "React (react-server-dom-webpack/parcel/turbopack) / Next.js",
+  "score": 9.5,
+  "cvss": "v4.0 (NVD 9.5; GHSA CVSS 4.0 9.5)",
+  "fixed": "React 19.0.9 / 19.1.10 / 19.2.9 / 19.3.1; Next.js 15.5.28 / 16.4.1",
+  "published": "2026-11-10T23:17:20.687 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 18:30 ET hourly): newly published in window (NVD pub sweep). Disclosed by the React team Oct 14 (GHSA-xqc2-xf4c-x3h3; Next.js GHSA-673q-mjm6-r5xr) but the CVE ID / NVD record landed this window - NVD-publication-lag case, cf. CVE-2026-89324 at 17:30. Scope (1) 9.5 + (2) unauthenticated RCE (CWE-502 deserialization). Public PoC exists (hash-sec write-up + PoC repo, Oct 2026); no confirmed in-the-wild exploitation attributed to this CVE; not in CISA KEV (catalog 2026.11.10, 1,779 entries); VulnCheck KEV negative (0 documents); EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-126187",
   "epss": null,
   "epss_percentile": null
  },
@@ -12213,7 +12245,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "exploited": false,
   "kev": false,
   "poc": false,
-  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 9.3 + (2) SSRF in a management-plane product (vLLM SSRF precedent). NOT the Able2Shell set - public reporting states no CVE has been assigned to the 33-flaw Able2Shell disclosure; this is N-able's separate November CVE batch with fix 26.4.1. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 9.3 + (2) SSRF in a management-plane product (vLLM SSRF precedent). NOT the Able2Shell set - public reporting states no CVE has been assigned to the 33-flaw Able2Shell disclosure; this is N-able's separate November CVE batch with fix 26.4.1. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new). CORRECTION 2026-11-10 18:30 ET: CSO Online (Nov 10) reports the Able2Shell emergency hotfix (N-central 2026.4 HF2) lists this CVE among its 7 CVEs, and N-able's own advisories (published 11/10/2026) confirm fix 2026.4.1. The 17:30 run's 'NOT the Able2Shell set' note is WITHDRAWN for this CVE - it IS an Able2Shell hotfix CVE. (CVE-2026-125958, 7.5 root RCE, is NOT among CSO's 7 and stays tracked separately.)",
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-125881",
   "epss": null,
   "epss_percentile": null
@@ -12229,7 +12261,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "exploited": false,
   "kev": false,
   "poc": false,
-  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 9.3 + (2) XXE in a management-plane product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 9.3 + (2) XXE in a management-plane product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new). CORRECTION 2026-11-10 18:30 ET: CSO Online (Nov 10) reports the Able2Shell emergency hotfix (N-central 2026.4 HF2) lists this CVE among its 7 CVEs, and N-able's own advisories (published 11/10/2026) confirm fix 2026.4.1. The 17:30 run's 'NOT the Able2Shell set' note is WITHDRAWN for this CVE - it IS an Able2Shell hotfix CVE. (CVE-2026-125958, 7.5 root RCE, is NOT among CSO's 7 and stays tracked separately.)",
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-125883",
   "epss": null,
   "epss_percentile": null
@@ -29138,6 +29170,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-125878",
+  "title": "N-central OGNL injection vulnerabilities lead to RCE (N-able advisory title) / XSS resource injection (CNA description), 8.7, fixed 26.4.1 - Able2Shell hotfix CVE",
+  "product": "N-able N-central",
+  "score": 8.7,
+  "cvss": "v4.0 (NVD 8.7)",
+  "fixed": "2026.4.1 (N-central 2026.4 HF2)",
+  "published": "2026-11-10T22:18:30.380 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 18:30 ET hourly): CORRECTION / RE-ADJUDICATION - NVD record landed in the 17:30 window and was declined there as '8.7 XSS' before any public mapping to Able2Shell existed. CSO Online (Nov 10) now reports the Able2Shell emergency hotfix (N-central 2026.4 HF2) lists 7 CVEs including this one, and N-able's advisory titles it OGNL injection leading to RCE. Scope (1) 8.7 + (2) RCE class per the vendor advisory title. Public PoC via the Able2Shell repo (published Nov 8/9); scanning activity observed (N-able; Previdian: 68 exploitation attempts against one honeypot from a single IP within ~18h of publication; watchTowr: exploitation attempts against N-central honeypots); NO confirmed successful exploitation of customer environments (N-able: no evidence); not in CISA KEV (catalog 2026.11.10, 1,779 entries); VulnCheck KEV negative (not in Nov 9-10 set); EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-125878",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2023-7357",
   "title": "FlexNet Publisher lmadmin web UI remote code execution (CWE-829)",
   "product": "FlexNet Publisher (lmadmin web UI) before 2023 R2 (11.19.4.0)",
@@ -30963,7 +31011,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "exploited": false,
   "kev": false,
   "poc": false,
-  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 8.6, management-plane product. NOT the Able2Shell set (see 125881 note). No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 8.6, management-plane product. NOT the Able2Shell set (see 125881 note). No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new). CORRECTION 2026-11-10 18:30 ET: CSO Online (Nov 10) reports the Able2Shell emergency hotfix (N-central 2026.4 HF2) lists this CVE among its 7 CVEs, and N-able's own advisories (published 11/10/2026) confirm fix 2026.4.1. The 17:30 run's 'NOT the Able2Shell set' note is WITHDRAWN for this CVE - it IS an Able2Shell hotfix CVE. (CVE-2026-125958, 7.5 root RCE, is NOT among CSO's 7 and stays tracked separately.)",
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-125882",
   "epss": null,
   "epss_percentile": null
@@ -30979,7 +31027,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "exploited": false,
   "kev": false,
   "poc": false,
-  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 8.6 + (3) privilege escalation in a management-plane product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 8.6 + (3) privilege escalation in a management-plane product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new). CORRECTION 2026-11-10 18:30 ET: CSO Online (Nov 10) reports the Able2Shell emergency hotfix (N-central 2026.4 HF2) lists this CVE among its 7 CVEs, and N-able's own advisories (published 11/10/2026) confirm fix 2026.4.1. The 17:30 run's 'NOT the Able2Shell set' note is WITHDRAWN for this CVE - it IS an Able2Shell hotfix CVE. (CVE-2026-125958, 7.5 root RCE, is NOT among CSO's 7 and stays tracked separately.)",
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-125879",
   "epss": null,
   "epss_percentile": null
@@ -35115,6 +35163,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe Connect APSB26-191 batch (20 CVEs). Scope (1) 8.3 + (2) RCE/admin class. Server-side Adobe - tracked per precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121900",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-125880",
+  "title": "N-central stored XSS via MMS3 patch metadata (admin context), 8.3, fixed 26.4.1 - Able2Shell hotfix CVE",
+  "product": "N-able N-central",
+  "score": 8.3,
+  "cvss": "v4.0 (NVD 8.3)",
+  "fixed": "2026.4.1 (N-central 2026.4 HF2)",
+  "published": "2026-11-10T22:18:30.710 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 18:30 ET hourly): CORRECTION / RE-ADJUDICATION - NVD record landed in the 17:30 window and was declined there as '8.3 XSS' before any public mapping to Able2Shell existed. CSO Online (Nov 10) now reports the Able2Shell emergency hotfix (N-central 2026.4 HF2) lists 7 CVEs including this one. Scope (1) 8.3; admin-context stored XSS is a link in the Able2Shell chain (CSO: the XSS payload runs in an admin's browser and invokes a command-execution interface as the nable user). Public PoC via the Able2Shell repo (published Nov 8/9); scanning activity observed (N-able; Previdian honeypot attempts); NO confirmed successful exploitation of customer environments (N-able: no evidence); not in CISA KEV (catalog 2026.11.10, 1,779 entries); VulnCheck KEV negative (not in Nov 9-10 set); EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-125880",
   "epss": null,
   "epss_percentile": null
  },
@@ -43935,59 +43999,39 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-10 --run 5:30 PM ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-10 --run 6:30 PM ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning — 2,863 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 35 new CVEs — 1 already exploited", c:"", p:200},
-    {t:"  NEW: Adobe Connect x20 — to 10.0 (APSB26-191)", c:"warn", p:120},
-    {t:"  NEW: Adobe Experience Manager x4 — 9.9 (APSB26-189)", c:"warn", p:120},
-    {t:"  NEW: Basel Post Types 9.8 — EXPLOITED (VulnCheck KEV)", c:"warn", p:120},
-    {t:"  NEW: AsiaInfo BSS 9.8 x2 · N-able N-central x5 — to 9.3", c:"warn", p:120},
-    {t:"  NEW: Zephyr HTTP/2 9.1 · Rails ActiveStorage 8.8 · USGS ARMI 8.8", c:"warn", p:120},
+    {t:"Scanning — 2,867 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: 4 new CVEs — none in the wild", c:"", p:200},
+    {t:"  NEW: FortiManager unauth RCE 9.8 (FG-IR-26-275)", c:"warn", p:120},
+    {t:"  NEW: React Server Components unauth RCE 9.5", c:"warn", p:120},
+    {t:"  NEW: N-central OGNL RCE 8.7 · stored XSS 8.3 (Able2Shell)", c:"warn", p:120},
+    {t:"  UPDATE: 4 N-central CVEs confirmed Able2Shell hotfix CVEs", c:"warn", p:120},
     {t:"  Pending signal: ZDI-26-900 — Wireshark SMB RCE (8.8)", c:"warn", p:120},
-    {t:"  EPSS: 2,413 scored · 450 unscored (data 2026-11-10)", c:"dim", p:200},
-    {t:"  All 35 new records EPSS-unscored — brand new", c:"dim", p:200},
+    {t:"  EPSS: 2,413 scored · 454 unscored (data 2026-11-10)", c:"dim", p:200},
+    {t:"  All 4 new records EPSS-unscored — brand new", c:"dim", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  NEW THIS SCAN  ================", c:"bright", p:200},
     {t:"", p:60},
-    {t:">> Adobe Connect — 20 CVEs · to 10.0", c:"warn", p:100},
-    {t:"   Path traversal, SQLi, XXE, code injection, SSRF", c:"bright", p:100},
-    {t:"   FIX: 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)", c:"", p:200},
+    {t:">> CVE-2026-126261 — FortiManager · 9.8", c:"warn", p:100},
+    {t:"   Unauth RCE via crafted FGFM packets", c:"bright", p:100},
+    {t:"   FIX: 8.0.1 / 7.6.8 / 7.4.6 / 7.2.9 (FG-IR-26-275)", c:"", p:200},
     {t:"", p:60},
-    {t:">> Adobe Experience Manager — 4 CVEs · 9.9", c:"warn", p:100},
-    {t:"   Code injection + incorrect auth -> code execution", c:"bright", p:100},
-    {t:"   FIX: CS 2026.10.29251 / 6.5.25 hotfix (APSB26-189)", c:"", p:200},
+    {t:">> CVE-2026-126187 — React Server Components · 9.5", c:"warn", p:100},
+    {t:"   Unauth RCE — deserialization (CWE-502) · public PoC", c:"bright", p:100},
+    {t:"   FIX: React 19.0.9/19.1.10/19.2.9/19.3.1 · Next.js 15.5.28/16.4.1", c:"", p:200},
     {t:"", p:60},
-    {t:">> CVE-2026-89324 — Basel Post Types · 9.8", c:"warn", p:100},
-    {t:"   Hardcoded Opauth salt -> login as admin · ** EXPLOITED **", c:"bright", p:100},
-    {t:"   VulnCheck KEV — no confirmed fixed version", c:"", p:200},
-    {t:"", p:60},
-    {t:">> CVE-2026-125297 / 125298 — AsiaInfo BSS · 9.8", c:"warn", p:100},
-    {t:"   Unauth admin provisioning + JWT signature bypass", c:"bright", p:100},
-    {t:"   FIX: 9.2.41", c:"", p:200},
-    {t:"", p:60},
-    {t:">> N-able N-central — 5 CVEs · to 9.3", c:"warn", p:100},
-    {t:"   SSRF 9.3 · XXE 9.3 · traversal 8.6 · priv-esc 8.6", c:"bright", p:100},
-    {t:"   + root RCE via unsigned NSP package (7.5)", c:"bright", p:100},
-    {t:"   FIX: 26.4.1 (four; NSP-package fix unconfirmed)", c:"", p:200},
-    {t:"", p:60},
-    {t:">> CVE-2026-82391 — Zephyr HTTP/2 · 9.1", c:"warn", p:100},
-    {t:"   Static-file handler OOB read/write -> memory corruption", c:"bright", p:100},
-    {t:"   FIX: upstream commit 4e0a5f38 (GHSA-8jrg-wx88-g75j)", c:"", p:200},
-    {t:"", p:60},
-    {t:">> CVE-2026-126186 — Rails ActiveStorage · 8.8", c:"warn", p:100},
-    {t:"   Blob#open decoder confusion -> file disclosure / RCE", c:"bright", p:100},
-    {t:"   FIX: 8.1.4.1 / 8.0.5.2", c:"", p:200},
-    {t:"", p:60},
-    {t:">> CVE-2026-107356 — USGS ARMI · 8.8", c:"warn", p:100},
-    {t:"   Authenticated file upload -> PHP RCE", c:"bright", p:100},
-    {t:"   FIX: 2026-07-20 (per CVE record)", c:"", p:240},
+    {t:">> Able2Shell hotfix — N-central 2026.4 HF2 · 7 CVEs", c:"warn", p:100},
+    {t:"   NEW: OGNL injection -> RCE 8.7 (CVE-2026-125878)", c:"bright", p:100},
+    {t:"   NEW: stored XSS, admin context 8.3 (CVE-2026-125880)", c:"bright", p:100},
+    {t:"   CONFIRMED: 125881 · 125883 · 125882 · 125879 are Able2Shell CVEs", c:"bright", p:100},
+    {t:"   FIX: N-central 2026.4.1 / 2026.4 HF2", c:"", p:200},
     {t:"", p:60},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
     {t:"", p:60},
@@ -44018,7 +44062,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
     {t:"   CVE-2026-97229 -> CISA KEV Oct 29 · EXPLOITED IN THE WILD", c:"dim", p:300},
     {t:"", p:80},
     {t:"==================================================", c:"bright", p:120},
-    {t:"[PRIORITY QUEUE: 1] Basel CVE-2026-89324 — exploited; patch now.", c:"bright", p:120},
+    {t:"[PRIORITY QUEUE: 1] FortiManager CVE-2026-126261 — unauth RCE 9.8; patch now.", c:"bright", p:120},
     {t:"Next scan: hourly — only material changes alert.", c:"dim", p:400},
     {t:"", p:60},
     {t:"C:\\COMFYPWN> _", c:"", p:6000}
@@ -44053,7 +44097,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   if(replayBtn){ replayBtn.addEventListener("click",function(){ paused=false; if(pauseBtn){pauseBtn.textContent="❚❚ PAUSE"; pauseBtn.setAttribute("aria-pressed","false");} start(); }); }
   start();
 })();
-/* ---- Full CVE dataset (Nov 10 17:30 ET sync) + drill-in details ---- */
+/* ---- Full CVE dataset (Nov 10 18:30 ET sync) + drill-in details ---- */
 var CVE_ITEMS=[];
 try{ CVE_ITEMS=JSON.parse(document.getElementById("cveData").textContent||"[]"); }catch(e){ CVE_ITEMS=[]; }
 var CVE_BY_ID={};
@@ -44317,7 +44361,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,863 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,867 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
