@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 10</span><span class="pill accent">2,378 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 10</span><span class="pill accent">2,385 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 10 12:30 AM ET:</strong> 2,378 CVEs tracked, filtered down to what needs action first. New this scan: 8 records added, 0 records changed — all eight are Hitachi flaws. The headliner is CVE-2026-115646, an unauthenticated authentication bypass in HiRDB Server (9.8, CVSS v3.1): a partial string comparison flaw (CWE-187) lets a remote attacker bypass authentication; fixed in 10-12-01 / 10-11-02 / 10-08-05. The other seven are Hitachi Dynamic Link Manager flaws: CVE-2026-86579 for Windows (8.2, binary planting to code execution with elevated privileges), CVE-2026-91754 / CVE-2026-91755 / CVE-2026-91756 for VMware (8.1 each — stack-based buffer overflow, integer overflow, OS command injection) and CVE-2026-91761 / CVE-2026-91763 / CVE-2026-91764 for Linux (8.2 / 8.2 / 8.1 — symlink and link-resolution file manipulation with elevated privileges). None of the new records is flagged exploited in the wild, is in CISA KEV, or carries a public PoC, so all eight land in Ones to Watch. EPSS scores are included in this snapshot: 2,253 scored, 125 unscored — the new records arrive unscored (brand new). Highlighted Drops, the Ones to Watch, and the grouped 2,378-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 10 1:30 AM ET:</strong> 2,385 CVEs tracked, filtered down to what needs action first. New this scan: 7 records added, 0 records changed — six are AXIS flaws and one is a WordPress plugin flaw. The headliner is CVE-2026-13312, an improper input validation flaw (CWE-1287) in AXIS Camera Station (9.9, CVSS v3.1) that could allow an attacker to compromise a system; fixed in AXIS Camera Station Pro 6.17 / AXIS Camera Station 5.59 SR 2. The other five AXIS flaws are CVE-2026-4762 (8.8, improper verification of cryptographic signature, CWE-347 — non-admin privilege escalation on the server; fixed in Pro 6.18), CVE-2026-8372 (8.8, missing authentication for critical function, CWE-306 — unauthorized access; fixed in Pro 6.18), CVE-2026-12389 (8.4, deserialization of untrusted data, CWE-502 — remote code execution by a high-privileged authenticated user; fixed in Pro 6.18 / 5.59), CVE-2026-63288 (8.3, AXIS Secure Entry door controllers — a WebSocket request to an API endpoint bypasses the authentication layer, CWE-306; fixed in Secure Entry 12.11.106.1) and CVE-2026-12964 (8.0, SSRF, CWE-918 — viewer account privilege escalation to administrator; fixed in Pro 6.18). The seventh is CVE-2026-110516 (5.5), a Contributor+ local file inclusion in the All in One Addons for WPBakery Page Builder WordPress plugin (through 1.2) via the vca_tabs_style shortcode, which lets a contributor-level user include and execute arbitrary local PHP files; no known fix, and its PoC is embargoed until November 21, 2026. None of the new records is flagged exploited in the wild, is in CISA KEV, or carries a public PoC, so the six scoring 8.0+ land in Ones to Watch and the 5.5 lands in Everything Else. EPSS scores are included in this snapshot: 2,253 scored, 132 unscored — the new records arrive unscored (brand new). Highlighted Drops, the Ones to Watch, and the grouped 2,385-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -430,7 +430,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>2,378</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>2,385</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 10</b><span>Last updated — hourly scans</span></div>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 2,378 CVEs</label>
+      <label for="cveSearch">Search all 2,385 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,378 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,385 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -497,7 +497,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 10 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1949 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 10 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1955 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 2 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -505,18 +505,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1949 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1955 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 2,378 CVEs</h2><p>Every entry from the Nov 10 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 2,385 CVEs</h2><p>Every entry from the Nov 10 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,378.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">2,378 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,385.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">2,385 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 10 12:30 AM ET hourly scan — 8 records added, 0 records changed (2,378 CVEs tracked). Added: CVE-2026-115646 Hitachi HiRDB Server — partial string comparison (CWE-187) allows an unauthenticated remote attacker to bypass authentication (CVSS 9.8 v3.1; fixed in 10-12-01 / 10-11-02 / 10-08-05); CVE-2026-86579 Hitachi Dynamic Link Manager for Windows — binary planting (CWE-427) to code execution with elevated privileges (8.2; fixed in 9.0.4-01); CVE-2026-91754 / CVE-2026-91755 / CVE-2026-91756 Hitachi Dynamic Link Manager for VMware — stack-based buffer overflow (CWE-121), integer overflow (CWE-190) and OS command injection (CWE-78) (8.1 each; fixed in 9.0.4-01); CVE-2026-91761 / CVE-2026-91763 / CVE-2026-91764 Hitachi Dynamic Link Manager for Linux — symlink following (CWE-61) and improper link resolution (CWE-59) to file manipulation with elevated privileges (8.2 / 8.2 / 8.1; fixed in 9.0.5-00). None of the new records is flagged exploited in the wild, is CISA KEV-listed, or carries a public PoC; all arrive EPSS-unscored (null, brand new) and join the Ones to Watch group, which now holds 1,949. Tier counts now stand at 876 CRITICAL, 1,356 HIGH, 21 MEDIUM, 1 LOW, 124 unscored across the set. EPSS scores are included in this snapshot: 2,253 scored, 125 unscored. By severity: 80 at 10.0, 796 at 9.0–9.9, 1,262 at 8.0–8.9 and 240 below 8.0 (incl. 124 unscored). Across the full set, 82 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 125 sit in the public-PoC group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 10 1:30 AM ET hourly scan — 7 records added, 0 records changed (2,385 CVEs tracked). Added: CVE-2026-13312 AXIS Camera Station — improper validation of specified type of input (CWE-1287) could allow an attacker to compromise a system (CVSS 9.9 v3.1; fixed in AXIS Camera Station Pro 6.17 / AXIS Camera Station 5.59 SR 2); CVE-2026-4762 AXIS Camera Station Pro — improper verification of cryptographic signature (CWE-347), non-admin privilege escalation on the server (8.8; fixed in 6.18); CVE-2026-8372 AXIS Camera Station Pro — missing authentication for critical function (CWE-306), unauthorized access (8.8; fixed in 6.18); CVE-2026-12389 AXIS Camera Station — deserialization of untrusted data (CWE-502), remote code execution by a high-privileged authenticated user (8.4; fixed in Pro 6.18 / 5.59); CVE-2026-63288 AXIS Secure Entry door controllers — a WebSocket request to an API endpoint bypasses the authentication layer (CWE-306) (8.3; fixed in Secure Entry 12.11.106.1); CVE-2026-12964 AXIS Camera Station Pro — SSRF (CWE-918), viewer account privilege escalation to administrator (8.0; fixed in 6.18); CVE-2026-110516 All in One Addons for WPBakery Page Builder (WordPress plugin, through 1.2) — Contributor+ local file inclusion via the vca_tabs_style shortcode to include and execute arbitrary local PHP files (5.5; no known fix, PoC embargoed until November 21, 2026). None of the new records is flagged exploited in the wild, is CISA KEV-listed, or carries a public PoC; all arrive EPSS-unscored (null, brand new). The six scoring 8.0+ join the Ones to Watch group, which now holds 1,955; the 5.5 joins Everything Else. Tier counts now stand at 877 CRITICAL, 1,361 HIGH, 22 MEDIUM, 1 LOW, 124 unscored across the set. EPSS scores are included in this snapshot: 2,253 scored, 132 unscored. By severity: 80 at 10.0, 797 at 9.0–9.9, 1,267 at 8.0–8.9 and 241 below 8.0 (incl. 124 unscored). Across the full set, 82 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 125 sit in the public-PoC group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 
@@ -3450,6 +3450,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-09 20:30 ET hourly): newly published in window. SAP NetWeaver Application Server ABAP and ABAP Platform does not perform necessary authorization checks for certain internal functionality. An attacker with low privileges could invoke affected functionality to execute arbitrary operating system commands on the underlying host. Successful exploitati No confirmed wild exploitation; NOT in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative (Nov 9-10 recent filter, 19 records). No public PoC reported. EPSS unscored (null, brand new). Scope (1)+(2).",
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-76965",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-13312",
+  "title": "AXIS Camera Station: improper input validation (CWE-1287) -> attacker compromise of system, 9.9",
+  "product": "AXIS Camera Station Pro / AXIS Camera Station 5",
+  "score": 9.9,
+  "cvss": "9.9 (CVSS v3.1)",
+  "fixed": "AXIS Camera Station Pro 6.17 / AXIS Camera Station 5.59 SR 2 (Axis security advisory 2026-11-10 v1.0)",
+  "published": "2026-11-10T06:17:08.587Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "A vulnerability that could allow an attacker to compromise a system (CWE-1287: Improper Validation of Specified Type of Input). Affected: AXIS Camera Station Pro < 6.17; AXIS Camera Station < 5.59 SR 2. Fixed AXIS Camera Station Pro 6.17 / AXIS Camera Station 5.59 SR 2 (Axis security advisory 2026-11-10 v1.0). No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS unscored (null, brand new).",
+  "src": "https://www.axis.com/dam/public/e4/2d/85/cve-2026-13312pdf-en-US-561251.pdf",
   "epss": null,
   "epss_percentile": null
  },
@@ -21559,6 +21575,38 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-4762",
+  "title": "AXIS Camera Station Pro: improper verification of cryptographic signature (CWE-347) -> non-admin privilege escalation on server, 8.8",
+  "product": "AXIS Camera Station Pro",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "AXIS Camera Station Pro 6.18 (Axis security advisory 2026-11-10 v1.0)",
+  "published": "2026-11-10T06:17:09.757Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "A vulnerability to perform a privilege escalation attack on the server as a non-admin user (CWE-347: Improper Verification of Cryptographic Signature). Affected: AXIS Camera Station Pro 6.1 - 6.17. Fixed AXIS Camera Station Pro 6.18 (Axis security advisory 2026-11-10 v1.0). No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS unscored (null, brand new).",
+  "src": "https://www.axis.com/dam/public/1f/4b/66/cve-2026-4762pdf-en-US-561246.pdf",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-8372",
+  "title": "AXIS Camera Station Pro: missing authentication for critical function (CWE-306) -> unauthorized access, 8.8",
+  "product": "AXIS Camera Station Pro",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "AXIS Camera Station Pro 6.18 (Axis security advisory 2026-11-10 v1.0)",
+  "published": "2026-11-10T06:17:10.420Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "A vulnerability that could allow an attacker to gain unauthorized access (CWE-306: Missing Authentication for Critical Function). Affected: AXIS Camera Station Pro 6.13 - 6.17. Fixed AXIS Camera Station Pro 6.18 (Axis security advisory 2026-11-10 v1.0). No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS unscored (null, brand new).",
+  "src": "https://www.axis.com/dam/public/09/58/fa/cve-2026-8372pdf-en-US-561247.pdf",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2010-20125",
   "title": "DedeCMS file inclusion in plus/carbuyaction.php -> local file disclosure (old CVE, newly published)",
   "product": "DedeCMS before 5.7",
@@ -27687,6 +27735,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": 3.128
  },
  {
+  "id": "CVE-2026-12389",
+  "title": "AXIS Camera Station: deserialization of untrusted data (CWE-502) -> high-privileged authenticated user remote code execution, 8.4",
+  "product": "AXIS Camera Station Pro / AXIS Camera Station 5",
+  "score": 8.4,
+  "cvss": "8.4 (CVSS v3.1)",
+  "fixed": "AXIS Camera Station Pro 6.18 / AXIS Camera Station 5.59 (Axis security advisory 2026-11-10 v1.0)",
+  "published": "2026-11-10T06:17:08.200Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "A vulnerability that could lead to a high privileged authenticated user performing a remote code execution attack (CWE-502: Deserialization of Untrusted Data). Affected: AXIS Camera Station Pro < 6.18; AXIS Camera Station 5 < 5.59. Fixed AXIS Camera Station Pro 6.18 / AXIS Camera Station 5.59 (Axis security advisory 2026-11-10 v1.0). No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS unscored (null, brand new).",
+  "src": "https://www.axis.com/dam/public/1a/bd/41/cve-2026-12389pdf-en-US-561248.pdf",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2025-14260",
   "title": "WSO2 SSRF via improper access-control enforcement on resource location - unauthenticated access to internal/external resources",
   "product": "WSO2 API Manager / Identity Server as Key Manager",
@@ -28873,6 +28937,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "status": "No exploitation reported; not in CISA KEV (verified Oct 15). CWE-908 use of uninitialized resource: automatic session-ticket key rotation copies only 2 of 3 key slots, the third holds stale memory - a remote unauthenticated attacker forges client SSL sessions (non-deterministic, beyond attacker control) and can bypass client-certificate verification. No control-plane impact. F5 K article K000162606 (fixes column not directly readable - my.f5.com JS-gated; fix detail from corroborated reporting). EPSS 0.00230, 13.91th percentile.",
   "epss": 0.00246,
   "epss_percentile": 15.909
+ },
+ {
+  "id": "CVE-2026-63288",
+  "title": "AXIS Secure Entry: WebSocket request to API endpoint bypasses authentication layer (CWE-306), 8.3",
+  "product": "AXIS Secure Entry door controllers (A1210/A1601/A1610/A1710/A1810)",
+  "score": 8.3,
+  "cvss": "8.3 (CVSS v3.1)",
+  "fixed": "Secure Entry 12.11.106.1 (Axis security advisory 2026-11-10 v1.0)",
+  "published": "2026-11-10T06:17:10.197Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "A WebSocket request sent to a specific API endpoint allows unauthorized access to a separate API endpoint. This bypasses the intended authentication layer (CWE-306: Missing Authentication for Critical Function). Affected: AXIS A1210 - Secure Entry >= 11.7.12.2; A1601 >= 11.1.10.1; A1610 >= 11.4.32.2; A1710 >= 12.0.101.4; A1810 >= 12.0.101.4. Fixed Secure Entry 12.11.106.1 (Axis security advisory 2026-11-10 v1.0). No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS unscored (null, brand new).",
+  "src": "https://www.axis.com/dam/public/fa/79/f5/cve-2026-63288pdf-en-US-561260.pdf",
+  "epss": null,
+  "epss_percentile": null
  },
  {
   "id": "CVE-2023-42442",
@@ -32810,6 +32890,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": 48.544
  },
  {
+  "id": "CVE-2026-12964",
+  "title": "AXIS Camera Station Pro: SSRF (CWE-918) -> viewer account privilege escalation to administrator, 8.0",
+  "product": "AXIS Camera Station Pro",
+  "score": 8.0,
+  "cvss": "8.0 (CVSS v3.1)",
+  "fixed": "AXIS Camera Station Pro 6.18 (Axis security advisory 2026-11-10 v1.0)",
+  "published": "2026-11-10T06:17:08.453Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "A vulnerability allowing for privileged escalation of the viewer account to gain administrator privileges (CWE-918: Server-Side Request Forgery). Affected: AXIS Camera Station Pro 6.6 - 6.17. Fixed AXIS Camera Station Pro 6.18 (Axis security advisory 2026-11-10 v1.0). No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS unscored (null, brand new).",
+  "src": "https://www.axis.com/dam/public/50/3b/39/cve-2026-12964pdf-en-US-561250.pdf",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-114148",
   "title": "ASP.NET Core incorrect default permissions local privilege escalation",
   "product": "ASP.NET Core",
@@ -34469,6 +34565,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-123835",
   "epss": 0.00649,
   "epss_percentile": 51.41
+ },
+ {
+  "id": "CVE-2026-110516",
+  "title": "All in One Visual Composer Addons <= 1.2: Contributor+ LFI via vca_tabs_style shortcode -> include/execute arbitrary local PHP files, 5.5",
+  "product": "All in One Addons For WPBakery Page Builder (WordPress plugin)",
+  "score": 5.5,
+  "cvss": "5.5 (CVSS WPScan)",
+  "fixed": "No known fix (WPScan, 2026-11-10); PoC embargoed until November 21, 2026",
+  "published": "2026-11-10T06:17:07.963Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "The plugin does not validate a shortcode attribute before using it to build a file path that is included and executed, which could allow users with the contributor role and above to include and execute arbitrary local PHP files on the server (CWE-22: Path Traversal / LFI). Affected: All in One Addons For WPBakery Page Builder (formerly Visual Composer) through 1.2. Fixed No known fix (WPScan, 2026-11-10); PoC embargoed until November 21, 2026. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS unscored (null, brand new).",
+  "src": "https://wpscan.com/vulnerability/bce6e184-91b9-444b-bb23-c356cf0488cd/",
+  "epss": null,
+  "epss_percentile": null
  },
  {
   "id": "CVE-2026-59823",
@@ -36470,22 +36582,23 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-10 --run 12:30 AM ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-10 --run 1:30 AM ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning — 2,378 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 8 new CVEs — all Hitachi", c:"", p:200},
-    {t:"  CVE-2026-115646 HiRDB Server — unauth auth bypass 9.8", c:"warn", p:120},
-    {t:"  CWE-187 · FIX: 10-12-01 / 10-11-02 / 10-08-05", c:"warn", p:120},
-    {t:"  CVE-2026-86579 HDLM for Windows — binary planting 8.2", c:"warn", p:120},
-    {t:"  CVE-2026-91754/91755/91756 HDLM for VMware — 8.1 each", c:"warn", p:120},
-    {t:"  CVE-2026-91761/91763/91764 HDLM for Linux — 8.2/8.2/8.1", c:"warn", p:120},
+    {t:"Scanning — 2,385 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: 7 new CVEs — six AXIS, one WordPress", c:"", p:200},
+    {t:"  CVE-2026-13312 AXIS Camera Station — input validation 9.9", c:"warn", p:120},
+    {t:"  CWE-1287 · FIX: Pro 6.17 / 5.59 SR 2", c:"warn", p:120},
+    {t:"  CVE-2026-4762 / 8372 AXIS Camera Station Pro — 8.8 each", c:"warn", p:120},
+    {t:"  CVE-2026-12389 AXIS Camera Station — deserialization RCE 8.4", c:"warn", p:120},
+    {t:"  CVE-2026-63288 AXIS Secure Entry — auth bypass 8.3", c:"warn", p:120},
+    {t:"  CVE-2026-12964 AXIS SSRF privesc 8.0 · CVE-2026-110516 WP LFI 5.5", c:"warn", p:120},
     {t:"  Not exploited · not in CISA KEV · no public PoC", c:"warn", p:120},
-    {t:"  EPSS: 2,253 scored · 125 unscored", c:"dim", p:200},
+    {t:"  EPSS: 2,253 scored · 132 unscored", c:"dim", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
@@ -36812,7 +36925,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,378 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,385 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
