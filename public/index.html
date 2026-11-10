@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 10</span><span class="pill accent">2,828 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 10</span><span class="pill accent">2,863 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 10 4:30 PM ET:</strong> 2,828 CVEs tracked, filtered down to what needs action first. Sixty-two new CVEs were added this scan (total up from 2,766 to 2,828), with no status changes to any tracked CVE: an OpenObserve authentication bypass where an empty or missing password_ext logs in with the victim’s role and can chain to pre-auth RCE (CVE-2026-126065, 9.8; fixed in 1.1.0), a Rails Active Storage flaw where ImageMagick coder abuse allows unauthenticated arbitrary file write/read and possible RCE escalation (CVE-2026-126082, 9.8; fixed in 8.1.4.1 / 8.0.5.2), a MongoDB Server replication use-after-free an unauthenticated attacker can trigger for a crash or code execution (CVE-2026-118383, 9.5; fixed in 8.3.16 / 9.0.7 / 8.0.37 / 7.0.48 / 6.0.30 / 5.0.35 / 4.4.32) plus a time-series collection UAF reachable by an authenticated write user (CVE-2026-120824, 8.8; fixed in 8.3.16 / 9.0.7 / 8.0.37 / 7.0.48), six Kong Gateway Enterprise flaws all fixed in 3.16.0.2 — an Admin API RBAC bypass (CVE-2026-105986, 8.7), SQL injection in the LLM usage counters (CVE-2026-92544, 8.7), a proxy-cache key that omits the hostname (CVE-2026-92545, 8.7), a graphql-proxy-cache-advanced key that omits caller identity (CVE-2026-92442, 8.3), proxy-cache serving authenticated responses to unauthenticated callers (CVE-2026-92443, 8.2), and a request-callout cache-key omission (CVE-2026-123041, 8.2) — a Git heap buffer overflow in three-way merge shipped in GitLab’s Critical patch release (CVE-2026-105437, 7.5 from NVD; fixed in GitLab CE/EE 19.5.4 / 19.4.6 / 19.3.8), a sqlparse PHP code injection through OutputPHPFilter (CVE-2026-112307, 8.4; fixed in 0.6.1 — a lag-gap catch, published Oct 19 with its score landing this window), a Chrome CacheStorage incorrect-authorization flaw letting a compromised renderer bypass site isolation (CVE-2026-121063, 8.1; fixed in 157.0.8103.38), and the Firefox 160 batch of 49 — six 9.6 sandbox escapes and forty-three 8.8 memory-safety flaws, fixed in Firefox 160 / ESR 115.45 / 153.7 / Thunderbird 160 / 153.7. None of the 62 is exploited in the wild or in CISA KEV; 61 of them land in the Ones to Watch group, which grows from 2,296 to 2,357, while the 7.5 Git flaw sits below the group’s 8.0 bar. The pending signal from earlier scans, ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8) with no CVE assigned yet, still sits with the pre-CVE early signals below, outside the 2,828. EPSS (data 2026-11-10): 2,413 scored and 415 unscored across the set — 60 of the 62 new records are unscored as brand new, and the other two (sqlparse, Chrome) already carry low scores. Highlighted Drops, the Ones to Watch, and the grouped 2,828-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 10 5:30 PM ET:</strong> 2,863 CVEs tracked, filtered down to what needs action first. Thirty-five new CVEs were added this scan (total up from 2,828 to 2,863), with no status changes to any tracked CVE: the Adobe Connect batch of 20 under APSB26-191, scoring 8.3–10.0 — path traversal, SQL injection, XXE, code injection and SSRF flaws, all fixed in 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a — four Adobe Experience Manager flaws at 9.9 under APSB26-189 (code injection and incorrect authorization to arbitrary code execution; fixed in AEM as a Cloud Service 2026.10.29251 and the AEM 6.5 6.5.25 cumulative hotfix), a Basel Post Types WordPress plugin authentication bypass via a hardcoded Opauth salt that logs an attacker in as any user including admin (CVE-2026-89324, 9.8 — already exploited per VulnCheck KEV; no confirmed fixed version in the CVE record), two AsiaInfo BSS flaws at 9.8 — unauthenticated admin-account provisioning via the management API (CVE-2026-125297) and a JWT signature-verification bypass (CVE-2026-125298), both fixed in 9.2.41 — five N-able N-central flaws: SSRF (CVE-2026-125881, 9.3) and XXE (CVE-2026-125883, 9.3), relative path traversal (CVE-2026-125882, 8.6) and incorrect privilege assignment (CVE-2026-125879, 8.6), all fixed in 26.4.1, plus root RCE via an unsigned NSP upgrade package (CVE-2026-125958, 7.5; fix version unconfirmed) — a Zephyr RTOS HTTP/2 static-file handler out-of-bounds read/write an unauthenticated attacker can trigger for remote memory corruption (CVE-2026-82391, 9.1; upstream fix commit, release version unconfirmed), a Rails Active Storage Blob#open decoder-confusion flaw (CVE-2026-126186, 8.8; fixed in 8.1.4.1 / 8.0.5.2 — companion to last scan’s 9.8 Active Storage flaw), and a USGS ARMI authenticated file-upload PHP RCE (CVE-2026-107356, 8.8; fixed 2026-07-20 per the CVE record). Only Basel is exploited in the wild and none of the 35 is in CISA KEV: Basel sits in the In the wild group, 33 of the 35 land in the Ones to Watch group, which grows from 2,357 to 2,390, and the 7.5 N-central flaw sits below the group’s 8.0 bar. The pending signal from earlier scans, ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8) with no CVE assigned yet, still sits with the pre-CVE early signals below, outside the 2,863. EPSS (data 2026-11-10): 2,413 scored and 450 unscored across the set — all 35 new records are unscored as brand new. Highlighted Drops, the Ones to Watch, and the grouped 2,863-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -430,7 +430,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>2,828</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>2,863</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 10</b><span>Last updated — hourly scans</span></div>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 2,828 CVEs</label>
+      <label for="cveSearch">Search all 2,863 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,828 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,863 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -505,18 +505,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 2357 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 2390 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 2,828 CVEs</h2><p>Every entry from the Nov 10 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 2,863 CVEs</h2><p>Every entry from the Nov 10 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,828.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">2,828 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,863.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">2,863 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 10 4:30 PM ET hourly scan — 62 records added (total up from 2,766 to 2,828 CVEs tracked); no tracked-CVE status changes this scan and no new pending early signal. The 62 new records, none exploited and none in CISA KEV: OpenObserve unauthenticated authentication bypass CVE-2026-126065 (9.8; fixed 1.1.0, GHSA-7w4v-2c9r-q94v), Rails Active Storage ImageMagick coder abuse CVE-2026-126082 (9.8; fixed 8.1.4.1 / 8.0.5.2), MongoDB Server replication use-after-free CVE-2026-118383 (9.5; fixed 8.3.16 / 9.0.7 / 8.0.37 / 7.0.48 / 6.0.30 / 5.0.35 / 4.4.32, JIRA SERVER-138119) and time-series collection use-after-free CVE-2026-120824 (8.8; fixed 8.3.16 / 9.0.7 / 8.0.37 / 7.0.48, JIRA SERVER-136505), six Kong Gateway Enterprise flaws all fixed in 3.16.0.2 (Admin API RBAC bypass CVE-2026-105986, 8.7; LLM usage-counter SQL injection CVE-2026-92544, 8.7; proxy-cache hostname omission CVE-2026-92545, 8.7; graphql-proxy-cache-advanced caller-identity omission CVE-2026-92442, 8.3; proxy-cache authenticated responses served to unauthenticated callers CVE-2026-92443, 8.2; request-callout cache-key omission CVE-2026-123041, 8.2), Git heap buffer overflow in three-way merge CVE-2026-105437 (7.5 NVD; GitLab Critical patch release — fixed in GitLab CE/EE 19.5.4 / 19.4.6 / 19.3.8 with bundled Git patched, Git 2.56.1+ standalone), sqlparse PHP code injection via OutputPHPFilter CVE-2026-112307 (8.4; fixed 0.6.1; lag-gap catch — published 2026-10-19, score landed this window), Chrome CacheStorage incorrect authorization CVE-2026-121063 (8.1; fixed 157.0.8103.38; lag-gap catch from the Chrome 157 batch), and the Firefox 160 batch of 49 (six 9.6 sandbox escapes and forty-three 8.8 memory-safety flaws; fixed in Firefox 160, Firefox ESR 115.45, Firefox ESR 153.7, Thunderbird 160 and Thunderbird 153.7). Pending signal carried over: ZDI-26-900 — Wireshark SMB object export integer overflow RCE, ZDI CVSS 8.8, no CVE assigned yet, so it is not part of the 2,828. EPSS (data 2026-11-10): 2,413 scored, 415 unscored across the set; 60 of the 62 new records are EPSS-unscored as brand new, while sqlparse CVE-2026-112307 (0.00142) and Chrome CVE-2026-121063 (0.00271) already carry scores. Tier counts now stand at 944 CRITICAL, 1,717 HIGH, 22 MEDIUM, 1 LOW, 144 unscored across the set. By severity: 84 at 10.0, 860 at 9.0–9.9, 1,617 at 8.0–8.9 and 267 below 8.0 (incl. 144 records scored 0.0). Across the full set, 91 records are flagged exploited in the wild, 64 carry a CISA KEV flag, and 169 carry a public-PoC flag; in the grouped index, 91 sit in the In the wild group, 13 sit in the CISA KEV-listed group, 136 sit in the public-PoC group, and 2,357 sit in the Ones to watch group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 10 5:30 PM ET hourly scan — 35 records added (total up from 2,828 to 2,863 CVEs tracked); no tracked-CVE status changes this scan and no new pending early signal. Of the 35 new records, one is already exploited — the Basel Post Types authentication bypass — and none is in CISA KEV: Adobe Connect APSB26-191 batch of 20 (8.3–10.0; path traversal, SQL injection, XXE, code injection and SSRF; fixed 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a), Adobe Experience Manager APSB26-189 batch of 4 at 9.9 (code injection and incorrect authorization to arbitrary code execution; fixed AEM as a Cloud Service 2026.10.29251; AEM 6.5: 6.5.25 Cumulative Hotfix for GRANITE-75398; AEM 6.5 LTS SP3: same hotfix), Basel Post Types plugin auth bypass via hardcoded Opauth salt CVE-2026-89324 (9.8; EXPLOITED per VulnCheck KEV — the KEV listing predates this window; the NVD record landed this window; fixed version not stated in the CVE record, unconfirmed beyond 1.18), AsiaInfo BSS unauthenticated management-API admin provisioning CVE-2026-125297 (9.8; fixed 9.2.41) and JWT signature-verification bypass CVE-2026-125298 (9.8; fixed 9.2.41), N-able N-central SSRF CVE-2026-125881 (9.3; fixed 26.4.1), XXE CVE-2026-125883 (9.3; fixed 26.4.1), relative path traversal CVE-2026-125882 (8.6; fixed 26.4.1), incorrect privilege assignment CVE-2026-125879 (8.6; fixed 26.4.1) and root RCE via unsigned NSP upgrade package CVE-2026-125958 (7.5; fix version unconfirmed), Zephyr RTOS HTTP/2 static-file handler out-of-bounds read/write CVE-2026-82391 (9.1; upstream fix commit 4e0a5f38, GHSA-8jrg-wx88-g75j; release version unconfirmed), Rails Active Storage Blob#open decoder confusion CVE-2026-126186 (8.8; fixed 8.1.4.1 / 8.0.5.2; companion to the 16:30 run’s Rails Active Storage 9.8, same release train), and USGS ARMI authenticated file-upload PHP RCE CVE-2026-107356 (8.8; fixed 2026-07-20 per the CVE record). Pending signal carried over: ZDI-26-900 — Wireshark SMB object export integer overflow RCE, ZDI CVSS 8.8, no CVE assigned yet, so it is not part of the 2,863. EPSS (data 2026-11-10): 2,413 scored, 450 unscored across the set; all 35 new records are EPSS-unscored as brand new. Tier counts now stand at 971 CRITICAL, 1,725 HIGH, 22 MEDIUM, 1 LOW, 144 unscored across the set. By severity: 89 at 10.0, 882 at 9.0–9.9, 1,624 at 8.0–8.9 and 268 below 8.0 (incl. 144 records scored 0.0). Across the full set, 92 records are flagged exploited in the wild, 64 carry a CISA KEV flag, and 169 carry a public-PoC flag; in the grouped index, 92 sit in the In the wild group, 13 sit in the CISA KEV-listed group, 136 sit in the public-PoC group, and 2,390 sit in the Ones to watch group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 
@@ -546,7 +546,8 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 var drops=["CVE-2026-108097 Drupal core Field UI RCE — Drupal Critical 19/25 — PUBLIC POC","CVE-2026-102785 YOOtheme Pro — CVSS 10.0 — IN THE WILD","CVE-2026-109618 php2shell — F5 BIG-IP — 9.8 — IN THE WILD","CVE-2026-110457 Collabora — VulnCheck Oct 14, CISA Oct 23","CVE-2026-94127 F5 APM OAuth heap overflow","CVE-2026-117564 nest-admin — 9.8 auth bypass","CVE-2026-110264 GitLab — baseline"];
 var html=drops.map(function(d){return "<span>▸ <b>DROP</b> "+d+"</span>"}).join("");
 document.getElementById("tickerTrack").innerHTML=html+html;
-</script><script id="cveData" type="application/json">
+</script>
+<script id="cveData" type="application/json">
 [
  {
   "id": "CVE-2025-41656",
@@ -1821,6 +1822,86 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-86218",
   "epss": 0.15385,
   "epss_percentile": 96.81
+ },
+ {
+  "id": "CVE-2026-121351",
+  "title": "Adobe Connect Path Traversal (path traversal -> arbitrary file system read), 10.0, fixed 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "product": "Adobe Connect",
+  "score": 10.0,
+  "cvss": "v3.1",
+  "fixed": "12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "published": "2026-11-10T22:18:24.910 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe Connect APSB26-191 batch (20 CVEs). Scope (1) 10.0 + (2) RCE/admin class. Server-side Adobe - tracked per precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121351",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-121352",
+  "title": "Adobe Connect Incorrect Authorization (incorrect authorization -> privilege escalation), 10.0, fixed 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "product": "Adobe Connect",
+  "score": 10.0,
+  "cvss": "v3.1",
+  "fixed": "12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "published": "2026-11-10T22:18:25.060 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe Connect APSB26-191 batch (20 CVEs). Scope (1) 10.0 + (2) RCE/admin class. Server-side Adobe - tracked per precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121352",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-121353",
+  "title": "Adobe Connect CRLF Injection (CRLF injection -> arbitrary code execution), 10.0, fixed 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "product": "Adobe Connect",
+  "score": 10.0,
+  "cvss": "v3.1",
+  "fixed": "12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "published": "2026-11-10T22:18:25.217 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe Connect APSB26-191 batch (20 CVEs). Scope (1) 10.0 + (2) RCE/admin class. Server-side Adobe - tracked per precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121353",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-121356",
+  "title": "Adobe Connect SSRF (SSRF -> privilege escalation, no user interaction), 10.0, fixed 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "product": "Adobe Connect",
+  "score": 10.0,
+  "cvss": "v3.1",
+  "fixed": "12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "published": "2026-11-10T22:18:25.637 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe Connect APSB26-191 batch (20 CVEs). Scope (1) 10.0 + (2) RCE/admin class. Server-side Adobe - tracked per precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121356",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-121889",
+  "title": "Adobe Connect SSRF (SSRF -> privilege escalation, no user interaction), 10.0, fixed 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "product": "Adobe Connect",
+  "score": 10.0,
+  "cvss": "v3.1",
+  "fixed": "12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "published": "2026-11-10T22:18:26.180 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe Connect APSB26-191 batch (20 CVEs). Scope (1) 10.0 + (2) RCE/admin class. Server-side Adobe - tracked per precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121889",
+  "epss": null,
+  "epss_percentile": null
  },
  {
   "id": "CVE-2026-101446",
@@ -3640,6 +3721,198 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "kev": false,
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-10 13:30 ET hourly): newly published in window (Microsoft November 2026 Patch Tuesday, MSRC CVRF 2026-Nov). CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C. No exploitation reported; not in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative. EPSS unscored (null, brand new). Scope (1)+(3).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-121354",
+  "title": "Adobe Connect Path Traversal (path traversal -> arbitrary file system read), 9.9, fixed 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "product": "Adobe Connect",
+  "score": 9.9,
+  "cvss": "v3.1",
+  "fixed": "12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "published": "2026-11-10T22:18:25.373 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe Connect APSB26-191 batch (20 CVEs). Scope (1) 9.9 + (2) RCE/admin class. Server-side Adobe - tracked per precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121354",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-121887",
+  "title": "Adobe Connect XXE (XXE -> arbitrary code execution), 9.9, fixed 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "product": "Adobe Connect",
+  "score": 9.9,
+  "cvss": "v3.1",
+  "fixed": "12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "published": "2026-11-10T22:18:26.060 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe Connect APSB26-191 batch (20 CVEs). Scope (1) 9.9 + (2) RCE/admin class. Server-side Adobe - tracked per precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121887",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-121892",
+  "title": "Adobe Connect Code Injection (code injection -> arbitrary code execution), 9.9, fixed 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "product": "Adobe Connect",
+  "score": 9.9,
+  "cvss": "v3.1",
+  "fixed": "12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "published": "2026-11-10T22:18:26.520 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe Connect APSB26-191 batch (20 CVEs). Scope (1) 9.9 + (2) RCE/admin class. Server-side Adobe - tracked per precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121892",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-121894",
+  "title": "Adobe Connect SQL Injection (SQL injection -> arbitrary code execution), 9.9, fixed 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "product": "Adobe Connect",
+  "score": 9.9,
+  "cvss": "v3.1",
+  "fixed": "12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "published": "2026-11-10T22:18:26.650 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe Connect APSB26-191 batch (20 CVEs). Scope (1) 9.9 + (2) RCE/admin class. Server-side Adobe - tracked per precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121894",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-121896",
+  "title": "Adobe Connect SQL Injection (SQL injection -> arbitrary code execution), 9.9, fixed 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "product": "Adobe Connect",
+  "score": 9.9,
+  "cvss": "v3.1",
+  "fixed": "12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "published": "2026-11-10T22:18:26.773 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe Connect APSB26-191 batch (20 CVEs). Scope (1) 9.9 + (2) RCE/admin class. Server-side Adobe - tracked per precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121896",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-121898",
+  "title": "Adobe Connect SQL Injection (SQL injection -> arbitrary code execution), 9.9, fixed 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "product": "Adobe Connect",
+  "score": 9.9,
+  "cvss": "v3.1",
+  "fixed": "12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "published": "2026-11-10T22:18:26.897 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe Connect APSB26-191 batch (20 CVEs). Scope (1) 9.9 + (2) RCE/admin class. Server-side Adobe - tracked per precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121898",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-121906",
+  "title": "Adobe Connect Path Traversal (path traversal -> arbitrary file system read), 9.9, fixed 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "product": "Adobe Connect",
+  "score": 9.9,
+  "cvss": "v3.1",
+  "fixed": "12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "published": "2026-11-10T22:18:27.400 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe Connect APSB26-191 batch (20 CVEs). Scope (1) 9.9 + (2) RCE/admin class. Server-side Adobe - tracked per precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121906",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-121908",
+  "title": "Adobe Connect SQL Injection (SQL injection -> arbitrary code execution), 9.9, fixed 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "product": "Adobe Connect",
+  "score": 9.9,
+  "cvss": "v3.1",
+  "fixed": "12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "published": "2026-11-10T22:18:27.533 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe Connect APSB26-191 batch (20 CVEs). Scope (1) 9.9 + (2) RCE/admin class. Server-side Adobe - tracked per precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121908",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-113579",
+  "title": "Adobe Experience Manager Code Injection (code injection -> arbitrary code execution), 9.9, fixed CS 2026.10.29251 / 6.5.25 hotfix GRANITE-75398",
+  "product": "Adobe Experience Manager",
+  "score": 9.9,
+  "cvss": "v3.1",
+  "fixed": "AEM as a Cloud Service 2026.10.29251; AEM 6.5: 6.5.25 Cumulative Hotfix for GRANITE-75398; AEM 6.5 LTS SP3: same hotfix (APSB26-189)",
+  "published": "2026-11-10T22:18:22.360 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe AEM APSB26-189 batch (4 CVEs). Scope (1) 9.9 + (2) RCE class. Server-side Adobe - tracked per precedent. Fixes column read directly from the CVE.org CNA record (affected/fixed versions). No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-113579",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-113580",
+  "title": "Adobe Experience Manager Code Injection (code injection -> arbitrary code execution), 9.9, fixed CS 2026.10.29251 / 6.5.25 hotfix GRANITE-75398",
+  "product": "Adobe Experience Manager",
+  "score": 9.9,
+  "cvss": "v3.1",
+  "fixed": "AEM as a Cloud Service 2026.10.29251; AEM 6.5: 6.5.25 Cumulative Hotfix for GRANITE-75398; AEM 6.5 LTS SP3: same hotfix (APSB26-189)",
+  "published": "2026-11-10T22:18:22.493 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe AEM APSB26-189 batch (4 CVEs). Scope (1) 9.9 + (2) RCE class. Server-side Adobe - tracked per precedent. Fixes column read directly from the CVE.org CNA record (affected/fixed versions). No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-113580",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-114371",
+  "title": "Adobe Experience Manager Incorrect Authorization (incorrect authorization -> arbitrary code execution), 9.9, fixed CS 2026.10.29251 / 6.5.25 hotfix GRANITE-75398",
+  "product": "Adobe Experience Manager",
+  "score": 9.9,
+  "cvss": "v3.1",
+  "fixed": "AEM as a Cloud Service 2026.10.29251; AEM 6.5: 6.5.25 Cumulative Hotfix for GRANITE-75398; AEM 6.5 LTS SP3: same hotfix (APSB26-189)",
+  "published": "2026-11-10T22:18:22.617 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe AEM APSB26-189 batch (4 CVEs). Scope (1) 9.9 + (2) RCE class. Server-side Adobe - tracked per precedent. Fixes column read directly from the CVE.org CNA record (affected/fixed versions). No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-114371",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-119017",
+  "title": "Adobe Experience Manager Incorrect Authorization (incorrect authorization -> arbitrary code execution), 9.9, fixed CS 2026.10.29251 / 6.5.25 hotfix GRANITE-75398",
+  "product": "Adobe Experience Manager",
+  "score": 9.9,
+  "cvss": "v3.1",
+  "fixed": "AEM as a Cloud Service 2026.10.29251; AEM 6.5: 6.5.25 Cumulative Hotfix for GRANITE-75398; AEM 6.5 LTS SP3: same hotfix (APSB26-189)",
+  "published": "2026-11-10T22:18:24.520 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe AEM APSB26-189 batch (4 CVEs). Scope (1) 9.9 + (2) RCE class. Server-side Adobe - tracked per precedent. Fixes column read directly from the CVE.org CNA record (affected/fixed versions). No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-119017",
   "epss": null,
   "epss_percentile": null
  },
@@ -8537,6 +8810,54 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-125297",
+  "title": "AsiaInfo BSS unauthenticated management API -> provision admin accounts / take over accounts, 9.8, fixed 9.2.41",
+  "product": "AsiaInfo Business Support System (BSS)",
+  "score": 9.8,
+  "cvss": "v3.1",
+  "fixed": "9.2.41",
+  "published": "2026-11-10T22:18:30.080 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 9.8 + (3) unauthenticated admin-account provisioning via management API. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-125297",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-125298",
+  "title": "AsiaInfo BSS JWT signature verification bypass -> forge tokens, execute privileged actions, 9.8, fixed 9.2.41",
+  "product": "AsiaInfo Business Support System (BSS)",
+  "score": 9.8,
+  "cvss": "v3.1",
+  "fixed": "9.2.41",
+  "published": "2026-11-10T22:18:30.240 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 9.8 + (3) unauthenticated forged-JWT privileged actions. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-125298",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-89324",
+  "title": "Basel Post Types plugin auth bypass via hardcoded Opauth salt -> login as any user incl. admin, 9.8, fixed version unconfirmed, EXPLOITED per VulnCheck KEV",
+  "product": "Basel Post Types (WordPress)",
+  "score": 9.8,
+  "cvss": "v3.1",
+  "fixed": "Not stated in CVE record (fixed version unconfirmed; > 1.18)",
+  "published": "2026-11-10T22:21:14.003 (NVD)",
+  "exploited": true,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 9.8 + (3) unauthenticated auth bypass as any user incl. admin. EXPLOITED per VulnCheck KEV (recorded 2026-11-10; already in the VulnCheck KEV set at the 16:30 run as 'watched, no NVD record yet' - NVD record landed this window, so the CVE itself is new but the KEV listing is not new this window). NOT in CISA KEV. EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-89324",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2025-65200",
   "title": "LocalStack CloudFormation deploy endpoint RCE via crafted templateURL content (lag-gap catch-up)",
   "product": "LocalStack 4.9.2",
@@ -9958,6 +10279,38 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-121349",
+  "title": "Adobe Connect Path Traversal (path traversal -> arbitrary code execution), 9.6, fixed 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "product": "Adobe Connect",
+  "score": 9.6,
+  "cvss": "v3.1",
+  "fixed": "12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "published": "2026-11-10T22:18:24.643 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe Connect APSB26-191 batch (20 CVEs). Scope (1) 9.6 + (2) RCE/admin class. Server-side Adobe - tracked per precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121349",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-121904",
+  "title": "Adobe Connect Stored XSS (stored XSS by low-privileged attacker), 9.6, fixed 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "product": "Adobe Connect",
+  "score": 9.6,
+  "cvss": "v3.1",
+  "fixed": "12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "published": "2026-11-10T22:18:27.280 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe Connect APSB26-191 batch (20 CVEs). Scope (1) 9.6 + (2) RCE/admin class. Server-side Adobe - tracked per precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121904",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-103593/CVE-2026-103594/CVE-2026-112709/CVE-2026-112710/CVE-2026-90442/CVE-2026-90465/CVE-2026-93857/CVE-2026-93865/CVE-2026-93866/CVE-2026-93434",
   "title": "WatchGuard Fireware OS batch: unauth RCE (SIP proxy, FireCluster), auth-service heap overflows, mgmt-interface flaws",
   "product": "WatchGuard Fireware OS (Default >=2025.1 <2026.4, >=12.0 <12.12.4; T15/T35 >=12.0 <12.5.22)",
@@ -10787,6 +11140,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-10 15:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 9.4 - fleet-wide static keys enable forged firmware passing verification (hard-coded credentials class; cf. TTLock 112345 precedent). No exploitation reported (Arista: not aware of any malicious exploitation); not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-102166",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-121902",
+  "title": "Adobe Connect SQL Injection (SQL injection -> arbitrary code execution), 9.4, fixed 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "product": "Adobe Connect",
+  "score": 9.4,
+  "cvss": "v3.1",
+  "fixed": "12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "published": "2026-11-10T22:18:27.143 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe Connect APSB26-191 batch (20 CVEs). Scope (1) 9.4 + (2) RCE/admin class. Server-side Adobe - tracked per precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121902",
   "epss": null,
   "epss_percentile": null
  },
@@ -11832,6 +12201,38 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-61949",
   "epss": 0.004,
   "epss_percentile": 34.603
+ },
+ {
+  "id": "CVE-2026-125881",
+  "title": "N-able N-central SSRF, 9.3, fixed 26.4.1",
+  "product": "N-able N-central",
+  "score": 9.3,
+  "cvss": "v4.0",
+  "fixed": "26.4.1",
+  "published": "2026-11-10T22:18:30.860 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 9.3 + (2) SSRF in a management-plane product (vLLM SSRF precedent). NOT the Able2Shell set - public reporting states no CVE has been assigned to the 33-flaw Able2Shell disclosure; this is N-able's separate November CVE batch with fix 26.4.1. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-125881",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-125883",
+  "title": "N-able N-central XXE -> XML schema poisoning, 9.3, fixed 26.4.1",
+  "product": "N-able N-central",
+  "score": 9.3,
+  "cvss": "v4.0",
+  "fixed": "26.4.1",
+  "published": "2026-11-10T22:18:31.143 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 9.3 + (2) XXE in a management-plane product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-125883",
+  "epss": null,
+  "epss_percentile": null
  },
  {
   "id": "CVE-2026-107246",
@@ -14474,6 +14875,38 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-10 14:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 9.1 + (3) authentication bypass to a management-plane API (cross-organization connection rewrite). No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-125331",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-121355",
+  "title": "Adobe Connect Incorrect Authorization (incorrect authorization -> privilege escalation), 9.1, fixed 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "product": "Adobe Connect",
+  "score": 9.1,
+  "cvss": "v3.1",
+  "fixed": "12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "published": "2026-11-10T22:18:25.510 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe Connect APSB26-191 batch (20 CVEs). Scope (1) 9.1 + (2) RCE/admin class. Server-side Adobe - tracked per precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121355",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-82391",
+  "title": "Zephyr HTTP/2 static-file handler OOB read/write -> remote memory corruption, plausibly code execution, unauthenticated, 9.1, fix commit 4e0a5f38",
+  "product": "Zephyr RTOS HTTP server",
+  "score": 9.1,
+  "cvss": "v3.1",
+  "fixed": "Upstream fix commit 4e0a5f38 (GHSA-8jrg-wx88-g75j); release version unconfirmed",
+  "published": "2026-11-10T22:21:05.710 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 9.1 + (2) unauthenticated remote memory corruption / plausible RCE in a network server. Embedded RTOS network service - tracked per IoT/router precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-82391",
   "epss": null,
   "epss_percentile": null
  },
@@ -26711,6 +27144,54 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-121913",
+  "title": "Adobe Connect Incorrect Authorization (incorrect authorization -> privilege escalation), 8.8, fixed 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "product": "Adobe Connect",
+  "score": 8.8,
+  "cvss": "v3.1",
+  "fixed": "12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "published": "2026-11-10T22:18:27.920 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe Connect APSB26-191 batch (20 CVEs). Scope (1) 8.8 + (2) RCE/admin class. Server-side Adobe - tracked per precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121913",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-107356",
+  "title": "USGS ARMI authenticated file upload -> PHP RCE, 8.8, fixed 2026-07-20",
+  "product": "U.S. Geological Survey ARMI",
+  "score": 8.8,
+  "cvss": "v3.1",
+  "fixed": "Fixed 2026-07-20 (per CVE record; no version number stated)",
+  "published": "2026-11-10T22:18:14.577 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 8.8 + (2) authenticated file-upload RCE in a server app. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-107356",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126186",
+  "title": "Rails ActiveStorage Blob#open decoder confusion -> file disclosure / possible RCE via FFmpeg AviSynth, 8.8, fixed 8.1.4.1 / 8.0.5.2",
+  "product": "Ruby on Rails Active Storage",
+  "score": 8.8,
+  "cvss": "v3.1",
+  "fixed": "8.1.4.1 / 8.0.5.2",
+  "published": "2026-11-10T22:18:31.843 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 8.8 + (2) RCE class (decoder-confusion, possible RCE via FFmpeg AviSynth / ImageMagick delegates). Companion to the 16:30 run's Rails Active Storage 9.8 (126082, ImageMagick coder abuse) - same release train. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-126186",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2010-20125",
   "title": "DedeCMS file inclusion in plus/carbuyaction.php -> local file disclosure (old CVE, newly published)",
   "product": "DedeCMS before 5.7",
@@ -28641,6 +29122,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-122102",
+  "title": "Adobe Connect Stored XSS (stored XSS by low-privileged attacker), 8.7, fixed 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "product": "Adobe Connect",
+  "score": 8.7,
+  "cvss": "v3.1",
+  "fixed": "12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "published": "2026-11-10T22:18:28.730 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe Connect APSB26-191 batch (20 CVEs). Scope (1) 8.7 + (2) RCE/admin class. Server-side Adobe - tracked per precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-122102",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2023-7357",
   "title": "FlexNet Publisher lmadmin web UI remote code execution (CWE-829)",
   "product": "FlexNet Publisher (lmadmin web UI) before 2023 R2 (11.19.4.0)",
@@ -30452,6 +30949,38 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "kev": false,
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-10 13:30 ET hourly): newly published in window (Microsoft November 2026 Patch Tuesday, MSRC CVRF 2026-Nov). VS Code Workspace Trust bypass -> untrusted workspace content runs commands/code without trust. CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C. No exploitation reported; not in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative. EPSS unscored (null, brand new). Scope (2).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-125882",
+  "title": "N-able N-central relative path traversal, 8.6, fixed 26.4.1",
+  "product": "N-able N-central",
+  "score": 8.6,
+  "cvss": "v4.0",
+  "fixed": "26.4.1",
+  "published": "2026-11-10T22:18:31.000 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 8.6, management-plane product. NOT the Able2Shell set (see 125881 note). No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-125882",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-125879",
+  "title": "N-able N-central incorrect privilege assignment -> privilege escalation, 8.6, fixed 26.4.1",
+  "product": "N-able N-central",
+  "score": 8.6,
+  "cvss": "v4.0",
+  "fixed": "26.4.1",
+  "published": "2026-11-10T22:18:30.553 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 8.6 + (3) privilege escalation in a management-plane product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-125879",
   "epss": null,
   "epss_percentile": null
  },
@@ -34570,6 +35099,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-10 16:30 ET hourly): Kong 3.16.0.2 release companion (CVE.org record; NVD not yet ingested). Scope (1) 8.3 - cross-caller cache confusion (authorization failure on the gateway). No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
   "src": "https://cveawg.mitre.org/api/cve/CVE-2026-92442",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-121900",
+  "title": "Adobe Connect SQL Injection (SQL injection -> arbitrary code execution), 8.3, fixed 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "product": "Adobe Connect",
+  "score": 8.3,
+  "cvss": "v3.1",
+  "fixed": "12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)",
+  "published": "2026-11-10T22:18:27.020 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Adobe Connect APSB26-191 batch (20 CVEs). Scope (1) 8.3 + (2) RCE/admin class. Server-side Adobe - tracked per precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121900",
   "epss": null,
   "epss_percentile": null
  },
@@ -40081,6 +40626,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-125958",
+  "title": "N-able N-central remote code inclusion via unsigned NSP upgrade package -> root RCE, 7.5, affected through 24.6.1, fix unconfirmed",
+  "product": "N-able N-central",
+  "score": 7.5,
+  "cvss": "v4.0",
+  "fixed": "Not stated in CVE record (fix version unconfirmed)",
+  "published": "2026-11-10T22:18:31.287 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep, sub-8.0 keyword scan). Scope (2) RCE class regardless of score - vendor advisory titles it root RCE via unsigned NSP upgrade package upload. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-125958",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-114488",
   "title": "Wildfly IIOP pre-auth authentication bypass: CSIv2 accepts ITTPrincipalName identity assertions without transport auth -> impersonate any principal on IIOP-exposed @Remote EJB",
   "product": "Wildfly (wildfly-iiop-openjdk); Red Hat JBoss EAP 7 / Red Hat Fuse 7",
@@ -43374,59 +43935,59 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-10 --run 4:30 PM ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-10 --run 5:30 PM ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning — 2,828 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 62 new CVEs — no status changes", c:"", p:200},
-    {t:"  NEW: OpenObserve auth bypass 9.8 · Rails Active Storage 9.8", c:"warn", p:120},
-    {t:"  NEW: MongoDB Server UAF 9.5 + 8.8", c:"warn", p:120},
-    {t:"  NEW: Firefox 160 batch — 49 (6x sandbox escape 9.6, 43x 8.8)", c:"warn", p:120},
-    {t:"  NEW: Kong Gateway Enterprise x6 — all fixed in 3.16.0.2", c:"warn", p:120},
-    {t:"  NEW: sqlparse PHP code injection 8.4 · Chrome CacheStorage 8.1", c:"warn", p:120},
-    {t:"  NEW: Git heap overflow — GitLab Critical patch release", c:"warn", p:120},
+    {t:"Scanning — 2,863 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: 35 new CVEs — 1 already exploited", c:"", p:200},
+    {t:"  NEW: Adobe Connect x20 — to 10.0 (APSB26-191)", c:"warn", p:120},
+    {t:"  NEW: Adobe Experience Manager x4 — 9.9 (APSB26-189)", c:"warn", p:120},
+    {t:"  NEW: Basel Post Types 9.8 — EXPLOITED (VulnCheck KEV)", c:"warn", p:120},
+    {t:"  NEW: AsiaInfo BSS 9.8 x2 · N-able N-central x5 — to 9.3", c:"warn", p:120},
+    {t:"  NEW: Zephyr HTTP/2 9.1 · Rails ActiveStorage 8.8 · USGS ARMI 8.8", c:"warn", p:120},
     {t:"  Pending signal: ZDI-26-900 — Wireshark SMB RCE (8.8)", c:"warn", p:120},
-    {t:"  EPSS: 2,413 scored · 415 unscored (data 2026-11-10)", c:"dim", p:200},
-    {t:"  60 of 62 new records EPSS-unscored — brand new", c:"dim", p:200},
+    {t:"  EPSS: 2,413 scored · 450 unscored (data 2026-11-10)", c:"dim", p:200},
+    {t:"  All 35 new records EPSS-unscored — brand new", c:"dim", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  NEW THIS SCAN  ================", c:"bright", p:200},
     {t:"", p:60},
-    {t:">> CVE-2026-126065 — OpenObserve · 9.8", c:"warn", p:100},
-    {t:"   Empty password_ext -> unauth auth bypass + pre-auth RCE", c:"bright", p:100},
-    {t:"   FIX: 1.1.0 (GHSA-7w4v-2c9r-q94v)", c:"", p:200},
+    {t:">> Adobe Connect — 20 CVEs · to 10.0", c:"warn", p:100},
+    {t:"   Path traversal, SQLi, XXE, code injection, SSRF", c:"bright", p:100},
+    {t:"   FIX: 12.8.a / 12.9.a / 12.10.f / 12.11.i / 12.12.a (APSB26-191)", c:"", p:200},
     {t:"", p:60},
-    {t:">> CVE-2026-126082 — Rails Active Storage · 9.8", c:"warn", p:100},
-    {t:"   ImageMagick coder abuse -> unauth file write/read, RCE", c:"bright", p:100},
+    {t:">> Adobe Experience Manager — 4 CVEs · 9.9", c:"warn", p:100},
+    {t:"   Code injection + incorrect auth -> code execution", c:"bright", p:100},
+    {t:"   FIX: CS 2026.10.29251 / 6.5.25 hotfix (APSB26-189)", c:"", p:200},
+    {t:"", p:60},
+    {t:">> CVE-2026-89324 — Basel Post Types · 9.8", c:"warn", p:100},
+    {t:"   Hardcoded Opauth salt -> login as admin · ** EXPLOITED **", c:"bright", p:100},
+    {t:"   VulnCheck KEV — no confirmed fixed version", c:"", p:200},
+    {t:"", p:60},
+    {t:">> CVE-2026-125297 / 125298 — AsiaInfo BSS · 9.8", c:"warn", p:100},
+    {t:"   Unauth admin provisioning + JWT signature bypass", c:"bright", p:100},
+    {t:"   FIX: 9.2.41", c:"", p:200},
+    {t:"", p:60},
+    {t:">> N-able N-central — 5 CVEs · to 9.3", c:"warn", p:100},
+    {t:"   SSRF 9.3 · XXE 9.3 · traversal 8.6 · priv-esc 8.6", c:"bright", p:100},
+    {t:"   + root RCE via unsigned NSP package (7.5)", c:"bright", p:100},
+    {t:"   FIX: 26.4.1 (four; NSP-package fix unconfirmed)", c:"", p:200},
+    {t:"", p:60},
+    {t:">> CVE-2026-82391 — Zephyr HTTP/2 · 9.1", c:"warn", p:100},
+    {t:"   Static-file handler OOB read/write -> memory corruption", c:"bright", p:100},
+    {t:"   FIX: upstream commit 4e0a5f38 (GHSA-8jrg-wx88-g75j)", c:"", p:200},
+    {t:"", p:60},
+    {t:">> CVE-2026-126186 — Rails ActiveStorage · 8.8", c:"warn", p:100},
+    {t:"   Blob#open decoder confusion -> file disclosure / RCE", c:"bright", p:100},
     {t:"   FIX: 8.1.4.1 / 8.0.5.2", c:"", p:200},
     {t:"", p:60},
-    {t:">> CVE-2026-118383 — MongoDB Server · 9.5", c:"warn", p:100},
-    {t:"   Replication UAF -> unauth crash or code execution", c:"bright", p:100},
-    {t:"   FIX: 8.3.16 / 9.0.7 / 8.0.37 / 7.0.48 +", c:"", p:200},
-    {t:"", p:60},
-    {t:">> Firefox 160 batch — 49 CVEs · 9.6 / 8.8", c:"warn", p:100},
-    {t:"   6 sandbox escapes (9.6) + 43 memory-safety flaws (8.8)", c:"bright", p:100},
-    {t:"   FIX: Firefox 160 / ESR 115.45 / 153.7 / TB 160 / 153.7", c:"", p:200},
-    {t:"", p:60},
-    {t:">> Kong Gateway Enterprise — 6 CVEs · to 8.7", c:"warn", p:100},
-    {t:"   RBAC bypass, SQL injection, cache-key flaws", c:"bright", p:100},
-    {t:"   FIX: 3.16.0.2 (all six)", c:"", p:200},
-    {t:"", p:60},
-    {t:">> CVE-2026-112307 — sqlparse · 8.4", c:"warn", p:100},
-    {t:"   PHP code injection via OutputPHPFilter", c:"bright", p:100},
-    {t:"   FIX: 0.6.1", c:"", p:200},
-    {t:"", p:60},
-    {t:">> CVE-2026-121063 — Chrome CacheStorage · 8.1", c:"warn", p:100},
-    {t:"   Incorrect authorization -> site isolation bypass", c:"bright", p:100},
-    {t:"   FIX: 157.0.8103.38", c:"", p:200},
-    {t:"", p:60},
-    {t:">> CVE-2026-105437 — Git / GitLab · 7.5", c:"warn", p:100},
-    {t:"   Heap overflow in 3-way merge -> command exec in Gitaly", c:"bright", p:100},
-    {t:"   FIX: GitLab 19.5.4 / 19.4.6 / 19.3.8 — Critical patch", c:"", p:240},
+    {t:">> CVE-2026-107356 — USGS ARMI · 8.8", c:"warn", p:100},
+    {t:"   Authenticated file upload -> PHP RCE", c:"bright", p:100},
+    {t:"   FIX: 2026-07-20 (per CVE record)", c:"", p:240},
     {t:"", p:60},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
     {t:"", p:60},
@@ -43457,7 +44018,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
     {t:"   CVE-2026-97229 -> CISA KEV Oct 29 · EXPLOITED IN THE WILD", c:"dim", p:300},
     {t:"", p:80},
     {t:"==================================================", c:"bright", p:120},
-    {t:"[PRIORITY QUEUE: 1] OpenObserve CVE-2026-126065 — patch to 1.1.0.", c:"bright", p:120},
+    {t:"[PRIORITY QUEUE: 1] Basel CVE-2026-89324 — exploited; patch now.", c:"bright", p:120},
     {t:"Next scan: hourly — only material changes alert.", c:"dim", p:400},
     {t:"", p:60},
     {t:"C:\\COMFYPWN> _", c:"", p:6000}
@@ -43492,7 +44053,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   if(replayBtn){ replayBtn.addEventListener("click",function(){ paused=false; if(pauseBtn){pauseBtn.textContent="❚❚ PAUSE"; pauseBtn.setAttribute("aria-pressed","false");} start(); }); }
   start();
 })();
-/* ---- Full CVE dataset (Nov 10 16:30 ET sync) + drill-in details ---- */
+/* ---- Full CVE dataset (Nov 10 17:30 ET sync) + drill-in details ---- */
 var CVE_ITEMS=[];
 try{ CVE_ITEMS=JSON.parse(document.getElementById("cveData").textContent||"[]"); }catch(e){ CVE_ITEMS=[]; }
 var CVE_BY_ID={};
@@ -43756,7 +44317,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,828 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,863 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
