@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 10</span><span class="pill accent">2,387 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 10</span><span class="pill accent">2,396 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 10 2:30 AM ET:</strong> 2,387 CVEs tracked, filtered down to what needs action first. New this scan: 2 records added, 0 records changed — both are WordPress plugin flaws, and both score 8.0+. The headliner is CVE-2026-120513 (8.2, CVSS v3.1), an unauthenticated arbitrary file deletion flaw (CWE-22) in the Everest Forms plugin (through 3.6.2): the remove_csv_file_after_email_send path lets an attacker delete files under wp-content/uploads, and deleting the uploads .htaccess can re-enable PHP execution on hardened Apache servers; it needs the Save-and-Continue addon active with entry storage disabled, and it is fixed in 3.6.3. The other is CVE-2026-76877 (8.1), an unauthenticated authentication bypass in the WPML Multilingual CMS plugin (through 4.9.7): a race condition (CWE-287) in its language-per-domain single sign-on collapses the cross-domain sign-in token to a shared anonymous nonce, so an attacker can derive it and have WordPress auth cookies issued for a victim — administrators included — for a full account takeover; no fix is available. Neither new record is flagged exploited in the wild, is in CISA KEV, or carries a public PoC, so both land in Ones to Watch. EPSS scores are included in this snapshot: 2,253 scored, 134 unscored — the new records arrive unscored (brand new). Highlighted Drops, the Ones to Watch, and the grouped 2,387-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 10 4:30 AM ET:</strong> 2,396 CVEs tracked, filtered down to what needs action first. New this scan: 9 records added, 2 records changed. The headliner is CVE-2026-125350, a use-after-free zero-day in Google Chrome’s XML component that Google says is already exploited in the wild — the 8th Chrome zero-day of 2026. No CVSS is published yet (Google rates it High severity); it was reported anonymously on Nov 6, VulnCheck KEV-listed it on Nov 9, it is not in CISA KEV, and it is fixed in Chrome 157.0.8103.50/.51 (Windows/Mac), 157.0.8103.50 (Linux) and 156.0.8078.96 (Extended Stable). The other eight are an MB connect line / Helmholz remote-access batch — mbCONNECT24 / mymbCONNECT24 and myREX24V2 / myREX24V2.virtual, versions 2.0.0 to before 2.21.0, all fixed in 2.21.0 (CERT@VDE VDE-2026-079 + VDE-2026-141): five OS / OpenSSL command injections at 8.6 (CVE-2026-60035, CVE-2026-60036, CVE-2026-60037, CVE-2026-60038, CVE-2026-60039), a 9.3 XSS (CVE-2026-60043) and an 8.1 CSRF (CVE-2026-60041) that can push a logged-in backend user into critical system actions such as shutting down the server or restoring an uploaded backup, and an 8.7 weak static backup password that lets an unauthenticated attacker read backup contents (CVE-2026-60044). None of the eight is flagged exploited in the wild, is in CISA KEV, or carries a public PoC, and all eight score 8.0+, so all eight land in Ones to Watch. The 2 changed records both gained a first public PoC on Sploitus: CVE-2026-125399 (Fluxion, 8.6 — so it leaves Ones to Watch) and CVE-2026-123218 (IBM Aspera Faspex, 9.8, already CISA KEV-listed on Nov 9). EPSS scores are included in this snapshot: 2,253 scored, 143 unscored — all nine new records arrive unscored (brand new). Highlighted Drops, the Ones to Watch, and the grouped 2,396-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -430,7 +430,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>2,387</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>2,396</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 10</b><span>Last updated — hourly scans</span></div>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 2,387 CVEs</label>
+      <label for="cveSearch">Search all 2,396 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,387 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,396 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -497,7 +497,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 10 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1957 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 10 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 1964 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus two pre-CVE early signals that have no CVE ID at all yet. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 2 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -505,18 +505,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1957 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 1964 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 2,387 CVEs</h2><p>Every entry from the Nov 10 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 2,396 CVEs</h2><p>Every entry from the Nov 10 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,387.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">2,387 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,396.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">2,396 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 10 2:30 AM ET hourly scan — 2 records added, 0 records changed (2,387 CVEs tracked). Added: CVE-2026-120513 Everest Forms (WordPress plugin, through 3.6.2) — unauthenticated arbitrary file deletion (CWE-22) via remove_csv_file_after_email_send: files under wp-content/uploads can be deleted, and removing the uploads .htaccess can re-enable PHP execution on hardened Apache; requires the Save-and-Continue addon active with entry storage disabled (8.2, CVSS v3.1; fixed in 3.6.3); CVE-2026-76877 WPML Multilingual CMS (WordPress plugin, through 4.9.7) — unauthenticated authentication bypass via a race condition (CWE-287) in language-per-domain SSO: the cross-domain sign-in token collapses to a shared anonymous nonce, letting an attacker be issued WordPress auth cookies for a victim, administrators included — account takeover (8.1; no known patch). Neither of the new records is flagged exploited in the wild, is CISA KEV-listed, or carries a public PoC; both arrive EPSS-unscored (null, brand new). Both score 8.0+, so both join the Ones to Watch group, which now holds 1,957. Tier counts now stand at 877 CRITICAL, 1,363 HIGH, 22 MEDIUM, 1 LOW, 124 unscored across the set. EPSS scores are included in this snapshot: 2,253 scored, 134 unscored. By severity: 80 at 10.0, 797 at 9.0–9.9, 1,269 at 8.0–8.9 and 241 below 8.0 (incl. 124 unscored). Across the full set, 82 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 125 sit in the public-PoC group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 10 4:30 AM ET hourly scan — 9 records added, 2 records changed (2,396 CVEs tracked). Added: CVE-2026-125350 Google Chrome (Stable + Extended Stable) — use-after-free in the XML component, exploited in the wild per Google’s Nov 9 Stable channel update (the 8th Chrome zero-day of 2026; reported anonymously Nov 6; no CVSS published yet, Google rates it High severity; VulnCheck KEV-listed Nov 9; not in CISA KEV; fixed in 157.0.8103.50/.51 for Windows/Mac, 157.0.8103.50 for Linux, 156.0.8078.96 for Extended Stable); CVE-2026-60035, CVE-2026-60036, CVE-2026-60037, CVE-2026-60038 and CVE-2026-60039 — MB connect line mbCONNECT24 / mymbCONNECT24 and Helmholz myREX24V2 / myREX24V2.virtual OS / OpenSSL command injections (CWE-78, 8.6, CVSS v4.0) in the backend network auth, backend patch activate, frontend device importer, backend ImportPKCS12 and backend backup restore functions — a high-privileged remote attacker gets code execution; CVE-2026-60043 — XSS (CWE-79, 9.3, CVSS v3.1) on a logged-in backend user allowing critical system actions (shutdown the server / restore an uploaded backup); CVE-2026-60041 — CSRF (CWE-352, 8.1, CVSS v3.1) with the same critical-action impact; CVE-2026-60044 — backups use a weak static password (CWE-1393, 8.7, CVSS v4.0) letting an unauthenticated remote attacker read backup contents. All eight MB connect line / Helmholz records affect 2.0.0 to before 2.21.0 and are fixed in 2.21.0 (CERT@VDE VDE-2026-079 + VDE-2026-141, Nov 10); none is flagged exploited in the wild, is CISA KEV-listed, or carries a public PoC; all eight score 8.0+, so all eight join the Ones to Watch group. All nine new records arrive EPSS-unscored (null, brand new). Changed: CVE-2026-125399 (Fluxion before 6.39, 8.6) and CVE-2026-123218 (IBM Aspera Faspex, 9.8) each gained a first public PoC on Sploitus — the Fluxion flaw therefore leaves Ones to Watch, which now holds 1,964; the Faspex flaw was already CISA KEV-listed on Nov 9. Tier counts now stand at 878 CRITICAL, 1,370 HIGH, 22 MEDIUM, 1 LOW, 125 unscored across the set. EPSS scores are included in this snapshot: 2,253 scored, 143 unscored. By severity: 80 at 10.0, 798 at 9.0–9.9, 1,276 at 8.0–8.9 and 242 below 8.0 (incl. 125 unscored). Across the full set, 83 records are flagged exploited in the wild, 13 sit in the CISA KEV-listed group, and 126 sit in the public-PoC group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 
@@ -5028,8 +5028,8 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "published": "2026-11-07T04:17:28Z (NVD); IBM advisory published 2026-11-07",
   "exploited": true,
   "kev": true,
-  "poc": false,
-  "status": "MATERIAL 4(a) (2026-11-06 23:30 ET hourly): newly published in window. Authorized user crafts a specific message to bypass authorization and gain full administrative privileges (CWE-863, IBM PSIRT 9.8). Fixed 5.0.19 PL1. No exploitation reported; not in CISA KEV; not in VulnCheck KEV. EPSS unscored (brand new). Scope (1)+(3). MATERIAL 4(c) (2026-11-09 15:30 ET hourly): ADDED TO CISA KEV 2026-11-09 (catalog 2026.11.09, 1,773 entries; federal due date 2026-11-12; forensic triage per BOD 26-04). Also VulnCheck KEV-listed 2026-11-09 (Nov 9 filter, 17 records). Previously: no exploitation reported, not in CISA KEV (recorded 2026-11-06). Fix 5.0.19 PL1. EPSS 0.00396 / 34.123rd (2026-11-09), unchanged.",
+  "poc": true,
+  "status": "MATERIAL 4(a) (2026-11-06 23:30 ET hourly): newly published in window. Authorized user crafts a specific message to bypass authorization and gain full administrative privileges (CWE-863, IBM PSIRT 9.8). Fixed 5.0.19 PL1. No exploitation reported; not in CISA KEV; not in VulnCheck KEV. EPSS unscored (brand new). Scope (1)+(3). MATERIAL 4(c) (2026-11-09 15:30 ET hourly): ADDED TO CISA KEV 2026-11-09 (catalog 2026.11.09, 1,773 entries; federal due date 2026-11-12; forensic triage per BOD 26-04). Also VulnCheck KEV-listed 2026-11-09 (Nov 9 filter, 17 records). Previously: no exploitation reported, not in CISA KEV (recorded 2026-11-06). Fix 5.0.19 PL1. EPSS 0.00396 / 34.123rd (2026-11-09), unchanged. Public PoC now listed on Sploitus (2026-11-10T04:21:04Z); already CISA KEV-listed 2026-11-09.",
   "epss": 0.00396,
   "epss_percentile": 34.123
  },
@@ -10958,6 +10958,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "status": "No exploitation reported; not in CISA KEV. Unauthenticated remote attacker exfiltrates host files to external Google Cloud Storage buckets and overwrites arbitrary local files via crafted tool invocation parameters.",
   "epss": 0.00526,
   "epss_percentile": 44.831
+ },
+ {
+  "id": "CVE-2026-60043",
+  "title": "mbCONNECT24 / myREX24V2: XSS on logged-in backend user -> execution of critical system actions (shutdown server / restore uploaded backup), 9.3",
+  "product": "MB connect line mbCONNECT24 / mymbCONNECT24; Helmholz myREX24V2 / myREX24V2.virtual",
+  "score": 9.3,
+  "cvss": "9.3 (CVSS v3.1)",
+  "fixed": "2.21.0",
+  "published": "2026-11-10T09:17:24Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Unauthenticated XSS (CWE-79) on a logged-in backend user allows execution of multiple critical system actions - shutdown the server or restore an uploaded backup. Affected 2.0.0 to < 2.21.0; fixed 2.21.0 (CERT@VDE VDE-2026-079 + VDE-2026-141, Nov 10). No exploitation reported; not in CISA KEV; not in VulnCheck KEV. EPSS unscored (null, brand new).",
+  "src": "https://www.certvde.com/en/advisories/VDE-2026-141/",
+  "epss": null,
+  "epss_percentile": null
  },
  {
   "id": "CVE-2026-109618",
@@ -23427,6 +23443,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-60044",
+  "title": "mbCONNECT24 / myREX24V2: backups use a weak static password -> unauthenticated remote attacker reads backup contents, 8.7",
+  "product": "MB connect line mbCONNECT24 / mymbCONNECT24; Helmholz myREX24V2 / myREX24V2.virtual",
+  "score": 8.7,
+  "cvss": "8.7 (CVSS v4.0)",
+  "fixed": "2.21.0",
+  "published": "2026-11-10T09:17:24Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Backups use a weak static password (CWE-1393) allowing an unauthenticated remote attacker to access their content; total loss of confidentiality. Affected 2.0.0 to < 2.21.0; fixed 2.21.0 (CERT@VDE VDE-2026-079 + VDE-2026-141, Nov 10). No exploitation reported; not in CISA KEV; not in VulnCheck KEV. EPSS unscored (null, brand new).",
+  "src": "https://www.certvde.com/en/advisories/VDE-2026-141/",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2023-7357",
   "title": "FlexNet Publisher lmadmin web UI remote code execution (CWE-829)",
   "product": "FlexNet Publisher (lmadmin web UI) before 2023 R2 (11.19.4.0)",
@@ -25031,9 +25063,89 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "published": "2026-11-10T00:17:14Z (NVD)",
   "exploited": false,
   "kev": false,
-  "poc": false,
-  "status": "The fluxion.sh target scanner decodes access point ESSIDs with eval after escaping only single quotes; attackers within Wi-Fi range broadcast a crafted SSID to execute commands as root when the operator scans or selects it. (CWE-78) No exploitation reported; not in CISA KEV. EPSS unscored (null, brand new).",
+  "poc": true,
+  "status": "The fluxion.sh target scanner decodes access point ESSIDs with eval after escaping only single quotes; attackers within Wi-Fi range broadcast a crafted SSID to execute commands as root when the operator scans or selects it. (CWE-78) No exploitation reported; not in CISA KEV. EPSS unscored (null, brand new). First public PoC now listed on Sploitus (2026-11-10T08:15:08Z).",
   "src": "https://www.vulncheck.com/advisories/fluxion-before-6.39-os-command-injection-via-crafted-ssid",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-60035",
+  "title": "mbCONNECT24 / myREX24V2: OS command injection in backend network auth function, high-privileged remote attacker -> code execution, 8.6",
+  "product": "MB connect line mbCONNECT24 / mymbCONNECT24; Helmholz myREX24V2 / myREX24V2.virtual",
+  "score": 8.6,
+  "cvss": "8.6 (CVSS v4.0)",
+  "fixed": "2.21.0",
+  "published": "2026-11-10T09:17:22Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "High-privileged remote attacker performs OS command injection (CWE-78) in the backend network auth function -> code execution; total loss of C/I/A. Affected 2.0.0 to < 2.21.0; fixed 2.21.0 (CERT@VDE VDE-2026-079 + VDE-2026-141, Nov 10). No exploitation reported; not in CISA KEV; not in VulnCheck KEV. EPSS unscored (null, brand new).",
+  "src": "https://www.certvde.com/en/advisories/VDE-2026-141/",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-60036",
+  "title": "mbCONNECT24 / myREX24V2: OS command injection in backend patch activate function, high-privileged remote attacker -> code execution, 8.6",
+  "product": "MB connect line mbCONNECT24 / mymbCONNECT24; Helmholz myREX24V2 / myREX24V2.virtual",
+  "score": 8.6,
+  "cvss": "8.6 (CVSS v4.0)",
+  "fixed": "2.21.0",
+  "published": "2026-11-10T09:17:22Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "High-privileged remote attacker performs OS command injection (CWE-78) in the backend patch activate function -> code execution; total loss of C/I/A. Affected 2.0.0 to < 2.21.0; fixed 2.21.0 (CERT@VDE VDE-2026-079 + VDE-2026-141, Nov 10). No exploitation reported; not in CISA KEV; not in VulnCheck KEV. EPSS unscored (null, brand new).",
+  "src": "https://www.certvde.com/en/advisories/VDE-2026-141/",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-60037",
+  "title": "mbCONNECT24 / myREX24V2: OpenSSL command injection in frontend device importer function, high-privileged remote attacker -> code execution, 8.6",
+  "product": "MB connect line mbCONNECT24 / mymbCONNECT24; Helmholz myREX24V2 / myREX24V2.virtual",
+  "score": 8.6,
+  "cvss": "8.6 (CVSS v4.0)",
+  "fixed": "2.21.0",
+  "published": "2026-11-10T09:17:23Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "High-privileged remote attacker performs OpenSSL command injection (CWE-78) in the frontend device importer function -> code execution; total loss of C/I/A. Affected 2.0.0 to < 2.21.0; fixed 2.21.0 (CERT@VDE VDE-2026-079 + VDE-2026-141, Nov 10). No exploitation reported; not in CISA KEV; not in VulnCheck KEV. EPSS unscored (null, brand new).",
+  "src": "https://www.certvde.com/en/advisories/VDE-2026-141/",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-60038",
+  "title": "mbCONNECT24 / myREX24V2: OpenSSL command injection in backend ImportPKCS12 function, high-privileged remote attacker -> code execution, 8.6",
+  "product": "MB connect line mbCONNECT24 / mymbCONNECT24; Helmholz myREX24V2 / myREX24V2.virtual",
+  "score": 8.6,
+  "cvss": "8.6 (CVSS v4.0)",
+  "fixed": "2.21.0",
+  "published": "2026-11-10T09:17:23Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "High-privileged remote attacker performs OpenSSL command injection (CWE-78) in the backend ImportPKCS12 function -> code execution; total loss of C/I/A. Affected 2.0.0 to < 2.21.0; fixed 2.21.0 (CERT@VDE VDE-2026-079 + VDE-2026-141, Nov 10). No exploitation reported; not in CISA KEV; not in VulnCheck KEV. EPSS unscored (null, brand new).",
+  "src": "https://www.certvde.com/en/advisories/VDE-2026-141/",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-60039",
+  "title": "mbCONNECT24 / myREX24V2: OS command injection in backend backup restore function, high-privileged remote attacker -> code execution, 8.6",
+  "product": "MB connect line mbCONNECT24 / mymbCONNECT24; Helmholz myREX24V2 / myREX24V2.virtual",
+  "score": 8.6,
+  "cvss": "8.6 (CVSS v4.0)",
+  "fixed": "2.21.0",
+  "published": "2026-11-10T09:17:23Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "High-privileged remote attacker performs OS command injection (CWE-78) in the backend backup restore function -> code execution; total loss of C/I/A. Affected 2.0.0 to < 2.21.0; fixed 2.21.0 (CERT@VDE VDE-2026-079 + VDE-2026-141, Nov 10). No exploitation reported; not in CISA KEV; not in VulnCheck KEV. EPSS unscored (null, brand new).",
+  "src": "https://www.certvde.com/en/advisories/VDE-2026-141/",
   "epss": null,
   "epss_percentile": null
  },
@@ -32515,6 +32627,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-60041",
+  "title": "mbCONNECT24 / myREX24V2: CSRF on logged-in backend user -> execution of critical system actions (shutdown server / restore uploaded backup), 8.1",
+  "product": "MB connect line mbCONNECT24 / mymbCONNECT24; Helmholz myREX24V2 / myREX24V2.virtual",
+  "score": 8.1,
+  "cvss": "8.1 (CVSS v3.1)",
+  "fixed": "2.21.0",
+  "published": "2026-11-10T09:17:23Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "Unauthenticated CSRF (CWE-352) on a logged-in backend user allows execution of multiple critical system actions - shutdown the server or restore an uploaded backup. Affected 2.0.0 to < 2.21.0; fixed 2.21.0 (CERT@VDE VDE-2026-079 + VDE-2026-141, Nov 10). No exploitation reported; not in CISA KEV; not in VulnCheck KEV. EPSS unscored (null, brand new).",
+  "src": "https://www.certvde.com/en/advisories/VDE-2026-141/",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-101602",
   "title": "Low-privileged HTTP attacker takes over Oracle Agile PLM for Process; requires user interaction (Oracle Oct 2026 CPU)",
   "product": "Oracle Agile PLM for Process (Product Quality Management)",
@@ -36603,6 +36731,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-107242",
   "epss": null,
   "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-125350",
+  "title": "Google Chrome XML use-after-free zero-day, exploited in the wild (8th Chrome zero-day of 2026)",
+  "product": "Google Chrome (Stable + Extended Stable)",
+  "score": 0.0,
+  "cvss": "none published yet (Google: High severity)",
+  "fixed": "157.0.8103.50/.51 (Win/Mac), 157.0.8103.50 (Linux), 156.0.8078.96 (Extended Stable)",
+  "published": "2026-11-09 (Google Stable channel update)",
+  "exploited": true,
+  "kev": false,
+  "poc": false,
+  "status": "EXPLOITED IN THE WILD - Google: 'aware that an exploit for CVE-2026-125350 exists in the wild' (Stable channel update Nov 9, 2026). Use-after-free in Chrome's XML component (issue 582442907), reported anonymously Nov 6. VulnCheck KEV-listed 2026-11-09. NOT in CISA KEV. No CVSS assigned yet; no attribution/victimology published. Same release fixes 8 more flaws (7 High, 2 Medium): CVE-2026-125346 (second XML UAF), CVE-2026-125344 (V8 type confusion), 125342/125343/125345/125347/125348/125349 - no CVSS yet, no exploitation reported. EPSS unscored (null, brand new).",
+  "src": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_018223192.html",
+  "epss": null,
+  "epss_percentile": null
  }
 ]
 </script>
@@ -36614,21 +36758,23 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-10 --run 2:30 AM ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-10 --run 4:30 AM ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning — 2,387 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 2 new CVEs — both WordPress plugins", c:"", p:200},
-    {t:"  CVE-2026-120513 Everest Forms — unauth file deletion 8.2", c:"warn", p:120},
-    {t:"  CWE-22 · FIX: 3.6.3", c:"warn", p:120},
-    {t:"  CVE-2026-76877 WPML — auth bypass via race condition 8.1", c:"warn", p:120},
-    {t:"  CWE-287 · NO FIX — admin account takeover", c:"warn", p:120},
+    {t:"Scanning — 2,396 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: 9 new CVEs + 2 changed — 1 zero-day in the wild", c:"", p:200},
+    {t:"  CVE-2026-125350 Chrome XML UAF zero-day — IN THE WILD", c:"warn", p:120},
+    {t:"  8th Chrome 0-day of 2026 · NO CVSS YET · FIX: 157.0.8103.50/.51", c:"warn", p:120},
+    {t:"  MB connect line / Helmholz myREX24V2 batch — 8 new CVEs", c:"warn", p:120},
+    {t:"  CVE-2026-60035/36/37/38/39/41/43/44 · FIX: 2.21.0", c:"warn", p:120},
+    {t:"  5 cmd injections 8.6 · XSS 9.3 · CSRF 8.1 · weak backup pw 8.7", c:"warn", p:120},
     {t:"  Not exploited · not in CISA KEV · no public PoC", c:"warn", p:120},
-    {t:"  EPSS: 2,253 scored · 134 unscored", c:"dim", p:200},
+    {t:"  Changed: CVE-2026-125399 + CVE-2026-123218 — first public PoCs", c:"warn", p:120},
+    {t:"  EPSS: 2,253 scored · 143 unscored", c:"dim", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
@@ -36955,7 +37101,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,387 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,396 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
