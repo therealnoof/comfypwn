@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 10</span><span class="pill accent">2,876 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 10</span><span class="pill accent">2,892 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 10 8:30 PM ET:</strong> 2,876 CVEs tracked, filtered down to what needs action first. Seven new records were added this scan (total up from 2,869 to 2,876). The headline is CVE-2026-66613 (9.8), an unauthenticated remote code execution flaw in JetEngine, the Crocoblock WordPress plugin: a server-side template injection in its Timber/Twig Views, with a weaponized public proof-of-concept published Nov 10 — a baseline miss the 7:30 PM run had not caught; it is fixed in 3.8.14.1. Close behind are two authentication bypasses: CVE-2026-126542 (9.8), where an AVideo social-login display name set to a victim’s username logs an attacker in as that user — admin included, no password — and CVE-2026-126539 (9.2), where a Directus public-mode WebSocket skips permission checks and hands unauthenticated callers full CRUD on any user-defined collection (fixed in Directus 12.1.0). Two more AVideo flaws round out the set — CVE-2026-126543 (8.7), improper PayPal payment verification that lets unauthenticated callers manipulate wallet credit, and CVE-2026-126541 (8.6), missing authorization that lets authenticated streamers pull other users’ stream keys — alongside a LibreCAD heap overflow via crafted DWG files, CVE-2026-126497 (8.5), and a Jellyfin path traversal that can delete or move directories unauthenticated, CVE-2026-126499 (8.3; fixed in 12.0). None of the seven is in CISA KEV and none has confirmed exploitation in the wild; JetEngine lands in the Public PoC group, which grows from 136 to 137, and the other six join Ones to Watch, which grows from 2,394 to 2,400 — the In the Wild group is unchanged at 94. The pending signal from earlier scans, ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8) with no CVE assigned yet, still sits with the pre-CVE early signals below, outside the 2,876. EPSS (data 2026-11-10): 2,416 scored and 460 unscored across the set — six of the seven new records arrive unscored; JetEngine is scored at 0.0086 (58.80th percentile). Highlighted Drops, the Ones to Watch, and the grouped 2,876-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 10 9:30 PM ET:</strong> 2,892 CVEs tracked, filtered down to what needs action first. Sixteen new records were added this scan (total up from 2,876 to 2,892). The bulk is a catch-up batch from Oracle’s October 2026 Critical Patch Update: 14 enterprise takeover flaws (8.1–9.9) published Oct 20 that NVD only scored this window — two Oracle BPM Suite Human Workflow takeovers lead it, CVE-2026-91222 (9.9, low-privileged via SOAP with a scope change) and CVE-2026-91220 (9.8, unauthenticated via HTTP), alongside an unauthenticated Oracle Communications BRM Elastic Charging Engine takeover via RMI, CVE-2026-101763 (9.8), a 9.6 BPM Suite Fabric Layer compromise (CVE-2026-91243), a 9.1 BRM Server compromise (CVE-2026-101765), and E-Business Suite, JD Edwards EnterpriseOne, and Service Bus flaws at 8.1–8.8 — all fixed in the October 2026 CPU. The sharpest single addition is CVE-2026-59726 (10.0), an unauthenticated remote code execution flaw in the Ruflo MCP Bridge (“RufRoot”): a weaponized public exploit was published on Exploit-DB Nov 11, it is fixed in Ruflo 3.16.3, and patching does not undo AgentDB memory poisoning already injected — audit the memory store, don’t just upgrade. Rounding out the scan is CVE-2026-122979 (8.1), a Microsoft Teams for Android code-injection flaw from the November Patch Tuesday set (fixed in 1416/1.0.0.2026173602). None of the sixteen is in CISA KEV and none has confirmed exploitation in the wild; Ruflo lands in the Public PoC group, which grows from 137 to 138, and the other fifteen join Ones to Watch, which grows from 2,400 to 2,415 — the In the Wild group is unchanged at 94. The pending signal from earlier scans, ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8) with no CVE assigned yet, still sits with the pre-CVE early signals below, outside the 2,892. EPSS (data 2026-11-10): 2,431 scored and 461 unscored across the set — fifteen of the sixteen new records arrive scored; Teams for Android is the only null. Highlighted Drops, the Ones to Watch, and the grouped 2,892-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -430,7 +430,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>2,876</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>2,892</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 10</b><span>Last updated — hourly scans</span></div>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 2,876 CVEs</label>
+      <label for="cveSearch">Search all 2,892 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,876 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,892 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -497,7 +497,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 10 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 2363 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus three pre-CVE early signals that have no CVE ID at all yet — the newest is ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8). Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 10 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 2415 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus three pre-CVE early signals that have no CVE ID at all yet — the newest is ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8). Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 3 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -505,18 +505,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 2400 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 2415 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 2,876 CVEs</h2><p>Every entry from the Nov 10 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 2,892 CVEs</h2><p>Every entry from the Nov 10 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,876.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">2,876 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,892.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">2,892 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 10 8:30 PM ET hourly scan — 7 records added (total up from 2,869 to 2,876 CVEs tracked); no tracked records corrected this scan and no new pending early signal. The headline addition is JetEngine (Crocoblock WordPress plugin) unauthenticated RCE via server-side template injection in Timber/Twig Views CVE-2026-66613 (9.8; fixed in 3.8.14.1) — a baseline miss (CVE published Aug 19) whose weaponized public PoC was published Nov 10 and caught as a lag-gap catch this run; it is EPSS-scored at 0.0086 (58.80th percentile). The other six are newly published this window, none in CISA KEV and none with confirmed exploitation: AVideo authentication bypass via Hybridauth social-login display names CVE-2026-126542 (9.8; fixed in commit d34ccf23, post-29.7.1), Directus authorization bypass via public-mode WebSocket CVE-2026-126539 (9.2; fixed in 12.1.0), AVideo improper PayPal payment verification CVE-2026-126543 (8.7; fixed in commit 98406b79, post-29.7.1), AVideo missing authorization in Live plugin restream endpoints CVE-2026-126541 (8.6; fixed in commit be9d7019, post-29.7.1), LibreCAD heap-based out-of-bounds write via crafted DWG files CVE-2026-126497 (8.5; fixed in commit 17ba2b27, post-2.2.1.6), and Jellyfin path traversal in Library VirtualFolders endpoints CVE-2026-126499 (8.3; fixed in 12.0). Pending signal carried over: ZDI-26-900 — Wireshark SMB object export integer overflow RCE, ZDI CVSS 8.8, no CVE assigned yet, so it is not part of the 2,876. EPSS (data 2026-11-10): 2,416 scored, 460 unscored across the set; six of the seven new records are EPSS-unscored (null, brand new), and JetEngine is scored (0.0086, 58.80th percentile). Tier counts now stand at 978 CRITICAL, 1,731 HIGH, 22 MEDIUM, 1 LOW, 144 unscored across the set. By severity: 90 at 10.0, 888 at 9.0–9.9, 1,630 at 8.0–8.9 and 268 below 8.0 (incl. 144 records scored 0.0). Across the full set, 94 records are flagged exploited in the wild, 64 carry a CISA KEV flag, and 172 carry a public-PoC flag; in the grouped index, 94 sit in the In the wild group, 13 sit in the CISA KEV-listed group, 137 sit in the public-PoC group, 2,400 sit in the Ones to watch group, and 232 sit in the Everything else group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 10 9:30 PM ET hourly scan — 16 records added (total up from 2,876 to 2,892 CVEs tracked); no tracked records corrected this scan and no new pending early signal. The headline additions are a 14-CVE catch-up batch from Oracle’s October 2026 Critical Patch Update — enterprise takeover flaws published 2026-10-20 and NVD-scored in this run’s window, spanning Oracle BPM Suite, Communications BRM, E-Business Suite, JD Edwards EnterpriseOne, and Service Bus at 8.1–9.9, all fixed in the October 2026 CPU — plus Ruflo MCP Bridge unauthenticated RCE CVE-2026-59726 (10.0; public exploit published on Exploit-DB 2026-11-11, EDB 52705; fixed in 3.16.3; patching does not undo AgentDB memory poisoning already injected; EPSS 0.03019, 87.56th percentile) and Microsoft Teams for Android code injection CVE-2026-122979 (8.1; fixed in 1416/1.0.0.2026173602; EPSS unscored, brand new). None of the sixteen is in CISA KEV and none has confirmed exploitation in the wild. Pending signal carried over: ZDI-26-900 — Wireshark SMB object export integer overflow RCE, ZDI CVSS 8.8, no CVE assigned yet, so it is not part of the 2,892. EPSS (data 2026-11-10): 2,431 scored, 461 unscored across the set; fifteen of the sixteen new records are EPSS-scored and one (CVE-2026-122979) is unscored (null, brand new). Tier counts now stand at 984 CRITICAL, 1,741 HIGH, 22 MEDIUM, 1 LOW, 144 unscored across the set. By severity: 91 at 10.0, 893 at 9.0–9.9, 1,640 at 8.0–8.9 and 268 below 8.0 (incl. 144 records scored 0.0). Across the full set, 94 records are flagged exploited in the wild, 64 carry a CISA KEV flag, and 173 carry a public-PoC flag; in the grouped index, 94 sit in the In the wild group, 13 sit in the CISA KEV-listed group, 138 sit in the public-PoC group, 2,415 sit in the Ones to watch group, and 232 sit in the Everything else group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 
@@ -1918,6 +1918,21 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-27604",
   "epss": 0.01264,
   "epss_percentile": 69.94
+ },
+ {
+  "id": "CVE-2026-59726",
+  "title": "Ruflo MCP Bridge unauthenticated remote code execution (RufRoot), 10.0, fixed 3.16.3 - public exploit on Exploit-DB Nov 11",
+  "product": "Ruflo (ruvnet) MCP Bridge",
+  "score": 10.0,
+  "cvss": "10.0 (CVSS v3.1)",
+  "fixed": "3.16.3",
+  "published": "2026-07-09 (NVD); public exploit (Exploit-DB 52705) 2026-11-11",
+  "exploited": false,
+  "kev": false,
+  "poc": true,
+  "status": "MATERIAL 4(a)+4(c) (2026-11-11 21:30 ET hourly): pre-window baseline miss (published Jul 9, before the monitor started) - the material event is the public exploit publication on Exploit-DB 2026-11-11 (EDB 52705, '[remote] Ruflo MCP Bridge 3.16.2 - Remote Code Execution'), per the CVE-2026-66613 precedent (20:30 ET run, Nov 10). Scope (1) 10.0 + (2) unauthenticated OS command injection / missing authentication (CWE-78, CWE-306). Weaponized public PoC now available; no confirmed in-the-wild exploitation; not in CISA KEV; not in VulnCheck KEV recent set. Exploit code NOT linked; Exploit-DB listing cited as the reporting source. EPSS 0.03019 / 87.56th percentile (data 2026-11-10) - below both crossing thresholds. NOTE: patching to 3.16.3 does NOT undo AgentDB memory poisoning already injected.",
+  "epss": 0.03019,
+  "epss_percentile": 87.56
  },
  {
   "id": "CVE-2026-101446",
@@ -3931,6 +3946,21 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-119017",
   "epss": null,
   "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-91222",
+  "title": "Oracle BPM Suite Human Workflow low-privileged takeover via SOAP (scope change), 9.9, fixed October 2026 CPU",
+  "product": "Oracle Business Process Management Suite (Human Workflow 11g+)",
+  "score": 9.9,
+  "cvss": "9.9 (CVSS v3.1)",
+  "fixed": "October 2026 Critical Patch Update",
+  "published": "2026-10-20 (Oracle CPU); NVD-scored 2026-11-11",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00389 / 33.38th percentile (data 2026-11-10) - below both crossing thresholds.",
+  "epss": 0.00389,
+  "epss_percentile": 33.38
  },
  {
   "id": "CVE-2020-10220",
@@ -8922,6 +8952,36 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": 58.8
  },
  {
+  "id": "CVE-2026-101763",
+  "title": "Oracle Communications BRM Elastic Charging Engine unauthenticated takeover via RMI, 9.8, fixed October 2026 CPU",
+  "product": "Oracle Communications BRM - Elastic Charging Engine",
+  "score": 9.8,
+  "cvss": "9.8 (CVSS v3.1)",
+  "fixed": "October 2026 Critical Patch Update",
+  "published": "2026-10-20 (Oracle CPU); NVD-scored 2026-11-11",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00501 / 43.23rd percentile (data 2026-11-10) - below both crossing thresholds.",
+  "epss": 0.00501,
+  "epss_percentile": 43.23
+ },
+ {
+  "id": "CVE-2026-91220",
+  "title": "Oracle BPM Suite Human Workflow unauthenticated takeover via HTTP, 9.8, fixed October 2026 CPU",
+  "product": "Oracle Business Process Management Suite (Human Workflow)",
+  "score": 9.8,
+  "cvss": "9.8 (CVSS v3.1)",
+  "fixed": "October 2026 Critical Patch Update",
+  "published": "2026-10-20 (Oracle CPU); NVD-scored 2026-11-11",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.0045 / 39.45th percentile (data 2026-11-10) - below both crossing thresholds.",
+  "epss": 0.0045,
+  "epss_percentile": 39.45
+ },
+ {
   "id": "CVE-2025-65200",
   "title": "LocalStack CloudFormation deploy endpoint RCE via crafted templateURL content (lag-gap catch-up)",
   "product": "LocalStack 4.9.2",
@@ -10373,6 +10433,21 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121904",
   "epss": null,
   "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-91243",
+  "title": "Oracle BPM Suite Fabric Layer low-privileged compromise via HTTP (scope change), 9.6, fixed October 2026 CPU",
+  "product": "Oracle Business Process Management Suite (Fabric Layer)",
+  "score": 9.6,
+  "cvss": "9.6 (CVSS v3.1)",
+  "fixed": "October 2026 Critical Patch Update",
+  "published": "2026-10-20 (Oracle CPU); NVD-scored 2026-11-11",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00326 / 25.93rd percentile (data 2026-11-10) - below both crossing thresholds.",
+  "epss": 0.00326,
+  "epss_percentile": 25.93
  },
  {
   "id": "CVE-2026-103593/CVE-2026-103594/CVE-2026-112709/CVE-2026-112710/CVE-2026-90442/CVE-2026-90465/CVE-2026-93857/CVE-2026-93865/CVE-2026-93866/CVE-2026-93434",
@@ -15021,6 +15096,21 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-82391",
   "epss": null,
   "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-101765",
+  "title": "Oracle Communications BRM Server unauthenticated compromise via HTTP, 9.1, fixed October 2026 CPU",
+  "product": "Oracle Communications Billing and Revenue Management (BRM Server)",
+  "score": 9.1,
+  "cvss": "9.1 (CVSS v3.1)",
+  "fixed": "October 2026 Critical Patch Update",
+  "published": "2026-10-20 (Oracle CPU); NVD-scored 2026-11-11",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.0042 / 36.60th percentile (data 2026-11-10) - below both crossing thresholds.",
+  "epss": 0.0042,
+  "epss_percentile": 36.6
  },
  {
   "id": "CVE-2025-30023",
@@ -27304,6 +27394,111 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-101852",
+  "title": "Oracle E-Business Suite Product Hub low-privileged takeover via HTTP, 8.8, fixed October 2026 CPU",
+  "product": "Oracle E-Business Suite - Product Hub (Internal Operations)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "October 2026 Critical Patch Update",
+  "published": "2026-10-20 (Oracle CPU); NVD-scored 2026-11-11",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00389 / 33.33rd percentile (data 2026-11-10) - below both crossing thresholds.",
+  "epss": 0.00389,
+  "epss_percentile": 33.33
+ },
+ {
+  "id": "CVE-2026-101853",
+  "title": "Oracle E-Business Suite Product Hub low-privileged takeover via HTTP, 8.8, fixed October 2026 CPU",
+  "product": "Oracle E-Business Suite - Product Hub (Internal Operations)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "October 2026 Critical Patch Update",
+  "published": "2026-10-20 (Oracle CPU); NVD-scored 2026-11-11",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00389 / 33.33rd percentile (data 2026-11-10) - below both crossing thresholds.",
+  "epss": 0.00389,
+  "epss_percentile": 33.33
+ },
+ {
+  "id": "CVE-2026-101854",
+  "title": "Oracle E-Business Suite Product Hub low-privileged takeover via HTTP, 8.8, fixed October 2026 CPU",
+  "product": "Oracle E-Business Suite - Product Hub (Internal Operations)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "October 2026 Critical Patch Update",
+  "published": "2026-10-20 (Oracle CPU); NVD-scored 2026-11-11",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00389 / 33.33rd percentile (data 2026-11-10) - below both crossing thresholds.",
+  "epss": 0.00389,
+  "epss_percentile": 33.33
+ },
+ {
+  "id": "CVE-2026-87310",
+  "title": "Oracle JD Edwards EnterpriseOne Tools low-privileged takeover via JDENET, 8.8, fixed October 2026 CPU",
+  "product": "Oracle JD Edwards EnterpriseOne Tools (Database and Comm SEC)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "October 2026 Critical Patch Update",
+  "published": "2026-10-20 (Oracle CPU); NVD-scored 2026-11-11",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00389 / 33.33rd percentile (data 2026-11-10) - below both crossing thresholds.",
+  "epss": 0.00389,
+  "epss_percentile": 33.33
+ },
+ {
+  "id": "CVE-2026-87313",
+  "title": "Oracle JD Edwards EnterpriseOne Tools low-privileged takeover via JDENET, 8.8, fixed October 2026 CPU",
+  "product": "Oracle JD Edwards EnterpriseOne Tools (Interoperability SEC)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "October 2026 Critical Patch Update",
+  "published": "2026-10-20 (Oracle CPU); NVD-scored 2026-11-11",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00389 / 33.33rd percentile (data 2026-11-10) - below both crossing thresholds.",
+  "epss": 0.00389,
+  "epss_percentile": 33.33
+ },
+ {
+  "id": "CVE-2026-87419",
+  "title": "Oracle Service Bus low-privileged takeover via HTTP, 8.8, fixed October 2026 CPU",
+  "product": "Oracle Service Bus (Core)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "October 2026 Critical Patch Update",
+  "published": "2026-10-20 (Oracle CPU); NVD-scored 2026-11-11",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00389 / 33.33rd percentile (data 2026-11-10) - below both crossing thresholds.",
+  "epss": 0.00389,
+  "epss_percentile": 33.33
+ },
+ {
+  "id": "CVE-2026-87420",
+  "title": "Oracle Service Bus low-privileged takeover via HTTP, 8.8, fixed October 2026 CPU",
+  "product": "Oracle Service Bus (Core)",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1)",
+  "fixed": "October 2026 Critical Patch Update",
+  "published": "2026-10-20 (Oracle CPU); NVD-scored 2026-11-11",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00389 / 33.29th percentile (data 2026-11-10) - below both crossing thresholds.",
+  "epss": 0.00389,
+  "epss_percentile": 33.29
+ },
+ {
   "id": "CVE-2010-20125",
   "title": "DedeCMS file inclusion in plus/carbuyaction.php -> local file disclosure (old CVE, newly published)",
   "product": "DedeCMS before 5.7",
@@ -39437,6 +39632,51 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": 0.1945
  },
  {
+  "id": "CVE-2026-101791",
+  "title": "Oracle Communications BRM Elastic Charging Engine low-privileged compromise via TLS, 8.1, fixed October 2026 CPU",
+  "product": "Oracle Communications BRM - Elastic Charging Engine",
+  "score": 8.1,
+  "cvss": "8.1 (CVSS v3.1)",
+  "fixed": "October 2026 Critical Patch Update",
+  "published": "2026-10-20 (Oracle CPU); NVD-scored 2026-11-11",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00326 / 25.93rd percentile (data 2026-11-10) - below both crossing thresholds.",
+  "epss": 0.00326,
+  "epss_percentile": 25.93
+ },
+ {
+  "id": "CVE-2026-101834",
+  "title": "Oracle E-Business Suite Shipping Execution unauthenticated takeover via HTTP, 8.1, fixed October 2026 CPU",
+  "product": "Oracle E-Business Suite - Shipping Execution (Workflow Events)",
+  "score": 8.1,
+  "cvss": "8.1 (CVSS v3.1)",
+  "fixed": "October 2026 Critical Patch Update",
+  "published": "2026-10-20 (Oracle CPU); NVD-scored 2026-11-11",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00348 / 28.66th percentile (data 2026-11-10) - below both crossing thresholds.",
+  "epss": 0.00348,
+  "epss_percentile": 28.66
+ },
+ {
+  "id": "CVE-2026-122979",
+  "title": "Microsoft Teams for Android improper code generation (code injection) -> spoofing over a network, 8.1",
+  "product": "Microsoft Teams for Android",
+  "score": 8.1,
+  "cvss": "8.1 (CVSS v3.1)",
+  "fixed": "1416/1.0.0.2026173602",
+  "published": "2026-11-10 (MSRC/CVE.org); NVD-scored 2026-11-11",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): Microsoft November Patch Tuesday CVE, published 2026-11-10, NVD-scored in this run's window (lastModified 2026-11-11T02:17:09Z) and never previously recorded. Scope (1) 8.1 + (2) code-injection class. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (brand-new, unscored by FIRST as of 2026-11-10 data).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-101602",
   "title": "Low-privileged HTTP attacker takes over Oracle Agile PLM for Process; requires user interaction (Oracle Oct 2026 CPU)",
   "product": "Oracle Agile PLM for Process (Product Quality Management)",
@@ -44143,44 +44383,43 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-10 --run 8:30 PM ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-10 --run 9:30 PM ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning — 2,876 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 7 new CVEs — JetEngine RCE, weaponized PoC", c:"", p:200},
-    {t:"  NEW: JetEngine SSTI -> unauth RCE 9.8 — WEAPONIZED POC", c:"warn", p:120},
-    {t:"  NEW: AVideo auth bypass 9.8 -> admin login, no password", c:"warn", p:120},
-    {t:"  NEW: Directus WebSocket auth bypass 9.2 -> full CRUD", c:"warn", p:120},
-    {t:"  + AVideo payment 8.7 · AVideo stream keys 8.6", c:"warn", p:120},
-    {t:"  + LibreCAD heap overflow 8.5 · Jellyfin traversal 8.3", c:"warn", p:120},
+    {t:"Scanning — 2,892 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: 16 new CVEs — Oracle CPU batch + Ruflo 10.0", c:"", p:200},
+    {t:"  NEW: Ruflo MCP Bridge unauth RCE 10.0 — PUBLIC EXPLOIT", c:"warn", p:120},
+    {t:"  NEW: Oracle Oct 2026 CPU catch-up — 14 CVEs, 8.1–9.9", c:"warn", p:120},
+    {t:"  NEW: Oracle BPM Human Workflow takeover 9.9 + 9.8", c:"warn", p:120},
+    {t:"  NEW: Oracle BRM Elastic Charging unauth takeover 9.8", c:"warn", p:120},
+    {t:"  + E-Business Suite · JD Edwards · Service Bus 8.1–9.6", c:"warn", p:120},
+    {t:"  + MS Teams for Android code injection 8.1", c:"warn", p:120},
     {t:"  None in CISA KEV · no confirmed exploitation", c:"warn", p:120},
     {t:"  Pending signal: ZDI-26-900 — Wireshark SMB RCE (8.8)", c:"warn", p:120},
-    {t:"  EPSS: 2,416 scored · 460 unscored (data 2026-11-10)", c:"dim", p:200},
-    {t:"  6 of 7 new records unscored — JetEngine 0.0086 / 58.80th", c:"dim", p:200},
+    {t:"  EPSS: 2,431 scored · 461 unscored (data 2026-11-10)", c:"dim", p:200},
+    {t:"  15 of 16 new records scored — Teams the only null", c:"dim", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  NEW THIS SCAN  ================", c:"bright", p:200},
     {t:"", p:60},
-    {t:">> CVE-2026-66613 — JetEngine (WordPress) · 9.8", c:"warn", p:100},
-    {t:"   Unauth RCE via SSTI in Timber/Twig Views  ·  WEAPONIZED POC", c:"bright", p:100},
-    {t:"   PoC published Nov 10 · RCE as root in test env · NOT in CISA KEV", c:"", p:100},
-    {t:"   FIX: JetEngine 3.8.14.1", c:"", p:200},
+    {t:">> CVE-2026-59726 — Ruflo MCP Bridge · 10.0", c:"warn", p:100},
+    {t:"   Unauth RCE (RufRoot)  ·  PUBLIC EXPLOIT — Exploit-DB Nov 11", c:"bright", p:100},
+    {t:"   Patching does NOT undo AgentDB memory poisoning", c:"", p:100},
+    {t:"   FIX: Ruflo 3.16.3  ·  EPSS 0.03019 / 87.56th pct", c:"", p:200},
     {t:"", p:60},
-    {t:">> CVE-2026-126542 — AVideo · 9.8", c:"warn", p:100},
-    {t:"   Auth bypass via social-login name -> log in as admin", c:"bright", p:100},
-    {t:"   No password needed  ·  NOT in CISA KEV", c:"", p:100},
-    {t:"   FIX: commit d34ccf23 (post-29.7.1)", c:"", p:200},
+    {t:">> ORACLE OCT 2026 CPU — 14-CVE CATCH-UP BATCH", c:"warn", p:100},
+    {t:"   Enterprise takeover flaws  ·  8.1–9.9  ·  NVD-scored this run", c:"bright", p:100},
+    {t:"   BPM Suite Human Workflow 9.9 + 9.8 · BRM Elastic Charging 9.8", c:"", p:100},
+    {t:"   BRM Server 9.1 · BPM Fabric 9.6 · EBS / JD Edwards / Service Bus", c:"", p:100},
+    {t:"   FIX: October 2026 Critical Patch Update", c:"", p:200},
     {t:"", p:60},
-    {t:">> CVE-2026-126539 — Directus · 9.2", c:"warn", p:100},
-    {t:"   Public-mode WebSocket auth bypass -> unauth full CRUD", c:"bright", p:100},
-    {t:"   FIX: Directus 12.1.0", c:"", p:200},
-    {t:"", p:60},
-    {t:">> ALSO NEW: AVideo payment 8.7 · AVideo stream keys 8.6", c:"warn", p:100},
-    {t:">> ALSO NEW: LibreCAD 8.5 · Jellyfin 8.3 — index below", c:"warn", p:200},
+    {t:">> CVE-2026-122979 — Microsoft Teams for Android · 8.1", c:"warn", p:100},
+    {t:"   Code injection -> spoofing over a network", c:"bright", p:100},
+    {t:"   FIX: 1416/1.0.0.2026173602  ·  EPSS unscored (brand new)", c:"", p:200},
     {t:"", p:60},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
     {t:"", p:60},
@@ -44211,7 +44450,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
     {t:"   CVE-2026-97229 -> CISA KEV Oct 29 · EXPLOITED IN THE WILD", c:"dim", p:300},
     {t:"", p:80},
     {t:"==================================================", c:"bright", p:120},
-    {t:"[PRIORITY QUEUE: 1] JetEngine CVE-2026-66613 — unauth RCE 9.8, weaponized PoC out; update to 3.8.14.1 now.", c:"bright", p:120},
+    {t:"[PRIORITY QUEUE: 1] Ruflo CVE-2026-59726 — unauth RCE 10.0, public exploit out; update to 3.16.3 and audit AgentDB memory.", c:"bright", p:120},
     {t:"Next scan: hourly — only material changes alert.", c:"dim", p:400},
     {t:"", p:60},
     {t:"C:\\COMFYPWN> _", c:"", p:6000}
@@ -44246,7 +44485,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   if(replayBtn){ replayBtn.addEventListener("click",function(){ paused=false; if(pauseBtn){pauseBtn.textContent="❚❚ PAUSE"; pauseBtn.setAttribute("aria-pressed","false");} start(); }); }
   start();
 })();
-/* ---- Full CVE dataset (Nov 10 20:30 ET sync) + drill-in details ---- */
+/* ---- Full CVE dataset (Nov 10 21:30 ET sync) + drill-in details ---- */
 var CVE_ITEMS=[];
 try{ CVE_ITEMS=JSON.parse(document.getElementById("cveData").textContent||"[]"); }catch(e){ CVE_ITEMS=[]; }
 var CVE_BY_ID={};
@@ -44510,7 +44749,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,876 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,892 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
