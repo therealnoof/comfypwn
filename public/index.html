@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 10</span><span class="pill accent">2,892 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 10</span><span class="pill accent">2,918 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 10 9:30 PM ET:</strong> 2,892 CVEs tracked, filtered down to what needs action first. Sixteen new records were added this scan (total up from 2,876 to 2,892). The bulk is a catch-up batch from Oracle’s October 2026 Critical Patch Update: 14 enterprise takeover flaws (8.1–9.9) published Oct 20 that NVD only scored this window — two Oracle BPM Suite Human Workflow takeovers lead it, CVE-2026-91222 (9.9, low-privileged via SOAP with a scope change) and CVE-2026-91220 (9.8, unauthenticated via HTTP), alongside an unauthenticated Oracle Communications BRM Elastic Charging Engine takeover via RMI, CVE-2026-101763 (9.8), a 9.6 BPM Suite Fabric Layer compromise (CVE-2026-91243), a 9.1 BRM Server compromise (CVE-2026-101765), and E-Business Suite, JD Edwards EnterpriseOne, and Service Bus flaws at 8.1–8.8 — all fixed in the October 2026 CPU. The sharpest single addition is CVE-2026-59726 (10.0), an unauthenticated remote code execution flaw in the Ruflo MCP Bridge (“RufRoot”): a weaponized public exploit was published on Exploit-DB Nov 11, it is fixed in Ruflo 3.16.3, and patching does not undo AgentDB memory poisoning already injected — audit the memory store, don’t just upgrade. Rounding out the scan is CVE-2026-122979 (8.1), a Microsoft Teams for Android code-injection flaw from the November Patch Tuesday set (fixed in 1416/1.0.0.2026173602). None of the sixteen is in CISA KEV and none has confirmed exploitation in the wild; Ruflo lands in the Public PoC group, which grows from 137 to 138, and the other fifteen join Ones to Watch, which grows from 2,400 to 2,415 — the In the Wild group is unchanged at 94. The pending signal from earlier scans, ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8) with no CVE assigned yet, still sits with the pre-CVE early signals below, outside the 2,892. EPSS (data 2026-11-10): 2,431 scored and 461 unscored across the set — fifteen of the sixteen new records arrive scored; Teams for Android is the only null. Highlighted Drops, the Ones to Watch, and the grouped 2,892-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 10 10:30 PM ET:</strong> 2,918 CVEs tracked, filtered down to what needs action first. Twenty-six new records were added this scan (total up from 2,892 to 2,918), and the bulk is a single vendor drop: Fortinet’s November 2026 PSIRT batch — 24 advisories published Nov 10 spanning FortiMail, FortiManager / FortiAnalyzer, FortiAuthenticator, and FortiOS / FortiSASE at 8.1–9.8. Two unauthenticated FortiMail remote code execution flaws headline it at 9.8: CVE-2026-126147, a path traversal to unauthenticated RCE (fixed in FortiMail 8.0.2 / 7.6.7 / 7.4.9), and CVE-2026-126148, a command injection reachable through an HA join-request (fixed in 8.0.2 / 7.6.7). Close behind are a 9.4 unauthenticated FortiMail SQL injection to RCE (CVE-2026-126164), a 9.3 unauthenticated FortiOS / FortiSASE OSPF daemon authentication bypass (CVE-2026-126253), and a run of 9.0–9.1 authorization and authentication bypasses across FortiMail, FortiManager, and FortiAuthenticator — including a hard-coded-password credential-validation bypass in FortiAuthenticator (CVE-2026-126257, 9.0). The batch comes straight from Fortinet’s PSIRT: the CVE.org / NVD records were not yet published when this scan ran, so the scores are Fortinet CNA’s. Two non-Fortinet additions round out the scan: CVE-2026-63194 (8.7), a path traversal to arbitrary file write in the Bahmni bahmni-core admin CSV import (fixed in 0.93.1), and CVE-2026-63660 (8.1), an integer overflow to heap out-of-bounds write in mapbox node-fontnik’s RenderSDF (fixed in 0.7.7). None of the twenty-six is in CISA KEV, none has a public PoC, and none has confirmed exploitation in the wild; all twenty-six join Ones to Watch, which grows from 2,415 to 2,441 — the In the Wild group is unchanged at 94. The pending signal from earlier scans, ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8) with no CVE assigned yet, still sits with the pre-CVE early signals below, outside the 2,918. EPSS (data 2026-11-10): 2,431 scored and 487 unscored across the set — all twenty-six new records arrive unscored (null); the Fortinet batch has no CVE.org record for FIRST to score yet, and the two NVD additions are brand new. Highlighted Drops, the Ones to Watch, and the grouped 2,918-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -430,7 +430,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>2,892</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>2,918</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 10</b><span>Last updated — hourly scans</span></div>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 2,892 CVEs</label>
+      <label for="cveSearch">Search all 2,918 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,892 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,918 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -497,7 +497,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 10 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 2415 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus three pre-CVE early signals that have no CVE ID at all yet — the newest is ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8). Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 10 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 2441 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus three pre-CVE early signals that have no CVE ID at all yet — the newest is ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8). Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 3 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -505,18 +505,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 2415 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 2441 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 2,892 CVEs</h2><p>Every entry from the Nov 10 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 2,918 CVEs</h2><p>Every entry from the Nov 10 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,892.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">2,892 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,918.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">2,918 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 10 9:30 PM ET hourly scan — 16 records added (total up from 2,876 to 2,892 CVEs tracked); no tracked records corrected this scan and no new pending early signal. The headline additions are a 14-CVE catch-up batch from Oracle’s October 2026 Critical Patch Update — enterprise takeover flaws published 2026-10-20 and NVD-scored in this run’s window, spanning Oracle BPM Suite, Communications BRM, E-Business Suite, JD Edwards EnterpriseOne, and Service Bus at 8.1–9.9, all fixed in the October 2026 CPU — plus Ruflo MCP Bridge unauthenticated RCE CVE-2026-59726 (10.0; public exploit published on Exploit-DB 2026-11-11, EDB 52705; fixed in 3.16.3; patching does not undo AgentDB memory poisoning already injected; EPSS 0.03019, 87.56th percentile) and Microsoft Teams for Android code injection CVE-2026-122979 (8.1; fixed in 1416/1.0.0.2026173602; EPSS unscored, brand new). None of the sixteen is in CISA KEV and none has confirmed exploitation in the wild. Pending signal carried over: ZDI-26-900 — Wireshark SMB object export integer overflow RCE, ZDI CVSS 8.8, no CVE assigned yet, so it is not part of the 2,892. EPSS (data 2026-11-10): 2,431 scored, 461 unscored across the set; fifteen of the sixteen new records are EPSS-scored and one (CVE-2026-122979) is unscored (null, brand new). Tier counts now stand at 984 CRITICAL, 1,741 HIGH, 22 MEDIUM, 1 LOW, 144 unscored across the set. By severity: 91 at 10.0, 893 at 9.0–9.9, 1,640 at 8.0–8.9 and 268 below 8.0 (incl. 144 records scored 0.0). Across the full set, 94 records are flagged exploited in the wild, 64 carry a CISA KEV flag, and 173 carry a public-PoC flag; in the grouped index, 94 sit in the In the wild group, 13 sit in the CISA KEV-listed group, 138 sit in the public-PoC group, 2,415 sit in the Ones to watch group, and 232 sit in the Everything else group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 10 10:30 PM ET hourly scan — 26 records added (total up from 2,892 to 2,918 CVEs tracked); no tracked records corrected this scan and no new pending early signal. The headline additions are Fortinet’s November 2026 PSIRT batch — 24 vendor advisories published 2026-11-10 spanning FortiMail, FortiManager / FortiAnalyzer, FortiAuthenticator, and FortiOS / FortiSASE at 8.1–9.8 — headlined by two 9.8 unauthenticated FortiMail RCEs: CVE-2026-126147 (path traversal to unauthenticated RCE; fixed in FortiMail 8.0.2 / 7.6.7 / 7.4.9; PSIRT FG-IR-26-199) and CVE-2026-126148 (command injection via HA join-request to unauthenticated RCE; fixed in 8.0.2 / 7.6.7; FG-IR-26-200), plus a 9.4 unauthenticated FortiMail SQL injection to RCE (CVE-2026-126164; FG-IR-26-216). The batch’s CVE.org / NVD records were not yet published at scan time, so its scores are Fortinet CNA’s. Rounding out the scan: Bahmni bahmni-core path traversal to arbitrary file write CVE-2026-63194 (8.7; fixed in 0.93.1) and mapbox node-fontnik integer overflow to heap out-of-bounds write CVE-2026-63660 (8.1; fixed in 0.7.7). None of the twenty-six is in CISA KEV and none has confirmed exploitation in the wild. Pending signal carried over: ZDI-26-900 — Wireshark SMB object export integer overflow RCE, ZDI CVSS 8.8, no CVE assigned yet, so it is not part of the 2,918. EPSS (data 2026-11-10): 2,431 scored, 487 unscored across the set; all twenty-six new records are unscored (null — the Fortinet records are not yet published to CVE.org and the two NVD records are brand new). Tier counts now stand at 993 CRITICAL, 1,758 HIGH, 22 MEDIUM, 1 LOW, 144 unscored across the set. By severity: 91 at 10.0, 902 at 9.0–9.9, 1,657 at 8.0–8.9 and 268 below 8.0 (incl. 144 records scored 0.0). Across the full set, 94 records are flagged exploited in the wild, 64 carry a CISA KEV flag, and 173 carry a public-PoC flag; in the grouped index, 94 sit in the In the wild group, 13 sit in the CISA KEV-listed group, 138 sit in the public-PoC group, 2,441 sit in the Ones to watch group, and 232 sit in the Everything else group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 
@@ -8982,6 +8982,36 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": 39.45
  },
  {
+  "id": "CVE-2026-126147",
+  "title": "FortiMail path traversal -> unauthenticated remote code execution, 9.8",
+  "product": "FortiMail",
+  "score": 9.8,
+  "cvss": "9.8 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "FortiMail 8.0.2+, 7.6.7+, 7.4.9+ (7.2: migrate to a fixed release)",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-199; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 9.8 + (2) unauthenticated RCE. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126148",
+  "title": "FortiMail command injection -> unauthenticated remote code execution via HA join-request, 9.8",
+  "product": "FortiMail",
+  "score": 9.8,
+  "cvss": "9.8 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "FortiMail 8.0.2+, 7.6.7+",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-200; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 9.8 + (2) unauthenticated RCE. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2025-65200",
   "title": "LocalStack CloudFormation deploy endpoint RCE via crafted templateURL content (lag-gap catch-up)",
   "product": "LocalStack 4.9.2",
@@ -11331,6 +11361,21 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": 79.89
  },
  {
+  "id": "CVE-2026-126164",
+  "title": "FortiMail SQL injection -> unauthenticated remote code execution, 9.4",
+  "product": "FortiMail",
+  "score": 9.4,
+  "cvss": "9.4 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "FortiMail 8.0.2+, 7.6.7+, 7.4.9+ (7.2: migrate to a fixed release)",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-216; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 9.4 + (2) unauthenticated RCE. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2023-22793",
   "title": "Veeam Management Pack for Microsoft System Center unauthenticated RCE on Veeam Virtualization Extensions service",
   "product": "Veeam Management Pack for Microsoft System Center 9.0 before 13.1.0.334",
@@ -12402,6 +12447,21 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 9.3 + (2) XXE in a management-plane product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new). CORRECTION 2026-11-10 18:30 ET: CSO Online (Nov 10) reports the Able2Shell emergency hotfix (N-central 2026.4 HF2) lists this CVE among its 7 CVEs, and N-able's own advisories (published 11/10/2026) confirm fix 2026.4.1. The 17:30 run's 'NOT the Able2Shell set' note is WITHDRAWN for this CVE - it IS an Able2Shell hotfix CVE. (CVE-2026-125958, 7.5 root RCE, is NOT among CSO's 7 and stays tracked separately.)",
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-125883",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126253",
+  "title": "FortiOS/FortiSASE ospf daemon authentication bypass -> unauthenticated LSA broadcast, 9.3",
+  "product": "FortiOS / FortiSASE",
+  "score": 9.3,
+  "cvss": "9.3 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "FortiOS 8.0.2+, 7.6.8+, 7.4.13+, 7.2.14+; FortiSASE 26.3.2 (remediated)",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-267; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 9.3 + (3) unauthenticated authentication bypass. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
   "epss": null,
   "epss_percentile": null
  },
@@ -15113,6 +15173,66 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": 36.6
  },
  {
+  "id": "CVE-2026-126155",
+  "title": "FortiMail incorrect authorization -> unauthenticated IBE webmail session as any recipient, 9.1",
+  "product": "FortiMail",
+  "score": 9.1,
+  "cvss": "9.1 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "FortiMail 8.0.2+, 7.6.7+, 7.4.9+ (7.2: migrate to a fixed release)",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-207; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 9.1 + (3) unauthenticated auth bypass to another user's account. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126156",
+  "title": "FortiMail authorization bypass -> unauthenticated arbitrary IBE account takeover, 9.1",
+  "product": "FortiMail",
+  "score": 9.1,
+  "cvss": "9.1 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "FortiMail 8.0.2+, 7.6.7+, 7.4.9+ (7.2: migrate to a fixed release)",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-208; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 9.1 + (3) unauthenticated account takeover. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126229",
+  "title": "FortiManager/FortiAnalyzer dmserver authorization bypass -> authenticated admin accesses other VDOMs, 9.1",
+  "product": "FortiManager / FortiAnalyzer",
+  "score": 9.1,
+  "cvss": "9.1 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "8.0.2+, 7.6.8+, 7.4.12+ (7.2: migrate to a fixed release)",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-244; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 9.1 + (3) cross-VDOM admin access. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126251",
+  "title": "FortiAuthenticator incorrect authorization -> authentication bypass, 9.1",
+  "product": "FortiAuthenticator",
+  "score": 9.1,
+  "cvss": "9.1 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "FortiAuthenticator 8.0.4+, 6.6.11+",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-265; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 9.1 + (3) authentication bypass. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2025-30023",
   "title": "Authenticated RCE via insecure deserialization (Axis Camera Station exploit chain)",
   "product": "Axis Camera Station",
@@ -15455,6 +15575,21 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "kev": false,
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-10 13:30 ET hourly): newly published in window (Microsoft November 2026 Patch Tuesday, MSRC CVRF 2026-Nov). SharePoint stored XSS (CWE-79) - authenticated content author stores script running in another user incl. admin context. CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C. No exploitation reported; not in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative. EPSS unscored (null, brand new). Scope (1).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126257",
+  "title": "FortiAuthenticator hard-coded password -> unauthenticated credential-validation bypass, 9.0",
+  "product": "FortiAuthenticator",
+  "score": 9.0,
+  "cvss": "9.0 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "FortiAuthenticator 8.0.4+, 6.6.11+",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-271; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 9.0 + (3) unauthenticated auth bypass. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
   "epss": null,
   "epss_percentile": null
  },
@@ -27499,6 +27634,51 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": 33.29
  },
  {
+  "id": "CVE-2026-126144",
+  "title": "FortiMail/FortiRecorder/FortiVoice OS command injection -> authenticated remote code execution, 8.8",
+  "product": "FortiMail / FortiRecorder / FortiVoice",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "FortiMail 8.0.2+, 7.6.5+, 7.4.7+ (7.2: migrate); FortiRecorder 7.6.3+/7.2.13+/7.0.7+ (upcoming)",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-196; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 8.8 + (2) RCE class in management interface. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126175",
+  "title": "FortiAnalyzer/FortiManager SQL injection -> authenticated remote code execution, 8.8",
+  "product": "FortiAnalyzer / FortiManager",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "7.6.8+, 7.4.12+, 7.2.13+ (7.2: migrate to a fixed release)",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-221; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 8.8 + (2) SQLi-to-RCE in management interface. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126241",
+  "title": "FortiAuthenticator SQL injection -> authenticated SQL command execution, 8.8",
+  "product": "FortiAuthenticator",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "FortiAuthenticator 8.0.4+, 6.6.11+",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-256; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 8.8. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2010-20125",
   "title": "DedeCMS file inclusion in plus/carbuyaction.php -> local file disclosure (old CVE, newly published)",
   "product": "DedeCMS before 5.7",
@@ -29473,6 +29653,96 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-10 20:30 ET hourly): newly published in window (NVD pub 01:17Z). Scope (1) 8.7 - unauthenticated attackers forward genuine VERIFIED recurring-payment IPNs from their own PayPal account to credit arbitrary wallets each billing cycle. No exploitation reported; not in CISA KEV (catalog 2026.11.10, 1,779 entries). EPSS unscored (null, brand new).",
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-126543",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126183",
+  "title": "FortiManager GUI authorization bypass -> authenticated command execution outside scope, 8.7",
+  "product": "FortiManager / FortiManager Cloud",
+  "score": 8.7,
+  "cvss": "8.7 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "8.0.2+, 7.6.8+, 7.4.12+, 7.2.13+",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-228; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 8.7 + (2) RCE class in management interface. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126214",
+  "title": "FortiManager/FortiAnalyzer incorrect authorization -> authenticated admin privilege escalation, 8.7",
+  "product": "FortiManager / FortiAnalyzer",
+  "score": 8.7,
+  "cvss": "8.7 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "8.0.2+, 7.6.8+, 7.4.12+, 7.2.13+",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-234; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 8.7 + (3) privilege escalation / auth bypass. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126215",
+  "title": "FortiManager/FortiAnalyzer incorrect authorization -> authenticated admin privilege escalation, 8.7",
+  "product": "FortiManager / FortiAnalyzer",
+  "score": 8.7,
+  "cvss": "8.7 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "8.0.2+, 7.6.8+, 7.4.12+, 7.2.13+",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-234; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 8.7 + (3) privilege escalation / auth bypass. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126216",
+  "title": "FortiManager/FortiAnalyzer incorrect authorization -> authenticated admin privilege escalation, 8.7",
+  "product": "FortiManager / FortiAnalyzer",
+  "score": 8.7,
+  "cvss": "8.7 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "8.0.2+, 7.6.8+, 7.4.12+, 7.2.13+",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-234; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 8.7 + (3) privilege escalation / auth bypass. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126217",
+  "title": "FortiManager/FortiAnalyzer incorrect authorization -> authenticated admin privilege escalation, 8.7",
+  "product": "FortiManager / FortiAnalyzer",
+  "score": 8.7,
+  "cvss": "8.7 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "8.0.2+, 7.6.8+, 7.4.12+, 7.2.13+",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-234; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 8.7 + (3) privilege escalation / auth bypass. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-63194",
+  "title": "Bahmni bahmni-core 0.93 path traversal -> arbitrary file write in admin CSV import, 8.7",
+  "product": "Bahmni bahmni-core (OpenMRS module)",
+  "score": 8.7,
+  "cvss": "8.7 (CVSS v4.0, NVD)",
+  "fixed": "0.93.1",
+  "published": "2026-11-11T03:16:52Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): NVD-published in window (2026-11-11T03:16:52Z), never previously recorded. Scope (1) 8.7 + (2) arbitrary file write class. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (brand-new, unscored by FIRST).",
   "epss": null,
   "epss_percentile": null
  },
@@ -34193,6 +34463,21 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": 0.0359
  },
  {
+  "id": "CVE-2026-126180",
+  "title": "FortiManager template injection -> low-priv Device Manager admin to super admin on managed FortiGates, 8.4",
+  "product": "FortiManager / FortiManager Cloud",
+  "score": 8.4,
+  "cvss": "8.4 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "8.0.2+, 7.6.8+, 7.4.12+ (7.2: migrate to a fixed release)",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-225; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 8.4 + (2) template injection to code exec + (3) privilege escalation to super admin. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2025-14260",
   "title": "WSO2 SSRF via improper access-control enforcement on resource location - unauthenticated access to internal/external resources",
   "product": "WSO2 API Manager / Identity Server as Key Manager",
@@ -35518,6 +35803,21 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-10 20:30 ET hourly): newly published in window (NVD pub 01:17Z). Scope (1) 8.3 - unauthenticated path traversal via unvalidated library names in DELETE /Library/VirtualFolders and POST /Library/VirtualFolders/Name. No exploitation reported; not in CISA KEV (catalog 2026.11.10, 1,779 entries). EPSS unscored (null, brand new).",
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-126499",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126252",
+  "title": "FortiAuthenticator SQL injection in collectoragent -> authenticated remote code execution, 8.3",
+  "product": "FortiAuthenticator",
+  "score": 8.3,
+  "cvss": "8.3 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "FortiAuthenticator 8.0.4+, 6.6.11+",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-266; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 8.3 + (2) SQLi-to-RCE. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
   "epss": null,
   "epss_percentile": null
  },
@@ -36973,6 +37273,66 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-10 16:30 ET hourly): Kong 3.16.0.2 release companion (CVE.org record; NVD not yet ingested). Scope (1) 8.2 - cache-key confusion (authorization failure on the gateway). No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
   "src": "https://cveawg.mitre.org/api/cve/CVE-2026-123041",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126184",
+  "title": "FortiAnalyzer/FortiManager authentication bypass by spoofing -> HA state disruption, 8.2",
+  "product": "FortiAnalyzer / FortiManager",
+  "score": 8.2,
+  "cvss": "8.2 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "8.0.2+, 7.6.8+, 7.4.12+, 7.2.13+",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-229; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 8.2 + (3) authentication bypass. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126218",
+  "title": "FortiManager authorization bypass -> authenticated admin privilege escalation to root, 8.2",
+  "product": "FortiManager",
+  "score": 8.2,
+  "cvss": "8.2 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "8.0.2+, 7.6.8+, 7.4.12+",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-235; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 8.2 + (3) privilege escalation to root. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126240",
+  "title": "FortiAuthenticator LDAP injection -> authenticated authentication bypass, 8.2",
+  "product": "FortiAuthenticator",
+  "score": 8.2,
+  "cvss": "8.2 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "FortiAuthenticator 8.0.4+, 6.6.11+",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-255; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 8.2 + (3) authentication bypass. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126160",
+  "title": "FortiMail improper authentication -> unauthenticated privilege escalation, quarantine release/delete, 8.2",
+  "product": "FortiMail",
+  "score": 8.2,
+  "cvss": "8.2 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "FortiMail 8.0.2+, 7.6.7+, 7.4.9+ (7.2: migrate to a fixed release)",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-212; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 8.2 + (3) unauthenticated privilege escalation. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
   "epss": null,
   "epss_percentile": null
  },
@@ -39673,6 +40033,36 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "kev": false,
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): Microsoft November Patch Tuesday CVE, published 2026-11-10, NVD-scored in this run's window (lastModified 2026-11-11T02:17:09Z) and never previously recorded. Scope (1) 8.1 + (2) code-injection class. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (brand-new, unscored by FIRST as of 2026-11-10 data).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126152",
+  "title": "FortiMail authorization bypass -> authenticated delete directories as root / cross-tenant mailbox access, 8.1",
+  "product": "FortiMail",
+  "score": 8.1,
+  "cvss": "8.1 (CVSS v3.1, Fortinet CNA)",
+  "fixed": "FortiMail 8.0.2+, 7.6.7+, 7.4.9+ (7.2: migrate to a fixed release)",
+  "published": "2026-11-10 (Fortinet PSIRT FG-IR-26-204; NVD/CVE.org record not yet published)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 8.1 + (3) root-level file deletion / cross-tenant access. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-63660",
+  "title": "node-fontnik <0.7.7 integer overflow -> heap out-of-bounds write in RenderSDF via crafted font, 8.1",
+  "product": "mapbox node-fontnik",
+  "score": 8.1,
+  "cvss": "8.1 (CVSS v3.1, NVD)",
+  "fixed": "0.7.7",
+  "published": "2026-11-11T03:16:52Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): NVD-published in window (2026-11-11T03:16:52Z), never previously recorded. Scope (1) 8.1. Heap OOB write / memory corruption class; crash demonstrated, code execution not demonstrated. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (brand-new, unscored by FIRST).",
   "epss": null,
   "epss_percentile": null
  },
@@ -44383,43 +44773,51 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-10 --run 9:30 PM ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-10 --run 10:30 PM ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning — 2,892 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 16 new CVEs — Oracle CPU batch + Ruflo 10.0", c:"", p:200},
-    {t:"  NEW: Ruflo MCP Bridge unauth RCE 10.0 — PUBLIC EXPLOIT", c:"warn", p:120},
-    {t:"  NEW: Oracle Oct 2026 CPU catch-up — 14 CVEs, 8.1–9.9", c:"warn", p:120},
-    {t:"  NEW: Oracle BPM Human Workflow takeover 9.9 + 9.8", c:"warn", p:120},
-    {t:"  NEW: Oracle BRM Elastic Charging unauth takeover 9.8", c:"warn", p:120},
-    {t:"  + E-Business Suite · JD Edwards · Service Bus 8.1–9.6", c:"warn", p:120},
-    {t:"  + MS Teams for Android code injection 8.1", c:"warn", p:120},
-    {t:"  None in CISA KEV · no confirmed exploitation", c:"warn", p:120},
+    {t:"Scanning — 2,918 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: 26 new CVEs — Fortinet Nov PSIRT batch of 24 + 2", c:"", p:200},
+    {t:"  NEW: FortiMail unauth RCE pair at 9.8 — traversal + HA join-request", c:"warn", p:120},
+    {t:"  NEW: Fortinet Nov 2026 PSIRT — 24 CVEs, 8.1–9.8", c:"warn", p:120},
+    {t:"  NEW: FortiMail SQLi -> unauth RCE 9.4 · FortiOS OSPF bypass 9.3", c:"warn", p:120},
+    {t:"  NEW: FortiManager / FortiAnalyzer / FortiAuthenticator 8.2–9.1", c:"warn", p:120},
+    {t:"  + Bahmni bahmni-core file write 8.7 · node-fontnik OOB write 8.1", c:"warn", p:120},
+    {t:"  None in CISA KEV · no PoC · no confirmed exploitation", c:"warn", p:120},
     {t:"  Pending signal: ZDI-26-900 — Wireshark SMB RCE (8.8)", c:"warn", p:120},
-    {t:"  EPSS: 2,431 scored · 461 unscored (data 2026-11-10)", c:"dim", p:200},
-    {t:"  15 of 16 new records scored — Teams the only null", c:"dim", p:200},
+    {t:"  EPSS: 2,431 scored · 487 unscored (data 2026-11-10)", c:"dim", p:200},
+    {t:"  All 26 new records unscored — Fortinet not on CVE.org yet", c:"dim", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  NEW THIS SCAN  ================", c:"bright", p:200},
     {t:"", p:60},
-    {t:">> CVE-2026-59726 — Ruflo MCP Bridge · 10.0", c:"warn", p:100},
-    {t:"   Unauth RCE (RufRoot)  ·  PUBLIC EXPLOIT — Exploit-DB Nov 11", c:"bright", p:100},
-    {t:"   Patching does NOT undo AgentDB memory poisoning", c:"", p:100},
-    {t:"   FIX: Ruflo 3.16.3  ·  EPSS 0.03019 / 87.56th pct", c:"", p:200},
+    {t:">> CVE-2026-126147 — FortiMail · 9.8", c:"warn", p:100},
+    {t:"   Path traversal -> unauthenticated RCE", c:"bright", p:100},
+    {t:"   Fortinet PSIRT FG-IR-26-199  ·  CVE.org record pending", c:"", p:100},
+    {t:"   FIX: FortiMail 8.0.2 / 7.6.7 / 7.4.9  ·  EPSS unscored", c:"", p:200},
     {t:"", p:60},
-    {t:">> ORACLE OCT 2026 CPU — 14-CVE CATCH-UP BATCH", c:"warn", p:100},
-    {t:"   Enterprise takeover flaws  ·  8.1–9.9  ·  NVD-scored this run", c:"bright", p:100},
-    {t:"   BPM Suite Human Workflow 9.9 + 9.8 · BRM Elastic Charging 9.8", c:"", p:100},
-    {t:"   BRM Server 9.1 · BPM Fabric 9.6 · EBS / JD Edwards / Service Bus", c:"", p:100},
-    {t:"   FIX: October 2026 Critical Patch Update", c:"", p:200},
+    {t:">> CVE-2026-126148 — FortiMail · 9.8", c:"warn", p:100},
+    {t:"   Command injection via HA join-request -> unauth RCE", c:"bright", p:100},
+    {t:"   Fortinet PSIRT FG-IR-26-200  ·  CVE.org record pending", c:"", p:100},
+    {t:"   FIX: FortiMail 8.0.2 / 7.6.7  ·  EPSS unscored", c:"", p:200},
     {t:"", p:60},
-    {t:">> CVE-2026-122979 — Microsoft Teams for Android · 8.1", c:"warn", p:100},
-    {t:"   Code injection -> spoofing over a network", c:"bright", p:100},
-    {t:"   FIX: 1416/1.0.0.2026173602  ·  EPSS unscored (brand new)", c:"", p:200},
+    {t:">> FORTINET NOV 2026 PSIRT — 24-CVE BATCH", c:"warn", p:100},
+    {t:"   Vendor-published Nov 10  ·  8.1–9.8  ·  Fortinet CNA scores", c:"bright", p:100},
+    {t:"   FortiMail 8 · FortiManager/Analyzer 10 · FortiAuthenticator 5", c:"", p:100},
+    {t:"   FortiOS/FortiSASE 1 · incl. FortiMail SQLi -> RCE 9.4 (126164)", c:"", p:100},
+    {t:"   FIX: per-advisory fixed releases — see each record", c:"", p:200},
+    {t:"", p:60},
+    {t:">> CVE-2026-63194 — Bahmni bahmni-core · 8.7", c:"warn", p:100},
+    {t:"   Path traversal -> arbitrary file write in admin CSV import", c:"bright", p:100},
+    {t:"   FIX: 0.93.1  ·  EPSS unscored (brand new)", c:"", p:200},
+    {t:"", p:60},
+    {t:">> CVE-2026-63660 — node-fontnik · 8.1", c:"warn", p:100},
+    {t:"   Integer overflow -> heap OOB write in RenderSDF", c:"bright", p:100},
+    {t:"   FIX: 0.7.7  ·  EPSS unscored (brand new)", c:"", p:200},
     {t:"", p:60},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
     {t:"", p:60},
@@ -44450,7 +44848,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
     {t:"   CVE-2026-97229 -> CISA KEV Oct 29 · EXPLOITED IN THE WILD", c:"dim", p:300},
     {t:"", p:80},
     {t:"==================================================", c:"bright", p:120},
-    {t:"[PRIORITY QUEUE: 1] Ruflo CVE-2026-59726 — unauth RCE 10.0, public exploit out; update to 3.16.3 and audit AgentDB memory.", c:"bright", p:120},
+    {t:"[PRIORITY QUEUE: 1] FortiMail CVE-2026-126147 + CVE-2026-126148 — unauth RCE pair at 9.8; patch to 8.0.2 / 7.6.7 before public PoCs land.", c:"bright", p:120},
     {t:"Next scan: hourly — only material changes alert.", c:"dim", p:400},
     {t:"", p:60},
     {t:"C:\\COMFYPWN> _", c:"", p:6000}
@@ -44749,7 +45147,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,892 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,918 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
