@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 11</span><span class="pill accent">2,976 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 11</span><span class="pill accent">2,988 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,9 +369,9 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 11 1:30 PM ET:</strong> 2,976 CVEs tracked, filtered down to what needs action first. Four new records were added this scan (total up from 2,972 to 2,976) and one tracked record changed status. CVE-2026-108097 leads on a status change, not a new listing: the Drupal core Field UI RCE is now flagged exploited — added to VulnCheck KEV on Nov 11 with canary-reported exploitation, the first exploitation evidence for this flaw; NVD now scores it 8.1 (CVSS v3.1, secondary). It is still NOT in CISA KEV; fixes are unchanged at 10.6.19 / 11.3.19 / 11.4.10 / 12.0.0-beta2 and the mitigation is still to uninstall field_ui — it moves from the Public PoC group into In the Wild (now 95), leaving Public PoC at 139. The four additions: CVE-2026-106152 (8.8), a Progress Telerik Report Server flaw where an unauthenticated remote attacker influences the server address the product uses when generating links and notifications — with user interaction this can disclose sensitive information and take over accounts; fixed in 12.3.26.1110. CVE-2026-107662 (8.8), a Revive Adserver blind SQL injection in the banner-zone.php / campaign-zone.php admin pages: an authenticated manager restricted to one agency extracts arbitrary database values, including password hashes and active session identifiers, and reusing an unexpired administrator session grants administrative access; fixed in 6.0.9. CVE-2026-107247 (8.1), a Revive Adserver cross-agency authorization bypass: GET-over-POST input precedence lets an authenticated manager restricted to one agency access or modify another agency’s resources, including campaign ownership reassignment and campaign/banner data disclosure; fixed in 6.0.9. CVE-2026-68862 (6.6), a Dell Terraform Provider for PowerFlex OS command injection in the SDC host provisioning component: a high-privileged remote attacker with access to the PowerFlex management plane executes arbitrary OS commands on provisioned SDC hosts, with full compromise possible; fixed in 1.9.0 (Dell DSA-2026-433). No exploitation is reported for any of the four new records, none is in CISA KEV, and none has a public PoC; the three scored 8.0+ join Ones to Watch (now 2,478) and the Dell 6.6 joins Everything else (now 251). Last scan’s seven records — the 9.9 Red Hat Quay cross-tenant robot-token theft (CVE-2026-110697), the four unscored Rooxis RXR-12 router flaws (CVE-2026-126720 / 126722 / 126723 / 126724), the 8.6 PAN-OS Panorama code injection (CVE-2026-0330) and the 6.0 repmgr command injection (CVE-2026-122043) — still stand as recorded there, as does the CVE-2026-119618 note (the Nov 11 Sploitus item is a detection oracle for the race condition, NOT a working RCE payload, so its PoC flag stays off). The pre-CVE early signals also carry over: Xen Orchestra VSA-2026-062, a vendor-Critical authentication bypass already ACTIVELY EXPLOITED in the wild and fixed in Xen Orchestra 6.9.2 / 6.10.1, and ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8) with no CVE assigned yet — both sit with the pre-CVE early signals below, outside the 2,976. EPSS (data dated 2026-11-10): 2,431 scored and 545 unscored across the set — all four new records arrive EPSS-unscored (null, brand new). Highlighted Drops, the Ones to Watch, and the grouped 2,976-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 11 2:30 PM ET:</strong> 2,988 CVEs tracked, filtered down to what needs action first. Twelve new records were added this scan (total up from 2,976 to 2,988) and four tracked records gained weaponized public PoCs. CVE-2026-126768 leads the new listings: an OpsTree REMS authentication bypass (9.8) — an unauthenticated attacker sets the client-controlled is_local_auth flag on the admin login call with an invalid password and receives a valid JWT with SuperUser access; no fix is stated. Its companion, CVE-2026-126769 (8.7), is a missing-authentication flaw on the REMS Governance API that hands unauthenticated attackers the stored database hosts, usernames and passwords; also no fix stated. The rest of the new dozen: CVE-2026-126777 (9.1), a Traccar LDAP empty-password auth bypass that yields sessions for any account including administrators where the directory permits unauthenticated binds, fixed in 6.17.0; CVE-2026-65840 (9.6), a Fider cross-tenant account takeover in multi-tenant mode via an email verification key, fixed in 0.36.0; CVE-2026-123747 (9.6 vendor score; NVD 7.3), an OpenPrinting pappl-retrofit legacy-printer-app directory traversal to arbitrary file upload/delete and confirmed RCE as root — fix commit c65a28f is on master, release pending; CVE-2026-126774 (8.8), @tinacms/mdx code injection in the MDX serializer, fixed in 2.4.2; CVE-2026-65843 (8.7), sync-rpc arbitrary JavaScript file execution via a guessable, unprotected port, fixed in 1.3.7; CVE-2026-126779 (8.7), a Spatie Browsershot local file read via file:// URLs in rendered HTML, fixed in 5.5.0; CVE-2026-126780 (8.6), a Webmin delegated-admin privilege escalation to root command execution, and its companion CVE-2026-126781 (7.7), a Webmin users-file injection to Webmin root — neither has a fixed release version stated, fix commits are in the Webmin repo; and two Node.js November security-release flaws at 8.1: CVE-2026-123864, an HTTPS re-entrancy flaw that leaks other connections’ memory including TLS private keys, and CVE-2026-123872, a TLS client-certificate auth bypass via servername change in TLS 1.2 renegotiation, both fixed in 22.23.5 / 24.22.3 / 26.13.1. The four weaponized status changes: CVE-2026-121529 (FortiClient, 9.6) — a malicious web page reaches the local FortiVRS.exe service over permissive CORS on TCP 9191 and executes code; three public PoC repos are live, fixes stand at 7.4.8 / 7.2.15. CVE-2026-115252 (Confection WordPress Cable, 10.0) — full public exploit code for the unauthenticated RCE is now out, and it still has NO known fix: the PoC repo’s “fixed in 0.4.8” claim is false — wordpress.org shows the plugin closed Oct 23, pending review, with no 0.4.8 release. CVE-2026-19803 (Printcart, 9.8) — a public PoC uploads a GIF+PHP polyglot through the unauthenticated nbu_crop_image handler; fixed in 2.13.3. CVE-2026-68982 (Apache Airflow CeleryExecutor) — a public PoC writes to an exposed Redis broker to run commands on every CeleryExecutor worker; fixed in 3.4.0. All four move into the Public PoC group (now 143); none shows confirmed in-the-wild exploitation and none is in CISA KEV. Of the new records, the eleven scored 8.0+ join Ones to Watch (now 2,486) and the 7.7 Webmin flaw joins Everything else (still 251 — the Airflow record left it for Public PoC). Last scan’s lead, CVE-2026-108097 (Drupal core Field UI RCE, now flagged exploited via VulnCheck KEV), still stands as recorded there. The pre-CVE early signals also carry over: Xen Orchestra VSA-2026-062, a vendor-Critical authentication bypass already ACTIVELY EXPLOITED in the wild and fixed in Xen Orchestra 6.9.2 / 6.10.1, and ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8) with no CVE assigned yet — both sit with the pre-CVE early signals below, outside the 2,988. EPSS (data dated 2026-11-10): 2,431 scored and 557 unscored across the set — all twelve new records arrive EPSS-unscored (null, brand new). Highlighted Drops, the Ones to Watch, and the grouped 2,988-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
-      <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, CVSS 8.1, unauthenticated exploit path, public PoC, in the wild per VulnCheck KEV Nov 11, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
+      <noscript><p class="crt-caption">Top priority: CVE-2026-126768 OpsTree REMS (9.8, unauthenticated auth bypass to SuperUser, no fix stated) · CVE-2026-126769 OpsTree REMS (8.7, missing authentication exposes stored database credentials, no fix stated) · CVE-2026-115252 Confection WordPress Cable (CVSS 10.0, unauthenticated RCE, weaponized public PoC, NO known fix — the PoC repo’s “fixed in 0.4.8” claim is false) · CVE-2026-121529 FortiClient (9.6, CORS RCE, public PoC, fixed in 7.4.8 / 7.2.15) · CVE-2026-19803 Printcart (9.8, unauthenticated file-upload RCE, public PoC, fixed in 2.13.3) · CVE-2026-68982 Apache Airflow CeleryExecutor (broker-write RCE, public PoC, fixed in 3.4.0) · CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, CVSS 8.1, unauthenticated exploit path, public PoC, in the wild per VulnCheck KEV Nov 11, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
 
   <section class="boom-section state-stopped" id="boombox" aria-label="Boombox cassette player">
@@ -430,7 +430,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>2,976</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>2,988</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 11</b><span>Last updated — hourly scans</span></div>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 2,976 CVEs</label>
+      <label for="cveSearch">Search all 2,988 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,976 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,988 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="wild rce">
@@ -497,7 +497,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 11 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 2,478 CVEs meet that bar — the newest arrivals came in the Nov 11 1:30 PM ET scan: an 8.8 Progress Telerik Report Server flaw where an unauthenticated attacker influences the server address used for generated links and notifications, leading to account takeover (CVE-2026-106152, fixed in 12.3.26.1110), an 8.8 Revive Adserver blind SQL injection that extracts password hashes and live session IDs for administrator access (CVE-2026-107662, fixed in 6.0.9), and an 8.1 Revive Adserver cross-agency authorization bypass (CVE-2026-107247, fixed in 6.0.9). The 6.6 Dell Terraform Provider for PowerFlex command injection from the same scan sits in Everything else, not here — this group is for scored CVSS 8.0+ flaws. Before them came the Nov 11 12:30 PM ET scan’s arrivals: a 9.9 Red Hat Quay robot-listing flaw that lets an authenticated attacker steal other tenants’ robot tokens and read, push or overwrite their container images (CVE-2026-110697, fixed in 3.9.28 / 3.10.28 / 3.12.24 / 3.14.10 / 3.15.9 / 3.16.7 / 3.17.7 / 3.18.3) and an 8.6 PAN-OS authenticated code-injection flaw in Panorama that executes arbitrary code as root (CVE-2026-0330, fixed in hotfix builds across 12.2 / 12.1 / 11.2 / 11.1 / 10.2 — the record carries the full hotfix list). The four unscored Rooxis RXR-12 flaws and the 6.0 repmgr flaw from that scan sit in Everything else. Before them came the Nov 11 11:30 AM ET scan’s arrivals: an 8.3 Extreme Networks Switch Engine (EXOS) JSON-RPC missing-authorization flaw that lets an authenticated read-only user disclose the device configuration and local password hashes (CVE-2026-105440, fixed in 33.7.1-patch1-11 / 33.1.100.133-patch1-9 / 32.7.4.15-patch1-11) and an 8.2 soapbar Python SOAP library signature-verification bypass that accepted forged signed envelopes because the check trusted the certificate embedded in the message itself (CVE-2026-64855, fixed in 0.13.0); the six unscored Xen XAPI flaws from that scan sit in Everything else. Before them came the Nov 11 10:30 AM ET scan’s arrivals: a 9.8 Red Hat Quay unauthenticated service-key rotation takeover that hands an attacker read/write access to any repository (CVE-2026-123710, no fixed build stated yet — restrict the /keys endpoint to trusted internal components), a 9.2 PTC Windchill / FlexPLM deserialization RCE (CVE-2026-126325, no fix stated in the public record) and a 9.1 Sipay WooCommerce Virtual POS Module missing-authentication bypass (CVE-2026-85632, fixed in 26.9.1). Before them came the Nov 11 8:30 AM ET scan’s arrivals: a 9.1 Ninja Forms - File Uploads unauthenticated arbitrary file deletion that can delete wp-config.php and force a full site takeover (CVE-2026-126537, fixed in 3.3.37) and an 8.8 Apache Roller CSRF that creates an administrator account when a logged-in admin opens an attacker-controlled link (CVE-2026-118411, fixed in 6.1.7). Before them came the Nov 11 7:30 AM ET scan’s arrivals: two 8.8 WordPress plugin flaws with no fix available — a 6Storage Rentals authentication bypass to administrator account takeover (CVE-2026-103883, plugin closed on wordpress.org Nov 3) and a Reset Database privilege escalation that drops the site’s tables and reinstalls with the attacker’s credentials, making them the sole site administrator (CVE-2026-119615, plugin closed on wordpress.org Nov 9). Before them came the Nov 11 6:30 AM ET scan’s arrivals: a 10.0 STAGGS WordPress plugin remote code inclusion / RCE (CVE-2026-78287, fixed in 3.4.0; Patchstack rates it highly dangerous and expected to become exploited) and three 9.4 Checkmk flaws — a host-label sync path traversal to arbitrary file write and code execution as the central site user (CVE-2026-118965), a Robotmk synthetic-monitoring path traversal to code execution as the site user (CVE-2026-120495), and a Kubernetes special agent argument injection to arbitrary file write and code execution as the site user (CVE-2026-121374), all fixed in 2.5.0p19 / 2.4.0p40. Before them came the Nov 11 5:30 AM ET scan’s arrival: a 9.3 Enter Iperius Backup local privilege escalation to SYSTEM/Administrator (CVE-2026-112174, fixed in 8.8.9). Before it came the Nov 11 4:30 AM ET scan’s arrivals: an 8.8 hMailServer SQL injection in the database layer (CVE-2026-126617, fixed in 6.2.19) and three 8.5 Beckhoff TcRouter.sys exposed-IOCTL flaws (CVE-2026-18767, CVE-2026-18768 and CVE-2026-18769, fixed in TcRouter.sys 3.1.0.2365 / TwinCAT.XAR.Base.KM 3.18.1). Two records also left this group in that scan — CVE-2026-124079 (rConfig, 9.8) and CVE-2026-118383 (MongoDB Server, 9.5) both gained public working PoCs and moved to the Public PoC group. Before them came the Nov 11 3:30 AM ET scan’s arrivals: two 8.8 authenticated SQL injections in Zoho ManageEngine ADAudit Plus (CVE-2026-12062, fixed in build 8703, and CVE-2026-76981, fixed in build 8711), an 8.1 ARForms unauthenticated arbitrary-file-upload RCE (CVE-2026-111190, no fix stated), and CVE-2026-96414 (Octopus Server), rescored in that scan from 7.7 to 8.7 on the vendor’s CVSS v4.0. Before them, nine arrived in the Nov 11 1:30 AM ET scan, all WordPress plugin flaws from the WPScan batch: a 9.8 Security For WooCommerce login-token bypass to any admin account (CVE-2026-123695, no fix confirmed), two 9.6 arbitrary file deletions (Pay with a tweet, CVE-2026-115734, and Somatic Framework, CVE-2026-115735 — neither with a fix confirmed), a 9.1 Printaura-WooCommerce unauthenticated REST-route takeover (CVE-2026-115733, no fix confirmed), three 8.8s (Knowledge Building stored XSS, fixed in 0.7.3; iChart post and site-option abuse, fixed in 2.2.4; Smoove stored XSS, fixed in 4.3.6) and two 8.1 privilege escalations (User Registration & Membership, fixed in 5.3.2; Forminator, fixed in 1.58.4); the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus the pre-CVE early signals that have no CVE ID at all yet — three are carded below, the newest of them ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8); a fourth was flagged in the Nov 11 7:30 AM ET scan: Xen Orchestra VSA-2026-062, a vendor-Critical authentication bypass already ACTIVELY EXPLOITED in the wild, fixed in Xen Orchestra 6.9.2 / 6.10.1 (xo-server 5.211.2 / 5.213.1) — upgrade rather than wait for a CVE. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 11 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 2,486 CVEs meet that bar — the newest arrivals came in the Nov 11 2:30 PM ET scan: a 9.8 OpsTree REMS authentication bypass that hands an unauthenticated attacker a SuperUser JWT for the admin account (CVE-2026-126768, no fix stated) and its 8.7 companion missing-authentication flaw exposing stored database credentials (CVE-2026-126769, no fix stated), a 9.6 Fider cross-tenant account takeover via an email verification key in multi-tenant mode (CVE-2026-65840, fixed in 0.36.0), a 9.6 (vendor score) OpenPrinting pappl-retrofit legacy-printer-app directory traversal to arbitrary file upload/delete and RCE as root (CVE-2026-123747, fix commit c65a28f on master, release pending), a 9.1 Traccar LDAP empty-password auth bypass to sessions for any account including administrators (CVE-2026-126777, fixed in 6.17.0), an 8.8 @tinacms/mdx code injection in the MDX serializer (CVE-2026-126774, fixed in 2.4.2), an 8.7 sync-rpc arbitrary JavaScript file execution via a guessable port (CVE-2026-65843, fixed in 1.3.7), an 8.7 Spatie Browsershot local file read via file:// URLs (CVE-2026-126779, fixed in 5.5.0), an 8.6 Webmin delegated-admin privilege escalation to root command execution (CVE-2026-126780, no fixed release stated), and two 8.1 Node.js flaws — an HTTPS re-entrancy memory disclosure including TLS private keys (CVE-2026-123864) and a TLS client-certificate auth bypass (CVE-2026-123872), both fixed in 22.23.5 / 24.22.3 / 26.13.1. The 7.7 Webmin users-file injection from the same scan sits in Everything else, not here — this group is for scored CVSS 8.0+ flaws. Three records also left this group in that scan — the FortiClient CORS RCE (CVE-2026-121529, 9.6), the Confection WordPress unauthenticated RCE (CVE-2026-115252, 10.0, still no known fix) and the Printcart unauthenticated file-upload RCE (CVE-2026-19803, 9.8) all gained weaponized public PoCs and moved to the Public PoC group; a fourth PoC, for the Apache Airflow CeleryExecutor flaw (CVE-2026-68982, fixed in 3.4.0), moved that record out of Everything else into Public PoC too. Before them came the Nov 11 1:30 PM ET scan’s arrivals: an 8.8 Progress Telerik Report Server flaw where an unauthenticated attacker influences the server address used for generated links and notifications, leading to account takeover (CVE-2026-106152, fixed in 12.3.26.1110), an 8.8 Revive Adserver blind SQL injection that extracts password hashes and live session IDs for administrator access (CVE-2026-107662, fixed in 6.0.9), and an 8.1 Revive Adserver cross-agency authorization bypass (CVE-2026-107247, fixed in 6.0.9). The 6.6 Dell Terraform Provider for PowerFlex command injection from the same scan sits in Everything else, not here — this group is for scored CVSS 8.0+ flaws. Before them came the Nov 11 12:30 PM ET scan’s arrivals: a 9.9 Red Hat Quay robot-listing flaw that lets an authenticated attacker steal other tenants’ robot tokens and read, push or overwrite their container images (CVE-2026-110697, fixed in 3.9.28 / 3.10.28 / 3.12.24 / 3.14.10 / 3.15.9 / 3.16.7 / 3.17.7 / 3.18.3) and an 8.6 PAN-OS authenticated code-injection flaw in Panorama that executes arbitrary code as root (CVE-2026-0330, fixed in hotfix builds across 12.2 / 12.1 / 11.2 / 11.1 / 10.2 — the record carries the full hotfix list). The four unscored Rooxis RXR-12 flaws and the 6.0 repmgr flaw from that scan sit in Everything else. Before them came the Nov 11 11:30 AM ET scan’s arrivals: an 8.3 Extreme Networks Switch Engine (EXOS) JSON-RPC missing-authorization flaw that lets an authenticated read-only user disclose the device configuration and local password hashes (CVE-2026-105440, fixed in 33.7.1-patch1-11 / 33.1.100.133-patch1-9 / 32.7.4.15-patch1-11) and an 8.2 soapbar Python SOAP library signature-verification bypass that accepted forged signed envelopes because the check trusted the certificate embedded in the message itself (CVE-2026-64855, fixed in 0.13.0); the six unscored Xen XAPI flaws from that scan sit in Everything else. Before them came the Nov 11 10:30 AM ET scan’s arrivals: a 9.8 Red Hat Quay unauthenticated service-key rotation takeover that hands an attacker read/write access to any repository (CVE-2026-123710, no fixed build stated yet — restrict the /keys endpoint to trusted internal components), a 9.2 PTC Windchill / FlexPLM deserialization RCE (CVE-2026-126325, no fix stated in the public record) and a 9.1 Sipay WooCommerce Virtual POS Module missing-authentication bypass (CVE-2026-85632, fixed in 26.9.1). Before them came the Nov 11 8:30 AM ET scan’s arrivals: a 9.1 Ninja Forms - File Uploads unauthenticated arbitrary file deletion that can delete wp-config.php and force a full site takeover (CVE-2026-126537, fixed in 3.3.37) and an 8.8 Apache Roller CSRF that creates an administrator account when a logged-in admin opens an attacker-controlled link (CVE-2026-118411, fixed in 6.1.7). Before them came the Nov 11 7:30 AM ET scan’s arrivals: two 8.8 WordPress plugin flaws with no fix available — a 6Storage Rentals authentication bypass to administrator account takeover (CVE-2026-103883, plugin closed on wordpress.org Nov 3) and a Reset Database privilege escalation that drops the site’s tables and reinstalls with the attacker’s credentials, making them the sole site administrator (CVE-2026-119615, plugin closed on wordpress.org Nov 9). Before them came the Nov 11 6:30 AM ET scan’s arrivals: a 10.0 STAGGS WordPress plugin remote code inclusion / RCE (CVE-2026-78287, fixed in 3.4.0; Patchstack rates it highly dangerous and expected to become exploited) and three 9.4 Checkmk flaws — a host-label sync path traversal to arbitrary file write and code execution as the central site user (CVE-2026-118965), a Robotmk synthetic-monitoring path traversal to code execution as the site user (CVE-2026-120495), and a Kubernetes special agent argument injection to arbitrary file write and code execution as the site user (CVE-2026-121374), all fixed in 2.5.0p19 / 2.4.0p40. Before them came the Nov 11 5:30 AM ET scan’s arrival: a 9.3 Enter Iperius Backup local privilege escalation to SYSTEM/Administrator (CVE-2026-112174, fixed in 8.8.9). Before it came the Nov 11 4:30 AM ET scan’s arrivals: an 8.8 hMailServer SQL injection in the database layer (CVE-2026-126617, fixed in 6.2.19) and three 8.5 Beckhoff TcRouter.sys exposed-IOCTL flaws (CVE-2026-18767, CVE-2026-18768 and CVE-2026-18769, fixed in TcRouter.sys 3.1.0.2365 / TwinCAT.XAR.Base.KM 3.18.1). Two records also left this group in that scan — CVE-2026-124079 (rConfig, 9.8) and CVE-2026-118383 (MongoDB Server, 9.5) both gained public working PoCs and moved to the Public PoC group. Before them came the Nov 11 3:30 AM ET scan’s arrivals: two 8.8 authenticated SQL injections in Zoho ManageEngine ADAudit Plus (CVE-2026-12062, fixed in build 8703, and CVE-2026-76981, fixed in build 8711), an 8.1 ARForms unauthenticated arbitrary-file-upload RCE (CVE-2026-111190, no fix stated), and CVE-2026-96414 (Octopus Server), rescored in that scan from 7.7 to 8.7 on the vendor’s CVSS v4.0. Before them, nine arrived in the Nov 11 1:30 AM ET scan, all WordPress plugin flaws from the WPScan batch: a 9.8 Security For WooCommerce login-token bypass to any admin account (CVE-2026-123695, no fix confirmed), two 9.6 arbitrary file deletions (Pay with a tweet, CVE-2026-115734, and Somatic Framework, CVE-2026-115735 — neither with a fix confirmed), a 9.1 Printaura-WooCommerce unauthenticated REST-route takeover (CVE-2026-115733, no fix confirmed), three 8.8s (Knowledge Building stored XSS, fixed in 0.7.3; iChart post and site-option abuse, fixed in 2.2.4; Smoove stored XSS, fixed in 4.3.6) and two 8.1 privilege escalations (User Registration & Membership, fixed in 5.3.2; Forminator, fixed in 1.58.4); the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus the pre-CVE early signals that have no CVE ID at all yet — three are carded below, the newest of them ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8); a fourth was flagged in the Nov 11 7:30 AM ET scan: Xen Orchestra VSA-2026-062, a vendor-Critical authentication bypass already ACTIVELY EXPLOITED in the wild, fixed in Xen Orchestra 6.9.2 / 6.10.1 (xo-server 5.211.2 / 5.213.1) — upgrade rather than wait for a CVE. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 3 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -505,18 +505,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 2478 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 2486 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 2,976 CVEs</h2><p>Every entry from the Nov 11 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 2,988 CVEs</h2><p>Every entry from the Nov 11 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,976.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">2,976 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,988.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">2,988 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 11 1:30 PM ET hourly scan — 4 records added (total up from 2,972 to 2,976 CVEs tracked); one tracked record updated (CVE-2026-108097); no new pending early signal. The update leads: CVE-2026-108097 (Drupal core Field UI RCE) gained its FIRST EXPLOITATION EVIDENCE — added to VulnCheck KEV on 2026-11-11 with canary-reported exploitation (canary report dated 2026-11-11), so its exploited flag is now on; its prior status was “no confirmed in-the-wild exploitation (Censys Oct 29).” NVD now scores it 8.1 (CVSS v3.1, secondary; previously unscored in the set). It is still NOT in CISA KEV (catalog 2026.11.10, 1,779 entries). The two public exploit repos in the VulnCheck KEV record (fortbridge/cve-2026-108097-research, Oct 18; ExDev994/CVE-2026-108097, Oct 20) were already known as lab PoCs, not new. Fixes unchanged: 10.6.19 / 11.3.19 / 11.4.10 / 12.0.0-beta2; mitigation still uninstall field_ui. EPSS 0.00572 / 47.7th percentile (data 2026-11-10). The four additions, all from the NVD publication sweep: CVE-2026-106152 (8.8, CVSS v3.1) — Progress Telerik Report Server prior to 12.3.26.1110: external control of a system configuration setting lets an unauthenticated remote attacker influence the server address Report Server uses when generating links and notifications; with user interaction this can lead to disclosure of sensitive information and account takeover; fixed in 12.3.26.1110. CVE-2026-107662 (8.8, CVSS v3.0) — Revive Adserver 6.0.8 and earlier: blind SQL injection in the banner-zone.php / campaign-zone.php admin pages lets an authenticated manager restricted to one agency extract arbitrary database values including password hashes and active session identifiers; reusing an unexpired administrator session grants administrative access; fixed in 6.0.9. CVE-2026-107247 (8.1, CVSS v3.0) — Revive Adserver 6.0.0 through 6.0.8: GET-over-POST input precedence lets an authenticated manager restricted to one agency access or modify another agency’s resources — cross-agency changes, campaign ownership reassignment, campaign/banner data disclosure; fixed in 6.0.9. CVE-2026-68862 (6.6, CVSS v3.1, Dell) — Dell Terraform Provider for PowerFlex 1.5.0 through 1.8.0: OS command injection in the SDC host provisioning component lets a high-privileged remote attacker with access to the PowerFlex management plane execute arbitrary OS commands on provisioned SDC hosts, with full compromise possible; fixed in 1.9.0+ (Dell DSA-2026-433). No exploitation reported for any of the four new records; not in CISA KEV; VulnCheck KEV negative; EPSS unscored (null) for all four. Pending early signals carried over: Xen Orchestra VSA-2026-062 — vendor-Critical authentication bypass, no CVE assigned yet, ACTIVELY EXPLOITED in the wild; fixed in Xen Orchestra 6.9.2 / 6.10.1 (xo-server 5.211.2 / 5.213.1); not part of the 2,976; and ZDI-26-900 — Wireshark SMB object export integer overflow RCE, ZDI CVSS 8.8, no CVE assigned yet, so it is not part of the 2,976. EPSS: 2,431 scored, 545 unscored across the set (EPSS data dated 2026-11-10). Tier counts now stand at 1,010 CRITICAL, 1,783 HIGH, 24 MEDIUM, 2 LOW, 157 unscored across the set. By severity: 92 at 10.0, 918 at 9.0–9.9, 1,680 at 8.0–8.9 and 286 below 8.0 (incl. 157 records scored 0.0). Across the full set, 95 records are flagged exploited in the wild, 64 carry a CISA KEV flag, and 175 carry a public-PoC flag; in the grouped index, 95 sit in the In the wild group, 13 sit in the CISA KEV-listed group, 139 sit in the public-PoC group, 2,478 sit in the Ones to watch group, and 251 sit in the Everything else group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 11 2:30 PM ET hourly scan — 12 records added (total up from 2,976 to 2,988 CVEs tracked); four tracked records updated with weaponized public PoCs (CVE-2026-121529, CVE-2026-115252, CVE-2026-68982, CVE-2026-19803); no new pending early signal. The update leads: CVE-2026-126768 (9.8, CVSS v3.1; VulnCheck 9.3 v4.0) — OpsTree REMS through 1.0.0: an unauthenticated attacker sets the client-controlled is_local_auth flag on POST /api/v1/user/login/ for the admin account with an invalid password and obtains a valid JWT with SuperUser administrative access; no fixed version stated. Its companion CVE-2026-126769 (8.7, CVSS v4.0) — missing authentication on the REMS Governance API lets unauthenticated attackers retrieve stored database hosts, usernames and passwords; no fixed version stated. The other ten additions, all from the NVD publication sweep: CVE-2026-126777 (9.1, CVSS v4.0) — Traccar 3.15–6.16.0: LDAP empty-password auth bypass — empty passwords are not rejected in LdapProvider.login(), so unauthenticated binds yield sessions for any account including administrators where the directory permits them; fixed in 6.17.0. CVE-2026-65840 (9.6, CVSS v3.1) — Fider before 0.36.0 in multi-tenant mode (HOST_MODE=multi): an email verification key issued by one tenant authenticates the same email address on another tenant — complete tenant-isolation bypass and account takeover; single-host deployments are not affected; fixed in 0.36.0. CVE-2026-123747 (9.6 vendor score, Red Hat/oss-security; NVD 7.3 v3.1) — OpenPrinting pappl-retrofit legacy-printer-app: directory traversal in the add-ppdfiles/delete-ppdfiles actions of a root-running, unauthenticated-by-default service on 0.0.0.0:8000 allows arbitrary file upload/delete, and uploading a PPD with a cupsFilter setting gives confirmed RCE as root; fix commit c65a28f on master, release pending. CVE-2026-126774 (8.8, CVSS v4.0) — @tinacms/mdx before 2.4.2: code injection in the MDX serializer — crafted rich-text values saved by authenticated editors execute JavaScript in visitors’ browsers or on build/SSR hosts; fixed in 2.4.2. CVE-2026-65843 (8.7, CVSS v4.0) — sync-rpc before 1.3.7: an attacker who can guess the port can load and execute arbitrary JavaScript files on the server; fixed in 1.3.7. CVE-2026-126779 (8.7, CVSS v4.0) — Spatie Browsershot 2.2.0–5.4.x: local file read via file:// URLs in HTML passed to setHtml(), rendering file contents into the returned PDF or screenshot; fixed in 5.5.0. CVE-2026-126780 (8.6, CVSS v4.0) — Webmin through 2.670: delegated-admin privilege escalation in acl/save_group.cgi — arbitrary module lists grant modules like Command Shell, giving root command execution; no fixed release version stated (fix commits be54ba38 / c861e308). CVE-2026-126781 (7.7, CVSS v4.0) — Webmin through 2.670: users-file injection in acl/cert_issue.cgi — newline-bearing certificate DN fields add a second root entry with a known password hash; no fixed release version stated (fix commits 0c449e34 / 8fb194e5). CVE-2026-123864 (8.1, CVSS v3.0) — Node.js HTTPS re-entrancy flaw: an unauthenticated client reads memory belonging to other connections, including TLS private keys (Node.js November 2026 security releases); fixed in 22.23.5 / 24.22.3 / 26.13.1. CVE-2026-123872 (8.1, CVSS v3.0) — Node.js TLS client-certificate auth bypass via servername change in TLS 1.2 renegotiation; fixed in 22.23.5 / 24.22.3 / 26.13.1. No exploitation reported for any of the twelve new records; none is in CISA KEV; VulnCheck KEV negative; EPSS unscored (null) for all twelve. The four status changes are weaponized public PoCs indexed by Sploitus on Nov 11: CVE-2026-121529 (FortiClient, 9.6) — three GitHub PoC repos with full exploit code (mass scan + reverse shell): a malicious web page makes cross-origin requests to the victim’s local FortiVRS.exe service on TCP 9191 over permissive CORS to execute code; fixes unchanged at FortiClientMac 7.4.8+, FortiClientWindows / WindowsPAM 7.4.8+ / 7.2.15+ (FG-IR-26-194); EPSS unscored. CVE-2026-115252 (Confection WordPress Cable, 10.0) — GitHub PoC repo with full exploit code (reverse shell, mass scan) for the unauthenticated RCE; the repo’s “fixed in 0.4.8” claim is FALSE — wordpress.org shows the plugin closed Oct 23, 2026 (temporary, pending review) with no 0.4.8 release, so the fix status remains NO KNOWN FIX; EPSS 0.00418 / 36.5th percentile. CVE-2026-19803 (Printcart, 9.8) — GitHub PoC: unauthenticated arbitrary file write via the nbu_crop_image AJAX handler, uploading a GIF+PHP polyglot directly accessible by URL; fixed in 2.13.3; EPSS 0.00962 / 61.9th percentile. CVE-2026-68982 (Apache Airflow CeleryExecutor, unscored) — GitHub PoC: unauthenticated write to an exposed Redis broker executes arbitrary commands on every CeleryExecutor worker; fixed in 3.4.0; EPSS 0.00284 / 21.1th percentile. None of the four shows confirmed in-the-wild exploitation; none is in CISA KEV. Pending early signals carried over: Xen Orchestra VSA-2026-062 — vendor-Critical authentication bypass, no CVE assigned yet, ACTIVELY EXPLOITED in the wild; fixed in Xen Orchestra 6.9.2 / 6.10.1 (xo-server 5.211.2 / 5.213.1); not part of the 2,988; and ZDI-26-900 — Wireshark SMB object export integer overflow RCE, ZDI CVSS 8.8, no CVE assigned yet, so it is not part of the 2,988. EPSS: 2,431 scored, 557 unscored across the set (EPSS data dated 2026-11-10); 45 records cross EPSS >= 0.10 or the 95th percentile. Tier counts now stand at 1,014 CRITICAL, 1,791 HIGH, 24 MEDIUM, 2 LOW, 157 unscored across the set. By severity: 92 at 10.0, 922 at 9.0–9.9, 1,687 at 8.0–8.9 and 287 below 8.0 (incl. 157 records scored 0.0). Across the full set, 95 records are flagged exploited in the wild, 64 carry a CISA KEV flag, and 179 carry a public-PoC flag; in the grouped index, 95 sit in the In the wild group, 13 sit in the CISA KEV-listed group, 143 sit in the public-PoC group, 2,486 sit in the Ones to watch group, and 251 sit in the Everything else group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p>
 
 
 
@@ -653,7 +653,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a)+4(c) (2026-11-10 10:30 ET hourly): NEW TODAY via Ivanti November 2026 Security Update (published 2026-11-10T15:33:07Z) + Kudelski Security research + watchTowr technical analysis. Unauthenticated RCE as root, CVSS 10.0. PUBLIC PoC published by watchTowr (GitHub watchTowr-vs-Ivanti-Sentry-RCE-CVE-2026-10520-CVE-2026-10523, Nov 10). ADDED TO CISA KEV 2026-06-11 (federal due 2026-06-14) - pre-window KEV entry, CVE itself never tracked (baseline miss). No customer exploitation reported at disclosure (Ivanti/Kudelski, Nov 10). EPSS 0.99916 / 99.968th percentile (data 2026-11-10) - CROSSES both thresholds. Scope (1) 10.0 + (2) unauthenticated RCE class.",
    "src": "https://www.ivanti.com/blog/november-2026-security-update",
    "epss": 0.99916,
-   "epss_percentile": 99.968
+   "epss_percentile": 1.0
   },
   {
    "id": "CVE-2026-106218",
@@ -833,8 +833,8 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "published": "2026-11-09T11:17:21Z (NVD; WPScan published 2026-11-06)",
    "exploited": false,
    "kev": false,
-   "poc": false,
-   "status": "MATERIAL 4(a) (2026-11-09 06:30 ET): newly published. CVSS 10.0 unauthenticated RCE (CWE-94); NO KNOWN FIX; PoC withheld by WPScan until 2027-02-04. No confirmed wild exploitation; NOT in CISA KEV. Scope (1)+(2).",
+   "poc": true,
+   "status": "MATERIAL 4(a) (2026-11-09 06:30 ET): newly published. CVSS 10.0 unauthenticated RCE (CWE-94); NO KNOWN FIX; PoC withheld by WPScan until 2027-02-04. No confirmed wild exploitation; NOT in CISA KEV. Scope (1)+(2). | UPDATE 2026-11-11 14:30 ET: WEAPONIZED PUBLIC PoC - Sploitus-indexed GitHub PoC repo (Ghost-Bx1 'WP-Ghost', Nov 11) with full exploit code (poc.py + exploit.py, reverse shell, mass scan) for the unauthenticated RCE via confection_save_settings -> conf.php. Prior status was 'PoC withheld by WPScan until 2027-02-04'. CORRECTION to the repo's own claim: it states 'fixed in 0.4.8' - FALSE, unverified: wordpress.org shows the plugin closed Oct 23, 2026 (temporary, pending review) with no 0.4.8 release; fix status remains NO KNOWN FIX. Still no confirmed in-the-wild exploitation; still NOT in CISA KEV. Material per 4(c).",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-115252",
    "epss": 0.00418,
    "epss_percentile": 0.365
@@ -1387,7 +1387,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(c) (2026-11-10 19:30 ET hourly): baseline miss - first surfaced this run. VulnCheck KEV-listed 2026-11-10 (record indexed 2026-11-11T00:22:52Z, after the 18:30 run ended); VulnCheck canaries report exploitation 2026-11-10 and 2026-11-11. Public PoC: VulnCheck blog documents the full unauthenticated RCE chain (27604 + 28496), every step automated. NOT in CISA KEV (catalog 2026.11.10, 1,779 entries). EPSS 0.01264/69.94th (data 2026-11-10). Scope (1) 10.0 + (3) unauthenticated admin access + (2) RCE chain.",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-27604",
    "epss": 0.01264,
-   "epss_percentile": 69.94
+   "epss_percentile": 0.699
   },
   {
    "id": "CVE-2026-40281",
@@ -1418,7 +1418,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a)+4(c) (2026-11-10 10:30 ET hourly): BASELINE MISS caught via VulnCheck KEV - VulnCheck KEV-listed 2026-11-10 (date_added 2026-11-10) with reported exploitation. NOT in CISA KEV (catalog 2026.11.09, 1,773 entries). EPSS 0.03882 / 90.315th percentile (data 2026-11-10). Scope (1) 10.0 + (2) unauthenticated RCE class.",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-47668",
    "epss": 0.03882,
-   "epss_percentile": 90.315
+   "epss_percentile": 0.903
   },
   {
    "id": "CVE-2026-55572",
@@ -1463,7 +1463,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": true,
    "status": "MATERIAL 4(a)+4(c) (2026-11-11 21:30 ET hourly): pre-window baseline miss (published Jul 9, before the monitor started) - the material event is the public exploit publication on Exploit-DB 2026-11-11 (EDB 52705, '[remote] Ruflo MCP Bridge 3.16.2 - Remote Code Execution'), per the CVE-2026-66613 precedent (20:30 ET run, Nov 10). Scope (1) 10.0 + (2) unauthenticated OS command injection / missing authentication (CWE-78, CWE-306). Weaponized public PoC now available; no confirmed in-the-wild exploitation; not in CISA KEV; not in VulnCheck KEV recent set. Exploit code NOT linked; Exploit-DB listing cited as the reporting source. EPSS 0.03019 / 87.56th percentile (data 2026-11-10) - below both crossing thresholds. NOTE: patching to 3.16.3 does NOT undo AgentDB memory poisoning already injected.",
    "epss": 0.03019,
-   "epss_percentile": 87.56
+   "epss_percentile": 0.876
   },
   {
    "id": "CVE-2026-61564",
@@ -1781,7 +1781,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a)+4(c) (2026-11-10 10:30 ET hourly): BASELINE MISS - surfaced via the Able2Shell re-check (Brandefense/Huntress reporting, Nov 10). Pre-auth RCE, CVSS 10.0 v4.0 / 9.8 v3.1. ACTIVELY EXPLOITED (September 2026 hotfix addressed an actively exploited flaw, per Brandefense). NOT in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV status not yet checked. EPSS 0.15385 / 96.81st percentile (data 2026-11-10) - CROSSES both thresholds. Scope (1) 10.0 + (2) pre-auth RCE class.",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-86218",
    "epss": 0.15385,
-   "epss_percentile": 96.81
+   "epss_percentile": 0.968
   },
   {
    "id": "CVE-2026-86596",
@@ -2069,7 +2069,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a) (2026-11-10 10:30 ET hourly): NEW TODAY via Ivanti November 2026 Security Update (2026-11-10T15:33:07Z) + Kudelski Security research + watchTowr analysis. Unauthenticated creation of arbitrary admin accounts, CVSS 9.9 (NVD) / 9.8 (second source). PUBLIC PoC published by watchTowr (same repo as CVE-2026-10520, Nov 10). NOT in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative. No customer exploitation reported at disclosure (Ivanti/Kudelski, Nov 10). EPSS 0.53964 / 99.011th percentile (data 2026-11-10) - CROSSES both thresholds. Scope (1) 9.9 + (3) admin-access grant.",
    "src": "https://www.ivanti.com/blog/november-2026-security-update",
    "epss": 0.53964,
-   "epss_percentile": 99.011
+   "epss_percentile": 0.99
   },
   {
    "id": "CVE-2026-105780",
@@ -3236,7 +3236,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a) (2026-11-10 10:30 ET hourly): BASELINE MISS - MS-ISAC advisory 2026-093. No reports of exploitation in the wild; NOT in CISA KEV; VulnCheck KEV negative. EPSS 0.01521 / 74.816th percentile (data 2026-11-10). Scope (1) 9.9 + (2) RCE class.",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-12645",
    "epss": 0.01521,
-   "epss_percentile": 74.816
+   "epss_percentile": 0.748
   },
   {
    "id": "CVE-2026-12646",
@@ -3252,7 +3252,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a) (2026-11-10 10:30 ET hourly): BASELINE MISS - MS-ISAC advisory 2026-093. No reports of exploitation in the wild; NOT in CISA KEV; VulnCheck KEV negative. EPSS 0.01521 / 74.817th percentile (data 2026-11-10). Scope (1) 9.9 + (2) RCE class.",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-12646",
    "epss": 0.01521,
-   "epss_percentile": 74.817
+   "epss_percentile": 0.748
   },
   {
    "id": "CVE-2026-12647",
@@ -3268,7 +3268,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a) (2026-11-10 10:30 ET hourly): BASELINE MISS - MS-ISAC advisory 2026-093. No reports of exploitation in the wild; NOT in CISA KEV; VulnCheck KEV negative. EPSS 0.01521 / 74.817th percentile (data 2026-11-10). Scope (1) 9.9 + (2) RCE class.",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-12647",
    "epss": 0.01521,
-   "epss_percentile": 74.817
+   "epss_percentile": 0.748
   },
   {
    "id": "CVE-2026-12650",
@@ -3284,7 +3284,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a) (2026-11-10 10:30 ET hourly): BASELINE MISS - MS-ISAC advisory 2026-093. No reports of exploitation in the wild; NOT in CISA KEV; VulnCheck KEV negative. EPSS 0.0194 / 80.29th percentile (data 2026-11-10). Scope (1) 9.9 + (2) RCE class.",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-12650",
    "epss": 0.0194,
-   "epss_percentile": 80.29
+   "epss_percentile": 0.803
   },
   {
    "id": "CVE-2026-13312",
@@ -3841,7 +3841,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00389 / 33.38th percentile (data 2026-11-10) - below both crossing thresholds.",
    "epss": 0.00389,
-   "epss_percentile": 33.38
+   "epss_percentile": 0.334
   },
   {
    "id": "CVE-2026-91224",
@@ -4218,7 +4218,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00501 / 43.23rd percentile (data 2026-11-10) - below both crossing thresholds.",
    "epss": 0.00501,
-   "epss_percentile": 43.23
+   "epss_percentile": 0.432
   },
   {
    "id": "CVE-2026-101767",
@@ -6086,7 +6086,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a) (2026-11-10 10:30 ET hourly): BASELINE MISS - surfaced via MS-ISAC advisory 2026-093 (issued 2026-09-10) during the Ivanti November 2026 Security Update sweep. No reports of exploitation in the wild (MS-ISAC); NOT in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative. EPSS 0.0294 / 87.232nd percentile (data 2026-11-10). Scope (1) 9.8 + (2) unauthenticated RCE class.",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-12744",
    "epss": 0.0294,
-   "epss_percentile": 87.232
+   "epss_percentile": 0.872
   },
   {
    "id": "CVE-2026-12745",
@@ -6102,7 +6102,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a) (2026-11-10 10:30 ET hourly): BASELINE MISS - companion to CVE-2026-12744, same MS-ISAC advisory 2026-093. No reports of exploitation in the wild; NOT in CISA KEV; VulnCheck KEV negative. EPSS 0.0294 / 87.232nd percentile (data 2026-11-10). Scope (1) 9.8 + (2) unauthenticated RCE class.",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-12745",
    "epss": 0.0294,
-   "epss_percentile": 87.232
+   "epss_percentile": 0.872
   },
   {
    "id": "CVE-2026-12773",
@@ -6133,7 +6133,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a)+4(c) (2026-11-10 10:30 ET hourly): BASELINE MISS - surfaced via the Ivanti November 2026 Security Update sweep (forums advisory, Jan/Feb 2026 updates). Unauthenticated RCE 9.8. EXPLOITED IN THE WILD: Ivanti disclosed a very limited number of customers exploited at disclosure; CISA KEV-listed 2026-01-29 (federal due 2026-02-01). Post-disclosure, Ivanti observed a variety of threat actors attempting exploitation. EPSS 0.98688 / 99.924th percentile (data 2026-11-10) - CROSSES both thresholds. Scope (1) 9.8 + (2) unauthenticated RCE class.",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-1281",
    "epss": 0.98688,
-   "epss_percentile": 99.924
+   "epss_percentile": 0.999
   },
   {
    "id": "CVE-2026-1340",
@@ -6149,7 +6149,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a)+4(c) (2026-11-10 10:30 ET hourly): BASELINE MISS - companion to CVE-2026-1281, same Ivanti EPMM advisory. Unauthenticated RCE 9.8. CISA KEV-listed 2026-04-08 (federal due 2026-04-11). Exploited alongside CVE-2026-1281 (limited customers at disclosure; varied threat actors post-disclosure). EPSS 0.98639 / 99.923rd percentile (data 2026-11-10) - CROSSES both thresholds. Scope (1) 9.8 + (2) unauthenticated RCE class.",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-1340",
    "epss": 0.98639,
-   "epss_percentile": 99.923
+   "epss_percentile": 0.999
   },
   {
    "id": "CVE-2026-13684",
@@ -6402,8 +6402,8 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "published": "2026-11-07T04:17:29Z (NVD); Wordfence published 2026-11-06",
    "exploited": false,
    "kev": false,
-   "poc": false,
-   "status": "MATERIAL 4(a) (2026-11-06 23:30 ET hourly): newly published in window. Unauthenticated arbitrary file upload -> RCE (Wordfence 9.8, CWE-94); only exploitable when nbdesigner_upload_popup_style = 'a' (Advanced Upload Popup); nonce printed on public frontend page. Fixed 2.13.3. No exploitation reported; not in CISA KEV; not in VulnCheck KEV. EPSS unscored (brand new). Scope (1)+(2).",
+   "poc": true,
+   "status": "MATERIAL 4(a) (2026-11-06 23:30 ET hourly): newly published in window. Unauthenticated arbitrary file upload -> RCE (Wordfence 9.8, CWE-94); only exploitable when nbdesigner_upload_popup_style = 'a' (Advanced Upload Popup); nonce printed on public frontend page. Fixed 2.13.3. No exploitation reported; not in CISA KEV; not in VulnCheck KEV. EPSS unscored (brand new). Scope (1)+(2). | UPDATE 2026-11-11 14:30 ET: WEAPONIZED PUBLIC PoC - Sploitus-indexed GitHub PoC repo (Aureels, Nov 11): unauthenticated arbitrary file write via nbu_crop_image AJAX handler, uploading a GIF+PHP polyglot directly accessible via URL (mass scan supported). Prior status was 'no exploitation reported'. Fixed 2.13.3 already on file. Still no confirmed in-the-wild exploitation; still NOT in CISA KEV. Material per 4(c).",
    "epss": 0.00962,
    "epss_percentile": 0.619
   },
@@ -7490,7 +7490,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(c) (2026-11-10 20:30 ET hourly): baseline miss - weaponized public PoC published 2026-11-10 (GitHub repo aramosf/CVE-2026-66613, Sploitus listing 2026-11-10 21:22Z; missed by the 19:30 run, lag-gap catch). Self-contained PoC reproduces the real vector and demonstrates RCE as root (uid=0) in an isolated Docker/Twig 3 environment; preconditions: target uses the Timber/Twig Views module and a Timber view containing a shortcode that reflects request input. CVE published 2026-08-19 (pre-window); the material event is the PoC publication. No confirmed in-the-wild exploitation; NOT in CISA KEV (catalog 2026.11.10, 1,779 entries). EPSS 0.0086/58.80th (data 2026-11-10) - below the 0.10/95th thresholds.",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-66613",
    "epss": 0.0086,
-   "epss_percentile": 58.8
+   "epss_percentile": 0.588
   },
   {
    "id": "CVE-2026-66801",
@@ -7962,7 +7962,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-10 13:30 ET hourly): LAG-GAP CATCH - newly published in window. No exploitation reported; not in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative. EPSS 0.00276 / 0.20th percentile (data 2026-11-10). Scope (1)+(2).",
    "epss": 0.00276,
-   "epss_percentile": 0.0020192
+   "epss_percentile": 0.202
   },
   {
    "id": "CVE-2026-81932",
@@ -8699,7 +8699,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.0045 / 39.45th percentile (data 2026-11-10) - below both crossing thresholds.",
    "epss": 0.0045,
-   "epss_percentile": 39.45
+   "epss_percentile": 0.395
   },
   {
    "id": "CVE-2026-91233",
@@ -9104,6 +9104,21 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-11 10:30 ET hourly): newly published in window (NVD pub sweep, 15:17:18Z). Unauthenticated client mints an anonymous registry token with an attacker-controlled audience, presents it to the service key rotation endpoint, and installs its own approved signing key with no expiry; tokens signed with that key are accepted for any repository - read/write private images, replace tags. No fixed build stated yet; mitigation: restrict /keys to trusted internal components, audit service_key_rotate/delete events, remove unrecognised keys. No exploitation reported; not in CISA KEV; VulnCheck KEV negative; EPSS unscored (null, brand new).",
    "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-123710",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-126768",
+   "title": "OpsTree REMS <=1.0.0 - unauthenticated auth bypass via is_local_auth -> SuperUser admin access",
+   "product": "OpsTree REMS through 1.0.0",
+   "score": 9.8,
+   "cvss": "9.8 (CVSS v3.1; VulnCheck 9.3 v4.0)",
+   "fixed": "None stated",
+   "published": "2026-11-11T19:17:37.140Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-11 14:30 ET hourly): newly published in window (NVD pub sweep, 19:17:37Z). Authentication bypass: unauthenticated attacker sets client-controlled is_local_auth=true on POST /api/v1/user/login/ for the admin account with an invalid password and obtains a valid JWT with SuperUser administrative access. Fixed version: none stated (affected through 1.0.0). Scope (1) 9.8 + (3) admin access. No exploitation reported; not in CISA KEV (catalog 2026.11.10, 1,779 entries); VulnCheck KEV negative (0 documents); EPSS unscored (null, brand new); CIRCL indexed (CVE.org record). Researcher Neel Saurabh Kotnis.",
    "epss": null,
    "epss_percentile": null
   },
@@ -9603,7 +9618,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-10 13:30 ET hourly): LAG-GAP CATCH - published Oct 27, surfaced via MSRC November 2026 Edge republication. No exploitation reported; not in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative. EPSS 0.00354 / 0.29th percentile (data 2026-11-10). Scope (1)+(2).",
    "epss": 0.00354,
-   "epss_percentile": 0.0029417
+   "epss_percentile": 0.294
   },
   {
    "id": "CVE-2026-120779",
@@ -9873,7 +9888,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-10 13:30 ET hourly): LAG-GAP CATCH - published Nov 3, surfaced via MSRC November 2026 Edge republication. No exploitation reported; not in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative. EPSS 0.00381 / 0.32th percentile (data 2026-11-10). Scope (1)+(2).",
    "epss": 0.00381,
-   "epss_percentile": 0.0032404
+   "epss_percentile": 0.324
   },
   {
    "id": "CVE-2026-121148",
@@ -10126,8 +10141,8 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "published": "2026-11-10T20:18:56.790 (NVD)",
    "exploited": false,
    "kev": false,
-   "poc": false,
-   "status": "MATERIAL 4(a) (2026-11-10 15:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 9.6 + (2) RCE class (remote code/command execution). No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new).",
+   "poc": true,
+   "status": "MATERIAL 4(a) (2026-11-10 15:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 9.6 + (2) RCE class (remote code/command execution). No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new). | UPDATE 2026-11-11 14:30 ET: WEAPONIZED PUBLIC PoC - three Sploitus-indexed GitHub PoC repos (Nov 11, incl. Ghost-Bx1 'FortiClient-CORS', 17:39Z) with full exploit code (mass scan + reverse shell): a malicious web page makes cross-origin requests to the victim's local FortiVRS.exe service on TCP 9191 (overly permissive CORS) to reach privileged FortiClient functions and execute code. Prior status was 'no public PoC reported'. Still no confirmed in-the-wild exploitation; still NOT in CISA KEV. Material per 4(c).",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121529",
    "epss": null,
    "epss_percentile": null
@@ -10575,7 +10590,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00326 / 25.93rd percentile (data 2026-11-10) - below both crossing thresholds.",
    "epss": 0.00326,
-   "epss_percentile": 25.93
+   "epss_percentile": 0.259
   },
   {
    "id": "CVE-2026-95732",
@@ -10606,6 +10621,36 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "unauthenticated adjacent-network remote code execution. In scope by (1), (2) code execution. Not in CISA KEV; EPSS unscored (null, published <1h before scoring).",
    "epss": 0.0022,
    "epss_percentile": 0.127
+  },
+  {
+   "id": "CVE-2026-65840",
+   "title": "Fider <0.36.0 - cross-tenant account takeover via email verification key (multi-tenant mode)",
+   "product": "Fider (multi-tenant mode, HOST_MODE=multi) before 0.36.0",
+   "score": 9.6,
+   "cvss": "9.6 (CVSS v3.1)",
+   "fixed": "0.36.0",
+   "published": "2026-11-11T19:17:43.937Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-11 14:30 ET hourly): newly published in window (NVD pub sweep, 19:17:43Z). In multi-tenant mode (HOST_MODE=multi), an attacker uses an email verification key issued by Tenant A to authenticate as the same email address on Tenant B - complete tenant-isolation bypass and unauthorized account takeover across tenants. Single-host deployments (HOST_MODE=single, the default) are NOT affected. Fixed 0.36.0. Scope (1) 9.6 + (3) account takeover. No exploitation reported; not in CISA KEV; VulnCheck KEV negative; EPSS unscored (null, brand new); CIRCL indexed (CVE.org record).",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-123747",
+   "title": "pappl-retrofit legacy-printer-app - directory traversal -> arbitrary file upload/delete + RCE as root via cupsFilter PPD",
+   "product": "OpenPrinting pappl-retrofit (legacy-printer-app)",
+   "score": 9.6,
+   "cvss": "9.6 (vendor Red Hat/oss-security; NVD 7.3 v3.1)",
+   "fixed": "Fix commit c65a28f on master; release pending",
+   "published": "2026-11-11T19:17:30.467Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-11 14:30 ET hourly): newly published in window (NVD pub sweep, 19:17:30Z). Directory traversal in the add-ppdfiles/delete-ppdfiles actions: the legacy-printer-app service runs as root, unauthenticated by default, listening on 0.0.0.0:8000; a remote unauthenticated attacker submits filenames with ../ sequences to upload a file to any directory or delete any file. Confirmed RCE: uploading a PPD with a cupsFilter setting, adding a printer with that driver and printing a test page runs arbitrary commands as root. Vendor rates it critical 9.6 (Red Hat oss-security announcement, Nov 11); NVD scores 7.3 v3.1 on the RHEL/Fedora variant vector (AC:H/PR:H - the /var/lib/legacy-printer-app/ppd dir is not installed there by default). Highest published score governs: 9.6. Fix commit c65a28f (master); release pending. Scope (1) vendor 9.6 + (2) RCE class. No exploitation reported; not in CISA KEV; VulnCheck KEV negative; EPSS unscored (null, brand new). Reported by Danilo Egea Gondolfo, Jorge Castro and 7A Security.",
+   "epss": null,
+   "epss_percentile": null
   },
   {
    "id": "CVE-2026-103593/CVE-2026-103594/CVE-2026-112709/CVE-2026-112710/CVE-2026-90442/CVE-2026-90465/CVE-2026-93857/CVE-2026-93865/CVE-2026-93866/CVE-2026-93434",
@@ -11204,7 +11249,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(c) (2026-11-10 19:30 ET hourly): baseline miss - surfaced via the CVE-2026-27604 VulnCheck KEV listing this run. VulnCheck KEV-listed since 2026-06-25 (canaries report exploitation); the RCE half of the unauthenticated chain (27604 auth bypass + 28496 SSTI/DI-container/cache-poisoning -> malicious extension install -> shell). Public PoC: VulnCheck blog, full chain automated. NOT in CISA KEV (catalog 2026.11.10, 1,779 entries). EPSS 0.01905/79.89th (data 2026-11-10). Scope (1) 9.4 + (2) unauthenticated RCE when chained.",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-28496",
    "epss": 0.01905,
-   "epss_percentile": 79.89
+   "epss_percentile": 0.799
   },
   {
    "id": "CVE-2026-35030",
@@ -12415,7 +12460,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a)+4(c) (2026-11-10 10:30 ET hourly): BASELINE MISS caught via VulnCheck KEV - VulnCheck KEV-listed 2026-11-10 (date_added 2026-11-10) with reported exploitation. NOT in CISA KEV (catalog 2026.11.09, 1,773 entries). EPSS 0.004 / 34.603rd percentile (data 2026-11-10). Scope (1) 9.3.",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-61949",
    "epss": 0.004,
-   "epss_percentile": 34.603
+   "epss_percentile": 0.346
   },
   {
    "id": "CVE-2026-62048",
@@ -13382,7 +13427,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.0042 / 36.60th percentile (data 2026-11-10) - below both crossing thresholds.",
    "epss": 0.0042,
-   "epss_percentile": 36.6
+   "epss_percentile": 0.366
   },
   {
    "id": "CVE-2026-102894",
@@ -14246,7 +14291,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-10 13:30 ET hourly): newly published in window (Microsoft November 2026 Patch Tuesday, MSRC CVRF 2026-Nov). Perl CGI.pm upload filename path traversal (../ and Windows paths) -> arbitrary file write via crafted upload name. CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H/E:U. No exploitation reported; not in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative. EPSS 0.00508 / 0.44th percentile (data 2026-11-10). Scope (1).",
    "epss": 0.00508,
-   "epss_percentile": 0.004374
+   "epss_percentile": 0.437
   },
   {
    "id": "CVE-2026-120984",
@@ -15410,7 +15455,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a) (2026-11-10 10:30 ET hourly): LAG-GAP CATCH - published Oct 13, NVD scores (9.1 v3.1 NVD / 8.7 Adobe) landed in window (lastMod 2026-11-10T15:01:48Z). No confirmed wild exploitation; NOT in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative. EPSS 0.00856 / 58.69th percentile (data 2026-11-10). Scope (1).",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-95631",
    "epss": 0.00856,
-   "epss_percentile": 58.69
+   "epss_percentile": 0.587
   },
   {
    "id": "CVE-2026-95695",
@@ -15501,6 +15546,21 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-11 10:30 ET hourly): newly published in window (NVD pub sweep, 15:17:25Z). Missing authentication for critical function + improper validation of integrity check value (CWE-306) allows authentication bypass and application API message manipulation via man-in-the-middle. Affected 26.8.3 before 26.9.1; fixed 26.9.1 (CIRCL CNA corroboration). No exploitation reported; not in CISA KEV; VulnCheck KEV negative; EPSS unscored (null, brand new).",
    "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-85632",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-126777",
+   "title": "Traccar 3.15-6.16.0 - LDAP empty-password auth bypass -> sessions for any account incl. admin",
+   "product": "Traccar 3.15 before 6.17.0",
+   "score": 9.1,
+   "cvss": "9.1 (CVSS v4.0; v3.1 7.4)",
+   "fixed": "6.17.0",
+   "published": "2026-11-11T19:17:38.497Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-11 14:30 ET hourly): newly published in window (NVD pub sweep, 19:17:38Z). Authentication bypass in LdapProvider.login(): empty passwords are not rejected, so LDAP binds are performed as unauthenticated binds when LDAP auth is enabled; an unauthenticated attacker who knows a valid username logs in via POST /api/session or HTTP Basic with an empty password against directories permitting unauthenticated binds, obtaining sessions for any account including administrators. Fixed 6.17.0. Scope (1) 9.1 + (3) admin access. No exploitation reported; not in CISA KEV; VulnCheck KEV negative; EPSS unscored (null, brand new); CIRCL not yet indexed.",
    "epss": null,
    "epss_percentile": null
   },
@@ -16015,7 +16075,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a) (2026-11-10 11:30 ET hourly): newly published ZDI advisory (ZDI published RSS, Nov 10 batch). Scope (1) 8.9 v4.0 + (2) heap overflow RCE. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS 0.00263 / 18.25th percentile (data 2026-11-10) - below both crossing thresholds.",
    "src": "https://www.zerodayinitiative.com/advisories/ZDI-26-905/",
    "epss": 0.00263,
-   "epss_percentile": 0.1825
+   "epss_percentile": 0.182
   },
   {
    "id": "CVE-2017-7615",
@@ -16346,7 +16406,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00389 / 33.33rd percentile (data 2026-11-10) - below both crossing thresholds.",
    "epss": 0.00389,
-   "epss_percentile": 33.33
+   "epss_percentile": 0.333
   },
   {
    "id": "CVE-2026-101853",
@@ -16361,7 +16421,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00389 / 33.33rd percentile (data 2026-11-10) - below both crossing thresholds.",
    "epss": 0.00389,
-   "epss_percentile": 33.33
+   "epss_percentile": 0.333
   },
   {
    "id": "CVE-2026-101854",
@@ -16376,7 +16436,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00389 / 33.33rd percentile (data 2026-11-10) - below both crossing thresholds.",
    "epss": 0.00389,
-   "epss_percentile": 33.33
+   "epss_percentile": 0.333
   },
   {
    "id": "CVE-2026-103002",
@@ -21802,7 +21862,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-10 13:30 ET hourly): LAG-GAP CATCH - newly published in window. No exploitation reported; not in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative. EPSS 0.00447 / 0.39th percentile (data 2026-11-10). Scope (1)+(3).",
    "epss": 0.00447,
-   "epss_percentile": 0.0039151
+   "epss_percentile": 0.392
   },
   {
    "id": "CVE-2026-119654",
@@ -22824,7 +22884,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-10 13:30 ET hourly): LAG-GAP CATCH - published Nov 3, surfaced via MSRC November 2026 Edge republication. No exploitation reported; not in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative. EPSS 0.00353 / 0.29th percentile (data 2026-11-10). Scope (1)+(2).",
    "epss": 0.00353,
-   "epss_percentile": 0.0029201
+   "epss_percentile": 0.292
   },
   {
    "id": "CVE-2026-121117",
@@ -23096,7 +23156,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-10 13:30 ET hourly): LAG-GAP CATCH - published Nov 3, surfaced via MSRC November 2026 Edge republication. No exploitation reported; not in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative. EPSS 0.00317 / 0.25th percentile (data 2026-11-10). Scope (1)+(3).",
    "epss": 0.00317,
-   "epss_percentile": 0.0024848
+   "epss_percentile": 0.248
   },
   {
    "id": "CVE-2026-121179",
@@ -23201,7 +23261,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-10 13:30 ET hourly): LAG-GAP CATCH - published Nov 3, surfaced via MSRC November 2026 Edge republication. No exploitation reported; not in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative. EPSS 0.00216 / 0.12th percentile (data 2026-11-10). Scope (1)+(3).",
    "epss": 0.00216,
-   "epss_percentile": 0.0012109
+   "epss_percentile": 0.121
   },
   {
    "id": "CVE-2026-121198",
@@ -23216,7 +23276,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-10 13:30 ET hourly): LAG-GAP CATCH - published Nov 3, surfaced via MSRC November 2026 Edge republication. No exploitation reported; not in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative. EPSS 0.00216 / 0.12th percentile (data 2026-11-10). Scope (1)+(3).",
    "epss": 0.00216,
-   "epss_percentile": 0.0012109
+   "epss_percentile": 0.121
   },
   {
    "id": "CVE-2026-121201",
@@ -25281,7 +25341,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a) (2026-11-10 10:30 ET hourly): BASELINE MISS - MS-ISAC advisory 2026-093. No reports of exploitation in the wild; NOT in CISA KEV; VulnCheck KEV negative. EPSS 0.0194 / 80.29th percentile (data 2026-11-10). Scope (1) 8.8 + (2) RCE class.",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-12648",
    "epss": 0.0194,
-   "epss_percentile": 80.29
+   "epss_percentile": 0.803
   },
   {
    "id": "CVE-2026-12651",
@@ -25297,7 +25357,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a) (2026-11-10 10:30 ET hourly): BASELINE MISS - MS-ISAC advisory 2026-093. No reports of exploitation in the wild; NOT in CISA KEV; VulnCheck KEV negative. EPSS 0.0194 / 80.29th percentile (data 2026-11-10). Scope (1) 8.8 + (2) RCE class.",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-12651",
    "epss": 0.0194,
-   "epss_percentile": 80.29
+   "epss_percentile": 0.803
   },
   {
    "id": "CVE-2026-126617",
@@ -25450,7 +25510,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a) (2026-11-10 10:30 ET hourly): BASELINE MISS - MS-ISAC advisory 2026-093. No reports of exploitation in the wild; NOT in CISA KEV; VulnCheck KEV negative. EPSS 0.01211 / 68.713th percentile (data 2026-11-10). Scope (1) 8.8 + (3) privilege escalation to administrator.",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-18851",
    "epss": 0.01211,
-   "epss_percentile": 68.713
+   "epss_percentile": 0.687
   },
   {
    "id": "CVE-2026-1928",
@@ -26292,7 +26352,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-10 13:30 ET hourly): LAG-GAP CATCH - newly published in window. No exploitation reported; not in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative. EPSS 0.00289 / 0.22th percentile (data 2026-11-10). Scope (1)+(2).",
    "epss": 0.00289,
-   "epss_percentile": 0.002167
+   "epss_percentile": 0.217
   },
   {
    "id": "CVE-2026-69142",
@@ -27093,7 +27153,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00389 / 33.33rd percentile (data 2026-11-10) - below both crossing thresholds.",
    "epss": 0.00389,
-   "epss_percentile": 33.33
+   "epss_percentile": 0.333
   },
   {
    "id": "CVE-2026-87313",
@@ -27108,7 +27168,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00389 / 33.33rd percentile (data 2026-11-10) - below both crossing thresholds.",
    "epss": 0.00389,
-   "epss_percentile": 33.33
+   "epss_percentile": 0.333
   },
   {
    "id": "CVE-2026-87397",
@@ -27138,7 +27198,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00389 / 33.33rd percentile (data 2026-11-10) - below both crossing thresholds.",
    "epss": 0.00389,
-   "epss_percentile": 33.33
+   "epss_percentile": 0.333
   },
   {
    "id": "CVE-2026-87420",
@@ -27153,7 +27213,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00389 / 33.29th percentile (data 2026-11-10) - below both crossing thresholds.",
    "epss": 0.00389,
-   "epss_percentile": 33.29
+   "epss_percentile": 0.333
   },
   {
    "id": "CVE-2026-88077",
@@ -27259,7 +27319,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a) (2026-11-10 11:30 ET hourly): newly published ZDI advisory (ZDI published RSS, Nov 10 batch). Scope (1) 8.8 ZDI + (2) heap overflow RCE. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS 0.00202 / 10.17th percentile (data 2026-11-10) - below both crossing thresholds.",
    "src": "https://www.zerodayinitiative.com/advisories/ZDI-26-906/",
    "epss": 0.00202,
-   "epss_percentile": 0.1017
+   "epss_percentile": 0.102
   },
   {
    "id": "CVE-2026-88900",
@@ -28123,6 +28183,21 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-11 13:30 ET hourly): newly published in window (NVD pub sweep, 18:18:24Z). Blind SQL injection in banner-zone.php / campaign-zone.php admin pages: an authenticated manager restricted to one agency extracts arbitrary database values incl. password hashes and active session identifiers; reusing an unexpired administrator session grants administrative access. Fixed 6.0.9. Scope (1) 8.8 + (3) admin access. No exploitation reported; not in CISA KEV; VulnCheck KEV negative; EPSS unscored (null, brand new).",
    "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-107662",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-126774",
+   "title": "@tinacms/mdx <2.4.2 - code injection in MDX serializer -> JS execution on build/SSR hosts",
+   "product": "@tinacms/mdx before 2.4.2",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v4.0; v3.1 8.2)",
+   "fixed": "2.4.2",
+   "published": "2026-11-11T19:17:37.937Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-11 14:30 ET hourly): newly published in window (NVD pub sweep, 19:17:37Z). Code injection in the MDX serializer, which writes rich-text values into MDX expressions without escaping them: authenticated content editors save crafted values that break out of list-field or highlightColor expressions in the stored .mdx file, executing JavaScript in visitors' browsers or on build and server-side rendering hosts. Fixed 2.4.2. Scope (1) 8.8 + (2) code injection. No exploitation reported; not in CISA KEV; VulnCheck KEV negative; EPSS unscored (null, brand new).",
    "epss": null,
    "epss_percentile": null
   },
@@ -30211,6 +30286,51 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "epss_percentile": null
   },
   {
+   "id": "CVE-2026-126769",
+   "title": "OpsTree REMS <=1.0.0 - missing authentication on Governance API -> stored database credentials",
+   "product": "OpsTree REMS through 1.0.0",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v4.0; v3.1 7.5)",
+   "fixed": "None stated",
+   "published": "2026-11-11T19:17:37.293Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-11 14:30 ET hourly): newly published in window (NVD pub sweep, 19:17:37Z). Missing authentication: unauthenticated remote attackers access Governance API endpoints incl. /api/v1/databases without an Authorization header (or with invalid/tampered JWTs) and retrieve stored database hosts, usernames and passwords. Fixed version: none stated (affected through 1.0.0). Scope (1) 8.7. No exploitation reported; not in CISA KEV; VulnCheck KEV negative; EPSS unscored (null, brand new). Researcher Neel Saurabh Kotnis.",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-65843",
+   "title": "sync-rpc <1.3.7 - arbitrary JavaScript file execution via guessable, unprotected port",
+   "product": "sync-rpc before 1.3.7",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v4.0)",
+   "fixed": "1.3.7",
+   "published": "2026-11-11T19:17:44.120Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-11 14:30 ET hourly): newly published in window (NVD pub sweep, 19:17:44Z). sync-rpc runs async commands synchronously in a separate process; if an attacker can guess the port and it is not blocked by a firewall, they can load and execute arbitrary JavaScript files stored on the server running sync-rpc. Fixed 1.3.7. Scope (1) 8.7 (code-execution class). No exploitation reported; not in CISA KEV; VulnCheck KEV negative; EPSS unscored (null, brand new). Precondition: network reachability to the sync-rpc port.",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-126779",
+   "title": "Spatie Browsershot 2.2.0-5.4.x - local file read via file:// URLs in setHtml() HTML",
+   "product": "Spatie Browsershot 2.2.0 before 5.5.0",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v4.0; v3.1 7.5)",
+   "fixed": "5.5.0",
+   "published": "2026-11-11T19:17:38.840Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-11 14:30 ET hourly): newly published in window (NVD pub sweep, 19:17:38Z). Local file read: attackers read server files by supplying root-relative references in HTML passed to setHtml() - iframe/img/link/script elements referencing paths like /etc/passwd resolve to file:// URLs and render file contents into the returned PDF or screenshot. Fixed 5.5.0. Scope (1) 8.7. No exploitation reported; not in CISA KEV; VulnCheck KEV negative; EPSS unscored (null, brand new). Precondition: the application renders attacker-supplied HTML through Browsershot.",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2023-7357",
    "title": "FlexNet Publisher lmadmin web UI remote code execution (CWE-829)",
    "product": "FlexNet Publisher (lmadmin web UI) before 2023 R2 (11.19.4.0)",
@@ -31552,7 +31672,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a) (2026-11-10 11:30 ET hourly): LAG-GAP CATCH: published Nov 7, scores landed in this window (lastMod HIGH sweep). Same IBM API Connect batch as the already-tracked CVE-2026-17288..17301. Scope (1) 8.6 highest published score. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS 0.00381 / 32.39th percentile (data 2026-11-10) - below both crossing thresholds.",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-17306",
    "epss": 0.00381,
-   "epss_percentile": 0.3239
+   "epss_percentile": 0.324
   },
   {
    "id": "CVE-2026-40573",
@@ -32086,6 +32206,21 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-11 12:30 ET hourly): new PAN advisory published in window (PAN RSS, 17:00Z; advisory page read directly). Authenticated administrator with network access to Panorama executes arbitrary code with root privileges (CWE-94 code injection). PAN severity MEDIUM (CVSS-BT 6.1) but CVSS v4.0 base 8.6 - highest published score used per scope rule. Cloud NGFW, Prisma Access and standalone PAN-OS firewalls not affected. Scope (1) 8.6 + (2) RCE in the management plane. No known workarounds; limited Threat Prevention coverage via Threat IDs 510045/510048 (content 9171-10349+, requires SSL Decryption). No exploitation reported; not in CISA KEV; VulnCheck KEV negative; EPSS unscored (null, no NVD record yet).",
    "src": "https://security.paloaltonetworks.com/CVE-2026-0330",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-126780",
+   "title": "Webmin <=2.670 - delegated-admin privilege escalation via acl/save_group.cgi -> root command execution",
+   "product": "Webmin through 2.670",
+   "score": 8.6,
+   "cvss": "8.6 (CVSS v4.0; v3.1 7.2)",
+   "fixed": "No fixed release version stated (fix commits be54ba38 / c861e308)",
+   "published": "2026-11-11T19:17:38.993Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-11 14:30 ET hourly): newly published in window (NVD pub sweep, 19:17:38Z). Privilege escalation in acl/save_group.cgi: delegated administrators with Webmin Users module access grant unauthorized modules by submitting arbitrary module lists in the mod parameter; they can create/edit groups holding modules like Command Shell and assign themselves membership to execute commands as root. Fixed release version: none stated (fix commits be54ba38/c861e308 in the webmin repo). Scope (1) 8.6 + (3) management-plane privesc to root. No exploitation reported; not in CISA KEV; VulnCheck KEV negative; EPSS unscored (null, brand new). Researcher Zachariah Mithani (AploSec).",
    "epss": null,
    "epss_percentile": null
   },
@@ -33488,7 +33623,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-10 12:30 ET hourly): LAG-GAP CATCH - published Nov 7, NVD scores landed in window (lastMod 2026-11-10T16:52:37Z). Same IBM batch as already-tracked CVE-2026-17288..17301. Scope (1) 8.5 cross-tenant unauthorized operations. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS 0.00304 / 23.41st percentile (data 2026-11-10).",
    "epss": 0.00304,
-   "epss_percentile": 0.23407
+   "epss_percentile": 0.234
   },
   {
    "id": "CVE-2026-17287",
@@ -34003,7 +34138,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-10 13:30 ET hourly): LAG-GAP CATCH - newly published in window. No exploitation reported; not in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative. EPSS 0.00313 / 0.24th percentile (data 2026-11-10). Scope (1)+(2).",
    "epss": 0.00313,
-   "epss_percentile": 0.0024471000000000002
+   "epss_percentile": 0.245
   },
   {
    "id": "CVE-2026-67625",
@@ -34469,7 +34604,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a) (2026-11-10 16:30 ET hourly): lag-gap catch (published Oct 19, score landed this window; Oct 19 catch-up precedent: Pillow/Node.js). Scope (1) 8.4 + (2) code injection class. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS 0.00142 / 3.59th percentile.",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-112307",
    "epss": 0.00142,
-   "epss_percentile": 0.0359
+   "epss_percentile": 0.036
   },
   {
    "id": "CVE-2026-112430",
@@ -37285,7 +37420,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-10 13:30 ET hourly): LAG-GAP CATCH - newly published in window. No exploitation reported; not in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative. EPSS 0.00266 / 0.19th percentile (data 2026-11-10). Scope (1).",
    "epss": 0.00266,
-   "epss_percentile": 0.0018675
+   "epss_percentile": 0.187
   },
   {
    "id": "CVE-2026-123623",
@@ -37484,7 +37619,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a) (2026-11-10 10:30 ET hourly): BASELINE MISS - surfaced via the Able2Shell re-check (Brandefense/Huntress reporting, Nov 10; August 2026 hotfix). Authentication bypass in an RMM management-plane product, CVSS 8.2 v4.0. No exploitation reported for this CVE; NOT in CISA KEV; VulnCheck KEV negative. EPSS 0.07882 / 94.755th percentile (data 2026-11-10) - below both crossing thresholds. Scope (1) 8.2 + (3) authentication bypass to the management plane.",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-18556",
    "epss": 0.07882,
-   "epss_percentile": 94.755
+   "epss_percentile": 0.948
   },
   {
    "id": "CVE-2026-54376",
@@ -38015,7 +38150,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00326 / 25.93rd percentile (data 2026-11-10) - below both crossing thresholds.",
    "epss": 0.00326,
-   "epss_percentile": 25.93
+   "epss_percentile": 0.259
   },
   {
    "id": "CVE-2026-101834",
@@ -38030,7 +38165,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-11 21:30 ET hourly): October 2026 CPU CVE, published 2026-10-20, NVD-scored in this run's window (NVD lastModified 2026-11-11 ~01:43-02:17Z) and never previously recorded - catch-up per the Oct 25 / Nov 9 baseline-miss precedent. Scope (1) CVSS >= 8.0, network takeover of enterprise product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (not in the Nov 9-11 recent set). Fixed in the October 2026 Critical Patch Update. EPSS 0.00348 / 28.66th percentile (data 2026-11-10) - below both crossing thresholds.",
    "epss": 0.00348,
-   "epss_percentile": 28.66
+   "epss_percentile": 0.287
   },
   {
    "id": "CVE-2026-102219",
@@ -39284,7 +39419,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-10 13:30 ET hourly): LAG-GAP CATCH - newly published in window. No exploitation reported; not in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative. EPSS 0.00248 / 0.16th percentile (data 2026-11-10). Scope (1).",
    "epss": 0.00248,
-   "epss_percentile": 0.0016198999999999999
+   "epss_percentile": 0.162
   },
   {
    "id": "CVE-2026-121063",
@@ -39300,7 +39435,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a) (2026-11-10 16:30 ET hourly): lag-gap catch (Chrome 157 batch companion; score landed this window). Scope (1) 8.1 - site-isolation bypass (sandbox-boundary authorization failure), Chrome 156/157 precedent. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS 0.00271 / 19.45th percentile.",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-121063",
    "epss": 0.00271,
-   "epss_percentile": 0.1945
+   "epss_percentile": 0.194
   },
   {
    "id": "CVE-2026-121133",
@@ -39330,7 +39465,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "poc": false,
    "status": "MATERIAL 4(a) (2026-11-10 13:30 ET hourly): LAG-GAP CATCH - newly published in window. No exploitation reported; not in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative. EPSS 0.00189 / 0.09th percentile (data 2026-11-10). Scope (1)+(2).",
    "epss": 0.00189,
-   "epss_percentile": 0.0008593
+   "epss_percentile": 0.086
   },
   {
    "id": "CVE-2026-121224",
@@ -40706,6 +40841,36 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "epss_percentile": null
   },
   {
+   "id": "CVE-2026-123864",
+   "title": "Node.js HTTPS - re-entrancy flaw leaks memory of other connections incl. TLS private keys",
+   "product": "Node.js 22.x / 24.x / 26.x",
+   "score": 8.1,
+   "cvss": "8.1 (CVSS v3.0)",
+   "fixed": "22.23.5 / 24.22.3 / 26.13.1",
+   "published": "2026-11-11T19:17:32.790Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-11 14:30 ET hourly): newly published in window (NVD pub sweep, 19:17:32Z; Node.js November 2026 security releases). Re-entrancy flaw in Node.js HTTPS lets an unauthenticated client read memory belonging to other connections, including TLS private keys and other users' requests (TLSWrap::DoWrite() -> ClearOut() re-enters llhttp_execute(), UAF + OOB heap read; freed/unrelated heap memory is copied into the response). Trigger requires a handler that calls res.flushHeaders() before the request body ends and later res.end() with a non-empty chunk, plus a route that echoes/stores a request body. Cleartext node:http not affected. Fixed 22.23.5 / 24.22.3 / 26.13.1. Scope (1) 8.1. No exploitation reported; not in CISA KEV; VulnCheck KEV negative; EPSS unscored (null, brand new). Reported by Chris Rohlf with Claude/Anthropic Research.",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
+   "id": "CVE-2026-123872",
+   "title": "Node.js TLS - client-certificate auth bypass via servername change in TLS 1.2 renegotiation",
+   "product": "Node.js 22.x / 24.x / 26.x",
+   "score": 8.1,
+   "cvss": "8.1 (CVSS v3.0)",
+   "fixed": "22.23.5 / 24.22.3 / 26.13.1",
+   "published": "2026-11-11T19:17:34.270Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-11 14:30 ET hourly): newly published in window (NVD pub sweep, 19:17:34Z; Node.js November 2026 security releases). Client-certificate authentication bypass in Node.js TLS: a client changes the servername during TLS 1.2 renegotiation to reach endpoints it was not authorized for - on a server applying different client-cert policies per hostname (e.g. stricter admin-only client-cert auth on one host), a client authenticated for a permitted host renegotiates under a different servername and carries its existing authentication to the protected host, bypassing the stricter policy. Fixed 22.23.5 / 24.22.3 / 26.13.1. Scope (1) 8.1 + (3) auth bypass to protected/admin endpoints. No exploitation reported; not in CISA KEV; VulnCheck KEV negative; EPSS unscored (null, brand new). Reported by pimterry.",
+   "epss": null,
+   "epss_percentile": null
+  },
+  {
    "id": "CVE-2026-101602",
    "title": "Low-privileged HTTP attacker takes over Oracle Agile PLM for Process; requires user interaction (Oracle Oct 2026 CPU)",
    "product": "Oracle Agile PLM for Process (Product Quality Management)",
@@ -41443,7 +41608,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "MATERIAL 4(a) (2026-11-10 11:30 ET hourly): newly published ZDI advisory (ZDI published RSS, Nov 10 batch). Scope (2) unsafe deserialization leading to code execution, regardless of score. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS 0.0023 / 13.92nd percentile (data 2026-11-10) - below both crossing thresholds.",
    "src": "https://www.zerodayinitiative.com/advisories/ZDI-26-904/",
    "epss": 0.0023,
-   "epss_percentile": 0.1392
+   "epss_percentile": 0.139
   },
   {
    "id": "CVE-2026-99284",
@@ -41672,6 +41837,21 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "status": "No exploitation reported; not in CISA KEV. Remote user executes arbitrary commands as root via crafted parameters while device is in factory-default state. RCE class (scope criterion 2) despite score <8.0.",
    "epss": 0.00605,
    "epss_percentile": 0.493
+  },
+  {
+   "id": "CVE-2026-126781",
+   "title": "Webmin <=2.670 - users-file injection via acl/cert_issue.cgi -> Webmin root access",
+   "product": "Webmin through 2.670",
+   "score": 7.7,
+   "cvss": "7.7 (CVSS v4.0; v3.1 7.5)",
+   "fixed": "No fixed release version stated (fix commits 0c449e34 / 8fb194e5)",
+   "published": "2026-11-11T19:17:39.177Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-11 14:30 ET hourly): newly published in window (NVD pub sweep, 19:17:39Z). Users-file injection in acl/cert_issue.cgi: authenticated Webmin users inject lines by supplying unvalidated certificate DN fields containing newlines; ending a DN field with a backslash and newline adds a second root entry with a known password hash, gaining Webmin root access after miniserv restarts. Fixed release version: none stated (fix commits 0c449e34/8fb194e5 in the webmin repo). Scope (3) privilege escalation to admin/root in a management interface (below 8.0). No exploitation reported; not in CISA KEV; VulnCheck KEV negative; EPSS unscored (null, brand new). Companion to CVE-2026-126780.",
+   "epss": null,
+   "epss_percentile": null
   },
   {
    "id": "CVE-2026-107240",
@@ -44879,8 +45059,8 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "published": "2026-11-09T10:17:11Z (NVD)",
    "exploited": false,
    "kev": false,
-   "poc": false,
-   "status": "No confirmed wild exploitation; not in CISA KEV. Anyone able to write to the Celery broker enqueues a forged callback and executes arbitrary code on every CeleryExecutor worker, without Airflow credentials. Precondition: write access to the Celery broker.",
+   "poc": true,
+   "status": "No confirmed wild exploitation; not in CISA KEV. Anyone able to write to the Celery broker enqueues a forged callback and executes arbitrary code on every CeleryExecutor worker, without Airflow credentials. Precondition: write access to the Celery broker. | UPDATE 2026-11-11 14:30 ET: WEAPONIZED PUBLIC PoC - Sploitus-indexed GitHub PoC repo (Ghost-Bx1 'Airflow-Ghost', Nov 11) with full exploit code (poc.py + exploit.py, reverse shell, exfil, mass scan): unauthenticated write to the exposed Redis broker (LPUSH default {\"task\":\"execute_command\"...}) executes arbitrary commands on every CeleryExecutor worker. Prior status was 'no public PoC reported'. Fix 3.4.0 already on file. Still no confirmed in-the-wild exploitation; still NOT in CISA KEV. Material per 4(c).",
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-68982",
    "epss": 0.00284,
    "epss_percentile": 0.211
@@ -45701,60 +45881,95 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-11 --run 1:30 PM ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-11 --run 2:30 PM ET", c:"bright", p:420},
     {t:"", c:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", c:"", p:80},
-    {t:"Scanning — 2,976 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 4 new CVEs + 1 status update", c:"", p:200},
-    {t:"  UPDATE: Drupal 108097 — FIRST EXPLOITATION EVIDENCE", c:"warn", p:120},
-    {t:"  VulnCheck KEV Nov 11 (canary) · NVD 8.1 · NOT CISA KEV", c:"warn", p:120},
-    {t:"  NEW: Telerik Report Server account takeover 8.8", c:"warn", p:120},
-    {t:"  NEW: Revive Adserver blind SQLi -> admin 8.8", c:"warn", p:120},
-    {t:"  NEW: Revive Adserver cross-agency auth bypass 8.1", c:"warn", p:120},
-    {t:"  NEW: Dell PowerFlex Terraform command injection 6.6", c:"warn", p:120},
-    {t:"  No exploitation for the four new · not in CISA KEV · no PoC", c:"warn", p:120},
+    {t:"Scanning — 2,988 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: 12 new CVEs + 4 status updates", c:"", p:200},
+    {t:"  LEAD: OpsTree REMS auth bypass -> SuperUser 9.8", c:"warn", p:120},
+    {t:"  is_local_auth=true + invalid password -> admin JWT · NO FIX", c:"warn", p:120},
+    {t:"  NEW: OpsTree REMS missing auth -> DB credentials 8.7", c:"warn", p:120},
+    {t:"  NEW: Fider cross-tenant account takeover 9.6", c:"warn", p:120},
+    {t:"  NEW: pappl-retrofit printer-app RCE as root 9.6", c:"warn", p:120},
+    {t:"  NEW: Traccar LDAP empty-password auth bypass 9.1", c:"warn", p:120},
+    {t:"  NEW: Webmin privesc pair -> root 8.6 / 7.7", c:"warn", p:120},
+    {t:"  NEW: Node.js TLS key leak + client-cert bypass 8.1 x2", c:"warn", p:120},
+    {t:"  POC: FortiClient CORS RCE 9.6 — weaponized PoC live", c:"warn", p:120},
+    {t:"  POC: Confection WP 10.0 — PoC live · STILL NO FIX", c:"warn", p:120},
+    {t:"  POC: Printcart upload RCE 9.8 · Airflow Celery RCE", c:"warn", p:120},
     {t:"  SIGNAL: Xen Orchestra VSA-2026-062 auth bypass", c:"warn", p:120},
     {t:"  Vendor-Critical · ** IN THE WILD ** · fix 6.9.2 / 6.10.1", c:"warn", p:120},
     {t:"  Pending signal: ZDI-26-900 — Wireshark SMB RCE (8.8)", c:"warn", p:120},
-    {t:"  EPSS: 2,431 scored · 545 unscored", c:"dim", p:200},
-    {t:"  All four new records are EPSS-unscored (brand new)", c:"dim", p:200},
+    {t:"  EPSS: 2,431 scored · 557 unscored", c:"dim", p:200},
+    {t:"  All twelve new records are EPSS-unscored (brand new)", c:"dim", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", c:"", p:80},
     {t:"================  NEW THIS SCAN  ================", c:"bright", p:200},
     {t:"", c:"", p:60},
-    {t:">> UPDATE CVE-2026-108097 — Drupal core Field UI RCE · 8.1", c:"warn", p:100},
-    {t:"   FIRST EXPLOITATION EVIDENCE — VulnCheck KEV Nov 11", c:"bright", p:100},
-    {t:"   Canary-reported exploitation · NVD now scores 8.1 (secondary)", c:"", p:100},
-    {t:"   Still NOT in CISA KEV  ·  FIX: 10.6.19 / 11.3.19 / 11.4.10 / 12.0.0-beta2", c:"", p:160},
+    {t:">> CVE-2026-126768 — OpsTree REMS · 9.8", c:"warn", p:100},
+    {t:"   Unauth auth bypass -> SuperUser admin JWT", c:"bright", p:100},
+    {t:"   is_local_auth=true on admin login, invalid password", c:"", p:100},
+    {t:"   FIX: none stated  ·  EPSS unscored", c:"", p:160},
     {t:"", c:"", p:60},
-    {t:">> CVE-2026-106152 — Progress Telerik Report Server · 8.8", c:"warn", p:100},
-    {t:"   Unauth server-address control -> account takeover", c:"bright", p:100},
-    {t:"   CVSS v3.1 · user interaction required", c:"", p:100},
-    {t:"   FIX: 12.3.26.1110  ·  EPSS unscored", c:"", p:160},
+    {t:">> CVE-2026-126769 — OpsTree REMS · 8.7", c:"warn", p:100},
+    {t:"   Missing auth on Governance API -> stored DB credentials", c:"bright", p:100},
+    {t:"   /api/v1/databases — hosts, usernames, passwords", c:"", p:100},
+    {t:"   FIX: none stated  ·  EPSS unscored", c:"", p:160},
     {t:"", c:"", p:60},
-    {t:">> CVE-2026-107662 — Revive Adserver · 8.8", c:"warn", p:100},
-    {t:"   Auth blind SQLi -> password hashes + admin session reuse", c:"bright", p:100},
-    {t:"   CVSS v3.0 · banner-zone.php / campaign-zone.php", c:"", p:100},
-    {t:"   FIX: 6.0.9  ·  EPSS unscored", c:"", p:160},
+    {t:">> CVE-2026-126777 — Traccar · 9.1", c:"warn", p:100},
+    {t:"   LDAP empty-password auth bypass -> any account incl. admin", c:"bright", p:100},
+    {t:"   CVSS v4.0 · unauthenticated LDAP binds", c:"", p:100},
+    {t:"   FIX: 6.17.0  ·  EPSS unscored", c:"", p:160},
     {t:"", c:"", p:60},
-    {t:">> CVE-2026-107247 — Revive Adserver · 8.1", c:"warn", p:100},
-    {t:"   Auth manager cross-agency authorization bypass", c:"bright", p:100},
-    {t:"   CVSS v3.0 · GET-over-POST precedence", c:"", p:100},
-    {t:"   FIX: 6.0.9  ·  EPSS unscored", c:"", p:160},
+    {t:">> CVE-2026-65840 — Fider · 9.6", c:"warn", p:100},
+    {t:"   Cross-tenant account takeover via email verification key", c:"bright", p:100},
+    {t:"   Multi-tenant mode only (HOST_MODE=multi)", c:"", p:100},
+    {t:"   FIX: 0.36.0  ·  EPSS unscored", c:"", p:160},
     {t:"", c:"", p:60},
-    {t:">> CVE-2026-68862 — Dell Terraform Provider for PowerFlex · 6.6", c:"warn", p:100},
-    {t:"   OS command injection in SDC host provisioning -> full compromise", c:"bright", p:100},
-    {t:"   CVSS v3.1 (Dell) · high-privileged, management plane", c:"", p:100},
-    {t:"   FIX: 1.9.0 (DSA-2026-433)  ·  EPSS unscored", c:"", p:160},
+    {t:">> CVE-2026-123747 — pappl-retrofit legacy-printer-app · 9.6 vendor", c:"warn", p:100},
+    {t:"   Traversal -> file upload/delete + RCE as root (cupsFilter PPD)", c:"bright", p:100},
+    {t:"   Root service, unauth by default, 0.0.0.0:8000 · NVD 7.3", c:"", p:100},
+    {t:"   FIX: commit c65a28f · release pending  ·  EPSS unscored", c:"", p:160},
     {t:"", c:"", p:60},
-    {t:"================  LAST SCAN (12:30 PM)  ================", c:"bright", p:200},
+    {t:">> CVE-2026-126780 / 126781 — Webmin · 8.6 / 7.7", c:"warn", p:100},
+    {t:"   Delegated-admin privesc -> root commands · users-file injection -> root", c:"bright", p:100},
+    {t:"   acl/save_group.cgi · acl/cert_issue.cgi", c:"", p:100},
+    {t:"   FIX: commits only, no release stated  ·  EPSS unscored", c:"", p:160},
     {t:"", c:"", p:60},
-    {t:">> 7 added: Quay robot token theft 9.9 + Rooxis RXR-12 x4 + PAN-OS 8.6 + repmgr 6.0", c:"warn", p:100},
-    {t:">> 11:30 AM: Extreme EXOS 8.3 + soapbar 8.2 + Xen XAPI x6 (no CVSS yet)", c:"warn", p:160},
+    {t:">> CVE-2026-123864 / 123872 — Node.js · 8.1 x2", c:"warn", p:100},
+    {t:"   HTTPS re-entrancy leaks memory incl. TLS private keys", c:"bright", p:100},
+    {t:"   TLS client-cert auth bypass via servername renegotiation", c:"", p:100},
+    {t:"   FIX: 22.23.5 / 24.22.3 / 26.13.1  ·  EPSS unscored", c:"", p:160},
+    {t:"", c:"", p:60},
+    {t:">> CVE-2026-126774 — @tinacms/mdx · 8.8 — MDX serializer code injection", c:"warn", p:100},
+    {t:"   FIX: 2.4.2  ·  EPSS unscored", c:"", p:100},
+    {t:">> CVE-2026-65843 — sync-rpc · 8.7 — arbitrary JS execution, guessable port", c:"warn", p:100},
+    {t:"   FIX: 1.3.7  ·  EPSS unscored", c:"", p:100},
+    {t:">> CVE-2026-126779 — Spatie Browsershot · 8.7 — local file read via file://", c:"warn", p:100},
+    {t:"   FIX: 5.5.0  ·  EPSS unscored", c:"", p:160},
+    {t:"", c:"", p:60},
+    {t:"===========  WEAPONIZED — PUBLIC POCS LIVE  ===========", c:"bright", p:200},
+    {t:"", c:"", p:60},
+    {t:">> CVE-2026-121529 — FortiClient · 9.6 — CORS RCE, 3 PoC repos live", c:"warn", p:100},
+    {t:"   Malicious page -> local FortiVRS.exe :9191 -> code exec", c:"", p:100},
+    {t:"   FIX: 7.4.8 / 7.2.15 (FG-IR-26-194)", c:"", p:160},
+    {t:">> CVE-2026-115252 — Confection WordPress · 10.0 — full exploit code out", c:"warn", p:100},
+    {t:"   STILL NO KNOWN FIX — repo claim of a 0.4.8 fix is FALSE", c:"bright", p:100},
+    {t:"   Plugin closed Oct 23, pending review", c:"", p:160},
+    {t:">> CVE-2026-19803 — Printcart · 9.8 — GIF+PHP polyglot upload PoC", c:"warn", p:100},
+    {t:"   FIX: 2.13.3", c:"", p:160},
+    {t:">> CVE-2026-68982 — Airflow CeleryExecutor — Redis broker -> worker RCE", c:"warn", p:100},
+    {t:"   FIX: 3.4.0", c:"", p:160},
+    {t:"", c:"", p:60},
+    {t:"================  LAST SCAN (1:30 PM)  ================", c:"bright", p:200},
+    {t:"", c:"", p:60},
+    {t:">> UPDATE: Drupal 108097 — first exploitation evidence (VulnCheck KEV)", c:"warn", p:100},
+    {t:">> 4 added: Telerik Report Server 8.8 + Revive Adserver 8.8 / 8.1 + Dell PowerFlex 6.6", c:"warn", p:100},
+    {t:">> 12:30 PM: Quay robot token theft 9.9 + Rooxis RXR-12 x4 + PAN-OS 8.6 + repmgr 6.0", c:"warn", p:160},
     {t:"", c:"", p:60},
         {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
     {t:"", c:"", p:60},
@@ -45785,7 +46000,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
     {t:"   CVE-2026-97229 -> CISA KEV Oct 29 · EXPLOITED IN THE WILD", c:"dim", p:300},
     {t:"", c:"", p:80},
     {t:"==================================================", c:"bright", p:120},
-    {t:"[PRIORITY QUEUE: 1] Drupal CVE-2026-108097 — Field UI RCE now EXPLOITED: VulnCheck KEV added Nov 11 on canary-reported exploitation (first evidence), NVD 8.1, still NOT in CISA KEV; patch to 10.6.19 / 11.3.19 / 11.4.10 / 12.0.0-beta2 or uninstall field_ui. Progress Telerik Report Server CVE-2026-106152 — unauthenticated server-address control to account takeover at 8.8; update to 12.3.26.1110. Revive Adserver CVE-2026-107662 — authenticated blind SQLi to admin session reuse at 8.8, and CVE-2026-107247 — cross-agency authorization bypass at 8.1; update both to 6.0.9. Dell Terraform Provider for PowerFlex CVE-2026-68862 — OS command injection in SDC provisioning at 6.6; update to 1.9.0. Red Hat Quay CVE-2026-110697 — cross-tenant robot token theft at 9.9; patch to 3.9.28 / 3.10.28 / 3.12.24 / 3.14.10 / 3.15.9 / 3.16.7 / 3.17.7 / 3.18.3 (Quay.io already fixed). Xen Orchestra VSA-2026-062 — vendor-Critical auth bypass, IN THE WILD, no CVE yet; upgrade to 6.9.2 / 6.10.1 (xo-server 5.211.2 / 5.213.1) now.", c:"bright", p:120},
+    {t:"[PRIORITY QUEUE: 1] OpsTree REMS CVE-2026-126768 — unauthenticated auth bypass to SuperUser at 9.8 (set is_local_auth=true on the admin login with an invalid password); NO FIX stated — restrict REMS network access and watch for a patched release; companion CVE-2026-126769 leaks stored database credentials at 8.7, also unfixed. Confection WordPress CVE-2026-115252 — 10.0 unauthenticated RCE now has full public exploit code and STILL NO FIX (the PoC repo claim of a 0.4.8 fix is false; plugin closed Oct 23) — remove the plugin. FortiClient CVE-2026-121529 — 9.6 CORS RCE with live PoCs; patch to 7.4.8 / 7.2.15. Printcart CVE-2026-19803 — 9.8 upload RCE with live PoC; patch to 2.13.3. Airflow CVE-2026-68982 — broker-write RCE with live PoC; patch to 3.4.0 and lock down the broker. Traccar CVE-2026-126777 — LDAP empty-password auth bypass at 9.1; patch to 6.17.0. Drupal CVE-2026-108097 — Field UI RCE EXPLOITED per VulnCheck KEV Nov 11; patch to 10.6.19 / 11.3.19 / 11.4.10 / 12.0.0-beta2 or uninstall field_ui. Xen Orchestra VSA-2026-062 — vendor-Critical auth bypass, IN THE WILD, no CVE yet; upgrade to 6.9.2 / 6.10.1 (xo-server 5.211.2 / 5.213.1) now.", c:"bright", p:120},
     {t:"Next scan: hourly — only material changes alert.", c:"dim", p:400},
     {t:"", c:"", p:60},
     {t:"C:\\COMFYPWN> _", c:"", p:6000}
@@ -46084,7 +46299,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,976 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,988 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
