@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 10</span><span class="pill accent">2,918 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 11</span><span class="pill accent">2,921 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 10 10:30 PM ET:</strong> 2,918 CVEs tracked, filtered down to what needs action first. Twenty-six new records were added this scan (total up from 2,892 to 2,918), and the bulk is a single vendor drop: Fortinet’s November 2026 PSIRT batch — 24 advisories published Nov 10 spanning FortiMail, FortiManager / FortiAnalyzer, FortiAuthenticator, and FortiOS / FortiSASE at 8.1–9.8. Two unauthenticated FortiMail remote code execution flaws headline it at 9.8: CVE-2026-126147, a path traversal to unauthenticated RCE (fixed in FortiMail 8.0.2 / 7.6.7 / 7.4.9), and CVE-2026-126148, a command injection reachable through an HA join-request (fixed in 8.0.2 / 7.6.7). Close behind are a 9.4 unauthenticated FortiMail SQL injection to RCE (CVE-2026-126164), a 9.3 unauthenticated FortiOS / FortiSASE OSPF daemon authentication bypass (CVE-2026-126253), and a run of 9.0–9.1 authorization and authentication bypasses across FortiMail, FortiManager, and FortiAuthenticator — including a hard-coded-password credential-validation bypass in FortiAuthenticator (CVE-2026-126257, 9.0). The batch comes straight from Fortinet’s PSIRT: the CVE.org / NVD records were not yet published when this scan ran, so the scores are Fortinet CNA’s. Two non-Fortinet additions round out the scan: CVE-2026-63194 (8.7), a path traversal to arbitrary file write in the Bahmni bahmni-core admin CSV import (fixed in 0.93.1), and CVE-2026-63660 (8.1), an integer overflow to heap out-of-bounds write in mapbox node-fontnik’s RenderSDF (fixed in 0.7.7). None of the twenty-six is in CISA KEV, none has a public PoC, and none has confirmed exploitation in the wild; all twenty-six join Ones to Watch, which grows from 2,415 to 2,441 — the In the Wild group is unchanged at 94. The pending signal from earlier scans, ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8) with no CVE assigned yet, still sits with the pre-CVE early signals below, outside the 2,918. EPSS (data 2026-11-10): 2,431 scored and 487 unscored across the set — all twenty-six new records arrive unscored (null); the Fortinet batch has no CVE.org record for FIRST to score yet, and the two NVD additions are brand new. Highlighted Drops, the Ones to Watch, and the grouped 2,918-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 11 12:30 AM ET:</strong> 2,921 CVEs tracked, filtered down to what needs action first. Three new records were added this scan (total up from 2,918 to 2,921), all landing in the NVD publication sweep in the first minutes of Nov 11. Two score 9.8: CVE-2026-64678, an unfiltered Java deserialization flaw in Nitrite’s legacy v1 database migration path — an RCE precondition, fixed in 4.4.1 — and CVE-2026-64682, where AstroBlocks CMS admin session tokens are forgeable through a hard-coded fallback JWT secret, handing an unauthenticated attacker full administrative control (fixed in 3.4.0). The third, CVE-2026-64670 (9.3), is a Waline stored XSS: unsanitized markdown preview lets an unauthenticated commenter escalate against admin and moderator accounts — and no patch has been published yet. None of the three is in CISA KEV, none has a public PoC, and none has confirmed exploitation in the wild; all three join Ones to Watch, which grows from 2,441 to 2,444 — the In the Wild group is unchanged at 94. The pending signal from earlier scans, ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8) with no CVE assigned yet, still sits with the pre-CVE early signals below, outside the 2,921. EPSS: 2,431 scored and 490 unscored across the set — all three new records arrive unscored (null, brand new). Highlighted Drops, the Ones to Watch, and the grouped 2,921-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -430,10 +430,10 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>2,918</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>2,921</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
-    <div class="stat"><b>NOV 10</b><span>Last updated — hourly scans</span></div>
+    <div class="stat"><b>NOV 11</b><span>Last updated — hourly scans</span></div>
   </section>
 
   <section>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 2,918 CVEs</label>
+      <label for="cveSearch">Search all 2,921 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,918 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,921 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -497,7 +497,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 10 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 2441 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus three pre-CVE early signals that have no CVE ID at all yet — the newest is ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8). Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 11 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 2,444 CVEs meet that bar — the newest three arrived in the Nov 11 scan: a 9.8 Nitrite Java deserialization RCE precondition (CVE-2026-64678, fixed in 4.4.1), a 9.8 AstroBlocks forgeable admin JWT (CVE-2026-64682, fixed in 3.4.0), and a 9.3 Waline stored XSS with no patch yet (CVE-2026-64670); the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus three pre-CVE early signals that have no CVE ID at all yet — the newest is ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8). Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 3 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -505,18 +505,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 2441 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 2444 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 2,918 CVEs</h2><p>Every entry from the Nov 10 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 2,921 CVEs</h2><p>Every entry from the Nov 11 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,918.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">2,918 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,921.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">2,921 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 10 10:30 PM ET hourly scan — 26 records added (total up from 2,892 to 2,918 CVEs tracked); no tracked records corrected this scan and no new pending early signal. The headline additions are Fortinet’s November 2026 PSIRT batch — 24 vendor advisories published 2026-11-10 spanning FortiMail, FortiManager / FortiAnalyzer, FortiAuthenticator, and FortiOS / FortiSASE at 8.1–9.8 — headlined by two 9.8 unauthenticated FortiMail RCEs: CVE-2026-126147 (path traversal to unauthenticated RCE; fixed in FortiMail 8.0.2 / 7.6.7 / 7.4.9; PSIRT FG-IR-26-199) and CVE-2026-126148 (command injection via HA join-request to unauthenticated RCE; fixed in 8.0.2 / 7.6.7; FG-IR-26-200), plus a 9.4 unauthenticated FortiMail SQL injection to RCE (CVE-2026-126164; FG-IR-26-216). The batch’s CVE.org / NVD records were not yet published at scan time, so its scores are Fortinet CNA’s. Rounding out the scan: Bahmni bahmni-core path traversal to arbitrary file write CVE-2026-63194 (8.7; fixed in 0.93.1) and mapbox node-fontnik integer overflow to heap out-of-bounds write CVE-2026-63660 (8.1; fixed in 0.7.7). None of the twenty-six is in CISA KEV and none has confirmed exploitation in the wild. Pending signal carried over: ZDI-26-900 — Wireshark SMB object export integer overflow RCE, ZDI CVSS 8.8, no CVE assigned yet, so it is not part of the 2,918. EPSS (data 2026-11-10): 2,431 scored, 487 unscored across the set; all twenty-six new records are unscored (null — the Fortinet records are not yet published to CVE.org and the two NVD records are brand new). Tier counts now stand at 993 CRITICAL, 1,758 HIGH, 22 MEDIUM, 1 LOW, 144 unscored across the set. By severity: 91 at 10.0, 902 at 9.0–9.9, 1,657 at 8.0–8.9 and 268 below 8.0 (incl. 144 records scored 0.0). Across the full set, 94 records are flagged exploited in the wild, 64 carry a CISA KEV flag, and 173 carry a public-PoC flag; in the grouped index, 94 sit in the In the wild group, 13 sit in the CISA KEV-listed group, 138 sit in the public-PoC group, 2,441 sit in the Ones to watch group, and 232 sit in the Everything else group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 11 12:30 AM ET hourly scan — 3 records added (total up from 2,918 to 2,921 CVEs tracked); no tracked records corrected this scan and no new pending early signal. All three additions landed in the NVD publication sweep in the first minutes of 2026-11-11: CVE-2026-64678 (9.8) — Nitrite (nitrite-java) unfiltered Java deserialization in the legacy v1 database migration path, an RCE precondition (CWE-502), fixed in 4.4.1; CVE-2026-64682 (9.8) — AstroBlocks CMS admin session tokens forgeable via a hard-coded fallback JWT secret, an unauthenticated bypass to full administrative control, fixed in 3.4.0; and CVE-2026-64670 (9.3) — Waline (@waline/client) stored XSS via unsanitized markdown preview, where an unauthenticated commenter achieves privilege escalation against admin/moderator accounts, with no patch published yet (GHSA-crj3-q72p-ggqm). None of the three is in CISA KEV (catalog 2026.11.10, 1,779 entries), and none has a public PoC or confirmed exploitation in the wild. Pending signal carried over: ZDI-26-900 — Wireshark SMB object export integer overflow RCE, ZDI CVSS 8.8, no CVE assigned yet, so it is not part of the 2,921. EPSS: 2,431 scored, 490 unscored across the set; all three new records are unscored (null, brand new). Tier counts now stand at 996 CRITICAL, 1,758 HIGH, 22 MEDIUM, 1 LOW, 144 unscored across the set. By severity: 91 at 10.0, 905 at 9.0–9.9, 1,657 at 8.0–8.9 and 268 below 8.0 (incl. 144 records scored 0.0). Across the full set, 94 records are flagged exploited in the wild, 64 carry a CISA KEV flag, and 173 carry a public-PoC flag; in the grouped index, 94 sit in the In the wild group, 13 sit in the CISA KEV-listed group, 138 sit in the public-PoC group, 2,444 sit in the Ones to watch group, and 232 sit in the Everything else group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 
@@ -9012,6 +9012,38 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-64678",
+  "title": "Nitrite unfiltered Java deserialization in legacy v1 database migration path - RCE precondition, 9.8, fixed 4.4.1",
+  "product": "Nitrite (NO2) embedded NoSQL database (nitrite-java)",
+  "score": 9.8,
+  "cvss": "v3.1 (NVD 9.8; GHSA CVSS 3.1 9.8)",
+  "fixed": "4.4.1",
+  "published": "2026-11-11T05:19:51.937 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 00:30 ET hourly): newly published in window (NVD pub sweep, 05:19:51Z). Scope (1) 9.8 + (2) unsafe deserialization (CWE-502). No exploitation reported; not in CISA KEV (catalog 2026.11.10, 1,779 entries); VulnCheck KEV negative (0 documents); EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-64678",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-64682",
+  "title": "AstroBlocks admin session tokens forgeable via hard-coded fallback JWT secret - full administrative control, 9.8, fixed 3.4.0",
+  "product": "AstroBlocks CMS for Astro",
+  "score": 9.8,
+  "cvss": "v3.1 (NVD 9.8; GHSA CVSS 3.1 9.8)",
+  "fixed": "3.4.0",
+  "published": "2026-11-11T05:19:52.120 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 00:30 ET hourly): newly published in window (NVD pub sweep, 05:19:52Z). Scope (1) 9.8 + (3) unauthenticated authentication bypass to full admin (forged owner token). No exploitation reported; not in CISA KEV (catalog 2026.11.10, 1,779 entries); VulnCheck KEV negative (0 documents); EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-64682",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2025-65200",
   "title": "LocalStack CloudFormation deploy endpoint RCE via crafted templateURL content (lag-gap catch-up)",
   "product": "LocalStack 4.9.2",
@@ -12462,6 +12494,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "kev": false,
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): Fortinet November 2026 PSIRT batch, vendor-published 2026-11-10 with CVE ID assigned; NVD/CVE.org record not yet published (verified 404 on CVE.org 2026-11-11T03:40Z) - vendor advisory is the source. Scope (1) 9.3 + (3) unauthenticated authentication bypass. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (record not yet scored).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-64670",
+  "title": "Waline stored XSS via unsanitized markdown preview - unauthenticated commenter achieves privilege escalation against admin/moderator, 9.3, no patch yet",
+  "product": "Waline (@waline/client) comment system",
+  "score": 9.3,
+  "cvss": "v3.1 (NVD 9.3; GHSA CVSS 3.1 9.3)",
+  "fixed": "None published at time of publication (GHSA-crj3-q72p-ggqm)",
+  "published": "2026-11-11T05:19:51.527 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 00:30 ET hourly): newly published in window (NVD pub sweep, 05:19:51Z). Scope (1) 9.3 + (3) unauthenticated -> admin/moderator privilege escalation - NOT pure XSS: admin impact is demonstrated in the advisory (cf. the myTinyWMS 8.1 stored-XSS / FortiSandbox 8.8 reflected-XSS declines, which had no demonstrated admin impact). No exploitation reported; not in CISA KEV (catalog 2026.11.10, 1,779 entries); VulnCheck KEV negative (0 documents); EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-64670",
   "epss": null,
   "epss_percentile": null
  },
@@ -44773,51 +44821,41 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-10 --run 10:30 PM ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-11 --run 12:30 AM ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning — 2,918 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 26 new CVEs — Fortinet Nov PSIRT batch of 24 + 2", c:"", p:200},
-    {t:"  NEW: FortiMail unauth RCE pair at 9.8 — traversal + HA join-request", c:"warn", p:120},
-    {t:"  NEW: Fortinet Nov 2026 PSIRT — 24 CVEs, 8.1–9.8", c:"warn", p:120},
-    {t:"  NEW: FortiMail SQLi -> unauth RCE 9.4 · FortiOS OSPF bypass 9.3", c:"warn", p:120},
-    {t:"  NEW: FortiManager / FortiAnalyzer / FortiAuthenticator 8.2–9.1", c:"warn", p:120},
-    {t:"  + Bahmni bahmni-core file write 8.7 · node-fontnik OOB write 8.1", c:"warn", p:120},
+    {t:"Scanning — 2,921 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: 3 new CVEs — two 9.8s and a 9.3, all via NVD", c:"", p:200},
+    {t:"  NEW: Nitrite Java deserialization -> RCE precondition 9.8", c:"warn", p:120},
+    {t:"  NEW: AstroBlocks forged admin JWT (hard-coded secret) 9.8", c:"warn", p:120},
+    {t:"  NEW: Waline stored XSS -> unauth commenter privesc 9.3", c:"warn", p:120},
+    {t:"  Waline has NO patch yet · fixed: Nitrite 4.4.1 · AstroBlocks 3.4.0", c:"warn", p:120},
     {t:"  None in CISA KEV · no PoC · no confirmed exploitation", c:"warn", p:120},
     {t:"  Pending signal: ZDI-26-900 — Wireshark SMB RCE (8.8)", c:"warn", p:120},
-    {t:"  EPSS: 2,431 scored · 487 unscored (data 2026-11-10)", c:"dim", p:200},
-    {t:"  All 26 new records unscored — Fortinet not on CVE.org yet", c:"dim", p:200},
+    {t:"  EPSS: 2,431 scored · 490 unscored", c:"dim", p:200},
+    {t:"  All 3 new records unscored (brand new)", c:"dim", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  NEW THIS SCAN  ================", c:"bright", p:200},
     {t:"", p:60},
-    {t:">> CVE-2026-126147 — FortiMail · 9.8", c:"warn", p:100},
-    {t:"   Path traversal -> unauthenticated RCE", c:"bright", p:100},
-    {t:"   Fortinet PSIRT FG-IR-26-199  ·  CVE.org record pending", c:"", p:100},
-    {t:"   FIX: FortiMail 8.0.2 / 7.6.7 / 7.4.9  ·  EPSS unscored", c:"", p:200},
+    {t:">> CVE-2026-64678 — Nitrite · 9.8", c:"warn", p:100},
+    {t:"   Unfiltered Java deserialization in legacy v1 migration", c:"bright", p:100},
+    {t:"   RCE precondition (CWE-502) · NVD-published Nov 11", c:"", p:100},
+    {t:"   FIX: 4.4.1  ·  EPSS unscored", c:"", p:200},
     {t:"", p:60},
-    {t:">> CVE-2026-126148 — FortiMail · 9.8", c:"warn", p:100},
-    {t:"   Command injection via HA join-request -> unauth RCE", c:"bright", p:100},
-    {t:"   Fortinet PSIRT FG-IR-26-200  ·  CVE.org record pending", c:"", p:100},
-    {t:"   FIX: FortiMail 8.0.2 / 7.6.7  ·  EPSS unscored", c:"", p:200},
+    {t:">> CVE-2026-64682 — AstroBlocks · 9.8", c:"warn", p:100},
+    {t:"   Admin JWT forgeable via hard-coded fallback secret", c:"bright", p:100},
+    {t:"   Unauthenticated -> full administrative control", c:"", p:100},
+    {t:"   FIX: 3.4.0  ·  EPSS unscored", c:"", p:200},
     {t:"", p:60},
-    {t:">> FORTINET NOV 2026 PSIRT — 24-CVE BATCH", c:"warn", p:100},
-    {t:"   Vendor-published Nov 10  ·  8.1–9.8  ·  Fortinet CNA scores", c:"bright", p:100},
-    {t:"   FortiMail 8 · FortiManager/Analyzer 10 · FortiAuthenticator 5", c:"", p:100},
-    {t:"   FortiOS/FortiSASE 1 · incl. FortiMail SQLi -> RCE 9.4 (126164)", c:"", p:100},
-    {t:"   FIX: per-advisory fixed releases — see each record", c:"", p:200},
-    {t:"", p:60},
-    {t:">> CVE-2026-63194 — Bahmni bahmni-core · 8.7", c:"warn", p:100},
-    {t:"   Path traversal -> arbitrary file write in admin CSV import", c:"bright", p:100},
-    {t:"   FIX: 0.93.1  ·  EPSS unscored (brand new)", c:"", p:200},
-    {t:"", p:60},
-    {t:">> CVE-2026-63660 — node-fontnik · 8.1", c:"warn", p:100},
-    {t:"   Integer overflow -> heap OOB write in RenderSDF", c:"bright", p:100},
-    {t:"   FIX: 0.7.7  ·  EPSS unscored (brand new)", c:"", p:200},
+    {t:">> CVE-2026-64670 — Waline · 9.3", c:"warn", p:100},
+    {t:"   Stored XSS via unsanitized markdown preview", c:"bright", p:100},
+    {t:"   Unauth commenter -> admin/moderator privilege escalation", c:"", p:100},
+    {t:"   NO FIX YET (GHSA-crj3-q72p-ggqm)  ·  EPSS unscored", c:"", p:200},
     {t:"", p:60},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
     {t:"", p:60},
@@ -44848,7 +44886,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
     {t:"   CVE-2026-97229 -> CISA KEV Oct 29 · EXPLOITED IN THE WILD", c:"dim", p:300},
     {t:"", p:80},
     {t:"==================================================", c:"bright", p:120},
-    {t:"[PRIORITY QUEUE: 1] FortiMail CVE-2026-126147 + CVE-2026-126148 — unauth RCE pair at 9.8; patch to 8.0.2 / 7.6.7 before public PoCs land.", c:"bright", p:120},
+    {t:"[PRIORITY QUEUE: 1] AstroBlocks CVE-2026-64682 — forgeable admin JWT at 9.8; upgrade to 3.4.0. Waline CVE-2026-64670 (9.3) still has no patch — watch GHSA-crj3-q72p-ggqm.", c:"bright", p:120},
     {t:"Next scan: hourly — only material changes alert.", c:"dim", p:400},
     {t:"", p:60},
     {t:"C:\\COMFYPWN> _", c:"", p:6000}
@@ -44883,7 +44921,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   if(replayBtn){ replayBtn.addEventListener("click",function(){ paused=false; if(pauseBtn){pauseBtn.textContent="❚❚ PAUSE"; pauseBtn.setAttribute("aria-pressed","false");} start(); }); }
   start();
 })();
-/* ---- Full CVE dataset (Nov 10 21:30 ET sync) + drill-in details ---- */
+/* ---- Full CVE dataset (Nov 11 00:30 ET sync) + drill-in details ---- */
 var CVE_ITEMS=[];
 try{ CVE_ITEMS=JSON.parse(document.getElementById("cveData").textContent||"[]"); }catch(e){ CVE_ITEMS=[]; }
 var CVE_BY_ID={};
@@ -45147,7 +45185,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,918 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,921 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
