@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 11</span><span class="pill accent">2,935 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 11</span><span class="pill accent">2,939 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 11 2:30 AM ET:</strong> 2,935 CVEs tracked, filtered down to what needs action first. One new record was added this scan (total up from 2,934 to 2,935): CVE-2026-96414 (7.7, CVSS v4.0) — Octopus Server, where a forged authentication cookie escalates to Administrator. It was published in the NVD sweep at 07:17 UTC on Nov 11 and is fixed in 2026.2.13487 / 2026.3.15875 — upgrade, no mitigation. No exploitation is reported for it, it is not in CISA KEV, and it has no public PoC; at 7.7 with no flags it lands in Everything else, so Ones to Watch is unchanged at 2,453 and the In the Wild group is unchanged at 94. The thirteen WordPress plugin flaws from the 1:30 AM scan still lead the action list — worst is CVE-2026-123695 (9.8), Security For WooCommerce’s login-token bypass, which logs an unauthenticated attacker in as any user, administrators included, with no fix confirmed yet. The pending signal from earlier scans, ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8) with no CVE assigned yet, still sits with the pre-CVE early signals below, outside the 2,935. EPSS: 2,431 scored and 504 unscored across the set — the new record arrives unscored (null, brand new). Highlighted Drops, the Ones to Watch, and the grouped 2,935-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 11 3:30 AM ET:</strong> 2,939 CVEs tracked, filtered down to what needs action first. Four new records were added this scan (total up from 2,935 to 2,939) and one tracked record was rescored, all from the NVD sweep at 08:17 UTC on Nov 11. The additions: CVE-2026-12062 (8.8) and CVE-2026-76981 (8.8) — two authenticated SQL injections in Zoho ManageEngine ADAudit Plus (the second is second-order, via custom reports), fixed in builds 8703 and 8711; CVE-2026-111190 (8.1) — ARForms, where an unauthenticated arbitrary file upload leads to RCE, with no fix stated (vulnerable through 7.2.4); and CVE-2026-105948 (7.7) — Octopus Server privilege escalation to System Administrator via LDAP login-identity editing, fixed in 2026.2.13487 / 2026.3.15909. The rescore is CVE-2026-96414 (Octopus Server, added last scan): 7.7 up to 8.7 on the vendor’s CVSS v4.0, which moves it from Everything else into Ones to Watch. No exploitation is reported for any of the four additions, none is in CISA KEV, and none has a public PoC; the three at 8.0+ join Ones to Watch (now 2,457) and the 7.7 lands in Everything else (unchanged at 237 after the rescore swap), while the In the Wild group is unchanged at 94. The thirteen WordPress plugin flaws from the 1:30 AM scan still lead the action list — worst is CVE-2026-123695 (9.8), Security For WooCommerce’s login-token bypass, which logs an unauthenticated attacker in as any user, administrators included, with no fix confirmed yet. The pending signal from earlier scans, ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8) with no CVE assigned yet, still sits with the pre-CVE early signals below, outside the 2,939. EPSS: 2,431 scored and 508 unscored across the set — all four new records arrive unscored (null, brand new). Highlighted Drops, the Ones to Watch, and the grouped 2,939-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -430,7 +430,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>2,935</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>2,939</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 11</b><span>Last updated — hourly scans</span></div>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 2,935 CVEs</label>
+      <label for="cveSearch">Search all 2,939 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,935 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,939 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -497,7 +497,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 11 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 2,453 CVEs meet that bar — the newest nine arrived in the Nov 11 1:30 AM ET scan, all WordPress plugin flaws from the WPScan batch: a 9.8 Security For WooCommerce login-token bypass to any admin account (CVE-2026-123695, no fix confirmed), two 9.6 arbitrary file deletions (Pay with a tweet, CVE-2026-115734, and Somatic Framework, CVE-2026-115735 — neither with a fix confirmed), a 9.1 Printaura-WooCommerce unauthenticated REST-route takeover (CVE-2026-115733, no fix confirmed), three 8.8s (Knowledge Building stored XSS, fixed in 0.7.3; iChart post and site-option abuse, fixed in 2.2.4; Smoove stored XSS, fixed in 4.3.6) and two 8.1 privilege escalations (User Registration & Membership, fixed in 5.3.2; Forminator, fixed in 1.58.4); the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus three pre-CVE early signals that have no CVE ID at all yet — the newest is ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8). Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 11 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 2,457 CVEs meet that bar — the newest arrivals came in the Nov 11 3:30 AM ET scan: two 8.8 authenticated SQL injections in Zoho ManageEngine ADAudit Plus (CVE-2026-12062, fixed in build 8703, and CVE-2026-76981, fixed in build 8711), an 8.1 ARForms unauthenticated arbitrary-file-upload RCE (CVE-2026-111190, no fix stated), and CVE-2026-96414 (Octopus Server), rescored this scan from 7.7 to 8.7 on the vendor’s CVSS v4.0. Before them, nine arrived in the Nov 11 1:30 AM ET scan, all WordPress plugin flaws from the WPScan batch: a 9.8 Security For WooCommerce login-token bypass to any admin account (CVE-2026-123695, no fix confirmed), two 9.6 arbitrary file deletions (Pay with a tweet, CVE-2026-115734, and Somatic Framework, CVE-2026-115735 — neither with a fix confirmed), a 9.1 Printaura-WooCommerce unauthenticated REST-route takeover (CVE-2026-115733, no fix confirmed), three 8.8s (Knowledge Building stored XSS, fixed in 0.7.3; iChart post and site-option abuse, fixed in 2.2.4; Smoove stored XSS, fixed in 4.3.6) and two 8.1 privilege escalations (User Registration & Membership, fixed in 5.3.2; Forminator, fixed in 1.58.4); the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus three pre-CVE early signals that have no CVE ID at all yet — the newest is ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8). Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 3 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -505,18 +505,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 2453 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 2457 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 2,935 CVEs</h2><p>Every entry from the Nov 11 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 2,939 CVEs</h2><p>Every entry from the Nov 11 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,935.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">2,935 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,939.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">2,939 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 11 2:30 AM ET hourly scan — 1 record added (total up from 2,934 to 2,935 CVEs tracked); no tracked records corrected this scan and no new pending early signal. The addition is CVE-2026-96414 (7.7, CVSS v4.0) — Octopus Server authentication-cookie forgery leading to Administrator privilege escalation, published 2026-11-11T07:17:36Z (vendor advisory SA2026-19, released Nov 9); fixed in 2026.2.13487 / 2026.3.15875, no mitigation — upgrade required. It is not in CISA KEV (catalog 2026.11.10, 1,779 entries), and it has no public PoC or confirmed exploitation in the wild; EPSS unscored (null, brand new). Pending signal carried over: ZDI-26-900 — Wireshark SMB object export integer overflow RCE, ZDI CVSS 8.8, no CVE assigned yet, so it is not part of the 2,935. EPSS: 2,431 scored, 504 unscored across the set. Tier counts now stand at 1,000 CRITICAL, 1,765 HIGH, 22 MEDIUM, 2 LOW, 146 unscored across the set. By severity: 91 at 10.0, 909 at 9.0–9.9, 1,662 at 8.0–8.9 and 273 below 8.0 (incl. 146 records scored 0.0). Across the full set, 94 records are flagged exploited in the wild, 64 carry a CISA KEV flag, and 173 carry a public-PoC flag; in the grouped index, 94 sit in the In the wild group, 13 sit in the CISA KEV-listed group, 138 sit in the public-PoC group, 2,453 sit in the Ones to watch group, and 237 sit in the Everything else group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 11 3:30 AM ET hourly scan — 4 records added (total up from 2,935 to 2,939 CVEs tracked) and 1 tracked record rescored; no new pending early signal. The additions, all published in the NVD sweep at 2026-11-11T08:17Z: CVE-2026-12062 (8.8) — Zoho ManageEngine ADAudit Plus authenticated SQL injection in the Reports API, fixed in build 8703; CVE-2026-76981 (8.8) — Zoho ManageEngine ADAudit Plus authenticated second-order SQL injection in custom reports, fixed in build 8711; CVE-2026-111190 (8.1) — ARForms unauthenticated arbitrary file upload leading to RCE, no fix stated (vulnerable through 7.2.4); and CVE-2026-105948 (7.7) — Octopus Server privilege escalation to System Administrator via LDAP login-identity editing, fixed in 2026.2.13487 / 2026.3.15909 (vendor advisory SA2026-21). The rescore is CVE-2026-96414 (Octopus Server, added in the 2:30 AM scan): 7.7 to 8.7 on the vendor’s CVSS v4.0 scoring, which moves it from Everything else into Ones to Watch. None of the additions is in CISA KEV (catalog 2026.11.10, 1,779 entries), and none has a public PoC or confirmed exploitation in the wild; all four arrive EPSS unscored (null, brand new). Pending signal carried over: ZDI-26-900 — Wireshark SMB object export integer overflow RCE, ZDI CVSS 8.8, no CVE assigned yet, so it is not part of the 2,939. EPSS: 2,431 scored, 508 unscored across the set. Tier counts now stand at 1,000 CRITICAL, 1,769 HIGH, 22 MEDIUM, 2 LOW, 146 unscored across the set. By severity: 91 at 10.0, 909 at 9.0–9.9, 1,666 at 8.0–8.9 and 273 below 8.0 (incl. 146 records scored 0.0). Across the full set, 94 records are flagged exploited in the wild, 64 carry a CISA KEV flag, and 173 carry a public-PoC flag; in the grouped index, 94 sit in the In the wild group, 13 sit in the CISA KEV-listed group, 138 sit in the public-PoC group, 2,457 sit in the Ones to watch group, and 237 sit in the Everything else group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 
@@ -27839,6 +27839,38 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-12062",
+  "title": "Zoho ManageEngine ADAudit Plus authenticated SQL injection in Reports API, 8.8, fixed 8703",
+  "product": "Zoho ManageEngine ADAudit Plus",
+  "score": 8.8,
+  "cvss": "v3.1 (NVD 8.8; AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H)",
+  "fixed": "8703 (vendor advisory page confirms fix in build 8703)",
+  "published": "2026-11-11T08:17:17.960 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 03:30 ET hourly): newly published in window (NVD pub sweep, 08:17:17Z). Scope (1) 8.8. No exploitation reported; not in CISA KEV; VulnCheck KEV negative; EPSS unscored (null, brand new); CIRCL indexed.",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-12062",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-76981",
+  "title": "Zoho ManageEngine ADAudit Plus authenticated second-order SQL injection in custom reports, 8.8, fixed 8711",
+  "product": "Zoho ManageEngine ADAudit Plus",
+  "score": 8.8,
+  "cvss": "v3.1 (NVD 8.8; AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H)",
+  "fixed": "8711",
+  "published": "2026-11-11T08:17:18.760 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 03:30 ET hourly): newly published in window (NVD pub sweep, 08:17:18Z). Scope (1) 8.8. No exploitation reported; not in CISA KEV; VulnCheck KEV negative; EPSS unscored (null, brand new); CIRCL indexed.",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-76981",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2010-20125",
   "title": "DedeCMS file inclusion in plus/carbuyaction.php -> local file disclosure (old CVE, newly published)",
   "product": "DedeCMS before 5.7",
@@ -29903,6 +29935,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "kev": false,
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-10 22:30 ET hourly): NVD-published in window (2026-11-11T03:16:52Z), never previously recorded. Scope (1) 8.7 + (2) arbitrary file write class. No exploitation reported; not in CISA KEV; VulnCheck KEV negative. EPSS null (brand-new, unscored by FIRST).",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-96414",
+  "title": "Octopus Server authentication-cookie forgery leading to Administrator privilege escalation, 7.7, fixed 2026.2.13487 / 2026.3.15875",
+  "product": "Octopus Server",
+  "score": 8.7,
+  "cvss": "v4.0 (vendor security@octopus.com 8.7; AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H — rescored from NVD 7.7 within the hour; attack requirements AT:P removed)",
+  "fixed": "2026.2.13487 / 2026.3.15875 (latest 2026.3.16030); no mitigation - upgrade required",
+  "published": "2026-11-11T07:17:36.980 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 02:30 ET hourly): newly published in window (NVD pub sweep, 07:17:36Z; vendor advisory SA2026-19 released Nov 9, patch Sep 29). Scope (3) privilege escalation to Administrator (below 8.0 but an admin grant by class; vendor rates Critical where guest access is enabled). Octopus Deploy is not aware of any public announcements or malicious use; not in CISA KEV (catalog 2026.11.10, 1,779 entries); VulnCheck KEV negative; EPSS unscored (null, brand new); CIRCL not yet indexed. | RESCORE 2026-11-11 03:30 ET: vendor CVSS v4.0 secondary score 8.7 (AT:N) now published on the NVD record (lastMod 08:17:19Z) — highest published score now 8.7, up from 7.7 recorded 02:30 ET. No change to exploitation status (no exploitation reported; not in KEV).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-96414",
   "epss": null,
   "epss_percentile": null
  },
@@ -40259,6 +40307,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-111190",
+  "title": "ARForms arbitrary file upload leading to unauthenticated RCE, 8.1, no fix stated (vulnerable through 7.2.4)",
+  "product": "ARForms (WordPress plugin)",
+  "score": 8.1,
+  "cvss": "v3.1 (NVD 8.1; AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H)",
+  "fixed": "No fix stated (vulnerable through 7.2.4; CVEye confirms no fix stated)",
+  "published": "2026-11-11T08:17:16.887 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 03:30 ET hourly): newly published in window (NVD pub sweep, 08:17:16Z). Scope (1) 8.1 and (2) unauthenticated arbitrary file upload of executable PHP to a publicly accessible directory -> RCE. No exploitation reported; not in CISA KEV; VulnCheck KEV negative; EPSS unscored (null, brand new); CIRCL indexed.",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-111190",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2026-101602",
   "title": "Low-privileged HTTP attacker takes over Oracle Agile PLM for Process; requires user interaction (Oracle Oct 2026 CPU)",
   "product": "Oracle Agile PLM for Process (Product Quality Management)",
@@ -41211,18 +41275,18 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": null
  },
  {
-  "id": "CVE-2026-96414",
-  "title": "Octopus Server authentication-cookie forgery leading to Administrator privilege escalation, 7.7, fixed 2026.2.13487 / 2026.3.15875",
+  "id": "CVE-2026-105948",
+  "title": "Octopus Server privilege escalation to System Administrator via login-identity editing (LDAP), 7.7, fixed 2026.2.13487 / 2026.3.15909",
   "product": "Octopus Server",
   "score": 7.7,
   "cvss": "v4.0 (NVD 7.7; AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H)",
-  "fixed": "2026.2.13487 / 2026.3.15875 (latest 2026.3.16030); no mitigation - upgrade required",
-  "published": "2026-11-11T07:17:36.980 (NVD)",
+  "fixed": "2026.2.13487 / 2026.3.15909",
+  "published": "2026-11-11T08:17:16.740 (NVD)",
   "exploited": false,
   "kev": false,
   "poc": false,
-  "status": "MATERIAL 4(a) (2026-11-11 02:30 ET hourly): newly published in window (NVD pub sweep, 07:17:36Z; vendor advisory SA2026-19 released Nov 9, patch Sep 29). Scope (3) privilege escalation to Administrator (below 8.0 but an admin grant by class; vendor rates Critical where guest access is enabled). Octopus Deploy is not aware of any public announcements or malicious use; not in CISA KEV (catalog 2026.11.10, 1,779 entries); VulnCheck KEV negative; EPSS unscored (null, brand new); CIRCL not yet indexed.",
-  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-96414",
+  "status": "MATERIAL 4(a) (2026-11-11 03:30 ET hourly): newly published in window (NVD pub sweep, 08:17:16Z; vendor advisory SA2026-21). Scope (3) privilege escalation to System Administrator (LDAP authentication with self-service login editing enabled). No exploitation reported; not in CISA KEV (catalog 2026.11.10, 1,779 entries); VulnCheck KEV negative; EPSS unscored (null, brand new); CIRCL indexed (CNA record corroborates affected/fixed ranges).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-105948",
   "epss": null,
   "epss_percentile": null
  },
@@ -45045,28 +45109,47 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-11 --run 2:30 AM ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-11 --run 3:30 AM ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning — 2,935 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 1 new CVE — Octopus Server (NVD sweep 07:17 UTC)", c:"", p:200},
-    {t:"  NEW: Octopus Server auth-cookie forgery -> Admin 7.7", c:"warn", p:120},
-    {t:"  NEW: Fixed in 2026.2.13487 / 2026.3.15875 — upgrade", c:"warn", p:120},
+    {t:"Scanning — 2,939 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: 4 new CVEs + 1 rescore (NVD sweep 08:17 UTC)", c:"", p:200},
+    {t:"  NEW: Zoho ADAudit Plus auth SQLi 8.8 — fix 8703", c:"warn", p:120},
+    {t:"  NEW: Zoho ADAudit Plus 2nd-order SQLi 8.8 — fix 8711", c:"warn", p:120},
+    {t:"  NEW: ARForms unauth file upload -> RCE 8.1 — no fix", c:"warn", p:120},
+    {t:"  NEW: Octopus Server priv esc -> SysAdmin 7.7", c:"warn", p:120},
+    {t:"  RESCORE: CVE-2026-96414 Octopus 7.7 -> 8.7 (vendor v4.0)", c:"warn", p:120},
     {t:"  No exploitation reported · not in CISA KEV · no PoC", c:"warn", p:120},
     {t:"  Pending signal: ZDI-26-900 — Wireshark SMB RCE (8.8)", c:"warn", p:120},
-    {t:"  EPSS: 2,431 scored · 504 unscored", c:"dim", p:200},
-    {t:"  The new record is unscored (brand new)", c:"dim", p:200},
+    {t:"  EPSS: 2,431 scored · 508 unscored", c:"dim", p:200},
+    {t:"  All four new records are unscored (brand new)", c:"dim", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  NEW THIS SCAN  ================", c:"bright", p:200},
     {t:"", p:60},
-    {t:">> CVE-2026-96414 — Octopus Server · 7.7", c:"warn", p:100},
+    {t:">> CVE-2026-12062 — Zoho ManageEngine ADAudit Plus · 8.8", c:"warn", p:100},
+    {t:"   Authenticated SQL injection in Reports API", c:"bright", p:100},
+    {t:"   FIX: build 8703  ·  EPSS unscored", c:"", p:160},
+    {t:"", p:60},
+    {t:">> CVE-2026-76981 — Zoho ManageEngine ADAudit Plus · 8.8", c:"warn", p:100},
+    {t:"   Authenticated second-order SQL injection — custom reports", c:"bright", p:100},
+    {t:"   FIX: build 8711  ·  EPSS unscored", c:"", p:160},
+    {t:"", p:60},
+    {t:">> CVE-2026-111190 — ARForms · 8.1", c:"warn", p:100},
+    {t:"   Unauthenticated arbitrary file upload -> RCE", c:"bright", p:100},
+    {t:"   NO FIX STATED — vulnerable through 7.2.4  ·  EPSS unscored", c:"", p:160},
+    {t:"", p:60},
+    {t:">> CVE-2026-105948 — Octopus Server · 7.7", c:"warn", p:100},
+    {t:"   Privilege escalation to System Administrator (LDAP)", c:"bright", p:100},
+    {t:"   FIX: 2026.2.13487 / 2026.3.15909  ·  EPSS unscored", c:"", p:160},
+    {t:"", p:60},
+    {t:">> CVE-2026-96414 — Octopus Server · RESCORED 7.7 -> 8.7", c:"warn", p:100},
     {t:"   Authentication-cookie forgery -> Administrator", c:"bright", p:100},
-    {t:"   Privilege escalation · CVSS v4.0 · advisory SA2026-19", c:"", p:100},
+    {t:"   Vendor CVSS v4.0 rescore · advisory SA2026-19", c:"", p:100},
     {t:"   FIX: 2026.2.13487 / 2026.3.15875  ·  EPSS unscored", c:"", p:200},
     {t:"", p:60},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
@@ -45133,7 +45216,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   if(replayBtn){ replayBtn.addEventListener("click",function(){ paused=false; if(pauseBtn){pauseBtn.textContent="❚❚ PAUSE"; pauseBtn.setAttribute("aria-pressed","false");} start(); }); }
   start();
 })();
-/* ---- Full CVE dataset (Nov 11 02:30 ET sync) + drill-in details ---- */
+/* ---- Full CVE dataset (Nov 11 03:30 ET sync) + drill-in details ---- */
 var CVE_ITEMS=[];
 try{ CVE_ITEMS=JSON.parse(document.getElementById("cveData").textContent||"[]"); }catch(e){ CVE_ITEMS=[]; }
 var CVE_BY_ID={};
@@ -45397,7 +45480,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,935 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,939 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
