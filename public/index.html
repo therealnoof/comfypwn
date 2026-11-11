@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 10</span><span class="pill accent">2,869 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 10</span><span class="pill accent">2,876 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 10 7:30 PM ET:</strong> 2,869 CVEs tracked, filtered down to what needs action first. Two new records were added this scan (total up from 2,867 to 2,869) — both halves of a single FOSSBilling attack chain the earlier scans had missed. CVE-2026-27604 (10.0) is an unauthenticated authentication bypass that hands out admin API access; chained with CVE-2026-28496 (9.4), a Twig server-side template injection, it becomes unauthenticated remote code execution. VulnCheck’s canaries report the chain exploited in the wild, and both flaws sit in the VulnCheck KEV catalog — CVE-2026-27604 was listed Nov 10, CVE-2026-28496 back on Jun 25 — though neither is in CISA KEV. VulnCheck’s blog documents the full chain with every step automated, so a public PoC exists; both flaws are fixed in FOSSBilling 0.8.0. The pair lands in the In the Wild group, which grows from 92 to 94; the Ones to Watch group is unchanged at 2,394. The pending signal from earlier scans, ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8) with no CVE assigned yet, still sits with the pre-CVE early signals below, outside the 2,869. EPSS (data 2026-11-10): 2,415 scored and 454 unscored across the set — both new records arrive EPSS-scored (0.013 and 0.019). Highlighted Drops, the Ones to Watch, and the grouped 2,869-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 10 8:30 PM ET:</strong> 2,876 CVEs tracked, filtered down to what needs action first. Seven new records were added this scan (total up from 2,869 to 2,876). The headline is CVE-2026-66613 (9.8), an unauthenticated remote code execution flaw in JetEngine, the Crocoblock WordPress plugin: a server-side template injection in its Timber/Twig Views, with a weaponized public proof-of-concept published Nov 10 — a baseline miss the 7:30 PM run had not caught; it is fixed in 3.8.14.1. Close behind are two authentication bypasses: CVE-2026-126542 (9.8), where an AVideo social-login display name set to a victim’s username logs an attacker in as that user — admin included, no password — and CVE-2026-126539 (9.2), where a Directus public-mode WebSocket skips permission checks and hands unauthenticated callers full CRUD on any user-defined collection (fixed in Directus 12.1.0). Two more AVideo flaws round out the set — CVE-2026-126543 (8.7), improper PayPal payment verification that lets unauthenticated callers manipulate wallet credit, and CVE-2026-126541 (8.6), missing authorization that lets authenticated streamers pull other users’ stream keys — alongside a LibreCAD heap overflow via crafted DWG files, CVE-2026-126497 (8.5), and a Jellyfin path traversal that can delete or move directories unauthenticated, CVE-2026-126499 (8.3; fixed in 12.0). None of the seven is in CISA KEV and none has confirmed exploitation in the wild; JetEngine lands in the Public PoC group, which grows from 136 to 137, and the other six join Ones to Watch, which grows from 2,394 to 2,400 — the In the Wild group is unchanged at 94. The pending signal from earlier scans, ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8) with no CVE assigned yet, still sits with the pre-CVE early signals below, outside the 2,876. EPSS (data 2026-11-10): 2,416 scored and 460 unscored across the set — six of the seven new records arrive unscored; JetEngine is scored at 0.0086 (58.80th percentile). Highlighted Drops, the Ones to Watch, and the grouped 2,876-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -430,7 +430,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>2,869</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>2,876</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 10</b><span>Last updated — hourly scans</span></div>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 2,869 CVEs</label>
+      <label for="cveSearch">Search all 2,876 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,869 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,876 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -497,7 +497,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 10 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 2357 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus three pre-CVE early signals that have no CVE ID at all yet — the newest is ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8). Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 10 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 2363 CVEs meet that bar; the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus three pre-CVE early signals that have no CVE ID at all yet — the newest is ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8). Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 3 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -505,18 +505,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 2394 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 2400 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 2,869 CVEs</h2><p>Every entry from the Nov 10 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 2,876 CVEs</h2><p>Every entry from the Nov 10 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,869.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">2,869 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,876.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">2,876 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 10 7:30 PM ET hourly scan — 2 records added (total up from 2,867 to 2,869 CVEs tracked); no tracked records corrected this scan and no new pending early signal. Both new records are exploited in the wild per VulnCheck KEV, and neither is in CISA KEV: FOSSBilling unauthenticated authentication bypass to admin API access CVE-2026-27604 (10.0; fixed in 0.8.0) and FOSSBilling Twig SSTI to unauthenticated RCE CVE-2026-28496 (9.4; fixed in 0.8.0) — chained, the pair gives unauthenticated remote code execution, and VulnCheck’s blog documents the full chain, every step automated (public PoC). Both are baseline misses that surfaced this run: CVE-2026-27604 was VulnCheck KEV-listed Nov 10, and CVE-2026-28496 has been listed since Jun 25. Pending signal carried over: ZDI-26-900 — Wireshark SMB object export integer overflow RCE, ZDI CVSS 8.8, no CVE assigned yet, so it is not part of the 2,869. EPSS (data 2026-11-10): 2,415 scored, 454 unscored across the set; both new records are EPSS-scored (0.01264 and 0.01905). Tier counts now stand at 975 CRITICAL, 1,727 HIGH, 22 MEDIUM, 1 LOW, 144 unscored across the set. By severity: 90 at 10.0, 885 at 9.0–9.9, 1,626 at 8.0–8.9 and 268 below 8.0 (incl. 144 records scored 0.0). Across the full set, 94 records are flagged exploited in the wild, 64 carry a CISA KEV flag, and 171 carry a public-PoC flag; in the grouped index, 94 sit in the In the wild group, 13 sit in the CISA KEV-listed group, 136 sit in the public-PoC group, 2,394 sit in the Ones to watch group, and 232 sit in the Everything else group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 10 8:30 PM ET hourly scan — 7 records added (total up from 2,869 to 2,876 CVEs tracked); no tracked records corrected this scan and no new pending early signal. The headline addition is JetEngine (Crocoblock WordPress plugin) unauthenticated RCE via server-side template injection in Timber/Twig Views CVE-2026-66613 (9.8; fixed in 3.8.14.1) — a baseline miss (CVE published Aug 19) whose weaponized public PoC was published Nov 10 and caught as a lag-gap catch this run; it is EPSS-scored at 0.0086 (58.80th percentile). The other six are newly published this window, none in CISA KEV and none with confirmed exploitation: AVideo authentication bypass via Hybridauth social-login display names CVE-2026-126542 (9.8; fixed in commit d34ccf23, post-29.7.1), Directus authorization bypass via public-mode WebSocket CVE-2026-126539 (9.2; fixed in 12.1.0), AVideo improper PayPal payment verification CVE-2026-126543 (8.7; fixed in commit 98406b79, post-29.7.1), AVideo missing authorization in Live plugin restream endpoints CVE-2026-126541 (8.6; fixed in commit be9d7019, post-29.7.1), LibreCAD heap-based out-of-bounds write via crafted DWG files CVE-2026-126497 (8.5; fixed in commit 17ba2b27, post-2.2.1.6), and Jellyfin path traversal in Library VirtualFolders endpoints CVE-2026-126499 (8.3; fixed in 12.0). Pending signal carried over: ZDI-26-900 — Wireshark SMB object export integer overflow RCE, ZDI CVSS 8.8, no CVE assigned yet, so it is not part of the 2,876. EPSS (data 2026-11-10): 2,416 scored, 460 unscored across the set; six of the seven new records are EPSS-unscored (null, brand new), and JetEngine is scored (0.0086, 58.80th percentile). Tier counts now stand at 978 CRITICAL, 1,731 HIGH, 22 MEDIUM, 1 LOW, 144 unscored across the set. By severity: 90 at 10.0, 888 at 9.0–9.9, 1,630 at 8.0–8.9 and 268 below 8.0 (incl. 144 records scored 0.0). Across the full set, 94 records are flagged exploited in the wild, 64 carry a CISA KEV flag, and 172 carry a public-PoC flag; in the grouped index, 94 sit in the In the wild group, 13 sit in the CISA KEV-listed group, 137 sit in the public-PoC group, 2,400 sit in the Ones to watch group, and 232 sit in the Everything else group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 
@@ -8890,6 +8890,38 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-126542",
+  "title": "AVideo 6.5-29.7.1: auth bypass via Hybridauth social login display names -> log in as any user incl. admin, no password, 9.8, fixed in commit d34ccf23 (post-29.7.1)",
+  "product": "AVideo (WWBN)",
+  "score": 9.8,
+  "cvss": "v3.1 (NVD 9.8; v4.0 9.3)",
+  "fixed": "commit d34ccf23b37a127a68478d66ac00b450b5788bad (post-29.7.1; release version unconfirmed)",
+  "published": "2026-11-11T01:17:15.547 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 20:30 ET hourly): newly published in window (NVD pub 01:17Z). Scope (1) 9.8 + (3) unauthenticated admin access - log in as any user including administrators via a social-login display name set to the victim's username, no password. No exploitation reported; not in CISA KEV (catalog 2026.11.10, 1,779 entries). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-126542",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-66613",
+  "title": "JetEngine <= 3.8.14: unauthenticated RCE via server-side template injection in Timber/Twig Views, 9.8, fixed 3.8.14.1 - WEAPONIZED PUBLIC PoC published 2026-11-10",
+  "product": "JetEngine (Crocoblock, WordPress plugin)",
+  "score": 9.8,
+  "cvss": "v3.1 (NVD 9.8)",
+  "fixed": "3.8.14.1",
+  "published": "2026-08-19T13:17:50.563 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": true,
+  "status": "MATERIAL 4(c) (2026-11-10 20:30 ET hourly): baseline miss - weaponized public PoC published 2026-11-10 (GitHub repo aramosf/CVE-2026-66613, Sploitus listing 2026-11-10 21:22Z; missed by the 19:30 run, lag-gap catch). Self-contained PoC reproduces the real vector and demonstrates RCE as root (uid=0) in an isolated Docker/Twig 3 environment; preconditions: target uses the Timber/Twig Views module and a Timber view containing a shortcode that reflects request input. CVE published 2026-08-19 (pre-window); the material event is the PoC publication. No confirmed in-the-wild exploitation; NOT in CISA KEV (catalog 2026.11.10, 1,779 entries). EPSS 0.0086/58.80th (data 2026-11-10) - below the 0.10/95th thresholds.",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-66613",
+  "epss": 0.0086,
+  "epss_percentile": 58.8
+ },
+ {
   "id": "CVE-2025-65200",
   "title": "LocalStack CloudFormation deploy endpoint RCE via crafted templateURL content (lag-gap catch-up)",
   "product": "LocalStack 4.9.2",
@@ -12900,6 +12932,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "status": "No exploitation reported; not in CISA KEV. UAF in ngx_http_core_module: AIO enabled + SSI page with include virtual triggers use-after-free in the worker - memory corruption/worker crash; code execution on ASLR-disabled systems. F5 Critical 9.2. EPSS 0.00834, 57.65th percentile.",
   "epss": 0.00834,
   "epss_percentile": 0.58
+ },
+ {
+  "id": "CVE-2026-126539",
+  "title": "Directus before 12.1.0: authorization bypass via public-mode WebSocket -> unauthenticated full CRUD on any user-defined collection, 9.2, fixed 12.1.0",
+  "product": "Directus",
+  "score": 9.2,
+  "cvss": "v4.0 (NVD 9.2; v3.1 8.1)",
+  "fixed": "12.1.0",
+  "published": "2026-11-11T01:17:15.173 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 20:30 ET hourly): newly published in window (NVD pub 01:17Z). Scope (1) 9.2 + (3) unauthenticated access to any user-defined collection - invalid token on a public-mode WebSocket sets accountability to null, skipping permission checks. No exploitation reported; not in CISA KEV (catalog 2026.11.10, 1,779 entries). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-126539",
+  "epss": null,
+  "epss_percentile": null
  },
  {
   "id": "CVE-2022-51022",
@@ -29218,6 +29266,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": null
  },
  {
+  "id": "CVE-2026-126543",
+  "title": "AVideo through 29.7.1: improper payment verification in PayPalYPT ipnV2.php -> unauthenticated wallet credit manipulation, 8.7, fixed in commit 98406b79 (post-29.7.1)",
+  "product": "AVideo (WWBN)",
+  "score": 8.7,
+  "cvss": "v4.0 (NVD 8.7; v3.1 7.5)",
+  "fixed": "commit 98406b7944e035e72082665ac886d78fc3af0a7f (post-29.7.1; release version unconfirmed)",
+  "published": "2026-11-11T01:17:15.727 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 20:30 ET hourly): newly published in window (NVD pub 01:17Z). Scope (1) 8.7 - unauthenticated attackers forward genuine VERIFIED recurring-payment IPNs from their own PayPal account to credit arbitrary wallets each billing cycle. No exploitation reported; not in CISA KEV (catalog 2026.11.10, 1,779 entries). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-126543",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2023-7357",
   "title": "FlexNet Publisher lmadmin web UI remote code execution (CWE-829)",
   "product": "FlexNet Publisher (lmadmin web UI) before 2023 R2 (11.19.4.0)",
@@ -31061,6 +31125,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-10 17:30 ET hourly): newly published in window (NVD pub sweep). Scope (1) 8.6 + (3) privilege escalation in a management-plane product. No exploitation reported; not in CISA KEV; VulnCheck KEV negative (0 documents). EPSS unscored (null, brand new). CORRECTION 2026-11-10 18:30 ET: CSO Online (Nov 10) reports the Able2Shell emergency hotfix (N-central 2026.4 HF2) lists this CVE among its 7 CVEs, and N-able's own advisories (published 11/10/2026) confirm fix 2026.4.1. The 17:30 run's 'NOT the Able2Shell set' note is WITHDRAWN for this CVE - it IS an Able2Shell hotfix CVE. (CVE-2026-125958, 7.5 root RCE, is NOT among CSO's 7 and stays tracked separately.)",
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-125879",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126541",
+  "title": "AVideo through 29.7.1: missing authorization in Live plugin restream endpoints -> authenticated streamers obtain other users' stream keys, publish as victim / restream private or pay-per-view lives, 8.6, fixed in commit be9d7019 (post-29.7.1)",
+  "product": "AVideo (WWBN)",
+  "score": 8.6,
+  "cvss": "v4.0 (NVD 8.6; v3.1 8.1)",
+  "fixed": "commit be9d70199279aafe5062744d319fd4df4e5f7a48 (post-29.7.1; release version unconfirmed)",
+  "published": "2026-11-11T01:17:15.357 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 20:30 ET hourly): newly published in window (NVD pub 01:17Z). Scope (1) 8.6 - authenticated streamers supply arbitrary live_transmitions_history_id values to obtain other users' stream keys and HLS URLs. No exploitation reported; not in CISA KEV (catalog 2026.11.10, 1,779 entries). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-126541",
   "epss": null,
   "epss_percentile": null
  },
@@ -33065,6 +33145,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "status": "MATERIAL 4(a) (2026-11-10 13:30 ET hourly): LAG-GAP CATCH - newly published in window. No exploitation reported; not in CISA KEV (catalog 2026.11.09, 1,773 entries); VulnCheck KEV negative. EPSS 0.00313 / 0.24th percentile (data 2026-11-10). Scope (1)+(2).",
   "epss": 0.00313,
   "epss_percentile": 0.0024471000000000002
+ },
+ {
+  "id": "CVE-2026-126497",
+  "title": "LibreCAD through 2.2.1.6: heap OOB write in bundled libdxfrw DWG reader -> crafted DWG file, potential code execution on open, 8.5, fixed in commit 17ba2b27 (post-2.2.1.6)",
+  "product": "LibreCAD",
+  "score": 8.5,
+  "cvss": "v4.0 (NVD 8.5; v3.1 7.8)",
+  "fixed": "commit 17ba2b273b89cc9c8b6fcf71882e327ccf1eebf6 (post-2.2.1.6; release version unconfirmed)",
+  "published": "2026-11-11T01:17:14.597 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 20:30 ET hourly): newly published in window (NVD pub 01:17Z). Scope (1) 8.5 - heap-based OOB write via crafted AC1018 (R2004) DWG file with malicious startOffset values, crashes and potential code execution when opened. No exploitation reported; not in CISA KEV (catalog 2026.11.10, 1,779 entries). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-126497",
+  "epss": null,
+  "epss_percentile": null
  },
  {
   "id": "CVE-2025-68393",
@@ -35211,6 +35307,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-10 18:30 ET hourly): CORRECTION / RE-ADJUDICATION - NVD record landed in the 17:30 window and was declined there as '8.3 XSS' before any public mapping to Able2Shell existed. CSO Online (Nov 10) now reports the Able2Shell emergency hotfix (N-central 2026.4 HF2) lists 7 CVEs including this one. Scope (1) 8.3; admin-context stored XSS is a link in the Able2Shell chain (CSO: the XSS payload runs in an admin's browser and invokes a command-execution interface as the nable user). Public PoC via the Able2Shell repo (published Nov 8/9); scanning activity observed (N-able; Previdian honeypot attempts); NO confirmed successful exploitation of customer environments (N-able: no evidence); not in CISA KEV (catalog 2026.11.10, 1,779 entries); VulnCheck KEV negative (not in Nov 9-10 set); EPSS unscored (null, brand new).",
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-125880",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-126499",
+  "title": "Jellyfin before 12.0: path traversal in Library VirtualFolders endpoints -> unauthenticated delete/move of directories; before setup completes, recursively delete data directory and jellyfin.db, 8.3, fixed 12.0",
+  "product": "Jellyfin",
+  "score": 8.3,
+  "cvss": "v4.0 (NVD 8.3; v3.1 7.4)",
+  "fixed": "12.0",
+  "published": "2026-11-11T01:17:14.963 (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-10 20:30 ET hourly): newly published in window (NVD pub 01:17Z). Scope (1) 8.3 - unauthenticated path traversal via unvalidated library names in DELETE /Library/VirtualFolders and POST /Library/VirtualFolders/Name. No exploitation reported; not in CISA KEV (catalog 2026.11.10, 1,779 entries). EPSS unscored (null, brand new).",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-126499",
   "epss": null,
   "epss_percentile": null
  },
@@ -44031,35 +44143,44 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-10 --run 7:30 PM ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-10 --run 8:30 PM ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning — 2,869 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 2 new CVEs — one FOSSBilling chain, EXPLOITED", c:"", p:200},
-    {t:"  NEW: FOSSBilling auth bypass 10.0 -> admin API access", c:"warn", p:120},
-    {t:"  NEW: FOSSBilling Twig SSTI -> unauth RCE 9.4 (chained)", c:"warn", p:120},
-    {t:"  CHAIN: 27604 + 28496 = unauth RCE — ** IN THE WILD **", c:"warn", p:120},
-    {t:"  VulnCheck KEV: both listed · NOT in CISA KEV", c:"warn", p:120},
+    {t:"Scanning — 2,876 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: 7 new CVEs — JetEngine RCE, weaponized PoC", c:"", p:200},
+    {t:"  NEW: JetEngine SSTI -> unauth RCE 9.8 — WEAPONIZED POC", c:"warn", p:120},
+    {t:"  NEW: AVideo auth bypass 9.8 -> admin login, no password", c:"warn", p:120},
+    {t:"  NEW: Directus WebSocket auth bypass 9.2 -> full CRUD", c:"warn", p:120},
+    {t:"  + AVideo payment 8.7 · AVideo stream keys 8.6", c:"warn", p:120},
+    {t:"  + LibreCAD heap overflow 8.5 · Jellyfin traversal 8.3", c:"warn", p:120},
+    {t:"  None in CISA KEV · no confirmed exploitation", c:"warn", p:120},
     {t:"  Pending signal: ZDI-26-900 — Wireshark SMB RCE (8.8)", c:"warn", p:120},
-    {t:"  EPSS: 2,415 scored · 454 unscored (data 2026-11-10)", c:"dim", p:200},
-    {t:"  Both new records EPSS-scored — 0.013 / 0.019", c:"dim", p:200},
+    {t:"  EPSS: 2,416 scored · 460 unscored (data 2026-11-10)", c:"dim", p:200},
+    {t:"  6 of 7 new records unscored — JetEngine 0.0086 / 58.80th", c:"dim", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  NEW THIS SCAN  ================", c:"bright", p:200},
     {t:"", p:60},
-    {t:">> CVE-2026-27604 — FOSSBilling · 10.0", c:"warn", p:100},
-    {t:"   Unauth auth bypass -> admin API access  ·  ** IN THE WILD **", c:"bright", p:100},
-    {t:"   VulnCheck KEV-listed Nov 10 · canaries report exploitation", c:"", p:100},
-    {t:"   FIX: FOSSBilling 0.8.0", c:"", p:200},
+    {t:">> CVE-2026-66613 — JetEngine (WordPress) · 9.8", c:"warn", p:100},
+    {t:"   Unauth RCE via SSTI in Timber/Twig Views  ·  WEAPONIZED POC", c:"bright", p:100},
+    {t:"   PoC published Nov 10 · RCE as root in test env · NOT in CISA KEV", c:"", p:100},
+    {t:"   FIX: JetEngine 3.8.14.1", c:"", p:200},
     {t:"", p:60},
-    {t:">> CVE-2026-28496 — FOSSBilling · 9.4", c:"warn", p:100},
-    {t:"   Twig SSTI -> unauth RCE, chained with 27604  ·  ** IN THE WILD **", c:"bright", p:100},
-    {t:"   VulnCheck blog: full chain documented, automated (public PoC)", c:"", p:100},
-    {t:"   FIX: FOSSBilling 0.8.0", c:"", p:200},
+    {t:">> CVE-2026-126542 — AVideo · 9.8", c:"warn", p:100},
+    {t:"   Auth bypass via social-login name -> log in as admin", c:"bright", p:100},
+    {t:"   No password needed  ·  NOT in CISA KEV", c:"", p:100},
+    {t:"   FIX: commit d34ccf23 (post-29.7.1)", c:"", p:200},
+    {t:"", p:60},
+    {t:">> CVE-2026-126539 — Directus · 9.2", c:"warn", p:100},
+    {t:"   Public-mode WebSocket auth bypass -> unauth full CRUD", c:"bright", p:100},
+    {t:"   FIX: Directus 12.1.0", c:"", p:200},
+    {t:"", p:60},
+    {t:">> ALSO NEW: AVideo payment 8.7 · AVideo stream keys 8.6", c:"warn", p:100},
+    {t:">> ALSO NEW: LibreCAD 8.5 · Jellyfin 8.3 — index below", c:"warn", p:200},
     {t:"", p:60},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
     {t:"", p:60},
@@ -44090,7 +44211,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
     {t:"   CVE-2026-97229 -> CISA KEV Oct 29 · EXPLOITED IN THE WILD", c:"dim", p:300},
     {t:"", p:80},
     {t:"==================================================", c:"bright", p:120},
-    {t:"[PRIORITY QUEUE: 1] FOSSBilling CVE-2026-27604 — unauth RCE chain 10.0, exploited; patch to 0.8.0 now.", c:"bright", p:120},
+    {t:"[PRIORITY QUEUE: 1] JetEngine CVE-2026-66613 — unauth RCE 9.8, weaponized PoC out; update to 3.8.14.1 now.", c:"bright", p:120},
     {t:"Next scan: hourly — only material changes alert.", c:"dim", p:400},
     {t:"", p:60},
     {t:"C:\\COMFYPWN> _", c:"", p:6000}
@@ -44125,7 +44246,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   if(replayBtn){ replayBtn.addEventListener("click",function(){ paused=false; if(pauseBtn){pauseBtn.textContent="❚❚ PAUSE"; pauseBtn.setAttribute("aria-pressed","false");} start(); }); }
   start();
 })();
-/* ---- Full CVE dataset (Nov 10 19:30 ET sync) + drill-in details ---- */
+/* ---- Full CVE dataset (Nov 10 20:30 ET sync) + drill-in details ---- */
 var CVE_ITEMS=[];
 try{ CVE_ITEMS=JSON.parse(document.getElementById("cveData").textContent||"[]"); }catch(e){ CVE_ITEMS=[]; }
 var CVE_BY_ID={};
@@ -44389,7 +44510,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,869 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,876 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
