@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 11</span><span class="pill accent">2,943 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 11</span><span class="pill accent">2,944 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 11 4:30 AM ET:</strong> 2,943 CVEs tracked, filtered down to what needs action first. Four new records were added this scan (total up from 2,939 to 2,943), all from the NVD sweep at 09:17 UTC on Nov 11, and two tracked records changed status as public PoCs landed. The additions: CVE-2026-126617 (8.8) — an hMailServer SQL injection in the database layer (MySQL/MariaDB/PostgreSQL), reachable unauthenticated via the bounce/autoreply path with stacked queries possible on PostgreSQL, fixed in 6.2.19; and CVE-2026-18767, CVE-2026-18768 and CVE-2026-18769 (8.5 each, CVSS v4.0) — three Beckhoff TcRouter.sys flaws whose exposed IOCTLs hand a local low-privileged user I/O-port access, arbitrary physical-memory access/mapping, or arbitrary physical-memory moves, each a path to full system compromise, fixed in TcRouter.sys 3.1.0.2365 / TwinCAT.XAR.Base.KM 3.18.1 (CERT@VDE advisory VDE-2026-087). The status changes: CVE-2026-124079 (rConfig unauthenticated deserialization RCE, 9.8) and CVE-2026-118383 (MongoDB Server replication use-after-free, 9.5) both now have public working PoCs published via Sploitus (Nov 11, 06:00Z and 05:59Z), so both move from Ones to Watch into the Public PoC group (now 140); no exploitation in the wild is confirmed for either, and neither is in CISA KEV. None of the four additions is in CISA KEV, none has a public PoC, and no exploitation is reported for any of them; all four score 8.0+, so they join Ones to Watch (now 2,459 after the two PoC departures), while the In the Wild group is unchanged at 94 and Everything else at 237. The thirteen WordPress plugin flaws from the 1:30 AM scan still lead the action list — worst is CVE-2026-123695 (9.8), Security For WooCommerce’s login-token bypass, which logs an unauthenticated attacker in as any user, administrators included, with no fix confirmed yet. The pending signal from earlier scans, ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8) with no CVE assigned yet, still sits with the pre-CVE early signals below, outside the 2,943. EPSS: 2,431 scored and 512 unscored across the set — all four new records arrive unscored (null, brand new). Highlighted Drops, the Ones to Watch, and the grouped 2,943-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 11 5:30 AM ET:</strong> 2,944 CVEs tracked, filtered down to what needs action first. One new record was added this scan (total up from 2,943 to 2,944), published in the NVD sweep at 10:16 UTC on Nov 11: CVE-2026-112174 (9.3, CVSS v4.0) — an Enter Iperius Backup local privilege escalation that lets a local low-privileged user gain SYSTEM/Administrator, fixed in 8.8.9, where restrictive permissions by default prevent non-administrator users from creating, modifying or running backup jobs (INCIBE-CERT advisory INCIBE-2026-854). No exploitation is reported for it, it is not in CISA KEV, and it has no public PoC; at 9.3 with none of those flags it joins Ones to Watch (now 2,460), while the In the Wild group is unchanged at 94, the Public PoC group at 140 and Everything else at 237. The four records from the 4:30 AM scan — the 8.8 hMailServer SQL injection (CVE-2026-126617, fixed in 6.2.19) and the three 8.5 Beckhoff TcRouter.sys IOCTL flaws (CVE-2026-18767, CVE-2026-18768 and CVE-2026-18769) — and the two PoC status changes from that scan (rConfig CVE-2026-124079, 9.8, and MongoDB Server CVE-2026-118383, 9.5) still stand as recorded there. The thirteen WordPress plugin flaws from the 1:30 AM scan still lead the action list — worst is CVE-2026-123695 (9.8), Security For WooCommerce’s login-token bypass, which logs an unauthenticated attacker in as any user, administrators included, with no fix confirmed yet. The pending signal from earlier scans, ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8) with no CVE assigned yet, still sits with the pre-CVE early signals below, outside the 2,944. EPSS (data dated 2026-11-10): 2,431 scored and 513 unscored across the set — the new record arrives unscored (null, brand new). Highlighted Drops, the Ones to Watch, and the grouped 2,944-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -430,7 +430,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>2,943</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>2,944</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 11</b><span>Last updated — hourly scans</span></div>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 2,943 CVEs</label>
+      <label for="cveSearch">Search all 2,944 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,943 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,944 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -497,7 +497,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 11 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 2,459 CVEs meet that bar — the newest arrivals came in the Nov 11 4:30 AM ET scan: an 8.8 hMailServer SQL injection in the database layer (CVE-2026-126617, fixed in 6.2.19) and three 8.5 Beckhoff TcRouter.sys exposed-IOCTL flaws (CVE-2026-18767, CVE-2026-18768 and CVE-2026-18769, fixed in TcRouter.sys 3.1.0.2365 / TwinCAT.XAR.Base.KM 3.18.1). Two records also left this group in that scan — CVE-2026-124079 (rConfig, 9.8) and CVE-2026-118383 (MongoDB Server, 9.5) both gained public working PoCs and moved to the Public PoC group. Before them came the Nov 11 3:30 AM ET scan’s arrivals: two 8.8 authenticated SQL injections in Zoho ManageEngine ADAudit Plus (CVE-2026-12062, fixed in build 8703, and CVE-2026-76981, fixed in build 8711), an 8.1 ARForms unauthenticated arbitrary-file-upload RCE (CVE-2026-111190, no fix stated), and CVE-2026-96414 (Octopus Server), rescored in that scan from 7.7 to 8.7 on the vendor’s CVSS v4.0. Before them, nine arrived in the Nov 11 1:30 AM ET scan, all WordPress plugin flaws from the WPScan batch: a 9.8 Security For WooCommerce login-token bypass to any admin account (CVE-2026-123695, no fix confirmed), two 9.6 arbitrary file deletions (Pay with a tweet, CVE-2026-115734, and Somatic Framework, CVE-2026-115735 — neither with a fix confirmed), a 9.1 Printaura-WooCommerce unauthenticated REST-route takeover (CVE-2026-115733, no fix confirmed), three 8.8s (Knowledge Building stored XSS, fixed in 0.7.3; iChart post and site-option abuse, fixed in 2.2.4; Smoove stored XSS, fixed in 4.3.6) and two 8.1 privilege escalations (User Registration & Membership, fixed in 5.3.2; Forminator, fixed in 1.58.4); the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus three pre-CVE early signals that have no CVE ID at all yet — the newest is ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8). Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 11 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 2,460 CVEs meet that bar — the newest arrival came in the Nov 11 5:30 AM ET scan: a 9.3 Enter Iperius Backup local privilege escalation to SYSTEM/Administrator (CVE-2026-112174, fixed in 8.8.9). Before it came the Nov 11 4:30 AM ET scan’s arrivals: an 8.8 hMailServer SQL injection in the database layer (CVE-2026-126617, fixed in 6.2.19) and three 8.5 Beckhoff TcRouter.sys exposed-IOCTL flaws (CVE-2026-18767, CVE-2026-18768 and CVE-2026-18769, fixed in TcRouter.sys 3.1.0.2365 / TwinCAT.XAR.Base.KM 3.18.1). Two records also left this group in that scan — CVE-2026-124079 (rConfig, 9.8) and CVE-2026-118383 (MongoDB Server, 9.5) both gained public working PoCs and moved to the Public PoC group. Before them came the Nov 11 3:30 AM ET scan’s arrivals: two 8.8 authenticated SQL injections in Zoho ManageEngine ADAudit Plus (CVE-2026-12062, fixed in build 8703, and CVE-2026-76981, fixed in build 8711), an 8.1 ARForms unauthenticated arbitrary-file-upload RCE (CVE-2026-111190, no fix stated), and CVE-2026-96414 (Octopus Server), rescored in that scan from 7.7 to 8.7 on the vendor’s CVSS v4.0. Before them, nine arrived in the Nov 11 1:30 AM ET scan, all WordPress plugin flaws from the WPScan batch: a 9.8 Security For WooCommerce login-token bypass to any admin account (CVE-2026-123695, no fix confirmed), two 9.6 arbitrary file deletions (Pay with a tweet, CVE-2026-115734, and Somatic Framework, CVE-2026-115735 — neither with a fix confirmed), a 9.1 Printaura-WooCommerce unauthenticated REST-route takeover (CVE-2026-115733, no fix confirmed), three 8.8s (Knowledge Building stored XSS, fixed in 0.7.3; iChart post and site-option abuse, fixed in 2.2.4; Smoove stored XSS, fixed in 4.3.6) and two 8.1 privilege escalations (User Registration & Membership, fixed in 5.3.2; Forminator, fixed in 1.58.4); the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus three pre-CVE early signals that have no CVE ID at all yet — the newest is ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8). Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 3 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -505,18 +505,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 2459 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 2460 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 2,943 CVEs</h2><p>Every entry from the Nov 11 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 2,944 CVEs</h2><p>Every entry from the Nov 11 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,943.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">2,943 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,944.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">2,944 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 11 4:30 AM ET hourly scan — 4 records added (total up from 2,939 to 2,943 CVEs tracked) and 2 tracked records changed status; no new pending early signal. The additions, all published in the NVD sweep at 2026-11-11T09:17Z: CVE-2026-126617 (8.8) — hMailServer SQL injection in the database layer (MySQL/MariaDB/PostgreSQL), unauthenticated reach via the bounce/autoreply path, fixed in 6.2.19; CVE-2026-18767 (8.5, CVSS v4.0) — Beckhoff TcRouter.sys exposed IOCTLs allow local low-privileged users I/O port access leading to full system compromise, fixed in TcRouter.sys 3.1.0.2365 / TwinCAT.XAR.Base.KM 3.18.1; CVE-2026-18768 (8.5, CVSS v4.0) — Beckhoff TcRouter.sys exposed IOCTLs allow arbitrary physical memory access/mapping leading to full system compromise, same fix; and CVE-2026-18769 (8.5, CVSS v4.0) — Beckhoff TcRouter.sys exposed IOCTLs allow moving arbitrary physical memory content leading to full system compromise, same fix (the three Beckhoff flaws share CERT@VDE advisory VDE-2026-087). The status changes: CVE-2026-124079 (rConfig unauthenticated deserialization RCE, 9.8, added in the Nov 9 8:30 AM ET scan) and CVE-2026-118383 (MongoDB Server replication use-after-free, 9.5, added in the Nov 10 4:30 PM ET scan) both had public PoC exploits published via Sploitus on 2026-11-11 (06:00Z and 05:59Z respectively; reporter googlesky, GitHub-sourced, rated “Working code 100% confidence”), so both records’ public-PoC flags are now set and both move from Ones to Watch into the Public PoC group. No confirmed exploitation in the wild for either, and neither is in CISA KEV. None of the additions is in CISA KEV (catalog 2026.11.10, 1,779 entries), and none has a public PoC or confirmed exploitation in the wild; all four arrive EPSS unscored (null, brand new). Pending signal carried over: ZDI-26-900 — Wireshark SMB object export integer overflow RCE, ZDI CVSS 8.8, no CVE assigned yet, so it is not part of the 2,943. EPSS: 2,431 scored, 512 unscored across the set. Tier counts now stand at 1,000 CRITICAL, 1,773 HIGH, 22 MEDIUM, 2 LOW, 146 unscored across the set. By severity: 91 at 10.0, 909 at 9.0–9.9, 1,670 at 8.0–8.9 and 273 below 8.0 (incl. 146 records scored 0.0). Across the full set, 94 records are flagged exploited in the wild, 64 carry a CISA KEV flag, and 175 carry a public-PoC flag; in the grouped index, 94 sit in the In the wild group, 13 sit in the CISA KEV-listed group, 140 sit in the public-PoC group, 2,459 sit in the Ones to watch group, and 237 sit in the Everything else group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 11 5:30 AM ET hourly scan — 1 record added (total up from 2,943 to 2,944 CVEs tracked); no tracked record changed status and no new pending early signal. The addition, published in the NVD sweep at 2026-11-11T10:16:42Z: CVE-2026-112174 (9.3, CVSS v4.0) — Enter Iperius Backup local privilege escalation to SYSTEM/Administrator, fixed in 8.8.9 (vendor: restrictive permissions by default prevent the vulnerability; on install it applies permissions to configuration folders and prevents non-administrator users from creating, modifying or running backup jobs); INCIBE-CERT advisory INCIBE-2026-854. No exploitation reported (INCIBE: Explotacion: No); not in CISA KEV (catalog 2026.11.10, 1,779 entries); VulnCheck KEV negative (0 documents); EPSS unscored (null, brand new); CIRCL not yet indexed. Pending signal carried over: ZDI-26-900 — Wireshark SMB object export integer overflow RCE, ZDI CVSS 8.8, no CVE assigned yet, so it is not part of the 2,944. EPSS: 2,431 scored, 513 unscored across the set (EPSS data dated 2026-11-10). Tier counts now stand at 1,001 CRITICAL, 1,773 HIGH, 22 MEDIUM, 2 LOW, 146 unscored across the set. By severity: 91 at 10.0, 910 at 9.0–9.9, 1,670 at 8.0–8.9 and 273 below 8.0 (incl. 146 records scored 0.0). Across the full set, 94 records are flagged exploited in the wild, 64 carry a CISA KEV flag, and 175 carry a public-PoC flag; in the grouped index, 94 sit in the In the wild group, 13 sit in the CISA KEV-listed group, 140 sit in the public-PoC group, 2,460 sit in the Ones to watch group, and 237 sit in the Everything else group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 
@@ -12558,6 +12558,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-11 00:30 ET hourly): newly published in window (NVD pub sweep, 05:19:51Z). Scope (1) 9.3 + (3) unauthenticated -> admin/moderator privilege escalation - NOT pure XSS: admin impact is demonstrated in the advisory (cf. the myTinyWMS 8.1 stored-XSS / FortiSandbox 8.8 reflected-XSS declines, which had no demonstrated admin impact). No exploitation reported; not in CISA KEV (catalog 2026.11.10, 1,779 entries); VulnCheck KEV negative (0 documents); EPSS unscored (null, brand new).",
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-64670",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-112174",
+  "title": "Iperius Backup local privilege escalation to SYSTEM/Administrator, 9.3, fixed 8.8.9",
+  "product": "Enter Iperius Backup",
+  "score": 9.3,
+  "cvss": "v4.0 (INCIBE 9.3; CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H)",
+  "fixed": "8.8.9 (vendor: restrictive permissions by default prevent the vulnerability; on install applies permissions to configuration folders and prevents non-administrator users from creating, modifying or running backup jobs)",
+  "published": "2026-11-11T10:16:42.960 (NVD); INCIBE-CERT advisory INCIBE-2026-854 posted 2026-11-11",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 05:30 ET hourly): newly published in window (NVD pub sweep, 10:16:42Z; INCIBE-CERT advisory INCIBE-2026-854). Scope (1) 9.3 + (3) local low-privileged user gains SYSTEM/Administrator. No exploitation reported (INCIBE: Explotacion: No); not in CISA KEV (catalog 2026.11.10, 1,779 entries); VulnCheck KEV negative (0 documents); EPSS unscored (null, brand new); CIRCL not yet indexed.",
+  "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-112174",
   "epss": null,
   "epss_percentile": null
  },
@@ -45173,57 +45189,33 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-11 --run 4:30 AM ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-11 --run 5:30 AM ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning — 2,943 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 4 new CVEs + 2 PoC status changes (NVD sweep 09:17 UTC)", c:"", p:200},
-    {t:"  NEW: hMailServer SQL injection 8.8 — fix 6.2.19", c:"warn", p:120},
-    {t:"  NEW: Beckhoff TcRouter.sys I/O-port IOCTL 8.5", c:"warn", p:120},
-    {t:"  NEW: Beckhoff TcRouter.sys phys-mem map IOCTL 8.5", c:"warn", p:120},
-    {t:"  NEW: Beckhoff TcRouter.sys phys-mem move IOCTL 8.5", c:"warn", p:120},
-    {t:"  POC OUT: CVE-2026-124079 rConfig RCE 9.8 (Sploitus)", c:"warn", p:120},
-    {t:"  POC OUT: CVE-2026-118383 MongoDB UAF 9.5 (Sploitus)", c:"warn", p:120},
-    {t:"  No wild exploitation · additions not in CISA KEV", c:"warn", p:120},
+    {t:"Scanning — 2,944 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: 1 new CVE (NVD sweep 10:16 UTC)", c:"", p:200},
+    {t:"  NEW: Iperius Backup LPE to SYSTEM 9.3 — fix 8.8.9", c:"warn", p:120},
+    {t:"  No wild exploitation · not in CISA KEV · no PoC", c:"warn", p:120},
     {t:"  Pending signal: ZDI-26-900 — Wireshark SMB RCE (8.8)", c:"warn", p:120},
-    {t:"  EPSS: 2,431 scored · 512 unscored", c:"dim", p:200},
-    {t:"  All four new records are unscored (brand new)", c:"dim", p:200},
+    {t:"  EPSS: 2,431 scored · 513 unscored", c:"dim", p:200},
+    {t:"  The new record is unscored (brand new)", c:"dim", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  NEW THIS SCAN  ================", c:"bright", p:200},
     {t:"", p:60},
-    {t:">> CVE-2026-126617 — hMailServer · 8.8", c:"warn", p:100},
-    {t:"   SQL injection in the database layer (MySQL/MariaDB/PostgreSQL)", c:"bright", p:100},
-    {t:"   Unauthenticated reach via bounce/autoreply path", c:"", p:100},
-    {t:"   FIX: 6.2.19  ·  EPSS unscored", c:"", p:160},
+    {t:">> CVE-2026-112174 — Enter Iperius Backup · 9.3", c:"warn", p:100},
+    {t:"   Local privilege escalation to SYSTEM/Administrator", c:"bright", p:100},
+    {t:"   CVSS v4.0 (INCIBE-2026-854) · local low-priv user", c:"", p:100},
+    {t:"   FIX: 8.8.9  ·  EPSS unscored", c:"", p:160},
     {t:"", p:60},
-    {t:">> CVE-2026-18767 — Beckhoff TcRouter.sys · 8.5", c:"warn", p:100},
-    {t:"   Exposed IOCTLs -> I/O port access -> full system compromise", c:"bright", p:100},
-    {t:"   FIX: TcRouter.sys 3.1.0.2365 / TwinCAT.XAR.Base.KM 3.18.1  ·  EPSS unscored", c:"", p:160},
+    {t:"================  LAST SCAN (4:30 AM)  ================", c:"bright", p:200},
     {t:"", p:60},
-    {t:">> CVE-2026-18768 — Beckhoff TcRouter.sys · 8.5", c:"warn", p:100},
-    {t:"   Exposed IOCTLs -> arbitrary physical memory access/mapping", c:"bright", p:100},
-    {t:"   FIX: TcRouter.sys 3.1.0.2365 / TwinCAT.XAR.Base.KM 3.18.1  ·  EPSS unscored", c:"", p:160},
-    {t:"", p:60},
-    {t:">> CVE-2026-18769 — Beckhoff TcRouter.sys · 8.5", c:"warn", p:100},
-    {t:"   Exposed IOCTLs -> move arbitrary physical memory content", c:"bright", p:100},
-    {t:"   FIX: TcRouter.sys 3.1.0.2365 / TwinCAT.XAR.Base.KM 3.18.1  ·  EPSS unscored", c:"", p:160},
-    {t:"", p:60},
-    {t:"================  STATUS CHANGES  ================", c:"bright", p:200},
-    {t:"", p:60},
-    {t:">> CVE-2026-124079 — rConfig · 9.8 — PUBLIC POC OUT", c:"warn", p:100},
-    {t:"   Unauthenticated deserialization -> RCE (Redis/Horizon queue)", c:"bright", p:100},
-    {t:"   Working PoC published via Sploitus (Nov 11 06:00Z)", c:"", p:100},
-    {t:"   NOT in the wild  ·  NOT in CISA KEV  ·  FIX: Core 8.2.19 / Pro 8.4.1", c:"", p:200},
-    {t:"", p:60},
-    {t:">> CVE-2026-118383 — MongoDB Server · 9.5 — PUBLIC POC OUT", c:"warn", p:100},
-    {t:"   Replication use-after-free — unauthenticated trigger", c:"bright", p:100},
-    {t:"   Working PoC published via Sploitus (Nov 11 05:59Z)", c:"", p:100},
-    {t:"   NOT in the wild  ·  NOT in CISA KEV  ·  FIX: 8.3.16 / 9.0.7 / 8.0.37 / 7.0.48", c:"", p:200},
+    {t:">> 4 added: hMailServer SQLi 8.8 + 3x Beckhoff 8.5", c:"warn", p:100},
+    {t:">> PoCs out: rConfig 9.8 + MongoDB UAF 9.5 (Sploitus)", c:"warn", p:160},
     {t:"", p:60},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
     {t:"", p:60},
@@ -45289,7 +45281,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   if(replayBtn){ replayBtn.addEventListener("click",function(){ paused=false; if(pauseBtn){pauseBtn.textContent="❚❚ PAUSE"; pauseBtn.setAttribute("aria-pressed","false");} start(); }); }
   start();
 })();
-/* ---- Full CVE dataset (Nov 11 03:30 ET sync) + drill-in details ---- */
+/* ---- Full CVE dataset (Nov 11 05:30 ET sync) + drill-in details ---- */
 var CVE_ITEMS=[];
 try{ CVE_ITEMS=JSON.parse(document.getElementById("cveData").textContent||"[]"); }catch(e){ CVE_ITEMS=[]; }
 var CVE_BY_ID={};
@@ -45553,7 +45545,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,943 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,944 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
