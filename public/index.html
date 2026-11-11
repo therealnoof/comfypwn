@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 11</span><span class="pill accent">2,950 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 11</span><span class="pill accent">2,953 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption"><strong>Latest scan — Nov 11 7:30 AM ET:</strong> 2,950 CVEs tracked, filtered down to what needs action first. Two new records were added this scan (total up from 2,948 to 2,950), published in the NVD sweep at 12:18–12:19 UTC on Nov 11 — both 8.8 WordPress plugin flaws (CVSS v3.1, Wordfence CNA) with no fix available. CVE-2026-103883 is an authentication bypass in the 6Storage Rentals plugin (through 2.31.0) that ends in administrator account takeover: an unauthenticated AJAX handler writes an attacker-controlled API URL into a site-wide option, and a second handler then logs the attacker in as any user, administrators included, with no credential check. The plugin was closed on wordpress.org on Nov 3 and Wordfence lists no patch. CVE-2026-119615 is a privilege escalation in the Reset Database plugin (through 1.1.3): a subscriber-level attacker triggers a full database reset and reinstall with their own credentials, becoming the sole site administrator; that plugin was closed on wordpress.org on Nov 9, also with no patch. No exploitation is reported for either, neither is in CISA KEV, and neither has a public PoC; at 8.0+ with none of those flags, both join Ones to Watch (now 2,466), while the In the Wild group is unchanged at 94, the Public PoC group at 140 and Everything else at 237. This scan also flags a new pre-CVE early signal: Xen Orchestra VSA-2026-062, a vendor-Critical authentication bypass with no CVE assigned yet that is already ACTIVELY EXPLOITED in the wild — fixed in Xen Orchestra 6.9.2 / 6.10.1 (xo-server 5.211.2 / 5.213.1), so upgrade now rather than wait for a CVE. Last scan’s four records — the 10.0 STAGGS WordPress plugin RCE (CVE-2026-78287, fixed in 3.4.0) and the three 9.4 Checkmk flaws (CVE-2026-118965, CVE-2026-120495, CVE-2026-121374, fixed in 2.5.0p19 / 2.4.0p40) — still stand as recorded there, and the STAGGS 10.0 still tops the watch list on score. The pending signal from earlier scans, ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8) with no CVE assigned yet, still sits with the pre-CVE early signals below, outside the 2,950. EPSS (data dated 2026-11-10): 2,431 scored and 519 unscored across the set — both new records arrive unscored (null, brand new). Highlighted Drops, the Ones to Watch, and the grouped 2,950-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
+      <p class="crt-caption"><strong>Latest scan — Nov 11 8:30 AM ET:</strong> 2,953 CVEs tracked, filtered down to what needs action first. Three new records were added this scan (total up from 2,950 to 2,953), all published in the NVD sweep at 13:17 UTC on Nov 11, and all three already have fixes. CVE-2026-126537 leads: an unauthenticated arbitrary file deletion in the Ninja Forms - File Uploads WordPress plugin (through 3.3.36, CVSS 9.1, Wordfence CNA) — an attacker-supplied file path survives into the plugin’s background-upload queue and reaches an unlink() call with no canonicalization, and deleting wp-config.php forces WordPress back into setup mode for a full site takeover; the same flaw allows arbitrary file read via S3, Dropbox or Google Drive exfiltration. Fixed in 3.3.37. CVE-2026-118411 is a CSRF in Apache Roller (5.0.1 through 6.1.6, 8.8): the CSRF token check applies only to POST while admin actions also accept GET, so an unauthenticated attacker creates an administrator account if a logged-in Roller admin opens an attacker-controlled link. Fixed in 6.1.7. CVE-2026-123374 has no CVSS score yet: an XML-RPC ping deserialization flaw in Apache Roller (4.0 through 6.1.6) — Roller’s XML-RPC client deserializes Java object data in a weblog-update ping target’s response, so whoever controls that response runs code in the Roller server process. Also fixed in 6.1.7, which removes the unsafe deserialization. No exploitation is reported for any of the three, none is in CISA KEV, and none has a public PoC; the two scored 8.0+ join Ones to Watch (now 2,468) and the unscored Roller RCE joins Everything else (now 238), while the In the Wild group is unchanged at 94 and the Public PoC group at 140. Last scan’s two records — the 8.8 6Storage Rentals authentication bypass to administrator takeover (CVE-2026-103883, no fix, plugin closed Nov 3) and the 8.8 Reset Database privilege escalation (CVE-2026-119615, no fix, plugin closed Nov 9) — still stand as recorded there. The pre-CVE early signals also carry over: Xen Orchestra VSA-2026-062, a vendor-Critical authentication bypass already ACTIVELY EXPLOITED in the wild and fixed in Xen Orchestra 6.9.2 / 6.10.1, and ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8) with no CVE assigned yet — both sit with the pre-CVE early signals below, outside the 2,953. EPSS (data dated 2026-11-10): 2,431 scored and 522 unscored across the set — all three new records arrive unscored (null, brand new). Highlighted Drops, the Ones to Watch, and the grouped 2,953-CVE index are below — search any of them by CVE ID or vendor, and tap a card for the full record.</p>
       <p class="crt-caption">Next scan: hourly — only material changes alert.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, unauthenticated exploit path, public PoC, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
@@ -430,7 +430,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>2,950</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>2,953</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 11</b><span>Last updated — hourly scans</span></div>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 2,950 CVEs</label>
+      <label for="cveSearch">Search all 2,953 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,950 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 2,953 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="rce">
@@ -497,7 +497,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="onesToWatch">
     <div class="section-head">
-      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 11 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 2,466 CVEs meet that bar — the newest arrivals came in the Nov 11 7:30 AM ET scan: two 8.8 WordPress plugin flaws with no fix available — a 6Storage Rentals authentication bypass to administrator account takeover (CVE-2026-103883, plugin closed on wordpress.org Nov 3) and a Reset Database privilege escalation that drops the site’s tables and reinstalls with the attacker’s credentials, making them the sole site administrator (CVE-2026-119615, plugin closed on wordpress.org Nov 9). Before them came the Nov 11 6:30 AM ET scan’s arrivals: a 10.0 STAGGS WordPress plugin remote code inclusion / RCE (CVE-2026-78287, fixed in 3.4.0; Patchstack rates it highly dangerous and expected to become exploited) and three 9.4 Checkmk flaws — a host-label sync path traversal to arbitrary file write and code execution as the central site user (CVE-2026-118965), a Robotmk synthetic-monitoring path traversal to code execution as the site user (CVE-2026-120495), and a Kubernetes special agent argument injection to arbitrary file write and code execution as the site user (CVE-2026-121374), all fixed in 2.5.0p19 / 2.4.0p40. Before them came the Nov 11 5:30 AM ET scan’s arrival: a 9.3 Enter Iperius Backup local privilege escalation to SYSTEM/Administrator (CVE-2026-112174, fixed in 8.8.9). Before it came the Nov 11 4:30 AM ET scan’s arrivals: an 8.8 hMailServer SQL injection in the database layer (CVE-2026-126617, fixed in 6.2.19) and three 8.5 Beckhoff TcRouter.sys exposed-IOCTL flaws (CVE-2026-18767, CVE-2026-18768 and CVE-2026-18769, fixed in TcRouter.sys 3.1.0.2365 / TwinCAT.XAR.Base.KM 3.18.1). Two records also left this group in that scan — CVE-2026-124079 (rConfig, 9.8) and CVE-2026-118383 (MongoDB Server, 9.5) both gained public working PoCs and moved to the Public PoC group. Before them came the Nov 11 3:30 AM ET scan’s arrivals: two 8.8 authenticated SQL injections in Zoho ManageEngine ADAudit Plus (CVE-2026-12062, fixed in build 8703, and CVE-2026-76981, fixed in build 8711), an 8.1 ARForms unauthenticated arbitrary-file-upload RCE (CVE-2026-111190, no fix stated), and CVE-2026-96414 (Octopus Server), rescored in that scan from 7.7 to 8.7 on the vendor’s CVSS v4.0. Before them, nine arrived in the Nov 11 1:30 AM ET scan, all WordPress plugin flaws from the WPScan batch: a 9.8 Security For WooCommerce login-token bypass to any admin account (CVE-2026-123695, no fix confirmed), two 9.6 arbitrary file deletions (Pay with a tweet, CVE-2026-115734, and Somatic Framework, CVE-2026-115735 — neither with a fix confirmed), a 9.1 Printaura-WooCommerce unauthenticated REST-route takeover (CVE-2026-115733, no fix confirmed), three 8.8s (Knowledge Building stored XSS, fixed in 0.7.3; iChart post and site-option abuse, fixed in 2.2.4; Smoove stored XSS, fixed in 4.3.6) and two 8.1 privilege escalations (User Registration & Membership, fixed in 5.3.2; Forminator, fixed in 1.58.4); the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus the pre-CVE early signals that have no CVE ID at all yet — three are carded below, the newest of them ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8); a fourth was flagged in the Nov 11 7:30 AM ET scan: Xen Orchestra VSA-2026-062, a vendor-Critical authentication bypass already ACTIVELY EXPLOITED in the wild, fixed in Xen Orchestra 6.9.2 / 6.10.1 (xo-server 5.211.2 / 5.213.1) — upgrade rather than wait for a CVE. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
+      <div><h2>Ones to watch</h2><p>Severe, talked about, and researched — but not there yet. These are CVSS 8.0+ flaws from the Nov 11 scan with <strong>no exploitation in the wild, no CISA KEV listing, and no public PoC</strong> in the scan data. 2,468 CVEs meet that bar — the newest arrivals came in the Nov 11 8:30 AM ET scan: a 9.1 Ninja Forms - File Uploads unauthenticated arbitrary file deletion that can delete wp-config.php and force a full site takeover (CVE-2026-126537, fixed in 3.3.37) and an 8.8 Apache Roller CSRF that creates an administrator account when a logged-in admin opens an attacker-controlled link (CVE-2026-118411, fixed in 6.1.7). Before them came the Nov 11 7:30 AM ET scan’s arrivals: two 8.8 WordPress plugin flaws with no fix available — a 6Storage Rentals authentication bypass to administrator account takeover (CVE-2026-103883, plugin closed on wordpress.org Nov 3) and a Reset Database privilege escalation that drops the site’s tables and reinstalls with the attacker’s credentials, making them the sole site administrator (CVE-2026-119615, plugin closed on wordpress.org Nov 9). Before them came the Nov 11 6:30 AM ET scan’s arrivals: a 10.0 STAGGS WordPress plugin remote code inclusion / RCE (CVE-2026-78287, fixed in 3.4.0; Patchstack rates it highly dangerous and expected to become exploited) and three 9.4 Checkmk flaws — a host-label sync path traversal to arbitrary file write and code execution as the central site user (CVE-2026-118965), a Robotmk synthetic-monitoring path traversal to code execution as the site user (CVE-2026-120495), and a Kubernetes special agent argument injection to arbitrary file write and code execution as the site user (CVE-2026-121374), all fixed in 2.5.0p19 / 2.4.0p40. Before them came the Nov 11 5:30 AM ET scan’s arrival: a 9.3 Enter Iperius Backup local privilege escalation to SYSTEM/Administrator (CVE-2026-112174, fixed in 8.8.9). Before it came the Nov 11 4:30 AM ET scan’s arrivals: an 8.8 hMailServer SQL injection in the database layer (CVE-2026-126617, fixed in 6.2.19) and three 8.5 Beckhoff TcRouter.sys exposed-IOCTL flaws (CVE-2026-18767, CVE-2026-18768 and CVE-2026-18769, fixed in TcRouter.sys 3.1.0.2365 / TwinCAT.XAR.Base.KM 3.18.1). Two records also left this group in that scan — CVE-2026-124079 (rConfig, 9.8) and CVE-2026-118383 (MongoDB Server, 9.5) both gained public working PoCs and moved to the Public PoC group. Before them came the Nov 11 3:30 AM ET scan’s arrivals: two 8.8 authenticated SQL injections in Zoho ManageEngine ADAudit Plus (CVE-2026-12062, fixed in build 8703, and CVE-2026-76981, fixed in build 8711), an 8.1 ARForms unauthenticated arbitrary-file-upload RCE (CVE-2026-111190, no fix stated), and CVE-2026-96414 (Octopus Server), rescored in that scan from 7.7 to 8.7 on the vendor’s CVSS v4.0. Before them, nine arrived in the Nov 11 1:30 AM ET scan, all WordPress plugin flaws from the WPScan batch: a 9.8 Security For WooCommerce login-token bypass to any admin account (CVE-2026-123695, no fix confirmed), two 9.6 arbitrary file deletions (Pay with a tweet, CVE-2026-115734, and Somatic Framework, CVE-2026-115735 — neither with a fix confirmed), a 9.1 Printaura-WooCommerce unauthenticated REST-route takeover (CVE-2026-115733, no fix confirmed), three 8.8s (Knowledge Building stored XSS, fixed in 0.7.3; iChart post and site-option abuse, fixed in 2.2.4; Smoove stored XSS, fixed in 4.3.6) and two 8.1 privilege escalations (User Registration & Membership, fixed in 5.3.2; Forminator, fixed in 1.58.4); the 18 below lead on severity and how widely the product is deployed — including a flatpak build-init arbitrary file write in the host context (CVE-2026-96276, 9.8) — alongside nine Apache Juneau flaws (eight at 10.0, all fixed in 9.2.1) and an 8.1 Keycloak JWT algorithm-confusion auth bypass (fixed in 26.6.4), alongside a 9.1 WPO365 SAML capture-replay auth bypass to admin, an 8.6 Sonatype Nexus Repository 3 privilege escalation to admin and an 8.6 DeepSeek Harness missing-authentication command execution, alongside six Firefox flaws (8.1–9.8, including a 9.8 privilege escalation and a 9.6 sandbox escape), a 9.8 GnuPG for Windows flaw, an 8.8 DataGerry SSTI RCE, an 8.2 Symfony credential disclosure and an 8.2 macOS sandbox escape, alongside seven FreeRDP flaws (8.7–9.8, all fixed in 3.32.2) and the Quest Foglight for Databases ZDI batch — eleven flaws at 8.2 and above, three of them 9.8 RCEs, all fixed in Foglight 8.3 — and two unpatched 9.8 GHSA advisories for npm @enspirit/elo: a JavaScript emitter sandbox escape and a Ruby backend RCE. The moment one gets a PoC or is seen exploited, it leaves this group in the index below. Plus the pre-CVE early signals that have no CVE ID at all yet — three are carded below, the newest of them ZDI-26-900, a Wireshark SMB object export integer overflow RCE (ZDI CVSS 8.8); a fourth was flagged in the Nov 11 7:30 AM ET scan: Xen Orchestra VSA-2026-062, a vendor-Critical authentication bypass already ACTIVELY EXPLOITED in the wild, fixed in Xen Orchestra 6.9.2 / 6.10.1 (xo-server 5.211.2 / 5.213.1) — upgrade rather than wait for a CVE. Grouping follows the scan’s status flags; tap any card and the detail view carries its full status note exactly as recorded.</p></div>
     </div>
     <div class="search-meta" id="watchMeta" aria-live="polite">18 curated picks + 3 pre-CVE early signals · tap any card for the full record.</div>
     <div class="grid" id="watchGrid"></div>
@@ -505,18 +505,18 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <div class="grid" id="signalGrid"></div>
     <p id="watchEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">Nothing on watch matches that search. Clear the search above to see the full watch list again.</p>
     <div class="watch-actions">
-      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 2466 IN THIS GROUP →</button>
+      <button class="btn-ghost" id="seeAllWatch" type="button">SEE ALL 2468 IN THIS GROUP →</button>
       <span>Opens the Ones to watch group in the full index below.</span>
     </div>
   </section>
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 2,950 CVEs</h2><p>Every entry from the Nov 11 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 2,953 CVEs</h2><p>Every entry from the Nov 11 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,950.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">2,950 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 2,953.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">2,953 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -538,7 +538,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated: Nov 11 7:30 AM ET hourly scan — 2 records added (total up from 2,948 to 2,950 CVEs tracked); no tracked record changed status; one new pending early signal. The additions, published in the NVD sweep at 2026-11-11T12:18Z–12:19Z: CVE-2026-103883 (8.8, CVSS v3.1, Wordfence CNA) — 6Storage Rentals WordPress plugin (through 2.31.0) authentication bypass to administrator account takeover: the six_storage_portal_registration() AJAX handler performs no capability check or nonce verification before writing a caller-supplied API URL to a site-wide option, and the unauthenticated six_storage_create_wp_user() handler then logs the attacker in as any user, administrators included, with no credential verification (incomplete fix for a prior flaw); NO FIX — Wordfence: no known patch available, plugin closed on wordpress.org Nov 3, 2026; CVE-2026-119615 (8.8, CVSS v3.1, Wordfence CNA) — Reset Database WordPress plugin (through 1.1.3) privilege escalation: process_reset() on admin_init with no capability check lets a subscriber-level attacker drop every prefixed database table, re-run wp_install() with their own credentials to become the sole site administrator, and delete the uploads directory; NO FIX — Wordfence: no known patch available, plugin closed on wordpress.org Nov 9, 2026. No exploitation reported for either; not in CISA KEV (catalog 2026.11.10, 1,779 entries); VulnCheck KEV negative; EPSS unscored (null, brand new) for both; CIRCL indexed. New pending early signal: Xen Orchestra VSA-2026-062 — vendor-Critical authentication bypass, no CVE assigned yet, ACTIVELY EXPLOITED in the wild; fixed in Xen Orchestra 6.9.2 / 6.10.1 (xo-server 5.211.2 / 5.213.1); not part of the 2,950. Pending signal carried over: ZDI-26-900 — Wireshark SMB object export integer overflow RCE, ZDI CVSS 8.8, no CVE assigned yet, so it is not part of the 2,950. EPSS: 2,431 scored, 519 unscored across the set (EPSS data dated 2026-11-10). Tier counts now stand at 1,005 CRITICAL, 1,775 HIGH, 22 MEDIUM, 2 LOW, 146 unscored across the set. By severity: 92 at 10.0, 913 at 9.0–9.9, 1,672 at 8.0–8.9 and 273 below 8.0 (incl. 146 records scored 0.0). Across the full set, 94 records are flagged exploited in the wild, 64 carry a CISA KEV flag, and 175 carry a public-PoC flag; in the grouped index, 94 sit in the In the wild group, 13 sit in the CISA KEV-listed group, 140 sit in the public-PoC group, 2,466 sit in the Ones to watch group, and 237 sit in the Everything else group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
+    <p class="updated">Last updated: Nov 11 8:30 AM ET hourly scan — 3 records added (total up from 2,950 to 2,953 CVEs tracked); no tracked record changed status; no new pending early signal. The additions, published in the NVD sweep at 2026-11-11T13:17Z: CVE-2026-126537 (9.1, CVSS v3.1, Wordfence CNA) — Ninja Forms - File Uploads WordPress plugin (through 3.3.36) unauthenticated arbitrary file deletion (CWE-22) plus arbitrary file read via S3/Dropbox/Google Drive exfiltration: an attacker-supplied data[file_path] survives into the Background Upload queue (upload_id omitted) and reaches upload_file_to_s3() and maybe_delete_server_file() unlink() with no canonicalization; deleting wp-config.php forces WordPress into setup, enabling full site takeover; fixed in 3.3.37; CVE-2026-118411 (8.8, CVSS v3.1, Apache CNA) — Apache Roller (5.0.1 through 6.1.6) CSRF (CWE-352): the token check applies only to POST while admin actions also accept GET, so an unauthenticated attacker creates an administrator account if a logged-in Roller admin opens an attacker-controlled link; fixed in 6.1.7; CVE-2026-123374 (no CVSS yet) — Apache Roller (4.0 through 6.1.6) XML-RPC ping deserialization RCE (CWE-502): Roller’s XML-RPC client deserializes Java object data in a weblog-update ping target’s response, so a party controlling that response can run code in the Roller server process; fixed in 6.1.7 (unsafe deserialization removed). No exploitation reported for any of the three; not in CISA KEV (catalog 2026.11.10, 1,779 entries); VulnCheck KEV negative; EPSS unscored (null, brand new) for all three. Pending early signals carried over: Xen Orchestra VSA-2026-062 — vendor-Critical authentication bypass, no CVE assigned yet, ACTIVELY EXPLOITED in the wild; fixed in Xen Orchestra 6.9.2 / 6.10.1 (xo-server 5.211.2 / 5.213.1); not part of the 2,953; and ZDI-26-900 — Wireshark SMB object export integer overflow RCE, ZDI CVSS 8.8, no CVE assigned yet, so it is not part of the 2,953. EPSS: 2,431 scored, 522 unscored across the set (EPSS data dated 2026-11-10). Tier counts now stand at 1,006 CRITICAL, 1,776 HIGH, 22 MEDIUM, 2 LOW, 147 unscored across the set. By severity: 92 at 10.0, 914 at 9.0–9.9, 1,673 at 8.0–8.9 and 274 below 8.0 (incl. 147 records scored 0.0). Across the full set, 94 records are flagged exploited in the wild, 64 carry a CISA KEV flag, and 175 carry a public-PoC flag; in the grouped index, 94 sit in the In the wild group, 13 sit in the CISA KEV-listed group, 140 sit in the public-PoC group, 2,468 sit in the Ones to watch group, and 238 sit in the Everything else group. This page is a static snapshot of that scan; the underlying scans run hourly, every day of the week — only material changes alert.</p></div></footer>
 
 
 
@@ -15425,6 +15425,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "epss_percentile": 0.452
  },
  {
+  "id": "CVE-2026-126537",
+  "title": "Ninja Forms - File Uploads unauthenticated arbitrary file deletion -> site takeover (delete wp-config.php), 9.1",
+  "product": "Ninja Forms - File Uploads WordPress plugin <= 3.3.36",
+  "score": 9.1,
+  "cvss": "9.1 (CVSS v3.1, Wordfence CNA)",
+  "fixed": "3.3.37 (Wordfence: Patched? Yes)",
+  "published": "2026-11-11T13:17:23.810Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 08:30 ET hourly): newly published in window (NVD pub sweep, 13:17:23Z). Unauthenticated arbitrary file deletion + arbitrary file read via S3/Dropbox/Google Drive exfiltration (CWE-22): attacker-supplied data[file_path] survives into the Background Upload queue (upload_id omitted) and reaches upload_file_to_s3() and maybe_delete_server_file() unlink() with no canonicalization; deleting wp-config.php forces WordPress into setup, enabling full site takeover. Fixed 3.3.37. No exploitation reported; not in CISA KEV; VulnCheck KEV negative; EPSS unscored (null, brand new).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-126537",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
   "id": "CVE-2025-30023",
   "title": "Authenticated RCE via insecure deserialization (Axis Camera Station exploit chain)",
   "product": "Axis Camera Station",
@@ -27995,6 +28011,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "poc": false,
   "status": "MATERIAL 4(a) (2026-11-11 07:30 ET hourly): newly published in window (NVD pub sweep, 12:19:15Z). Privilege escalation: process_reset() on admin_init with no capability check, a computed-but-unused nonce, a gating condition that passes whenever no WP administrator literally named 'admin' exists, and an identity test verifying the ATTACKER'S OWN password. Subscriber-level attacker drops every prefixed database table, re-runs wp_install() with their own credentials - making the attacker the sole site administrator - authenticates via wp_set_auth_cookie(), and deletes the uploads directory. Scope (1) 8.8 + (3) admin grant. No exploitation reported yet; not in CISA KEV (catalog 2026.11.10, 1,779 entries); VulnCheck KEV negative; EPSS unscored (null, brand new); CIRCL indexed.",
   "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-119615",
+  "epss": null,
+  "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-118411",
+  "title": "Apache Roller CSRF -> administrator account creation, 8.8",
+  "product": "Apache Roller 5.0.1 through 6.1.6",
+  "score": 8.8,
+  "cvss": "8.8 (CVSS v3.1, Apache CNA)",
+  "fixed": "6.1.7",
+  "published": "2026-11-11T13:17:16.313Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 08:30 ET hourly): newly published in window (NVD pub sweep, 13:17:16Z). CSRF (CWE-352): token check applied only to POST; admin actions also accepted GET, so an unauthenticated attacker creates an administrator account if a logged-in Roller admin opens an attacker-controlled link. Fixed 6.1.7. No exploitation reported; not in CISA KEV; VulnCheck KEV negative; EPSS unscored (null, brand new).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-118411",
   "epss": null,
   "epss_percentile": null
  },
@@ -45274,6 +45306,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-97888",
   "epss": null,
   "epss_percentile": null
+ },
+ {
+  "id": "CVE-2026-123374",
+  "title": "Apache Roller XML-RPC ping deserialization -> remote code execution (no CVSS yet)",
+  "product": "Apache Roller 4.0 through 6.1.6",
+  "score": 0.0,
+  "cvss": "none published yet",
+  "fixed": "6.1.7 (unsafe deserialization removed)",
+  "published": "2026-11-11T13:17:17.340Z (NVD)",
+  "exploited": false,
+  "kev": false,
+  "poc": false,
+  "status": "MATERIAL 4(a) (2026-11-11 08:30 ET hourly): newly published in window (NVD pub sweep, 13:17:17Z). Deserialization of Untrusted Data (CWE-502): Roller's XML-RPC client deserializes Java object data in a weblog-update ping target's response, so a party controlling that response can run code in the Roller server process. Fixed 6.1.7. RCE class, no CVSS yet. No exploitation reported; not in CISA KEV; VulnCheck KEV negative; EPSS unscored (null, brand new).",
+  "src": "https://nvd.nist.gov/vuln/detail/CVE-2026-123374",
+  "epss": null,
+  "epss_percentile": null
  }
 ]
 </script>
@@ -45285,41 +45333,47 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   var pauseBtn=document.getElementById("crtPause"), replayBtn=document.getElementById("crtReplay");
   var reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lines=[
-    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-11 --run 7:30 AM ET", c:"bright", p:420},
+    {t:"C:\\COMFYPWN> daily_scan.exe --date 2026-11-11 --run 8:30 AM ET", c:"bright", p:420},
     {t:"", p:80},
     {t:"Loading feeds ............................", c:"dim", p:120},
     {t:"  NVD API 2.0 ........ [OK]    CISA KEV ......... [OK]", c:"", p:90},
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", p:80},
-    {t:"Scanning — 2,950 CVEs tracked ...", c:"", p:300},
-    {t:"New this scan: 2 new CVEs (NVD sweep 12:18 UTC)", c:"", p:200},
-    {t:"  NEW: 6Storage Rentals WP auth bypass 8.8 — NO FIX", c:"warn", p:120},
-    {t:"  NEW: Reset Database WP priv esc 8.8 — NO FIX", c:"warn", p:120},
+    {t:"Scanning — 2,953 CVEs tracked ...", c:"", p:300},
+    {t:"New this scan: 3 new CVEs (NVD sweep 13:17 UTC)", c:"", p:200},
+    {t:"  NEW: Ninja Forms File Uploads file deletion 9.1", c:"warn", p:120},
+    {t:"  NEW: Apache Roller CSRF -> admin account 8.8", c:"warn", p:120},
+    {t:"  NEW: Apache Roller XML-RPC RCE — no CVSS yet", c:"warn", p:120},
     {t:"  No wild exploitation · not in CISA KEV · no PoC", c:"warn", p:120},
-    {t:"  NEW SIGNAL: Xen Orchestra VSA-2026-062 auth bypass", c:"warn", p:120},
+    {t:"  SIGNAL: Xen Orchestra VSA-2026-062 auth bypass", c:"warn", p:120},
     {t:"  Vendor-Critical · ** IN THE WILD ** · fix 6.9.2 / 6.10.1", c:"warn", p:120},
     {t:"  Pending signal: ZDI-26-900 — Wireshark SMB RCE (8.8)", c:"warn", p:120},
-    {t:"  EPSS: 2,431 scored · 519 unscored", c:"dim", p:200},
-    {t:"  Both new records are unscored (brand new)", c:"dim", p:200},
+    {t:"  EPSS: 2,431 scored · 522 unscored", c:"dim", p:200},
+    {t:"  All three new records are unscored (brand new)", c:"dim", p:200},
     {t:"Filter: CVSS >= 8.0  |  RCE / ADMIN  |  IN THE WILD", c:"dim", p:340},
     {t:"", p:80},
     {t:"================  NEW THIS SCAN  ================", c:"bright", p:200},
     {t:"", p:60},
-    {t:">> CVE-2026-103883 — 6Storage Rentals WP plugin · 8.8", c:"warn", p:100},
-    {t:"   Auth bypass -> administrator account takeover", c:"bright", p:100},
-    {t:"   CVSS v3.1 (Wordfence) · plugin closed Nov 3", c:"", p:100},
-    {t:"   NO FIX AVAILABLE  ·  EPSS unscored", c:"", p:160},
+    {t:">> CVE-2026-126537 — Ninja Forms - File Uploads · 9.1", c:"warn", p:100},
+    {t:"   Unauth file deletion -> wp-config.php gone -> takeover", c:"bright", p:100},
+    {t:"   CVSS v3.1 (Wordfence) · plugin <= 3.3.36", c:"", p:100},
+    {t:"   FIX: 3.3.37  ·  EPSS unscored", c:"", p:160},
     {t:"", p:60},
-    {t:">> CVE-2026-119615 — Reset Database WP plugin · 8.8", c:"warn", p:100},
-    {t:"   Priv esc -> attacker becomes sole site admin", c:"bright", p:100},
-    {t:"   CVSS v3.1 (Wordfence) · plugin closed Nov 9", c:"", p:100},
-    {t:"   NO FIX AVAILABLE  ·  EPSS unscored", c:"", p:160},
+    {t:">> CVE-2026-118411 — Apache Roller · 8.8", c:"warn", p:100},
+    {t:"   CSRF -> administrator account creation", c:"bright", p:100},
+    {t:"   CVSS v3.1 (Apache) · Roller 5.0.1 - 6.1.6", c:"", p:100},
+    {t:"   FIX: 6.1.7  ·  EPSS unscored", c:"", p:160},
     {t:"", p:60},
-    {t:"================  LAST SCAN (6:30 AM)  ================", c:"bright", p:200},
+    {t:">> CVE-2026-123374 — Apache Roller · NO CVSS YET", c:"warn", p:100},
+    {t:"   XML-RPC ping deserialization -> RCE", c:"bright", p:100},
+    {t:"   Roller 4.0 - 6.1.6 · CWE-502", c:"", p:100},
+    {t:"   FIX: 6.1.7  ·  EPSS unscored", c:"", p:160},
     {t:"", p:60},
-    {t:">> 4 added: STAGGS RCE 10.0 + 3x Checkmk 9.4", c:"warn", p:100},
-    {t:">> 5:30 AM: Iperius Backup LPE 9.3 — fix 8.8.9", c:"warn", p:160},
+    {t:"================  LAST SCAN (7:30 AM)  ================", c:"bright", p:200},
+    {t:"", p:60},
+    {t:">> 2 added: 6Storage auth bypass 8.8 + Reset DB priv esc 8.8", c:"warn", p:100},
+    {t:">> 6:30 AM: STAGGS RCE 10.0 + 3x Checkmk 9.4", c:"warn", p:160},
     {t:"", p:60},
     {t:"================  HIGH PRIORITY  ================", c:"bright", p:200},
     {t:"", p:60},
@@ -45350,7 +45404,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
     {t:"   CVE-2026-97229 -> CISA KEV Oct 29 · EXPLOITED IN THE WILD", c:"dim", p:300},
     {t:"", p:80},
     {t:"==================================================", c:"bright", p:120},
-    {t:"[PRIORITY QUEUE: 1] Xen Orchestra VSA-2026-062 — vendor-Critical auth bypass, IN THE WILD, no CVE yet; upgrade to 6.9.2 / 6.10.1 (xo-server 5.211.2 / 5.213.1) now. 6Storage Rentals CVE-2026-103883 + Reset Database CVE-2026-119615 — WP auth bypass / priv esc to admin at 8.8, NO FIX; remove both plugins. STAGGS CVE-2026-78287 — WP plugin RCE at 10.0, Patchstack expects exploitation; update to 3.4.0 now.", c:"bright", p:120},
+    {t:"[PRIORITY QUEUE: 1] Xen Orchestra VSA-2026-062 — vendor-Critical auth bypass, IN THE WILD, no CVE yet; upgrade to 6.9.2 / 6.10.1 (xo-server 5.211.2 / 5.213.1) now. Ninja Forms - File Uploads CVE-2026-126537 — unauthenticated file deletion at 9.1, delete wp-config.php for site takeover; update to 3.3.37. Apache Roller CVE-2026-118411 (CSRF admin creation, 8.8) + CVE-2026-123374 (XML-RPC deserialization RCE, unscored); update to 6.1.7. 6Storage Rentals CVE-2026-103883 + Reset Database CVE-2026-119615 — WP auth bypass / priv esc to admin at 8.8, NO FIX; remove both plugins.", c:"bright", p:120},
     {t:"Next scan: hourly — only material changes alert.", c:"dim", p:400},
     {t:"", p:60},
     {t:"C:\\COMFYPWN> _", c:"", p:6000}
@@ -45385,7 +45439,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
   if(replayBtn){ replayBtn.addEventListener("click",function(){ paused=false; if(pauseBtn){pauseBtn.textContent="❚❚ PAUSE"; pauseBtn.setAttribute("aria-pressed","false");} start(); }); }
   start();
 })();
-/* ---- Full CVE dataset (Nov 11 05:30 ET sync) + drill-in details ---- */
+/* ---- Full CVE dataset (Nov 11 08:30 ET sync) + drill-in details ---- */
 var CVE_ITEMS=[];
 try{ CVE_ITEMS=JSON.parse(document.getElementById("cveData").textContent||"[]"); }catch(e){ CVE_ITEMS=[]; }
 var CVE_BY_ID={};
@@ -45649,7 +45703,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,950 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 2,953 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
