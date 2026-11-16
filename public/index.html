@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 16</span><span class="pill accent">3,597 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 16</span><span class="pill accent">3,598 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -430,7 +430,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>3,597</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>3,598</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 16</b><span>Last updated — hourly scans</span></div>
@@ -448,11 +448,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 3,597 CVEs</label>
+      <label for="cveSearch">Search all 3,598 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 3,597 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 3,598 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="wild rce">
@@ -512,11 +512,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 3,597 CVEs</h2><p>Every entry from the Nov 16 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 3,598 CVEs</h2><p>Every entry from the Nov 16 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 3,597.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">3,597 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 3,598.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">3,598 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -55301,6 +55301,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "src": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-97888",
    "epss": 0.0021,
    "epss_percentile": 0.11252
+  },
+  {
+   "id": "CVE-2026-128841",
+   "title": "Apache Griffin Web Service unauthenticated REST API - job submission via Livy/Spark backend (retired project, no fix)",
+   "product": "Apache Griffin Web Service (all versions)",
+   "score": 0.0,
+   "cvss": "no CVSS score published (Apache rates severity 'moderate')",
+   "fixed": "NO FIX - project retired; restrict network access to trusted users",
+   "published": "2026-11-16T10:16:46.467Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "MATERIAL 4(a) (2026-11-16 05:30 ET hourly): scope (2) - unauthenticated REST API exposes sensitive endpoints incl. job submission when a Livy/Spark backend is configured, i.e. remote code execution via the service's management API; vendor-confirmed (Apache CNA). Caveats: Apache rates severity 'moderate'; no numeric CVSS; project retired, no fix planned - restrict network access to trusted users. No exploitation reported; not in CISA KEV. EPSS unscored.",
+   "src": "https://cveawg.mitre.org/api/cve/CVE-2026-128841",
+   "epss": null,
+   "epss_percentile": null
   }
  ]
 </script></script>
@@ -55319,7 +55335,7 @@ document.getElementById("tickerTrack").innerHTML=html+html;
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", c:"", p:80},
-    {t:"Scanning — 3,597 CVEs tracked ...", c:"", p:300},
+    {t:"Scanning — 3,598 CVEs tracked ...", c:"", p:300},
     {t:"New this scan: 1 added · 0 removed · 0 changed — CVE-2026-39808 (9.8, Fortinet FortiSandbox · UNAUTHENTICATED OS COMMAND INJECTION VIA CRAFTED HTTP REQUESTS TO THE API · FIX 4.4.9 OR ABOVE · EXPLOITED IN THE WILD · CISA KEV SINCE 2026-07-16 · PUBLIC POC FLAGGED · EPSS 0.93189 / 99.84TH PCT) · exploited total 127 -> 128 · KEV total 72 -> 73 · PoC total 231 -> 232 · CRITICAL 1,224 -> 1,225 · HIGH holds at 2,183 · MEDIUM holds at 27 · UNSCORED holds at 158 · EPSS 3,517 scored · 79 null · 57 cross EPSS >= 0.10 or 95th pct · total 3,595 -> 3,596", c:"", p:200},
     {t:"  LAST SCAN (9:30 PM): 1 added · 0 removed · 0 changed — CVE-2026-129540 (8.8, VoAPI · SQL INJECTION VIA SEARCH FILTER KEY — AUTHENTICATED ATTACKERS PASS CRAFTED COLUMN NAMES AS SEARCH[...] FILTER KEYS ON LIST ENDPOINTS SUCH AS GET /API/LOG, READ THE HS256 JWT SIGNING SECRET FROM THE OPTION TABLE AND FORGE A MANAGER-ROLE TOKEN TO TAKE OVER THE /API/M/* MANAGEMENT API · NO FIX STATED · NO CONFIRMED IN-THE-WILD EXPLOITATION · NOT IN CISA KEV · NO PUBLIC POC · EPSS UNSCORED (NULL)) · exploited total holds at 127 · KEV total holds at 72 · PoC total holds at 231 · CRITICAL holds at 1,224 · HIGH 2,182 -> 2,183 · MEDIUM holds at 27 · UNSCORED holds at 158 · EPSS 3,516 scored · 79 null · 56 cross EPSS >= 0.10 or 95th pct · total 3,594 -> 3,595", c:"", p:200},
     {t:"  LAST SCAN (8:30 PM): 4 added · 0 removed · 0 changed — CVE-2026-129491 (5.4, Qbian61 forum-java · STORED XSS VIA UNSANITIZED COMMENT CONTENT — IMG ONERROR PAYLOADS RENDERED VIA JQUERY .HTML() IN THE REPLY DIALOG STEAL THE NON-HTTPONLY SID SESSION COOKIE, HIJACKING ACCOUNTS INCLUDING ADMINISTRATORS · NO FIX STATED · NO CONFIRMED IN-THE-WILD EXPLOITATION · NOT IN CISA KEV · NO PUBLIC POC · EPSS UNSCORED (NULL)) + CVE-2026-129492 (6.1, Bolo (bolo-solo) · STORED XSS VIA UNSANITIZED COMMENT NAME — PAYLOADS STEAL NON-HTTPONLY SESSION COOKIES FROM VISITORS, ENABLING TAKEOVER OF ADMINISTRATOR ACCOUNTS · NO FIX STATED · NO CONFIRMED IN-THE-WILD EXPLOITATION · NOT IN CISA KEV · NO PUBLIC POC · EPSS UNSCORED (NULL)) + CVE-2026-129493 (8.7, Bolo (bolo-solo) · UNAUTHENTICATED INFORMATION DISCLOSURE — ARTICLE VIEW PASSWORDS READABLE IN PLAINTEXT (ARTICLEVIEWPWD) VIA THE PUBLIC GET /ARTICLES ENDPOINT · NO FIX STATED · NO CONFIRMED IN-THE-WILD EXPLOITATION · NOT IN CISA KEV · NO PUBLIC POC · EPSS UNSCORED (NULL)) + CVE-2026-129494 (8.7, CloudPaste · UNAUTHENTICATED INFORMATION DISCLOSURE — WEBDAV STORAGE CREDENTIALS (BASIC AUTHORIZATION HEADER) LEAKED VIA /API/PROXY/LINK TO ANYONE WHO KNOWS A PUBLIC SHARE SLUG · NO FIX STATED · NO CONFIRMED IN-THE-WILD EXPLOITATION · NOT IN CISA KEV · NO PUBLIC POC · EPSS UNSCORED (NULL)) · exploited total holds at 127 · KEV total holds at 72 · PoC total holds at 231 · CRITICAL holds at 1,224 · HIGH 2,180 -> 2,182 · MEDIUM 25 -> 27 · UNSCORED holds at 158 · EPSS 3,516 scored · 78 null · 56 cross EPSS >= 0.10 or 95th pct · total 3,590 -> 3,594", c:"", p:200},
@@ -56907,7 +56923,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 3,597 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 3,598 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
