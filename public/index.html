@@ -533,6 +533,12 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </section>
 </main>
 
+<dialog id="cveDialog" aria-label="CVE details">
+  <div class="d-head"><span>CVE DETAILS</span><button id="cveDialogClose" type="button">✕ CLOSE</button></div>
+  <div class="d-body" id="cveDialogBody"></div>
+  <p class="d-foot">Confirm against the linked source before patching.</p>
+</dialog>
+
 <div class="wrap" id="sourcesView" hidden>
   <section class="pagehead">
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
