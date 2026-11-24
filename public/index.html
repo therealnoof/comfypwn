@@ -554,8 +554,8 @@ var html=drops.map(function(d){return "<span>▸ <b>DROP</b> "+d+"</span>"}).joi
 document.getElementById("tickerTrack").innerHTML=html+html;
 </script>
 <script id="cveData" type="application/json">{
- "generated": "2026-11-24T17:50:12Z",
- "last_check": "2026-11-24T17:50:12Z",
+ "generated": "2026-11-24T18:06:06Z",
+ "last_check": "2026-11-24T18:06:06Z",
  "items": [
   {
    "id": "CVE-2024-51567",
@@ -2171,8 +2171,8 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "published": "2026-11-23T22:20:39.293",
    "exploited": false,
    "kev": false,
-   "poc": false,
-   "status": "NEW - MATERIAL 4(a) (2026-11-23 17:30 EST hourly): CVE released by MSRC Nov 19, 2026, NVD-published 2026-11-23; Microsoft cloud-service flaw, fully mitigated server-side by Microsoft, no customer action. No exploitation reported; not in CISA KEV (catalog 2026.11.23, 1,792 entries, verified this run); VulnCheck KEV negative; no public PoC seen. EPSS unscored (null, 2026-11-23). Scope (1) CVSS 10.0.",
+   "poc": true,
+   "status": "NEW - MATERIAL 4(a) (2026-11-23 17:30 EST hourly): CVE released by MSRC Nov 19, 2026, NVD-published 2026-11-23; Microsoft cloud-service flaw, fully mitigated server-side by Microsoft, no customer action. No exploitation reported; not in CISA KEV (catalog 2026.11.23, 1,792 entries, verified this run); VulnCheck KEV negative; no public PoC seen. EPSS unscored (null, 2026-11-23). Scope (1) CVSS 10.0. STATUS CHANGE 2026-11-24 12:30 EST (MATERIAL 4c): Public weaponized PoC released (cveForge GitHub PoC, indexed by Sploitus 2026-11-24): functional poc.py performs unauthenticated event publish to private Event Grid topics and forges webhook-delivery ACKs to rebind subscription endpoints (full chain, stdlib only). Microsoft silently patched 2026-11-19.",
    "epss": 0.00921,
    "epss_percentile": 0.61035,
    "source": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62841"
@@ -5355,8 +5355,8 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "published": "2026-11-23T22:20:16.553",
    "exploited": false,
    "kev": false,
-   "poc": false,
-   "status": "NEW - MATERIAL 4(a) (2026-11-23 17:30 EST hourly): CVE released by MSRC Nov 19, 2026, NVD-published 2026-11-23; Microsoft cloud-service flaw, fully mitigated server-side by Microsoft, no customer action. No exploitation reported; not in CISA KEV (catalog 2026.11.23, 1,792 entries, verified this run); VulnCheck KEV negative; no public PoC seen. EPSS unscored (null, 2026-11-23). Scope (1) CVSS 9.9.",
+   "poc": true,
+   "status": "NEW - MATERIAL 4(a) (2026-11-23 17:30 EST hourly): CVE released by MSRC Nov 19, 2026, NVD-published 2026-11-23; Microsoft cloud-service flaw, fully mitigated server-side by Microsoft, no customer action. No exploitation reported; not in CISA KEV (catalog 2026.11.23, 1,792 entries, verified this run); VulnCheck KEV negative; no public PoC seen. EPSS unscored (null, 2026-11-23). Scope (1) CVSS 9.9. STATUS CHANGE 2026-11-24 12:30 EST (MATERIAL 4c): Public weaponized PoC released (cveForge GitHub PoC, indexed by Sploitus 2026-11-24): functional poc.py crafts Copilot API requests with a victim tenantId to read cross-tenant SharePoint docs, Teams chats and Exchange metadata. Microsoft patched all SaaS tenants 2026-11-18; on-prem Gateway needs hotfix KB5058390.",
    "epss": 0.00795,
    "epss_percentile": 0.5719,
    "source": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50691"
@@ -10260,8 +10260,8 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "published": "2026-11-24T06:17:08.080",
    "exploited": false,
    "kev": false,
-   "poc": false,
-   "status": "MATERIAL 4(a) (2026-11-24 01:30 EST hourly): newly published in NVD pub window (2026-11-24T06:17:08Z). Supply-chain backdoor in six WordPress plugins: C2 exfiltration + eval() of returned PHP + shell commands, arbitrary file read/write/delete, users-table dump incl. password hashes, webshell drop, persistent hourly execution. NO FIX - all six plugins closed on WordPress.org; uninstall + full malware scan recommended (Wordfence page read directly via live browser - direct fetch returns empty 202). No exploitation reporting beyond the backdoor itself; not in CISA KEV; VulnCheck KEV negative (0 docs). EPSS unscored (brand new). Scope (1) CVSS 9.8 + (2) unauthenticated RCE via backdoored software.",
+   "poc": true,
+   "status": "MATERIAL 4(a) (2026-11-24 01:30 EST hourly): newly published in NVD pub window (2026-11-24T06:17:08Z). Supply-chain backdoor in six WordPress plugins: C2 exfiltration + eval() of returned PHP + shell commands, arbitrary file read/write/delete, users-table dump incl. password hashes, webshell drop, persistent hourly execution. NO FIX - all six plugins closed on WordPress.org; uninstall + full malware scan recommended (Wordfence page read directly via live browser - direct fetch returns empty 202). No exploitation reporting beyond the backdoor itself; not in CISA KEV; VulnCheck KEV negative (0 docs). EPSS unscored (brand new). Scope (1) CVSS 9.8 + (2) unauthenticated RCE via backdoored software. STATUS CHANGE 2026-11-24 12:30 EST (MATERIAL 4c): Public weaponized PoC released (cveForge GitHub PoC, indexed by Sploitus 2026-11-24): functional poc.py chains the unauthenticated PHP object injection into RCE via a WordPress POP gadget, writing a webshell (full mode) \u2014 full server compromise.",
    "epss": 0.00594,
    "epss_percentile": 0.49086,
    "source": "https://www.wordfence.com/threat-intel/vulnerabilities/detail/wp-connect-plugins-various-versions-unauthenticated-remote-code-execution-via-backdoored-software"
@@ -14820,8 +14820,8 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "published": "2026-11-23T22:18:29.133",
    "exploited": false,
    "kev": false,
-   "poc": false,
-   "status": "NEW - MATERIAL 4(a) (2026-11-23 17:30 EST hourly): CVE released by MSRC Nov 19, 2026, NVD-published 2026-11-23; Microsoft cloud-service flaw, fully mitigated server-side by Microsoft, no customer action. No exploitation reported; not in CISA KEV (catalog 2026.11.23, 1,792 entries, verified this run); VulnCheck KEV negative; no public PoC seen. EPSS unscored (null, 2026-11-23). Scope (1) CVSS 9.6.",
+   "poc": true,
+   "status": "NEW - MATERIAL 4(a) (2026-11-23 17:30 EST hourly): CVE released by MSRC Nov 19, 2026, NVD-published 2026-11-23; Microsoft cloud-service flaw, fully mitigated server-side by Microsoft, no customer action. No exploitation reported; not in CISA KEV (catalog 2026.11.23, 1,792 entries, verified this run); VulnCheck KEV negative; no public PoC seen. EPSS unscored (null, 2026-11-23). Scope (1) CVSS 9.6. STATUS CHANGE 2026-11-24 12:30 EST (MATERIAL 4c): Public weaponized PoC released (cveForge GitHub PoC, indexed by Sploitus 2026-11-24): functional poc.py drives the SSRF to Azure IMDS (169.254.169.254) for token theft / internal admin panels / local file read.",
    "epss": 0.00789,
    "epss_percentile": 0.56991,
    "source": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109480"
@@ -15169,8 +15169,8 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "published": "2026-11-23T22:19:30.710",
    "exploited": false,
    "kev": false,
-   "poc": false,
-   "status": "NEW - MATERIAL 4(a) (2026-11-23 17:30 EST hourly): CVE released by MSRC Nov 19, 2026, NVD-published 2026-11-23; Microsoft cloud-service flaw, fully mitigated server-side by Microsoft, no customer action. No exploitation reported; not in CISA KEV (catalog 2026.11.23, 1,792 entries, verified this run); VulnCheck KEV negative; no public PoC seen. EPSS unscored (null, 2026-11-23). Scope (1) CVSS 9.6.",
+   "poc": true,
+   "status": "NEW - MATERIAL 4(a) (2026-11-23 17:30 EST hourly): CVE released by MSRC Nov 19, 2026, NVD-published 2026-11-23; Microsoft cloud-service flaw, fully mitigated server-side by Microsoft, no customer action. No exploitation reported; not in CISA KEV (catalog 2026.11.23, 1,792 entries, verified this run); VulnCheck KEV negative; no public PoC seen. EPSS unscored (null, 2026-11-23). Scope (1) CVSS 9.6. STATUS CHANGE 2026-11-24 12:30 EST (MATERIAL 4c): Public weaponized PoC released (cveForge GitHub PoC, indexed by Sploitus 2026-11-24): functional poc.py points the AML job script_url at Azure IMDS to steal the compute instance's managed-identity ARM token and escalate to full subscription contributor.",
    "epss": 0.00704,
    "epss_percentile": 0.54041,
    "source": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118285"
@@ -23443,8 +23443,8 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "published": "2026-11-23T22:19:04.970",
    "exploited": false,
    "kev": false,
-   "poc": false,
-   "status": "NEW - MATERIAL 4(a) (2026-11-23 17:30 EST hourly): CVE released by MSRC Nov 19, 2026, NVD-published 2026-11-23; Microsoft cloud-service flaw, fully mitigated server-side by Microsoft, no customer action. No exploitation reported; not in CISA KEV (catalog 2026.11.23, 1,792 entries, verified this run); VulnCheck KEV negative; no public PoC seen. EPSS unscored (null, 2026-11-23). Scope (1) CVSS 9.1.",
+   "poc": true,
+   "status": "NEW - MATERIAL 4(a) (2026-11-23 17:30 EST hourly): CVE released by MSRC Nov 19, 2026, NVD-published 2026-11-23; Microsoft cloud-service flaw, fully mitigated server-side by Microsoft, no customer action. No exploitation reported; not in CISA KEV (catalog 2026.11.23, 1,792 entries, verified this run); VulnCheck KEV negative; no public PoC seen. EPSS unscored (null, 2026-11-23). Scope (1) CVSS 9.1. STATUS CHANGE 2026-11-24 12:30 EST (MATERIAL 4c): Public weaponized PoC released (cveForge GitHub PoC, indexed by Sploitus 2026-11-24): functional poc.py enumerates any project's session recordings/heatmaps/PII via the numeric projectId IDOR (CWE-639).",
    "epss": 0.00815,
    "epss_percentile": 0.57835,
    "source": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-113824"
