@@ -335,7 +335,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <svg class="floppy" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 4h38l14 14v42H6z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M14 4h26v18H14z" fill="none" stroke="#8f88c4" stroke-width="3"/><path d="M12 32h40v22H12z" fill="none" stroke="#8f88c4" stroke-width="3"/></svg>
     <div class="wordmark"><b>COMFYPWN</b><span>.com — critical CVE feed</span></div>
   </div>
-  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 26</span><span class="pill accent">5,521 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
+  <div class="pills"><span class="pill live">● PUBLIC FEED</span><span class="pill">UPDATED NOV 26</span><span class="pill accent">5,568 CVEs tracked</span><a class="pill link" href="#sources">SOURCES ↗</a></div>
 </div><div class="hazard"></div></header>
 
 <main class="wrap" id="feedView">
@@ -369,7 +369,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
         <div class="crt-stand" aria-hidden="true"></div>
         <div class="crt-base" aria-hidden="true"></div>
       </div>
-      <p class="crt-caption">Latest scan 10:30 AM ET — +20 CVEs (total 5,501 → 5,521): WooCommerce file-upload RCE 9.8, Samba print/password-script RCEs 9.8 (one with public PoCs + VulnCheck KEV), 389-ds auth bypass 9.8, Foreman RCE/priv-esc, WP Job Portal account takeover 9.1. No new CISA KEV additions; no F5 changes. Next scan hourly.</p>
+      <p class="crt-caption">Latest scan 11:30 AM ET — total 5,521 → 5,568 (+47). New: Budibase batch (10.0 prototype pollution, 9.8 auth bypass, 9.9 cross-tenant), ToolJet SSO/auth bypasses, Traefik auth bypasses, SiYuan, Frappe, Coder, pulp_python 10.0 SSRF. Newly exploited (VulnCheck KEV): CF7 file-upload RCE 9.8, XWiki path traversal 9.3, osTicket SQLi 9.8, Webmin auth bypass 8.3. No CISA KEV additions; no F5 changes.</p>
       <noscript><p class="crt-caption">Top priority: CVE-2026-14676 PostgreSQL (8.8, pg_stat_statements heap-based buffer overflow -> authenticated remote code execution, fixed in 18.6, NOT in CISA KEV, EPSS 0.00436) · CVE-2026-101567 Oracle Cost Management (8.8, improper access control — low-privileged attacker takeover, fixed in October 2026 CPU, NOT in CISA KEV, EPSS 0.00464) · CVE-2026-127215 Kanbanz (8.6, broken access control via admin-ajax handlers, fixed in 1.0.3, NOT in CISA KEV, EPSS unscored) · CVE-2026-127214 Flowise (8.5, SSRF bypass via Custom Function sandbox subpath import, NO FIX CONFIRMED, NOT in CISA KEV, EPSS unscored) · CVE-2026-101534 Oracle EDI Gateway (8.5, improper access control — complete data access, fixed in October 2026 CPU, NOT in CISA KEV, EPSS 0.00211) · CVE-2026-68551 Budget Board (8.3, OIDC account takeover via email-only linking with no email_verified check, fixed in 3.6.2, NOT in CISA KEV, EPSS unscored) · CVE-2026-124822 Easy DragDrop File Uploader (10.0, unauthenticated arbitrary file deletion incl. wp-config.php via path traversal, fixed in 1.1.10, NOT in CISA KEV, EPSS 0.00146) · CVE-2026-114713 UnrealIRCd (8.6, server-to-server command injection with server authority, ADDED TO CISA KEV Nov 13 — EXPLOITED IN THE WILD, federal deadline Nov 16, fixed in 6.2.7.1) · CVE-2026-123039 Check Point Gaia (7.8, DynamicCLI local privilege escalation to root, ADDED TO CISA KEV Nov 13 — EXPLOITED IN THE WILD, federal deadline Nov 16, fixed in Jumbo Hotfix Takes) · CVE-2026-124763 WooCommerce Wishlist (9.1, unauthenticated arbitrary site-option overwrite, NO FIX CONFIRMED, NOT in CISA KEV, EPSS 0.00100) · CVE-2026-82414 BACnet Stack (8.8, MS/TP COBS out-of-bounds write, fixed in 1.4.6 / 1.5.1 / 1.6.1 / 1.7.0, NOT in CISA KEV, EPSS unscored) · CVE-2026-116059 LetsRecover (8.6, unauthenticated SQL injection, NO FIX CONFIRMED, NOT in CISA KEV, EPSS 0.00173) · CVE-2026-102612 BACnet Stack (8.1, BACnet/SC hub never requires a client certificate, fixed in 1.4.6 / 1.5.2 / 1.6.1 / 1.7.0, NOT in CISA KEV, EPSS unscored) · Rescored: CVE-2026-118063 + CVE-2026-118064 + CVE-2026-124833 + CVE-2026-126119 now 9.8, CVE-2026-123711 now 8.1 · CVE-2026-123965 Jet Admin (9.9, prompt injection exposes .env files and exfiltrates credentials, mitigated server-side — no versioned fix, NOT in CISA KEV, EPSS unscored) · CVE-2026-129171 NginxPulse (9.8, unauthenticated SQL injection via /api/stats/:type -> DB read and server file read/write via PostgreSQL superuser functions, fixed in 1.6.26, NOT in CISA KEV, EPSS unscored) · CVE-2026-121289 Arista EOS (9.8, BGP stack buffer overflow -> BGP agent crash / possible arbitrary code execution, fixed in 4.37.0F / 4.36.3M / 4.35.7M / 4.34.9M / 4.33.11M and later, NOT in CISA KEV, EPSS 0.00644) · CVE-2026-43125 Linux kernel DLM (9.8, out-of-bounds write via unvalidated len in dlm_dump_rsb_name() -> kernel memory corruption / possible RCE, fixed in 6.12.75 / 6.18.16 / 6.19.6, NOT in CISA KEV, EPSS 0.00538) · CVE-2026-121367 Arista EOS (9.6, RIPv2 silently enabled on management interfaces -> unauthenticated route injection to management IP, fixed in 4.36.3M / 4.35.7M / 4.34.9M / 4.33.11M and later — 4.37.0F still affected, NOT in CISA KEV, EPSS 0.00292) · CVE-2026-129165 Tactical RMM (9.4, arbitrary file read via report template preview -> SECRET_KEY theft -> runscript commands to every managed agent, NO FIX CONFIRMED, NOT in CISA KEV, EPSS unscored) · CVE-2026-129167 Seafile SeaDoc (9.2, absolute path traversal -> unauthenticated RCE via confluence-to-wiki ZIP extraction, fixed in 2.0.11 / 3.0.8, NOT in CISA KEV, EPSS unscored) · CVE-2026-129161 Dromara free-fs (9.1, password-reset code brute-force -> account takeover, NO FIX CONFIRMED, NOT in CISA KEV, EPSS unscored) · CVE-2026-42496 Perl Archive::Tar (9.1, extracts symlinks with attacker-controlled targets outside the extraction directory, fixed in 3.08, NOT in CISA KEV, EPSS 0.00502) · CVE-2026-129110 sysPass (9.8, unauthenticated reinstallation RCE via install/install, fix PR #360 merged — release unconfirmed, NOT in CISA KEV, EPSS unscored) · CVE-2026-63079 RBH Integra32 (9.8, unauthenticated .NET Remoting deserialization RCE as SYSTEM, PUBLIC POC, NO FIX stated, NOT in CISA KEV, EPSS unscored) · CVE-2026-95377 Zenitel EdgeAudioClient (9.4, OS command injection as root via rogue DHCP option 66, fixed in 9.6.3.0 / 10.1.3.0, NOT in CISA KEV, EPSS unscored) · CVE-2024-58406 Huatian OA8000 (8.7, unauthenticated path traversal -> arbitrary file read, EXPLOITED — Shadowserver-observed 2024, NO FIX stated, NOT in CISA KEV, EPSS unscored) · CVE-2026-129099 + CVE-2026-129100 + CVE-2026-129101 + CVE-2026-129102 + CVE-2026-129103 Cudy TR3000 (8.6 x5, authenticated-admin RCE as root, fixed in 2.5.42, NOT in CISA KEV) · CVE-2026-95614 Zenitel Connect (9.3, rsyslog watcher -> root command execution on host, fixed in 1.11.0) · CVE-2026-95615 Zenitel Connect (8.7, OS command injection as root via audio messages API, fixed in 1.11.0) · CVE-2026-95613 Zenitel Connect (8.6, pREST JWT forgery -> PostgreSQL superuser, fixed in 1.11.0) · CVE-2026-95378 Zenitel turbineweb (8.6, authenticated-admin path traversal -> arbitrary file write as root, fixed in 10.1.3.0) · CVE-2026-52788 BACnet Stack (8.8, BSC address-resolution OOB writes, fixed in 1.4.5 / 1.5.1 / 1.6.0) · CVE-2026-49990 BACnet Stack (8.6, AtomicReadFile/WriteFile OOB read/write, fixed in 1.4.5 / 1.5.1) · CVE-2026-58498 BACnet Stack (8.6, router-ipv6 global buffer overflow, fixed in 1.4.5 / 1.5.1 / 1.6.0) · CVE-2026-55335 Android Pixel (9.8, use-after-free -> remote code execution, no user interaction, fixed in Pixel November 2026 bulletin) · CVE-2026-126274 NocoDB (9.3, stored XSS -> session token theft, fixed in 2026.08.0) · CVE-2026-126945 Zipline (9.3, stored XSS, fixed in 4.5.1) · CVE-2026-126306 EspoCRM (8.6, stored XSS via SVG -> administrator actions, fixed in 9.3.11 / 10.0.8) · CVE-2026-126451 OpenEMR (8.5, stored XSS in staff sessions, fixed in 8.5.0) · CVE-2026-127084 Teable (8.5, stored XSS via attachments, fixed in 2026-10-12 release) · CVE-2026-113563 Adobe Audition (8.6, code execution via malicious file, fixed in 26.5.3 / 27.0) · CVE-2026-125755 Nodemailer (8.3, recipient domain-restriction bypass, fixed in 10.4.1) · CVE-2026-116417 Dell PowerScale InsightIQ (8.1, weak password requirements, fixed in 6.4.1) · CVE-2026-109091 X.Org (7.8, EDID Display-Range buffer overflow, fixed in 24.1.15 / 21.1.26) · CVE-2026-125851 Hotel Booking Lite (9.9, unrestricted file upload -> web shell, authenticated, NO FIX stated in CVE record, NOT in CISA KEV, EPSS unscored) · CVE-2026-109445 PLANET GS-5220-8P2T2S (9.8, unauthenticated stack buffer overflow via webstax_auth cookie -> memory corruption, fixed in firmware 3.2412b261008, NOT in CISA KEV, EPSS unscored) · CVE-2026-125855 ELEX HelpDesk (9.8, unauthenticated PHP object injection, fixed in 3.4.0, NOT in CISA KEV, EPSS unscored) · CVE-2026-55362 + CVE-2026-56971 + CVE-2026-57047 + CVE-2026-58681 + CVE-2026-58722 + CVE-2026-58799 Android (9.8 x6, remote code execution / remote escalation of privilege, November 2026 bulletin, fixed in SPL 2026-11-01, NOT in CISA KEV) · CVE-2026-128908 DJI AeroScope Mobile (8.8, OS command injection as root via management service, PUBLIC POC — researcher disclosure repo, NO FIX — product discontinued, NOT in CISA KEV, EPSS unscored) · CVE-2026-128909 DJI AeroScope Mobile (8.8, firmware update signature bypass -> persistent root code execution, PUBLIC POC, NO FIX — product discontinued, NOT in CISA KEV, EPSS unscored) · CVE-2026-123975 Grid Community Toolkit (8.7, heap out-of-bounds write in globus_gss_assist -> heap corruption / crash, fixed in GCT 6.2.20261111 / globus-gss-assist 12.9, NOT in CISA KEV, EPSS unscored) · CVE-2026-109093 + CVE-2026-109094 X.Org xwayland (8.5 x2, stack buffer overflow -> code execution in X server / integer overflow buffer overread, fixed in xwayland 24.1.15 / X Server 21.1.26, NOT in CISA KEV, EPSS unscored) · NOW EXPLOITED CVE-2026-6510 InfusedWoo Pro (9.8, unauthenticated privilege escalation to administrator via iwar_save_recipe, VulnCheck KEV-listed 2026-11-13 with Patchstack-reported exploitation, NOT in CISA KEV, fix not stated — update to latest) · NOW EXPLOITED CVE-2026-53753 crawl4ai (9.8, AST sandbox escape -> pre-auth RCE in the Docker API, VulnCheck KEV-listed 2026-11-13, NOT in CISA KEV, fixed in 0.8.7) · NOW EXPLOITED CVE-2026-108291 Affiliates (9.8, PHP object injection, VulnCheck KEV-listed 2026-11-13, NOT in CISA KEV, fixed in 7.1.0) · NOW EXPLOITED CVE-2026-110628 Kan (9.2, unauthenticated SSRF, VulnCheck KEV-listed 2026-11-13, NOT in CISA KEV, fix merged in PR 590, release unconfirmed) · NOW EXPLOITED CVE-2026-112820 Academist Core (8.1, local file inclusion, VulnCheck KEV-listed 2026-11-13, NOT in CISA KEV, fix not stated) · NOW EXPLOITED CVE-2025-39506 Nasa Core (8.1, local file inclusion, VulnCheck KEV-listed 2026-11-13, NOT in CISA KEV, fix not stated) · NOW EXPLOITED CVE-2026-124218 Elementor file-upload plugin (8.2, arbitrary file deletion, newly VulnCheck KEV-listed 2026-11-13, NOT in CISA KEV) · NOW EXPLOITED CVE-2026-111402 Tribulant Newsletters (9.3, unauthenticated SQL injection, newly VulnCheck KEV-listed 2026-11-13, NOT in CISA KEV, fixed in 4.18.2) · NOW EXPLOITED 4EverAble2Shell (pre-CVE — N-able N-central unauthenticated RCE as root; cryptominers on 21 live servers on Nov 12, 19 on Hotfix 2; no fix yet; Legacy API must be enabled) · NOW EXPLOITED CVE-2026-82845 Masteriyo LMS (9.9, PHP object injection via deserialized user metadata -&gt; arbitrary code execution (Subscriber+), VulnCheck KEV-listed 2026-11-12 with reported exploitation, NOT in CISA KEV, fixed in 3.4.1, EPSS 0.00638) · NOW EXPLOITED CVE-2026-62107 Masteriyo LMS (8.8, deserialization of untrusted data -&gt; PHP object injection -&gt; RCE, VulnCheck KEV-listed 2026-11-12 with reported exploitation, NOT in CISA KEV, fixed in 3.4.1, EPSS 0.00518) · NOW EXPLOITED CVE-2026-123039 Check Point Gaia OS (7.8, DynamicCLI daemon runs as root on world-writable socket /tmp/dynamic_socket with no authentication -&gt; local root command execution, VulnCheck KEV-listed 2026-11-12 with reported exploitation, NOT in CISA KEV, fixed in R82.10 Jumbo Hotfix Take 51+ / R82.20 Take 11+ / R82 Take 131+ / R81.20 Take 174+, EPSS unscored) · CVE-2026-127073 + CVE-2026-127080 OpsTree BuildPiper (9.9 x2, privilege escalation to Kubernetes cluster-admin / improper authorization over arbitrary Kubernetes resources, fixed in 2.7.0, EPSS unscored) · CVE-2026-119077 ELEX HelpDesk (9.8, PHP object injection -&gt; RCE, no fixed version stated in CVE record, EPSS unscored) · NOW EXPLOITED CVE-2026-124010 Copeland/Dixell XWEB EVO (9.8, unauthenticated command injection via setuid-root xwconsole.cgi -> commands as root, VulnCheck KEV-listed 2026-11-13 with canary-reported exploitation, NOT in CISA KEV, fixed in 5.6.2, EPSS unscored) · CVE-2026-127277 Linksys EA8100 (10.0, SMB improper initialization -&gt; with Anonymous Access enabled, anonymous SMB sessions map to the admin account (guest = admin), full read/write, public exploit disclosed, NO FIX — vendor unresponsive, EPSS unscored) · CVE-2026-100397 Rucio (9.8, unauthenticated administrator impersonation through SSH challenge tokens -&gt; authenticate as any account including admins, CWE-287/CWE-305, fixed in 35.9.1 / 38.6.1 / 40.4.2 / 41.1.1, EPSS unscored) · CVE-2026-128067 Pillow (8.4, heap buffer overflow saving TIFF with libtiff when tags override image size -> memory disclosure into saved file / heap corruption with Predictor=2, fixed in 13.0.0, EPSS unscored) · NOW EXPLOITED CVE-2026-124014 Copeland/Dixell XWEB EVO (9.1, unauthenticated arbitrary file write -> modify system configuration /etc/xwebconfig.json, VulnCheck KEV-listed Nov 12 with canary-reported exploitation, NOT in CISA KEV, NO FIX — XWEB EVO end-of-service Mar 2026) · CVE-2026-39430 HP Poly EagleEye Cube USB (9.8, broken administrator authentication flow -> unauthenticated administrative actions incl. changing admin-level settings and exporting config files with internal credentials, NO fixed version confirmed) · CVE-2026-102643 AsyncSSH (8.8, SFTP chroot escape via double-leading-slash path, fixed in 2.24.1) · RESCORED CVE-2026-38601 codeskyblue gohttpserver (unscored -> 7.5, hardcoded session secret -> forge session cookies, impersonate any user, bypass OIDC) · CVE-2026-127208 datamodel-code-generator (8.8, code injection via crafted x-python-type annotation -> arbitrary code execution via eval() in Pydantic v2 model_rebuild(), fixed in 0.84.0) · CVE-2026-86322 Foreman (8.8, personal access token forgery — mint a token as any user incl. administrator and authenticate as them, fixed version unconfirmed) · CVE-2026-106018 Johnson Controls EasyIO FW (8.7, authentication bypass via alternate path/channel through 3.0b25, fixed version unconfirmed) · CVE-2026-126793 AWS Advanced Go Wrapper (8.6, untrusted search path -> privilege escalation to rds_superuser via a crafted function on connect, fixed in awssql/v2.0.3) · RESCORED CVE-2026-10859 IBM MQ (7.5 -> 8.8, ObjectMessage deserialization to code execution on consumer apps) · RESCORED CVE-2026-123285 JetBrains Datalore (6.3 -> 8.8, JVM options injection to command execution, fixed in 2026.3) · CVE-2026-124002 Copeland/Dixell XWEB EVO (9.8, pre-auth OS command injection via username, fixed in 5.7.0) · CVE-2026-124004 XWEB EVO (9.8, hardcoded backdoor password to full Administrator access, fixed in 5.6.2) · CVE-2026-124010 XWEB EVO (9.8, unauthenticated command injection via setuid-root xwconsole.cgi — commands as root, fixed in 5.6.2) · CVE-2026-124005 XWEB EVO (9.2, Administrator code-of-the-day derivable from MAC address + date, NO FIX stated — affected through 5.8.8, end-of-service) · CVE-2026-124006 XWEB EVO (9.2, predictable Linux root password, NO FIX stated) · CVE-2026-124007 XWEB EVO (9.2, pre-auth OS command injection via password field, fixed in 5.6.2) · CVE-2026-124012 XWEB EVO (9.2, hardcoded Administrator daily password, NO FIX stated) · CVE-2026-124014 XWEB EVO (9.1, unauthenticated arbitrary file write to /etc/xwebconfig.json, NO FIX stated) · CVE-2026-124013 XWEB EVO (8.8, authenticated OS command injection via api.lua, NO FIX stated) · CVE-2026-124008 XWEB EVO (8.6, authenticated OS command injection via devices.lua, NO FIX stated) · CVE-2026-124009 XWEB EVO (8.6, authenticated OS command injection via backup.lua as root, NO FIX stated) · CVE-2026-124003 XWEB EVO (8.5, setuid-root Lua CGI root command injection, fixed in 5.6.2) · CVE-2026-124015 XWEB EVO (8.2, authentication bypass via users.lua, NO FIX stated) · CVE-2026-107360 rubygem-safemode (9.6, jail allow-list bypass to arbitrary methods incl. host deletion, fixed version unconfirmed) · CVE-2026-68548 Algernon (9.4, auth-prefix bypass on case-insensitive filesystems to /admin, /repo, /data, fixed in 1.17.10) · CVE-2026-121265 SQL::Abstract (9.8, SQL injection via arrayref column value, fixed in 2.000003) · BACnet Stack batch (5 CVEs at 8.1–8.2, stack out-of-bounds writes, fixed in 1.4.4 / 1.5.1 / 1.6.0) · CVE-2026-123834 JetBrains Datalore (8.1, cross-workspace service-account use, fixed in 2026.4) · CVE-2026-125120 Mongoose (9.8, countDocuments sanitizeFilter bypass undermining count-based authorization, fixed in 6.13.11 / 7.8.12 / 8.24.3 / 9.9.2) · CVE-2026-61887 Intel TDX MigTD (9.4, SPDM rebind missing authentication to unauthenticated adjacent RCE in the Ring 0 hypervisor, fixed in MigTD 0.7.2) · CVE-2026-56712 Replicate Cog (9.3, SSRF via cog.File/cog.Path URL inputs, NO fixed release yet) · CVE-2026-18379 yggdrasil-worker-package-manager (8.8, path traversal in repository names to root worker file modification, fixed in upstream builds) · CVE-2026-96437 Kong Gateway Enterprise (8.2, ai-azure-content-safety plugin bypass on large request bodies, fixed in 3.13.0.12 / 3.14.0.11 / 3.15.0.4 / 3.16.0.1) · CVE-2026-126903 Chrome 157 ANGLE (8.1, origin-policy bypass via crafted HTML page, fixed in 157.0.8103.78) · CVE-2026-117551 jDownloads (10.0, RCE via frontend thumbnail file upload to PHP code execution, fixed in 4.1.8) · CVE-2026-127063 ScreenConnect RMM+ extension (9.3, static default API secret — unauthorized extension API access incl. commands to managed agents, NO patch — change the default secret) · CVE-2026-117543 jDownloads SSRF (8.9, redirect bypass of external-URL validation, fixed in 4.1.8) · CVE-2026-126197 pgEdge Postgres MCP Server (8.8, pl-do SQL injection past read_only, fixed in 1.1.0) · CVE-2026-126196 pgEdge Postgres MCP Server (8.1, read_only bypass, fixed in 1.1.0) · CVE-2026-126866 Chrome 157 Extensions (8.8, incorrect authorization to code inside the sandbox, fixed in 157.0.8103.78) · CVE-2026-126875 Chrome 157 V8 (8.1, origin-policy bypass, fixed in 157.0.8103.78) · CVE-2026-126896 Chrome 157 V8 (8.1, origin-policy bypass, fixed in 157.0.8103.78) · CVE-2026-61619 OWASP CRS (8.8, ReDoS detection bypass of 12 Unix RCE rules + CPU DoS, fixed in 3.3.10 / 4.25.1 / 4.28.0) · Google Chrome 157 stable batch (48 CVEs — seven at 9.6 are sandbox escapes: ANGLE, Skia, FileSystem, ServiceWorker and Passwords flaws; forty-one at 8.8; all fixed in 157.0.8103.78) · CVE-2026-121687 FrodoBots EarthRover Mini+ (9.8, unauthenticated interfaces — REST API, ADB root shell on 5555, SSH — NO FIX published) · CVE-2026-123753 Apache Axis2/Java SSRF (9.1, unauthenticated via WS-Addressing ReplyTo/FaultTo, fixed in 2.0.2) · PostgreSQL November security release (35 CVEs at 8.0–8.8 — 32 at 8.8, two at 8.1, one at 8.0 — most yield code execution as the database OS user for an authenticated database user / object creator, fixed in 18.7 / 17.12 / 16.16 / 15.20 / 14.25, EPSS unscored) · CVE-2026-30849 MantisBT (9.8, unauthenticated SOAP API authentication bypass to admin impersonation on MySQL backends, newly VulnCheck KEV-listed — exploited, fixed in 2.28.1, EPSS 0.01799 / 78.8th percentile) · CVE-2026-57714 LatePoint (9.3, blind SQL injection through 5.6.3, newly VulnCheck KEV-listed — exploited, fixed in 5.6.4, EPSS 0.004 / 34.76th percentile) · CVE-2026-54825 wpDataTables (9.3, blind SQL injection through 7.4, newly VulnCheck KEV-listed — exploited, fixed in 7.4.1, EPSS 0.004 / 34.76th percentile) · CVE-2026-120869 Citrix NetScaler Console (9.4 vendor / 9.3 NVD, unauthenticated authentication bypass to restricted resources, fixed in 14.1-74.34 and later, EPSS unscored) · CVE-2026-116835 Octopus Server (8.7, OIDC custom-claims signed-token impersonation of another project, fixed in 2026.2.13503 / 2026.3.15894, EPSS unscored) · CVE-2026-124627 Octopus Server (8.7, LDAP identity injection during invitation — another user’s team memberships and permissions, fixed in 2026.2.13526 / 2026.3.15926, EPSS unscored) · CVE-2026-124628 Octopus Server (8.7, disabled LDAP self-service identity editing bypass — possible full admin escalation, fixed in 2026.2.13526 / 2026.3.15936, EPSS unscored) · CVE-2026-107484 Check Point Gaia Portal (7.3, authenticated non-admin to full administrative control, fixed in R82.20 / Jumbo Hotfix Take 52 (R82.10) / Take 132 (R82) / Take 174 (R81.20), EPSS unscored) · CVE-2026-125285 TIBCO Platform Self-Hosted Control Plane (8.8, authentication bypass via improper request validation in the Router component — impersonate users, access identity records across the user directory, reach internal management interfaces, fixed in 1.22, no workarounds, EPSS unscored) · CVE-2026-19422 ManageEngine DDI Central (9.1, unauthenticated authentication bypass in Windows DNS/DHCP agent synchronization APIs — impersonate onboarded Windows servers, unauthorized DNS/DHCP modifications, fixed in build 6301, EPSS unscored) · CVE-2026-75869 ManageEngine DDI Central (8.8, authorization bypass + PowerShell command injection via crafted DNS suffix values in Windows DHCP — arbitrary commands on managed Windows DHCP servers, fixed in build 6301, EPSS unscored) · CVE-2026-75864 ManageEngine DDI Central (8.1, improper authorization — delete DNS zones outside assigned scope, fixed in build 6301, EPSS unscored) · CVE-2026-75867 ManageEngine DDI Central (8.1, authorization bypass — modify Windows DHCP filter-list configurations, fixed in build 6301, EPSS unscored) · CVE-2026-75868 ManageEngine DDI Central (8.1, authorization bypass — modify DHCP options on unauthorized subnets, fixed in build 6301, EPSS unscored) · CVE-2026-123512 Vikunja (8.4, sensitive tokens in emailed-link URL query strings leak to access logs — password-reset token replay to account takeover incl. admins, lag-gap catch — published Nov 8, NVD-enriched Nov 12, fixed in 2.7.1, EPSS 0.00266 / 18.68th percentile) · CVE-2026-127046 MISP Modules website (9.2, unauthenticated disclosure of external-tool API keys via /external_tools/list — impersonation of the instance and direct access to external analysis services, fix commit 61c2789 post-3.1.4, release unconfirmed, EPSS unscored) · CVE-2026-127036 ibi WebFOCUS (8.6, CRLF injection to OS command execution, TIBCO advisory Nov 12, fixed in 9.2.8+ / 9.3.8+, 9.1 upgrade to latest, EPSS unscored) · CVE-2026-13764 Masterstudy WordPress theme (8.8, Subscriber+ privilege escalation to Administrator, fixed in 4.8.152, EPSS unscored) · CVE-2026-15309 CourseCure Courses WordPress plugin (8.8, Subscriber+ privilege escalation to Administrator, fixed in 1.5.3, EPSS unscored) · CVE-2026-16135 VibeBP WordPress plugin (8.8, Subscriber+ privilege escalation to Administrator, fixed in 1.9.9.8.2, EPSS unscored) · CVE-2026-19421 ManageEngine DDI Central (8.8, PowerShell injection via TXT record values in Windows DNS operations, fixed in build 6301, EPSS unscored) · CVE-2026-126260 Fortinet FortiAnalyzer/FortiManager (9.0, pre-auth SSRF via OFTP TCP/514 — unauthenticated server-side requests, FG-IR-26-274, baseline miss from the Nov 10 Fortinet PSIRT batch, fixed in 8.0.1 / 7.6.8 / 7.4.12, EPSS unscored) · CVE-2026-83542 Apache OFBiz (9.8, now NVD-scored — was unscored; unauthenticated RCE via login-page widget injection, fixed in 24.09.08) · CVE-2026-28516 openDCIM (9.3, SQL injection in Config::UpdateParameter — arbitrary SQL execution, public exploit, newly VulnCheck KEV-listed and now flagged exploited — chain 28515 + 28516 + 28517 to unauthenticated RCE on default Docker installs, fixed by PR #1664, EPSS 0.0107 / 65.311th percentile) · CVE-2026-127016 MISP Modules website (9.2, missing authorization on external tool management endpoints — unauthenticated admin tool control incl. API keys and ingestion URLs, fix commit 28c27e3 post-3.1.4, EPSS unscored) · CVE-2026-76173 WhatsApp for Dolibarr (8.8, blind SQL injection in public webhook receiver, no fixed version stated, EPSS unscored) · CVE-2026-123807 Signal K Server (9.8, unauthenticated path traversal in the resources-provider v2 API — JWT secret disclosure, admin impersonation and RCE, fixed in signalk-server 2.34.0 / @signalk/resources-provider 1.5.3, EPSS 0.00536 / 45.54th percentile) · CVE-2026-110003 Azul Payara Server (9.3, admin REST interface auth bypass via X-GlassFish-authToken header — arbitrary administrative commands, fixed in 7.6.0 / 7.2026.11 / 6.44.0 / 5.93.0 / 4.1.2.191.61) · CVE-2026-90908 Azul Payara Server / Payara Micro (9.3, GenericAdminAuthenticator JMX/RMI spoofed client host — admin access bypass to RCE, fixed in 7.6.0 / 7.2026.11 / 6.44.0 / 5.93.0 / 4.1.2.191.61) · CVE-2026-12591 ManageEngine M365 Manager Plus (9.9, delegated-administration privilege escalation to remote code execution, fixed in build 4818) · CVE-2026-8333 Microchip TimePictra (9.4, stored XSS — stored script executes in another user’s browser, fixed in 12.0) · CVE-2026-12507 ManageEngine AssetExplorer/ServiceDesk Plus (9.1, authenticated RCE via crafted database queries in the Reports module, fixed in AssetExplorer 7860 / ServiceDesk Plus 15290 / MSP 15150 / SupportCenter Plus 15150) · CVE-2026-8331 Microchip TimePictra (8.8, unrestricted file upload to remote code execution, fixed in 12.0) · CVE-2026-8332 Microchip TimePictra (8.8, hard-coded root password in installation files, fixed in 12.0) · CVE-2026-124815 Clockinator Lite (10.0, unauthenticated SQL injection — delete any table, extract password hashes, fixed in 1.1.0) · CVE-2026-110959 Descope (9.8, unauthenticated account takeover — any token accepted, session for any account incl. admin, fixed in 1.2.0) · CVE-2026-107935 gvisor-tap-vsock (9.3, unauthenticated arbitrary file deletion on the host via /expose, fixed in 0.9.0, EPSS 0.00239 / 15.044th percentile) · CVE-2026-122003 Abilities Bridge (8.8, administrator account creation via CSRF, fixed in 1.4.2) · CVE-2026-124647 TI WooCommerce Wishlist (8.6, unauthenticated SQL injection, fixed in 2.0.7) · CVE-2026-101107 SoftBank Air Terminal 6 (8.6, OS command injection — arbitrary commands as root via the web console, corrected firmware auto-rolled out) · CVE-2026-76792 User Verification (8.1, unauthenticated account takeover via unthrottled OTP login, fixed in 2.0.49) · CVE-2026-123092 WP Remote Users Sync (7.5, privilege escalation to administrator via ‘meta’ sync action, fixed in 2.3.0) · CVE-2026-124814 Ultimate Addons for Elementor Forms (9.8, unauthenticated arbitrary file upload to RCE, fixed in 1.0.8) · CVE-2026-76954 Synology DSM (9.8, unauthenticated Auth API SQL injection to arbitrary file read/write, Synology SA-26:19 Critical, fixed in DSM 7.2.1-69057-13 / 7.2.2-72806-10 / 7.3.2-86009-5 / 7.4.1-90080-1 — one build newer than the CVE-2026-13684 fixes) · CVE-2026-85101 Synology DSM rsync (8.6, unauthenticated authentication bypass to arbitrary file write, SA-26:19, same four fixed builds) · CVE-2026-13672 Synology DSM SSOAuth (8.8, authorization bypass through user-controlled key, SA-26:18, fixed in DSM 7.3.2-86009-5 / 7.4.1-90080-1) · CVE-2026-18792 Synology DSM Sharing API (8.8, path traversal to arbitrary file read/write, SA-26:18, same fixes) · CVE-2026-74857 Synology DSM Auth API (8.8, missing critical step in authentication, SA-26:18, same fixes) · CVE-2026-18596 Synology DSM OTP (8.1, authentication bypass via alternate path, SA-26:18, same fixes) · CVE-2026-19048 Synology DSM thumb (8.1, improper link resolution to arbitrary file write, SA-26:18, same fixes) · CVE-2026-81584 Synology DSM User API (8.1, SQL injection via compromised LDAP/AD server, SA-26:18, same fixes) · CVE-2026-111433 openEuler iSulad (8.6, symlink following copies sensitive host directories into a container-readable volume, through 2.1.6, fix commit only) · CVE-2026-117687 Movable Type (7.3, Dynamic Publishing PHP code execution, fixed in 8.8.7 / 8.0.14) · CVE-2026-75785 Synology DSM VPN API (7.2, OS command injection, administrator privileges required, SA-26:18, fixed in DSM 7.3.2-86009-5 / 7.4.1-90080-1) · CVE-2026-72898 Metabase (10.0, unauthenticated SQL injection via /reset_password to administrator access, CISA KEV-listed Aug 11, weaponized public PoC “MetaPwn”, EPSS 0.98208 / 99.914th percentile, fixed in v58.24 / v59.21 / v60.17 / v61.11 / v62.9 / v63.5) · CVE-2026-72899 Metabase (10.0, unauthenticated SQL injection via publicly shared card/dashboard field-filter parameter, fixed in v58.24 / v59.21 / v60.17 / v61.11 / v62.9 / v63.5) · CVE-2026-126795 ToolJet (7.3, onboarding signup missing authentication — takeover of pending invited accounts incl. admin, public exploit disclosed, fixed in 3.21.94-beta) · CVE-2026-126785 TR-VISION HOME (9.3, WFanManager.sys driver IOCTL local privilege escalation, NO fix — vendor unresponsive) · CVE-2026-126673 Data::Dump::Streamer Perl (code injection via unescaped Regexp patterns, CWE-94, fixed in 3.00, no CVSS yet) · CVE-2026-126259 FortiOS (9.8, missing authentication — unauthenticated command execution as super admin via crafted HA packets, fixed in 8.0.1 / 7.6.8 / 7.4.13 / 7.2.14) · CVE-2026-126170 FortiAnalyzer/FortiManager (9.8, improper encoding/escaping, unauthenticated RCE, fixed in 7.6.8 / 7.4.12 / 7.2.13) · CVE-2026-126262 FortiAnalyzer/FortiManager (9.8, SQL injection to unauthenticated RCE via the OFTP port, fixed in 7.6.8 / 7.4.12 / 7.2.13) · CVE-2026-126263 FortiMail (9.8, SQL injection to RCE, fixed in 8.0.2 / 7.6.7 / 7.4.7) · CVE-2026-67449 Portabase (9.8, TUS-upload path traversal overwrites the AES-256-GCM master key, fixed in 1.21.2) · CVE-2026-126254 FortiOS (9.6, iBGP numeric truncation — malformed attributes to all connected routers, fixed in 8.0.2 / 7.6.8 / 7.4.13 / 7.2.14) · CVE-2026-126797 NextScan ns-admin (9.8, auth bypass via hardcoded JWT signing key to super administrator, no fix stated) · CVE-2026-126812 blueprintUE (9.8, MariaDB root empty password on published port 3306, fixed in 4.3.7) · CVE-2026-112174 Iperius Backup (9.3, local privesc to SYSTEM/Administrator, FIRST PUBLIC PoC published Nov 11, fixed in 8.8.9) · CVE-2026-54121 Certighost — AD CS (8.8, low-privileged domain user impersonates a Domain Controller, EXPLOITED IN THE WILD per Kaspersky’s Citrus ransomware report, VulnCheck KEV Nov 11, public PoC, fixed in July 14, 2026 Microsoft updates) · CVE-2026-126815 Lagarto Chivato (8.1, pre-account hijacking via planted password, fixed in 0.4.4) · CVE-2026-126768 OpsTree REMS (9.8, unauthenticated auth bypass to SuperUser, no fix stated) · CVE-2026-126769 OpsTree REMS (8.7, missing authentication exposes stored database credentials, no fix stated) · CVE-2026-115252 Confection WordPress Cable (CVSS 10.0, unauthenticated RCE, weaponized public PoC, NO known fix — the PoC repo’s “fixed in 0.4.8” claim is false) · CVE-2026-121529 FortiClient (9.6, CORS RCE, public PoC, fixed in 7.4.8 / 7.2.15) · CVE-2026-19803 Printcart (9.8, unauthenticated file-upload RCE, public PoC, fixed in 2.13.3) · CVE-2026-68982 Apache Airflow CeleryExecutor (broker-write RCE, public PoC, fixed in 3.4.0) · CVE-2026-108097 Drupal core Field UI RCE (Drupal Critical 19/25, CVSS 8.1, unauthenticated exploit path, public PoC, in the wild per VulnCheck KEV Nov 11, fixed in 10.6.19 / 11.3.19 / 11.4.10) · CVE-2026-102785 YOOtheme Pro (Joomla extension, CVSS 10.0, unauthenticated RCE, in the wild per Unit 42, fixed in 5.0.53) · CVE-2026-109618 / 109619 php2shell (F5 BIG-IP, 9.8, in the wild) · CVE-2026-110457 Collabora (exploited Oct 14, CISA KEV Oct 23) · CVE-2026-94127 F5 APM OAuth heap overflow.</p></noscript>
     </div>
 
@@ -429,7 +429,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
   </div>
 
   <section class="stats" aria-label="Feed summary">
-    <div class="stat"><b>5,521</b><span>CVEs tracked</span></div>
+    <div class="stat"><b>5,568</b><span>CVEs tracked</span></div>
     <div class="stat"><b>10.0</b><span>Top CVSS — YOOtheme Pro</span></div>
     <div class="stat"><b>WILD</b><span>Exploited now flagged</span></div>
     <div class="stat"><b>NOV 26</b><span>Last updated — hourly scans</span></div>
@@ -447,11 +447,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
       </div>
     </div>
     <div class="search-row">
-      <label for="cveSearch">Search all 5,521 CVEs</label>
+      <label for="cveSearch">Search all 5,568 CVEs</label>
       <div class="search-box">
         <input id="cveSearch" type="search" placeholder="Try: Drupal, CVE-2026-108097, YOOtheme, WatchGuard, nest-admin, php2shell, GitLab, F5…" autocomplete="off">
       </div>
-      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 5,521 CVEs in the grouped index below are searchable too.</div>
+      <div class="search-meta" id="searchMeta" aria-live="polite">Showing 6 highlighted drops · Ones to Watch and all 5,568 CVEs in the grouped index below are searchable too.</div>
     </div>
     <div class="grid" id="grid">
       <article class="card" data-tags="wild rce">
@@ -511,11 +511,11 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
 
   <section id="fullIndex">
     <div class="section-head">
-      <div><h2>Full index — all 5,521 CVEs</h2><p>Every entry from the Nov 26 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
+      <div><h2>Full index — all 5,568 CVEs</h2><p>Every entry from the Nov 26 scan, grouped by status — pick a group, 24 per page. The search above filters every group by CVE ID, vendor / product, title, and status text. Tap any card for fixed versions, exploitation status, the full status note, and the source.</p></div>
     </div>
     <div class="tier-tabs" id="tierTabs" role="group" aria-label="Browse CVEs by status group"></div>
-    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 5,521.</p>
-    <div class="search-meta" id="indexMeta" aria-live="polite">5,521 entries · pick a group above. Tap any card for the full record.</div>
+    <p class="group-note">Each CVE sits in exactly one group, highest urgency first — exploited beats KEV-listed, KEV-listed beats public PoC. Group counts add up to 5,568.</p>
+    <div class="search-meta" id="indexMeta" aria-live="polite">5,568 entries · pick a group above. Tap any card for the full record.</div>
     <div class="grid" id="indexGrid"></div>
     <p id="indexEmpty" style="display:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;margin-top:14px">No CVEs in this group match. Try a different CVE ID, vendor, or keyword — or clear the search above.</p>
     <div class="pager" id="indexPager">
@@ -544,7 +544,7 @@ footer.site .wrap{border-top:1px solid var(--line);padding-top:18px}
     <a class="backlink" href="#feed">← BACK TO THE FEED</a>
     <h1>Where every listing <em>comes from</em></h1>
     <p class="lede">No CVE lands on comfypwn.com from a single feed. Each listing is assembled from the public records, exploitation catalogs, vendor advisories, and telemetry below — <strong>every source name links to its official site</strong>, and every card on the feed links back to the record it came from.</p>
-    <p class="updated">Last updated 10:30 AM ET Nov 26, 2026 — 5,521 CVEs tracked (165 at 10.0, 1,897 at 9.0+, 3,121 at 8.x); 274 exploited, 109 CISA KEV, 530 with public PoC; 5,445 EPSS-scored. Next scan: hourly — only material changes alert.</p>
+    <p class="updated">Last updated 11:30 AM ET Nov 26, 2026 — 5,568 CVEs tracked (167 at 10.0, 1,911 at 9.0+, 3,150 at 8.x). 278 exploited, 109 CISA KEV, 530 with public PoC. 5,448 EPSS-scored. Next scan: hourly — only material changes alert.</p>
 
 
 
@@ -554,8 +554,8 @@ var html=drops.map(function(d){return "<span>▸ <b>DROP</b> "+d+"</span>"}).joi
 document.getElementById("tickerTrack").innerHTML=html+html;
 </script>
 <script id="cveData" type="application/json">{
- "generated": "2026-11-26T15:43:34Z",
- "last_check": "2026-11-26T15:43:34Z",
+ "generated": "2026-11-26T16:46:19Z",
+ "last_check": "2026-11-26T16:46:19Z",
  "items": [
   {
    "id": "CVE-2024-51567",
@@ -3110,6 +3110,38 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "epss": 0.00437,
    "epss_percentile": 0.29886,
    "source": "https://wpscan.com/vulnerability/68bc7294-1ee6-44a9-9995-3b23b921f750/"
+  },
+  {
+   "id": "CVE-2026-126984",
+   "title": "pulp_python pull-through caching server-side request forgery \u2014 attacker-chosen URL downloaded with remote credentials, poisoned packages served to clients",
+   "product": "pulp_python (Pulp Python plugin, pull-through caching)",
+   "score": 10.0,
+   "cvss": "10.0 (CVSS v3.1)",
+   "fixed": "3.38.2; 3.36.7; 3.27.10; 3.19.8; 3.13.9",
+   "published": "2026-11-26T16:17:50.623Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) (2026-11-26 11:30 EST hourly): server-side request forgery (CWE-918) in get_remote_artifact_url() \u2014 the pull-through caching feature uses the redirect query parameter from the client request as the URL to download; a network attacker who can reach the content app chooses that URL, the content app downloads it and returns the response, and when the remote has a username/password those credentials are sent to the attacker host; with the default/immediate/on_demand remote policy the file is saved into the distribution's repository and later served to clients. CVSS v3.1 10.0 (AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N). Fixed 3.38.2 / 3.36.7 / 3.27.10 / 3.19.8 / 3.13.9 (Nov 25 releases; 3.38.2 changelog: 'Pull-through downloads now require signed package links and use the upstream SHA-256 when available', PRs #1429/#1484). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/pulp/pulp_python/pull/1484"
+  },
+  {
+   "id": "CVE-2026-137498",
+   "title": "Budibase prototype pollution erases MongoDB query filters \u2014 unauthenticated attackers read, update, or delete every document in a collection",
+   "product": "Budibase Server 3.39.18 through 3.x",
+   "score": 10.0,
+   "cvss": "10.0 (CVSS v3.1; 9.9 CVSS v4.0)",
+   "fixed": "4.0.0",
+   "published": "2026-11-26T16:18:01.000Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) (2026-11-26 11:30 EST hourly): prototype pollution (CWE-943) \u2014 unauthenticated attackers erase MongoDB query filters by supplying __proto__ as a dynamic JSON key in PUBLIC queries; a single request to the query execution endpoint reduces the filter to {} to read, update, or delete every document in the collection. CVSS v3.1 10.0 (v4.0 9.9). Affects server 3.39.18 before 4.0.0; fixed 4.0.0 (GHSA-x4w8-596q-fmh7). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/Budibase/budibase/security/advisories/GHSA-x4w8-596q-fmh7"
   },
   {
    "id": "CVE-2026-101446",
@@ -6329,6 +6361,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "epss": 0.01801,
    "epss_percentile": 0.79019,
    "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-136822"
+  },
+  {
+   "id": "CVE-2026-137494",
+   "title": "Budibase cross-tenant file deletion/read via attachment keys \u2014 authenticated users delete or read other tenants' files",
+   "product": "Budibase before 4.0.0",
+   "score": 9.9,
+   "cvss": "9.9 (CVSS v3.1; 8.5 CVSS v4.0)",
+   "fixed": "4.0.0",
+   "published": "2026-11-26T16:17:59.980Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): broken object-level authorization (CWE-639) \u2014 authenticated users with table write access reference other tenants' files by supplying arbitrary attachment keys on row save; attackers inject a victim app's attachment key into a row, then update or delete the row to delete that object from the shared APPS bucket or read it via presigned URLs. CVSS v3.1 9.9 (v4.0 8.5). Affects before 4.0.0; fixed 4.0.0 (GHSA-wr7j-r9v4-6rjh). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/Budibase/budibase/security/advisories/GHSA-wr7j-r9v4-6rjh"
   },
   {
    "id": "CVE-2012-20007",
@@ -16161,6 +16209,86 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "source": "https://access.redhat.com/errata/RHSA-2026:22644"
   },
   {
+   "id": "CVE-2026-137499",
+   "title": "Budibase authentication bypass via unverified-email OIDC/SSO account linking \u2014 unauthenticated takeover of password-less global Builder accounts",
+   "product": "Budibase 3.41.0 through 3.x",
+   "score": 9.8,
+   "cvss": "9.8 (CVSS v3.1; 9.3 CVSS v4.0)",
+   "fixed": "4.0.0",
+   "published": "2026-11-26T16:18:01.160Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): authentication bypass (CWE-287) \u2014 unauthenticated attackers take over password-less global Builder accounts via unverified-email OIDC/SSO account linking; attackers assert a victim's email with email_verified=false at a trusted IdP, bypassing the isAccountLinkable allowlist to control all apps, datasources, and automations. CVSS v3.1 9.8 (v4.0 9.3). Affects 3.41.0 before 4.0.0; fixed 4.0.0 (GHSA-jm85-crv2-88px). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/Budibase/budibase/security/advisories/GHSA-jm85-crv2-88px"
+  },
+  {
+   "id": "CVE-2026-137536",
+   "title": "ToolJet authentication bypass in server OAuth SSO sign-in \u2014 unauthenticated account takeover via unverified-email tokens",
+   "product": "ToolJet before 3.21.94-beta (server OAuth SSO)",
+   "score": 9.8,
+   "cvss": "9.8 (CVSS v3.1; 9.3 CVSS v4.0)",
+   "fixed": "3.21.94-beta",
+   "published": "2026-11-26T16:18:06.410Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): authentication bypass (CWE-290) in the server OAuth SSO sign-in module, which resolves Google and Git SSO logins solely by the provider-asserted email without checking email_verified or binding the SSO subject; unauthenticated attackers submit a trusted-issuer token carrying a victim's unverified email to the SSO callback to obtain the victim's session, including admin accounts. CVSS v3.1 9.8 (v4.0 9.3). Affects before 3.21.94-beta; fixed 3.21.94-beta (GHSA-7g4q-wmw6-7r36). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/ToolJet/ToolJet/security/advisories/GHSA-7g4q-wmw6-7r36"
+  },
+  {
+   "id": "CVE-2026-137550",
+   "title": "Frappe Framework missing authorization in Document.update() \u2014 attackers submit or alter documents they are not authorized to change",
+   "product": "Frappe Framework before 15.122.0 / 16.x before 16.50.0",
+   "score": 9.8,
+   "cvss": "9.8 (CVSS v3.1; 9.3 CVSS v4.0)",
+   "fixed": "15.122.0; 16.50.0",
+   "published": "2026-11-26T16:18:08.660Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): missing authorization (CWE-862) in Document.update(), which fails to validate whether the caller is permitted to submit or modify the target document; attackers invoke document update operations to submit or alter documents they are not authorized to change. CVSS v3.1 9.8 (v4.0 9.3). Affects before 15.122.0 and 16.x before 16.50.0; fixed 15.122.0 / 16.50.0 (GHSA-37jh-f235-72qp). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/frappe/frappe/security/advisories/GHSA-37jh-f235-72qp"
+  },
+  {
+   "id": "CVE-2026-94589",
+   "title": "Extensions For CF7 WordPress plugin unauthenticated arbitrary file upload \u2014 remote code execution (VulnCheck KEV, baseline miss)",
+   "product": "Extensions For CF7 (Contact Form 7 Database, Conditional Fields and Redirection) through 3.4.5",
+   "score": 9.8,
+   "cvss": "9.8 (CVSS v3.1)",
+   "fixed": "3.4.6",
+   "published": "2026-10-10T04:18:19.713Z (NVD)",
+   "exploited": true,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a)/4(c) - BASELINE MISS + NEWLY EXPLOITED (2026-11-26 11:30 EST hourly): published 2026-10-10, never tracked; newly listed in VulnCheck KEV 2026-11-26 (date_added 2026-11-26T00:00:00Z). Arbitrary file upload (CWE-434) via the extcf7_submit function \u2014 missing file extension, MIME type, and size validation in the signature field's validation_filter(), combined with no PHP-execution guards in the upload directory and a sanitize_file_name() bypass that converts shell.php- into shell.php, so unauthenticated attackers upload executable files and achieve remote code execution. CVSS v3.1 9.8 (AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H). Affects through 3.4.5; fixed 3.4.6 (CVE-record trac changeset 3.4.5 -> tags/3.4.6). EXPLOITED (VulnCheck KEV, 1 doc); NOT in CISA KEV (verified against the catalog JSON directly, catalog 2026.11.25). No public PoC confirmed. EPSS 0.01225 / 68.74th (FIRST model 2026-11-26).",
+   "epss": 0.01225,
+   "epss_percentile": 0.68736,
+   "source": "https://www.wordfence.com/threat-intel/vulnerabilities/id/fa3193c4-dd3e-4d9e-be42-769c7358beae"
+  },
+  {
+   "id": "CVE-2021-42235",
+   "title": "osTicket SQL injection in login / password-reset \u2014 attackers access the osTicket administration profile (VulnCheck KEV, baseline miss)",
+   "product": "osTicket before 1.14.8 / 1.15.4",
+   "score": 9.8,
+   "cvss": "9.8 (CVSS v3.1)",
+   "fixed": "1.14.8; 1.15.4",
+   "published": "2022-05-04T17:15:08.087Z (NVD)",
+   "exploited": true,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a)/4(c) - BASELINE MISS + NEWLY EXPLOITED (2026-11-26 11:30 EST hourly): published 2022-05-04, never tracked; newly listed in VulnCheck KEV 2026-11-26 (date_added 2026-11-26T00:00:00Z). SQL injection (CWE-89) in osTicket before 1.14.8 and 1.15.4 login and password reset process allows attackers to access the osTicket administration profile functionality. CVSS v3.1 9.8 (AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H). Fixed 1.14.8 / 1.15.4. EXPLOITED (VulnCheck KEV, 1 doc); NOT in CISA KEV (verified against the catalog JSON directly, catalog 2026.11.25). No public PoC confirmed. EPSS 0.01036 / 63.13th (FIRST model 2026-11-26).",
+   "epss": 0.01036,
+   "epss_percentile": 0.63131,
+   "source": "https://github.com/osTicket/osTicket/commit/e28291022e662ffa754e170c09cade7bdadf3fd9"
+  },
+  {
    "id": "CVE-2025-65200",
    "title": "LocalStack CloudFormation deploy endpoint RCE via crafted templateURL content (lag-gap catch-up)",
    "product": "LocalStack 4.9.2",
@@ -20346,6 +20474,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "source": "https://access.redhat.com/errata/RHSA-2026:46885"
   },
   {
+   "id": "CVE-2026-137544",
+   "title": "LaraDashboard path traversal in module ZIP handling \u2014 module.create users write PHP files into the public directory (remote code execution)",
+   "product": "LaraDashboard before 1.5.0",
+   "score": 9.4,
+   "cvss": "9.4 (CVSS v4.0; 9.1 CVSS v3.1)",
+   "fixed": "1.5.0",
+   "published": "2026-11-26T16:18:07.603Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (2) (2026-11-26 11:30 EST hourly): path traversal (CWE-22) in module.json providers and composer.json psr-4 namespace parsing, which derives destination folder names without excluding traversal characters; attackers with module.create permission upload a crafted module ZIP to write PHP files into the public directory, achieving unauthenticated remote code execution. CVSS v4.0 9.4 (v3.1 9.1). Affects before 1.5.0; fixed 1.5.0 (GHSA-75q6-qrv2-96rx). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/laradashboard/laradashboard/security/advisories/GHSA-75q6-qrv2-96rx"
+  },
+  {
    "id": "CVE-2023-22793",
    "title": "Veeam Management Pack for Microsoft System Center unauthenticated RCE on Veeam Virtualization Extensions service",
    "product": "Veeam Management Pack for Microsoft System Center 9.0 before 13.1.0.334",
@@ -23065,6 +23209,38 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "source": "https://access.redhat.com/errata/RHSA-2026:70587"
   },
   {
+   "id": "CVE-2026-137481",
+   "title": "Traefik authorization bypass via sanitizePath path-parameter dot-segments \u2014 unauthenticated access to protected resources",
+   "product": "Traefik before 2.11.62 / 3.x before 3.7.18 / 3.8.0-rc.1",
+   "score": 9.3,
+   "cvss": "9.3 (CVSS v3.1; 7.8 CVSS v4.0)",
+   "fixed": "2.11.62; 3.7.18; 3.8.0-rc.1",
+   "published": "2026-11-26T16:17:57.673Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): authorization bypass (CWE-22) \u2014 the sanitizePath entry point option leaves dot-segments carrying path parameters, such as /..;x/, unresolved when matching routers and applying middlewares; unauthenticated attackers send requests like /public/..;x/admin to a parameter-stripping backend shared with a protected router, bypassing authentication or authorization middlewares to reach protected resources. CVSS v3.1 9.3 (v4.0 7.8). Affects before 2.11.62, 3.x before 3.7.18, and 3.8.0-rc.1; fixed 2.11.62 / 3.7.18 / 3.8.0-rc.1 (GHSA-cp28-5662-543f). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/traefik/traefik/security/advisories/GHSA-cp28-5662-543f"
+  },
+  {
+   "id": "CVE-2026-23734",
+   "title": "XWiki Platform path traversal via ssx/jsx resource parameter \u2014 unauthenticated read of configuration files (VulnCheck KEV, baseline miss)",
+   "product": "XWiki Platform / xwiki-commons (ssx/jsx endpoints)",
+   "score": 9.3,
+   "cvss": "9.3 (CVSS v4.0)",
+   "fixed": "16.10.17; 17.4.9; 17.10.3; 18.1.0-rc-1",
+   "published": "2026-05-20T18:39:32.313Z (CVE.org)",
+   "exploited": true,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a)/4(c) - BASELINE MISS + NEWLY EXPLOITED (2026-11-26 11:30 EST hourly): published 2026-05-20, never tracked (no NVD record yet; CVE.org record corroborated via CIRCL); newly listed in VulnCheck KEV 2026-11-26 (date_added 2026-11-26T00:00:00Z). Path traversal (CWE-22) \u2014 versions prior to 18.1.0-rc-1, 17.10.3, 17.4.9, and 16.10.17 allow unauthenticated access to read configuration files via URLs such as /bin/ssx/Main/WebHome?resource=/../../WEB-INF/xwiki.cfg&minify=false, exploiting the resources parameter of the ssx and jsx endpoints with leading slashes. CVSS v4.0 9.3 (AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H). Fixed 16.10.17 / 17.4.9 / 17.10.3 / 18.1.0-rc-1 (GHSA-xq3r-2qv5-vqqm). EXPLOITED (VulnCheck KEV, 1 doc); NOT in CISA KEV (verified against the catalog JSON directly, catalog 2026.11.25). No public PoC confirmed. EPSS 0.01683 / 77.37th (FIRST model 2026-11-26).",
+   "epss": 0.01683,
+   "epss_percentile": 0.77369,
+   "source": "https://github.com/xwiki/xwiki-commons/security/advisories/GHSA-xq3r-2qv5-vqqm"
+  },
+  {
    "id": "CVE-2016-20105",
    "title": "Lucee Server insecure default configuration -> unauthenticated admin password set",
    "product": "Lucee Server",
@@ -25019,6 +25195,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "epss": null,
    "epss_percentile": null,
    "source": "https://downloads.seppmail.com/extrelnotes/151/ERN15.1.html"
+  },
+  {
+   "id": "CVE-2026-137547",
+   "title": "Coder database password exposure via API error responses \u2014 unauthenticated attackers obtain a temporary AWS IAM database password",
+   "product": "Coder before 2.29.27 / 2.30.0-2.34.18 / 2.35.0-2.37.10 / 2.38.0-2.38.6 / 2.39.0",
+   "score": 9.2,
+   "cvss": "9.2 (CVSS v4.0; 8.1 CVSS v3.1)",
+   "fixed": "2.29.27; 2.34.19; 2.37.11; 2.38.7; 2.39.1",
+   "published": "2026-11-26T16:18:08.157Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): information exposure (CWE-209) \u2014 database connection errors containing a temporary AWS IAM database password are returned in API key middleware responses; during database connection failures, unauthenticated attackers send a well-formed but invalid API key to obtain the password and access the PostgreSQL database for 15 minutes. CVSS v4.0 9.2 (v3.1 8.1). Affects before 2.29.27, 2.30.0 before 2.34.19, 2.35.0 before 2.37.11, 2.38.0 before 2.38.7, and 2.39.0 before 2.39.1; fixed 2.29.27 / 2.34.19 / 2.37.11 / 2.38.7 / 2.39.1 (GHSA-w4m3-qhx8-c649). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/coder/coder/security/advisories/GHSA-w4m3-qhx8-c649"
   },
   {
    "id": "CVE-2019-17382",
@@ -29233,6 +29425,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "source": "https://access.redhat.com/errata/RHSA-2026:74503"
   },
   {
+   "id": "CVE-2026-137465",
+   "title": "Parse Server Google Play Games authentication bypass \u2014 attacker signs in as another user's player ID (account takeover)",
+   "product": "Parse Server 3.10.0 through 8.6.122 / 9.0.0 through 9.11.0",
+   "score": 9.1,
+   "cvss": "9.1 (CVSS v4.0; 7.4 CVSS v3.1)",
+   "fixed": "8.6.123; 9.11.1-alpha.4",
+   "published": "2026-11-26T16:17:54.900Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): authentication bypass (CWE-287) in the Google Play Games authentication adapter, which does not verify that the supplied player ID belongs to the presented access token \u2014 attackers sign in with their own Google Play Games credential while claiming another user's player ID to take over that account or link that player ID to their own account. CVSS v4.0 9.1 (v3.1 7.4). Affects 3.10.0 before 8.6.123 and 9.0.0 before 9.11.1-alpha.4; fixed 8.6.123 / 9.11.1-alpha.4 (GHSA-r66f-3q22-grc4). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/parse-community/parse-server/security/advisories/GHSA-r66f-3q22-grc4"
+  },
+  {
    "id": "CVE-2025-30023",
    "title": "Authenticated RCE via insecure deserialization (Axis Camera Station exploit chain)",
    "product": "Axis Camera Station",
@@ -29848,6 +30056,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "epss": 0.02058,
    "epss_percentile": 0.81957,
    "source": "https://nvd.nist.gov/vuln/detail/CVE-2025-12548"
+  },
+  {
+   "id": "CVE-2026-137471",
+   "title": "SiYuan cross-site scripting via WebDAV sync error formatting \u2014 network attacker executes JavaScript with Node integration",
+   "product": "SiYuan before 3.8.10",
+   "score": 9.0,
+   "cvss": "9.0 (CVSS v4.0; 8.3 CVSS v3.1)",
+   "fixed": "3.8.10",
+   "published": "2026-11-26T16:17:55.933Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (2) (2026-11-26 11:30 EST hourly): cross-site scripting (CWE-79) \u2014 WebDAV sync error formatting skips HTML escaping for certain malformed-response errors, passing raw markup to the Electron notification renderer; a network attacker who alters a cleartext HTTP WebDAV response can inject event-handler markup that, when the victim manually starts sync, executes JavaScript with Node integration as the logged-in user. CVSS v4.0 9.0 (v3.1 8.3). Affects before 3.8.10; fixed 3.8.10 (GHSA-7258-5hpf-xq6w). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-7258-5hpf-xq6w"
   },
   {
    "id": "CVE-2025-64441",
@@ -50668,6 +50892,150 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "source": "https://access.redhat.com/errata/RHSA-2026:74503"
   },
   {
+   "id": "CVE-2026-109921",
+   "title": "Uyuni authentication bypass in system.setPillar / system.getPillar \u2014 logged-in attackers inject code into other managed system spaces",
+   "product": "Uyuni before 5.1.35 / 5.2.25 / 5.3.5",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1)",
+   "fixed": "5.1.35; 5.2.25; 5.3.5",
+   "published": "2026-11-26T16:17:49.107Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (2)/(3) (2026-11-26 11:30 EST hourly): authentication bypass (CWE-639) in the system.setPillar and system.getPillar functions \u2014 logged-in attackers inject code into other managed system spaces. CVSS v3.1 8.8 (AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H). Affects before 5.1.35, 5.2.0 before 5.2.25, 5.3.0 before 5.3.5; fixed 5.1.35 / 5.2.25 / 5.3.5 (GHSA-85hm-6qj2-4m78). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/uyuni-project/uyuni/security/advisories/GHSA-85hm-6qj2-4m78"
+  },
+  {
+   "id": "CVE-2026-137456",
+   "title": "FreeRDP client heap out-of-bounds write via ORDER_BOUNDS integer overflow \u2014 malicious RDP server code execution",
+   "product": "FreeRDP before 3.33.0 (client GDI drawing-order handling)",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v4.0; 8.2 CVSS v3.1)",
+   "fixed": "3.33.0",
+   "published": "2026-11-26T16:17:53.343Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (2) (2026-11-26 11:30 EST hourly): integer overflow (CWE-190) in the client GDI handling of accumulated drawing-order bounds \u2014 wrapped INT32 coordinates yield a zero-width clip region that skips clipping in gdi_FillRect; a malicious RDP server sends many ORDER_BOUNDS orders followed by an OPAQUE_RECT order to trigger a heap out-of-bounds write past the client's drawing bitmap, potentially leading to code execution. CVSS v4.0 8.8 (v3.1 8.2). Affects before 3.33.0; fixed 3.33.0 (GHSA-2hm9-2h5q-x525). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/FreeRDP/FreeRDP/security/advisories/GHSA-2hm9-2h5q-x525"
+  },
+  {
+   "id": "CVE-2026-137470",
+   "title": "SiYuan stored cross-site scripting via block attributes \u2014 executes OS commands via Node integration in the desktop app",
+   "product": "SiYuan before 3.8.11",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1; 8.7 CVSS v4.0)",
+   "fixed": "3.8.11",
+   "published": "2026-11-26T16:17:55.763Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (2) (2026-11-26 11:30 EST hourly): stored cross-site scripting (CWE-79) that reaches code execution \u2014 attackers inject DOM event handlers by storing handler-named block attributes such as onmouseover; crafted .sy.zip packages or Markdown files whose attributes reach renderCustom or the unsanitised preview pane execute OS commands via Node integration in the desktop app. CVSS v3.1 8.8 (v4.0 8.7). Affects before 3.8.11; fixed 3.8.11 (GHSA-x62v-7955-xx6v). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-x62v-7955-xx6v"
+  },
+  {
+   "id": "CVE-2026-137490",
+   "title": "SurrealDB authorization bypass via the JavaScript surrealdb.query() bridge \u2014 restricted subjects execute arbitrary queries",
+   "product": "SurrealDB before 4.0.0",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1; 8.7 CVSS v4.0)",
+   "fixed": "4.0.0",
+   "published": "2026-11-26T16:17:59.330Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): authorization bypass (CWE-862) \u2014 attackers permitted to run a specific script can call the JavaScript surrealdb.query() bridge to bypass the Capabilities::allows_query() gate and execute unrestricted queries beyond their predefined operations. CVSS v3.1 8.8 (v4.0 8.7). Affects before 4.0.0; fixed 4.0.0 (GHSA-fq69-wr4w-v3gm). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-fq69-wr4w-v3gm"
+  },
+  {
+   "id": "CVE-2026-137492",
+   "title": "Budibase workspace backup authorization bypass \u2014 workspace-scoped builders steal, restore, or delete other workspaces' backups",
+   "product": "Budibase before 4.0.0",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1; 8.7 CVSS v4.0)",
+   "fixed": "4.0.0",
+   "published": "2026-11-26T16:17:59.660Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): authorization bypass (CWE-639) \u2014 workspace-scoped builders access other workspaces' backups by supplying a foreign backupId; attackers substitute predictable backup IDs in backup download, import, update, or delete routes to steal archives, restore victim data into their workspace, or delete backups. CVSS v3.1 8.8 (v4.0 8.7). Affects before 4.0.0; fixed 4.0.0 (GHSA-mvg6-4xvw-gpvc). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/Budibase/budibase/security/advisories/GHSA-mvg6-4xvw-gpvc"
+  },
+  {
+   "id": "CVE-2026-137523",
+   "title": "ToolJet authentication bypass in instance-level Google SSO \u2014 unauthenticated login as any user via a foreign OAuth client token",
+   "product": "ToolJet before 3.21.96-LTS (Google SSO)",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1; 8.6 CVSS v4.0)",
+   "fixed": "3.21.96-LTS",
+   "published": "2026-11-26T16:18:04.520Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): authentication bypass (CWE-287) in instance-level Google SSO \u2014 the id_token audience is not verified when no Google OAuth client ID is configured (the shipped default); unauthenticated attackers submit a Google-signed id_token minted for their own OAuth client to /api/sso/sign-in/common/google without an organizationId, obtaining a session as any existing user with the matching email. CVSS v3.1 8.8 (v4.0 8.6). Affects before 3.21.96-LTS; fixed 3.21.96-LTS (GHSA-xfj2-r6pf-4hmg). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/ToolJet/ToolJet/security/advisories/GHSA-xfj2-r6pf-4hmg"
+  },
+  {
+   "id": "CVE-2026-137526",
+   "title": "ToolJet authorization bypass in the internal-database (TJDB) PostgREST proxy \u2014 any authenticated member reads/modifies all tenants' tables",
+   "product": "ToolJet before 3.21.96-LTS (TJDB PostgREST proxy)",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1; 8.7 CVSS v4.0)",
+   "fixed": "3.21.96-LTS",
+   "published": "2026-11-26T16:18:05.037Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): authorization bypass (CWE-863) in the internal database (TJDB) PostgREST proxy, which grants proxy access to every logged-in user and derives the database role and schema from the client-supplied tj-workspace-id header; any authenticated workspace member sends requests to /api/tooljet-db/proxy/<tableId> to read and modify TJDB tables, bypassing app, query, and table permissions, and in SQL-mode-disabled (Cloud) deployments can access all tenants' tables. CVSS v3.1 8.8 (v4.0 8.7). Affects before 3.21.96-LTS; fixed 3.21.96-LTS (GHSA-r8q6-5wq4-p659). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/ToolJet/ToolJet/security/advisories/GHSA-r8q6-5wq4-p659"
+  },
+  {
+   "id": "CVE-2026-137556",
+   "title": "Dockhand path traversal in validateStackPath \u2014 authenticated users write arbitrary files to protected system directories (RCE as root)",
+   "product": "Dockhand before 1.0.57",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1; 8.7 CVSS v4.0)",
+   "fixed": "1.0.57",
+   "published": "2026-11-26T16:18:09.527Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (2) (2026-11-26 11:30 EST hourly): path traversal (CWE-22) in validateStackPath, which omits the isProtectedPath() check and permits writes to protected system directories; authenticated users with stacks:edit permission send a crafted composePath to PUT /api/stacks/[name]/compose to write arbitrary files, such as cron payloads, achieving remote code execution as root. CVSS v3.1 8.8 (v4.0 8.7). Affects before 1.0.57; fixed 1.0.57 (GHSA-97wr-gv48-x7fm). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/Finsys/dockhand/security/advisories/GHSA-97wr-gv48-x7fm"
+  },
+  {
+   "id": "CVE-2026-76075",
+   "title": "Warehouse Cargo WordPress theme arbitrary file upload \u2014 authenticated subscribers upload and activate arbitrary plugins (RCE)",
+   "product": "Warehouse Cargo theme for WordPress through 2.7.4",
+   "score": 8.8,
+   "cvss": "8.8 (CVSS v3.1)",
+   "fixed": "2.7.5",
+   "published": "2026-11-26T16:18:11.853Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (2) (2026-11-26 11:30 EST hourly): arbitrary file upload (CWE-434) via the warehouse_cargo_install_and_activate_plugin() AJAX handler, which performs no nonce verification and no capability check; any authenticated user (Subscriber-level and above) supplies an attacker-controlled URL that the server fetches, writes into wp-content/plugins/, extracts with unzip_file() (which does not filter file extensions), and activates via activate_plugin(), achieving remote code execution. CVSS v3.1 8.8 (AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H). Affects through 2.7.4; fixed 2.7.5 (current theme release 2.7.5, 2026-11-15, per WordPress.org theme API). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://themes.trac.wordpress.org/changeset?reponame=&old=359182%40warehouse-cargo&new=359182%40warehouse-cargo"
+  },
+  {
    "id": "CVE-2010-20125",
    "title": "DedeCMS file inclusion in plus/carbuyaction.php -> local file disclosure (old CVE, newly published)",
    "product": "DedeCMS before 5.7",
@@ -55614,6 +55982,118 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "source": "https://github.com/LibreChat-AI/LibreChat/releases/tag/v0.8.9"
   },
   {
+   "id": "CVE-2026-137457",
+   "title": "FreeRDP shadow server missing authentication \u2014 unauthenticated attackers inject keystrokes/mouse input into the host X11 session",
+   "product": "FreeRDP shadow server 3.0.0 through 3.32.x",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v4.0; 7.5 CVSS v3.1)",
+   "fixed": "3.33.0",
+   "published": "2026-11-26T16:17:53.513Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): missing authentication (CWE-306) in the shadow server's fast-path input handlers \u2014 attackers negotiate TLS-only RDP, skip Confirm Active, and send Fast-Path Input Event PDUs to inject keystrokes and mouse movement into the host X11 session via XTEST. CVSS v4.0 8.7 (v3.1 7.5). Affects 3.0.0 through before 3.33.0; fixed 3.33.0 (GHSA-j5pq-cm28-qm6v). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/FreeRDP/FreeRDP/security/advisories/GHSA-j5pq-cm28-qm6v"
+  },
+  {
+   "id": "CVE-2026-137467",
+   "title": "SiYuan DejaVu sync path traversal \u2014 on-path attacker overwrites workspace data files via crafted WebDAV index ID",
+   "product": "SiYuan before 3.8.11 (DejaVu sync)",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v4.0; 7.5 CVSS v3.1)",
+   "fixed": "3.8.11",
+   "published": "2026-11-26T16:17:55.250Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) (2026-11-26 11:30 EST hourly): path traversal (CWE-22) \u2014 the DejaVu sync code accepts a non-hexadecimal 40-byte remote index ID from WebDAV responses and joins it into the repository indexes path unchecked; an on-path attacker altering plaintext HTTP WebDAV sync responses can overwrite a workspace data file, such as a .sy note, with compressed index data. CVSS v4.0 8.7 (v3.1 7.5). Affects before 3.8.11; fixed 3.8.11 (GHSA-24v5-vjqf-qhv9). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-24v5-vjqf-qhv9"
+  },
+  {
+   "id": "CVE-2026-137468",
+   "title": "SiYuan publish-password lockout bypass \u2014 remote attackers brute-force publish passwords and read protected documents",
+   "product": "SiYuan 3.8.0 through 3.8.10",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v4.0; 7.5 CVSS v3.1)",
+   "fixed": "3.8.11",
+   "published": "2026-11-26T16:17:55.420Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): lockout bypass (CWE-307) \u2014 attackers forge client-computable publish-auth-<ID> cookies (SHA-256(ID + candidate) computed locally) and send them on content requests such as /api/filetree/getDoc to guess publish passwords without throttling and read protected documents. CVSS v4.0 8.7 (v3.1 7.5). Affects 3.8.0 before 3.8.11; fixed 3.8.11 (GHSA-6fw6-h6p3-c6gf). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-6fw6-h6p3-c6gf"
+  },
+  {
+   "id": "CVE-2026-137478",
+   "title": "Traefik ForwardAuth authentication bypass via Proxy-Authorization \u2014 unauthenticated attackers reuse another user's NTLM/Negotiate session",
+   "product": "Traefik before 2.11.62 / 3.x before 3.7.18 / 3.8.0-rc.1 (ForwardAuth middleware)",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v3.1; 7.0 CVSS v4.0)",
+   "fixed": "2.11.62; 3.7.18; 3.8.0-rc.1",
+   "published": "2026-11-26T16:17:57.157Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): authentication bypass (CWE-287) in the ForwardAuth middleware \u2014 connection isolation for NTLM and Negotiate credentials checks only the Authorization header, not Proxy-Authorization; unauthenticated attackers send such credentials in Proxy-Authorization to reuse a shared authentication-server connection already authenticated by another user, receive that user's identity via authResponseHeaders, and access backends as that user. CVSS v3.1 8.7 (v4.0 7.0). Affects before 2.11.62, 3.x before 3.7.18, and 3.8.0-rc.1; fixed 2.11.62 / 3.7.18 / 3.8.0-rc.1 (GHSA-p956-6gvv-mxqp). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/traefik/traefik/security/advisories/GHSA-p956-6gvv-mxqp"
+  },
+  {
+   "id": "CVE-2026-137480",
+   "title": "Traefik client certificate authentication bypass in the Kubernetes Ingress NGINX provider \u2014 forged Ssl-Client-* identities",
+   "product": "Traefik 3.7.15 through 3.7.17 / 3.8.0-rc.1 (Kubernetes Ingress NGINX provider)",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v3.1; 7.0 CVSS v4.0)",
+   "fixed": "3.7.18; 3.8.0-rc.2",
+   "published": "2026-11-26T16:17:57.497Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): authentication bypass (CWE-290) \u2014 on hosts shared by multiple Ingresses using auth-tls-secret, Ssl-Client-* headers are built per Ingress while the TLS handshake uses the first Ingress's settings; unauthenticated remote attackers obtain Ssl-Client-Verify: SUCCESS with a client-chosen subject and issuer for an unverified certificate, or inject Ssl-Client-* headers directly, presenting forged identities to backends that trust the proxy. CVSS v3.1 8.7 (v4.0 7.0). Affects 3.7.15 before 3.7.18 and 3.8.0-rc.1 before 3.8.0-rc.2; fixed 3.7.18 / 3.8.0-rc.2 (GHSA-ccgh-9g52-6vwg). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/traefik/traefik/security/advisories/GHSA-ccgh-9g52-6vwg"
+  },
+  {
+   "id": "CVE-2026-137497",
+   "title": "Budibase information disclosure via public settings endpoint \u2014 unauthenticated attackers retrieve legacy LiteLLM credentials",
+   "product": "Budibase before 4.0.0",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v4.0; 7.5 CVSS v3.1)",
+   "fixed": "4.0.0",
+   "published": "2026-11-26T16:18:00.477Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) (2026-11-26 11:30 EST hourly): information disclosure (CWE-200) \u2014 unauthenticated attackers query the public settings endpoint (GET /api/global/configs/public) to obtain liteLLM.keyId and secretKey, enabling unauthorized use of tenant LiteLLM resources. Tracked per the CreditNirvana hardcoded-API-key precedent (unauthenticated credential disclosure, 8.7). CVSS v4.0 8.7 (v3.1 7.5). Affects before 4.0.0; fixed 4.0.0 (GHSA-c24r-7gmq-4rgm). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/Budibase/budibase/security/advisories/GHSA-c24r-7gmq-4rgm"
+  },
+  {
+   "id": "CVE-2026-137552",
+   "title": "Frappe Framework undocumented OAuth2 password grant bypasses two-factor authentication",
+   "product": "Frappe Framework before 15.121.1 / 16.x before 16.35.0",
+   "score": 8.7,
+   "cvss": "8.7 (CVSS v4.0; 7.5 CVSS v3.1)",
+   "fixed": "15.121.1; 16.35.0",
+   "published": "2026-11-26T16:18:09.013Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): authentication bypass (CWE-287) \u2014 the token endpoint accepts an undocumented OAuth2 Resource Owner Password Credentials (password) grant, which does not enforce two-factor authentication or forced password resets; an attacker with a user's valid credentials uses this grant to obtain a full-access OAuth token, bypassing 2FA. CVSS v4.0 8.7 (v3.1 7.5). Affects before 15.121.1 and 16.x before 16.35.0; fixed 15.121.1 / 16.35.0 (GHSA-h3mh-9vmc-cpfg). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/frappe/frappe/security/advisories/GHSA-h3mh-9vmc-cpfg"
+  },
+  {
    "id": "CVE-2026-93584",
    "title": "OTRS External Survey endpoint unauthenticated SQL injection - ticket data extraction",
    "product": "OTRS 2024.3.1 through 2026.8.1",
@@ -60092,6 +60572,70 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "epss": 0.00957,
    "epss_percentile": 0.60023,
    "source": "https://access.redhat.com/errata/RHSA-2026:39322"
+  },
+  {
+   "id": "CVE-2026-137491",
+   "title": "Budibase query injection in ArangoDB/Snowflake datasources \u2014 low-privilege or anonymous users read/modify/delete entire datasources",
+   "product": "Budibase before 4.0.0",
+   "score": 8.6,
+   "cvss": "8.6 (CVSS v4.0; 8.1 CVSS v3.1)",
+   "fixed": "4.0.0",
+   "published": "2026-11-26T16:17:59.503Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) (2026-11-26 11:30 EST hourly): query injection (CWE-89) \u2014 low-privilege or anonymous users inject AQL or SQL by supplying unescaped parameters to ArangoDB and Snowflake queries; attackers execute published queries with crafted parameter values to bypass filters, read entire datasources, and modify or delete all stored documents. CVSS v4.0 8.6 (v3.1 8.1). Affects before 4.0.0; fixed 4.0.0 (GHSA-p25h-79jv-pph3). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/Budibase/budibase/security/advisories/GHSA-p25h-79jv-pph3"
+  },
+  {
+   "id": "CVE-2026-137493",
+   "title": "Budibase authorization bypass via view row routes \u2014 view users and anonymous visitors read, modify, and delete entire base tables",
+   "product": "Budibase server 3.0.0 through 3.x",
+   "score": 8.6,
+   "cvss": "8.6 (CVSS v4.0; 8.1 CVSS v3.1)",
+   "fixed": "4.0.0",
+   "published": "2026-11-26T16:17:59.823Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): authorization bypass (CWE-639) \u2014 view users and anonymous visitors access entire base tables by passing a view id to the /api/:viewId/rows routes; attackers read, export, modify, and delete rows outside the view filter, including hidden columns, or read the full table unauthenticated through PUBLIC views. CVSS v4.0 8.6 (v3.1 8.1). Affects server 3.0.0 before 4.0.0; fixed 4.0.0 (GHSA-p5gp-4j5q-985c). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/Budibase/budibase/security/advisories/GHSA-p5gp-4j5q-985c"
+  },
+  {
+   "id": "CVE-2026-137500",
+   "title": "Budibase privilege escalation via invite-code disclosure \u2014 non-admin Creators hijack invited identities up to global admin",
+   "product": "Budibase before 4.0.0",
+   "score": 8.6,
+   "cvss": "8.6 (CVSS v4.0; 7.2 CVSS v3.1)",
+   "fixed": "4.0.0",
+   "published": "2026-11-26T16:18:01.323Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): privilege escalation (CWE-266) \u2014 non-admin Creator or app-builder users read pending invite bearer codes via GET /api/global/users/invites, then submit a stolen code with a chosen password to the public /api/global/users/invite/accept endpoint, hijacking invited identities up to global admin. CVSS v4.0 8.6 (v3.1 7.2). Affects before 4.0.0; fixed 4.0.0 (GHSA-j3jq-gq5m-gv3v). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/Budibase/budibase/security/advisories/GHSA-j3jq-gq5m-gv3v"
+  },
+  {
+   "id": "CVE-2026-137551",
+   "title": "Frappe Framework Jinja sandbox bypass via module-path hooks \u2014 authenticated template authors achieve server-side code execution",
+   "product": "Frappe Framework before 15.121.2 / 16.x before 16.36.0",
+   "score": 8.6,
+   "cvss": "8.6 (CVSS v4.0; 7.2 CVSS v3.1)",
+   "fixed": "15.121.2; 16.36.0",
+   "published": "2026-11-26T16:18:08.837Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (2) (2026-11-26 11:30 EST hourly): sandbox bypass (CWE-749) \u2014 functions imported into module-path-hooked modules are exposed as Jinja globals, making them callable from sandboxed templates; authenticated users who can author rendered templates, such as Print Formats, invoke these functions by name to achieve server-side code execution that bypasses the Jinja sandbox. CVSS v4.0 8.6 (v3.1 7.2). Affects before 15.121.2 and 16.x before 16.36.0; fixed 15.121.2 / 16.36.0 (GHSA-qrxv-3vjh-gpx7). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/frappe/frappe/security/advisories/GHSA-qrxv-3vjh-gpx7"
   },
   {
    "cvss": "8.5 (CVSS v4.0)",
@@ -65317,6 +65861,38 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-123686"
   },
   {
+   "id": "CVE-2026-137474",
+   "title": "SiYuan world-readable conf.json exposes the administrator AccessAuthCode \u2014 local users authenticate as administrator",
+   "product": "SiYuan 3.8.8 through 3.8.9",
+   "score": 8.4,
+   "cvss": "8.4 (CVSS v4.0; 7.1 CVSS v3.1)",
+   "fixed": "3.8.10",
+   "published": "2026-11-26T16:17:56.460Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): incorrect permission assignment (CWE-732) \u2014 workspace directories are created mode 0755 and conf.json mode 0644, exposing the cleartext AccessAuthCode administrator credential; local users able to traverse the SiYuan user's home path can read it and authenticate as administrator via Basic authentication, e.g. calling /api/system/setAPIToken to change the API token. CVSS v4.0 8.4 (v3.1 7.1). Affects 3.8.8 before 3.8.10; fixed 3.8.10 (GHSA-4mwh-6232-9frp). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-4mwh-6232-9frp"
+  },
+  {
+   "id": "CVE-2026-137546",
+   "title": "Coder session-token leak via 'coder open app' \u2014 malicious template authors steal user tokens and impersonate administrators",
+   "product": "Coder 2.29.17 through 2.39.0 (coder open app)",
+   "score": 8.4,
+   "cvss": "8.4 (CVSS v4.0; 6.1 CVSS v3.1)",
+   "fixed": "2.29.27; 2.34.19; 2.37.11; 2.38.7; 2.39.1",
+   "published": "2026-11-26T16:18:07.953Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): credential exposure (CWE-200) \u2014 coder open app substitutes $SESSION_TOKEN into template-defined external app URLs without validating scheme or destination; malicious template authors define an external app URL or IDE link pointing to an attacker server so users running coder open app leak their token, enabling impersonation of shared users or administrators. CVSS v4.0 8.4 (v3.1 6.1). Affects 2.29.17 before 2.29.27, 2.32.7 before 2.33.0, 2.33.8 before 2.34.0, 2.34.2 before 2.34.19, 2.35.0 before 2.37.11, 2.38.0 before 2.38.7, and 2.39.0 before 2.39.1; fixed 2.29.27 / 2.34.19 / 2.37.11 / 2.38.7 / 2.39.1 (GHSA-6g9g-vmp7-r45p). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/coder/coder/security/advisories/GHSA-6g9g-vmp7-r45p"
+  },
+  {
    "id": "CVE-2018-25442",
    "title": "Baidu UEditor server-side request forgery (catchimage)",
    "product": "Baidu UEditor",
@@ -68532,10 +69108,10 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "cvss": "8.3 (CVSS v4.0; 6.5 CVSS v3.1; CWE-303 Incorrect Implementation of Authentication Algorithm)",
    "fixed": "No fixed release yet (2.670 is the latest Webmin release, 2026-09-21; CNA lists affected <= 2.670 with no fixed version)",
    "published": "2026-11-25T04:17:33.530",
-   "exploited": false,
+   "exploited": true,
    "kev": false,
    "poc": false,
-   "status": "NEW - MATERIAL 4(a) (2026-11-24 23:30 EST hourly): newly published in NVD pub window (2026-11-25T04:17:33.530Z). Scope (1) CVSS 8.3 v4.0 / 6.5 v3.1 + (3) unauthenticated attackers reset passwords for accounts with empty stored hashes (passwd_mode 2) and gain access. No fixed release yet (2.670 is the latest Webmin release, 2026-09-21; CNA lists affected <= 2.670 with no fixed version). No exploitation reported; not in CISA KEV (catalog 2026.11.24, 1,795 entries, verified this run); no public PoC seen. EPSS unscored (null, brand new). Corroborated via NVD + CIRCL (affected <= 2.670).",
+   "status": "NEW - MATERIAL 4(a) (2026-11-24 23:30 EST hourly): newly published in NVD pub window (2026-11-25T04:17:33.530Z). Scope (1) CVSS 8.3 v4.0 / 6.5 v3.1 + (3) unauthenticated attackers reset passwords for accounts with empty stored hashes (passwd_mode 2) and gain access. No fixed release yet (2.670 is the latest Webmin release, 2026-09-21; CNA lists affected <= 2.670 with no fixed version). No exploitation reported; not in CISA KEV (catalog 2026.11.24, 1,795 entries, verified this run); no public PoC seen. EPSS unscored (null, brand new). Corroborated via NVD + CIRCL (affected <= 2.670). STATUS CHANGE 4(c) (2026-11-26 11:30 EST hourly): newly listed in VulnCheck KEV 2026-11-26 \u2014 first exploitation record; NOT in CISA KEV (catalog 2026.11.25, 1,805 entries).",
    "epss": 0.00678,
    "epss_percentile": 0.47459,
    "source": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-134643"
@@ -68731,6 +69307,38 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "epss": 0.00715,
    "epss_percentile": 0.49486,
    "source": "https://access.redhat.com/errata/RHSA-2025:10295"
+  },
+  {
+   "id": "CVE-2026-137542",
+   "title": "LaraDashboard secret settings exposure via SettingObserver action logs \u2014 low-privilege users read plaintext API keys and passwords",
+   "product": "LaraDashboard before 1.5.2",
+   "score": 8.3,
+   "cvss": "8.3 (CVSS v4.0; 7.7 CVSS v3.1)",
+   "fixed": "1.5.2",
+   "published": "2026-11-26T16:18:07.260Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) (2026-11-26 11:30 EST hourly): information disclosure (CWE-532) \u2014 SettingObserver writes full Setting models, including plaintext secret option_value fields, into the action_logs table; users holding only actionlog.view can read API keys, SMTP passwords, and OAuth client secrets through the action log API without settings permissions. Tracked per the CreditNirvana hardcoded-API-key precedent (credential disclosure, 8.3). CVSS v4.0 8.3 (v3.1 7.7). Affects before 1.5.2; fixed 1.5.2 (GHSA-29v7-6x3j-r97q). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/laradashboard/laradashboard/security/advisories/GHSA-29v7-6x3j-r97q"
+  },
+  {
+   "id": "CVE-2026-137543",
+   "title": "LaraDashboard server-side request forgery via the Ollama base URL setting \u2014 authenticated users reach internal services",
+   "product": "LaraDashboard before 1.5.2",
+   "score": 8.3,
+   "cvss": "8.3 (CVSS v4.0; 7.7 CVSS v3.1)",
+   "fixed": "1.5.2",
+   "published": "2026-11-26T16:18:07.430Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) (2026-11-26 11:30 EST hourly): server-side request forgery (CWE-918) \u2014 authenticated users reach internal services by abusing the unvalidated ai_ollama_base_url setting; once a settings.edit user points the Ollama base URL internally, any post.create user can call /admin/ai/generate-seo with provider=ollama to fetch internal data reflected in SEO fields. CVSS v4.0 8.3 (v3.1 7.7). Affects before 1.5.2; fixed 1.5.2 (GHSA-47pj-m4xp-74g5). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/laradashboard/laradashboard/security/advisories/GHSA-47pj-m4xp-74g5"
   },
   {
    "id": "CVE-2023-42442",
@@ -71352,6 +71960,54 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "epss": null,
    "epss_percentile": null,
    "source": "https://www.autodesk.com/trust/security-advisories/adsk-sa-2026-0026"
+  },
+  {
+   "id": "CVE-2026-137472",
+   "title": "SiYuan path traversal via globalCopyFiles/workspaceCopyFiles denylist gaps \u2014 admin token holders read host files (SSH keys, cloud configs)",
+   "product": "SiYuan 3.6.2 through 3.8.9",
+   "score": 8.2,
+   "cvss": "8.2 (CVSS v4.0; 6.8 CVSS v3.1)",
+   "fixed": "3.8.10",
+   "published": "2026-11-26T16:17:56.103Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) (2026-11-26 11:30 EST hourly): path traversal (CWE-22) \u2014 the globalCopyFiles and workspaceCopyFiles denylist omits /home, /mnt, /media, and /snap, so admin token holders can copy other users' SSH authorized_keys, Docker and AWS configs, or mounted files into the workspace and retrieve them via the getFile API. CVSS v4.0 8.2 (v3.1 6.8). Affects 3.6.2 before 3.8.10; fixed 3.8.10 (GHSA-wg79-89vp-f9vw). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-wg79-89vp-f9vw"
+  },
+  {
+   "id": "CVE-2026-137553",
+   "title": "Frappe Framework blind SQL injection via the X-Frappe-Request-Id header (unauthenticated, monitoring enabled)",
+   "product": "Frappe Framework before 15.120.0 / 16.x before 16.33.0",
+   "score": 8.2,
+   "cvss": "8.2 (CVSS v4.0; 5.9 CVSS v3.1)",
+   "fixed": "15.120.0; 16.33.0",
+   "published": "2026-11-26T16:18:09.183Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) (2026-11-26 11:30 EST hourly): blind SQL injection (CWE-89) in the handling of the X-Frappe-Request-Id HTTP header when monitoring is enabled; remote unauthenticated attackers send crafted header values to infer database contents through blind SQL injection techniques. CVSS v4.0 8.2 (v3.1 5.9). Affects before 15.120.0 and 16.x before 16.33.0; fixed 15.120.0 / 16.33.0 (GHSA-vp4r-5v6w-r962). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/frappe/frappe/security/advisories/GHSA-vp4r-5v6w-r962"
+  },
+  {
+   "id": "CVE-2026-137564",
+   "title": "web-token jwt-framework missing key-size check in direct (dir) encryption \u2014 undersized or empty keys allow token decryption and forgery",
+   "product": "web-token jwt-framework / jwt-library before 3.4.13 / 4.0.9 / 4.1.11 / 4.2.6",
+   "score": 8.2,
+   "cvss": "8.2 (CVSS v4.0; 5.9 CVSS v3.1)",
+   "fixed": "3.4.13; 4.0.9; 4.1.11; 4.2.6",
+   "published": "2026-11-26T16:18:10.920Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): missing key-size check (CWE-326) in JWEBuilder and JWEDecrypter for direct (dir) encryption \u2014 undersized keys are zero-padded, so anyone holding a token issued with a half-size AES-CBC-HMAC key can decrypt it, and an empty key also allows forging tokens the decrypter accepts. CVSS v4.0 8.2 (v3.1 5.9). Affects before 3.4.13, 4.0.x before 4.0.9, 4.1.x before 4.1.11, and 4.2.x before 4.2.6 (and jwt-encryption through 3.2.10); fixed 3.4.13 / 4.0.9 / 4.1.11 / 4.2.6 (GHSA-jc6j-46g2-xwqc). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-jc6j-46g2-xwqc"
   },
   {
    "id": "CVE-2024-11289",
@@ -77054,6 +77710,38 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "source": "https://access.redhat.com/errata/RHSA-2026:53644"
   },
   {
+   "id": "CVE-2026-103886",
+   "title": "App Builder WordPress plugin Google ID token audience validation bypass \u2014 unauthenticated login as any user including administrators",
+   "product": "App Builder \u2013 Create Native Android & iOS Apps On The Flight through 5.7.1",
+   "score": 8.1,
+   "cvss": "8.1 (CVSS v3.1)",
+   "fixed": "5.7.2",
+   "published": "2026-11-26T16:17:48.097Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): authentication bypass (CWE-287) \u2014 LoginGoogle::login() fails to validate the 'aud' claim of the supplied Google ID token against any OAuth client ID belonging to the site, fails to verify 'email_verified', and resolves accounts solely by the email claim, while /app-builder/v1/login has a permission_callback that unconditionally returns true. An unauthenticated attacker supplies a Google-signed ID token from an unrelated OAuth client carrying the target user's email and is issued a signed App Builder JWT with that user's full privileges, including Administrator. CVSS v3.1 8.1 (AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H). Affects through 5.7.1; fixed 5.7.2 (WordPress.org changelog: 'Login with Google now checks that the ID token was issued to one of the site's own Google OAuth client IDs', CVE reported by Wordfence). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3799623%40app-builder&new=3799623%40app-builder"
+  },
+  {
+   "id": "CVE-2026-137503",
+   "title": "Budibase JSON injection in S3 delete and Google Sheets query fields \u2014 attackers delete chosen S3 objects or override Sheets row columns",
+   "product": "Budibase before 4.0.0",
+   "score": 8.1,
+   "cvss": "8.1 (CVSS v3.1; 7.2 CVSS v4.0)",
+   "fixed": "4.0.0",
+   "published": "2026-11-26T16:18:01.647Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) (2026-11-26 11:30 EST hourly): JSON injection (CWE-943) \u2014 attackers inject JSON structure into S3 delete and Google Sheets row fields via unescaped template parameters, submitting crafted parameters to the queries endpoint to add extra Key entries, deleting chosen S3 objects or overriding Sheets row columns. CVSS v3.1 8.1 (v4.0 7.2). Affects before 4.0.0; fixed 4.0.0 (GHSA-7h79-cmq7-455p). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/Budibase/budibase/security/advisories/GHSA-7h79-cmq7-455p"
+  },
+  {
    "id": "CVE-2026-101602",
    "title": "Low-privileged HTTP attacker takes over Oracle Agile PLM for Process; requires user interaction (Oracle Oct 2026 CPU)",
    "product": "Oracle Agile PLM for Process (Product Quality Management)",
@@ -79201,6 +79889,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "epss": 0.00925,
    "epss_percentile": 0.58728,
    "source": "https://access.redhat.com/errata/RHSA-2026:36195"
+  },
+  {
+   "id": "CVE-2026-137496",
+   "title": "Budibase server-side template injection via enrichSearchContext \u2014 authenticated users execute sandboxed JavaScript and read SSO users' OAuth2 tokens",
+   "product": "Budibase before 4.0.0 (row search)",
+   "score": 7.6,
+   "cvss": "7.6 (CVSS v3.1; 7.2 CVSS v4.0)",
+   "fixed": "4.0.0",
+   "published": "2026-11-26T16:18:00.293Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (2) (2026-11-26 11:30 EST hourly): server-side template injection (CWE-1336) \u2014 authenticated users with table read permission execute JavaScript by injecting Handlebars js helpers into row search query values; base64-encoded JavaScript submitted through the search endpoint runs in an isolated-vm sandbox via enrichSearchContext() to read OAuth2 access and refresh tokens of SSO users or cause denial of service. CVSS v3.1 7.6 (v4.0 7.2; below 8.0, tracked as template-injection class with SSO-token theft). Affects before 4.0.0; fixed 4.0.0 (GHSA-w7m4-jhq6-jmrg). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/Budibase/budibase/security/advisories/GHSA-w7m4-jhq6-jmrg"
   },
   {
    "id": "CVE-2022-25568",
@@ -82027,6 +82731,38 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "source": "https://access.redhat.com/errata/RHSA-2026:36648"
   },
   {
+   "id": "CVE-2026-137531",
+   "title": "ToolJet authorization bypass via arbitrary environmentId \u2014 view-only users execute queries in restricted environments with stored datasource credentials",
+   "product": "ToolJet before 3.21.96-LTS (data queries)",
+   "score": 7.1,
+   "cvss": "7.1 (CVSS v4.0; 6.5 CVSS v3.1)",
+   "fixed": "3.21.96-LTS",
+   "published": "2026-11-26T16:18:05.713Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): authorization bypass (CWE-639) \u2014 view-only workspace users execute queries in restricted environments by supplying an arbitrary environmentId; attackers call the data-queries run endpoint for draft app versions to execute queries with stored datasource credentials, exposing development or staging data. CVSS v4.0 7.1 (v3.1 6.5; below 8.0, tracked as authz bypass granting credential-backed data access). Affects before 3.21.96-LTS; fixed 3.21.96-LTS (GHSA-xj6p-6rgw-r7pp). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/ToolJet/ToolJet/security/advisories/GHSA-xj6p-6rgw-r7pp"
+  },
+  {
+   "id": "CVE-2026-137537",
+   "title": "ToolJet missing authorization \u2014 authenticated End Users execute other organizations' data queries with decrypted datasource credentials",
+   "product": "ToolJet before 3.21.96-LTS (data queries)",
+   "score": 7.1,
+   "cvss": "7.1 (CVSS v4.0; 7.1 CVSS v3.1)",
+   "fixed": "3.21.96-LTS",
+   "published": "2026-11-26T16:18:06.580Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): missing authorization (CWE-862) \u2014 authenticated End Users execute data queries of apps in other organizations via POST /api/data-queries/:id/run; attackers supply a target data-query id and runtime resolvedOptions to run queries with the datasource's decrypted credentials, reading cross-tenant query results. CVSS v4.0 7.1 (v3.1 7.1; below 8.0, tracked as cross-tenant authz bypass with credential use). Affects before 3.21.96-LTS; fixed 3.21.96-LTS (GHSA-rhm7-c77q-g5cq). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/ToolJet/ToolJet/security/advisories/GHSA-rhm7-c77q-g5cq"
+  },
+  {
    "id": "CVE-2026-129105",
    "title": "Cudy TR3000 authenticated-administrator option injection into root pppd process via L2TP credentials",
    "product": "Cudy TR3000 before 2.5.42",
@@ -82071,6 +82807,22 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "epss": 0.09604,
    "epss_percentile": 0.96217,
    "source": "https://sploitus.com/exploit?id=A8239FC5-AA24-578F-A4BC-81356A6EA869"
+  },
+  {
+   "id": "CVE-2026-137519",
+   "title": "ToolJet improper authorization in data-source update \u2014 Delete-only Builders redirect stored Bearer credentials to an attacker endpoint",
+   "product": "ToolJet before 3.21.94-beta (data sources)",
+   "score": 7.0,
+   "cvss": "7.0 (CVSS v4.0; 6.3 CVSS v3.1)",
+   "fixed": "3.21.94-beta",
+   "published": "2026-11-26T16:18:03.840Z (NVD)",
+   "exploited": false,
+   "kev": false,
+   "poc": false,
+   "status": "NEW 4(a) scope (3) (2026-11-26 11:30 EST hourly): improper authorization (CWE-863) \u2014 Builders with only data source Delete permission can update global data sources via PUT /api/data-sources; attackers change a REST data source base URL so later query executions send stored Bearer credentials to an attacker-controlled endpoint. CVSS v4.0 7.0 (v3.1 6.3; below 8.0, tracked as privilege escalation to stored-credential access). Affects before 3.21.94-beta; fixed 3.21.94-beta (GHSA-xppg-v9wx-gh3q). Not exploited (VulnCheck KEV 0 docs); Not in CISA KEV (catalog 2026.11.25, 1,805 entries, byte-identical to 10:30). No public PoC seen. EPSS null (brand new, unscored).",
+   "epss": null,
+   "epss_percentile": null,
+   "source": "https://github.com/ToolJet/ToolJet/security/advisories/GHSA-xppg-v9wx-gh3q"
   },
   {
    "id": "CVE-2026-123640",
@@ -85871,8 +86623,8 @@ document.getElementById("tickerTrack").innerHTML=html+html;
    "source": "https://www.drupal.org/sa-contrib-2026-298"
   }
  ],
- "total": 5521,
- "records": 5521
+ "total": 5568,
+ "records": 5568
 }</script></script>
 
 <script>
@@ -85889,10 +86641,11 @@ document.getElementById("tickerTrack").innerHTML=html+html;
     {t:"  VulnCheck KEV ...... [OK]    CVE.org .......... [OK]", c:"", p:90},
     {t:"  Exploit-DB / Sploitus [OK]   Vendor PSIRTs .... [OK]", c:"", p:260},
     {t:"", c:"", p:80},
-    {t:"Scanning — 5,521 CVEs tracked ...", c:"", p:300},
-{t:"5,521 tracked · 274 exploited · 109 KEV · 530 PoC · EPSS 5,445 scored · 112 above EPSS threshold", c:"", p:200},
+    {t:"Scanning — 5,568 CVEs tracked ...", c:"", p:300},
+{t:"5,568 tracked · 278 exploited · 109 KEV · 530 PoC · EPSS 5,448 scored · 112 above EPSS threshold", c:"", p:200},
 {t:"Next scan: hourly — only material changes alert.", c:"dim", p:400},
-{t:"THIS SCAN 10:30 AM — total 5,501 -> 5,521 · 20 new: CVE-2026-104998 (WooCommerce unauthenticated file upload to RCE, 9.8), CVE-2026-4480 (Samba 'check password script' command injection RCE, 9.8, EXPLOITED — VulnCheck KEV, public PoCs), CVE-2026-18922 (389 Directory Server auth bypass, 9.8), CVE-2026-4408 (Samba printing subsystem command injection RCE, 9.8), CVE-2026-75885 (OpenShift console unauthenticated SSRF, 9.3) + 15 more · no new CISA KEV additions · no F5 changes · exploited 274 · KEV 109 · PoC 530 · EPSS 5,445 scored", c:"", p:200},
+{t:"THIS SCAN 11:30 AM — total 5,521 -> 5,568 · 47 new: CVE-2026-137498 (Budibase prototype pollution, 10.0), CVE-2026-137499 (Budibase auth bypass, 9.8), CVE-2026-126984 (pulp_python SSRF, 10.0), CVE-2026-94589 (Extensions For CF7 file-upload RCE, 9.8, EXPLOITED — VulnCheck KEV), CVE-2026-23734 (XWiki path traversal, 9.3, EXPLOITED — VulnCheck KEV), CVE-2021-42235 (osTicket SQLi, 9.8, EXPLOITED — VulnCheck KEV), CVE-2026-134643 (Webmin auth bypass, 8.3, now exploited) + 40 more · no new CISA KEV additions · no F5 changes · exploited 278 · KEV 109 · PoC 530 · EPSS 5,448 scored", c:"", p:200},
+{t:"LAST SCAN 10:30 AM — total 5,501 -> 5,521 · 20 new: CVE-2026-104998 (WooCommerce unauthenticated file upload to RCE, 9.8), CVE-2026-4480 (Samba 'check password script' command injection RCE, 9.8, EXPLOITED — VulnCheck KEV, public PoCs), CVE-2026-18922 (389 Directory Server auth bypass, 9.8), CVE-2026-4408 (Samba printing subsystem command injection RCE, 9.8), CVE-2026-75885 (OpenShift console unauthenticated SSRF, 9.3) + 15 more · no new CISA KEV additions · no F5 changes · exploited 274 · KEV 109 · PoC 530 · EPSS 5,445 scored", c:"", p:200},
 {t:"LAST SCAN 9:30 AM — total 5,448 -> 5,501 · 53 new: CVE-2026-137567 (llama.cpp ggml RPC server out-of-bounds write to RCE, 9.8, fixed b12658), CVE-2026-137584 (Twenty multi-workspace authentication bypass to Admin, 9.1, no fix stated), CVE-2026-137566 (Argo Workflows artifact-driver path traversal to RCE, 8.8, fixed 4.0.12 / 4.1.4), CVE-2026-77770 (miniOrange 2FA missing authorization, 10.0, EXPLOITED — VulnCheck KEV, fixed 6.3.1 / 19.3), CVE-2026-133311 + CVE-2026-133324 + CVE-2026-133275 (Mitel MiCollab, newly CISA KEV-listed), 38-item Red Hat re-analysis batch · GitLab CVE-2026-110264 (10.0) EPSS jumped to 0.54 · 5 EPSS crossings · exploited 273 · KEV 109 · PoC 529 · EPSS 5,431 scored", c:"", p:200},
 {t:"LAST SCAN 8:30 AM — total 5,439 -> 5,448 · 9 new: CVE-2026-130637 (SEPPmail SEG pre-auth SSTI to account takeover, 9.3, fixed 15.1.2), CVE-2026-124843 (SEPPmail SEG hard-coded fallback secret token forgery, 9.2, fixed 15.1.2), CVE-2026-124840 (SEPPmail SEG GINA session confusion account takeover, 9.2, fixed 15.1.2), CVE-2026-124838 (SEPPmail SEG world-writable config socket root command execution, 8.5, fixed 15.1.2), CVE-2026-124842 (SEPPmail SEG unauthenticated GINA credential reset, 8.3, fixed 15.1.2), CVE-2026-124839 (SEPPmail SEG root boot-job command injection, 7.7, fixed 15.1.2), CVE-2026-131767 (FunnelKit Automations PHP object injection, 9.8, fixed 3.9.0.2), CVE-2026-134481 (Ultimate Member PHP object injection, 9.8, fixed 2.14.2), CVE-2026-124266 (WP Event Solution PHP object injection, 8.8, fixed 4.1.31) · no new CISA KEV additions · no status changes · no F5 changes · exploited 269 · KEV 106 · PoC 528 · EPSS 5,274 scored · 104 above EPSS threshold", c:"", p:200},
 {t:"LAST SCAN 7:30 AM — total 5,438 -> 5,439 · 1 new: CVE-2026-131688 (WordPress Secure MCP Server plugin <= 1.5.8 auth bypass — any valid MCP bearer token escalates to Administrator, 8.1, fixed 1.5.9, EPSS unscored) · no new CISA KEV additions · no status changes · no F5 changes · exploited 269 · KEV 106 · PoC 528 · EPSS 5,274 scored · 104 above EPSS threshold", c:"", p:200},
@@ -87808,7 +88561,7 @@ function applyCveView(){
   if(meta){
     meta.textContent=filtering
       ? "Showing "+shownH+" of "+totalH+" highlighted drops · "+shownW+" watch picks · "+shownI+" of "+totalI+" in the grouped index"+(q?(' for \u201C'+q+'\u201D'):"")+". Clear the search or tap ALL to reset."
-      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 5,521 CVEs in the grouped index below are searchable too.";
+      : "Showing 6 highlighted drops \u00B7 Ones to Watch and all 5,568 CVEs in the grouped index below are searchable too.";
   }
 }
 document.querySelectorAll(".filters button").forEach(function(btn){
